@@ -209,7 +209,7 @@ export default async function ArticlePage({ params }: Props) {
 
                 {article.description && (
                   <div
-                    className="text-gray-600 dark:text-gray-300 leading-relaxed mb-5"
+                    className="text-indigo-600 dark:text-indigo-400 leading-relaxed mb-5"
                     dangerouslySetInnerHTML={{
                       __html: `<p>${article.description}</p>`,
                     }}
