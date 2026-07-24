@@ -1,3 +1,5 @@
+"use client";
+
 import { motion } from "framer-motion";
 import usePrefersReducedMotion from "@/hooks/use-prefers-reduced-motion";
 
