@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import { motion } from "framer-motion";
+import usePrefersReducedMotion from "@/hooks/use-prefers-reduced-motion";
 
 type Props = {
   params: Promise<{ date: string }>;
@@ -104,91 +106,110 @@ export default async function ArticlePage({ params }: Props) {
 
   return (
     <>
-      <nav className="border-b border-gray-200 dark:border-gray-800 bg-white/80 dark:bg-gray-950/80 backdrop-blur">
-        <div className="mx-auto max-w-3xl px-4 py-3 sm:px-6">
-          <div className="flex items-center gap-2 text-sm">
-            <Link
-              href="/archive"
-              className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
-            >
-              Archive
-            </Link>
-            <span className="text-gray-400 dark:text-gray-600">/</span>
-            <span className="text-gray-900 dark:text-white">{issue.date}</span>
-          </div>
+      <nav className="border-b border-gray-200/60 bg-white/70 backdrop-blur-md dark:border-gray-800/60 dark:bg-bento-surface/70">
+        <div className="mx-auto max-w-3xl px-4 py-4 sm:px-6">
+          <Breadcrumb date={date} />
         </div>
       </nav>
 
       <article className="mx-auto max-w-3xl px-4 py-10 sm:px-6 sm:py-14">
         <header className="mb-12">
-          <Link
-            href="/archive"
-            className="mb-6 inline-flex items-center gap-1.5 text-sm text-gray-500 hover:text-indigo-600 dark:text-gray-400 dark:hover:text-indigo-400"
-          >
-            <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-            </svg>
-            Back to Archive
-          </Link>
+          <BackLink date={date} />
 
-          <div className="flex items-center gap-3 mb-4">
-            <time
-              dateTime={issue.date}
-              className="text-sm font-medium text-indigo-600 dark:text-indigo-400"
-            >
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
+            className="flex flex-wrap items-center gap-3 mb-5"
+          >
+            <span className="rounded-full bg-gradient-to-r from-accent-blue/10 to-accent-cyan/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-accent-blue dark:from-accent-cyan/10 dark:to-accent-emerald/10 dark:text-accent-cyan">
               {formattedDate}
-            </time>
+            </span>
             <span className="text-gray-300 dark:text-gray-700">•</span>
-            <span className="text-sm text-gray-500 dark:text-gray-400">
+            <span className="flex items-center gap-1.5 text-sm text-gray-500 dark:text-gray-400">
+              <ClockIcon />
               {readMinutes} min read
             </span>
-          </div>
+          </motion.div>
 
-          <h1 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl lg:text-5xl text-balance">
+          <motion.h1
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.1, ease: [0.25, 0.46, 0.45, 0.94] }}
+            className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl lg:text-5xl text-balance"
+          >
             {issue.title}
-          </h1>
+          </motion.h1>
 
           {issue.tags.length > 0 && (
-            <div className="mt-4 flex flex-wrap gap-2">
-              {issue.tags.map((tag: string) => (
-                <span
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              className="mt-5 flex flex-wrap gap-2"
+            >
+              {issue.tags.map((tag: string, index: number) => (
+                <motion.span
                   key={tag}
-                  className="rounded-full bg-indigo-50 px-3 py-1 text-xs font-medium text-indigo-700 dark:bg-indigo-950/50 dark:text-indigo-300"
+                  initial={{ opacity: 0, scale: 0.7, y: 8 }}
+                  animate={{ opacity: 1, scale: 1, y: 0 }}
+                  transition={{ duration: 0.4, delay: 0.35 + index * 0.06, ease: [0.34, 1.56, 0.64, 1] }}
+                  className="rounded-full border border-glass-border bg-glass-highlight px-3 py-1 text-xs font-medium text-accent-blue dark:bg-bento-surface-dark dark:text-accent-cyan"
                 >
                   {tag}
-                </span>
+                </motion.span>
               ))}
-            </div>
+            </motion.div>
           )}
         </header>
 
-          {issue.featuredImageUrl && (
-            <div className="mb-12 overflow-hidden rounded-2xl">
-              <Image
-                src={issue.featuredImageUrl}
-                alt={issue.title}
-                width={1200}
-                height={675}
-                className="w-full aspect-video object-cover"
-              />
-            </div>
-          )}
+        {issue.featuredImageUrl && (
+          <motion.div
+            initial={{ opacity: 0, scale: 0.96 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.7, delay: 0.2, ease: [0.25, 0.46, 0.45, 0.94] }}
+            className="mb-12 overflow-hidden rounded-2xl"
+          >
+            <Image
+              src={issue.featuredImageUrl}
+              alt={issue.title}
+              width={1200}
+              height={675}
+              className="w-full aspect-video object-cover transition-transform duration-700 hover:scale-[1.02]"
+            />
+          </motion.div>
+        )}
 
-        <div
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
           className="prose-custom text-xl leading-relaxed text-gray-700 dark:text-gray-300"
           dangerouslySetInnerHTML={{ __html: renderIntro(issue.intro) }}
         />
 
-        <section className="mt-14">
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-8">
-            In This Issue
-          </h2>
-          <div className="space-y-10">
-            {issue.articles.map((article: { id: string; title: string; description?: string; url: string; sourceName: string; category?: string; publishedAt: string }) => (
-              <article
+        <section className="mt-16">
+          <div className="flex items-center gap-3 mb-8">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white">In This Issue</h2>
+            <div className="h-px flex-1 bg-gradient-to-r from-accent-blue/40 via-accent-cyan/40 to-transparent dark:from-accent-cyan/30 dark:via-accent-emerald/30" />
+          </div>
+          <div className="space-y-6">
+            {issue.articles.map((article: { id: string; title: string; description?: string; url: string; sourceName: string; category?: string; publishedAt: string }, index: number) => (
+              <motion.div
                 key={article.id}
-                className="rounded-xl border border-gray-200 p-6 dark:border-gray-800 dark:bg-gray-900/60"
+                initial={{ opacity: 0, y: 24 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-60px" }}
+                transition={{ duration: 0.5, delay: index * 0.08, ease: [0.25, 0.46, 0.45, 0.94] }}
+                whileHover={{ y: -4 }}
+                className={`group relative overflow-hidden rounded-2xl border border-gray-200/60 bg-white/70 p-6 backdrop-blur-sm
+                  dark:border-bento-surface-light/40 dark:bg-bento-surface/60 dark:backdrop-blur-md
+                  hover:border-accent-blue/40 hover:shadow-[0_20px_50px_-12px_rgba(59,130,246,0.15)]
+                  dark:hover:border-accent-cyan/30 dark:hover:shadow-[0_20px_50px_-12px_rgba(6,182,212,0.1)]
+                  transition-all duration-300`}
               >
+                <div className="absolute inset-x-0 top-0 h-[2px] -translate-y-full bg-gradient-to-r from-accent-blue via-accent-cyan to-accent-green transition-transform duration-500 ease-out group-hover:translate-y-0" />
+
                 <div className="flex items-center gap-3 mb-3">
                   <span className="text-xs font-medium uppercase tracking-wider text-gray-500 dark:text-gray-400">
                     {article.sourceName}
@@ -196,7 +217,7 @@ export default async function ArticlePage({ params }: Props) {
                   {article.category && (
                     <>
                       <span className="text-gray-300 dark:text-gray-700">•</span>
-                      <span className="text-xs font-medium text-indigo-600 dark:text-indigo-400">
+                      <span className="text-xs font-medium text-accent-blue dark:text-accent-cyan">
                         {article.category}
                       </span>
                     </>
@@ -220,51 +241,29 @@ export default async function ArticlePage({ params }: Props) {
                   href={article.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-lg bg-indigo-600 px-4 py-2 text-sm font-medium text-white hover:bg-indigo-700 dark:hover:bg-indigo-500"
+                  className="group/link inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-accent-blue to-accent-cyan px-4 py-2 text-sm font-semibold text-white shadow-lg shadow-accent-blue/20 transition-all duration-300 hover:shadow-xl hover:shadow-accent-blue/30 dark:shadow-accent-cyan/10 dark:hover:shadow-accent-cyan/20"
                 >
                   Read Article
-                  <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                    />
+                  <svg className="h-4 w-4 transition-transform duration-300 group-hover/link:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                   </svg>
                 </a>
-              </article>
+              </motion.article>
             ))}
           </div>
         </section>
       </article>
 
-      <nav className="border-t border-gray-200 dark:border-gray-800">
+      <nav className="border-t border-gray-200/60 dark:border-gray-800/60">
         <div className="mx-auto max-w-3xl px-4 py-8 sm:px-6">
-          <div className="flex items-center justify-between">
+          <div className="grid grid-cols-2 gap-4">
             {prevDate ? (
-              <Link
-                href={`/archive/${prevDate}`}
-                className="group flex flex-col gap-1 rounded-xl p-4 transition-colors hover:bg-gray-50 dark:hover:bg-gray-900"
-              >
-                <span className="text-xs text-gray-500 dark:text-gray-400">Previous</span>
-                <span className="font-medium text-gray-900 group-hover:text-indigo-600 dark:text-white dark:group-hover:text-indigo-400 text-sm">
-                  {prevDate}
-                </span>
-              </Link>
+              <IssueNavLink href={`/archive/${prevDate}`} label="Previous" date={prevDate} align="left" />
             ) : (
               <div />
             )}
-
             {nextDate ? (
-              <Link
-                href={`/archive/${nextDate}`}
-                className="group flex flex-col gap-1 rounded-xl p-4 text-right transition-colors hover:bg-gray-50 dark:hover:bg-gray-900"
-              >
-                <span className="text-xs text-gray-500 dark:text-gray-400">Next</span>
-                <span className="font-medium text-gray-900 group-hover:text-indigo-600 dark:text-white dark:group-hover:text-indigo-400 text-sm">
-                  {nextDate}
-                </span>
-              </Link>
+              <IssueNavLink href={`/archive/${nextDate}`} label="Next" date={nextDate} align="right" />
             ) : (
               <div />
             )}
@@ -272,5 +271,78 @@ export default async function ArticlePage({ params }: Props) {
         </div>
       </nav>
     </>
+  );
+}
+
+function Breadcrumb({ date }: { date: string }) {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 10 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.4 }}
+      className="flex items-center gap-2 text-sm"
+    >
+      <Link
+        href="/archive"
+        className="text-gray-500 transition-colors duration-200 hover:text-accent-blue dark:text-gray-400 dark:hover:text-accent-cyan"
+      >
+        Archive
+      </Link>
+      <span className="text-gray-300 dark:text-gray-700">/</span>
+      <span className="font-medium text-gray-900 dark:text-white">{date}</span>
+    </motion.div>
+  );
+}
+
+function BackLink({ date }: { date: string }) {
+  return (
+    <motion.div
+      initial={{ opacity: 0, x: -10 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.4 }}
+    >
+      <Link
+        href="/archive"
+        className="group mb-6 inline-flex items-center gap-1.5 text-sm font-medium text-gray-500 transition-colors duration-200 hover:text-accent-blue dark:text-gray-400 dark:hover:text-accent-cyan"
+      >
+        <svg className="h-4 w-4 transition-transform duration-200 group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+        </svg>
+        Back to Archive
+      </Link>
+    </motion.div>
+  );
+}
+
+function IssueNavLink({ href, label, date, align }: { href: string; label: string; date: string; align: "left" | "right" }) {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5 }}
+    >
+      <Link
+        href={href}
+        className={`group relative flex flex-col gap-1 overflow-hidden rounded-2xl border border-gray-200/60 bg-white/70 p-5 backdrop-blur-sm
+          dark:border-bento-surface-light/40 dark:bg-bento-surface/60 dark:backdrop-blur-md
+          hover:border-accent-blue/40 hover:shadow-[0_8px_30px_-12px_rgba(59,130,246,0.15)]
+          dark:hover:border-accent-cyan/30 transition-all duration-300 ${align === "right" ? "items-end text-right" : ""}`}
+      >
+        <div className="absolute inset-x-0 top-0 h-[2px] -translate-y-full bg-gradient-to-r from-accent-blue via-accent-cyan to-accent-green transition-transform duration-500 ease-out group-hover:translate-y-0" />
+        <span className="text-xs font-medium text-gray-500 dark:text-gray-400">{label}</span>
+        <span className="font-semibold text-gray-900 transition-colors duration-200 group-hover:text-accent-blue dark:text-white dark:group-hover:text-accent-emerald text-sm">
+          {date}
+        </span>
+      </Link>
+    </motion.div>
+  );
+}
+
+function ClockIcon() {
+  return (
+    <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+    </svg>
   );
 }

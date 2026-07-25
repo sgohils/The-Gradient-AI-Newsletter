@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import ThemeProvider from "@/components/theme-provider";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
+import "@/app/globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.className} bg-gradient-to-b from-gray-50 to-white dark:from-gray-950 dark:to-gray-900`}>
+      <body className={`${inter.className} bg-background text-foreground antialiased transition-colors duration-300`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

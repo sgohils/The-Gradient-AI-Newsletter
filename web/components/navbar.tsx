@@ -35,6 +35,11 @@ export default function Navbar() {
     { href: "/archive", label: "Archive" },
   ];
 
+  const isActive = (href: string) => {
+    if (href === "/") return false;
+    return typeof window !== "undefined" && window.location.pathname.startsWith(href);
+  };
+
   return (
     <nav
       className={`sticky top-0 z-50 w-full border-b backdrop-blur-xl transition-all duration-300 ${
@@ -63,9 +68,20 @@ export default function Navbar() {
             >
               <Link
                 href={href}
-                className="rounded-lg px-3 py-2 text-sm font-medium text-gray-600 transition-colors hover:text-gray-900 dark:text-gray-300 dark:hover:text-white"
+                className={`relative rounded-lg px-3 py-2 text-sm font-medium transition-colors duration-200 ${
+                  isActive(href)
+                    ? "text-accent-blue dark:text-accent-cyan"
+                    : "text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white"
+                }`}
               >
                 {label}
+                {isActive(href) && (
+                  <motion.span
+                    layoutId="nav-underline"
+                    className="absolute -bottom-0.5 left-2 right-2 h-0.5 rounded-full bg-gradient-to-r from-accent-blue to-accent-cyan dark:from-accent-cyan dark:to-accent-emerald"
+                    transition={{ type: "spring", stiffness: 300, damping: 30 }}
+                  />
+                )}
               </Link>
             </motion.div>
           ))}
@@ -149,13 +165,13 @@ export default function Navbar() {
                   animate={prefersReducedMotion ? undefined : "visible"}
                   exit={prefersReducedMotion ? undefined : "exit"}
                 >
-                  <Link
-                    href={href}
-                    onClick={() => setMobileMenuOpen(false)}
-                    className="block rounded-lg px-3 py-2.5 text-sm font-medium text-gray-600 transition-colors hover:bg-gray-50 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-gray-900 dark:hover:text-white"
-                  >
-                    {label}
-                  </Link>
+                   <Link
+                     href={href}
+                     onClick={() => setMobileMenuOpen(false)}
+                     className="block rounded-lg px-3 py-2.5 text-sm font-medium text-gray-600 transition-colors hover:bg-gray-50 hover:text-accent-blue dark:text-gray-300 dark:hover:bg-gray-900 dark:hover:text-accent-cyan"
+                   >
+                     {label}
+                   </Link>
                 </motion.div>
               ))}
             </div>

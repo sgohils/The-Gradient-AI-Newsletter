@@ -73,7 +73,7 @@ export default function HeroSection({ latestIssue }: HeroSectionProps) {
           initial={prefersReducedMotion ? false : { opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={prefersReducedMotion ? {} : { duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
-          className="text-balance bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 bg-clip-text text-5xl font-bold tracking-tight text-transparent md:text-7xl dark:from-white dark:via-gray-100 dark:to-white"
+          className="text-balance bg-gradient-to-r from-accent-blue via-accent-cyan to-accent-green bg-clip-text text-5xl font-bold tracking-tight text-transparent md:text-7xl dark:from-accent-cyan dark:via-accent-emerald dark:to-accent-green"
         >
           {latestIssue.title}
         </motion.h1>
