@@ -139,8 +139,8 @@ export default function HeroSection({ latestIssue }: HeroSectionProps) {
         className="absolute bottom-10 left-1/2 -translate-x-1/2"
       >
         <svg
-          width="24"
-          height="24"
+          width="20"
+          height="20"
           viewBox="0 0 24 24"
           fill="none"
           className="text-gray-400 dark:text-gray-600"

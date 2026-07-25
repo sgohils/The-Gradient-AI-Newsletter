@@ -15,10 +15,9 @@ function ShimmerSearchIcon() {
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
       viewBox="0 0 24 24"
-      strokeWidth="1.8"
+      strokeWidth="2"
       stroke="currentColor"
-      className="absolute left-3.5 top-3 h-4.5 w-4.5 text-gray-400 dark:text-gray-500 transition-colors duration-200"
-      style={{ height: "18px", width: "18px" }}
+      className="absolute left-3 top-2.5 h-3.5 w-3.5 text-gray-400 dark:text-gray-500 transition-colors duration-200"
     >
       <circle cx="10.5" cy="10.5" r="7.5" />
       <path d="m15.5 15.5 5 5" strokeLinecap="round" />
