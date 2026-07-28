@@ -1,18 +1,11 @@
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import { getIssueByDate, getAllIssueDates } from "@/lib/posts";
 
 type Props = {
   params: Promise<{ date: string }>;
 };
-
-async function getAllIssueDates(): Promise<string[]> {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000"}/api/issues`, { next: { revalidate: 3600 } });
-  const issues: Array<{ id: string }> = await res.json();
-  return issues
-    .map((issue) => issue.id)
-    .sort((a, b) => b.localeCompare(a));
-}
 
 function getReadTime(text: string): number {
   const words = text.trim().split(/\s+/).length;
@@ -29,65 +22,49 @@ function renderIntro(html: string): string {
 export async function generateMetadata({ params }: Props) {
   const { date } = await params;
 
-  try {
-    const res = await fetch(
-      `${process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000"}/api/issues/${date}`,
-      { next: { revalidate: 3600 } }
-    );
+  const issue = getIssueByDate(date);
 
-    if (!res.ok) {
-      return { title: "Issue Not Found" };
-    }
+  if (!issue) {
+    return { title: "Issue Not Found" };
+  }
 
-    const issue = await res.json();
+  const title = `${issue.title} | The Gradient`;
+  const description = issue.intro
+    .replace(/<[^>]*>/g, "")
+    .replace(/\s+/g, " ")
+    .trim()
+    .slice(0, 160);
+  const url = `/archive/${issue.date}`;
 
-    const title = `${issue.title} | The Gradient`;
-    const description = issue.intro
-      .replace(/<[^>]*>/g, "")
-      .replace(/\s+/g, " ")
-      .trim()
-      .slice(0, 160);
-    const url = `${process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000"}/archive/${issue.date}`;
-
-    return {
+  return {
+    title,
+    description,
+    openGraph: {
       title,
       description,
-      openGraph: {
-        title,
-        description,
-        url,
-        type: "article",
-        publishedTime: issue.publishedAt ? new Date(issue.publishedAt).toISOString() : undefined,
-        images: issue.featuredImageUrl ? [{ url: issue.featuredImageUrl }] : undefined,
-      },
-      twitter: {
-        card: "summary_large_image",
-        title,
-        description,
-      },
-    };
-  } catch {
-    return { title: "The Gradient" };
-  }
+      url,
+      type: "article",
+      publishedTime: issue.publishedAt ? new Date(issue.publishedAt).toISOString() : undefined,
+      images: issue.featuredImageUrl ? [{ url: issue.featuredImageUrl }] : undefined,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+    },
+  };
 }
 
 export default async function ArticlePage({ params }: Props) {
   const { date } = await params;
 
-  const [issueRes, dates] = await Promise.all([
-    fetch(
-      `${process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000"}/api/issues/${date}`,
-      { next: { revalidate: 3600 } }
-    ),
-    getAllIssueDates(),
-  ]);
+  const issue = getIssueByDate(date);
 
-  if (!issueRes.ok) {
+  if (!issue) {
     notFound();
   }
 
-  const issue = await issueRes.json();
-
+  const dates = getAllIssueDates();
   const dateIndex = dates.indexOf(date);
   const prevDate = dateIndex < dates.length - 1 ? dates[dateIndex + 1] : null;
   const nextDate = dateIndex > 0 ? dates[dateIndex - 1] : null;

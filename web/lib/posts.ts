@@ -3,7 +3,12 @@ import path from "path";
 import matter from "gray-matter";
 import { Article, NewsletterIssue } from "@/types";
 
-const POSTS_DIR = path.join(process.cwd(), "..", "posts");
+const CANDIDATE_POSTS_DIRS = [
+  path.join(process.cwd(), "..", "posts"),
+  path.join(process.cwd(), "posts"),
+];
+
+const POSTS_DIR = CANDIDATE_POSTS_DIRS.find((dir) => fs.existsSync(dir)) || CANDIDATE_POSTS_DIRS[0];
 
 export function getAllIssueDates(): string[] {
   if (!fs.existsSync(POSTS_DIR)) {
