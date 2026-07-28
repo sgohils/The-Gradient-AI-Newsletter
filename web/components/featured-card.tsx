@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion, useScroll, useTransform } from "framer-motion";
 import usePrefersReducedMotion from "@/hooks/use-prefers-reduced-motion";
+import { mdToHtml } from "@/lib/posts";
 
 interface FeaturedCardProps {
   issue: {
@@ -96,9 +97,10 @@ export default function FeaturedCard({ issue }: FeaturedCardProps) {
                   {issue.title}
                 </h2>
 
-                <p className="mt-3 line-clamp-3 text-sm leading-relaxed text-gray-600 dark:text-gray-300">
-                  {issue.intro}
-                </p>
+                <div
+                  className="mt-3 line-clamp-3 text-sm leading-relaxed text-gray-600 dark:text-gray-300"
+                  dangerouslySetInnerHTML={{ __html: mdToHtml(issue.intro) }}
+                />
 
                 {issue.tags.length > 0 && (
                   <div className="mt-5 flex flex-wrap gap-2">

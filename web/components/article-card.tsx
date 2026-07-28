@@ -6,6 +6,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { NewsletterIssue } from "@/types";
 import usePrefersReducedMotion from "@/hooks/use-prefers-reduced-motion";
+import { mdToHtml } from "@/lib/posts";
 
 interface ArticleCardProps {
   issue: NewsletterIssue;
@@ -66,9 +67,10 @@ export default function ArticleCard({ issue }: ArticleCardProps) {
       </h3>
 
       {issue.intro && (
-        <p className="mb-4 line-clamp-2 text-sm leading-relaxed text-gray-600 transition-colors duration-300 group-hover:text-gray-700 dark:text-gray-400 dark:group-hover:text-gray-300">
-          {issue.intro}
-        </p>
+        <div
+          className="mb-4 line-clamp-2 text-sm leading-relaxed text-gray-600 transition-colors duration-300 group-hover:text-gray-700 dark:text-gray-400 dark:group-hover:text-gray-300"
+          dangerouslySetInnerHTML={{ __html: mdToHtml(issue.intro) }}
+        />
       )}
 
       {issue.tags.length > 0 && (

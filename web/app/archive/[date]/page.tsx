@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { getIssueByDate, getAllIssueDates } from "@/lib/posts";
+import { getIssueByDate, getAllIssueDates, mdToHtml } from "@/lib/posts";
 
 type Props = {
   params: Promise<{ date: string }>;
@@ -14,9 +14,7 @@ function getReadTime(text: string): number {
 }
 
 function renderIntro(html: string): string {
-  return html
-    .replace(/^<p>/g, '<p class="text-xl leading-relaxed text-gray-700 dark:text-gray-300">')
-    .replace(/^<p[^>]*>\s*<\/p>/, "");
+  return mdToHtml(html);
 }
 
 export async function generateMetadata({ params }: Props) {
@@ -179,7 +177,7 @@ export default async function ArticlePage({ params }: Props) {
                     <div
                       className="text-base leading-[1.8] text-gray-700 dark:text-gray-200 mb-4 max-w-none"
                       dangerouslySetInnerHTML={{
-                        __html: `<p>${article.description}</p>`,
+                        __html: `<p>${mdToHtml(article.description)}</p>`,
                       }}
                     />
                   )}

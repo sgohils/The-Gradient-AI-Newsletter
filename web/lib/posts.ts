@@ -10,6 +10,13 @@ const CANDIDATE_POSTS_DIRS = [
 
 const POSTS_DIR = CANDIDATE_POSTS_DIRS.find((dir) => fs.existsSync(dir)) || CANDIDATE_POSTS_DIRS[0];
 
+export function mdToHtml(text: string): string {
+  if (!text) return "";
+  return text
+    .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
+    .replace(/\*(.+?)\*/g, "<em>$1</em>");
+}
+
 export function getAllIssueDates(): string[] {
   if (!fs.existsSync(POSTS_DIR)) {
     return [];
