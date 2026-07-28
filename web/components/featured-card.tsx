@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion, useScroll, useTransform } from "framer-motion";
 import usePrefersReducedMotion from "@/hooks/use-prefers-reduced-motion";
-import { mdToHtml } from "@/lib/posts";
+import { mdToHtml } from "@/lib/markdown";
 
 interface FeaturedCardProps {
   issue: {

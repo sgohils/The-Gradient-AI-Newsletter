@@ -6,7 +6,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { NewsletterIssue } from "@/types";
 import usePrefersReducedMotion from "@/hooks/use-prefers-reduced-motion";
-import { mdToHtml } from "@/lib/posts";
+import { mdToHtml } from "@/lib/markdown";
 
 interface ArticleCardProps {
   issue: NewsletterIssue;

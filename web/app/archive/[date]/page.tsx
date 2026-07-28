@@ -1,7 +1,8 @@
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { getIssueByDate, getAllIssueDates, mdToHtml } from "@/lib/posts";
+import { getIssueByDate, getAllIssueDates } from "@/lib/posts";
+import { mdToHtml } from "@/lib/markdown";
 
 type Props = {
   params: Promise<{ date: string }>;
