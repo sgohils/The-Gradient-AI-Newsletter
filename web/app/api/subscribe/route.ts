@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { addSubscriber } from '@/lib/subscribers';
+import { addResendSubscriber } from '@/lib/mailer';
 
 export const dynamic = 'force-dynamic';
 
@@ -16,10 +16,11 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: 'Invalid email address' }, { status: 400 });
     }
 
-    const subscriber = addSubscriber(email);
+    const subscriber = await addResendSubscriber(email);
     return NextResponse.json({ success: true, email: subscriber.email }, { status: 201 });
   } catch (error) {
     console.error('Subscribe error:', error);
-    return NextResponse.json({ error: 'Internal server error' }, { status: 500 });
+    const message = error instanceof Error ? error.message : 'Internal server error';
+    return NextResponse.json({ error: message }, { status: 500 });
   }
 }
