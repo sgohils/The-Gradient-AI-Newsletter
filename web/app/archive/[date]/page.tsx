@@ -149,63 +149,59 @@ export default async function ArticlePage({ params }: Props) {
         />
 
         <section className="mt-16">
-          <div className="flex items-center gap-3 mb-8">
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-white">In This Issue</h2>
-            <div className="h-px flex-1 bg-gradient-to-r from-accent-blue/40 via-accent-cyan/40 to-transparent dark:from-accent-cyan/30 dark:via-accent-emerald/30" />
+          <div className="mb-12 flex items-center gap-3">
+            <h2 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">In This Issue</h2>
+            <div className="h-px flex-1 bg-gradient-to-r from-accent-blue/50 via-accent-cyan/50 to-transparent dark:from-accent-cyan/40 dark:via-accent-emerald/40" />
           </div>
-          <div className="space-y-6">
-            {issue.articles.map((article, index) => (
-              <article
-                key={article.id}
-                className="group relative overflow-hidden rounded-2xl border border-gray-200/60 bg-white/70 p-6 backdrop-blur-sm
-                  dark:border-bento-surface-light/40 dark:bg-bento-surface/60 dark:backdrop-blur-md
-                  hover:border-accent-blue/40 hover:shadow-[0_20px_50px_-12px_rgba(59,130,246,0.15)]
-                  dark:hover:border-accent-cyan/30 dark:hover:shadow-[0_20px_50px_-12px_rgba(6,182,212,0.1)]
-                  transition-all duration-300 animate-fade-in-up hover:-translate-y-1"
-                style={{ animationDelay: `${0.3 + index * 0.08}s`, animationFillMode: "both" }}
-              >
-                <div className="absolute inset-x-0 top-0 h-[2px] -translate-y-full bg-gradient-to-r from-accent-blue via-accent-cyan to-accent-green transition-transform duration-500 ease-out group-hover:translate-y-0" />
 
-                <div className="flex items-center gap-3 mb-3">
-                  <span className="text-xs font-medium uppercase tracking-wider text-gray-500 dark:text-gray-400">
-                    {article.sourceName}
-                  </span>
-                  {article.category && (
-                    <>
-                      <span className="text-gray-300 dark:text-gray-700">•</span>
-                      <span className="text-xs font-medium text-accent-blue dark:text-accent-cyan">
-                        {article.category}
-                      </span>
-                    </>
+          <div className="relative">
+            <div className="absolute left-4 top-0 h-full w-px bg-gradient-to-b from-transparent via-accent-cyan/40 to-transparent dark:via-accent-cyan/30" />
+
+            <div className="space-y-10">
+              {issue.articles.map((article, index) => (
+                <div key={article.id} className="relative animate-fade-in-up" style={{ animationDelay: `${0.3 + index * 0.08}s`, animationFillMode: "both" }}>
+                  <div className="absolute -left-[17px] top-2 h-2.5 w-2.5 rounded-full border-2 border-accent-cyan bg-white dark:border-accent-cyan dark:bg-accent-cyan/40" />
+
+                  <div className="flex flex-wrap items-center gap-2 mb-2">
+                    <span className="rounded-md bg-accent-blue/10 px-2 py-0.5 text-[11px] font-bold uppercase tracking-widest text-accent-blue dark:bg-accent-cyan/10 dark:text-accent-cyan">
+                      {article.sourceName}
+                    </span>
+                    <span className="text-sm font-semibold text-accent-cyan/70 dark:text-accent-emerald/80">
+                      #{index + 1}
+                    </span>
+                  </div>
+
+                  <h3 className="mb-3 text-xl font-bold text-gray-900 dark:text-white">
+                    {article.title}
+                  </h3>
+
+                  {article.description && (
+                    <div
+                      className="text-base leading-[1.8] text-gray-700 dark:text-gray-200 mb-4 max-w-none"
+                      dangerouslySetInnerHTML={{
+                        __html: `<p>${article.description}</p>`,
+                      }}
+                    />
+                  )}
+
+                  <a
+                    href={article.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group/link inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-accent-blue to-accent-cyan px-5 py-2.5 text-sm font-semibold text-white shadow-md shadow-accent-blue/20 transition-all duration-300 hover:shadow-xl hover:shadow-accent-blue/30 dark:shadow-accent-cyan/10 dark:hover:shadow-accent-cyan/20"
+                  >
+                    Read Article
+                    <svg className="h-3.5 w-3.5 transition-transform duration-300 group-hover/link:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
+                  </a>
+
+                  {index < issue.articles.length - 1 && (
+                    <div className="mt-10 h-px bg-gradient-to-r from-accent-blue/20 via-accent-cyan/20 to-transparent dark:from-accent-cyan/15 dark:via-accent-emerald/15" />
                   )}
                 </div>
-
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
-                  {article.title}
-                </h3>
-
-                {article.description && (
-                  <div
-                    className="text-gray-600 dark:text-gray-300 leading-relaxed mb-5"
-                    dangerouslySetInnerHTML={{
-                      __html: `<p>${article.description}</p>`,
-                    }}
-                  />
-                )}
-
-                <a
-                  href={article.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group/link inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-accent-blue to-accent-cyan px-4 py-2 text-sm font-semibold text-white shadow-lg shadow-accent-blue/20 transition-all duration-300 hover:shadow-xl hover:shadow-accent-blue/30 dark:shadow-accent-cyan/10 dark:hover:shadow-accent-cyan/20"
-                >
-                  Read Article
-                  <svg className="h-3.5 w-3.5 transition-transform duration-300 group-hover/link:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                  </svg>
-                </a>
-              </article>
-            ))}
+              ))}
+            </div>
           </div>
         </section>
       </article>
