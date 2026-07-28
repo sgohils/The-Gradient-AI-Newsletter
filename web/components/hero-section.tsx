@@ -5,6 +5,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import Link from "next/link";
 import { NewsletterIssue } from "@/types";
 import usePrefersReducedMotion from "@/hooks/use-prefers-reduced-motion";
+import SubscribeBox from "@/components/subscribe-box";
 
 interface HeroSectionProps {
   latestIssue: NewsletterIssue;
@@ -110,6 +111,8 @@ export default function HeroSection({ latestIssue }: HeroSectionProps) {
             </Link>
           </motion.div>
         </motion.div>
+
+        <SubscribeBox />
 
         {latestIssue.tags.length > 0 && (
           <motion.div
