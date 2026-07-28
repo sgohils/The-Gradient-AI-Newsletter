@@ -33,6 +33,7 @@ export default function Navbar() {
   const navLinks = [
     { href: "/", label: "Home" },
     { href: "/archive", label: "Archive" },
+    { href: "/subscribe", label: "Subscribe" },
   ];
 
   const isActive = (href: string) => {

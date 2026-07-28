@@ -1,7 +1,7 @@
 import dotenv from 'dotenv';
 import * as fs from 'fs';
 import * as path from 'path';
-import { Source } from '../types';
+import { Source, MailerConfig } from '../types';
 
 dotenv.config();
 
@@ -15,6 +15,7 @@ export interface Config {
   outputDir?: string;
   sources: Source[];
   maxArticles: number;
+  mailer: MailerConfig;
 }
 
 const DEFAULT_CONFIG: Omit<Config, 'sources'> = {
@@ -26,6 +27,11 @@ const DEFAULT_CONFIG: Omit<Config, 'sources'> = {
   groqTemperature: 1,
   outputDir: process.env.OUTPUT_DIR || 'posts',
   maxArticles: 5,
+  mailer: {
+    resendApiKey: process.env.RESEND_API_KEY,
+    fromEmail: process.env.MAILER_FROM_EMAIL || 'The Gradient <newsletter@thegradient.ai>',
+    fromName: process.env.MAILER_FROM_NAME || 'The Gradient',
+  },
 };
 
 export function loadConfig(): Config {

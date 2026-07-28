@@ -30,6 +30,19 @@ export interface NewsletterIssue {
   featuredImageUrl?: string;
 }
 
+export interface Subscriber {
+  email: string;
+  token: string;
+  subscribedAt: string;
+  unsubscribedAt?: string;
+}
+
+export interface MailerConfig {
+  resendApiKey?: string;
+  fromEmail?: string;
+  fromName?: string;
+}
+
 export interface Summary {
   headline: string;
   intro: string;

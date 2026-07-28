@@ -6,6 +6,8 @@ import { fetchArticles } from '../fetcher/fetcher';
 import { curate } from '../curator';
 import { summarizeArticle } from '../summarizer';
 import { buildMarkdown, buildHtml, publish } from '../publisher';
+import { buildNewsletterHtml, buildNewsletterText, sendEmail } from '../mailer';
+import { getActiveSubscribers } from '../subscribers';
 import { Article, NewsletterIssue, Source } from '../types';
 import type { Config } from '../config';
 
@@ -166,6 +168,38 @@ export async function runPipeline(cliOptions: CliOptions): Promise<OrchestratorR
     mdPath = result.mdPath;
     htmlPath = result.htmlPath;
     console.log(`  Published to: ${mdPath}, ${htmlPath}`);
+  }
+
+  console.log('[6/6] Sending newsletter to subscribers...');
+  const subscribers = getActiveSubscribers();
+  if (subscribers.length > 0 && config.mailer.resendApiKey) {
+    const htmlContent = buildNewsletterHtml(issue);
+    const textContent = buildNewsletterText(issue);
+    const baseUrl = process.env.NEWSLETTER_BASE_URL || 'https://thegradient.ai';
+    const unsubscribeUrl = (email: string, token: string) =>
+      `${baseUrl}/api/unsubscribe?email=${encodeURIComponent(email)}&token=${encodeURIComponent(token)}`;
+
+    const sendPromises = subscribers.map(async (subscriber) => {
+      try {
+        const personalizedHtml = htmlContent.replace(/\{\{unsubscribe_url\}\}/g, unsubscribeUrl(subscriber.email, subscriber.token));
+        const personalizedText = textContent.replace(/\{\{unsubscribe_url\}\}/g, unsubscribeUrl(subscriber.email, subscriber.token));
+        await sendEmail({
+          to: [subscriber.email],
+          subject: issue.title,
+          html: personalizedHtml,
+          text: personalizedText,
+        });
+      } catch (error) {
+        console.warn(`  Failed to send to ${subscriber.email}:`, error);
+      }
+    });
+
+    await Promise.all(sendPromises);
+    console.log(`  Sent to ${subscribers.length} subscriber(s)`);
+  } else if (subscribers.length > 0 && !config.mailer.resendApiKey) {
+    console.warn('  Skipping email: RESEND_API_KEY is not set');
+  } else {
+    console.log('  No active subscribers');
   }
 
   console.log('Pipeline completed successfully.');

@@ -31,6 +31,7 @@ jobs:
       - name: Run publisher
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           OUTPUT_DIR: posts
         run: npm run publish
 

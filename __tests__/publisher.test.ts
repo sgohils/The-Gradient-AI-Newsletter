@@ -6,6 +6,7 @@ import {
   markdownToHtml,
 } from '../src/publisher';
 import { NewsletterIssue, Article } from '../src/types';
+import * as path from 'path';
 
 vi.mock('fs', () => ({
   existsSync: vi.fn(),
@@ -252,17 +253,17 @@ describe('publisher', () => {
       expect(fs.mkdirSync).toHaveBeenCalledWith('posts', { recursive: true });
       expect(fs.writeFileSync).toHaveBeenCalledTimes(2);
       expect(fs.writeFileSync).toHaveBeenCalledWith(
-        'posts/2024-01-01.md',
+        path.join('posts', '2024-01-01.md'),
         expect.any(String),
         'utf-8'
       );
       expect(fs.writeFileSync).toHaveBeenCalledWith(
-        'posts/2024-01-01.html',
+        path.join('posts', '2024-01-01.html'),
         expect.any(String),
         'utf-8'
       );
-      expect(result.mdPath).toBe('posts/2024-01-01.md');
-      expect(result.htmlPath).toBe('posts/2024-01-01.html');
+      expect(result.mdPath).toBe(path.join('posts', '2024-01-01.md'));
+      expect(result.htmlPath).toBe(path.join('posts', '2024-01-01.html'));
     });
 
     it('should use default output directory "posts" when not specified', async () => {
