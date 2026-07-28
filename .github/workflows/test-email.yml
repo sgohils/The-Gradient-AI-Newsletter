@@ -29,6 +29,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Build project
+        run: npm run build
+
       - name: Send test email
         env:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
@@ -41,17 +44,80 @@ jobs:
             const path = require('path');
             const { loadConfig } = require('./dist/config');
             const { buildNewsletterHtml, buildNewsletterText, sendEmail } = require('./dist/mailer');
-            const { getActiveSubscribers } = require('./dist/subscribers');
-            const { getIssueByDate } = require('./web/lib/posts');
 
             const date = '${{ inputs.date }}';
             const to = '${{ inputs.to }}';
+            const postsDir = path.join(process.cwd(), 'posts');
+            const mdPath = path.join(postsDir, date + '.md');
 
-            const issue = getIssueByDate(date);
-            if (!issue) {
-              console.error('Issue not found for date:', date);
+            if (!fs.existsSync(mdPath)) {
+              console.error('Issue file not found:', mdPath);
               process.exit(1);
             }
+
+            const raw = fs.readFileSync(mdPath, 'utf-8');
+            const frontmatterMatch = raw.match(/^---\n([\s\S]*?)\n---/);
+            const content = raw.replace(/^---\n[\s\S]*?\n---\n/, '');
+
+            let title = date;
+            let tags = [];
+
+            if (frontmatterMatch) {
+              const fm = frontmatterMatch[1];
+              const titleMatch = fm.match(/title:\s*\"([^\"]*)\"/);
+              const tagsMatch = fm.match(/tags:\n([\s\S]*?)(?=\n\w|\n---|$)/);
+
+              if (titleMatch) title = titleMatch[1];
+              if (tagsMatch) {
+                tags = tagsMatch[1]
+                  .split('\n')
+                  .map(line => line.replace(/^\s*-\s*/, '').trim())
+                  .filter(Boolean);
+              }
+            }
+
+            const articles = [];
+            const articleRegex = /^##\s+(.+)$/gm;
+            const linkRegex = /\[Read more\]\(([^)]+)\)/;
+            let match;
+            const headings = [];
+
+            while ((match = articleRegex.exec(content)) !== null) {
+              headings.push({ title: match[1].trim(), index: match.index });
+            }
+
+            for (let i = 0; i < headings.length; i++) {
+              const sectionStart = headings[i].index;
+              const sectionEnd = i + 1 < headings.length ? headings[i + 1].index : content.length;
+              const section = content.slice(sectionStart, sectionEnd);
+
+              const urlMatch = section.match(linkRegex);
+              const url = urlMatch ? urlMatch[1] : '';
+              const textBeforeLink = section.replace(linkRegex, '').trim().replace(/^##\s+.+$/m, '').trim();
+
+              articles.push({
+                id: date + '-' + i,
+                title: headings[i].title,
+                url,
+                description: textBeforeLink,
+                publishedAt: new Date(date),
+                sourceId: 'unknown',
+                sourceName: 'unknown',
+              });
+            }
+
+            const introMatch = content.match(/^(.*?)(?=##\s|$)/s);
+            const intro = introMatch ? introMatch[1].trim() : '';
+
+            const issue = {
+              id: 'gradient-' + date,
+              title,
+              date,
+              intro,
+              articles,
+              tags,
+              featuredImageUrl: undefined,
+            };
 
             const config = loadConfig();
             if (!config.mailer.resendApiKey) {
@@ -63,10 +129,10 @@ jobs:
             const text = buildNewsletterText(issue);
             const baseUrl = process.env.NEWSLETTER_BASE_URL || 'https://gradientnews.app';
             const unsubscribeUrl = (email, token) =>
-              \`\${baseUrl}/api/unsubscribe?email=\${encodeURIComponent(email)}&token=\${encodeURIComponent(token)}\`;
+              baseUrl + '/api/unsubscribe?email=' + encodeURIComponent(email) + '&token=' + encodeURIComponent(token);
 
-            const personalizedHtml = html.replace(/\{\{unsubscribe_url\}\}/g, unsubscribeUrl(to, 'test-token'));
-            const personalizedText = text.replace(/\{\{unsubscribe_url\}\}/g, unsubscribeUrl(to, 'test-token'));
+            const personalizedHtml = html.replace(/{{unsubscribe_url}}/g, unsubscribeUrl(to, 'test-token'));
+            const personalizedText = text.replace(/{{unsubscribe_url}}/g, unsubscribeUrl(to, 'test-token'));
 
             sendEmail({
               to: [to],
