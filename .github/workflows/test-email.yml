@@ -42,13 +42,18 @@ jobs:
           node -e "
             const fs = require('fs');
             const path = require('path');
-            const { loadConfig } = require('./dist/config');
-            const { buildNewsletterHtml, buildNewsletterText, sendEmail } = require('./dist/mailer');
+            const { loadConfig } = require('./dist/src/config');
+            const { buildNewsletterHtml, buildNewsletterText, sendEmail } = require('./dist/src/mailer');
 
             const date = '${{ inputs.date }}';
             const to = '${{ inputs.to }}';
             const postsDir = path.join(process.cwd(), 'posts');
             const mdPath = path.join(postsDir, date + '.md');
+
+            console.log('Looking for issue at:', mdPath);
+            console.log('CWD:', process.cwd());
+            console.log('Posts dir exists:', fs.existsSync(postsDir));
+            console.log('MD file exists:', fs.existsSync(mdPath));
 
             if (!fs.existsSync(mdPath)) {
               console.error('Issue file not found:', mdPath);
@@ -56,6 +61,8 @@ jobs:
             }
 
             const raw = fs.readFileSync(mdPath, 'utf-8');
+            console.log('File content preview:', raw.substring(0, 500));
+
             const frontmatterMatch = raw.match(/^---\n([\s\S]*?)\n---/);
             const content = raw.replace(/^---\n[\s\S]*?\n---\n/, '');
 
@@ -76,6 +83,9 @@ jobs:
               }
             }
 
+            console.log('Parsed title:', title);
+            console.log('Parsed tags:', tags);
+
             const articles = [];
             const articleRegex = /^##\s+(.+)$/gm;
             const linkRegex = /\[Read more\]\(([^)]+)\)/;
@@ -85,6 +95,8 @@ jobs:
             while ((match = articleRegex.exec(content)) !== null) {
               headings.push({ title: match[1].trim(), index: match.index });
             }
+
+            console.log('Found headings:', headings.length);
 
             for (let i = 0; i < headings.length; i++) {
               const sectionStart = headings[i].index;
@@ -109,6 +121,9 @@ jobs:
             const introMatch = content.match(/^(.*?)(?=##\s|$)/s);
             const intro = introMatch ? introMatch[1].trim() : '';
 
+            console.log('Parsed intro:', intro.substring(0, 200));
+            console.log('Parsed articles:', articles.length);
+
             const issue = {
               id: 'gradient-' + date,
               title,
@@ -120,6 +135,8 @@ jobs:
             };
 
             const config = loadConfig();
+            console.log('Resend API key present:', !!config.mailer.resendApiKey);
+
             if (!config.mailer.resendApiKey) {
               console.error('RESEND_API_KEY is not set');
               process.exit(1);
@@ -133,6 +150,11 @@ jobs:
 
             const personalizedHtml = html.replace(/{{unsubscribe_url}}/g, unsubscribeUrl(to, 'test-token'));
             const personalizedText = text.replace(/{{unsubscribe_url}}/g, unsubscribeUrl(to, 'test-token'));
+
+            console.log('Sending email to:', to);
+            console.log('Subject:', issue.title);
+            console.log('HTML length:', personalizedHtml.length);
+            console.log('Text length:', personalizedText.length);
 
             sendEmail({
               to: [to],
