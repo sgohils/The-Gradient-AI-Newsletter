@@ -112,7 +112,7 @@ export default async function ArticlePage({ params }: Props) {
 
       <article className="mx-auto max-w-3xl px-4 py-10 sm:px-6 sm:py-14">
         <header className="mb-12">
-          <BackLink date={date} />
+          <BackLink />
 
           <div className="flex flex-wrap items-center gap-3 mb-5 animate-fade-in-up" style={{ animationDelay: "0.1s", animationFillMode: "both" }}>
             <span className="rounded-full bg-gradient-to-r from-accent-blue/10 to-accent-cyan/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-accent-blue dark:from-accent-cyan/10 dark:to-accent-emerald/10 dark:text-accent-cyan">
@@ -268,7 +268,7 @@ function Breadcrumb({ date }: { date: string }) {
   );
 }
 
-function BackLink({ date }: { date: string }) {
+function BackLink() {
   return (
     <div className="animate-fade-in-up" style={{ animationDelay: "0s", animationFillMode: "both" }}>
       <Link

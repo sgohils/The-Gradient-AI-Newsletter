@@ -6,6 +6,7 @@
   "scripts": {
     "build": "tsc",
     "dev": "npm run build && node dist/scripts/run.js",
+    "publish": "npm run build && node dist/scripts/run.js",
     "test": "vitest run",
     "lint": "eslint src --ext .ts"
   },
