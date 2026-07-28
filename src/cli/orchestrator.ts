@@ -124,6 +124,9 @@ export async function runPipeline(cliOptions: CliOptions): Promise<OrchestratorR
     curated.map(async (article) => {
       try {
         const summary = await summarizeArticle(article, {
+          groqApiKey: config.groqApiKey,
+          groqModel: config.groqModel,
+          groqTemperature: config.groqTemperature,
           openaiApiKey: config.openaiApiKey,
           openaiModel: config.openaiModel,
           openaiTemperature: config.openaiTemperature,

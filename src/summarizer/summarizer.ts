@@ -9,6 +9,8 @@ export function setHttpClient(client: typeof axios): void {
 
 const DEFAULT_MODEL = 'gpt-4o-mini';
 const DEFAULT_TEMPERATURE = 0.7;
+const DEFAULT_GROQ_MODEL = 'openai/gpt-oss-120b';
+const DEFAULT_GROQ_TEMPERATURE = 1;
 const HEADLINE_MAX_LENGTH = 80;
 const MAX_FALLBACK_SENTENCES = 6;
 
@@ -26,14 +28,18 @@ export async function summarizeArticle(
   article: Article,
   config: SummarizerConfig = {}
 ): Promise<Summary> {
+  if (config.groqApiKey) {
+    return summarizeWithGroq(article, config);
+  }
+
   if (config.openaiApiKey) {
-    return summarizeWithLLM(article, config);
+    return summarizeWithOpenAI(article, config);
   }
 
   return summarizeFallback(article);
 }
 
-async function summarizeWithLLM(
+async function summarizeWithOpenAI(
   article: Article,
   config: SummarizerConfig
 ): Promise<Summary> {
@@ -75,6 +81,57 @@ async function summarizeWithLLM(
     parsed = JSON.parse(content);
   } catch {
     throw new Error('Failed to parse OpenAI response as JSON');
+  }
+
+  return {
+    headline: enforceHeadlineLength(parsed.headline || article.title),
+    intro: parsed.intro || '',
+    body: parsed.body || '',
+    sourceUrl: article.url,
+  };
+}
+
+async function summarizeWithGroq(
+  article: Article,
+  config: SummarizerConfig
+): Promise<Summary> {
+  const model = config.groqModel || DEFAULT_GROQ_MODEL;
+  const temperature = config.groqTemperature ?? DEFAULT_GROQ_TEMPERATURE;
+
+  const prompt = buildPrompt(article);
+
+  const response = await httpClient.post<OpenAIChatResponse>(
+    'https://api.groq.com/openai/v1/chat/completions',
+    {
+      model,
+      temperature,
+      messages: [
+        {
+          role: 'system',
+          content:
+            'You are a journalist writing concise, engaging newsletters about AI. Always respond with valid JSON matching the requested schema.',
+        },
+        {
+          role: 'user',
+          content: prompt,
+        },
+      ],
+    },
+    {
+      headers: {
+        Authorization: `Bearer ${config.groqApiKey}`,
+        'Content-Type': 'application/json',
+      },
+    }
+  );
+
+  const content = response.data.choices?.[0]?.message?.content || '';
+  let parsed: { headline: string; intro: string; body: string };
+
+  try {
+    parsed = JSON.parse(content);
+  } catch {
+    throw new Error('Failed to parse Groq response as JSON');
   }
 
   return {

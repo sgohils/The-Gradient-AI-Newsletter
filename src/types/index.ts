@@ -41,4 +41,7 @@ export interface SummarizerConfig {
   openaiApiKey?: string;
   openaiModel?: string;
   openaiTemperature?: number;
+  groqApiKey?: string;
+  groqModel?: string;
+  groqTemperature?: number;
 }

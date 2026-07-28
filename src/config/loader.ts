@@ -9,6 +9,9 @@ export interface Config {
   openaiApiKey?: string;
   openaiModel?: string;
   openaiTemperature?: number;
+  groqApiKey?: string;
+  groqModel?: string;
+  groqTemperature?: number;
   outputDir?: string;
   sources: Source[];
   maxArticles: number;
@@ -18,6 +21,9 @@ const DEFAULT_CONFIG: Omit<Config, 'sources'> = {
   openaiApiKey: process.env.OPENAI_API_KEY,
   openaiModel: 'gpt-4o-mini',
   openaiTemperature: 0.7,
+  groqApiKey: process.env.GROQ_API_KEY,
+  groqModel: 'openai/gpt-oss-120b',
+  groqTemperature: 1,
   outputDir: process.env.OUTPUT_DIR || 'posts',
   maxArticles: 5,
 };
