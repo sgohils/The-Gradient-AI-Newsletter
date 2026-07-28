@@ -1,0 +1,82 @@
+name: Test Newsletter Email
+
+on:
+  workflow_dispatch:
+    inputs:
+      to:
+        description: 'Recipient email'
+        required: true
+        default: 'jingkoole@gmail.com'
+      date:
+        description: 'Issue date to send (YYYY-MM-DD)'
+        required: true
+        default: '2026-07-28'
+
+jobs:
+  send-test-email:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Send test email
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          MAILER_FROM_EMAIL: newsletter@gradientnews.app
+          MAILER_FROM_NAME: The Gradient
+          NEWSLETTER_BASE_URL: https://gradientnews.app
+        run: |
+          node -e "
+            const fs = require('fs');
+            const path = require('path');
+            const { loadConfig } = require('./dist/config');
+            const { buildNewsletterHtml, buildNewsletterText, sendEmail } = require('./dist/mailer');
+            const { getActiveSubscribers } = require('./dist/subscribers');
+            const { getIssueByDate } = require('./web/lib/posts');
+
+            const date = '${{ inputs.date }}';
+            const to = '${{ inputs.to }}';
+
+            const issue = getIssueByDate(date);
+            if (!issue) {
+              console.error('Issue not found for date:', date);
+              process.exit(1);
+            }
+
+            const config = loadConfig();
+            if (!config.mailer.resendApiKey) {
+              console.error('RESEND_API_KEY is not set');
+              process.exit(1);
+            }
+
+            const html = buildNewsletterHtml(issue);
+            const text = buildNewsletterText(issue);
+            const baseUrl = process.env.NEWSLETTER_BASE_URL || 'https://gradientnews.app';
+            const unsubscribeUrl = (email, token) =>
+              \`\${baseUrl}/api/unsubscribe?email=\${encodeURIComponent(email)}&token=\${encodeURIComponent(token)}\`;
+
+            const personalizedHtml = html.replace(/\{\{unsubscribe_url\}\}/g, unsubscribeUrl(to, 'test-token'));
+            const personalizedText = text.replace(/\{\{unsubscribe_url\}\}/g, unsubscribeUrl(to, 'test-token'));
+
+            sendEmail({
+              to: [to],
+              subject: issue.title,
+              html: personalizedHtml,
+              text: personalizedText,
+            }).then(() => {
+              console.log('Email sent to', to);
+            }).catch((err) => {
+              console.error('Failed to send email:', err);
+              process.exit(1);
+            });
+          "
