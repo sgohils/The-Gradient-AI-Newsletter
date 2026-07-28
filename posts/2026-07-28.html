@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Gradient — 2026-07-28</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      line-height: 1.6;
+      color: #1a1a1a;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      background: #fefefe;
+    }
+    header {
+      border-bottom: 2px solid #1a1a1a;
+      padding-bottom: 1rem;
+      margin-bottom: 2rem;
+    }
+    h1 {
+      font-size: 1.75rem;
+      line-height: 1.2;
+      margin: 0 0 0.5rem 0;
+    }
+    .date {
+      color: #666;
+      font-size: 0.9rem;
+    }
+    .intro {
+      font-size: 1.1rem;
+      color: #333;
+      margin-bottom: 2rem;
+    }
+    .story {
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid #e5e5e5;
+    }
+    .story:last-child {
+      border-bottom: none;
+    }
+    .story h2 {
+      font-size: 1.25rem;
+      margin: 0 0 0.5rem 0;
+    }
+    .story p {
+      margin: 0 0 0.5rem 0;
+    }
+    .story a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    .story a:hover {
+      text-decoration: underline;
+    }
+    .meta {
+      font-size: 0.85rem;
+      color: #666;
+      margin-top: 0.5rem;
+    }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 1px solid #e5e5e5;
+      font-size: 0.85rem;
+      color: #888;
+    }
+    
+  </style>
+</head>
+<body>
+  <header>
+    <h1>The Gradient — 2026-07-28</h1>
+    <div class="date">2026-07-28</div>
+  </header>
+  
+  <p class="intro">Google just rolled out a suite of upgrades to Gemini&#039;s Managed Agents, giving developers faster execution, richer tooling, and tighter production guarantees.</p>
+  <main>
+    <h2>Gemini API Managed Agents: 3.6 Flash, hooks, and more</h2>
+<br>
+<p><strong>What happened:</strong></p>
+<p>Google released version 3.6 of the Gemini API’s Managed Agents, introducing a new &quot;Flash&quot; mode for ultra‑low latency calls, extensible &quot;hooks&quot; for custom pre‑ and post‑processing, and enhanced error‑handling and observability features.</p>
+<br>
+<p><strong>Why it matters:</strong></p>
+<p>These upgrades lower the barrier to building production‑grade AI agents, letting developers iterate faster while meeting real‑world reliability and compliance standards. The Flash mode cuts response times to under 100 ms, crucial for interactive apps, while hooks let teams embed domain‑specific logic without rewriting core agent code.</p>
+<br>
+<p><strong>Key stats:</strong></p>
+<ul>
+<li>Flash mode reduces average latency by ~40% versus standard Managed Agents.</li>
+<li>Hook framework supports up to 10 concurrent custom functions per request.</li>
+<li>New monitoring dashboards report 99.9% uptime SLA for agents in production.</li>
+</ul>
+<br>
+<p><strong>Source:</strong> https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api-3-6-flash-hooks/</p>
+<br>
+<p><a href="https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api-3-6-flash-hooks/">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>Transferable Latency Prediction for Fast LLM Screening on Heterogeneous Edge Devices</h2>
+<br>
+<p><strong>What happened:</strong> A team introduced a latency prediction framework that models inference time for LLMs by accounting for model architecture, prompt dynamics, backend runtimes, hardware utilization, DVFS, and thermal conditions.</p>
+<p><strong>Why it matters:</strong> Accurate latency estimates enable developers to screen and select the most suitable LLM for a given edge device, ensuring responsive AI services without costly trial‑and‑error deployments.</p>
+<p><strong>Key stats:</strong> The paper demonstrates prediction accuracy improvements of up to 30% over prior baselines across heterogeneous devices, cutting screening time from minutes to seconds.</p>
+<p><strong>Source:</strong> https://arxiv.org/abs/2607.21602</p>
+<br>
+<p><a href="https://arxiv.org/abs/2607.21602">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>AgentKVShift: Efficient KV Cache Reuse for Agentic Memory Systems</h2>
+<br>
+<p><strong>What happened:</strong> Researchers introduced AgentKVShift, a training‑free method that reuses key‑value (KV) cache states across retrievals in agentic memory systems, avoiding the costly full re‑encoding of each memory unit.</p>
+<br>
+<p><strong>Why it matters:</strong> Memory‑augmented agents often need to process hundreds of interactions, and each retrieval currently forces a full KV recompute, inflating inference time and GPU memory use. By reusing KV caches, AgentKVShift dramatically trims prefill latency, enabling more responsive and scalable AI assistants.</p>
+<br>
+<p><strong>Key stats:</strong> Preliminary experiments report up to a 2× speed‑up in prefill latency and roughly a 30% reduction in memory footprint compared to conventional KV recomputation.</p>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2607.21604</p>
+<br>
+<p><a href="https://arxiv.org/abs/2607.21604">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>TILT: Improving Compositional Generation in Diffusion Models with a Model-Intrinsic Reward</h2>
+<br>
+<p><strong>What happened:</strong> Researchers introduced TILT, a training‑free, test‑time reward‑alignment method that reshapes the sampling trajectory of diffusion models to better honor multi‑concept prompts.</p>
+<br>
+<p><strong>Why it matters:</strong> Current diffusion generators often blur or drop elements when faced with compositional instructions, limiting their usefulness for designers and creators. TILT directly tackles these failures, delivering images that more faithfully reflect every component of a prompt.</p>
+<br>
+<p><strong>Key stats:</strong> In benchmark evaluations, TILT improved compositional fidelity scores by up to 20% and reduced overlap errors between joint‑concept and single‑concept distributions, all while incurring only minimal computational overhead.</p>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2607.21606</p>
+<br>
+<p><a href="https://arxiv.org/abs/2607.21606">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>The Hard Decision Layer: Evidence for Committed Inference in Transformers</h2>
+<br>
+<p><strong>What happened:</strong> Researchers identified the Hard Decision Layer (HDL), a natural point in transformer inference where answer option rankings stabilize abruptly.</p>
+<p><strong>Why it matters:</strong> The HDL shows models commit to predictions without any learned routing policy, shedding light on interpretability and opening doors for more efficient inference strategies.</p>
+<p><strong>Key stats:</strong> The phenomenon appears consistently across four models (Qwen, Llama, Granite, Mistral) and four benchmark datasets, confirming HDL emergence as an architectural property.</p>
+<p><strong>Source:</strong> https://arxiv.org/abs/2607.21613</p>
+<br>
+<p><a href="https://arxiv.org/abs/2607.21613">Read more</a></p>
+<br>
+<hr>
+<br>
+  </main>
+  <footer>
+    <p>Tags: Company Blog, Research</p>
+  </footer>
+</body>
+</html>

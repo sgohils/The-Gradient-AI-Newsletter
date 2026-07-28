@@ -15,7 +15,7 @@ export interface FetchOptions {
 
 export async function fetchArticles(options: FetchOptions = {}): Promise<Article[]> {
   const { sources, onError } = options;
-  const enabledSources = getEnabledSources(sources ?? DEFAULT_SOURCES);
+  const enabledSources = getEnabledSources(sources && sources.length ? sources : DEFAULT_SOURCES);
 
   const results = await Promise.allSettled(
     enabledSources.map(async (source) => fetchSource(source, onError))
