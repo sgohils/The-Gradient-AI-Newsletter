@@ -154,7 +154,7 @@ export default async function ArticlePage({ params }: Props) {
             <div className="h-px flex-1 bg-gradient-to-r from-accent-blue/40 via-accent-cyan/40 to-transparent dark:from-accent-cyan/30 dark:via-accent-emerald/30" />
           </div>
           <div className="space-y-6">
-            {issue.articles.map((article: { id: string; title: string; description?: string; url: string; sourceName: string; category?: string; publishedAt: string }, index: number) => (
+            {issue.articles.map((article, index) => (
               <article
                 key={article.id}
                 className="group relative overflow-hidden rounded-2xl border border-gray-200/60 bg-white/70 p-6 backdrop-blur-sm
