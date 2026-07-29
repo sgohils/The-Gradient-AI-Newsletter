@@ -14,7 +14,7 @@ export async function sendEmail({ to, subject, html, text }: SendEmailOptions): 
     throw new Error('RESEND_API_KEY is not set');
   }
 
-  const from = process.env.MAILER_FROM_EMAIL || 'The Gradient <newsletter@thegradient.ai>';
+  const from = process.env.MAILER_FROM_EMAIL || 'The Gradient <newsletter@gradientnews.app>';
 
   await axios.post(
     'https://api.resend.com/emails',

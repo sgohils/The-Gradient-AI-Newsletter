@@ -29,7 +29,7 @@ const DEFAULT_CONFIG: Omit<Config, 'sources'> = {
   maxArticles: 5,
   mailer: {
     resendApiKey: process.env.RESEND_API_KEY,
-    fromEmail: process.env.MAILER_FROM_EMAIL || 'The Gradient <newsletter@thegradient.ai>',
+    fromEmail: process.env.MAILER_FROM_EMAIL || 'The Gradient <newsletter@gradientnews.app>',
     fromName: process.env.MAILER_FROM_NAME || 'The Gradient',
   },
 };

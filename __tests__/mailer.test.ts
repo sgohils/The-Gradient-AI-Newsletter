@@ -39,7 +39,7 @@ describe('mailer', () => {
   beforeEach(() => {
     vi.clearAllMocks();
     process.env.RESEND_API_KEY = 'test-api-key';
-    process.env.MAILER_FROM_EMAIL = 'The Gradient <newsletter@thegradient.ai>';
+    process.env.MAILER_FROM_EMAIL = 'The Gradient <newsletter@gradientnews.app>';
   });
 
   describe('sendEmail', () => {
@@ -56,7 +56,7 @@ describe('mailer', () => {
       expect(mockPost).toHaveBeenCalledWith(
         'https://api.resend.com/emails',
         expect.objectContaining({
-          from: 'The Gradient <newsletter@thegradient.ai>',
+          from: 'The Gradient <newsletter@gradientnews.app>',
           to: ['user@example.com'],
           subject: 'Test Subject',
         }),

@@ -175,7 +175,7 @@ export async function runPipeline(cliOptions: CliOptions): Promise<OrchestratorR
   if (subscribers.length > 0 && config.mailer.resendApiKey) {
     const htmlContent = buildNewsletterHtml(issue);
     const textContent = buildNewsletterText(issue);
-    const baseUrl = process.env.NEWSLETTER_BASE_URL || 'https://thegradient.ai';
+    const baseUrl = process.env.NEWSLETTER_BASE_URL || 'https://gradientnews.app';
     const unsubscribeUrl = (email: string, token: string) =>
       `${baseUrl}/api/unsubscribe?email=${encodeURIComponent(email)}&token=${encodeURIComponent(token)}`;
 
