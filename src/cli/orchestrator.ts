@@ -7,7 +7,7 @@ import { curate } from '../curator';
 import { summarizeArticle } from '../summarizer';
 import { buildMarkdown, buildHtml, publish } from '../publisher';
 import { buildNewsletterHtml, buildNewsletterText, sendEmail } from '../mailer';
-import { getActiveSubscribers } from '../subscribers';
+import { getResendSubscribers } from '../mailer';
 import { Article, NewsletterIssue, Source } from '../types';
 import type { Config } from '../config';
 
@@ -171,7 +171,7 @@ export async function runPipeline(cliOptions: CliOptions): Promise<OrchestratorR
   }
 
   console.log('[6/6] Sending newsletter to subscribers...');
-  const subscribers = getActiveSubscribers();
+  const subscribers = await getResendSubscribers();
   if (subscribers.length > 0 && config.mailer.resendApiKey) {
     const htmlContent = buildNewsletterHtml(issue);
     const textContent = buildNewsletterText(issue);

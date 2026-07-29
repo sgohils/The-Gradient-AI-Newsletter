@@ -1,5 +1,5 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest';
-import { sendEmail, buildNewsletterHtml, buildNewsletterText } from '../src/mailer';
+import { sendEmail, buildNewsletterHtml, buildNewsletterText, addResendSubscriber, removeResendSubscriber, getResendSubscribers } from '../src/mailer';
 import axios from 'axios';
 import { NewsletterIssue, Article } from '../src/types';
 
@@ -7,7 +7,11 @@ vi.mock('axios');
 const mockedAxios = vi.mocked(axios, true);
 
 const mockPost = vi.fn();
+const mockGet = vi.fn();
+const mockDelete = vi.fn();
 mockedAxios.post = mockPost;
+mockedAxios.get = mockGet;
+mockedAxios.delete = mockDelete;
 
 const createBaseArticle = (overrides: Partial<Article> = {}): Article => ({
   id: '1',
@@ -110,6 +114,102 @@ describe('mailer', () => {
       expect(text).toContain('## Test AI Article');
       expect(text).toContain('https://example.com/ai-article');
       expect(text).toContain('{{unsubscribe_url}}');
+    });
+  });
+
+  describe('addResendSubscriber', () => {
+    it('should add a subscriber via Resend API', async () => {
+      mockPost.mockResolvedValue({ data: { id: 'contact-123' } });
+
+      const subscriber = await addResendSubscriber('new@example.com');
+
+      expect(mockPost).toHaveBeenCalledWith(
+        'https://api.resend.com/contacts',
+        expect.objectContaining({
+          email: 'new@example.com',
+          firstName: 'new',
+        }),
+        expect.any(Object)
+      );
+      expect(subscriber.email).toBe('new@example.com');
+      expect(subscriber.token).toBeDefined();
+    });
+
+    it('should throw error if RESEND_API_KEY is missing', async () => {
+      delete process.env.RESEND_API_KEY;
+      await expect(addResendSubscriber('test@example.com')).rejects.toThrow('RESEND_API_KEY is not set');
+    });
+  });
+
+  describe('removeResendSubscriber', () => {
+    it('should remove a subscriber via Resend API', async () => {
+      mockGet.mockResolvedValue({ data: { data: [{ email: 'test@example.com' }] } });
+      mockDelete.mockResolvedValue({});
+
+      const result = await removeResendSubscriber('test@example.com');
+
+      expect(mockGet).toHaveBeenCalledWith(
+        'https://api.resend.com/contacts',
+        expect.objectContaining({
+          headers: expect.objectContaining({
+            Authorization: 'Bearer test-api-key',
+          }),
+          params: { email: 'test@example.com' },
+        })
+      );
+      expect(mockDelete).toHaveBeenCalledWith(
+        expect.stringContaining('contacts/'),
+        expect.objectContaining({
+          headers: expect.objectContaining({
+            Authorization: 'Bearer test-api-key',
+          }),
+        })
+      );
+      expect(result).toBe(true);
+    });
+
+    it('should return false if removal fails', async () => {
+      mockGet.mockRejectedValue(new Error('Not found'));
+
+      const result = await removeResendSubscriber('missing@example.com');
+
+      expect(result).toBe(false);
+    });
+  });
+
+  describe('getResendSubscribers', () => {
+    it('should fetch subscribers from Resend API', async () => {
+      mockGet.mockResolvedValue({
+        data: {
+          data: [
+            { email: 'user1@example.com', createdAt: '2024-01-01T00:00:00Z' },
+            { email: 'user2@example.com', createdAt: '2024-01-02T00:00:00Z' },
+          ],
+        },
+      });
+
+      const subscribers = await getResendSubscribers();
+
+      expect(mockGet).toHaveBeenCalledWith('https://api.resend.com/contacts', {
+        headers: {
+          Authorization: 'Bearer test-api-key',
+        },
+      });
+      expect(subscribers).toHaveLength(2);
+      expect(subscribers[0].email).toBe('user1@example.com');
+      expect(subscribers[1].email).toBe('user2@example.com');
+    });
+
+    it('should return empty array if RESEND_API_KEY is missing', async () => {
+      delete process.env.RESEND_API_KEY;
+      const subscribers = await getResendSubscribers();
+      expect(subscribers).toEqual([]);
+    });
+
+    it('should return empty array on API error', async () => {
+      mockGet.mockRejectedValue(new Error('API error'));
+      const subscribers = await getResendSubscribers();
+      expect(subscribers).toEqual([]);
     });
   });
 });

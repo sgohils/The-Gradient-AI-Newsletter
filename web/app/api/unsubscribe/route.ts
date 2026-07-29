@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { unsubscribeByToken, findSubscriberByToken } from '@/lib/subscribers';
+import { removeResendSubscriber } from '@/lib/mailer';
 
 export const dynamic = 'force-dynamic';
 
@@ -7,18 +7,12 @@ export async function GET(request: Request) {
   try {
     const { searchParams } = new URL(request.url);
     const email = searchParams.get('email');
-    const token = searchParams.get('token');
 
-    if (!email || !token) {
-      return NextResponse.json({ error: 'Email and token are required' }, { status: 400 });
+    if (!email) {
+      return NextResponse.json({ error: 'Email is required' }, { status: 400 });
     }
 
-    const subscriber = findSubscriberByToken(token);
-    if (!subscriber || subscriber.email !== email) {
-      return NextResponse.json({ error: 'Invalid or expired unsubscribe link' }, { status: 400 });
-    }
-
-    const success = unsubscribeByToken(token);
+    const success = await removeResendSubscriber(email);
     if (success) {
       return NextResponse.json({ success: true, message: 'Unsubscribed successfully' });
     }

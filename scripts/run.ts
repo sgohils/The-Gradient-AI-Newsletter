@@ -1,2 +1,5 @@
 import { main } from '../src/cli/orchestrator';
-main();
+main().catch((error) => {
+  console.error(error);
+  process.exitCode = 1;
+});

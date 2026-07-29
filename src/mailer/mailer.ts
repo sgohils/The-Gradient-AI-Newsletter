@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { NewsletterIssue } from '../types';
+import { NewsletterIssue, Subscriber } from '../types';
 
 export interface SendEmailOptions {
   to: string[];
@@ -32,6 +32,88 @@ export async function sendEmail({ to, subject, html, text }: SendEmailOptions): 
       },
     }
   );
+}
+
+export async function addResendSubscriber(email: string): Promise<Subscriber> {
+  const apiKey = process.env.RESEND_API_KEY;
+  if (!apiKey) {
+    throw new Error('RESEND_API_KEY is not set');
+  }
+
+  await axios.post(
+    'https://api.resend.com/contacts',
+    {
+      email,
+      firstName: email.split('@')[0],
+    },
+    {
+      headers: {
+        Authorization: `Bearer ${apiKey}`,
+        'Content-Type': 'application/json',
+      },
+    }
+  );
+
+  return {
+    email,
+    token: generateToken(),
+    subscribedAt: new Date().toISOString(),
+  };
+}
+
+export async function removeResendSubscriber(email: string): Promise<boolean> {
+  const apiKey = process.env.RESEND_API_KEY;
+  if (!apiKey) {
+    throw new Error('RESEND_API_KEY is not set');
+  }
+
+  try {
+    await axios.get('https://api.resend.com/contacts', {
+      headers: {
+        Authorization: `Bearer ${apiKey}`,
+      },
+      params: {
+        email,
+      },
+    });
+
+    await axios.delete(`https://api.resend.com/contacts/${encodeURIComponent(email)}`, {
+      headers: {
+        Authorization: `Bearer ${apiKey}`,
+      },
+    });
+
+    return true;
+  } catch (error) {
+    console.error('Failed to remove Resend subscriber:', error);
+    return false;
+  }
+}
+
+export async function getResendSubscribers(): Promise<Subscriber[]> {
+  const apiKey = process.env.RESEND_API_KEY;
+  if (!apiKey) {
+    return [];
+  }
+
+  try {
+    const response = await axios.get('https://api.resend.com/contacts', {
+      headers: {
+        Authorization: `Bearer ${apiKey}`,
+      },
+    });
+
+    const contacts = response.data.data || [];
+    return contacts.map((contact: { email: string; createdAt: string }) => ({
+      email: contact.email,
+      token: generateToken(),
+      subscribedAt: contact.createdAt,
+      unsubscribedAt: undefined,
+    }));
+  } catch (error) {
+    console.error('Failed to fetch Resend subscribers:', error);
+    return [];
+  }
 }
 
 export function buildNewsletterHtml(issue: NewsletterIssue): string {
@@ -113,4 +195,8 @@ function escapeHtml(text: string): string {
     .replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;')
     .replace(/'/g, '&#039;');
+}
+
+function generateToken(): string {
+  return Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
 }
