@@ -10,6 +10,22 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "The Gradient",
   description: "AI newsletter with daily updates",
+  icons: {
+    icon: "/images/gradient icon.png",
+    shortcut: "/images/gradient icon.png",
+    apple: "/images/gradient icon.png",
+  },
+  openGraph: {
+    title: "The Gradient",
+    description: "AI newsletter with daily updates",
+    images: ["/images/gradient horizontal logo.png"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "The Gradient",
+    description: "AI newsletter with daily updates",
+    images: ["/images/gradient horizontal logo.png"],
+  },
 };
 
 export default function RootLayout({
@@ -22,7 +38,7 @@ export default function RootLayout({
       <body className={`${inter.className} bg-background text-foreground antialiased transition-colors duration-300`}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
         >

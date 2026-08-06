@@ -15,28 +15,66 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        bento: {
-          surface: "var(--bento-surface)",
-          "surface-light": "var(--bento-surface-light)",
-          "surface-dark": "var(--bento-surface-dark)",
-          "surface-darkest": "var(--bento-surface-darkest)",
-        },
-        glass: {
-          border: "var(--glass-border)",
-          highlight: "var(--glass-highlight)",
-        },
+        "bg-primary": "#050816",
+        "bg-secondary": "#0B1220",
+        "bg-card": "#111827",
+        "bg-section": "#0F172A",
+        border: "rgba(255,255,255,0.08)",
         accent: {
-          blue: "#3b82f6",
-          cyan: "#22d3ee",
-          green: "#10b981",
-          emerald: "#34d399",
+          blue: "#4F7CFF",
+          indigo: "#5B4DFF",
+          cyan: "#33D6FF",
         },
-        gradient: {
-          blue: "linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%)",
-          cyan: "linear-gradient(135deg, #22d3ee 0%, #3b82f6 100%)",
-          green: "linear-gradient(135deg, #10b981 0%, #22d3ee 100%)",
-          emerald: "linear-gradient(135deg, #34d399 0%, #10b981 100%)",
+        text: {
+          primary: "#FFFFFF",
+          secondary: "#CBD5E1",
+          muted: "#94A3B8",
         },
+      },
+      borderRadius: {
+        DEFAULT: "16px",
+        sm: "12px",
+        lg: "20px",
+        xl: "24px",
+      },
+      spacing: {
+        "18": "4.5rem",
+        "88": "22rem",
+        "128": "32rem",
+      },
+      animation: {
+        "gradient-shift": "gradient-shift 8s ease infinite",
+        "float": "float 6s ease-in-out infinite",
+        "float-delayed": "float 6s ease-in-out 2s infinite",
+        "pulse-soft": "pulse-soft 3s ease-in-out infinite",
+        "shimmer": "shimmer 2s ease-in-out infinite",
+      },
+      keyframes: {
+        "gradient-shift": {
+          "0%, 100%": { "background-position": "0% 50%" },
+          "50%": { "background-position": "100% 50%" },
+        },
+        float: {
+          "0%, 100%": { transform: "translateY(0px)" },
+          "50%": { transform: "translateY(-12px)" },
+        },
+        "pulse-soft": {
+          "0%, 100%": { opacity: "1" },
+          "50%": { opacity: "0.7" },
+        },
+        shimmer: {
+          "0%": { backgroundPosition: "-200% 0" },
+          "100%": { backgroundPosition: "200% 0" },
+        },
+      },
+      transitionDuration: {
+        "400": "400ms",
+        "500": "500ms",
+        "600": "600ms",
+      },
+      transitionTimingFunction: {
+        "smooth": "cubic-bezier(0.4, 0, 0.2, 1)",
+        "bounce-smooth": "cubic-bezier(0.34, 1.56, 0.64, 1)",
       },
     },
   },

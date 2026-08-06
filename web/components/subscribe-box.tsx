@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function SubscribeBox() {
   const [email, setEmail] = useState("");
@@ -44,6 +45,19 @@ export default function SubscribeBox() {
       transition={{ duration: 0.6, delay: 0.7 }}
       className="mt-10 w-full max-w-md"
     >
+      <div className="mb-4 flex items-center gap-3">
+        <Image
+          src="/images/gradient icon.png"
+          alt="The Gradient Logo"
+          width={24}
+          height={24}
+          className="rounded"
+        />
+        <p className="text-sm text-gray-400">
+          Get the latest AI news delivered to your inbox every day.
+        </p>
+      </div>
+
       <div className="flex flex-col sm:flex-row gap-3">
         <input
           type="email"
@@ -51,12 +65,12 @@ export default function SubscribeBox() {
           onChange={(e) => setEmail(e.target.value)}
           placeholder="Enter your email"
           required
-          className="flex-1 rounded-full border border-glass-border bg-glass-highlight px-5 py-3 text-sm text-gray-900 placeholder-gray-500 outline-none focus:border-accent-blue focus:ring-2 focus:ring-accent-blue/20 dark:text-white dark:placeholder-gray-400"
+          className="flex-1 rounded-full border border-white/10 bg-white/5 px-5 py-3.5 text-sm text-white placeholder-gray-500 outline-none transition-all duration-300 focus:border-accent-blue/50 focus:ring-2 focus:ring-accent-blue/20 focus:outline-none disabled:opacity-50 dark:text-white"
         />
         <button
           type="submit"
           disabled={status === "loading"}
-          className="rounded-full bg-gradient-to-r from-accent-blue to-accent-cyan px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-accent-blue/25 transition-all duration-300 hover:shadow-xl hover:shadow-accent-blue/40 disabled:opacity-50 dark:shadow-accent-blue/20"
+          className="btn-primary"
         >
           {status === "loading" ? "Subscribing..." : "Subscribe"}
         </button>
@@ -67,16 +81,12 @@ export default function SubscribeBox() {
           initial={{ opacity: 0, y: -8 }}
           animate={{ opacity: 1, y: 0 }}
           className={`mt-3 text-center text-sm ${
-            status === "success" ? "text-green-600 dark:text-green-400" : "text-red-600 dark:text-red-400"
+            status === "success" ? "text-green-400" : "text-red-400"
           }`}
         >
           {message}
         </motion.p>
       )}
-
-      <p className="mt-3 text-center text-xs text-gray-500 dark:text-gray-400">
-        Get the latest AI news delivered to your inbox every day.
-      </p>
     </motion.form>
   );
 }

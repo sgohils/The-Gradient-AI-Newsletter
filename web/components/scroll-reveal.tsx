@@ -14,21 +14,21 @@ interface ScrollRevealProps {
 
 const containerVariants = {
   up: {
-    hidden: { opacity: 0, y: 24 },
+    hidden: { opacity: 0, y: 32 },
     visible: { opacity: 1, y: 0 },
   },
   left: {
-    hidden: { opacity: 0, x: -32 },
+    hidden: { opacity: 0, x: -40 },
     visible: { opacity: 1, x: 0 },
   },
   right: {
-    hidden: { opacity: 0, x: 32 },
+    hidden: { opacity: 0, x: 40 },
     visible: { opacity: 1, x: 0 },
   },
 };
 
 const childVariants = {
-  hidden: { opacity: 0, y: 16 },
+  hidden: { opacity: 0, y: 20 },
   visible: { opacity: 1, y: 0 },
 };
 

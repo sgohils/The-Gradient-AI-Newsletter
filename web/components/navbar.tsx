@@ -3,22 +3,21 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
+import { usePathname } from "next/navigation";
 import ThemeToggle from "@/components/theme-toggle";
 import usePrefersReducedMotion from "@/hooks/use-prefers-reduced-motion";
 
-const navLinkVariants = {
-  hidden: { opacity: 0, y: -8 },
-  visible: (i: number) => ({
-    opacity: 1,
-    y: 0,
-    transition: { delay: i * 0.1, type: "spring", stiffness: 300, damping: 24 },
-  }),
-  exit: { opacity: 0, y: -8, transition: { duration: 0.15 } },
-};
+const navLinks = [
+  { href: "/", label: "Home" },
+  { href: "/archive", label: "Archive" },
+  { href: "/subscribe", label: "Subscribe" },
+];
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
   const prefersReducedMotion = usePrefersReducedMotion();
 
   useEffect(() => {
@@ -30,63 +29,52 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const navLinks = [
-    { href: "/", label: "Home" },
-    { href: "/archive", label: "Archive" },
-    { href: "/subscribe", label: "Subscribe" },
-  ];
-
   const isActive = (href: string) => {
-    if (href === "/") return false;
-    return typeof window !== "undefined" && window.location.pathname.startsWith(href);
+    if (href === "/") return pathname === "/";
+    return pathname.startsWith(href);
   };
 
   return (
     <nav
-      className={`sticky top-0 z-50 w-full border-b backdrop-blur-xl transition-all duration-300 ${
+      className={`sticky top-0 z-50 w-full border-b transition-all duration-500 ${
         scrolled
-          ? "border-bento-surface-dark/30 bg-bento-surface/80 shadow-[0_1px_3px_rgba(0,0,0,0.08)] dark:border-bento-surface-darkest/30 dark:shadow-[0_1px_3px_rgba(0,0,0,0.3)]"
-          : "border-gray-200 bg-white/80 dark:border-gray-800 dark:bg-gray-950/80"
+          ? "border-white/[0.06] bg-bg-primary/80 backdrop-blur-2xl shadow-[0_1px_20px_rgba(0,0,0,0.3)]"
+          : "border-transparent bg-transparent"
       }`}
     >
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link
           href="/"
-          className="shimmer-sweep text-xl font-bold tracking-tight text-gray-900 dark:text-white"
+          className="flex items-center gap-2.5 text-xl font-bold tracking-tight text-white transition-opacity duration-300 hover:opacity-90"
         >
+          <Image
+            src="/images/gradient horizontal logo.png"
+            alt="The Gradient Logo"
+            width={40}
+            height={40}
+            className="rounded-lg"
+          />
           The Gradient
         </Link>
 
         <div className="hidden items-center md:flex md:gap-1">
           {navLinks.map(({ href, label }) => (
-            <motion.div
+            <Link
               key={href}
-              custom={0}
-              variants={prefersReducedMotion ? {} : navLinkVariants}
-              initial={prefersReducedMotion ? undefined : "hidden"}
-              animate={prefersReducedMotion ? undefined : "visible"}
-              exit={prefersReducedMotion ? undefined : "exit"}
+              href={href}
+              className="relative rounded-lg px-4 py-2 text-sm font-medium text-gray-400 transition-colors duration-200 hover:text-white"
             >
-              <Link
-                href={href}
-                className={`relative rounded-lg px-3 py-2 text-sm font-medium transition-colors duration-200 ${
-                  isActive(href)
-                    ? "text-accent-blue dark:text-accent-cyan"
-                    : "text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white"
-                }`}
-              >
-                {label}
-                {isActive(href) && (
-                  <motion.span
-                    layoutId="nav-underline"
-                    className="absolute -bottom-0.5 left-2 right-2 h-0.5 rounded-full bg-gradient-to-r from-accent-blue to-accent-cyan dark:from-accent-cyan dark:to-accent-emerald"
-                    transition={{ type: "spring", stiffness: 300, damping: 30 }}
-                  />
-                )}
-              </Link>
-            </motion.div>
+              {label}
+              {isActive(href) && (
+                <motion.span
+                  layoutId="nav-indicator"
+                  className="absolute -bottom-0.5 left-3 right-3 h-0.5 rounded-full bg-gradient-to-r from-accent-blue to-accent-cyan"
+                  transition={{ type: "spring", stiffness: 400, damping: 30 }}
+                />
+              )}
+            </Link>
           ))}
-          <div className="ml-1">
+          <div className="ml-2">
             <ThemeToggle />
           </div>
         </div>
@@ -95,7 +83,7 @@ export default function Navbar() {
           <ThemeToggle />
           <motion.button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="flex h-9 w-9 items-center justify-center rounded-lg text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-800"
+            className="flex h-9 w-9 items-center justify-center rounded-lg text-gray-400 transition-colors hover:bg-white/5 hover:text-white"
             {...(prefersReducedMotion ? {} : { whileHover: { scale: 1.05 }, whileTap: { scale: 0.95 } })}
             aria-label="Toggle menu"
             aria-expanded={mobileMenuOpen}
@@ -152,27 +140,29 @@ export default function Navbar() {
             transition={prefersReducedMotion ? {} : { duration: 0.25, ease: "easeInOut" }}
             className={`overflow-hidden md:hidden ${
               scrolled
-                ? "border-t border-bento-surface-dark/30 dark:border-bento-surface-darkest/30"
-                : "border-t border-gray-200 dark:border-gray-800"
+                ? "border-t border-white/[0.06] bg-bg-primary/95 backdrop-blur-2xl"
+                : "border-t border-white/[0.06] bg-bg-primary/95 backdrop-blur-2xl"
             }`}
           >
-            <div className="mx-auto max-w-7xl px-4 py-3 sm:px-6">
+            <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6">
               {navLinks.map(({ href, label }, i) => (
                 <motion.div
                   key={href}
-                  custom={i}
-                  variants={prefersReducedMotion ? {} : navLinkVariants}
-                  initial={prefersReducedMotion ? undefined : "hidden"}
-                  animate={prefersReducedMotion ? undefined : "visible"}
-                  exit={prefersReducedMotion ? undefined : "exit"}
+                  initial={prefersReducedMotion ? undefined : { opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={prefersReducedMotion ? {} : { delay: i * 0.08, duration: 0.3 }}
                 >
-                   <Link
-                     href={href}
-                     onClick={() => setMobileMenuOpen(false)}
-                     className="block rounded-lg px-3 py-2.5 text-sm font-medium text-gray-600 transition-colors hover:bg-gray-50 hover:text-accent-blue dark:text-gray-300 dark:hover:bg-gray-900 dark:hover:text-accent-cyan"
-                   >
-                     {label}
-                   </Link>
+                  <Link
+                    href={href}
+                    onClick={() => setMobileMenuOpen(false)}
+                    className={`block rounded-lg px-4 py-3 text-sm font-medium transition-colors duration-200 ${
+                      isActive(href)
+                        ? "text-accent-blue dark:text-accent-cyan"
+                        : "text-gray-400 hover:text-white"
+                    }`}
+                  >
+                    {label}
+                  </Link>
                 </motion.div>
               ))}
             </div>

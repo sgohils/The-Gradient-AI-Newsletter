@@ -62,7 +62,7 @@ export default function StatsBar({ issues }: StatsBarProps) {
   ];
 
   return (
-    <section ref={ref} className="relative z-10 -mt-20 w-full px-4 sm:px-6">
+    <section ref={ref} className="relative z-10 -mt-24 w-full px-4 sm:px-6">
       <motion.div
         initial={prefersReducedMotion ? false : "hidden"}
         animate={prefersReducedMotion ? false : isInView ? "visible" : "hidden"}
@@ -95,12 +95,12 @@ export default function StatsBar({ issues }: StatsBarProps) {
                     },
                   }
             }
-            className="flex min-w-[160px] flex-1 flex-col items-center rounded-2xl border border-glass-border bg-glass-highlight px-6 py-5 backdrop-blur-xl dark:bg-bento-surface/80 md:min-w-[200px]"
+            className="flex min-w-[160px] flex-1 flex-col items-center rounded-2xl border border-white/[0.06] bg-bg-card/60 backdrop-blur-sm px-6 py-6 md:min-w-[200px]"
           >
-            <span className="text-3xl font-bold bg-gradient-to-r from-accent-blue to-accent-cyan bg-clip-text text-transparent md:text-4xl dark:from-accent-cyan dark:to-accent-emerald">
+            <span className="text-3xl font-bold bg-gradient-to-r from-accent-blue to-accent-cyan bg-clip-text text-transparent md:text-4xl">
               <CountUp end={stat.value} suffix={stat.suffix} />
             </span>
-            <span className="mt-1 text-xs font-medium uppercase tracking-wider text-gray-500 dark:text-gray-400">
+            <span className="mt-1 text-xs font-medium uppercase tracking-wider text-gray-500">
               {stat.label}
             </span>
           </motion.div>
