@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Gradient — 2026-08-12</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      line-height: 1.6;
+      color: #1a1a1a;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      background: #fefefe;
+    }
+    header {
+      border-bottom: 2px solid #1a1a1a;
+      padding-bottom: 1rem;
+      margin-bottom: 2rem;
+    }
+    h1 {
+      font-size: 1.75rem;
+      line-height: 1.2;
+      margin: 0 0 0.5rem 0;
+    }
+    .date {
+      color: #666;
+      font-size: 0.9rem;
+    }
+    .intro {
+      font-size: 1.1rem;
+      color: #333;
+      margin-bottom: 2rem;
+    }
+    .story {
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid #e5e5e5;
+    }
+    .story:last-child {
+      border-bottom: none;
+    }
+    .story h2 {
+      font-size: 1.25rem;
+      margin: 0 0 0.5rem 0;
+    }
+    .story p {
+      margin: 0 0 0.5rem 0;
+    }
+    .story a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    .story a:hover {
+      text-decoration: underline;
+    }
+    .meta {
+      font-size: 0.85rem;
+      color: #666;
+      margin-top: 0.5rem;
+    }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 1px solid #e5e5e5;
+      font-size: 0.85rem;
+      color: #888;
+    }
+    
+  </style>
+</head>
+<body>
+  <header>
+    <h1>The Gradient — 2026-08-12</h1>
+    <div class="date">2026-08-12</div>
+  </header>
+  
+  <p class="intro">A new arXiv study puts large‑language‑model negotiators to the test in a classic buyer‑seller bargaining scenario.</p>
+  <main>
+    <h2>When LLM Agents Negotiate: Private Information and Dynamic Bargaining in Supply Chains</h2>
+<br>
+<p><strong>What happened:</strong> Researchers simulated a supply‑chain contract negotiation where a buyer with private demand information bargains with an uninformed seller. Nine LLM agents from OpenAI, Google, and Alibaba were benchmarked against the analytically derived Perfect Bayesian Equilibrium (PBE).</p>
+<p><strong>Why it matters:</strong> As firms hand over procurement to autonomous agents, understanding whether these bots can capture value, split surplus predictably, and avoid loss‑making deals is crucial for real‑world adoption.</p>
+<p><strong>Key stats:</strong> • 9 LLMs evaluated across three major providers. • All models were tested on thousands of contract draws. • Performance ranged from near‑PBE outcomes (within 5% of optimal surplus) to contracts that eroded up to 20% of potential value.</p>
+<p><strong>Source:</strong> https://arxiv.org/abs/2608.07538</p>
+<br>
+<p><a href="https://arxiv.org/abs/2608.07538">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>TeXFix-Bench: An Empirically Grounded Multi-Format Benchmark for LLM-Based Document Source Repair</h2>
+<br>
+<p><strong>What happened:</strong> Researchers introduced TeXFix-Bench, a multi‑format benchmark built from a mined taxonomy of real‑world document‑source faults. The suite injects realistic errors—missing delimiters, mismatched environments, broken imports, and package conflicts—into LaTeX, Typst, and Markdown files and measures how effectively LLMs can repair the full source.</p>
+<br>
+<p><strong>Why it matters:</strong> Scientific and technical publishing relies on clean markup; even minor source errors can halt compilation and delay dissemination. An empirically grounded benchmark lets the community track progress, compare models, and target the most common failure modes, moving LLM‑assisted authoring from hype to reliable tooling.</p>
+<br>
+<p><strong>Key stats:</strong></p>
+<ul>
+<li>5,200 source documents across three formats (LaTeX, Typst, Markdown)</li>
+<li>34 fault categories derived from mining over 12,000 real‑world repository commits</li>
+<li>Baseline LLMs (GPT‑4, Claude‑2, Gemini‑1.5) achieve 62‑71% repair success, with a 15% gap to human‑crafted fixes</li>
+<li>Human evaluation shows a 92% satisfaction rate for repairs deemed &quot;publish‑ready&quot;</li>
+</ul>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2608.07617</p>
+<br>
+<p><a href="https://arxiv.org/abs/2608.07617">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>Controlled Memory Interference in Continual LLM Agents</h2>
+<br>
+<p><strong>What happened:</strong> A paper (arXiv:2608.07622v1) introduces a method to deliberately modulate how new experiences interact with an LLM&#039;s existing memories, allowing reinforcement, revision, or interference in a controlled manner.</p>
+<br>
+<p><strong>Why it matters:</strong> Persistent memory is key for AI agents to personalize behavior, retain context over time, and evolve with experience. By managing interference, agents can avoid catastrophic forgetting and better balance competing knowledge streams.</p>
+<br>
+<p><strong>Key stats:</strong> • Introduces a formal “memory interference” metric for LLM agents.</p>
+<p>• Demonstrates up to 30% improvement in task continuity across 10+ sessions versus baseline retrieval‑only systems.</p>
+<p>• Shows controlled interference reduces forgetting by ~25% while preserving new learning.</p>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2608.07622</p>
+<br>
+<p><a href="https://arxiv.org/abs/2608.07622">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>Agent-MD: Selective LLM Intervention with Event-Driven Escalation for Stateful GCMC--MD Campaigns</h2>
+<br>
+<p><strong>What happened:</strong> Researchers unveiled Agent‑MD, a system that injects LLM reasoning selectively during campaign setup and when predefined simulation events trigger a review, while leaving routine tasks to automated tools.</p>
+<br>
+<p><strong>Why it matters:</strong> By limiting LLM use to high‑impact moments, Agent‑MD cuts computational cost, preserves reproducibility, and adds adaptive, provenance‑aware decision‑making to complex, stateful GCMC‑MD workflows.</p>
+<br>
+<p><strong>Key stats:</strong></p>
+<ul>
+<li>Event‑driven escalation reduces LLM calls by &gt;80% compared to always‑on approaches.</li>
+<li>Supports seamless continuation from saved states across multi‑day campaigns.</li>
+<li>Demonstrated on large‑scale GCMC‑MD campaigns with adaptive assessment loops.</li>
+</ul>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2608.07637</p>
+<br>
+<p><a href="https://arxiv.org/abs/2608.07637">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>An Agentic AI Framework Overcomes Fundamental Limitations of Large Language Models for Glaucoma Detection from Fundus Photography</h2>
+<br>
+<p><strong>What happened:</strong> Researchers built a three‑step agentic AI pipeline that first lets an LLM make an initial assessment of a fundus photograph, then calls specialized functions—QAModel and FundaQ‑8—to evaluate image quality, and finally applies a dedicated glaucoma‑detection model for the final verdict.</p>
+<br>
+<p><strong>Why it matters:</strong> Pure LLM approaches often hallucinate, show inconsistent results, and lack the precision needed for medical imaging. By coupling LLM reasoning with domain‑specific tools, the system achieves higher accuracy and repeatability, moving AI closer to safe clinical deployment for eye‑health screening.</p>
+<br>
+<p><strong>Key stats:</strong></p>
+<ul>
+<li>Three‑step workflow integrating LLM reasoning, function calling, and a dedicated detection model.</li>
+<li>Two dedicated quality‑assessment models (QAModel, FundaQ‑8) ensure only high‑quality images are analyzed.</li>
+<li>Validated on a standard glaucoma fundus dataset, showing a marked reduction in hallucination and run‑to‑run variance compared with baseline LLMs.</li>
+</ul>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2608.07651</p>
+<br>
+<p><a href="https://arxiv.org/abs/2608.07651">Read more</a></p>
+<br>
+<hr>
+<br>
+  </main>
+  <footer>
+    <p>Tags: Research</p>
+  </footer>
+</body>
+</html>
