@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Gradient — 2026-08-13</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      line-height: 1.6;
+      color: #1a1a1a;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      background: #fefefe;
+    }
+    header {
+      border-bottom: 2px solid #1a1a1a;
+      padding-bottom: 1rem;
+      margin-bottom: 2rem;
+    }
+    h1 {
+      font-size: 1.75rem;
+      line-height: 1.2;
+      margin: 0 0 0.5rem 0;
+    }
+    .date {
+      color: #666;
+      font-size: 0.9rem;
+    }
+    .intro {
+      font-size: 1.1rem;
+      color: #333;
+      margin-bottom: 2rem;
+    }
+    .story {
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid #e5e5e5;
+    }
+    .story:last-child {
+      border-bottom: none;
+    }
+    .story h2 {
+      font-size: 1.25rem;
+      margin: 0 0 0.5rem 0;
+    }
+    .story p {
+      margin: 0 0 0.5rem 0;
+    }
+    .story a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    .story a:hover {
+      text-decoration: underline;
+    }
+    .meta {
+      font-size: 0.85rem;
+      color: #666;
+      margin-top: 0.5rem;
+    }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 1px solid #e5e5e5;
+      font-size: 0.85rem;
+      color: #888;
+    }
+    
+  </style>
+</head>
+<body>
+  <header>
+    <h1>The Gradient — 2026-08-13</h1>
+    <div class="date">2026-08-13</div>
+  </header>
+  
+  <p class="intro">A new study shows that adding a control‑theoretic layer can prevent dead‑ends when opposing LLM agents talk.</p>
+  <main>
+    <h2>Dynamic Governance of Multi-LLM Agent Systems for Collaborative Conversational Outcomes</h2>
+<br>
+<p><strong>What happened:</strong> Researchers found that when two LLM agents pursue structurally opposed objectives, the dialogue quickly collapses—one agent capitulates while the other ceases to vary its approach, ending the conversation without achieving either goal.</p>
+<br>
+<p><strong>Why it matters:</strong> Without a shared goal function, collaborative AI systems risk stalling, limiting their usefulness in tasks like negotiation, planning, or tutoring. Introducing a governance layer rooted in control theory could provide a unifying objective, enabling stable, productive multi‑agent interactions.</p>
+<br>
+<p><strong>Key stats:</strong> The paper presents the “Experience Orchestrator” framework and reports that, in simulated multi‑turn exchanges, the governance layer eliminated the collapse observed in baseline runs, converting failed dialogues into successful collaborative outcomes. Detailed performance metrics are available in the full pre‑print.</p>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2608.11207</p>
+<br>
+<p><a href="https://arxiv.org/abs/2608.11207">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>Poor Man&#039;s Agentic Modeling: Simulating Large LLM-Agent Societies on a Laptop</h2>
+<br>
+<p><strong>What happened:</strong> The team replaced each expensive LLM agent with a lightweight surrogate model trained on a few hundred to a few thousand inexpensive queries. The surrogates capture the macroscopic behavior needed for large‑scale simulations, allowing entire societies to run on a standard laptop.</p>
+<br>
+<p><strong>Why it matters:</strong> It opens the door to systematic, reproducible studies of agentic dynamics—phase transitions, scaling laws, and emergent stylised facts—without the prohibitive cost of running dozens or hundreds of full‑size LLMs. Researchers can iterate faster and explore hypotheses that were previously out of reach.</p>
+<br>
+<p><strong>Key stats:</strong></p>
+<ul>
+<li>Surrogate model fitted with 200‑3,000 cheap queries per agent.</li>
+<li>Simulation cost drops from multi‑GPU clusters to a single consumer laptop.</li>
+<li>Enables experiments with agent counts N in the hundreds‑thousands while keeping runtime in hours.</li>
+</ul>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2608.11215</p>
+<br>
+<p><a href="https://arxiv.org/abs/2608.11215">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>From Monolithic to Modular: Segment-level Automatic Prompt Optimization</h2>
+<br>
+<p><strong>What happened:</strong> Researchers unveiled SAPO (Segment-level Automatic Prompt Optimization), a method that breaks a prompt into role, context, tasks, and output format, then refines each segment using insights from the top‑5 and bottom‑5 example performances.</p>
+<br>
+<p><strong>Why it matters:</strong> By targeting weak spots without overhauling the entire prompt, SAPO boosts desired behaviors while preserving others, addressing a long‑standing limitation of automatic prompt optimization.</p>
+<br>
+<p><strong>Key stats:</strong> • Uses a single LLM with static meta‑prompts for segmentation, weakness analysis, and candidate generation. • Operates on top‑5 and bottom‑5 examples to guide improvements. • Demonstrates more consistent gains across multiple benchmark tasks compared to monolithic APO.</p>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2608.11219</p>
+<br>
+<p><a href="https://arxiv.org/abs/2608.11219">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>Cutting AI Datacenter Energy with Reinforcement Learning: Measured Power Control of LLM Training from One GPU to the Fleet</h2>
+<br>
+<p><strong>What happened:</strong> Researchers instrumented LLM training (7B, 14B, 72B parameters) on A100 GPUs with half‑second power telemetry and trained a PPO meta‑controller that adjusts GPU power limits in real time.</p>
+<br>
+<p><strong>Why it matters:</strong> Conventional datacenter power management relies on static caps or reactive throttling that waste energy and slow training. The RL‑based controller learns when to lower power without hurting model quality, delivering sizable savings.</p>
+<br>
+<p><strong>Key stats:</strong></p>
+<ul>
+<li>380,000+ training samples logged</li>
+<li>Power measured on 1‑4 A100 GPUs</li>
+<li>Up to ~30% energy reduction while keeping perplexity within 1% of baseline</li>
+<li>RL meta‑controller operates at 0.5 s granularity</li>
+</ul>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2608.11226</p>
+<br>
+<p><a href="https://arxiv.org/abs/2608.11226">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>LinearKV: One Cached State Suffices for Position-Independent Caching in Hybrid LLMs</h2>
+<br>
+<p><strong>What happened:</strong> Researchers introduced LinearKV, a caching scheme that stores just one recurrent state per layer instead of the token‑by‑token KV pairs used by existing PIC methods. This single state is sufficient to reconstruct attention contexts across any token position in hybrid LLMs, which blend linear recurrences with conventional attention.</p>
+<br>
+<p><strong>Why it matters:</strong> Hybrid models are gaining traction for their speed and memory efficiency, but they have been excluded from PIC optimizations because the old caching primitives don’t apply. LinearKV unlocks the same latency and throughput gains for these models, broadening the impact of PIC across the LLM landscape.</p>
+<br>
+<p><strong>Key stats:</strong></p>
+<ul>
+<li>Reduces cache memory by up to <strong>90 %</strong> compared to token‑indexed KV caches.</li>
+<li>Achieves <strong>1.8×–2.3×</strong> faster generation latency on benchmark prompts.</li>
+<li>Maintains <strong>≤0.3 %</strong> perplexity degradation versus full recomputation.</li>
+</ul>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2608.11231</p>
+<br>
+<p><a href="https://arxiv.org/abs/2608.11231">Read more</a></p>
+<br>
+<hr>
+<br>
+  </main>
+  <footer>
+    <p>Tags: Research</p>
+  </footer>
+</body>
+</html>
