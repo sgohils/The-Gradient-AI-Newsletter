@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Gradient — 2026-08-17</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      line-height: 1.6;
+      color: #1a1a1a;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      background: #fefefe;
+    }
+    header {
+      border-bottom: 2px solid #1a1a1a;
+      padding-bottom: 1rem;
+      margin-bottom: 2rem;
+    }
+    h1 {
+      font-size: 1.75rem;
+      line-height: 1.2;
+      margin: 0 0 0.5rem 0;
+    }
+    .date {
+      color: #666;
+      font-size: 0.9rem;
+    }
+    .intro {
+      font-size: 1.1rem;
+      color: #333;
+      margin-bottom: 2rem;
+    }
+    .story {
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid #e5e5e5;
+    }
+    .story:last-child {
+      border-bottom: none;
+    }
+    .story h2 {
+      font-size: 1.25rem;
+      margin: 0 0 0.5rem 0;
+    }
+    .story p {
+      margin: 0 0 0.5rem 0;
+    }
+    .story a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    .story a:hover {
+      text-decoration: underline;
+    }
+    .meta {
+      font-size: 0.85rem;
+      color: #666;
+      margin-top: 0.5rem;
+    }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 1px solid #e5e5e5;
+      font-size: 0.85rem;
+      color: #888;
+    }
+    
+  </style>
+</head>
+<body>
+  <header>
+    <h1>The Gradient — 2026-08-17</h1>
+    <div class="date">2026-08-17</div>
+  </header>
+  
+  <p class="intro">A new arXiv paper delivers the first comprehensive, year‑long view of how large language model (LLM) serving workloads evolve in production and how caching and load‑balancing can tame them.</p>
+  <main>
+    <h2>A Year in LLM Serving: Workload Evolution, Caching and Load-Balancing</h2>
+<br>
+<p><strong>What happened:</strong> Researchers released a 12‑month dataset of real‑world LLM serving traces, exposing how request patterns, model usage, and resource demands change over time. The study also evaluates caching strategies and load‑balancing policies on this live workload.</p>
+<br>
+<p><strong>Why it matters:</strong> As LLM APIs become core cloud services, understanding their long‑term behavior is essential for designing efficient, cost‑effective serving stacks. The findings highlight gaps in prior short‑term studies and offer concrete guidance for operators.</p>
+<br>
+<p><strong>Key stats:</strong> • 12 months of production logs covering billions of token requests. • Peak request rates grew &gt;30% quarter‑over‑quarter. • Simple cache‑first routing lifted cache‑hit rates from ~25% to ~60%, cutting average latency by ~40%. • Adaptive load‑balancing reduced tail‑latency (p99) by ~20% and improved GPU utilisation by ~15%.</p>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2608.13573</p>
+<br>
+<p><a href="https://arxiv.org/abs/2608.13573">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>Agentao: A Governed Local-First Runtime for Tool-Using LLM Agents</h2>
+<br>
+<p><strong>What happened:</strong> Researchers released Agentao, a local‑first runtime that wraps LLM agents with policy enforcement, sandboxed tool execution, and immutable audit logs.</p>
+<br>
+<p><strong>Why it matters:</strong> As LLM agents gain the ability to invoke external tools, modify state, and persist memory, they also pose risks like over‑privileged actions, prompt injection, and tool poisoning. Agentao’s governed approach mitigates these threats without relying on cloud‑based control planes.</p>
+<br>
+<p><strong>Key stats:</strong></p>
+<ul>
+<li>Enforces fine‑grained permission policies for every tool call.</li>
+<li>Isolates tool execution in sandboxed containers to prevent side‑effects.</li>
+<li>Records a tamper‑evident log of all agent actions for post‑hoc auditing.</li>
+<li>Supports persistent, locally stored memory that agents can query safely.</li>
+</ul>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2608.13574</p>
+<br>
+<p><a href="https://arxiv.org/abs/2608.13574">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>No Universal Signal Predicts Sample-Level LLM Regression under Version Updates</h2>
+<br>
+<p><strong>What happened:</strong> Researchers examined whether signals available at inference time—such as model confidence, logit margin, and attention entropy—can reliably predict when a newer LLM version will produce a worse answer on a specific input.</p>
+<br>
+<p><strong>Why it matters:</strong> As AI systems become integral to critical workflows, undetected regressions could erode trust, cause costly errors, and complicate model‑deployment pipelines.</p>
+<br>
+<p><strong>Key stats:</strong> The study tested multiple single‑model signals across several state‑of‑the‑art LLM families. No signal consistently outperformed random guessing; the best‑performing metric hovered around a 0.58 AUC, far below a trustworthy threshold.</p>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2608.13607</p>
+<br>
+<p><a href="https://arxiv.org/abs/2608.13607">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>Evaluating Agentic Learning Harness Capabilities Without Labels via the Scaling Hypothesis</h2>
+<br>
+<p><strong>What happened:</strong> Researchers evaluated agentic &quot;Continual Learning Harnesses&quot;—LLM‑plus‑retrieval setups that improve from feedback without retraining—using the scaling hypothesis instead of traditional labeled benchmarks.</p>
+<br>
+<p><strong>Why it matters:</strong> In operational security, labels are scarce, outdated, and unrepresentative, making it hard for practitioners to gauge a harness&#039;s usefulness. This work proposes a label‑free evaluation that aligns better with real‑world needs.</p>
+<br>
+<p><strong>Key stats:</strong> The paper demonstrates that performance scales predictably with model size and data volume, even when no explicit labels are available, suggesting reliable improvement trajectories for security‑focused deployments.</p>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2608.13608</p>
+<br>
+<p><a href="https://arxiv.org/abs/2608.13608">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>SemPlan: Benchmarking Structured Semantic Planning for LLM-Based Queries over Enterprise Data</h2>
+<br>
+<p><strong>What happened:</strong> Researchers introduced the SemPlan Benchmark, a deterministic synthetic bilingual suite (English &amp; Brazilian Portuguese) with 1,800 test cases—1,200 of which form a frozen scientific evaluation set. The benchmark assesses how LLM‑based interfaces handle underspecified queries while respecting governance, policy, cost, and nondeterminism across four architectural designs.</p>
+<br>
+<p><strong>Why it matters:</strong> Enterprise AI must balance user flexibility with strict compliance and reliability. SemPlan provides the first large‑scale, repeatable yardstick to compare architectures, helping firms choose or build systems that safely unlock data without costly failures.</p>
+<br>
+<p><strong>Key stats:</strong></p>
+<ul>
+<li>1,800 total cases (English + Portuguese)</li>
+<li>1,200 cases locked for scientific evaluation</li>
+<li>Four distinct architectural configurations evaluated</li>
+<li>Synthetic, deterministic benchmark ensures reproducibility</li>
+</ul>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2608.13612</p>
+<br>
+<p><a href="https://arxiv.org/abs/2608.13612">Read more</a></p>
+<br>
+<hr>
+<br>
+  </main>
+  <footer>
+    <p>Tags: Research</p>
+  </footer>
+</body>
+</html>
