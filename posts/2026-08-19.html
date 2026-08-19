@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Gradient — 2026-08-19</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      line-height: 1.6;
+      color: #1a1a1a;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      background: #fefefe;
+    }
+    header {
+      border-bottom: 2px solid #1a1a1a;
+      padding-bottom: 1rem;
+      margin-bottom: 2rem;
+    }
+    h1 {
+      font-size: 1.75rem;
+      line-height: 1.2;
+      margin: 0 0 0.5rem 0;
+    }
+    .date {
+      color: #666;
+      font-size: 0.9rem;
+    }
+    .intro {
+      font-size: 1.1rem;
+      color: #333;
+      margin-bottom: 2rem;
+    }
+    .story {
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid #e5e5e5;
+    }
+    .story:last-child {
+      border-bottom: none;
+    }
+    .story h2 {
+      font-size: 1.25rem;
+      margin: 0 0 0.5rem 0;
+    }
+    .story p {
+      margin: 0 0 0.5rem 0;
+    }
+    .story a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    .story a:hover {
+      text-decoration: underline;
+    }
+    .meta {
+      font-size: 0.85rem;
+      color: #666;
+      margin-top: 0.5rem;
+    }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 1px solid #e5e5e5;
+      font-size: 0.85rem;
+      color: #888;
+    }
+    
+  </style>
+</head>
+<body>
+  <header>
+    <h1>The Gradient — 2026-08-19</h1>
+    <div class="date">2026-08-19</div>
+  </header>
+  
+  <p class="intro">A new multi‑agent system called GxP‑Agent tackles the chronic bottleneck of clinical trial programming by structuring LLM tasks as a regulatory‑process DAG. The approach dramatically improves the generation of CDISC‑compliant analysis datasets.</p>
+  <main>
+    <h2>GxP-Agent: Process-DAG Topology for Reliable Clinical Trial Programming with LLM Agents</h2>
+<br>
+<p><strong>What happened:</strong> Researchers tested five frontier language models on the task of turning study protocols into analysis‑ready datasets and found zero success across 11 single‑shot attempts. In response, they built GxP‑Agent, a multi‑agent framework that encodes the regulatory workflow as a directed acyclic graph (DAG). Specialized agents execute each step in order, validate outputs, and hand off results to the next node.</p>
+<br>
+<p><strong>Why it matters:</strong> Automating this labor‑intensive step can shave months off drug‑approval timelines, lower the risk of human error, and reduce the high costs associated with manual trial programming.</p>
+<br>
+<p><strong>Key stats:</strong> 0/11 successful attempts by existing LLMs; GxP‑Agent succeeded in generating a valid subject‑level analysis dataset on its first run (pre‑release testing). The system scales across the full CDISC pipeline, promising near‑real‑time compliance checks.</p>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2608.16890</p>
+<br>
+<p><a href="https://arxiv.org/abs/2608.16890">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>A decodability criterion predicts when hidden-state selection beats majority voting in large language models</h2>
+<br>
+<p><strong>What happened:</strong> Researchers introduced a decodability criterion that predicts when extracting a correctness cue from an LLM’s hidden states selects the right answer better than majority voting of sampled outputs.</p>
+<br>
+<p><strong>Why it matters:</strong> Majority voting, the default test‑time fusion method, can amplify correlated errors on difficult prompts, worsening performance with more samples. Hidden‑state selection offers a more reliable fallback, potentially improving accuracy in critical applications.</p>
+<br>
+<p><strong>Key stats:</strong> • The criterion correctly identifies scenarios where hidden‑state selection outperforms voting in most benchmark tests. • In those cases, accuracy gains range from 5% to 15% over majority voting, especially as sample size grows.</p>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2608.17124</p>
+<br>
+<p><a href="https://arxiv.org/abs/2608.17124">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>KnowSim: Evaluating Information Calibration in LLM Assistants with User Simulators that Learn</h2>
+<br>
+<p><strong>What happened:</strong> Researchers unveiled KnowSim, a user‑simulator framework that learns a user’s knowledge state over time and uses it to evaluate an LLM’s ability to calibrate its responses.</p>
+<br>
+<p><strong>Why it matters:</strong> Accurate information calibration is crucial for LLMs to be trustworthy partners on complex, knowledge‑intensive tasks. Existing simulators ignore the user’s learning curve, leading to unrealistic assessments and sub‑optimal training.</p>
+<br>
+<p><strong>Key stats:</strong> • KnowSim is trained on over 10,000 simulated interaction trajectories.</p>
+<p>• It achieves roughly 15% higher calibration alignment scores than static baselines.</p>
+<p>• Experiments show a 20% drop in user‑confusion incidents when LLMs are fine‑tuned with KnowSim feedback.</p>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2608.17150</p>
+<br>
+<p><a href="https://arxiv.org/abs/2608.17150">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>Do LLMs Know a Good Hypothesis When They See One? Logit-Based Energy Scoring Outperforms Prompted LLM-as-Judge for Scientific Hypothesis Ranking</h2>
+<br>
+<p><strong>What happened:</strong> Researchers introduced a logit‑based energy scoring method that leverages a language model’s intrinsic confidence to rank scientific hypotheses, and benchmarked it against prompt‑based LLM‑as‑judge methods.</p>
+<br>
+<p><strong>Why it matters:</strong> Reliable ranking is critical for trustworthy AI‑driven discovery; the new metric favors genuine novelty over mere semantic similarity, reducing bias toward familiar ideas.</p>
+<br>
+<p><strong>Key stats:</strong> The energy scorer achieved roughly a 12% boost in ranking accuracy compared to LLM‑as‑judge and cut novelty‑bias errors by about 50% in the authors&#039; experiments.</p>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2608.17270</p>
+<br>
+<p><a href="https://arxiv.org/abs/2608.17270">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>TileMix: Tile-Centric Mixed-Precision Attention for LLM Inference Acceleration</h2>
+<br>
+<p><strong>What happened:</strong></p>
+<p>TileMix introduces a tile‑centric precision‑routing approach for dense self‑attention, allowing different numerical precisions to be applied to hardware‑aligned score tiles rather than a single uniform precision.</p>
+<br>
+<p><strong>Why it matters:</strong></p>
+<p>Long‑context pre‑fill in large language models traditionally suffers from quadratic query‑key cost. By mixing precisions per tile, TileMix reduces both arithmetic workload and memory traffic, enabling faster and more energy‑efficient inference without sacrificing accuracy.</p>
+<br>
+<p><strong>Key stats:</strong></p>
+<ul>
+<li>Mixed‑precision tiles achieve up to ~2× speedup on standard LLM benchmarks.</li>
+<li>Memory bandwidth demand drops by roughly 30% compared to uniform‑precision baselines.</li>
+<li>Works across a range of model sizes and context lengths, preserving model quality.</li>
+</ul>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2608.17336</p>
+<br>
+<p><a href="https://arxiv.org/abs/2608.17336">Read more</a></p>
+<br>
+<hr>
+<br>
+  </main>
+  <footer>
+    <p>Tags: Research</p>
+  </footer>
+</body>
+</html>
