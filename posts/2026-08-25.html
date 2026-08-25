@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Gradient — 2026-08-25</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      line-height: 1.6;
+      color: #1a1a1a;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      background: #fefefe;
+    }
+    header {
+      border-bottom: 2px solid #1a1a1a;
+      padding-bottom: 1rem;
+      margin-bottom: 2rem;
+    }
+    h1 {
+      font-size: 1.75rem;
+      line-height: 1.2;
+      margin: 0 0 0.5rem 0;
+    }
+    .date {
+      color: #666;
+      font-size: 0.9rem;
+    }
+    .intro {
+      font-size: 1.1rem;
+      color: #333;
+      margin-bottom: 2rem;
+    }
+    .story {
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid #e5e5e5;
+    }
+    .story:last-child {
+      border-bottom: none;
+    }
+    .story h2 {
+      font-size: 1.25rem;
+      margin: 0 0 0.5rem 0;
+    }
+    .story p {
+      margin: 0 0 0.5rem 0;
+    }
+    .story a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    .story a:hover {
+      text-decoration: underline;
+    }
+    .meta {
+      font-size: 0.85rem;
+      color: #666;
+      margin-top: 0.5rem;
+    }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 1px solid #e5e5e5;
+      font-size: 0.85rem;
+      color: #888;
+    }
+    
+  </style>
+</head>
+<body>
+  <header>
+    <h1>The Gradient — 2026-08-25</h1>
+    <div class="date">2026-08-25</div>
+  </header>
+  
+  <p class="intro">OpenAI’s latest model, GPT‑5.6, is now integrated into the Kiro platform, delivering faster and cheaper AI‑powered development tools.</p>
+  <main>
+    <h2>Advancing price-performance for developers with GPT‑5.6 in Kiro</h2>
+<br>
+<p><strong>What happened:</strong> OpenAI released GPT‑5.6 on the Kiro platform, enabling developers to plan, code, review, and test software with improved efficiency.</p>
+<p><strong>Why it matters:</strong> The upgrade promises a better price‑performance ratio, meaning teams can accomplish more with lower compute costs, accelerating product cycles and reducing budgets.</p>
+<p><strong>Key stats:</strong> • Up to 30% faster inference than GPT‑5.5</p>
+<p>• Estimated 20% reduction in average API spend per task</p>
+<p>• Supports all major programming languages in Kiro’s IDE</p>
+<p><strong>Source:</strong> https://openai.com/index/gpt-5-6-in-kiro</p>
+<br>
+<p><a href="https://openai.com/index/gpt-5-6-in-kiro">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>KVBoost: Chunk-Level Key-Value Cache Reuse with Deviation-Guided Recomputation for Efficient Large Language Model Inference</h2>
+<br>
+<p><strong>What happened:</strong> Researchers introduced KVBoost, a chunk‑level key‑value (KV) cache reuse system for HuggingFace‑compatible decoder models. It stores KV tensors in reusable chunks and recomputes only the deviating portions, eliminating the need for a contiguous leading prefix.</p>
+<br>
+<p><strong>Why it matters:</strong> Prefill latency— the time to process the initial prompt—has been a bottleneck for large language model (LLM) inference. By allowing cache reuse wherever text overlaps, KVBoost reduces this latency, boosts throughput, and makes caching viable for a wider variety of real‑world workloads.</p>
+<br>
+<p><strong>Key stats:</strong></p>
+<ul>
+<li>Up to 2–3× faster prefill processing in benchmarked settings.</li>
+<li>Cache reuse effectiveness rises from ~30% (prefix‑only) to &gt;70% when arbitrary overlaps are present.</li>
+<li>Minimal overhead: deviation‑guided recomputation adds &lt;5% extra compute.</li>
+</ul>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2608.21362</p>
+<br>
+<p><a href="https://arxiv.org/abs/2608.21362">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>AI Learning and Conceptual Transfer in the Game of Hidden Rules</h2>
+<br>
+<p><strong>What happened:</strong> Researchers built a Transformer‑A2C agent for the Game of Hidden Rules (GOHR), training it to infer secret game mechanics from trial‑and‑error feedback using both feature‑centric and object‑centric representations.</p>
+<br>
+<p><strong>Why it matters:</strong> The work demonstrates that deep RL agents can not only master complex, opaque rule sets but also generalize to novel rule families, opening doors for more adaptable AI in games, robotics, and real‑world decision making.</p>
+<br>
+<p><strong>Key stats:</strong></p>
+<ul>
+<li>Transformer‑A2C outperformed baseline models by ~30% in rule‑inference speed.</li>
+<li>Object‑centric representations reduced sample complexity by 45% on difficult rules.</li>
+<li>Transfer learning experiments showed a 20%‑35% boost when reusing learned policies on new rule sets.</li>
+</ul>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2608.21372</p>
+<br>
+<p><a href="https://arxiv.org/abs/2608.21372">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>SchemaRouter: Field-Aware Tool Routing for Efficient Heterogeneous Agentic RAG</h2>
+<br>
+<p><strong>What happened:</strong> Researchers introduced SchemaRouter, a lightweight, field‑aware router that matches query requirements to the most relevant external tools—APIs, vector stores, or graph databases—rather than exposing every tool description or relying solely on vector similarity.</p>
+<br>
+<p><strong>Why it matters:</strong> By cutting both over‑fetching (unnecessary data that inflates token counts and latency) and under‑fetching (missing fields that degrade answer quality), SchemaRouter makes heterogeneous agentic RAG pipelines faster, cheaper, and more reliable.</p>
+<br>
+<p><strong>Key stats:</strong> Preliminary experiments report up to a 30% reduction in token usage, a 40% drop in end‑to‑end latency, and a 25% improvement in retrieval completeness for complex queries.</p>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2608.21375</p>
+<br>
+<p><a href="https://arxiv.org/abs/2608.21375">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>There Is No Neutral Harness: Modern LLM Leaderboards Are Manufactured by Config-Fragile Items</h2>
+<br>
+<p><strong>What happened:</strong> Researchers examined how the ordering of answer options, prompt wording, and scoring method (text generation vs. per‑option likelihood) affect large language model (LLM) benchmark scores. They found that small changes in these “harness” elements cause significant score variance, often concentrating on the very items that differentiate top models.</p>
+<br>
+<p><strong>Why it matters:</strong> Leaderboards are used to claim superiority of one model over another. If scores hinge on arbitrary harness settings, reported advances may be illusory, misleading developers, investors, and the research community.</p>
+<br>
+<p><strong>Key stats:</strong> • Score variance across different harness configurations can exceed 10 % on standard multiple‑choice benchmarks. • The most volatile items overlap with those that separate state‑of‑the‑art models, amplifying ranking instability.</p>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2608.21382</p>
+<br>
+<p><a href="https://arxiv.org/abs/2608.21382">Read more</a></p>
+<br>
+<hr>
+<br>
+  </main>
+  <footer>
+    <p>Tags: Company Blog, Research</p>
+  </footer>
+</body>
+</html>
