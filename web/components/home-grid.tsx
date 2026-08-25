@@ -31,7 +31,7 @@ export default function HomeGrid({ issues }: HomeGridProps) {
             </div>
             <a
               href="/archive"
-              className="hidden items-center gap-1.5 text-sm font-semibold text-accent-blue transition-colors duration-300 hover:text-accent-cyan dark:text-accent-cyan dark:hover:text-accent-emerald md:flex"
+              className="hidden items-center gap-1.5 text-sm font-semibold text-cyan-300 transition-colors duration-300 hover:text-cyan-400 dark:text-cyan-300 dark:hover:text-cyan-400 md:flex"
             >
               View all
               <svg

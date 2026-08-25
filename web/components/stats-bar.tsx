@@ -95,12 +95,12 @@ export default function StatsBar({ issues }: StatsBarProps) {
                     },
                   }
             }
-            className="flex min-w-[160px] flex-1 flex-col items-center rounded-2xl border border-glass-border bg-glass-highlight px-6 py-5 backdrop-blur-xl dark:bg-bento-surface/80 md:min-w-[200px]"
+            className="flex min-w-[160px] flex-1 flex-col items-center rounded-2xl border border-white/10 bg-white/5 px-6 py-5 backdrop-blur-xl dark:bg-bento-surface/80 md:min-w-[200px]"
           >
-            <span className="text-3xl font-bold bg-gradient-to-r from-accent-blue to-accent-cyan bg-clip-text text-transparent md:text-4xl dark:from-accent-cyan dark:to-accent-emerald">
+            <span className="text-3xl font-bold bg-gradient-to-r from-[#00F2FE] to-[#0072FF] bg-clip-text text-transparent md:text-4xl">
               <CountUp end={stat.value} suffix={stat.suffix} />
             </span>
-            <span className="mt-1 text-xs font-medium uppercase tracking-wider text-gray-500 dark:text-gray-400">
+            <span className="mt-1 text-xs font-medium uppercase tracking-wider text-slate-500">
               {stat.label}
             </span>
           </motion.div>

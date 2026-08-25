@@ -43,8 +43,8 @@ export default function FeaturedCard({ issue }: FeaturedCardProps) {
             />
           </div>
 
-          <div className="relative overflow-hidden rounded-[26px] bg-gradient-to-br from-bento-surface via-bento-surface-light to-bento-surface p-1 dark:from-bento-surface-dark dark:via-bento-surface-dark dark:to-bento-surface-darkest">
-            <div className="flex flex-col gap-6 rounded-[24px] bg-bento-surface/80 backdrop-blur-xl dark:bg-bento-surface-dark/80 md:flex-row">
+          <div className="relative overflow-hidden rounded-[26px] bg-gradient-to-br from-[#0f172a] via-[#1e293b] to-[#0f172a] p-1">
+            <div className="flex flex-col gap-6 rounded-[24px] bg-[#090D16]/80 backdrop-blur-xl md:flex-row">
               <div className="relative h-64 w-full overflow-hidden md:h-auto md:w-2/5 md:min-h-[320px]">
                 {issue.featuredImageUrl ? (
                   <Image
@@ -55,7 +55,7 @@ export default function FeaturedCard({ issue }: FeaturedCardProps) {
                     sizes="(max-width: 768px) 100vw, 40vw"
                   />
                 ) : (
-                  <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-accent-blue/20 via-accent-cyan/20 to-accent-green/20 dark:from-accent-blue/10 dark:via-accent-cyan/10 dark:to-accent-emerald/10">
+                  <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-[#00F2FE]/10 via-[#0072FF]/10 to-[#00F2FE]/10">
                     <div className="flex flex-col items-center gap-3">
                       <div className="flex gap-1.5">
                         {[0, 1, 2].map((i) => (
@@ -63,11 +63,11 @@ export default function FeaturedCard({ issue }: FeaturedCardProps) {
                             key={i}
                             animate={{ y: [0, -6, 0] }}
                             transition={{ duration: 1.5, repeat: Infinity, delay: i * 0.2 }}
-                            className="h-2 w-2 rounded-full bg-accent-blue dark:bg-accent-cyan"
+                            className="h-2 w-2 rounded-full bg-[#00F2FE]"
                           />
                         ))}
                       </div>
-                      <span className="text-xs font-medium text-gray-500 dark:text-gray-400">
+                      <span className="text-xs font-medium text-slate-500">
                         Featured Edition
                       </span>
                     </div>
@@ -78,12 +78,12 @@ export default function FeaturedCard({ issue }: FeaturedCardProps) {
 
               <div className="flex flex-1 flex-col justify-center p-6 md:p-8">
                 <div className="mb-4 flex items-center gap-2">
-                  <span className="rounded-full bg-accent-blue/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-accent-blue dark:bg-accent-cyan/10 dark:text-accent-cyan">
+                  <span className="rounded-full bg-[#00F2FE]/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-[#00F2FE]">
                     Featured
                   </span>
                   <time
                     dateTime={issue.date}
-                    className="text-xs text-gray-500 dark:text-gray-400"
+                    className="text-xs text-slate-500"
                   >
                     {new Date(issue.date + "T00:00:00").toLocaleDateString("en-US", {
                       month: "short",
@@ -93,7 +93,7 @@ export default function FeaturedCard({ issue }: FeaturedCardProps) {
                   </time>
                 </div>
 
-                <h2 className="text-2xl font-bold leading-tight text-gray-900 transition-colors duration-300 group-hover:text-accent-blue dark:text-white dark:group-hover:text-accent-emerald md:text-3xl">
+                <h2 className="text-2xl font-bold leading-tight text-gray-900 transition-colors duration-300 group-hover:text-[#00F2FE] dark:text-white dark:group-hover:text-[#00F2FE] md:text-3xl">
                   {issue.title}
                 </h2>
 
@@ -114,7 +114,7 @@ export default function FeaturedCard({ issue }: FeaturedCardProps) {
                             ? {}
                             : { duration: 0.4, delay: 0.3 + index * 0.08, ease: [0.34, 1.56, 0.64, 1] }
                         }
-                        className="rounded-full bg-bento-surface-light px-3 py-1 text-xs font-medium text-accent-blue dark:bg-bento-surface-dark dark:text-accent-cyan"
+                        className="rounded-full bg-white/5 px-3 py-1 text-xs font-medium text-[#00F2FE]"
                       >
                         {tag}
                       </motion.span>
@@ -125,7 +125,7 @@ export default function FeaturedCard({ issue }: FeaturedCardProps) {
                 <div className="mt-6">
                   <Link
                     href={`/archive/${issue.date}`}
-                    className="group/link inline-flex items-center gap-1.5 text-sm font-semibold text-accent-blue transition-colors duration-300 hover:text-accent-cyan dark:text-accent-cyan dark:hover:text-accent-emerald"
+                    className="group/link inline-flex items-center gap-1.5 text-sm font-semibold text-[#00F2FE] transition-colors duration-300 hover:text-[#0072FF]"
                   >
                     Read full issue
                     <svg

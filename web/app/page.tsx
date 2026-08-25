@@ -20,7 +20,7 @@ export default async function Home() {
 
         return (
           <>
-            <HeroSection latestIssue={latestIssue} />
+            <HeroSection />
             <StatsBar issues={issues} />
             <FeaturedCard issue={latestIssue} />
             <HomeGrid issues={issues} />

@@ -14,7 +14,25 @@ interface ArticleCardProps {
 
 export default function ArticleCard({ issue }: ArticleCardProps) {
   const [isHovered, setIsHovered] = useState(false);
+  const [rotate, setRotate] = useState({ x: 0, y: 0 });
   const prefersReducedMotion = usePrefersReducedMotion();
+
+  const handleMouseMove = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    const card = e.currentTarget;
+    const rect = card.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+    const rotateX = ((y - centerY) / centerY) * -8;
+    const rotateY = ((x - centerX) / centerX) * 8;
+    setRotate({ x: rotateX, y: rotateY });
+  };
+
+  const handleMouseLeave = () => {
+    setRotate({ x: 0, y: 0 });
+    setIsHovered(false);
+  };
 
   const formattedDate = new Date(issue.date + "T00:00:00").toLocaleDateString("en-US", {
     weekday: "long",
@@ -28,13 +46,24 @@ export default function ArticleCard({ issue }: ArticleCardProps) {
   return (
     <Link
       href={`/archive/${issue.date}`}
-      className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white p-6 transition-all duration-500 hover:border-transparent hover:shadow-[0_20px_50px_-12px_rgba(59,130,246,0.25)] dark:border-gray-800 dark:bg-bento-surface dark:hover:border-bento-surface-light dark:hover:shadow-[0_20px_50px_-12px_rgba(59,130,246,0.15)]"
       onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
+      onMouseMove={handleMouseMove}
+      onMouseLeave={handleMouseLeave}
+      className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-xl transition-all duration-500"
+      style={{
+        transform: prefersReducedMotion ? undefined : `perspective(1000px) rotateX(${rotate.x}deg) rotateY(${rotate.y}deg)`,
+      }}
     >
-      <div className="absolute inset-x-0 top-0 h-[2px] -translate-y-full bg-gradient-to-r from-accent-blue via-accent-cyan to-accent-green transition-transform duration-500 ease-out group-hover:translate-y-0" />
+      <div
+        className="absolute inset-0 rounded-2xl opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+        style={{
+          background: isHovered
+            ? "linear-gradient(135deg, rgba(0,242,254,0.15), rgba(0,114,255,0.15))"
+            : "transparent",
+        }}
+      />
 
-      <div className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-bento-surface-light/20 to-transparent transition-transform duration-700 ease-out group-hover:translate-x-full dark:via-bento-surface-light/10" />
+      <div className="absolute inset-x-0 top-0 h-[2px] -translate-y-full bg-gradient-to-r from-[#00F2FE] via-[#0072FF] to-[#00F2FE] transition-transform duration-500 ease-out group-hover:translate-y-0" />
 
       {issue.featuredImageUrl && (
         <div className="relative mb-4 h-40 w-full overflow-hidden rounded-xl">
@@ -52,23 +81,23 @@ export default function ArticleCard({ issue }: ArticleCardProps) {
       <div className="mb-3 flex flex-wrap items-center gap-2">
         <time
           dateTime={issue.date}
-          className="text-xs font-medium uppercase tracking-wider text-gray-500 transition-colors duration-300 group-hover:text-accent-cyan dark:text-gray-400 dark:group-hover:text-accent-emerald"
+          className="text-xs font-medium uppercase tracking-wider text-slate-500 transition-colors duration-300 group-hover:text-cyan-300 dark:text-slate-400 dark:group-hover:text-cyan-300"
         >
           {formattedDate}
         </time>
-        <span className="text-xs text-gray-300 dark:text-gray-600">•</span>
-        <span className="text-xs text-gray-500 transition-colors duration-300 group-hover:text-gray-700 dark:text-gray-400 dark:group-hover:text-gray-300">
+        <span className="text-xs text-slate-600 dark:text-slate-600">•</span>
+        <span className="text-xs text-slate-500 transition-colors duration-300 group-hover:text-slate-300 dark:text-slate-400 dark:group-hover:text-slate-300">
           {articleCount} {articleCount === 1 ? "article" : "articles"}
         </span>
       </div>
 
-      <h3 className="mb-2 text-lg font-semibold leading-snug text-gray-900 transition-colors duration-300 group-hover:text-accent-blue dark:text-white dark:group-hover:text-accent-emerald">
+      <h3 className="mb-2 text-lg font-semibold leading-snug text-gray-900 transition-colors duration-300 group-hover:text-cyan-300 dark:text-white dark:group-hover:text-cyan-300">
         {issue.title}
       </h3>
 
       {issue.intro && (
         <div
-          className="mb-4 line-clamp-2 text-sm leading-relaxed text-gray-600 transition-colors duration-300 group-hover:text-gray-700 dark:text-gray-400 dark:group-hover:text-gray-300"
+          className="mb-4 line-clamp-2 text-sm leading-relaxed text-gray-600 transition-colors duration-300 group-hover:text-gray-300 dark:text-gray-400 dark:group-hover:text-gray-300"
           dangerouslySetInnerHTML={{ __html: mdToHtml(issue.intro) }}
         />
       )}
@@ -91,7 +120,7 @@ export default function ArticleCard({ issue }: ArticleCardProps) {
                   ? {}
                   : { duration: 0.4, delay: index * 0.05, ease: [0.34, 1.56, 0.64, 1] }
               }
-              className="rounded-full bg-bento-surface-light px-2.5 py-0.5 text-xs font-medium text-accent-blue dark:bg-bento-surface-dark dark:text-accent-cyan"
+              className="rounded-full bg-white/10 px-2.5 py-0.5 text-xs font-medium text-cyan-300"
             >
               {tag}
             </motion.span>

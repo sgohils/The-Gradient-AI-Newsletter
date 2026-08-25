@@ -1,8 +1,9 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import ThemeToggle from "@/components/theme-toggle";
 import usePrefersReducedMotion from "@/hooks/use-prefers-reduced-motion";
 
@@ -18,22 +19,12 @@ const navLinkVariants = {
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
   const prefersReducedMotion = usePrefersReducedMotion();
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 20);
-    };
-    handleScroll();
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   const navLinks = [
-    { href: "/", label: "Home" },
     { href: "/archive", label: "Archive" },
-    { href: "/subscribe", label: "Subscribe" },
+    { href: "/topics", label: "Topics" },
+    { href: "/about", label: "About" },
   ];
 
   const isActive = (href: string) => {
@@ -42,143 +33,168 @@ export default function Navbar() {
   };
 
   return (
-    <nav
-      className={`sticky top-0 z-50 w-full border-b backdrop-blur-xl transition-all duration-300 ${
-        scrolled
-          ? "border-bento-surface-dark/30 bg-bento-surface/80 shadow-[0_1px_3px_rgba(0,0,0,0.08)] dark:border-bento-surface-darkest/30 dark:shadow-[0_1px_3px_rgba(0,0,0,0.3)]"
-          : "border-gray-200 bg-white/80 dark:border-gray-800 dark:bg-gray-950/80"
-      }`}
-    >
-      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <Link
-          href="/"
-          className="shimmer-sweep text-xl font-bold tracking-tight text-gray-900 dark:text-white"
+    <>
+      <nav className="sticky top-6 z-50 px-4 sm:px-6">
+        <motion.div
+          initial={prefersReducedMotion ? false : { opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={prefersReducedMotion ? {} : { type: "spring", stiffness: 200, damping: 25 }}
+          className="mx-auto max-w-5xl rounded-full bg-[#090D16]/80 backdrop-blur-2xl border border-white/10 shadow-2xl transition-all duration-300"
         >
-          The Gradient
-        </Link>
+          <div className="flex h-14 items-center justify-between px-4 sm:px-6">
+            <Link href="/" className="flex items-center gap-2.5 shrink-0">
+              <div className="relative h-8 w-8">
+                <Image
+                  src="/images/gradient-icon.png"
+                  alt="Gradient"
+                  fill
+                  className="object-contain"
+                  priority
+                />
+              </div>
+              <span className="hidden sm:block text-lg font-extrabold tracking-tight text-gray-900 dark:text-white">
+                Gradient News
+              </span>
+            </Link>
 
-        <div className="hidden items-center md:flex md:gap-1">
-          {navLinks.map(({ href, label }) => (
-            <motion.div
-              key={href}
-              custom={0}
-              variants={prefersReducedMotion ? {} : navLinkVariants}
-              initial={prefersReducedMotion ? undefined : "hidden"}
-              animate={prefersReducedMotion ? undefined : "visible"}
-              exit={prefersReducedMotion ? undefined : "exit"}
-            >
-              <Link
-                href={href}
-                className={`relative rounded-lg px-3 py-2 text-sm font-medium transition-colors duration-200 ${
-                  isActive(href)
-                    ? "text-accent-blue dark:text-accent-cyan"
-                    : "text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white"
-                }`}
-              >
-                {label}
-                {isActive(href) && (
-                  <motion.span
-                    layoutId="nav-underline"
-                    className="absolute -bottom-0.5 left-2 right-2 h-0.5 rounded-full bg-gradient-to-r from-accent-blue to-accent-cyan dark:from-accent-cyan dark:to-accent-emerald"
-                    transition={{ type: "spring", stiffness: 300, damping: 30 }}
-                  />
-                )}
-              </Link>
-            </motion.div>
-          ))}
-          <div className="ml-1">
-            <ThemeToggle />
-          </div>
-        </div>
-
-        <div className="flex items-center gap-2 md:hidden">
-          <ThemeToggle />
-          <motion.button
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="flex h-9 w-9 items-center justify-center rounded-lg text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-800"
-            {...(prefersReducedMotion ? {} : { whileHover: { scale: 1.05 }, whileTap: { scale: 0.95 } })}
-            aria-label="Toggle menu"
-            aria-expanded={mobileMenuOpen}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="shrink-0"
-            >
-              <AnimatePresence mode="wait" initial={false}>
-                {mobileMenuOpen ? (
-                  <motion.g
-                    key="close"
-                    initial={prefersReducedMotion ? undefined : { opacity: 0, rotate: -90 }}
-                    animate={{ opacity: 1, rotate: 0 }}
-                    exit={prefersReducedMotion ? undefined : { opacity: 0, rotate: 90 }}
-                    transition={prefersReducedMotion ? {} : { duration: 0.2 }}
-                  >
-                    <path d="M18 6 6 18" />
-                    <path d="m6 6 12 12" />
-                  </motion.g>
-                ) : (
-                  <motion.g
-                    key="open"
-                    initial={prefersReducedMotion ? undefined : { opacity: 0, rotate: 90 }}
-                    animate={{ opacity: 1, rotate: 0 }}
-                    exit={prefersReducedMotion ? undefined : { opacity: 0, rotate: -90 }}
-                    transition={prefersReducedMotion ? {} : { duration: 0.2 }}
-                  >
-                    <path d="M3 12h18" />
-                    <path d="M3 6h18" />
-                    <path d="M3 18h18" />
-                  </motion.g>
-                )}
-              </AnimatePresence>
-            </svg>
-          </motion.button>
-        </div>
-      </div>
-
-      <AnimatePresence>
-        {mobileMenuOpen && (
-          <motion.div
-            initial={prefersReducedMotion ? undefined : { opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
-            exit={prefersReducedMotion ? undefined : { opacity: 0, height: 0 }}
-            transition={prefersReducedMotion ? {} : { duration: 0.25, ease: "easeInOut" }}
-            className={`overflow-hidden md:hidden ${
-              scrolled
-                ? "border-t border-bento-surface-dark/30 dark:border-bento-surface-darkest/30"
-                : "border-t border-gray-200 dark:border-gray-800"
-            }`}
-          >
-            <div className="mx-auto max-w-7xl px-4 py-3 sm:px-6">
-              {navLinks.map(({ href, label }, i) => (
+            <div className="hidden items-center md:flex md:gap-1">
+              {navLinks.map(({ href, label }) => (
                 <motion.div
                   key={href}
-                  custom={i}
+                  custom={0}
                   variants={prefersReducedMotion ? {} : navLinkVariants}
                   initial={prefersReducedMotion ? undefined : "hidden"}
                   animate={prefersReducedMotion ? undefined : "visible"}
                   exit={prefersReducedMotion ? undefined : "exit"}
                 >
-                   <Link
-                     href={href}
-                     onClick={() => setMobileMenuOpen(false)}
-                     className="block rounded-lg px-3 py-2.5 text-sm font-medium text-gray-600 transition-colors hover:bg-gray-50 hover:text-accent-blue dark:text-gray-300 dark:hover:bg-gray-900 dark:hover:text-accent-cyan"
-                   >
-                     {label}
-                   </Link>
+                  <Link
+                    href={href}
+                    className={`relative rounded-full px-4 py-2 text-sm font-semibold transition-colors duration-200 ${
+                      isActive(href)
+                        ? "text-cyan-300"
+                        : "text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white"
+                    }`}
+                  >
+                    {label}
+                    {isActive(href) && (
+                      <motion.span
+                        layoutId="nav-underline"
+                        className="absolute -bottom-0.5 left-3 right-3 h-0.5 rounded-full bg-gradient-to-r from-[#00F2FE] to-[#0072FF]"
+                        transition={{ type: "spring", stiffness: 300, damping: 30 }}
+                      />
+                    )}
+                  </Link>
                 </motion.div>
               ))}
+              <div className="ml-1">
+                <ThemeToggle />
+              </div>
             </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </nav>
+
+            <div className="flex items-center gap-2 md:hidden">
+              <ThemeToggle />
+              <motion.button
+                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                className="flex h-9 w-9 items-center justify-center rounded-lg text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-800"
+                {...(prefersReducedMotion ? {} : { whileHover: { scale: 1.05 }, whileTap: { scale: 0.95 } })}
+                aria-label="Toggle menu"
+                aria-expanded={mobileMenuOpen}
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="shrink-0"
+                >
+                  <AnimatePresence mode="wait" initial={false}>
+                    {mobileMenuOpen ? (
+                      <motion.g
+                        key="close"
+                        initial={prefersReducedMotion ? undefined : { opacity: 0, rotate: -90 }}
+                        animate={{ opacity: 1, rotate: 0 }}
+                        exit={prefersReducedMotion ? undefined : { opacity: 0, rotate: 90 }}
+                        transition={prefersReducedMotion ? {} : { duration: 0.2 }}
+                      >
+                        <path d="M18 6 6 18" />
+                        <path d="m6 6 12 12" />
+                      </motion.g>
+                    ) : (
+                      <motion.g
+                        key="open"
+                        initial={prefersReducedMotion ? undefined : { opacity: 0, rotate: 90 }}
+                        animate={{ opacity: 1, rotate: 0 }}
+                        exit={prefersReducedMotion ? undefined : { opacity: 0, rotate: -90 }}
+                        transition={prefersReducedMotion ? {} : { duration: 0.2 }}
+                      >
+                        <path d="M3 12h18" />
+                        <path d="M3 6h18" />
+                        <path d="M3 18h18" />
+                      </motion.g>
+                    )}
+                  </AnimatePresence>
+                </svg>
+              </motion.button>
+            </div>
+
+            <div className="hidden md:block">
+              <Link
+                href="/subscribe"
+                className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#00F2FE] to-[#0072FF] px-5 py-2 text-sm font-bold text-white shadow-lg shadow-[#0072FF]/25 transition-all duration-300 hover:shadow-[0_0_30px_rgba(0,242,254,0.4)]"
+              >
+                Subscribe
+              </Link>
+            </div>
+          </div>
+        </motion.div>
+
+        <AnimatePresence>
+          {mobileMenuOpen && (
+            <motion.div
+              initial={prefersReducedMotion ? undefined : { opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: "auto" }}
+              exit={prefersReducedMotion ? undefined : { opacity: 0, height: 0 }}
+              transition={prefersReducedMotion ? {} : { duration: 0.25, ease: "easeInOut" }}
+              className="mt-2 overflow-hidden md:hidden"
+            >
+              <div className="mx-auto max-w-5xl rounded-3xl border border-white/10 bg-[#090D16]/90 p-4 shadow-2xl backdrop-blur-2xl">
+                {navLinks.map(({ href, label }, i) => (
+                  <motion.div
+                    key={href}
+                    custom={i}
+                    variants={prefersReducedMotion ? {} : navLinkVariants}
+                    initial={prefersReducedMotion ? undefined : "hidden"}
+                    animate={prefersReducedMotion ? undefined : "visible"}
+                    exit={prefersReducedMotion ? undefined : "exit"}
+                  >
+                    <Link
+                      href={href}
+                      onClick={() => setMobileMenuOpen(false)}
+                      className="block rounded-2xl px-4 py-3 text-sm font-semibold text-gray-300 transition-colors hover:bg-white/5 hover:text-white"
+                    >
+                      {label}
+                    </Link>
+                  </motion.div>
+                ))}
+                <div className="mt-2">
+                  <Link
+                    href="/subscribe"
+                    onClick={() => setMobileMenuOpen(false)}
+                    className="flex items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-[#00F2FE] to-[#0072FF] px-5 py-3 text-sm font-bold text-white shadow-lg shadow-[#0072FF]/25"
+                  >
+                    Subscribe
+                  </Link>
+                </div>
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </nav>
+    </>
   );
 }
