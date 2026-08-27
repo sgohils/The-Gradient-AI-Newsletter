@@ -63,6 +63,10 @@ export default function StatsBar({ issues }: StatsBarProps) {
 
   return (
     <section ref={ref} className="relative z-10 -mt-20 w-full px-4 sm:px-6">
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute -top-px left-0 right-0 mx-auto h-px max-w-5xl bg-gradient-to-r from-transparent via-accent-cyan/50 to-transparent"
+      />
       <motion.div
         initial={prefersReducedMotion ? false : "hidden"}
         animate={prefersReducedMotion ? false : isInView ? "visible" : "hidden"}
@@ -80,6 +84,7 @@ export default function StatsBar({ issues }: StatsBarProps) {
         {computedStats.map((stat) => (
           <motion.div
             key={stat.label}
+            {...(prefersReducedMotion ? {} : { whileHover: { scale: 1.03 } })}
             variants={
               prefersReducedMotion
                 ? {}
@@ -95,9 +100,9 @@ export default function StatsBar({ issues }: StatsBarProps) {
                     },
                   }
             }
-            className="flex min-w-[160px] flex-1 flex-col items-center rounded-2xl border border-white/10 bg-white/5 px-6 py-5 backdrop-blur-xl dark:bg-bento-surface/80 md:min-w-[200px]"
+            className="flex min-w-[160px] flex-1 flex-col items-center rounded-2xl border border-white/10 bg-white/5 px-6 py-5 backdrop-blur-xl transition-colors duration-300 hover:border-accent-cyan/30 dark:bg-bento-surface/80 md:min-w-[200px]"
           >
-            <span className="text-3xl font-bold bg-gradient-to-r from-[#00F2FE] to-[#0072FF] bg-clip-text text-transparent md:text-4xl">
+            <span className="gradient-text-shimmer text-3xl font-bold bg-gradient-to-r from-accent-cyan via-accent-blue to-accent-purple md:text-4xl">
               <CountUp end={stat.value} suffix={stat.suffix} />
             </span>
             <span className="mt-1 text-xs font-medium uppercase tracking-wider text-slate-500">

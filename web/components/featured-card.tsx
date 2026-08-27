@@ -19,6 +19,8 @@ interface FeaturedCardProps {
   };
 }
 
+const dotColors = ["bg-accent-cyan", "bg-accent-blue", "bg-accent-purple"] as const;
+
 export default function FeaturedCard({ issue }: FeaturedCardProps) {
   const cardRef = useRef<HTMLDivElement>(null);
   const { scrollY } = useScroll();
@@ -32,7 +34,11 @@ export default function FeaturedCard({ issue }: FeaturedCardProps) {
 
   return (
     <section ref={cardRef} className="relative z-10 w-full px-4 sm:px-6 py-16 md:py-24">
-      <motion.div style={{ y }} className="mx-auto max-w-5xl">
+      <motion.div style={{ y }} className="relative mx-auto max-w-5xl">
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute -top-20 -left-20 h-72 w-72 rounded-full bg-accent-purple/20 blur-[100px] animate-float-orb"
+        />
         <div className="group relative">
           <div className="absolute -inset-[2px] rounded-[28px] overflow-hidden opacity-70 transition-opacity duration-700 group-hover:opacity-100">
             <motion.div
@@ -40,6 +46,10 @@ export default function FeaturedCard({ issue }: FeaturedCardProps) {
               animate={{ opacity: mounted ? 1 : 0 }}
               transition={prefersReducedMotion ? {} : { duration: 0.8 }}
               className="absolute inset-0 gradient-border-spin"
+              style={{
+                background:
+                  "conic-gradient(from var(--gradient-angle), #22D3EE 0%, #3B82F6 33%, #8B5CF6 66%, #22D3EE 100%)",
+              }}
             />
           </div>
 
@@ -55,15 +65,19 @@ export default function FeaturedCard({ issue }: FeaturedCardProps) {
                     sizes="(max-width: 768px) 100vw, 40vw"
                   />
                 ) : (
-                  <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-[#00F2FE]/10 via-[#0072FF]/10 to-[#00F2FE]/10">
+                  <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-accent-cyan/10 via-accent-blue/10 to-accent-purple/10">
                     <div className="flex flex-col items-center gap-3">
                       <div className="flex gap-1.5">
                         {[0, 1, 2].map((i) => (
                           <motion.div
                             key={i}
-                            animate={{ y: [0, -6, 0] }}
-                            transition={{ duration: 1.5, repeat: Infinity, delay: i * 0.2 }}
-                            className="h-2 w-2 rounded-full bg-[#00F2FE]"
+                            animate={prefersReducedMotion ? { y: 0 } : { y: [0, -6, 0] }}
+                            transition={
+                              prefersReducedMotion
+                                ? {}
+                                : { duration: 1.5, repeat: Infinity, delay: i * 0.2 }
+                            }
+                            className={`h-2 w-2 rounded-full ${dotColors[i]}`}
                           />
                         ))}
                       </div>
@@ -78,7 +92,7 @@ export default function FeaturedCard({ issue }: FeaturedCardProps) {
 
               <div className="flex flex-1 flex-col justify-center p-6 md:p-8">
                 <div className="mb-4 flex items-center gap-2">
-                  <span className="rounded-full bg-[#00F2FE]/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-[#00F2FE]">
+                  <span className="rounded-full bg-accent-cyan/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-accent-cyan-light">
                     Featured
                   </span>
                   <time
@@ -93,7 +107,7 @@ export default function FeaturedCard({ issue }: FeaturedCardProps) {
                   </time>
                 </div>
 
-                <h2 className="text-2xl font-bold leading-tight text-gray-900 transition-colors duration-300 group-hover:text-[#00F2FE] dark:text-white dark:group-hover:text-[#00F2FE] md:text-3xl">
+                <h2 className="text-2xl font-bold leading-tight text-gray-900 transition-colors duration-300 group-hover:text-accent-cyan-light dark:text-white dark:group-hover:text-accent-cyan-light md:text-3xl">
                   {issue.title}
                 </h2>
 
@@ -114,7 +128,7 @@ export default function FeaturedCard({ issue }: FeaturedCardProps) {
                             ? {}
                             : { duration: 0.4, delay: 0.3 + index * 0.08, ease: [0.34, 1.56, 0.64, 1] }
                         }
-                        className="rounded-full bg-white/5 px-3 py-1 text-xs font-medium text-[#00F2FE]"
+                        className="rounded-full bg-white/5 px-3 py-1 text-xs font-medium text-accent-cyan-light transition-colors duration-300 hover:bg-accent-cyan/10"
                       >
                         {tag}
                       </motion.span>
@@ -125,7 +139,7 @@ export default function FeaturedCard({ issue }: FeaturedCardProps) {
                 <div className="mt-6">
                   <Link
                     href={`/archive/${issue.date}`}
-                    className="group/link inline-flex items-center gap-1.5 text-sm font-semibold text-[#00F2FE] transition-colors duration-300 hover:text-[#0072FF]"
+                    className="group/link inline-flex items-center gap-1.5 text-sm font-semibold text-accent-cyan-light transition-colors duration-300 hover:text-accent-purple-light"
                   >
                     Read full issue
                     <svg

@@ -21,17 +21,23 @@ export default function HomeGrid({ issues }: HomeGridProps) {
       <div ref={gridRef} className="mx-auto max-w-6xl">
         <ScrollReveal direction="up" className="mb-10">
           <div className="flex items-end justify-between">
-            <div>
-              <h2 className="text-3xl font-bold text-gray-900 dark:text-white">
-                Recent Issues
-              </h2>
-              <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
-                Catch up on the latest in AI and technology.
-              </p>
+            <div className="flex items-center gap-3">
+              <span
+                aria-hidden="true"
+                className="inline-block h-2 w-2 rounded-full bg-accent-cyan animate-pulse-glow"
+              />
+              <div>
+                <h2 className="text-3xl font-bold gradient-text-brand">
+                  Recent Issues
+                </h2>
+                <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
+                  Catch up on the latest in AI and technology.
+                </p>
+              </div>
             </div>
             <a
               href="/archive"
-              className="hidden items-center gap-1.5 text-sm font-semibold text-cyan-300 transition-colors duration-300 hover:text-cyan-400 dark:text-cyan-300 dark:hover:text-cyan-400 md:flex"
+              className="hidden items-center gap-1.5 text-sm font-semibold text-accent-cyan-light transition-colors duration-300 hover:text-accent-purple-light md:flex"
             >
               View all
               <svg

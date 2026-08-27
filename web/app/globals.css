@@ -144,3 +144,90 @@ body {
     backface-visibility: hidden;
   }
 }
+
+/* ----------------------------------------------------------------
+   Brand palette (cyan #22D3EE -> blue #3B82F6 -> purple #8B5CF6)
+   New keyframes + utility classes
+   ---------------------------------------------------------------- */
+
+@keyframes gradientMesh {
+  0%, 100% { background-position: 0% 50%; transform: translate(0, 0) rotate(0deg) scale(1); }
+  33% { background-position: 100% 50%; transform: translate(2%, -2%) rotate(2deg) scale(1.05); }
+  66% { background-position: 50% 100%; transform: translate(-2%, 2%) rotate(-2deg) scale(1.08); }
+}
+
+@keyframes shimmerText {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
+
+@keyframes floatOrb {
+  0%, 100% { transform: translateY(0) translateX(0); opacity: 0.6; }
+  50% { transform: translateY(-20px) translateX(6px); opacity: 1; }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes gradientX {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.05); }
+}
+
+@layer utilities {
+  .gradient-mesh-bg {
+    background: linear-gradient(135deg, #22D3EE 0%, #3B82F6 35%, #8B5CF6 70%, #22D3EE 100%);
+    background-size: 300% 300%;
+    animation: gradientMesh 18s ease-in-out infinite;
+  }
+
+  .gradient-text-brand {
+    background: linear-gradient(135deg, #22D3EE 0%, #3B82F6 50%, #8B5CF6 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+
+  .gradient-text-shimmer {
+    background: linear-gradient(90deg, #22D3EE 0%, #3B82F6 25%, #8B5CF6 50%, #3B82F6 75%, #22D3EE 100%);
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    animation: shimmerText 4s linear infinite;
+  }
+
+  .marquee-track {
+    display: flex;
+    width: max-content;
+    animation: marquee 30s linear infinite;
+  }
+
+  .glow-orb {
+    border-radius: 9999px;
+    filter: blur(8px);
+    animation: floatOrb 8s ease-in-out infinite;
+  }
+
+  .gpu {
+    transform: translateZ(0);
+    will-change: transform, opacity;
+  }
+
+  .glow-ring {
+    background: conic-gradient(from var(--gradient-angle, 0deg), #22D3EE, #3B82F6, #8B5CF6, #22D3EE);
+  }
+
+  @media (hover: hover) {
+    .marquee-pause:hover .marquee-track { animation-play-state: paused; }
+  }
+}

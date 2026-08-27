@@ -44,7 +44,7 @@ export default function SubscribeBox() {
       transition={{ duration: 0.8, delay: 0.7, ease: [0.25, 0.46, 0.45, 0.94] }}
       className="mx-auto w-full max-w-xl"
     >
-      <div className="flex flex-col gap-3 rounded-2xl bg-white/[0.03] p-2 backdrop-blur-2xl transition-all duration-300 focus-within:border-cyan-400/80 focus-within:ring-4 focus-within:ring-cyan-500/10 sm:flex-row sm:gap-0">
+      <div className="flex flex-col gap-3 rounded-2xl border border-white/5 bg-white/[0.03] p-2 backdrop-blur-2xl transition-all duration-300 focus-within:border-accent-cyan/80 focus-within:ring-4 focus-within:ring-accent-purple/20 sm:flex-row sm:gap-0">
         <input
           type="email"
           value={email}
@@ -56,7 +56,7 @@ export default function SubscribeBox() {
         <button
           type="submit"
           disabled={status === "loading"}
-          className="rounded-xl bg-gradient-to-r from-[#00F2FE] to-[#0072FF] px-6 py-3.5 text-sm font-bold text-white shadow-lg shadow-[#0072FF]/25 transition-all duration-300 hover:shadow-[0_0_30px_rgba(0,242,254,0.4)] disabled:opacity-50 dark:shadow-[#0072FF]/20"
+          className="shimmer-sweep relative overflow-hidden rounded-xl bg-gradient-to-r from-accent-cyan via-accent-blue to-accent-purple px-6 py-3.5 text-sm font-bold text-white shadow-lg shadow-glow-brand transition-all duration-300 hover:shadow-glow-brand disabled:opacity-50 dark:shadow-glow-brand"
         >
           {status === "loading" ? "Subscribing..." : "Get Daily Briefing →"}
         </button>

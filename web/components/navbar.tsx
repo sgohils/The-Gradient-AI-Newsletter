@@ -35,11 +35,15 @@ export default function Navbar() {
   return (
     <>
       <nav className="sticky top-6 z-50 px-4 sm:px-6">
+        <div
+          aria-hidden="true"
+          className="h-px w-full bg-gradient-to-r from-transparent via-accent-cyan to-accent-purple animate-gradient-x"
+        />
         <motion.div
           initial={prefersReducedMotion ? false : { opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={prefersReducedMotion ? {} : { type: "spring", stiffness: 200, damping: 25 }}
-          className="mx-auto max-w-5xl rounded-full bg-[#090D16]/80 backdrop-blur-2xl border border-white/10 shadow-2xl transition-all duration-300"
+          className="relative mx-auto max-w-5xl rounded-full border border-white/10 bg-[#090D16]/80 shadow-2xl backdrop-blur-2xl transition-all duration-300 before:pointer-events-none before:absolute before:inset-0 before:-z-10 before:rounded-full before:bg-gradient-to-r before:from-accent-cyan/5 before:via-transparent before:to-accent-purple/5"
         >
           <div className="flex h-14 items-center justify-between px-4 sm:px-6">
             <Link href="/" className="flex items-center gap-2.5 shrink-0">
@@ -52,7 +56,7 @@ export default function Navbar() {
                   priority
                 />
               </div>
-              <span className="hidden sm:block text-lg font-extrabold tracking-tight text-gray-900 dark:text-white">
+              <span className="hidden sm:block text-lg font-extrabold tracking-tight text-gray-900 transition-transform duration-300 hover:scale-105 dark:text-white">
                 Gradient News
               </span>
             </Link>
@@ -71,7 +75,7 @@ export default function Navbar() {
                     href={href}
                     className={`relative rounded-full px-4 py-2 text-sm font-semibold transition-colors duration-200 ${
                       isActive(href)
-                        ? "text-cyan-300"
+                        ? "text-accent-cyan-light"
                         : "text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white"
                     }`}
                   >
@@ -79,7 +83,7 @@ export default function Navbar() {
                     {isActive(href) && (
                       <motion.span
                         layoutId="nav-underline"
-                        className="absolute -bottom-0.5 left-3 right-3 h-0.5 rounded-full bg-gradient-to-r from-[#00F2FE] to-[#0072FF]"
+                        className="absolute -bottom-0.5 left-3 right-3 h-0.5 rounded-full bg-gradient-to-r from-accent-cyan via-accent-blue to-accent-purple"
                         transition={{ type: "spring", stiffness: 300, damping: 30 }}
                       />
                     )}
@@ -145,7 +149,7 @@ export default function Navbar() {
             <div className="hidden md:block">
               <Link
                 href="/subscribe"
-                className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#00F2FE] to-[#0072FF] px-5 py-2 text-sm font-bold text-white shadow-lg shadow-[#0072FF]/25 transition-all duration-300 hover:shadow-[0_0_30px_rgba(0,242,254,0.4)]"
+                className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-accent-cyan via-accent-blue to-accent-purple px-5 py-2 text-sm font-bold text-white shadow-lg shadow-glow-brand transition-all duration-300 hover:shadow-glow-brand"
               >
                 Subscribe
               </Link>
@@ -185,7 +189,7 @@ export default function Navbar() {
                   <Link
                     href="/subscribe"
                     onClick={() => setMobileMenuOpen(false)}
-                    className="flex items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-[#00F2FE] to-[#0072FF] px-5 py-3 text-sm font-bold text-white shadow-lg shadow-[#0072FF]/25"
+                    className="flex items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-accent-cyan via-accent-blue to-accent-purple px-5 py-3 text-sm font-bold text-white shadow-lg shadow-glow-brand"
                   >
                     Subscribe
                   </Link>

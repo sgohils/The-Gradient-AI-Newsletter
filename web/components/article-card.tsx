@@ -49,7 +49,7 @@ export default function ArticleCard({ issue }: ArticleCardProps) {
       onMouseEnter={() => setIsHovered(true)}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
-      className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-xl transition-all duration-500"
+      className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-xl transition-all duration-500 hover:border-accent-cyan/20"
       style={{
         transform: prefersReducedMotion ? undefined : `perspective(1000px) rotateX(${rotate.x}deg) rotateY(${rotate.y}deg)`,
       }}
@@ -58,12 +58,12 @@ export default function ArticleCard({ issue }: ArticleCardProps) {
         className="absolute inset-0 rounded-2xl opacity-0 transition-opacity duration-500 group-hover:opacity-100"
         style={{
           background: isHovered
-            ? "linear-gradient(135deg, rgba(0,242,254,0.15), rgba(0,114,255,0.15))"
+            ? "linear-gradient(135deg, rgba(34,211,238,0.12), rgba(139,92,246,0.12))"
             : "transparent",
         }}
       />
 
-      <div className="absolute inset-x-0 top-0 h-[2px] -translate-y-full bg-gradient-to-r from-[#00F2FE] via-[#0072FF] to-[#00F2FE] transition-transform duration-500 ease-out group-hover:translate-y-0" />
+      <div className="absolute inset-x-0 top-0 h-[2px] -translate-y-full bg-gradient-to-r from-accent-cyan via-accent-blue to-accent-purple transition-transform duration-500 ease-out group-hover:translate-y-0" />
 
       {issue.featuredImageUrl && (
         <div className="relative mb-4 h-40 w-full overflow-hidden rounded-xl">
@@ -81,7 +81,7 @@ export default function ArticleCard({ issue }: ArticleCardProps) {
       <div className="mb-3 flex flex-wrap items-center gap-2">
         <time
           dateTime={issue.date}
-          className="text-xs font-medium uppercase tracking-wider text-slate-500 transition-colors duration-300 group-hover:text-cyan-300 dark:text-slate-400 dark:group-hover:text-cyan-300"
+          className="text-xs font-medium uppercase tracking-wider text-slate-500 transition-colors duration-300 group-hover:text-accent-cyan-light dark:text-slate-400 dark:group-hover:text-accent-cyan-light"
         >
           {formattedDate}
         </time>
@@ -91,7 +91,7 @@ export default function ArticleCard({ issue }: ArticleCardProps) {
         </span>
       </div>
 
-      <h3 className="mb-2 text-lg font-semibold leading-snug text-gray-900 transition-colors duration-300 group-hover:text-cyan-300 dark:text-white dark:group-hover:text-cyan-300">
+      <h3 className="mb-2 text-lg font-semibold leading-snug text-gray-900 transition-colors duration-300 dark:text-white group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-accent-cyan group-hover:via-accent-blue group-hover:to-accent-purple group-hover:text-transparent">
         {issue.title}
       </h3>
 
@@ -120,7 +120,7 @@ export default function ArticleCard({ issue }: ArticleCardProps) {
                   ? {}
                   : { duration: 0.4, delay: index * 0.05, ease: [0.34, 1.56, 0.64, 1] }
               }
-              className="rounded-full bg-white/10 px-2.5 py-0.5 text-xs font-medium text-cyan-300"
+              className="rounded-full bg-white/10 px-2.5 py-0.5 text-xs font-medium text-accent-cyan-light transition-colors duration-300 group-hover:bg-accent-cyan/10"
             >
               {tag}
             </motion.span>
