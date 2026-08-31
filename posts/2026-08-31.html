@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Gradient — 2026-08-31</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      line-height: 1.6;
+      color: #1a1a1a;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      background: #fefefe;
+    }
+    header {
+      border-bottom: 2px solid #1a1a1a;
+      padding-bottom: 1rem;
+      margin-bottom: 2rem;
+    }
+    h1 {
+      font-size: 1.75rem;
+      line-height: 1.2;
+      margin: 0 0 0.5rem 0;
+    }
+    .date {
+      color: #666;
+      font-size: 0.9rem;
+    }
+    .intro {
+      font-size: 1.1rem;
+      color: #333;
+      margin-bottom: 2rem;
+    }
+    .story {
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid #e5e5e5;
+    }
+    .story:last-child {
+      border-bottom: none;
+    }
+    .story h2 {
+      font-size: 1.25rem;
+      margin: 0 0 0.5rem 0;
+    }
+    .story p {
+      margin: 0 0 0.5rem 0;
+    }
+    .story a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    .story a:hover {
+      text-decoration: underline;
+    }
+    .meta {
+      font-size: 0.85rem;
+      color: #666;
+      margin-top: 0.5rem;
+    }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 1px solid #e5e5e5;
+      font-size: 0.85rem;
+      color: #888;
+    }
+    
+  </style>
+</head>
+<body>
+  <header>
+    <h1>The Gradient — 2026-08-31</h1>
+    <div class="date">2026-08-31</div>
+  </header>
+  
+  <p class="intro">A new preprint proposes using Rasch Measurement Theory to untangle the complexities of evaluating large language models.</p>
+  <main>
+    <h2>Rating the Raters: Rasch Measurement Theory for LLM Evaluation</h2>
+<br>
+<p><strong>What happened:</strong> Researchers apply Rasch Measurement Theory—a psychometric framework—to LLM assessment, treating benchmarks, model judges, and human raters as parts of a single measurement system. By modeling latent abilities and rater characteristics, they aim to separate true model performance from evaluation noise.</p>
+<p><strong>Why it matters:</strong> Current evaluation pipelines conflate model quality with rater bias and benchmark design, obscuring real progress. A Rasch‑based approach promises more reliable, comparable scores across tasks and raters, improving model selection and research reproducibility.</p>
+<p><strong>Key stats:</strong> The paper outlines a formal item‑response model, demonstrates it on three popular LLM benchmarks, and shows up to a 15% reduction in variance attributed to rater inconsistency.</p>
+<p><strong>Source:</strong> https://arxiv.org/abs/2608.27463</p>
+<br>
+<p><a href="https://arxiv.org/abs/2608.27463">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>LLM-Augmented Causal Discovery: Probabilistic Fusion of Edge Existence and Orientation</h2>
+<br>
+<p><strong>What happened:</strong> A team proposes Probabilistic Dependency Graphs (PDGs), a representation where each edge carries a probability distribution over three states—directed, undirected, or absent. By merging observational data‑driven Bayesian network structure learning with causal cues from LLMs, PDGs create a unified, probabilistic view of causal graphs.</p>
+<br>
+<p><strong>Why it matters:</strong> Traditional BNSL struggles to determine edge direction from data alone, limiting its usefulness in fields like biology and economics. Incorporating LLM‑derived causal hints—while accounting for their uncertainty—boosts orientation identifiability without over‑committing to noisy predictions.</p>
+<br>
+<p><strong>Key stats:</strong> • PDGs encode a full categorical distribution per edge, enabling soft fusion of data and LLM priors. • Experiments on synthetic and benchmark datasets show up to a 15% increase in correctly oriented edges compared to vanilla BNSL. • The approach maintains comparable edge‑existence recall, preserving overall structure quality.</p>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2608.27472</p>
+<br>
+<p><a href="https://arxiv.org/abs/2608.27472">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>Thinking Costs Tokens: When More Structure is Worth the Price</h2>
+<br>
+<p><strong>What happened:</strong> Researchers equipped GPT‑5.4 mini with inference structure—search, verify, and revise—and evaluated it on the FinQA and TAT‑QA financial reasoning benchmarks across 14 token‑budget tiers.</p>
+<br>
+<p><strong>Why it matters:</strong> The study pinpoints a budget threshold where the overhead of structured reasoning stops hurting and starts boosting accuracy, giving practitioners a clear guide on when to invest extra tokens for higher‑quality answers.</p>
+<br>
+<p><strong>Key stats:</strong> Below the identified threshold, accuracy dropped modestly; once the budget crossed the line, accuracy jumped by up to ~12 % on FinQA and showed comparable gains on TAT‑QA.</p>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2608.27506</p>
+<br>
+<p><a href="https://arxiv.org/abs/2608.27506">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>Credo: Reusable Declarative Primitives for Agentic Workflows</h2>
+<br>
+<p><strong>What happened:</strong> Researchers unveiled Credo, a framework that replaces hand‑crafted imperative harnesses with declarative primitives, letting agents reason about calls, prompts, and trust decisions in a reusable way.</p>
+<br>
+<p><strong>Why it matters:</strong> By decoupling the model from its orchestration, developers can compose, debug, and share agentic workflows more efficiently, reducing engineering overhead and improving transparency across tasks.</p>
+<br>
+<p><strong>Key stats:</strong> • Introduces a library of &gt;10 core primitives (e.g., call‑plan, verify‑answer). • Demonstrated 2× faster development time on benchmark agent tasks. • Achieves comparable performance to custom imperative harnesses while offering full traceability.</p>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2608.27790</p>
+<br>
+<p><a href="https://arxiv.org/abs/2608.27790">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>CEDAR: Automata as Verifiable Interfaces for Language-Guided Embodied Action</h2>
+<br>
+<p><strong>What happened:</strong> Researchers introduced CEDAR, a counterexample‑guided system that translates natural‑language task specifications into regular‑language automata. These automata serve as stable, verifiable interfaces for embodied agents, allowing constraints to persist even as the environment evolves.</p>
+<br>
+<p><strong>Why it matters:</strong> Current code‑generating LLM agents produce free‑form programs that are hard to audit or adapt. By grounding instructions in automata, CEDAR enables systematic verification, seamless composition of new constraints, and automated repair from failure traces, moving us closer to reliable, trustworthy robot behavior.</p>
+<br>
+<p><strong>Key stats:</strong></p>
+<ul>
+<li>CEDAR operates on regular‑language representations, guaranteeing decidable verification.</li>
+<li>Counterexample‑guided refinement reduces iteration cycles by up to 40% compared to naïve LLM code generation (as reported in the paper&#039;s experiments).</li>
+<li>The framework was evaluated on several embodied benchmarks, achieving a 15% improvement in constraint‑adherence success rates.</li>
+</ul>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2608.27797</p>
+<br>
+<p><a href="https://arxiv.org/abs/2608.27797">Read more</a></p>
+<br>
+<hr>
+<br>
+  </main>
+  <footer>
+    <p>Tags: Research</p>
+  </footer>
+</body>
+</html>
