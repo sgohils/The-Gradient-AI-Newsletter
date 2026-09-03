@@ -164,10 +164,17 @@ export async function runPipeline(cliOptions: CliOptions): Promise<OrchestratorR
 
     console.log(`  Dry-run complete. Files written to: ${dryRunDir}`);
   } else {
-    const result = await publish(issue, { outputDir });
+    const result = await publish(issue, {
+      outputDir,
+      generateFeaturedImage: config.imageGeneration?.enabled ?? true,
+      imageModel: config.imageGeneration?.model,
+    });
     mdPath = result.mdPath;
     htmlPath = result.htmlPath;
     console.log(`  Published to: ${mdPath}, ${htmlPath}`);
+    if (result.featuredImageUrl) {
+      console.log(`  Featured image: ${result.featuredImageUrl}`);
+    }
   }
 
   console.log('[6/6] Sending newsletter to subscribers...');

@@ -2,9 +2,12 @@ import * as fs from 'fs';
 import * as path from 'path';
 import { NewsletterIssue } from '../types';
 import { markdownToHtml } from './renderer';
+import { generateIssueImage, ImageModel } from './image-generator';
 
 export interface PublisherOptions {
   outputDir?: string;
+  generateFeaturedImage?: boolean;
+  imageModel?: ImageModel;
 }
 
 export function buildMarkdown(issue: NewsletterIssue): string {
@@ -110,7 +113,7 @@ export function buildHtml(issue: NewsletterIssue): string {
 export async function publish(
   issue: NewsletterIssue,
   options: PublisherOptions = {}
-): Promise<{ mdPath: string; htmlPath: string }> {
+): Promise<{ mdPath: string; htmlPath: string; featuredImageUrl?: string }> {
   const outputDir = options.outputDir || 'posts';
 
   if (!fs.existsSync(outputDir)) {
@@ -121,13 +124,29 @@ export async function publish(
   const mdPath = path.join(outputDir, `${baseName}.md`);
   const htmlPath = path.join(outputDir, `${baseName}.html`);
 
+  const generateFeaturedImage = options.generateFeaturedImage
+    ?? process.env.GRADIENT_IMAGE_GEN !== 'off';
+
+  if (!issue.featuredImageUrl && generateFeaturedImage) {
+    try {
+      const generated = await generateIssueImage(issue, {
+        model: options.imageModel,
+      });
+      if (generated) {
+        issue.featuredImageUrl = generated;
+      }
+    } catch (err) {
+      console.warn(`[publisher] Image generation skipped:`, err);
+    }
+  }
+
   const markdown = buildMarkdown(issue);
   const html = buildHtml(issue);
 
   fs.writeFileSync(mdPath, markdown, 'utf-8');
   fs.writeFileSync(htmlPath, html, 'utf-8');
 
-  return { mdPath, htmlPath };
+  return { mdPath, htmlPath, featuredImageUrl: issue.featuredImageUrl };
 }
 
 function buildFrontmatter(issue: NewsletterIssue): string {

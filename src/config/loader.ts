@@ -16,6 +16,11 @@ export interface Config {
   sources: Source[];
   maxArticles: number;
   mailer: MailerConfig;
+  imageGeneration: {
+    enabled: boolean;
+    outputDir: string;
+    model: 'flux' | 'turbo';
+  };
 }
 
 const DEFAULT_CONFIG: Omit<Config, 'sources'> = {
@@ -31,6 +36,11 @@ const DEFAULT_CONFIG: Omit<Config, 'sources'> = {
     resendApiKey: process.env.RESEND_API_KEY,
     fromEmail: process.env.MAILER_FROM_EMAIL || 'The Gradient <newsletter@gradientnews.app>',
     fromName: process.env.MAILER_FROM_NAME || 'The Gradient',
+  },
+  imageGeneration: {
+    enabled: process.env.GRADIENT_IMAGE_GEN !== 'off',
+    outputDir: process.env.GRADIENT_IMAGE_DIR || path.join(process.cwd(), 'web', 'public', 'issue-images'),
+    model: (process.env.GRADIENT_IMAGE_MODEL === 'turbo' ? 'turbo' : 'flux') as 'flux' | 'turbo',
   },
 };
 
