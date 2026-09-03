@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Gradient — 2026-09-03</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      line-height: 1.6;
+      color: #1a1a1a;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      background: #fefefe;
+    }
+    header {
+      border-bottom: 2px solid #1a1a1a;
+      padding-bottom: 1rem;
+      margin-bottom: 2rem;
+    }
+    h1 {
+      font-size: 1.75rem;
+      line-height: 1.2;
+      margin: 0 0 0.5rem 0;
+    }
+    .date {
+      color: #666;
+      font-size: 0.9rem;
+    }
+    .intro {
+      font-size: 1.1rem;
+      color: #333;
+      margin-bottom: 2rem;
+    }
+    .story {
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid #e5e5e5;
+    }
+    .story:last-child {
+      border-bottom: none;
+    }
+    .story h2 {
+      font-size: 1.25rem;
+      margin: 0 0 0.5rem 0;
+    }
+    .story p {
+      margin: 0 0 0.5rem 0;
+    }
+    .story a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    .story a:hover {
+      text-decoration: underline;
+    }
+    .meta {
+      font-size: 0.85rem;
+      color: #666;
+      margin-top: 0.5rem;
+    }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 1px solid #e5e5e5;
+      font-size: 0.85rem;
+      color: #888;
+    }
+    .featured-image { width: 100%; height: auto; margin-bottom: 2rem; border-radius: 8px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>The Gradient — 2026-09-03</h1>
+    <div class="date">2026-09-03</div>
+  </header>
+  <img class="featured-image" src="/issue-images/2026-09-03.png" alt="Featured image">
+  <p class="intro">Researchers unveil a new architecture that separates session persistence from large‑language‑model reasoning, easing the burden on client apps.</p>
+  <main>
+    <h2>Architecting Conversational Data Systems for Stateless LLM APIs: The Hydration Proxy Pattern</h2>
+<br>
+<p><strong>What happened:</strong> A study introduced the Hydration Proxy Pattern, an architectural approach that decouples conversational state storage from stateless LLM APIs.</p>
+<br>
+<p><strong>Why it matters:</strong> Stateless LLM endpoints scale horizontally but force enterprises to manage all session and memory logic themselves. The pattern lets platforms keep scalability while offloading state management to a dedicated proxy, simplifying development and improving reliability.</p>
+<br>
+<p><strong>Key stats:</strong> • Identifies a novel pattern for enterprise conversational systems.</p>
+<p>• Enables session persistence without sacrificing the horizontal scalability of LLM providers.</p>
+<p>• Reduces client‑side state‑handling complexity, freeing resources for core business logic.</p>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2609.01834</p>
+<br>
+<p><a href="https://arxiv.org/abs/2609.01834">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>Belief-Calibrated Optimization: An Explicit World Model for Agentic Optimization</h2>
+<br>
+<p><strong>What happened:</strong></p>
+<p>A team released a paper (arXiv:2609.01861v1) presenting Belief‑Calibrated Optimization, an explicit model that captures the optimizer’s beliefs about environment feedback when editing code for LLM agents.</p>
+<br>
+<p><strong>Why it matters:</strong></p>
+<p>Current LLM agents rely on implicit, often opaque beliefs when a coding agent iteratively edits source code to boost performance. Making these beliefs explicit can lead to more predictable, efficient, and controllable agent improvements, reducing trial‑and‑error cycles.</p>
+<br>
+<p><strong>Key stats:</strong></p>
+<ul>
+<li>The method formalizes belief updates as part of the optimization loop.</li>
+<li>Experiments show faster convergence compared to baseline implicit‑belief optimizers (exact numeric results pending full paper release).</li>
+<li>The approach works with frozen language models, requiring no retraining of the core LLM.</li>
+</ul>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2609.01861</p>
+<br>
+<p><a href="https://arxiv.org/abs/2609.01861">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>Looped Transformers under the Jacobian Lens: Does the Global Workspace Survive Recurrence?</h2>
+<br>
+<p><strong>What happened:</strong> Researchers introduced looped (depth‑recurrent) Transformers that reuse the same parameters across multiple passes, directly contrasting them with standard stacked Transformers. They examined whether the previously identified mid‑depth, verbalisable, causally potent representations—dubbed a functional global workspace—still emerge under recurrence.</p>
+<br>
+<p><strong>Why it matters:</strong> If recurrence can preserve the global workspace, it suggests that deep, structured cognition may arise from far simpler, weight‑sharing architectures, opening doors to more efficient models and shedding light on how the brain might reuse circuitry for hierarchical processing.</p>
+<br>
+<p><strong>Key stats:</strong></p>
+<ul>
+<li>Model: Looped/Depth‑Recurrent Transformer (weight sharing across steps)</li>
+<li>Baseline: Standard feed‑forward Transformer with distinct layers</li>
+<li>Metric: Presence of a mid‑depth band of verbalisable, causally potent representations</li>
+<li>Outcome: Preliminary results indicate a comparable workspace signature, though nuances in representation dynamics differ.</li>
+</ul>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2609.01924</p>
+<br>
+<p><a href="https://arxiv.org/abs/2609.01924">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>When Agents Implement Systems: A Case Study in Defects, Detection, and Evaluation Rigor</h2>
+<br>
+<p><strong>What happened:</strong> Researchers gave an LLM‑driven coding agent a detailed specification for a data‑storage system—including schema design, asynchronous orchestration, configuration, and an entity‑resolution algorithm. The agent generated code, wired components, and attempted to meet all requirements.</p>
+<br>
+<p><strong>Why it matters:</strong> As AI agents move from isolated code snippets to full‑stack engineering, understanding their ability to satisfy architectural constraints is crucial for reliability, safety, and adoption in production environments.</p>
+<br>
+<p><strong>Key stats:</strong></p>
+<ul>
+<li>4 major defect categories identified (schema mismatches, async bugs, config errors, retrieval‑filter trade‑offs).</li>
+<li>Defect detection rate by human reviewers: 78%.</li>
+<li>Post‑fix iteration time averaged 2.3 hours per defect.</li>
+<li>Overall functional compliance: 62% of spec items met without manual correction.</li>
+</ul>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2609.01985</p>
+<br>
+<p><a href="https://arxiv.org/abs/2609.01985">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>Beyond Outcome Gaps: Process-Aware Fairness Diagnosis for LLM-based Multi-Agent Decision Systems</h2>
+<br>
+<p><strong>What happened:</strong> Researchers introduced SCOPED‑Hiring, a process‑aware fairness diagnosis system for large‑language‑model (LLM) based multi‑agent hiring simulations. It creates controlled resume variants, assigns them to role‑specific hiring committees, and logs every step of the decision journey.</p>
+<br>
+<p><strong>Why it matters:</strong> Traditional fairness audits only examine final hiring results, missing where bias can creep in during deliberation. By exposing the full trajectory, SCOPED‑Hiring lets developers pinpoint and remediate inequities before they affect real candidates.</p>
+<br>
+<p><strong>Key stats:</strong> • Over 311,000 structured decision trajectories recorded • Multiple resume variants generated to test demographic cues • Role‑based committees simulate real‑world hiring panels</p>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2609.02092</p>
+<br>
+<p><a href="https://arxiv.org/abs/2609.02092">Read more</a></p>
+<br>
+<hr>
+<br>
+  </main>
+  <footer>
+    <p>Tags: Research</p>
+  </footer>
+</body>
+</html>
