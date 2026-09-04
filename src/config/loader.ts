@@ -12,6 +12,7 @@ export interface Config {
   groqApiKey?: string;
   groqModel?: string;
   groqTemperature?: number;
+  pixazApiKey?: string;
   outputDir?: string;
   sources: Source[];
   maxArticles: number;
@@ -30,6 +31,7 @@ const DEFAULT_CONFIG: Omit<Config, 'sources'> = {
   groqApiKey: process.env.GROQ_API_KEY,
   groqModel: 'openai/gpt-oss-120b',
   groqTemperature: 1,
+  pixazApiKey: process.env.PIXAZ_API_KEY,
   outputDir: process.env.OUTPUT_DIR || 'posts',
   maxArticles: 5,
   mailer: {

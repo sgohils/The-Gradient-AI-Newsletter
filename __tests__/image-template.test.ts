@@ -1,7 +1,10 @@
 import { describe, it, expect } from 'vitest';
 import { buildImagePrompt, extractThemes, dateToSeed } from '../src/publisher/image-template';
-import { buildPollinationsUrl } from '../src/publisher/image-generator';
+import { generateIssueImage, ImageGenerationError, buildPollinationsUrl } from '../src/publisher/image-generator';
 import type { NewsletterIssue, Article } from '../src/types';
+import * as fs from 'fs';
+import * as path from 'path';
+import * as os from 'os';
 
 function makeArticle(overrides: Partial<Article> = {}): Article {
   return {
@@ -122,27 +125,38 @@ describe('image-template', () => {
   });
 });
 
-describe('image-generator url builder', () => {
-  it('builds a Pollinations URL with expected params', () => {
-    const url = buildPollinationsUrl('abstract gradient, navy to cyan', {
-      width: 1200,
-      height: 630,
-      seed: 42,
-      model: 'flux',
-    });
-    expect(url.startsWith('https://image.pollinations.ai/prompt/')).toBe(true);
-    expect(url).toContain('width=1200');
-    expect(url).toContain('height=630');
-    expect(url).toContain('seed=42');
-    expect(url).toContain('model=flux');
-    expect(url).toContain('nologo=true');
-    expect(url).toContain('enhance=false');
+describe('image-generator (Pixazo)', () => {
+  it('returns null and warns when PIXAZ_API_KEY is missing', async () => {
+    const original = process.env.PIXAZ_API_KEY;
+    delete process.env.PIXAZ_API_KEY;
+    const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'gradient-img-test-'));
+    try {
+      const issue = makeIssue({ date: '2099-01-01' });
+      const result = await generateIssueImage(issue, { outputDir: tmp });
+      expect(result).toBeNull();
+    } finally {
+      if (original) process.env.PIXAZ_API_KEY = original;
+      fs.rmSync(tmp, { recursive: true, force: true });
+    }
   });
 
-  it('URI-encodes the prompt safely', () => {
-    const url = buildPollinationsUrl('hello world & special/chars', {
-      width: 100, height: 100, seed: 1, model: 'turbo',
-    });
-    expect(url).toContain(encodeURIComponent('hello world & special/chars'));
+  it('is idempotent — returns existing file path without calling the API', async () => {
+    const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'gradient-img-test-'));
+    try {
+      const fileName = '2099-01-02.png';
+      const filePath = path.join(tmp, fileName);
+      fs.writeFileSync(filePath, Buffer.from([0x89, 0x50, 0x4e, 0x47]));
+      const issue = makeIssue({ date: '2099-01-02' });
+      const result = await generateIssueImage(issue, { outputDir: tmp, apiKey: 'fake-key' });
+      expect(result).toBe(`/issue-images/${fileName}`);
+    } finally {
+      fs.rmSync(tmp, { recursive: true, force: true });
+    }
+  });
+
+  it('throws ImageGenerationError from the deprecated URL builder', () => {
+    expect(() =>
+      buildPollinationsUrl('prompt', { width: 1, height: 1, seed: 1, model: 'flux' })
+    ).toThrow(ImageGenerationError);
   });
 });

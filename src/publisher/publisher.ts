@@ -8,6 +8,7 @@ export interface PublisherOptions {
   outputDir?: string;
   generateFeaturedImage?: boolean;
   imageModel?: ImageModel;
+  apiKey?: string;
 }
 
 export function buildMarkdown(issue: NewsletterIssue): string {
@@ -131,6 +132,7 @@ export async function publish(
     try {
       const generated = await generateIssueImage(issue, {
         model: options.imageModel,
+        apiKey: options.apiKey,
       });
       if (generated) {
         issue.featuredImageUrl = generated;

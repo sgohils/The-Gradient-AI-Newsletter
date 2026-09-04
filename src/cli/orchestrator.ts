@@ -168,6 +168,7 @@ export async function runPipeline(cliOptions: CliOptions): Promise<OrchestratorR
       outputDir,
       generateFeaturedImage: config.imageGeneration?.enabled ?? true,
       imageModel: config.imageGeneration?.model,
+      apiKey: config.pixazApiKey,
     });
     mdPath = result.mdPath;
     htmlPath = result.htmlPath;
