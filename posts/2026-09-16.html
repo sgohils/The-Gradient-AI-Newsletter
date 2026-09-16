@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Gradient — 2026-09-16</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      line-height: 1.6;
+      color: #1a1a1a;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      background: #fefefe;
+    }
+    header {
+      border-bottom: 2px solid #1a1a1a;
+      padding-bottom: 1rem;
+      margin-bottom: 2rem;
+    }
+    h1 {
+      font-size: 1.75rem;
+      line-height: 1.2;
+      margin: 0 0 0.5rem 0;
+    }
+    .date {
+      color: #666;
+      font-size: 0.9rem;
+    }
+    .intro {
+      font-size: 1.1rem;
+      color: #333;
+      margin-bottom: 2rem;
+    }
+    .story {
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid #e5e5e5;
+    }
+    .story:last-child {
+      border-bottom: none;
+    }
+    .story h2 {
+      font-size: 1.25rem;
+      margin: 0 0 0.5rem 0;
+    }
+    .story p {
+      margin: 0 0 0.5rem 0;
+    }
+    .story a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    .story a:hover {
+      text-decoration: underline;
+    }
+    .meta {
+      font-size: 0.85rem;
+      color: #666;
+      margin-top: 0.5rem;
+    }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 1px solid #e5e5e5;
+      font-size: 0.85rem;
+      color: #888;
+    }
+    
+  </style>
+</head>
+<body>
+  <header>
+    <h1>The Gradient — 2026-09-16</h1>
+    <div class="date">2026-09-16</div>
+  </header>
+  
+  <p class="intro">Researchers unveil Vibe Patenting, a framework that lets an auxiliary LLM critique and refine AI‑written patent applications, shedding light on how reliable these “judge” models are for high‑stakes work.</p>
+  <main>
+    <h2>Vibe Patenting: Evaluating LLM Judges for Professional Patent-Drafting Agents</h2>
+<br>
+<p><strong>What happened:</strong>  The team built Vibe Patenting, an end‑to‑end testbed where a primary AI agent drafts patent applications and a separately‑invoked LLM judge evaluates the drafts, returns structured feedback, and guides iterative revisions.</p>
+<br>
+<p><strong>Why it matters:</strong>  Patent drafting is a complex, legally sensitive task. Demonstrating that an LLM can reliably critique and improve such work opens the door to more trustworthy AI‑assisted professional services and could reduce the cost and time of patent preparation.</p>
+<br>
+<p><strong>Key stats:</strong>  • Experiments spanned multiple inventions and several drafting‑agent configurations.  • Judge‑guided revisions consistently outperformed single‑pass drafts, showing measurable gains in standard patent‑quality metrics.  • The approach proved scalable across the varied test cases examined.</p>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2609.13422</p>
+<br>
+<p><a href="https://arxiv.org/abs/2609.13422">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>Toward Self-Adaptive Physical AI: Can LLM Agents Manage Long-Horizon Physical Tasks?</h2>
+<br>
+<p><strong>What happened:</strong> Researchers introduced a framework that lets LLM agents continuously observe, decide, and act in real‑world‑like environments, targeting tasks that span minutes to hours.</p>
+<br>
+<p><strong>Why it matters:</strong> If successful, such agents could operate machinery, conduct maintenance, or assist in disaster response without human oversight, reducing costs and expanding AI’s practical reach.</p>
+<br>
+<p><strong>Key stats:</strong> • Tested on three simulated long‑horizon physical benchmarks.</p>
+<p>• Achieved up to 68% task‑completion success, a 20‑30% gain over prior virtual‑only baselines.</p>
+<p>• Required 40% less environment‑specific data and no retraining during execution.</p>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2609.13436</p>
+<br>
+<p><a href="https://arxiv.org/abs/2609.13436">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>Grounded Adjudication of Variations across Extracted TimeLines (GAVEL): Comparing Clinical Timelines Against Their Case Reports</h2>
+<br>
+<p><strong>What happened:</strong> Researchers introduced GAVEL, an LLM‑based adjudication system that directly compares a generated timeline with the narrative of a case report, flagging each discrepancy with a type, verdict, and the supporting passage.</p>
+<br>
+<p><strong>Why it matters:</strong> By moving beyond imperfect expert references, GAVEL offers a more precise, automated way to evaluate timeline‑extraction pipelines, potentially raising the reliability of clinical data mining and downstream decision‑support tools.</p>
+<br>
+<p><strong>Key stats:</strong> • Evaluated 2,738 discrepancy findings from two leading models—GPT5.6sol and DeepSeek V3.</p>
+<p>• Tested an event‑matching component that underpins the comparison.</p>
+<p>• Demonstrated granular error categorization across multiple clinical domains.</p>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2609.13475</p>
+<br>
+<p><a href="https://arxiv.org/abs/2609.13475">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>Asclepius: An Adaptive Harness for Long-Horizon Clinical Agents</h2>
+<br>
+<p><strong>What happened:</strong> The team built the Clinical Environment Simulator (CES), where an AI agent runs an entire emergency‑department shift under continuous time and resource pressure. Using CES, they observed that state‑of‑the‑art LLM agents, which perform well on short benchmark tasks, encounter execution failures during a single long‑horizon rollout.</p>
+<br>
+<p><strong>Why it matters:</strong> Real‑world deployments of AI in healthcare must operate reliably for hours, not just minutes. Short‑task benchmarks miss critical failure modes that emerge under sustained load, making Asclepius a vital tool for evaluating safety and robustness before clinical rollout.</p>
+<br>
+<p><strong>Key stats:</strong> Early experiments reveal measurable failures within one 8‑hour shift, with error frequency climbing after the first hour of continuous operation. The simulator captures multi‑dimensional resource contention (staff, beds, equipment) that amplifies these failures.</p>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2609.13543</p>
+<br>
+<p><a href="https://arxiv.org/abs/2609.13543">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>Carbon-Aware Routing for Function Calling in Edge-Cloud LLM Systems</h2>
+<br>
+<p><strong>What happened:</strong> Researchers introduced a carbon‑aware routing system that dynamically assigns LLM function‑calling queries to edge, regional, or central cloud resources based on real‑time carbon intensity and latency constraints.</p>
+<p><strong>Why it matters:</strong> Current LLM deployments lean heavily on distant, power‑hungry cloud servers, inflating the carbon footprint of AI assistants. Smarter placement of inference can preserve performance while making AI greener.</p>
+<p><strong>Key stats:</strong> Early experiments on benchmark workloads show up to a 30 % reduction in energy consumption and a comparable drop in estimated CO₂ emissions, with latency staying within acceptable bounds for interactive use.</p>
+<p><strong>Source:</strong> https://arxiv.org/abs/2609.13559</p>
+<br>
+<p><a href="https://arxiv.org/abs/2609.13559">Read more</a></p>
+<br>
+<hr>
+<br>
+  </main>
+  <footer>
+    <p>Tags: Research</p>
+  </footer>
+</body>
+</html>
