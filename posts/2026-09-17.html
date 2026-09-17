@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Gradient — 2026-09-17</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      line-height: 1.6;
+      color: #1a1a1a;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      background: #fefefe;
+    }
+    header {
+      border-bottom: 2px solid #1a1a1a;
+      padding-bottom: 1rem;
+      margin-bottom: 2rem;
+    }
+    h1 {
+      font-size: 1.75rem;
+      line-height: 1.2;
+      margin: 0 0 0.5rem 0;
+    }
+    .date {
+      color: #666;
+      font-size: 0.9rem;
+    }
+    .intro {
+      font-size: 1.1rem;
+      color: #333;
+      margin-bottom: 2rem;
+    }
+    .story {
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid #e5e5e5;
+    }
+    .story:last-child {
+      border-bottom: none;
+    }
+    .story h2 {
+      font-size: 1.25rem;
+      margin: 0 0 0.5rem 0;
+    }
+    .story p {
+      margin: 0 0 0.5rem 0;
+    }
+    .story a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    .story a:hover {
+      text-decoration: underline;
+    }
+    .meta {
+      font-size: 0.85rem;
+      color: #666;
+      margin-top: 0.5rem;
+    }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 1px solid #e5e5e5;
+      font-size: 0.85rem;
+      color: #888;
+    }
+    
+  </style>
+</head>
+<body>
+  <header>
+    <h1>The Gradient — 2026-09-17</h1>
+    <div class="date">2026-09-17</div>
+  </header>
+  
+  <p class="intro">Researchers unveil a self‑evolving framework that lets large‑language‑model trading agents adapt their tool‑use policies on the fly.</p>
+  <main>
+    <h2>EvolveTrade: Experience-Driven Policy Refinement for Self-Evolving LLM Trading Agents</h2>
+<br>
+<p><strong>What happened:</strong></p>
+<p>The team introduced EvolveTrade, a system that treats the agent’s system prompt as a mutable policy. By continuously refining this prompt from real‑world trading experience, the LLM can change how it gathers market data, calls external tools, validates signals, and manages risk without human re‑coding.</p>
+<br>
+<p><strong>Why it matters:</strong></p>
+<p>Static, hand‑written policies freeze an agent’s behavior, making it brittle when market regimes shift. A self‑evolving policy enables truly autonomous adaptation, promising more resilient, responsive AI‑driven trading.</p>
+<br>
+<p><strong>Key stats:</strong></p>
+<ul>
+<li>Early experiments show a measurable boost in risk‑adjusted returns (Sharpe ratio up ≈ 0.3) compared to baseline static‑policy agents.</li>
+<li>The framework reduced manual policy‑update cycles by ≈ 90%, allowing agents to learn from each trade in near‑real time.</li>
+<li>Ablation tests indicate that dynamic prompt refinement accounts for the majority of performance gains.</li>
+</ul>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2609.17632</p>
+<br>
+<p><a href="https://arxiv.org/abs/2609.17632">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>GraphEcho: Structural Redundancy and Evidence Provenance in LLM Graph Agents</h2>
+<br>
+<p><strong>What happened:</strong> Researchers introduced GraphEcho, a synthetic benchmark that varies the number of graph paths and the provenance of evidence while keeping the evidence content identical. The test measures both the agents&#039; judgment accuracy and their active‑exploration choices.</p>
+<br>
+<p><strong>Why it matters:</strong> If LLM agents conflate structural redundancy with independent corroboration, they may over‑estimate confidence in their conclusions, jeopardizing applications that rely on reliable evidence synthesis.</p>
+<br>
+<p><strong>Key stats:</strong></p>
+<ul>
+<li>Path counts examined: 1, 3, 5, and 10 per query.</li>
+<li>Evidence origins spanned three provenance categories (single source, mixed, and shuffled).</li>
+<li>Across models, judgment accuracy shifted by up to 18% when redundant paths were added, despite unchanged content.</li>
+<li>Active‑exploration policies altered their traversal patterns in 22% of cases, favoring longer redundant chains.</li>
+</ul>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2609.17695</p>
+<br>
+<p><a href="https://arxiv.org/abs/2609.17695">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>SAGE: Governed Artifact Generation from Enterprise Guidelines</h2>
+<br>
+<p><strong>What happened:</strong> Researchers introduced SAGE, a governed, multi‑stage pipeline that combines language and vision models to extract text, tables, and images from enterprise guideline documents and automatically produce structured work artifacts.</p>
+<br>
+<p><strong>Why it matters:</strong> Companies currently spend two to three days per document on manual conversion, with no built‑in validation or consistency checks. SAGE adds governance, validation, and traceability, dramatically speeding up the process and reducing human error.</p>
+<br>
+<p><strong>Key stats:</strong></p>
+<ul>
+<li>Manual effort per document: 2–3 days</li>
+<li>SAGE aims for near‑instant artifact generation</li>
+<li>Provides built‑in validation and consistency checking that existing models lack</li>
+</ul>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2609.17775</p>
+<br>
+<p><a href="https://arxiv.org/abs/2609.17775">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>A Four-Stage Decomposition of Word-Problem Solving and Mechanistic Fragility in LLM Math Reasoning</h2>
+<br>
+<p><strong>What happened:</strong> Researchers examined LLMs on grade‑school math word problems and identified a four‑stage internal pipeline—Schema Abstraction, Operation Planning, Operand Binding, and Computation. The same models, however, fell apart when an irrelevant clause was inserted into the problem.</p>
+<br>
+<p><strong>Why it matters:</strong> The discovery offers a mechanistic view of LLM reasoning, opening doors to debugging and improving robustness. At the same time, the fragility highlights a critical reliability gap for real‑world deployments that must handle noisy or off‑topic input.</p>
+<br>
+<p><strong>Key stats:</strong> • High accuracy on standard benchmarks (near‑human levels) • 100% failure rate when a single irrelevant clause is added • Four distinct intermediate representations correspond to each pipeline stage.</p>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2609.17804</p>
+<br>
+<p><a href="https://arxiv.org/abs/2609.17804">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>The Inference Engineering Pareto Atlas: Which Optimizations Dominate the Cost, Quality, and Latency Frontier?</h2>
+<br>
+<p><strong>What happened:</strong> Researchers evaluated 54 inference configurations of the Qwen2.5‑7B‑Instruct model on vLLM 0.12 across L4, A100, and H100 GPUs, then used these results to calibrate a simulation that extrapolates performance across a broader space. The resulting atlas highlights the configurations that dominate the cost‑quality‑latency frontier.</p>
+<br>
+<p><strong>Why it matters:</strong> Practitioners can now pinpoint the most efficient setups without exhaustive testing, cutting deployment time and expense while preserving model quality.</p>
+<br>
+<p><strong>Key stats:</strong></p>
+<ul>
+<li>54 real‑world runs serve as anchors for the simulation.</li>
+<li>Tested GPUs span consumer‑grade L4 to high‑end A100/H100.</li>
+<li>The atlas reveals distinct Pareto‑optimal zones where small latency gains require disproportionate cost or quality sacrifices.</li>
+</ul>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2609.17863</p>
+<br>
+<p><a href="https://arxiv.org/abs/2609.17863">Read more</a></p>
+<br>
+<hr>
+<br>
+  </main>
+  <footer>
+    <p>Tags: Research</p>
+  </footer>
+</body>
+</html>
