@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Gradient — 2026-09-18</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      line-height: 1.6;
+      color: #1a1a1a;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      background: #fefefe;
+    }
+    header {
+      border-bottom: 2px solid #1a1a1a;
+      padding-bottom: 1rem;
+      margin-bottom: 2rem;
+    }
+    h1 {
+      font-size: 1.75rem;
+      line-height: 1.2;
+      margin: 0 0 0.5rem 0;
+    }
+    .date {
+      color: #666;
+      font-size: 0.9rem;
+    }
+    .intro {
+      font-size: 1.1rem;
+      color: #333;
+      margin-bottom: 2rem;
+    }
+    .story {
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid #e5e5e5;
+    }
+    .story:last-child {
+      border-bottom: none;
+    }
+    .story h2 {
+      font-size: 1.25rem;
+      margin: 0 0 0.5rem 0;
+    }
+    .story p {
+      margin: 0 0 0.5rem 0;
+    }
+    .story a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    .story a:hover {
+      text-decoration: underline;
+    }
+    .meta {
+      font-size: 0.85rem;
+      color: #666;
+      margin-top: 0.5rem;
+    }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 1px solid #e5e5e5;
+      font-size: 0.85rem;
+      color: #888;
+    }
+    
+  </style>
+</head>
+<body>
+  <header>
+    <h1>The Gradient — 2026-09-18</h1>
+    <div class="date">2026-09-18</div>
+  </header>
+  
+  <p class="intro">A massive survey of almost 15,000 arXiv papers uncovers how the community’s expectations for large language models are evolving through new and updated benchmarks.</p>
+  <main>
+    <h2>What Do We Expect from LLMs? Mapping the Design of LLM Benchmarks</h2>
+<br>
+<p><strong>What happened:</strong> Researchers systematically cataloged 14,767 papers that introduced or refreshed evaluation resources for LLMs, creating the most comprehensive map of benchmark design to date.</p>
+<br>
+<p><strong>Why it matters:</strong> Benchmarks shape what we deem “progress” in AI. By exposing trends in task selection, metric choice, and difficulty scaling, the study shows how researchers are steering LLM development toward richer, more nuanced capabilities.</p>
+<br>
+<p><strong>Key stats:</strong></p>
+<ul>
+<li>14,767 papers analyzed from arXiv submissions.</li>
+<li>Benchmarks grew from a handful of core tasks to hundreds of specialized evaluations.</li>
+<li>Emergence of multi‑modal, reasoning‑heavy, and safety‑oriented benchmarks accounts for over 40% of new resources.</li>
+</ul>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2609.19182</p>
+<br>
+<p><a href="https://arxiv.org/abs/2609.19182">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>Characterizing Web Search by Conversational LLM Agents: From Search Decisions and Strategies to Results and Responses</h2>
+<br>
+<p><strong>What happened:</strong> A comprehensive analysis was conducted across four major conversational platforms—ChatGPT, Claude, Grok, and DeepSeek. The study combined real‑world user interactions (in‑vivo) with controlled API experiments (in‑vitro) to trace the full lifecycle of web‑search decisions made by LLM agents.</p>
+<br>
+<p><strong>Why it matters:</strong> Understanding when and why agents invoke web search clarifies their limitations, informs safety guidelines, and helps developers build more reliable, transparent AI assistants that know when to rely on external data.</p>
+<br>
+<p><strong>Key stats:</strong></p>
+<ul>
+<li>Four platforms evaluated under identical prompts.</li>
+<li>Dual methodology captured both organic user behavior and systematic model performance.</li>
+<li>Early findings show notable variance in search trigger thresholds and result integration across agents.</li>
+</ul>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2609.19244</p>
+<br>
+<p><a href="https://arxiv.org/abs/2609.19244">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>MAGS: Multi-agent Auto-formalization Guarantees Safety for Agentic Outputs</h2>
+<br>
+<p><strong>What happened:</strong> Researchers introduced MAGS (Multi‑agent Auto‑formalization), a pipeline where coding agents first produce programs, then a dedicated formalizer translates them into verifiable specifications, and finally a verifier checks safety properties before execution.</p>
+<p><strong>Why it matters:</strong> As LLMs write increasingly complex code, human review can’t keep up, leaving room for hidden bugs or malicious behavior. MAGS bridges this gap by providing machine‑checkable proofs, reducing reliance on ad‑hoc testing and manual audits.</p>
+<p><strong>Key stats:</strong> • MAGS caught 87% of injected safety violations that fuzz testing missed.</p>
+<p>• Formal verification time averaged 3.2× faster than traditional theorem‑proving pipelines.</p>
+<p>• The system scales to programs with up to 10 K lines of generated code.</p>
+<p><strong>Source:</strong> https://arxiv.org/abs/2609.19391</p>
+<br>
+<p><a href="https://arxiv.org/abs/2609.19391">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>Closed-World Resolution Against Tool Hallucination in LLM Agents</h2>
+<br>
+<p><strong>What happened:</strong></p>
+<p>Tool‑augmented LLM agents were found to invent tool calls that don’t exist or pass arguments that violate the tool’s schema—a problem no current selection or gating defenses catch.</p>
+<br>
+<p><strong>Why it matters:</strong></p>
+<p>Hallucinated tool calls can crash workflows, leak sensitive data, and erode trust in AI assistants that rely on external APIs.</p>
+<br>
+<p><strong>Key stats:</strong></p>
+<p>The proposed closed‑world resolution framework dramatically reduces hallucinated calls, cutting them by orders of magnitude in benchmark tests and restoring reliable tool usage across multiple domains.</p>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2609.19425</p>
+<br>
+<p><a href="https://arxiv.org/abs/2609.19425">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>LLM-as-an-Improver: Turning Verification into Better Candidates</h2>
+<br>
+<p><strong>What happened:</strong> Researchers introduced Verify‑R, a framework where the verifier not only selects the best from a set of LLM‑produced candidates but also iteratively refines the pool, feeding its feedback back to generate improved alternatives.</p>
+<br>
+<p><strong>Why it matters:</strong> This closes the loop between generation and verification, yielding higher accuracy and more reliable outputs without expanding compute dramatically, promising better performance on tasks like reasoning, coding, and math.</p>
+<br>
+<p><strong>Key stats:</strong> In initial experiments, Verify‑R improved top‑1 accuracy by up to 12% over standard generate‑then‑rank pipelines and reduced the number of required candidates by 30%.</p>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2609.19515</p>
+<br>
+<p><a href="https://arxiv.org/abs/2609.19515">Read more</a></p>
+<br>
+<hr>
+<br>
+  </main>
+  <footer>
+    <p>Tags: Research</p>
+  </footer>
+</body>
+</html>
