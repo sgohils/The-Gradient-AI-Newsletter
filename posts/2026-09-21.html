@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Gradient — 2026-09-21</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      line-height: 1.6;
+      color: #1a1a1a;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      background: #fefefe;
+    }
+    header {
+      border-bottom: 2px solid #1a1a1a;
+      padding-bottom: 1rem;
+      margin-bottom: 2rem;
+    }
+    h1 {
+      font-size: 1.75rem;
+      line-height: 1.2;
+      margin: 0 0 0.5rem 0;
+    }
+    .date {
+      color: #666;
+      font-size: 0.9rem;
+    }
+    .intro {
+      font-size: 1.1rem;
+      color: #333;
+      margin-bottom: 2rem;
+    }
+    .story {
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid #e5e5e5;
+    }
+    .story:last-child {
+      border-bottom: none;
+    }
+    .story h2 {
+      font-size: 1.25rem;
+      margin: 0 0 0.5rem 0;
+    }
+    .story p {
+      margin: 0 0 0.5rem 0;
+    }
+    .story a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    .story a:hover {
+      text-decoration: underline;
+    }
+    .meta {
+      font-size: 0.85rem;
+      color: #666;
+      margin-top: 0.5rem;
+    }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 1px solid #e5e5e5;
+      font-size: 0.85rem;
+      color: #888;
+    }
+    
+  </style>
+</head>
+<body>
+  <header>
+    <h1>The Gradient — 2026-09-21</h1>
+    <div class="date">2026-09-21</div>
+  </header>
+  
+  <p class="intro">V7 leverages the new GPT‑5.6 model to transform disorganized company files into a searchable knowledge base that AI agents can tap into for complex, source‑linked work.</p>
+  <main>
+    <h2>How V7 gives AI agents institutional memory</h2>
+<br>
+<p><strong>What happened:</strong> V7 rolled out a new capability that uses GPT‑5.6 to ingest and index scattered corporate documents, turning them into a contextual memory layer that AI agents can query in real time.</p>
+<p><strong>Why it matters:</strong> By providing agents with up‑to‑date, source‑verified context, V7 cuts down on hallucinations, speeds up multi‑step workflows, and lets organizations reuse knowledge across projects without manual curation.</p>
+<p><strong>Key stats:</strong> • Pilot test processed &gt;10,000 files in under 24 hours. • Agents completed complex tasks 40% faster with built‑in source links. • 92% of users reported higher confidence in AI‑generated outputs.</p>
+<p><strong>Source:</strong> https://openai.com/index/v7</p>
+<br>
+<p><a href="https://openai.com/index/v7">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>Attention-Aware Routing: Coupling Routing and Attention in MoEs</h2>
+<br>
+<p><strong>What happened:</strong> Researchers introduced AAR, a router augmentation that extracts temporal and spectral features from a sliding window of attention weights, providing a summary of the model’s contextual state separate from the token hidden state.</p>
+<br>
+<p><strong>Why it matters:</strong> By coupling routing decisions with attention‑derived context, MoE language models can select more relevant experts, potentially improving accuracy and efficiency without altering the underlying transformer architecture.</p>
+<br>
+<p><strong>Key stats:</strong> • AAR adds only a lightweight feature extraction step to the router.</p>
+<p>• Experiments on benchmark language tasks show measurable gains over standard routing (details in the paper). </p>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2609.20974</p>
+<br>
+<p><a href="https://arxiv.org/abs/2609.20974">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>CaLR: Causal Latent Revision for Robust Diffusion Reasoning</h2>
+<br>
+<p><strong>What happened:</strong> Researchers presented Causal Latent Revision (CaLR), a method that recasts reasoning as a constrained latent‑space optimization problem. It leverages a causal topology matrix (CTM) extracted from an expert model and uses implicit differentiation to guide diffusion language models toward more logical, causally consistent outputs.</p>
+<p><strong>Why it matters:</strong> Autoregressive models often get stuck in locally greedy decisions, while diffusion models lack the strict causal scaffolding needed for robust reasoning. CaLR bridges this gap, promising more reliable and interpretable AI reasoning across tasks such as complex question answering and planning.</p>
+<p><strong>Key stats:</strong> • Introduced in arXiv preprint 2609.20981v1 (new submission). • Claims to mitigate local greediness and improve causal fidelity in diffusion models. • Utilizes expert‑derived CTM and implicit differentiation for efficient latent revision.</p>
+<p><strong>Source:</strong> https://arxiv.org/abs/2609.20981</p>
+<br>
+<p><a href="https://arxiv.org/abs/2609.20981">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>LoRA Enhanced Contrastive Learning with SAS Vision Transformers</h2>
+<br>
+<p><strong>What happened:</strong> A three‑stage, parameter‑efficient framework was built around DINOv3 Vision Transformers, using Low‑Rank Adaptation (LoRA) while keeping the backbone frozen to bridge the gap between natural‑image training and underwater SAS imagery.</p>
+<br>
+<p><strong>Why it matters:</strong> This approach enables more accurate automatic target recognition (ATR) for naval sonar systems despite limited labeled data and noisy backgrounds, reducing reliance on manual analysis.</p>
+<br>
+<p><strong>Key stats:</strong></p>
+<ul>
+<li>3‑stage adaptation pipeline (LoRA fine‑tuning → … → full‑task tuning)</li>
+<li>Utilizes DINOv3 ViT architecture</li>
+<li>Designed for scarce SAS target imagery and high clutter environments</li>
+</ul>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2609.21061</p>
+<br>
+<p><a href="https://arxiv.org/abs/2609.21061">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>Can Agents Design Better Chips with a Higher Level Abstraction?</h2>
+<br>
+<p><strong>What happened:</strong> Researchers compared four chip‑design pipelines—Direct RTL Design, Agent‑based HLS Design, Post‑Compiler HLS Refinement, and Post‑HLS RTL Refinement. They then fused Agent‑based HLS with Post‑HLS RTL Refinement into a new workflow called Agent‑based HLS with RTL Refinement (AHRR).</p>
+<br>
+<p><strong>Why it matters:</strong> Moving the design intelligence to higher‑level abstractions could let LLM agents reason more effectively, potentially shortening design cycles, reducing bugs, and opening up automated co‑design of hardware and software.</p>
+<br>
+<p><strong>Key stats:</strong> The paper reports that AHRR outperforms the baseline methods in synthesis quality and convergence speed, showing measurable gains in performance‑to‑area and a reduction in manual RTL edits.</p>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2609.21157</p>
+<br>
+<p><a href="https://arxiv.org/abs/2609.21157">Read more</a></p>
+<br>
+<hr>
+<br>
+  </main>
+  <footer>
+    <p>Tags: Company Blog, Research</p>
+  </footer>
+</body>
+</html>
