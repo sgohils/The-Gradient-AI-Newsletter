@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Gradient — 2026-09-25</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      line-height: 1.6;
+      color: #1a1a1a;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      background: #fefefe;
+    }
+    header {
+      border-bottom: 2px solid #1a1a1a;
+      padding-bottom: 1rem;
+      margin-bottom: 2rem;
+    }
+    h1 {
+      font-size: 1.75rem;
+      line-height: 1.2;
+      margin: 0 0 0.5rem 0;
+    }
+    .date {
+      color: #666;
+      font-size: 0.9rem;
+    }
+    .intro {
+      font-size: 1.1rem;
+      color: #333;
+      margin-bottom: 2rem;
+    }
+    .story {
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid #e5e5e5;
+    }
+    .story:last-child {
+      border-bottom: none;
+    }
+    .story h2 {
+      font-size: 1.25rem;
+      margin: 0 0 0.5rem 0;
+    }
+    .story p {
+      margin: 0 0 0.5rem 0;
+    }
+    .story a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    .story a:hover {
+      text-decoration: underline;
+    }
+    .meta {
+      font-size: 0.85rem;
+      color: #666;
+      margin-top: 0.5rem;
+    }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 1px solid #e5e5e5;
+      font-size: 0.85rem;
+      color: #888;
+    }
+    
+  </style>
+</head>
+<body>
+  <header>
+    <h1>The Gradient — 2026-09-25</h1>
+    <div class="date">2026-09-25</div>
+  </header>
+  
+  <p class="intro">Researchers propose a progressive skill‑discovery system that grants LLM agents only the capabilities they need, tightening control over enterprise tool usage.</p>
+  <main>
+    <h2>Progressive Skill Discovery as Access Control for Tool-Using LLM Agents: Structural Governance through Role-Scoped Capability Delivery</h2>
+<br>
+<p><strong>What happened:</strong> A team introduced a structural governance approach that delivers capabilities to large language model (LLM) agents through role‑scoped skill discovery, rather than exposing every internal tool at once.</p>
+<br>
+<p><strong>Why it matters:</strong> Unrestricted tool access inflates context windows, hampers tool selection, and creates governance gaps because prompt‑based policies are probabilistic, not enforceable. By limiting agents to needed skills, enterprises can improve safety, auditability, and performance.</p>
+<br>
+<p><strong>Key stats:</strong> The paper highlights qualitative risks—oversized context windows and degraded tool selection—but does not provide quantitative metrics at this stage.</p>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2609.28693</p>
+<br>
+<p><a href="https://arxiv.org/abs/2609.28693">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>Forecast-Dojo: Replayable Environments for Benchmarking and Training LLM Forecasting Agents</h2>
+<br>
+<p><strong>What happened:</strong></p>
+<p>The team behind Forecast-Dojo released a replayable environment that blends resolved prediction‑market questions with time‑stamped news articles. Agents can research an event, make a forecast, and then revisit their prediction as the timeline advances, all within the same dataset.</p>
+<br>
+<p><strong>Why it matters:</strong></p>
+<p>This platform removes the wait for future events to resolve, enabling rapid iteration, consistent benchmarking, and the collection of training data for LLMs tasked with forecasting. It promises faster progress toward trustworthy, time‑aware AI assistants.</p>
+<br>
+<p><strong>Key stats:</strong></p>
+<ul>
+<li>Built on thousands of historically resolved prediction‑market questions.</li>
+<li>Includes curated news snapshots for each historical date.</li>
+<li>Supports repeated evaluation cycles without new real‑world outcomes.</li>
+<li>Designed for both benchmarking and fine‑tuning LLM forecasting agents.</li>
+</ul>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2609.28876</p>
+<br>
+<p><a href="https://arxiv.org/abs/2609.28876">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>Control the Harness, Control the Cost: Routing and Governing AI Coding Agents in the Enterprise</h2>
+<br>
+<p><strong>What happened:</strong> AI coding agents are being deployed at massive scale. What began as pilot programs with a few hundred seats is now expanding to tens of thousands of users across companies. Most firms purchase the underlying &quot;harnesses&quot;—the platforms that run the agents—from large providers such as Anthropic’s Claude Code or OpenAI’s Codex.</p>
+<br>
+<p><strong>Why it matters:</strong> A harness determines which model responds, what data it can read, how prompt caching is managed, and which sub‑agents are invoked. Without clear routing and governance, enterprises risk runaway costs, data leakage, and unpredictable behavior in mission‑critical code generation.</p>
+<br>
+<p><strong>Key stats:</strong> • Pilot deployments: ~100‑500 seats → Enterprise roll‑outs: 10,000+ seats</p>
+<p>• Majority of firms source harnesses from top‑tier vendors rather than building in‑house</p>
+<p>• Governance decisions (model selection, cache policy, sub‑agent orchestration) directly impact spend and compliance risk</p>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2609.28919</p>
+<br>
+<p><a href="https://arxiv.org/abs/2609.28919">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>PFArena: Benchmarking Language Models for Protein Modification</h2>
+<br>
+<p><strong>What happened:</strong> Researchers released PFArena, a comprehensive benchmark that simulates realistic experimental decision‑making for protein modification and pits PLMs, LLMs, and LLM‑based agents against each other.</p>
+<p><strong>Why it matters:</strong> Protein engineering faces a massive sequence space and costly wet‑lab validation; a clear performance yardstick helps prioritize computational approaches that can cut time and expense.</p>
+<p><strong>Key stats:</strong> • Introduces a suite of realistic protein‑modification scenarios</p>
+<p>• Evaluates multiple model families (PLMs, LLMs, agent‑based systems) on a shared leaderboard</p>
+<p>• Provides public datasets and metrics to standardize future research</p>
+<p><strong>Source:</strong> https://arxiv.org/abs/2609.28921</p>
+<br>
+<p><a href="https://arxiv.org/abs/2609.28921">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>AlphaDiverse: Post-Training Local Quantitative Research Agents for Diverse Exploration in Alpha Factor Mining</h2>
+<br>
+<p><strong>What happened:</strong> The team introduced AlphaDiverse, a post‑training, locally‑run multi‑agent system designed to harvest alpha factors while deliberately widening research paths. By keeping the agents on‑premise, the framework sidesteps the typical reliance on external API calls.</p>
+<p><strong>Why it matters:</strong> Reducing API dependence lowers costs, safeguards confidential data, and prevents research loops from converging on a narrow set of mechanisms—an issue that has hampered prior multi‑agent alpha‑mining efforts.</p>
+<p><strong>Key stats:</strong> In their evaluation, AlphaDiverse generated significantly more distinct research trajectories and cut external API usage by a sizable margin, demonstrating both higher exploration diversity and lower operational overhead (see paper for exact figures).</p>
+<p><strong>Source:</strong> https://arxiv.org/abs/2609.29014</p>
+<br>
+<p><a href="https://arxiv.org/abs/2609.29014">Read more</a></p>
+<br>
+<hr>
+<br>
+  </main>
+  <footer>
+    <p>Tags: Research</p>
+  </footer>
+</body>
+</html>
