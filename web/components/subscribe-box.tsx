@@ -37,11 +37,8 @@ export default function SubscribeBox() {
   };
 
   return (
-    <motion.form
+    <form
       onSubmit={handleSubmit}
-      initial={{ opacity: 0, y: 30 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8, delay: 0.7, ease: [0.25, 0.46, 0.45, 0.94] }}
       className="mx-auto w-full max-w-xl"
     >
       <div className="flex flex-col gap-3 rounded-2xl border border-white/5 bg-white/[0.03] p-2 backdrop-blur-2xl transition-all duration-300 focus-within:border-accent-cyan/80 focus-within:ring-4 focus-within:ring-accent-purple/20 sm:flex-row sm:gap-0">
@@ -77,6 +74,6 @@ export default function SubscribeBox() {
       <p className="mt-4 text-center text-xs text-slate-500 dark:text-slate-400">
         Join engineers, researchers, and AI builders. 100% free, unsubscribe anytime.
       </p>
-    </motion.form>
+    </form>
   );
 }

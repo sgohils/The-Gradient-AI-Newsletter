@@ -196,7 +196,7 @@ body {
     color: transparent;
   }
 
-  .gradient-text-shimmer {
+.gradient-text-shimmer {
     background: linear-gradient(90deg, #22D3EE 0%, #3B82F6 25%, #8B5CF6 50%, #3B82F6 75%, #22D3EE 100%);
     background-size: 200% 100%;
     -webkit-background-clip: text;
@@ -204,6 +204,8 @@ body {
     -webkit-text-fill-color: transparent;
     color: transparent;
     animation: shimmerText 4s linear infinite;
+    /* Fallback for browsers that don't support background-clip: text */
+    color: #22D3EE;
   }
 
   .marquee-track {

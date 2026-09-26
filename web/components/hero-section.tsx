@@ -78,7 +78,17 @@ export default function HeroSection() {
 
         <h1 className="text-balance text-5xl font-extrabold tracking-tight md:text-7xl lg:text-8xl">
           <span className="sr-only">{HEADLINE}</span>
-          <span aria-hidden="true" className="gradient-text-shimmer flex flex-wrap justify-center gap-x-[0.25em] gap-y-2">
+          <span
+            aria-hidden="true"
+            className="gradient-text-shimmer flex flex-wrap justify-center gap-x-[0.25em] gap-y-2"
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              justifyContent: "center",
+              width: "100%",
+              maxWidth: "100%",
+            }}
+          >
             {WORDS.map((word, i) => (
               <motion.span
                 key={`${word}-${i}`}
@@ -86,6 +96,7 @@ export default function HeroSection() {
                 initial={prefersReducedMotion ? false : { opacity: 0, y: 24, filter: "blur(8px)" }}
                 animate={prefersReducedMotion ? undefined : { opacity: 1, y: 0, filter: "blur(0px)" }}
                 transition={{ duration: 0.6, delay: 0.2 + i * 0.08, ease: EASE }}
+                style={{ minWidth: 0 }}
               >
                 {word}
               </motion.span>
