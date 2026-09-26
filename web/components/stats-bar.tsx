@@ -1,14 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
-import { motion, useInView } from "framer-motion";
-import usePrefersReducedMotion from "@/hooks/use-prefers-reduced-motion";
-
-interface Stat {
-  label: string;
-  value: number;
-  suffix?: string;
-}
+interface Stat { label: string; value: number }
 
 interface StatsBarProps {
   issues: {
@@ -17,100 +9,23 @@ interface StatsBarProps {
   }[];
 }
 
-function CountUp({ end, suffix = "", duration = 2 }: { end: number; suffix?: string; duration?: number }) {
-  const [count, setCount] = useState(0);
-  const ref = useRef<HTMLSpanElement>(null);
-  const isInView = useInView(ref, { once: true, margin: "-40px" });
-
-  useEffect(() => {
-    if (!isInView || end === 0) return;
-    let startTime: number;
-    const animate = (timestamp: number) => {
-      if (!startTime) startTime = timestamp;
-      const progress = Math.min((timestamp - startTime) / (duration * 1000), 1);
-      const eased = 1 - Math.pow(1 - progress, 3);
-      setCount(Math.floor(eased * end));
-      if (progress < 1) {
-        requestAnimationFrame(animate);
-      }
-    };
-    requestAnimationFrame(animate);
-  }, [isInView, end, duration]);
-
-  return (
-    <span ref={ref}>
-      {count}
-      {suffix}
-    </span>
-  );
-}
-
 export default function StatsBar({ issues }: StatsBarProps) {
-  const ref = useRef<HTMLDivElement>(null);
-  const isInView = useInView(ref, { once: true, margin: "-40px" });
-  const prefersReducedMotion = usePrefersReducedMotion();
 
   const totalArticles = issues.reduce((sum, issue) => sum + issue.articles.length, 0);
   const uniqueTags = new Set(issues.flatMap((issue) => issue.tags)).size;
   const uniqueSources = new Set(issues.flatMap((issue) => issue.articles.map((a) => a.sourceName))).size;
 
   const computedStats: Stat[] = [
-    { label: "Issues Published", value: issues.length, suffix: "+" },
-    { label: "Articles Shared", value: totalArticles, suffix: "" },
-    { label: "Topics Covered", value: uniqueTags, suffix: "+" },
-    { label: "Sources Tracked", value: uniqueSources, suffix: "" },
+    { label: "Issues published", value: issues.length },
+    { label: "Articles shared", value: totalArticles },
+    { label: "Topics covered", value: uniqueTags },
+    { label: "Sources tracked", value: uniqueSources },
   ];
 
   return (
-    <section ref={ref} className="relative z-10 -mt-20 w-full px-4 sm:px-6">
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute -top-px left-0 right-0 mx-auto h-px max-w-5xl bg-gradient-to-r from-transparent via-accent-cyan/50 to-transparent"
-      />
-      <motion.div
-        initial={prefersReducedMotion ? false : "hidden"}
-        animate={prefersReducedMotion ? false : isInView ? "visible" : "hidden"}
-        variants={prefersReducedMotion ? {} : {
-          hidden: {},
-          visible: {
-            transition: {
-              staggerChildren: 0.12,
-              delayChildren: 0.2,
-            },
-          },
-        }}
-        className="mx-auto flex max-w-5xl flex-wrap justify-center gap-4 md:gap-6"
-      >
-        {computedStats.map((stat) => (
-          <motion.div
-            key={stat.label}
-            {...(prefersReducedMotion ? {} : { whileHover: { scale: 1.03 } })}
-            variants={
-              prefersReducedMotion
-                ? {}
-                : {
-                    hidden: { opacity: 0, y: 30 },
-                    visible: {
-                      opacity: 1,
-                      y: 0,
-                      transition: {
-                        duration: 0.6,
-                        ease: [0.25, 0.46, 0.45, 0.94],
-                      },
-                    },
-                  }
-            }
-            className="flex min-w-[160px] flex-1 flex-col items-center rounded-2xl border border-white/10 bg-white/5 px-6 py-5 backdrop-blur-xl transition-colors duration-300 hover:border-accent-cyan/30 dark:bg-bento-surface/80 md:min-w-[200px]"
-          >
-            <span className="gradient-text-shimmer text-3xl font-bold bg-gradient-to-r from-accent-cyan via-accent-blue to-accent-purple md:text-4xl">
-              <CountUp end={stat.value} suffix={stat.suffix} />
-            </span>
-            <span className="mt-1 text-xs font-medium uppercase tracking-wider text-slate-500">
-              {stat.label}
-            </span>
-          </motion.div>
-        ))}
-      </motion.div>
+    <section className="mx-auto max-w-6xl px-5 py-6 sm:px-8"><div className="grid grid-cols-2 border-y border-[var(--border)] md:grid-cols-4">{computedStats.map((stat) => (
+          <div key={stat.label} className="border-r border-[var(--border)] px-4 py-4 last:border-r-0"><p className="font-serif text-2xl text-[var(--accent)]">{stat.value}</p><p className="mt-1 text-[10px] font-medium uppercase tracking-[.12em] text-[var(--text-muted)]">{stat.label}</p></div>
+        ))}</div>
     </section>
   );
 }

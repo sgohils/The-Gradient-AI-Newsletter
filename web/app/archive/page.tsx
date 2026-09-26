@@ -77,6 +77,7 @@ function EmptyStateIllustration({ prefersReducedMotion }: { prefersReducedMotion
 export default function ArchivePage() {
   const [issues, setIssues] = useState<NewsletterIssue[]>([]);
   const [loading, setLoading] = useState(true);
+  const [loadError, setLoadError] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedDate, setSelectedDate] = useState<string | null>(null);
   const [displayCount, setDisplayCount] = useState(PAGE_SIZE);
@@ -92,7 +93,7 @@ export default function ArchivePage() {
         setIssues(data);
         setLoading(false);
       })
-      .catch(() => setLoading(false));
+      .catch(() => { setLoadError(true); setLoading(false); });
   }, []);
 
   const uniqueDates = useMemo(() => {
@@ -171,11 +172,10 @@ export default function ArchivePage() {
       ];
 
   return (
-    <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+    <div className="archive-editorial">
       <div className="mb-10">
-        <h1 className="text-3xl font-bold text-gray-900 dark:text-white">
-          Archive
-        </h1>
+        <p className="mb-3 text-xs font-semibold uppercase tracking-[.16em] text-[var(--accent)]">The Gradient / Index</p>
+        <h1 className="text-4xl text-gray-900 dark:text-white">Archive</h1>
         <motion.div
           className="mt-3 h-1 rounded-full bg-gradient-to-r from-accent-blue via-accent-cyan to-accent-green"
           initial={prefersReducedMotion ? false : { scaleX: 0 }}
@@ -183,7 +183,7 @@ export default function ArchivePage() {
           transition={prefersReducedMotion ? {} : { duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
           style={{ transformOrigin: "left" }}
         />
-        <p className="mt-2 text-gray-600 dark:text-gray-400">
+        <p className="mt-2 max-w-prose text-gray-600 dark:text-gray-400">
           Browse all past issues of The Gradient
         </p>
       </div>
@@ -296,7 +296,9 @@ export default function ArchivePage() {
         )}
       </div>
 
-      {loading ? (
+      {loadError ? (
+        <p role="alert" className="border-y border-[var(--border)] py-8 text-sm text-[var(--error)]">The archive could not be loaded. Please refresh to try again.</p>
+      ) : loading ? (
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {skeletonCards.map((_, i) => (
             <div

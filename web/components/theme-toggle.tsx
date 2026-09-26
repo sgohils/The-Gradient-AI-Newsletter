@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { useTheme } from "next-themes";
 import usePrefersReducedMotion from "@/hooks/use-prefers-reduced-motion";
@@ -19,19 +20,22 @@ const noMotionVariants = {
 export default function ThemeToggle() {
   const { theme, setTheme } = useTheme();
   const prefersReducedMotion = usePrefersReducedMotion();
-
   const reducedMotionVariants = prefersReducedMotion ? noMotionVariants : iconVariants;
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => setMounted(true), []);
+
+  const showDark = mounted && theme === "dark";
 
   return (
     <motion.button
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
       className="relative flex h-9 w-9 items-center justify-center rounded-lg text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-800"
       {...(prefersReducedMotion ? {} : { whileHover: { scale: 1.1 }, whileTap: { scale: 0.9 } })}
-      aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
+       aria-label={`Switch to ${showDark ? "light" : "dark"} mode`}
     >
       <span className="sr-only">Toggle theme</span>
-      <motion.div className="relative" layout>
-        {theme === "dark" ? (
+      <motion.div className="relative" layout suppressHydrationWarning>
+        {showDark ? (
           <motion.svg
             key="moon"
             variants={reducedMotionVariants}

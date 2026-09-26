@@ -156,9 +156,9 @@ export default async function ArticlePage({ params }: Props) {
           <div className="relative">
             <div className="absolute left-4 top-0 h-full w-px bg-gradient-to-b from-transparent via-accent-cyan/40 to-transparent dark:via-accent-cyan/30" />
 
-            <div className="space-y-10">
+            <div>
               {issue.articles.map((article, index) => (
-                <div key={article.id} className="relative animate-fade-in-up" style={{ animationDelay: `${0.3 + index * 0.08}s`, animationFillMode: "both" }}>
+                <div key={article.id} className="issue-article relative animate-fade-in-up" style={{ animationDelay: `${0.3 + index * 0.08}s`, animationFillMode: "both" }}>
                   <div className="absolute -left-[17px] top-2 h-2.5 w-2.5 rounded-full border-2 border-accent-cyan bg-white dark:border-accent-cyan dark:bg-accent-cyan/40" />
 
                   <div className="flex flex-wrap items-center gap-2 mb-2">

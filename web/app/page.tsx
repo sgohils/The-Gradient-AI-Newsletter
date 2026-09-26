@@ -21,8 +21,8 @@ export default async function Home() {
         return (
           <>
             <HeroSection />
-            <StatsBar issues={issues} />
             <FeaturedCard issue={latestIssue} />
+            <StatsBar issues={issues} />
             <HomeGrid issues={issues} />
           </>
         );

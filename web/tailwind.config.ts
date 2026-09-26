@@ -10,7 +10,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Plus Jakarta Sans", "Inter", "ui-sans-serif", "system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif"],
+        sans: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"],
       },
       colors: {
         background: "var(--background)",
@@ -25,17 +25,7 @@ const config: Config = {
           border: "var(--glass-border)",
           highlight: "var(--glass-highlight)",
         },
-        accent: {
-          cyan: "#22D3EE",
-          "cyan-light": "#67E8F9",
-          blue: "#3B82F6",
-          "blue-light": "#60A5FA",
-          purple: "#8B5CF6",
-          "purple-light": "#A78BFA",
-          violet: "#7C3AED",
-          green: "#10b981",
-          emerald: "#34d399",
-        },
+        accent: "var(--accent)",
         gradient: {
           "brand-soft": "linear-gradient(135deg, #22D3EE 0%, #3B82F6 100%)",
           "brand-aurora": "linear-gradient(135deg, #22D3EE 0%, #8B5CF6 100%)",
