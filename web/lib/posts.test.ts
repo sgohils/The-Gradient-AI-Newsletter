@@ -1,6 +1,6 @@
 import fs from "fs";
 import path from "path";
-import { describe, it, expect } from "vitest";
+import { describe, it, expect, vi } from "vitest";
 import { readIssuesFromMarkdown, getIssueByDate, getAllIssueDates } from "./posts";
 
 describe("readIssuesFromMarkdown", () => {
@@ -98,6 +98,23 @@ describe("getAllIssueDates", () => {
 });
 
 describe("articles parsing", () => {
+  it("does not include issue separators in article descriptions", () => {
+    for (const issue of readIssuesFromMarkdown()) {
+      for (const article of issue.articles) expect(article.description).not.toMatch(/---\s*$/);
+    }
+  });
+
+  it("reuses parsed issues when files are unchanged", () => {
+    const first = readIssuesFromMarkdown();
+    const read = vi.spyOn(fs, "readFileSync");
+    try {
+      expect(readIssuesFromMarkdown()).toEqual(first);
+      expect(read).not.toHaveBeenCalled();
+    } finally {
+      read.mockRestore();
+    }
+  });
+
   it("generates stable deterministic ids", () => {
     const issues = readIssuesFromMarkdown();
     issues.forEach((issue) => {

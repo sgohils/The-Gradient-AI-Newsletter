@@ -18,18 +18,18 @@ const noMotionVariants = {
 };
 
 export default function ThemeToggle() {
-  const { theme, setTheme } = useTheme();
+  const { resolvedTheme, setTheme } = useTheme();
   const prefersReducedMotion = usePrefersReducedMotion();
   const reducedMotionVariants = prefersReducedMotion ? noMotionVariants : iconVariants;
   const [mounted, setMounted] = useState(false);
   useEffect(() => setMounted(true), []);
 
-  const showDark = mounted && theme === "dark";
+  const showDark = mounted && resolvedTheme === "dark";
 
   return (
     <motion.button
-      onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-      className="relative flex h-9 w-9 items-center justify-center rounded-lg text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-800"
+      onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
+      className="relative flex h-9 w-9 items-center justify-center rounded-lg text-[var(--foreground)] transition-colors hover:bg-[var(--surface-secondary)]"
       {...(prefersReducedMotion ? {} : { whileHover: { scale: 1.1 }, whileTap: { scale: 0.9 } })}
        aria-label={`Switch to ${showDark ? "light" : "dark"} mode`}
     >
@@ -51,7 +51,7 @@ export default function ThemeToggle() {
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
-            className="text-accent-cyan"
+            className="text-[var(--accent)]"
           >
             <path d="M12 3a6 6 0 0 0 9 9 6 6 0 1 1-9-9Z" />
           </motion.svg>

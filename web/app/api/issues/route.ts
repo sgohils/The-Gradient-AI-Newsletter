@@ -1,18 +1,13 @@
+import { NextResponse } from "next/server";
+import { readIssuesFromMarkdown } from "@/lib/posts";
+import { parseArchiveQuery, queryArchive } from "@/lib/archive";
+
 export const dynamic = "force-dynamic";
 
-import { getAllIssueDates, getIssueByDate } from "@/lib/posts";
-import { NextResponse } from "next/server";
-
-export async function GET() {
+export async function GET(request: Request) {
   try {
-    const dates = getAllIssueDates();
-    const issues = dates
-      .map((date) => getIssueByDate(date))
-      .filter((issue): issue is NonNullable<typeof issue> => issue !== null);
-
-    return NextResponse.json(issues);
-  } catch (err) {
-    console.error("Failed to fetch issues:", err);
-    return NextResponse.json({ error: "Internal server error" }, { status: 500 });
+    return NextResponse.json(queryArchive(readIssuesFromMarkdown(), parseArchiveQuery(new URL(request.url).searchParams)));
+  } catch {
+    return NextResponse.json({ error: "The archive could not be loaded." }, { status: 500 });
   }
 }

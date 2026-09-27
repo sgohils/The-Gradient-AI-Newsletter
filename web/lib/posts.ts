@@ -24,6 +24,7 @@ export function getAllIssueDates(): string[] {
 }
 
 export function getIssueByDate(date: string): NewsletterIssue | null {
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) return null;
   const filePath = path.join(POSTS_DIR, `${date}.md`);
 
   if (!fs.existsSync(filePath)) {
@@ -62,20 +63,26 @@ export function readIssuesFromMarkdown(): NewsletterIssue[] {
   return issues.sort((a, b) => b.date.localeCompare(a.date));
 }
 
+const issueCache = new Map<string, { version: string; issue: NewsletterIssue }>();
+
 function parseIssueFile(filePath: string): NewsletterIssue {
+  const stat = fs.statSync(filePath);
+  const version = `${stat.mtimeMs}:${stat.ctimeMs}:${stat.size}`;
+  const cached = issueCache.get(filePath);
+  if (cached?.version === version) return cached.issue;
   const raw = fs.readFileSync(filePath, "utf-8");
   const { data, content } = matter(raw);
 
   const date = path.basename(filePath, ".md");
   const title = typeof data.title === "string" ? data.title : "Untitled";
-  const tags: string[] = Array.isArray(data.tags) ? data.tags.filter(Boolean) : [];
+  const tags: string[] = Array.isArray(data.tags) ? data.tags.filter((tag): tag is string => typeof tag === "string") : [];
   const featuredImageUrl = typeof data.featuredImage === "string" ? data.featuredImage : undefined;
 
   const publishedAt = new Date(date);
   const articles = parseArticles(content, date, publishedAt);
   const intro = extractIntro(content, articles.length > 0 ? articles[0].title : null);
 
-  return {
+  const issue: NewsletterIssue = {
     id: date,
     date,
     title,
@@ -85,6 +92,8 @@ function parseIssueFile(filePath: string): NewsletterIssue {
     featuredImageUrl,
     publishedAt,
   };
+  issueCache.set(filePath, { version, issue });
+  return issue;
 }
 
 function parseArticles(body: string, issueDate: string, publishedAt: Date): Article[] {
@@ -109,6 +118,7 @@ function parseArticles(body: string, issueDate: string, publishedAt: Date): Arti
 
     const textBeforeLink = section
       .replace(linkRegex, "")
+      .replace(/(?:\r?\n)*---\s*$/, "")
       .trim()
       .replace(/^##\s+.+$/m, "")
       .trim();

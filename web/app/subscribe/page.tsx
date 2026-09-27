@@ -40,7 +40,7 @@ export default function SubscribePage() {
       <div className="max-w-md w-full">
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold mb-2">Subscribe to The Gradient</h1>
-          <p className="text-muted-foreground">
+          <p className="text-[var(--text-secondary)]">
             Get the latest AI news delivered to your inbox every day.
           </p>
         </div>
@@ -57,14 +57,14 @@ export default function SubscribePage() {
               onChange={(e) => setEmail(e.target.value)}
               placeholder="you@example.com"
               required
-              className="w-full px-4 py-2 border border-input rounded-md bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
+              className="w-full px-4 py-2 border border-[var(--border)] rounded-md bg-background text-foreground "
             />
           </div>
 
           <button
             type="submit"
             disabled={status === 'loading'}
-            className="w-full px-4 py-2 bg-primary text-primary-foreground rounded-md font-medium hover:opacity-90 disabled:opacity-50 transition-opacity"
+            className="primary-button w-full"
           >
             {status === 'loading' ? 'Subscribing...' : 'Subscribe'}
           </button>
@@ -72,7 +72,7 @@ export default function SubscribePage() {
           {message && (
             <p
               className={`text-sm text-center ${
-                status === 'success' ? 'text-green-600' : 'text-red-600'
+                status === 'success' ? 'text-[var(--success)]' : 'text-[var(--error)]'
               }`}
             >
               {message}
@@ -80,7 +80,7 @@ export default function SubscribePage() {
           )}
         </form>
 
-        <p className="text-xs text-muted-foreground text-center mt-6">
+        <p className="text-xs text-[var(--text-secondary)] text-center mt-6">
           By subscribing, you agree to receive email newsletters. You can unsubscribe at any time.
         </p>
       </div>
