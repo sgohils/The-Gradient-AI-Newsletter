@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Gradient — 2026-09-29</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      line-height: 1.6;
+      color: #1a1a1a;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      background: #fefefe;
+    }
+    header {
+      border-bottom: 2px solid #1a1a1a;
+      padding-bottom: 1rem;
+      margin-bottom: 2rem;
+    }
+    h1 {
+      font-size: 1.75rem;
+      line-height: 1.2;
+      margin: 0 0 0.5rem 0;
+    }
+    .date {
+      color: #666;
+      font-size: 0.9rem;
+    }
+    .intro {
+      font-size: 1.1rem;
+      color: #333;
+      margin-bottom: 2rem;
+    }
+    .story {
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid #e5e5e5;
+    }
+    .story:last-child {
+      border-bottom: none;
+    }
+    .story h2 {
+      font-size: 1.25rem;
+      margin: 0 0 0.5rem 0;
+    }
+    .story p {
+      margin: 0 0 0.5rem 0;
+    }
+    .story a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    .story a:hover {
+      text-decoration: underline;
+    }
+    .meta {
+      font-size: 0.85rem;
+      color: #666;
+      margin-top: 0.5rem;
+    }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 1px solid #e5e5e5;
+      font-size: 0.85rem;
+      color: #888;
+    }
+    
+  </style>
+</head>
+<body>
+  <header>
+    <h1>The Gradient — 2026-09-29</h1>
+    <div class="date">2026-09-29</div>
+  </header>
+  
+  <p class="intro">Basis leveraged OpenAI’s latest model, GPT-6 Astra, to slash the time needed to complete a complex 50‑tab tax workbook. The new model outperformed its predecessor, GPT-5.6 Sol, by a factor of two.</p>
+  <main>
+    <h2>Basis completes a tax workbook 2x faster with GPT-6 Astra</h2>
+<br>
+<p><strong>What happened:</strong> Basis used GPT-6 Astra to finish a 50‑tab tax workbook in half the time it took with GPT-5.6 Sol.</p>
+<p><strong>Why it matters:</strong> Faster processing lets tax professionals meet tight filing deadlines, reduces manual labor, and boosts confidence in AI‑generated results thanks to a stronger grasp of user intent.</p>
+<p><strong>Key stats:</strong> • Completion time reduced 2× compared to GPT-5.6 Sol</p>
+<p>• Workbook size: 50 tabs</p>
+<p>• Model upgrade: GPT-5.6 Sol → GPT-6 Astra</p>
+<p>• Reported increase in real‑world confidence</p>
+<p><strong>Source:</strong> https://openai.com/index/basis-tax-workbook-with-astra</p>
+<br>
+<p><a href="https://openai.com/index/basis-tax-workbook-with-astra">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>LLM Judge Validation Under Sparse Overlap: From Inference to Design</h2>
+<br>
+<p><strong>What happened:</strong> Researchers proved that when only 5 % of item pairs receive multiple human labels, the risk of making wrong deployment decisions spikes—25 % of the time—and the odds of picking the worst judge out of ten climb to 65 %.</p>
+<br>
+<p><strong>Why it matters:</strong> LLM‑as‑judge systems are being used to rank models, filter content, and guide product releases. Mis‑estimating their alignment with humans can lead to sub‑optimal or harmful deployments.</p>
+<br>
+<p><strong>Key stats:</strong> • 5 % pairwise overlap → 25 % wrong‑decision rate</p>
+<p>• 65 % chance of selecting the worst judge among ten candidates</p>
+<p>• Overlap quantity and its distribution are the only actionable levers identified.</p>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2609.31857</p>
+<br>
+<p><a href="https://arxiv.org/abs/2609.31857">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>IndustryLLM: Failure-Driven LLM Training for Industrial Procurement</h2>
+<br>
+<p><strong>What happened:</strong> Researchers released IndustryLLM, built on Qwen3.5‑35B‑A3B‑Base, and trained it with a novel failure‑driven adaptation loop that focuses on the unique errors that arise in procurement‑specific tasks.</p>
+<br>
+<p><strong>Why it matters:</strong> Industrial procurement mixes informal jargon, sparse product data, and safety‑critical standards. A model that learns directly from its failures can reduce costly misinterpretations, improve compliance, and accelerate decision‑making in high‑risk supply chains.</p>
+<br>
+<p><strong>Key stats:</strong></p>
+<ul>
+<li>Base model: Qwen3.5‑35B‑A3B‑Base (35 B total parameters, ~3 B activated per token)</li>
+<li>Vision encoder: frozen (no visual fine‑tuning)</li>
+<li>Training paradigm: failure‑driven adaptation, focusing on procurement error cases</li>
+<li>Open‑weight release: fully accessible for research and industry customization</li>
+</ul>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2609.31871</p>
+<br>
+<p><a href="https://arxiv.org/abs/2609.31871">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>Choir: An Open Protocol for Distributed Multi-Agent Autoformalization</h2>
+<br>
+<p><strong>What happened:</strong> Researchers introduced Choir, an open protocol that breaks down large formalization projects into bite‑size tasks. Independent contributors can run their own agents—each using its own LLM subscription—to tackle these tasks, while the protocol handles coordination and integration.</p>
+<p><strong>Why it matters:</strong> Centralized formalization is expensive and bottlenecked by a single team’s resources. Choir democratizes the process, lowers costs, and accelerates the creation of machine‑checked mathematics, paving the way for broader community participation.</p>
+<p><strong>Key stats:</strong> • Supports distributed execution across unlimited agents</p>
+<p>• No single point of computational cost</p>
+<p>• Designed for proof assistants like Lean</p>
+<p><strong>Source:</strong> https://arxiv.org/abs/2609.31903</p>
+<br>
+<p><a href="https://arxiv.org/abs/2609.31903">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>EmailBench: A Benchmark for Evaluating LLM Agents on Enterprise Email and Productivity Tasks</h2>
+<br>
+<p><strong>What happened:</strong> Researchers unveiled EmailBench, a comprehensive benchmark that evaluates LLM‑driven agents on 206 typed‑email and productivity scenarios spanning 16 distinct task categories.</p>
+<br>
+<p><strong>Why it matters:</strong> Enterprise email agents must juggle information retrieval, state updates, temporal reasoning, and multi‑step coordination. A dedicated, self‑contained benchmark gives developers a clear yardstick to improve agent reliability and safety before deployment in business settings.</p>
+<br>
+<p><strong>Key stats:</strong></p>
+<ul>
+<li>206 scenarios covering tasks such as scheduling, ticket routing, and data extraction.</li>
+<li>16 task categories representing common enterprise email workflows.</li>
+<li>Uses a provider‑neutral typed email API spec, enabling cross‑platform comparisons.</li>
+</ul>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2609.31906</p>
+<br>
+<p><a href="https://arxiv.org/abs/2609.31906">Read more</a></p>
+<br>
+<hr>
+<br>
+  </main>
+  <footer>
+    <p>Tags: Company Blog, Research</p>
+  </footer>
+</body>
+</html>
