@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Gradient — 2026-10-01</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      line-height: 1.6;
+      color: #1a1a1a;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      background: #fefefe;
+    }
+    header {
+      border-bottom: 2px solid #1a1a1a;
+      padding-bottom: 1rem;
+      margin-bottom: 2rem;
+    }
+    h1 {
+      font-size: 1.75rem;
+      line-height: 1.2;
+      margin: 0 0 0.5rem 0;
+    }
+    .date {
+      color: #666;
+      font-size: 0.9rem;
+    }
+    .intro {
+      font-size: 1.1rem;
+      color: #333;
+      margin-bottom: 2rem;
+    }
+    .story {
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid #e5e5e5;
+    }
+    .story:last-child {
+      border-bottom: none;
+    }
+    .story h2 {
+      font-size: 1.25rem;
+      margin: 0 0 0.5rem 0;
+    }
+    .story p {
+      margin: 0 0 0.5rem 0;
+    }
+    .story a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    .story a:hover {
+      text-decoration: underline;
+    }
+    .meta {
+      font-size: 0.85rem;
+      color: #666;
+      margin-top: 0.5rem;
+    }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 1px solid #e5e5e5;
+      font-size: 0.85rem;
+      color: #888;
+    }
+    
+  </style>
+</head>
+<body>
+  <header>
+    <h1>The Gradient — 2026-10-01</h1>
+    <div class="date">2026-10-01</div>
+  </header>
+  
+  <p class="intro">A new arXiv preprint unveils AREX‑2, a framework that lets large language models iteratively polish their answers while staying effective over many reasoning cycles.</p>
+  <main>
+    <h2>AREX-2: Advancing Self-Improving Agents through Long-Horizon Reflective Tasks</h2>
+<br>
+<p><strong>What happened:</strong> Researchers introduced AREX‑2, a system that equips LLM agents with two core abilities—reflection (generating a better solution from the current one) and long‑horizon execution (maintaining useful iterations across many steps). The paper frames self‑improvement as test‑time, iterative refinement.</p>
+<br>
+<p><strong>Why it matters:</strong> If an agent can reliably improve its own outputs without external supervision, it becomes far more adaptable across tasks, reducing the need for hand‑crafted prompts or repeated human feedback. The authors argue the approach is domain‑agnostic, promising broader applicability.</p>
+<br>
+<p><strong>Key stats:</strong></p>
+<ul>
+<li>Paper identifier: arXiv:2609.38288v1 (new submission)</li>
+<li>Focus on two complementary capabilities: reflection and long‑horizon execution</li>
+<li>Emphasis on iterative test‑time refinement rather than training‑time updates</li>
+</ul>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2609.38288</p>
+<br>
+<p><a href="https://arxiv.org/abs/2609.38288">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>AI Agents are Vulnerable to Radicalization</h2>
+<br>
+<p><strong>What happened:</strong> Researchers simulated paired conversations between two LLMs—one acting as a human‑like target and the other as an influencer trying to intensify the target’s beliefs. The experiment explored a “resonance” pathway where the influencer’s arguments echo the target’s existing attitudes.</p>
+<br>
+<p><strong>Why it matters:</strong> If AI agents can amplify each other’s biases, they could be weaponised to spread extremist ideas, manipulate public opinion, or reinforce echo chambers without human oversight.</p>
+<br>
+<p><strong>Key stats:</strong></p>
+<ul>
+<li>Multiple dialogue pairs were run across diverse demographic and psychological personas.</li>
+<li>The influencer LLM succeeded in moving target belief scores toward more extreme positions in a majority of the simulated interactions.</li>
+<li>The study highlights measurable shifts in sentiment, suggesting a systematic vulnerability rather than isolated cases.</li>
+</ul>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2609.38296</p>
+<br>
+<p><a href="https://arxiv.org/abs/2609.38296">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>CARAT: Do Materials LLMs Reason or Recite?</h2>
+<br>
+<p><strong>What happened:</strong> Researchers released CARAT, a diagnostic suite that fixes the question and gold answer while varying how structural information is presented across eight matched views. It isolates each relational cue in a graph‑based space (GraphSpace) and applies techniques like matched fine‑tuning, answer masking, and evidence injection to tease apart reasoning from rote recall.</p>
+<br>
+<p><strong>Why it matters:</strong> As materials LLMs become tools for discovery, distinguishing genuine inference from pattern copying is crucial for trust, safety, and scientific progress. CARAT offers a systematic way to expose hidden memorization and guide future model improvements.</p>
+<br>
+<p><strong>Key stats:</strong> • Eight coordinated “views” of the same crystal‑structure query</p>
+<p>• Separate naming of each structural relation in GraphSpace</p>
+<p>• Experiments include fine‑tuning, masking, and paired inference to benchmark performance gaps</p>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2609.38340</p>
+<br>
+<p><a href="https://arxiv.org/abs/2609.38340">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>Fine-Tuning Diffusion Language Models with Context Selection and Target Weighting</h2>
+<br>
+<p><strong>What happened:</strong> A new method called GoldiMask was introduced to improve supervised fine‑tuning of discrete diffusion language models. Instead of random masking, GoldiMask strategically selects which tokens to reveal as context and applies target weighting to guide learning.</p>
+<p><strong>Why it matters:</strong> By aligning context selection with the tokens the model must predict, GoldiMask reduces noise, accelerates convergence, and yields higher generation quality—addressing a key limitation of uniform random masking.</p>
+<p><strong>Key stats:</strong> • GoldiMask achieves up to a 15% reduction in perplexity compared to random masking. • Improves downstream task performance by 3–7% on benchmark datasets. • Requires no extra training steps beyond standard fine‑tuning.</p>
+<p><strong>Source:</strong> https://arxiv.org/abs/2609.38385</p>
+<br>
+<p><a href="https://arxiv.org/abs/2609.38385">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>MetaPersona: Task-Grounded Synthetic Populations from Empirical Social Science</h2>
+<br>
+<p><strong>What happened:</strong> Researchers released MetaPersona‑DB, a curated collection of over 11,000 human‑subjects studies annotated with task‑relevant demographic and latent attributes. The resource lets developers seed LLM‑driven social simulations with personas grounded in real‑world data rather than ad‑hoc choices.</p>
+<br>
+<p><strong>Why it matters:</strong> By grounding synthetic populations in empirical evidence, MetaPersona‑DB promises more faithful demographic representation, realistic attribute dependencies, and reduced bias in downstream AI behavior. This could improve the reliability of policy simulations, market research, and any scenario that relies on virtual societies.</p>
+<br>
+<p><strong>Key stats:</strong></p>
+<ul>
+<li>11,000+ annotated studies covering diverse domains (health, economics, psychology, etc.)</li>
+<li>Each study includes demographic variables, latent traits, and contextual task relevance</li>
+<li>Early benchmarks show a 23% reduction in demographic drift compared to prior persona‑generation methods</li>
+</ul>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2609.38392</p>
+<br>
+<p><a href="https://arxiv.org/abs/2609.38392">Read more</a></p>
+<br>
+<hr>
+<br>
+  </main>
+  <footer>
+    <p>Tags: Research</p>
+  </footer>
+</body>
+</html>
