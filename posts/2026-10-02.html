@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Gradient — 2026-10-02</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      line-height: 1.6;
+      color: #1a1a1a;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      background: #fefefe;
+    }
+    header {
+      border-bottom: 2px solid #1a1a1a;
+      padding-bottom: 1rem;
+      margin-bottom: 2rem;
+    }
+    h1 {
+      font-size: 1.75rem;
+      line-height: 1.2;
+      margin: 0 0 0.5rem 0;
+    }
+    .date {
+      color: #666;
+      font-size: 0.9rem;
+    }
+    .intro {
+      font-size: 1.1rem;
+      color: #333;
+      margin-bottom: 2rem;
+    }
+    .story {
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid #e5e5e5;
+    }
+    .story:last-child {
+      border-bottom: none;
+    }
+    .story h2 {
+      font-size: 1.25rem;
+      margin: 0 0 0.5rem 0;
+    }
+    .story p {
+      margin: 0 0 0.5rem 0;
+    }
+    .story a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    .story a:hover {
+      text-decoration: underline;
+    }
+    .meta {
+      font-size: 0.85rem;
+      color: #666;
+      margin-top: 0.5rem;
+    }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 1px solid #e5e5e5;
+      font-size: 0.85rem;
+      color: #888;
+    }
+    
+  </style>
+</head>
+<body>
+  <header>
+    <h1>The Gradient — 2026-10-02</h1>
+    <div class="date">2026-10-02</div>
+  </header>
+  
+  <p class="intro">A new arXiv paper demonstrates that causal reasoning can sharpen how LLM agents coordinate across modular services like ordering, payment, inventory, and shipment.</p>
+  <main>
+    <h2>When Do Causal World Models Help Modular LLM Agents</h2>
+<br>
+<p><strong>What happened:</strong> Researchers introduced a causal world‑model framework tailored for modular LLM agents, enabling the system to reason about interventions rather than merely fitting observed action traces.</p>
+<p><strong>Why it matters:</strong> In real‑world workflows, actions in one module (e.g., payment) affect the validity of actions in another (e.g., shipment). Traditional models miss these causal links, leading to sub‑optimal planning. The causal approach lets agents predict the downstream impact of interventions, improving reliability and efficiency.</p>
+<p><strong>Key stats:</strong></p>
+<ul>
+<li>New causal modeling method proposed for modular agent architectures.</li>
+<li>Evaluated on several synthetic modular benchmarks that mimic order‑to‑payment‑to‑shipment pipelines.</li>
+<li>Reported measurable gains in planning accuracy and success rates compared with standard observational world models (details in the paper).</li>
+</ul>
+<p><strong>Source:</strong> https://arxiv.org/abs/2610.00012</p>
+<br>
+<p><a href="https://arxiv.org/abs/2610.00012">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>Measuring the Microtask Eligibility Gap: When Is an Off-the-Shelf SLM Enough for an Agent Harness?</h2>
+<br>
+<p><strong>What happened:</strong> Researchers built a benchmark of four common microtasks—auto‑approving shell commands, writing memory entries, selecting tools, and ranking past dialogue turns—using fixed prompts and automatic evaluation metrics. They tested a range of off‑the‑shelf small language models (SLMs) against practitioner‑defined performance thresholds and examined the impact of post‑training quantization.</p>
+<br>
+<p><strong>Why it matters:</strong> Agent harnesses rely on these microtasks to keep large‑scale LLM planners efficient and safe. If SLMs cannot meet reliability standards, developers may need to invest in custom training or larger models, affecting cost, latency, and overall system robustness.</p>
+<br>
+<p><strong>Key stats:</strong> • Only 2 of 7 evaluated SLMs satisfied all microtask thresholds. • Quantized models cut inference latency by ~30% but saw an average 5% drop in task accuracy. • The hardest microtask was shell‑command approval, with a 40% failure rate across the off‑the‑shelf pool.</p>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2610.00025</p>
+<br>
+<p><a href="https://arxiv.org/abs/2610.00025">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>Scientific Agents: Evaluating Profession-Specific System Prompts on Scientific Tasks</h2>
+<br>
+<p><strong>What happened:</strong> Researchers examined the open‑source <em>Scientific Agents</em> corpus—503 profession‑specific AGENTS.md profiles—using Gemini 3.8 Flash via OpenRouter in the Pi agent harness. Each profile was tested against four control prompts: a minimal &quot;helpful assistant&quot; baseline, the profile’s opening role sentence, a generic scientific rig, and a matched baseline.</p>
+<br>
+<p><strong>Why it matters:</strong> The findings warn that adding detailed, profession‑specific system prompts can inflate token consumption and per‑response expense without delivering consistent performance improvements. This insight helps AI developers weigh customization benefits against operational costs.</p>
+<br>
+<p><strong>Key stats:</strong> • 503 distinct profession‑specific prompts evaluated.</p>
+<p>• Token usage and estimated cost per response increased noticeably.</p>
+<p>• No consistent accuracy gain was observed across the scientific tasks.</p>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2610.00084</p>
+<br>
+<p><a href="https://arxiv.org/abs/2610.00084">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>Rules to Tools: Executable Checks for LLM Agents in Scientific Computing</h2>
+<br>
+<p><strong>What happened:</strong> Researchers introduced R2T, a system that supplies LLM‑driven coding agents with executable checks matching public scientific requirements. Matched SciCode repair groups share the original problem, checks, code, model, and computational budget, while the tool group provides a callable implementation.</p>
+<br>
+<p><strong>Why it matters:</strong> By letting agents run concrete verification steps instead of relying solely on textual reasoning, R2T closes the gap between code generation and scientific correctness, paving the way for more reliable AI‑assisted research pipelines.</p>
+<br>
+<p><strong>Key stats:</strong> In two cohorts of 30 tasks each, complete code repair rose from 26/30 with text‑only prompts to 29/30 when R2T checks were used.</p>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2610.00313</p>
+<br>
+<p><a href="https://arxiv.org/abs/2610.00313">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>When Harnesses Lose the Signal: Causal Evaluation of Recovery in LLM Agents</h2>
+<br>
+<p><strong>What happened:</strong> Researchers treat recovery in LLM agents as a causal decision problem, comparing outcomes from identical execution states when a harness either rescues a failing run or inadvertently breaks a successful one.</p>
+<br>
+<p><strong>Why it matters:</strong> Average success rates mask these opposite effects, leading to over‑optimistic assessments of harnesses. Understanding the causal impact helps design more reliable agents and clearer evaluation metrics.</p>
+<br>
+<p><strong>Key stats:</strong> The study shows that the same recovery operation can flip outcomes—turning a failure into success or vice‑versa—in a significant portion of test cases (exact percentages detailed in the full paper).</p>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2610.00372</p>
+<br>
+<p><a href="https://arxiv.org/abs/2610.00372">Read more</a></p>
+<br>
+<hr>
+<br>
+  </main>
+  <footer>
+    <p>Tags: Research</p>
+  </footer>
+</body>
+</html>
