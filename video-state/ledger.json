@@ -16,7 +16,7 @@
       "platforms": {
         "youtube": {
           "accountId": "6ac27146281ee799a37065e4",
-          "status": "submitting",
+          "status": "published",
           "idempotencyKey": "7ea85a31-2c78-45aa-a658-192928b93a13",
           "request": {
             "content": "A model guide for the GPT-6 family\n\nSource: OpenAI Blog\nhttps://openai.com/index/practical-guide-building-gpt-6\n\nThe Gradient: https://gradientnews.app/archive/2026-10-04\nAI-generated narration. #AI #AINews #Shorts",
@@ -41,7 +41,9 @@
             ],
             "publishNow": true
           },
-          "firstSubmittedAt": "2026-10-04T19:25:47.823Z"
+          "firstSubmittedAt": "2026-10-04T19:25:47.823Z",
+          "postId": "6ac2a83c8f658d228e851cf9",
+          "postUrl": "https://www.youtube.com/watch?v=5sOPhAuleHg"
         }
       },
       "script": {
