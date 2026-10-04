@@ -1,6 +1,6 @@
 import { NarrationTiming, WordTiming } from './types';
 
-interface Caption { start: number; end: number; text: string }
+interface Caption { start: number; end: number; text: string; words: WordTiming[] }
 
 export function captionChunks(timing: NarrationTiming): Caption[] {
   if (!timing || !Number.isFinite(timing.duration) || timing.duration < 30 || timing.duration > 45 ||
@@ -22,14 +22,14 @@ export function captionChunks(timing: NarrationTiming): Caption[] {
   const groups: WordTiming[][] = [];
   let group: WordTiming[] = [];
   for (const word of words) {
-    if (group.length && (group.length >= 6 || group.map((item) => item.text).join(' ').length + word.text.length > 44 || word.start - group[group.length - 1].end > 0.5)) {
+    if (group.length && (group.length >= 5 || group.map((item) => item.text).join(' ').length + word.text.length > 38 || word.start - group[group.length - 1].end > 0.5)) {
       groups.push(group); group = [];
     }
     group.push(word);
     if (/[.!?]$/.test(word.text)) { groups.push(group); group = []; }
   }
   if (group.length) groups.push(group);
-  return groups.map((words) => ({ start: words[0].start, end: words[words.length - 1].end, text: words.map((word) => word.text).join(' ') }));
+  return groups.map((words) => ({ start: words[0].start, end: words[words.length - 1].end, text: words.map((word) => word.text).join(' '), words }));
 }
 
 function timestamp(value: number, ass = false): string {
@@ -46,10 +46,21 @@ export function buildSrt(timing: NarrationTiming): string {
 }
 
 export function buildAss(timing: NarrationTiming): string {
-  const header = `[Script Info]\nScriptType: v4.00+\nPlayResX: 1080\nPlayResY: 1920\nWrapStyle: 2\n\n[V4+ Styles]\nFormat: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding\nStyle: Caption,DejaVu Sans,52,&H00FFFFFF,&H00FFFFFF,&H00212420,&H00212420,-1,0,0,0,100,100,0,0,3,12,0,5,100,220,0,1\n\n[Events]\nFormat: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text\n`;
-  return header + captionChunks(timing).map((chunk) => {
-    const text = chunk.text.replace(/[{}\\\r\n]/g, '');
-    // assets.py measures the installed font before choosing line breaks and size.
-    return `Dialogue: 0,${timestamp(chunk.start, true)},${timestamp(chunk.end, true)},Caption,,0,0,0,,{\\pos(482,1290)\\fad(55,55)}${text}`;
-  }).join('\n') + '\n';
+  const header = `[Script Info]\nScriptType: v4.00+\nPlayResX: 1080\nPlayResY: 1920\nWrapStyle: 2\n\n[V4+ Styles]\nFormat: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding\nStyle: Caption,DejaVu Sans,64,&H00FFFFFF,&H00FFFFFF,&H00212420,&H00212420,-1,0,0,0,100,100,0,0,3,12,0,5,100,220,0,1\n\n[Events]\nFormat: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text\n`;
+  const events = captionChunks(timing).flatMap(chunk => {
+    // Split at real word boundaries, including gaps, so only the currently
+    // spoken word is highlighted. The whole chunk stays in the same position.
+    const boundaries = [...new Set(chunk.words.flatMap(word => [word.start, word.end]))].sort((a, b) => a - b);
+    return boundaries.slice(0, -1).flatMap((start, i) => {
+      const end = boundaries[i + 1];
+      if (timestamp(start, true) === timestamp(end, true)) return [];
+      const text = chunk.words.map(word => {
+        const clean = word.text.replace(/[{}\\\r\n]/g, '');
+        return word.start <= start + 0.00001 && word.end > start + 0.00001 ?
+          `{\\1c&HCBEFB4&}${clean}{\\1c&HFFFFFF&}` : clean;
+      }).join(' ');
+      return [`Dialogue: 0,${timestamp(start, true)},${timestamp(end, true)},Caption,,0,0,0,,{\\pos(482,1290)}${text}`];
+    });
+  });
+  return header + events.join('\n') + '\n';
 }

@@ -20,9 +20,12 @@ export interface VideoInput {
 export interface ScriptSentence {
   text: string;
   evidenceQuote: string;
+  role?: 'hook' | 'detail' | 'takeaway';
+  displayText?: string;
 }
 
 export interface VideoScript {
+  version?: 1 | 2;
   provider: 'groq' | 'extractive';
   sentences: ScriptSentence[];
   narration: string;
@@ -48,15 +51,21 @@ export interface VideoScene {
   label: string;
   theme: GraphicTheme;
   text: string;
+  displayText: string;
+  excerpt: boolean;
+  kind: 'headline' | 'detail' | 'source';
+  variant: number;
   callout?: string;
 }
 
 export interface VideoStoryboard {
-  version: 1;
+  version: 2;
   duration: number;
-  fps: 12;
-  width: 780;
-  height: 560;
+  fps: 15;
+  width: 1080;
+  height: 1920;
+  renderWidth: 720;
+  renderHeight: 1280;
   scenes: VideoScene[];
 }
 
@@ -74,6 +83,7 @@ export interface ReadyVideoManifest {
   description: string;
   sample?: boolean;
   graphicsVersion?: number;
+  selectionReason?: string;
 }
 
 export interface SkippedVideoManifest {
@@ -102,6 +112,7 @@ export interface VideoLedgerEntry {
   story: VideoStory;
   selectedAt: string;
   script?: VideoScript;
+  selectionReason?: string;
   contentHash?: string;
   media?: { publicUrl: string; videoSha256: string; uploadedAt: string };
   platforms: Partial<Record<Platform, PlatformPublication>>;

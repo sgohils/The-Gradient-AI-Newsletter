@@ -2,23 +2,26 @@
 import argparse
 import json
 import math
+import os
+import subprocess
+import tempfile
 from pathlib import Path
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 
 def ease(value):
     return 1 - (1 - max(0, min(1, value))) ** 3
 
 
-def wrap(text, font, width):
+def wrap(text, font, width, scale=1):
     lines = []
     for paragraph in text.splitlines():
         line = ""
         for word in paragraph.split():
-            if font.getlength(word) > width:
+            if font.getlength(word) / scale > width:
                 return []
             candidate = (line + " " + word).strip()
-            if font.getlength(candidate) <= width:
+            if font.getlength(candidate) / scale <= width:
                 line = candidate
             elif line:
                 lines.append(line)
@@ -28,17 +31,14 @@ def wrap(text, font, width):
     return lines
 
 
-def fitted_text(text, fonts):
-    for size in (32, 30, 28, 26, 24):
-        lines = wrap(text, fonts[size], 686)
-        if lines and len(lines) * (size + 8) <= 148:
-            return size, lines, False
-    # Mark a shortened source excerpt, rather than inventing an assertion.
-    words = text.split()
-    for count in range(len(words) - 1, 0, -1):
-        lines = wrap(" ".join(words[:count]) + "…", fonts[26], 686)
-        if lines and len(lines) * 34 <= 148:
-            return 26, lines, True
+def fitted_text(text, fonts, scale, headline=False):
+    # Short, source-derived excerpts carry the visual; the subtitles carry the
+    # complete narration. Never silently truncate an already selected excerpt.
+    for size in ((88, 80, 72, 68, 64, 60, 56, 52, 48, 44, 40, 36) if headline else
+                 (80, 72, 68, 64, 60, 56, 52, 48, 44, 40, 36)):
+        lines = wrap(text, fonts[size], 780, scale)
+        if lines and len(lines) * (size + 10) <= 300:
+            return size, lines
     raise ValueError("Scene text cannot fit the mobile safe area")
 
 
@@ -161,68 +161,240 @@ ILLUSTRATIONS = {"network": network, "code": code, "comparison": comparison, "re
                  "robot": robot, "security": security, "policy": policy, "link": link}
 
 
-def render_frame(plan, index, seconds, fonts, layouts):
+class DesignDraw:
+    """Draw in 1080p design coordinates on the less expensive 720p canvas."""
+
+    def __init__(self, image, scale, offset=(0, 0)):
+        self.draw = ImageDraw.Draw(image)
+        self.scale = scale
+        self.offset = offset
+
+    def xy(self, coordinates):
+        if isinstance(coordinates[0], (tuple, list)):
+            return [self.xy(point) for point in coordinates]
+        return tuple(value * self.scale + self.offset[i % 2] for i, value in enumerate(coordinates))
+
+    def style(self, kwargs):
+        if "width" in kwargs:
+            kwargs["width"] = max(1, round(kwargs["width"] * self.scale))
+        return kwargs
+
+    def rectangle(self, coordinates, **kwargs):
+        self.draw.rectangle(self.xy(coordinates), **self.style(kwargs))
+
+    def rounded_rectangle(self, coordinates, radius, **kwargs):
+        self.draw.rounded_rectangle(self.xy(coordinates), radius=radius * self.scale, **self.style(kwargs))
+
+    def ellipse(self, coordinates, **kwargs):
+        self.draw.ellipse(self.xy(coordinates), **self.style(kwargs))
+
+    def line(self, coordinates, **kwargs):
+        self.draw.line(self.xy(coordinates), **self.style(kwargs))
+
+    def polygon(self, coordinates, **kwargs):
+        self.draw.polygon(self.xy(coordinates), **self.style(kwargs))
+
+    def arc(self, coordinates, start, end, **kwargs):
+        self.draw.arc(self.xy(coordinates), start, end, **self.style(kwargs))
+
+    def text(self, coordinates, text, **kwargs):
+        self.draw.text(self.xy(coordinates), text, **kwargs)
+
+
+PALETTES = (
+    {"background": "#112c23", "ink": "#fbfaf7", "accent": "#b4efcb", "dim": "#457f66", "muted": "#a0baab", "panel": "#183d30"},
+    {"background": "#151e1b", "ink": "#fbfaf7", "accent": "#b4efcb", "dim": "#456457", "muted": "#a0baab", "panel": "#202f29"},
+    {"background": "#f6f5f1", "ink": "#202421", "accent": "#176b5b", "dim": "#b5c9bd", "muted": "#555c57", "panel": "#e8eee6"},
+)
+FONT_SIZES = (20, 22, 24, 26, 28, 32, 36, 40, 44, 48, 52, 56, 60, 64, 68, 72, 80, 88, 96, 108, 128, 156, 180, 208, 240)
+
+
+def background_image(plan, palette):
+    width, height = plan["renderWidth"], plan["renderHeight"]
+    scale = width / plan["width"]
+    image = Image.new("RGB", (width, height), palette["background"])
+    glow = Image.new("RGBA", image.size)
+    draw = DesignDraw(glow, scale)
+    draw.ellipse((370, 430, 1310, 1370), fill=(103, 197, 145, 25))
+    image = Image.alpha_composite(image.convert("RGBA"), glow.filter(ImageFilter.GaussianBlur(round(100 * scale)))).convert("RGB")
+    draw = DesignDraw(image, scale)
+    for radius in (360, 530, 710):
+        draw.arc((790 - radius, 960 - radius, 790 + radius, 960 + radius), 210, 390, fill=palette["panel"], width=2)
+    return image
+
+
+def prepare_art(plan, story, output):
+    if (plan["version"], plan["width"], plan["height"], plan["fps"], plan["renderWidth"], plan["renderHeight"]) != (2, 1080, 1920, 15, 720, 1280):
+        raise ValueError("Unexpected graphics version, dimensions, or frame rate")
+    scale = plan["renderWidth"] / plan["width"]
+    bold_path = output / "fonts/caption.ttf"
+    fonts = {size: ImageFont.truetype(str(bold_path), round(size * scale)) for size in FONT_SIZES}
+    icon_fonts = {size: ImageFont.truetype(str(bold_path), round(size * scale * 1.4)) for size in FONT_SIZES}
+    regular = {size: ImageFont.truetype(str(output / "fonts/body.ttf"), round(size * scale)) for size in (22, 24, 26, 28)}
+    layouts = []
+    for scene in plan["scenes"]:
+        text = scene["displayText"].strip(",;: ")
+        if scene["excerpt"]:
+            if scene["variant"]:
+                text = "…" + text
+            if not text.endswith((".", "!", "?")):
+                text += "…"
+        layouts.append(fitted_text(text, fonts, scale, scene["kind"] == "headline"))
+    source_lines = wrap(story["sourceHost"], regular[26], 780, scale)
+    if not source_lines or len(source_lines) > 2:
+        raise ValueError("Source hostname cannot fit the mobile safe area")
+    numbers = {}
+    for i, scene in enumerate(plan["scenes"]):
+        if scene["theme"] == "number":
+            for size in (240, 208, 180, 156, 128, 108, 96, 80, 64, 48, 36):
+                lines = wrap(scene["callout"], fonts[size], 700, scale)
+                if lines and len(lines) * (size + 10) <= 320:
+                    numbers[i] = (size, lines)
+                    break
+            if i not in numbers:
+                raise ValueError("Number callout cannot fit the mobile safe area")
+    return {"scale": scale, "fonts": fonts, "iconFonts": icon_fonts, "regular": regular, "layouts": layouts,
+            "sourceLines": source_lines, "numbers": numbers,
+            "backgrounds": [background_image(plan, palette) for palette in PALETTES]}
+
+
+def render_frame(plan, story, index, seconds, art):
     scene = plan["scenes"][index]
     local = max(0, seconds - scene["start"])
-    dark = index % 2 == 0
-    background = ("#176b5b" if index == 0 else "#202421") if dark else "#eeede7"
-    ink, accent, dim = ("#fbfaf7", "#87c4ae", "#4c7669") if dark else ("#202421", "#176b5b", "#bacbc1")
-    image = Image.new("RGBA", (780, 560), (0, 0, 0, 0))
-    draw = ImageDraw.Draw(image)
-    draw.rounded_rectangle((0, 0, 779, 559), radius=18, fill=background)
-    for x in range(38, 754, 32):
-        for y in range(83, 323, 32):
-            circle(draw, x, y, 1, fill=dim)
-    size, lines, excerpt = layouts[index]
-    label = scene["label"] + (" · EXCERPT" if excerpt else "")
-    draw.text((32, 28), label, font=fonts[20], fill=ink)
-    draw.text((748, 28), f"{index + 1:02d} / {len(plan['scenes']):02d}", font=fonts[20], fill=accent, anchor="ra")
-    if scene["theme"] == "number":
-        value = scene["callout"]
-        font = next((fonts[s] for s in (96, 80, 64, 48, 40) if fonts[s].getlength(value) <= 670), fonts[32])
-        if font.getlength(value) > 670:
-            raise ValueError("Number callout cannot fit the graphic safe area")
-        draw.text((390, 194 + 12 * (1 - ease(local / 0.5))), value, font=font, fill=accent, anchor="mm")
-        draw.line((230, 275, 550, 275), fill=dim, width=2)
-    else:
-        ILLUSTRATIONS[scene["theme"]](draw, local, ink, accent, dim, background, fonts)
-    y = 351 + 10 * (1 - ease(local / 0.45))
+    palette_index = 0 if index == 0 else (2 if scene["kind"] == "source" else 1 + (index - 1) % 2)
+    palette = PALETTES[palette_index]
+    ink, accent, dim, muted, panel = (palette[key] for key in ("ink", "accent", "dim", "muted", "panel"))
+    scale = art["scale"]
+    image = art["backgrounds"][palette_index].copy()
+    draw = DesignDraw(image, scale)
+    fonts, regular = art["fonts"], art["regular"]
+
+    # The publication's three descending rules, with a small persistent masthead.
+    for i, length in enumerate((36, 27, 18)):
+        draw.rounded_rectangle((96, 168 + i * 9, 96 + length, 172 + i * 9), radius=2, fill=accent)
+    draw.text((152, 165), "THE GRADIENT", font=fonts[26], fill=ink)
+    draw.text((876, 168), story["issueDate"], font=regular[22], fill=muted, anchor="ra")
+    draw.line((96, 220, 876, 220), fill=dim, width=1)
+    draw.text((96, 263), scene["label"], font=fonts[22], fill=accent)
+    draw.text((876, 263), f"{index + 1:02d} / {len(plan['scenes']):02d}", font=regular[24], fill=muted, anchor="ra")
+
+    size, lines = art["layouts"][index]
+    y = 328 + 20 * (1 - ease(local / 0.35))
     for line in lines:
-        draw.text((390, y), line, font=fonts[size], fill=ink, anchor="ma")
-        y += size + 8
+        draw.text((96, y), line, font=fonts[size], fill=ink)
+        y += size + 10
+
+    # Large artwork with depth, moving signals, and a different crop on each beat.
+    draw.rounded_rectangle((96, 696, 876, 1151), radius=30, fill=palette["background"])
+    draw.rounded_rectangle((96, 680, 876, 1135), radius=30, fill=panel)
+    draw.line((130, 713, 830, 713), fill=dim, width=1)
+    for x in range(144, 838, 44):
+        for y in range(752, 1090, 44):
+            circle(draw, x, y, 1, fill=dim)
+    if scene["theme"] == "number":
+        number_size, number_lines = art["numbers"][index]
+        y = 870 - (len(number_lines) - 1) * (number_size + 10) / 2
+        for line in number_lines:
+            draw.text((486, y + 10 * (1 - ease(local / 0.4))), line,
+                      font=fonts[number_size], fill=accent, anchor="mm")
+            y += number_size + 10
+        draw.text((486, 1090), "FROM THE SOURCE", font=fonts[20], fill=muted, anchor="mm")
+    else:
+        factor = 1.4
+        shift = (10 if scene["variant"] % 2 else -10) * math.sin(local * 0.7)
+        offset = ((486 - 390 * factor + shift) * scale, (893 - 195 * factor) * scale)
+        icon_draw = DesignDraw(image, factor * scale, offset)
+        ILLUSTRATIONS[scene["theme"]](icon_draw, local + scene["variant"] * 2, ink, accent, dim, panel, art["iconFonts"])
+        draw.text((130, 1090), "ILLUSTRATION", font=regular[22], fill=muted)
+        draw.text((830, 1090), scene["theme"].upper(), font=fonts[22], fill=accent, anchor="ra")
+
+    draw.text((96, 1436), "SOURCE / " + ("ORIGINAL REPORTING" if scene["kind"] == "source" else "AI DAILY BRIEF"),
+              font=fonts[20], fill=accent)
+    for i, line in enumerate(art["sourceLines"]):
+        draw.text((96, 1472 + i * 32), line, font=regular[26], fill=ink)
     progress = max(0, min(1, seconds / plan["duration"]))
-    draw.rounded_rectangle((32, 533, 748, 538), radius=2, fill=dim)
+    draw.rounded_rectangle((96, 1560, 876, 1566), radius=3, fill=dim)
     if progress > 0:
-        draw.rounded_rectangle((32, 533, 32 + 716 * progress, 538), radius=2, fill=accent)
-    opacity = min(ease(local / 0.25), ease((scene["end"] - seconds) / 0.18))
-    if opacity < 1:
-        image.putalpha(image.getchannel("A").point([round(v * opacity) for v in range(256)]))
+        draw.rounded_rectangle((96, 1560, 96 + max(1, 780 * progress), 1566), radius=3, fill=accent)
     return image
+
+
+def animated_frames(plan, story, art):
+    index, previous = 0, None
+    for frame in range(math.ceil(plan["duration"] * plan["fps"])):
+        seconds = frame / plan["fps"]
+        while index + 1 < len(plan["scenes"]) and seconds >= plan["scenes"][index]["end"]:
+            previous = render_frame(plan, story, index, plan["scenes"][index]["end"], art)
+            index += 1
+        image = render_frame(plan, story, index, seconds, art)
+        local = seconds - plan["scenes"][index]["start"]
+        if previous is not None and local < 0.2:
+            image = Image.blend(previous, image, ease(local / 0.2))
+        yield image
+
+
+def encode_video(plan, story, art, output, ffmpeg, video_file):
+    """One encode and a bounded frame buffer; no intermediate media or PNGs."""
+    if video_file != "video.mp4":
+        raise ValueError("Unexpected video filename")
+    temporary_video = output / ".video-rendering.mp4"
+    command = [ffmpeg, "-hide_banner", "-loglevel", "error", "-y", "-f", "rawvideo", "-pix_fmt", "rgb24",
+               "-s", f"{plan['renderWidth']}x{plan['renderHeight']}", "-r", str(plan["fps"]), "-i", "pipe:0",
+               "-i", "audio.wav", "-filter_complex", (output / "render.filter").read_text(encoding="utf-8"),
+               "-map", "[v]", "-map", "[a]", "-t", str(plan["duration"]), "-c:v", "libx264", "-preset", "veryfast",
+               "-crf", "23", "-pix_fmt", "yuv420p", "-r", "30", "-c:a", "aac", "-b:a", "128k",
+               "-movflags", "+faststart", "-threads", "2", temporary_video.name]
+    with tempfile.TemporaryFile() as errors:
+        process = subprocess.Popen(command, cwd=output, stdin=subprocess.PIPE, stdout=subprocess.DEVNULL, stderr=errors,
+                                   creationflags=subprocess.CREATE_NO_WINDOW if os.name == "nt" else 0)
+        try:
+            for image in animated_frames(plan, story, art):
+                process.stdin.write(image.tobytes())
+            process.stdin.close()
+            result = process.wait(timeout=120)
+            if result:
+                raise subprocess.CalledProcessError(result, command)
+            temporary_video.replace(output / video_file)
+        except Exception as error:
+            if process.poll() is None:
+                process.kill()
+                process.wait()
+            errors.seek(0, 2)
+            errors.seek(max(0, errors.tell() - 8000))
+            detail = errors.read().decode("utf-8", errors="replace")
+            raise RuntimeError(f"Video encoding failed: {detail or str(error)}") from error
+        finally:
+            if process.poll() is None:
+                process.kill()
+                process.wait()
+            try:
+                process.stdin.close()
+            except BrokenPipeError:
+                pass
+            temporary_video.unlink(missing_ok=True)
 
 
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--output-dir", type=Path, required=True)
-    output = parser.parse_args().output_dir
+    parser.add_argument("--ffmpeg", default="ffmpeg")
+    parser.add_argument("--video-file", default="video.mp4")
+    parser.add_argument("--preview-only", action="store_true")
+    args = parser.parse_args()
+    output = args.output_dir.resolve()
     plan = json.loads((output / "storyboard.json").read_text(encoding="utf-8"))
-    if (plan["width"], plan["height"], plan["fps"]) != (780, 560, 12):
-        raise ValueError("Unexpected graphics dimensions or frame rate")
-    fonts = {size: ImageFont.truetype(str(output / "fonts/body.ttf"), size)
-             for size in (20, 24, 26, 28, 30, 32, 40, 48, 64, 72, 80, 96)}
-    layouts = [fitted_text(scene["text"], fonts) for scene in plan["scenes"]]
-    frames = output / ".graphics-frames"
-    frames.mkdir(exist_ok=True)
-    index = 0
-    for frame in range(math.ceil(plan["duration"] * plan["fps"])):
-        seconds = frame / plan["fps"]
-        while index + 1 < len(plan["scenes"]) and seconds >= plan["scenes"][index]["end"]:
-            index += 1
-        render_frame(plan, index, seconds, fonts, layouts).save(frames / f"frame-{frame:05d}.png", compress_level=1)
+    story = json.loads((output / "story.json").read_text(encoding="utf-8"))
+    art = prepare_art(plan, story, output)
     for i, scene in enumerate(plan["scenes"]):
-        render_frame(plan, i, min(scene["end"] - 0.2, scene["start"] + 0.8), fonts, layouts).save(output / f"scene-{i + 1:02d}.png")
-    (output / "graphics-layout.json").write_text(json.dumps([{"fontSize": size, "lines": lines, "excerpt": excerpt}
-        for size, lines, excerpt in layouts], indent=2), encoding="utf-8")
-    print(f"Rendered {len(plan['scenes'])} animated scenes at {plan['fps']} fps")
+        render_frame(plan, story, i, min(scene["end"] - 0.1, scene["start"] + 0.8), art).save(output / f"scene-{i + 1:02d}.png")
+    render_frame(plan, story, 0, 0, art).save(output / "card.png")
+    (output / "graphics-layout.json").write_text(json.dumps({"version": 2, "renderSize": [720, 1280],
+        "safeArea": [96, 160, 876, 1566], "artworkBounds": [96, 680, 876, 1135],
+        "scenes": [{"fontSize": size, "lines": lines, "excerpt": scene["excerpt"], "start": scene["start"], "end": scene["end"]}
+                   for scene, (size, lines) in zip(plan["scenes"], art["layouts"])]}, indent=2), encoding="utf-8")
+    if not args.preview_only:
+        encode_video(plan, story, art, output, args.ffmpeg, args.video_file)
+    print(f"Rendered {len(plan['scenes'])} full-screen scenes at {plan['fps']} fps; streamed 720p artwork, 1080p captions")
 
 
 if __name__ == "__main__":

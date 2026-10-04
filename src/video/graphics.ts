@@ -1,8 +1,8 @@
 import { captionChunks } from './captions';
 import { GraphicTheme, NarrationTiming, VideoScript, VideoStoryboard, VideoStory } from './types';
-import { validateScript } from './script';
+import { SCRIPT_ENDING, validateScript } from './script';
 
-export const GRAPHICS_VERSION = 1;
+export const GRAPHICS_VERSION = 3;
 
 function normalized(text: string): string {
   return text.normalize('NFKC').toLowerCase().replace(/[^\p{L}\p{N}]/gu, '');
@@ -35,7 +35,7 @@ export function buildStoryboard(story: VideoStory, script: VideoScript, timing: 
   const spans = timing.words.map((word) => {
     const start = offset;
     offset += normalized(word.text).length;
-    return { from: start, to: offset, time: word.start };
+    return { from: start, to: offset, time: word.start, text: word.text };
   });
   if (normalized(timing.words.map(word => word.text).join(' ')) !== narration) {
     throw new Error('Graphics cannot synchronize: timed words differ from the narration.');
@@ -51,13 +51,13 @@ export function buildStoryboard(story: VideoStory, script: VideoScript, timing: 
     const index = narration.indexOf(text, cursor);
     if (index < 0 || !text) throw new Error('Graphics sentence is missing from the narration.');
     cursor = index + text.length;
-    return { text: sentence.text, start: timeAt(index) };
+    return { ...sentence, start: timeAt(index) };
   });
-  const closingIndex = narration.indexOf(normalized('Reporting from'), cursor);
+  const closingIndex = narration.indexOf(normalized(script.version === 2 ? SCRIPT_ENDING : 'Reporting from'), cursor);
   if (!sentences.length || closingIndex < 0) throw new Error('Graphics need a complete news script.');
   const closing = timeAt(closingIndex);
-  const scenes: VideoStoryboard['scenes'] = [{ start: 0, end: sentences[0].start, label: 'THE HEADLINE',
-    theme: graphicTheme(story.title), text: 'The key details, in under a minute.' }];
+  let scenes: VideoStoryboard['scenes'] = [{ start: 0, end: sentences[0].start, label: 'TODAY IN AI',
+    theme: graphicTheme(story.title), text: story.title, displayText: story.title, excerpt: false, kind: 'headline', variant: 0 }];
   for (const sentence of sentences) {
     // Leave time to read each card; captions still cover every spoken sentence.
     const previous = scenes[scenes.length - 1];
@@ -66,11 +66,46 @@ export function buildStoryboard(story: VideoStory, script: VideoScript, timing: 
     previous.end = sentence.start;
     const callout = numericCallout(sentence.text);
     scenes.push({ start: sentence.start, end: closing, label: `KEY DETAIL ${scenes.length}`,
-      theme: callout ? 'number' : graphicTheme(sentence.text), text: sentence.text, ...(callout ? { callout } : {}) });
+      theme: callout ? 'number' : graphicTheme(sentence.text), text: sentence.text, displayText: sentence.text,
+      excerpt: false, kind: 'detail', variant: 0, ...(callout ? { callout } : {}) });
   }
   scenes[scenes.length - 1].end = closing;
+  if (script.version === 2) {
+    scenes = sentences.map((sentence, i) => {
+      const callout = numericCallout(sentence.text);
+      return { start: i === 0 ? 0 : sentence.start, end: sentences[i + 1]?.start || closing,
+        label: sentence.role === 'hook' ? 'THE BIG IDEA' : sentence.role === 'takeaway' ? 'THE TAKEAWAY' : `KEY DETAIL ${i}`,
+        theme: callout ? 'number' : graphicTheme(sentence.text), text: sentence.text,
+        displayText: sentence.displayText!, excerpt: false,
+        kind: sentence.role === 'hook' ? 'headline' : 'detail', variant: 0, ...(callout ? { callout } : {}) };
+    });
+  }
   scenes.push({ start: closing, end: timing.duration, label: 'READ THE ORIGINAL', theme: 'link',
-    text: `${story.sourceName}\n${new URL(story.sourceUrl).hostname}` });
+    text: `${story.sourceName}\n${new URL(story.sourceUrl).hostname}`, displayText: story.sourceName,
+    excerpt: false, kind: 'source', variant: 0 });
   if (scenes.some(scene => scene.end <= scene.start)) throw new Error('Graphics scenes have invalid durations.');
-  return { version: 1, duration: timing.duration, fps: 12, width: 780, height: 560, scenes };
+  // A long spoken sentence can still have several visual beats, without changing
+  // a single narration word or adding another generation request.
+  const beats: VideoStoryboard['scenes'] = [];
+  for (const scene of scenes) {
+    const count = scene.kind === 'detail' ? Math.max(1, Math.ceil((scene.end - scene.start) / 5)) : 1;
+    const boundaries = [scene.start];
+    for (let i = 1; i < count; i++) {
+      const target = scene.start + (scene.end - scene.start) * i / count;
+      const boundary = spans.find(word => word.to > word.from && word.time >= target && word.time < scene.end - 2)?.time;
+      if (boundary !== undefined && boundary - boundaries[boundaries.length - 1] >= 2.5) boundaries.push(boundary);
+    }
+    boundaries.push(scene.end);
+    for (let i = 0; i < boundaries.length - 1; i++) {
+      const start = boundaries[i], end = boundaries[i + 1];
+      const spoken = spans.filter(word => word.time >= start && word.time < end).map(word => word.text).join(' ')
+        .replace(/\s+([,.;:!?])/g, '$1');
+      const words = spoken.split(/\s+/).filter(Boolean);
+      const displayText = scene.kind === 'detail' && (script.version !== 2 || i > 0) ? words.slice(0, 8).join(' ') : scene.displayText;
+      beats.push({ ...scene, start, end, displayText,
+        excerpt: scene.kind === 'detail' && (script.version !== 2 || i > 0) && normalized(displayText) !== normalized(scene.text), variant: i });
+    }
+  }
+  return { version: 2, duration: timing.duration, fps: 15, width: 1080, height: 1920,
+    renderWidth: 720, renderHeight: 1280, scenes: beats };
 }

@@ -1,8 +1,8 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import { captionChunks, buildSrt, buildAss } from './captions';
-import { generateScript, validateScript } from './script';
-import { assessStoryCandidates } from './selection';
+import { generateScript, SCRIPT_VERSION, validateScript } from './script';
+import { assessStoryCandidates, videoSuitability } from './selection';
 import { compactLedger, fileSha256, readInput, readJson, readLedger, readManifest, sha256, writeJson } from './storage';
 import { runCommand } from './process';
 import { NarrationTiming, VideoManifest } from './types';
@@ -40,7 +40,7 @@ export async function renderVideo(options: RenderOptions): Promise<{ manifestPat
   if (options.rebuild && submitted) throw new Error('This video was already submitted; restore its original artifact instead of rebuilding it.');
   if (!options.rebuild && fs.existsSync(manifestPath)) {
     const cached = readManifest(manifestPath);
-    if (cached.status === 'ready' && (cached.graphicsVersion === GRAPHICS_VERSION || submitted) &&
+    if (cached.status === 'ready' && (cached.graphicsVersion === GRAPHICS_VERSION && cached.script.version === SCRIPT_VERSION || submitted) &&
         cached.story.id === story.id && fs.existsSync(path.join(directory, cached.videoFile)) &&
         fileSha256(path.join(directory, cached.videoFile)) === cached.videoSha256) {
       await runCommand(options.python || process.env.VIDEO_PYTHON || (process.platform === 'win32' ? 'python' : 'python3'),
@@ -55,7 +55,9 @@ export async function renderVideo(options: RenderOptions): Promise<{ manifestPat
     }
   }
   if (submitted) throw new Error('The submitted video artifact is missing or changed; restore it before retrying.');
-  let script = entry?.script;
+  // Submitted artifacts were handled above. Unsubmitted legacy scripts gain
+  // the new structure while retaining their original frozen story choice.
+  let script = entry?.script?.version === SCRIPT_VERSION ? entry.script : undefined;
   let lastFailure = '';
   for (const [index, candidate] of candidates.stories.entries()) {
     if (script) break;
@@ -78,6 +80,7 @@ export async function renderVideo(options: RenderOptions): Promise<{ manifestPat
   // date and prevent another eligible story from being tried on a later run.
   entry ||= ledger.issues[input.issueDate] = { story, selectedAt: (options.now || new Date()).toISOString(), platforms: {} };
   entry.script = script;
+  entry.selectionReason ||= videoSuitability(story).reason;
   writeJson(ledgerPath, ledger);
   fs.writeFileSync(path.join(directory, 'script.txt'), entry.script.narration, 'utf8');
   const python = options.python || process.env.VIDEO_PYTHON || (process.platform === 'win32' ? 'python' : 'python3');
@@ -96,26 +99,23 @@ export async function renderVideo(options: RenderOptions): Promise<{ manifestPat
   writeJson(path.join(directory, 'storyboard.json'), buildStoryboard(story, entry.script, timing));
   writeJson(path.join(directory, 'story.json'), { issueDate: input.issueDate, title: story.title, sourceName: story.sourceName, sourceHost: new URL(story.sourceUrl).hostname });
   await runCommand(python, [path.resolve('scripts/video/assets.py'), '--output-dir', directory]);
-  await runCommand(python, [path.resolve('scripts/video/graphics.py'), '--output-dir', directory]);
   const ffmpeg = options.ffmpeg || process.env.VIDEO_FFMPEG || 'ffmpeg';
   // All filter filenames are fixed relative names, never interpolated news text.
   fs.writeFileSync(path.join(directory, 'render.filter'),
-    `[0:v]zoompan=z='1.008+0.008*sin(on/180)':x='iw/2-iw/zoom/2':y='ih/2-ih/zoom/2':d=1:s=1080x1920:fps=30,fade=t=in:st=0:d=0.35[paper];\n` +
-    `[2:v]fps=30,format=rgba[graphics];\n` +
-    `[paper][graphics]overlay=x=96:y=570:shortest=1,subtitles=captions.ass:fontsdir=fonts[v];\n` +
+    `[0:v]scale=1080:1920:flags=lanczos,fps=30,subtitles=captions.ass:fontsdir=fonts[v];\n` +
     `[1:a]loudnorm=I=-16:TP=-1.5:LRA=11[a]\n`, 'utf8');
-  await runCommand(ffmpeg, ['-hide_banner', '-loglevel', 'error', '-y', '-loop', '1', '-framerate', '30', '-i', 'card.png',
-    '-i', 'audio.wav', '-framerate', '12', '-i', '.graphics-frames/frame-%05d.png',
-    '-filter_complex', fs.readFileSync(path.join(directory, 'render.filter'), 'utf8'), '-map', '[v]', '-map', '[a]', '-t', String(timing.duration),
-    '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '23', '-pix_fmt', 'yuv420p', '-r', '30', '-c:a', 'aac', '-b:a', '128k',
-    '-movflags', '+faststart', '-threads', '2', 'video.mp4'], directory);
+  // Stream the inexpensive 720p scene artwork straight into the final encode.
+  // Captions are rendered at 1080p; no PNG sequence or intermediate video is stored.
+  await runCommand(python, [path.resolve('scripts/video/graphics.py'), '--output-dir', directory,
+    '--ffmpeg', /[\\/]/.test(ffmpeg) ? path.resolve(ffmpeg) : ffmpeg, '--video-file', 'video.mp4'], directory);
   const baseUrl = (process.env.NEWSLETTER_BASE_URL || 'https://gradientnews.app').replace(/\/$/, '');
   const manifest: VideoManifest = {
     version: 1, status: 'ready', issueDate: input.issueDate, story, script: entry.script,
     graphicsVersion: GRAPHICS_VERSION,
+    selectionReason: entry.selectionReason,
     ...(input.sample ? { sample: true } : {}),
     duration: timing.duration, videoFile: 'video.mp4', videoSha256: fileSha256(path.join(directory, 'video.mp4')),
-    captionsFile: 'captions.srt', title: story.title.slice(0, 90),
+    captionsFile: 'captions.srt', title: entry.script.sentences[0].text.slice(0, 90),
     description: `${story.title}\n\nSource: ${story.sourceName}\n${story.sourceUrl}\n\nThe Gradient: ${baseUrl}/archive/${input.issueDate}\nAI-generated narration. #AI #AINews #Shorts`,
   };
   entry.contentHash = sha256(JSON.stringify({ storyId: story.id, narration: entry.script.narration, title: manifest.title, description: manifest.description }));

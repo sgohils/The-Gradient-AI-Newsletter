@@ -67,6 +67,18 @@ describe('newsletter video handoff', () => {
 });
 
 describe('story selection and stable reruns', () => {
+  it('prefers a concrete video story to a guide, without trusting summary claims', () => {
+    const guide = { ...story, id: 'guide', title: 'A guide to language models', rank: 1,
+      summary: 'This model cuts costs by 99%.', sourceUrl: 'https://example.com/guide' };
+    const impact = { ...story, id: 'impact', rank: 5, title: 'AI cuts waiting time', sourceUrl: 'https://example.com/impact',
+      sourceExcerpt: 'The tool cuts waiting time from 30 minutes to 4 minutes. ' + story.sourceExcerpt };
+    expect(selectStory({ ...input, stories: [guide, impact] }, empty(), now)?.id).toBe('impact');
+    const ledger = empty();
+    ledger.issues[input.issueDate] = { story: guide, selectedAt: now.toISOString(), platforms: {} };
+    expect(selectStory({ ...input, stories: [guide, impact] }, ledger, now)?.id).toBe('guide');
+    const tied = { ...impact, id: 'a-first', sourceUrl: 'https://example.com/tie' };
+    expect(selectStory({ ...input, stories: [impact, tied] }, empty(), now)?.id).toBe('a-first');
+  });
   it('chooses rank order and freezes the original choice across reruns', () => {
     const second = { ...story, id: 'second', rank: 2, sourceUrl: 'https://news.example.org/second' };
     expect(selectStory({ ...input, stories: [second, story] }, empty(), now)?.id).toBe(story.id);
@@ -111,17 +123,35 @@ describe('story selection and stable reruns', () => {
 });
 
 describe('source-grounded scripts and exhausted API', () => {
+  it('still validates the legacy structure for restored published videos', () => {
+    const quotes = [...new Intl.Segmenter('en', { granularity: 'sentence' }).segment(story.sourceExcerpt)].slice(0, 3)
+      .map(part => part.segment.trim());
+    const legacy = { provider: 'extractive' as const, sentences: quotes.map(text => ({ text, evidenceQuote: text })),
+      narration: `Today's AI story: ${story.title}.\n${quotes.join(' ')}\nReporting from ${story.sourceName}. The original source is linked in the description.` };
+    expect(() => validateScript(story, legacy)).not.toThrow();
+  });
   it('builds a factual 75–105 word script from complete source sentences', () => {
     const script = buildExtractiveScript(story);
     expect(wordCount(script.narration)).toBeGreaterThanOrEqual(75);
     expect(wordCount(script.narration)).toBeLessThanOrEqual(105);
     expect(() => validateScript(story, script)).not.toThrow();
-    expect(script.sentences.every(s => story.sourceExcerpt.includes(s.text))).toBe(true);
+    expect(script.sentences.every(s => story.sourceExcerpt.includes(s.evidenceQuote))).toBe(true);
+    expect(script.version).toBe(2);
+    expect(script.sentences[0].role).toBe('hook');
+    expect(wordCount(script.sentences[0].text)).toBeLessThanOrEqual(18);
+    expect(script.sentences.at(-1)?.role).toBe('takeaway');
+    expect(script.narration.startsWith("Today's AI story")).toBe(false);
+    expect(script.narration).not.toContain('Reporting from');
   });
   it('makes only one API request on quota exhaustion and uses the offline fallback', async () => {
     const client = { post: vi.fn().mockRejectedValue({ response: { status: 429 } }) };
     expect((await generateScript(story, { groqApiKey: 'fake' }, client as any)).provider).toBe('extractive');
     expect(client.post).toHaveBeenCalledTimes(1);
+  });
+  it('keeps a complete short clause as a heading instead of starting the next list item', () => {
+    const guide = { ...story, sourceExcerpt: 'This guide explains how to compare model answers, give it effective instructions, and prepare for production. ' + story.sourceExcerpt };
+    const script = buildExtractiveScript(guide);
+    expect(script.sentences[0].displayText).toBe('How to compare model answers');
   });
   it('rejects invented figures, unrelated evidence, malformed scripts and long narration', () => {
     const script = buildExtractiveScript(story);
@@ -137,6 +167,24 @@ describe('source-grounded scripts and exhausted API', () => {
     const result = await generateScript(story, { groqApiKey: 'fake' }, client as any);
     expect(result.provider).toBe('extractive'); expect(client.post).toHaveBeenCalledTimes(1);
     expect(() => buildExtractiveScript({ ...story, sourceExcerpt: 'Incomplete source text' })).toThrow();
+  });
+  it('asks for a grounded hook and labels without passing newsletter summaries', async () => {
+    const generated = buildExtractiveScript(story);
+    const client = { post: vi.fn().mockResolvedValue({ data: { choices: [{ message: {
+      content: JSON.stringify({ sentences: generated.sentences }),
+    } }] } }) };
+    const result = await generateScript({ ...story, summary: 'Invented benefit: 100x faster.' }, { groqApiKey: 'fake' }, client as any);
+    expect(result.provider).toBe('groq');
+    expect(client.post).toHaveBeenCalledTimes(1);
+    const prompt = JSON.stringify(client.post.mock.calls[0]);
+    expect(prompt).toContain('8–12 words');
+    expect(prompt).not.toContain('Invented benefit');
+    const invalid = structuredClone(generated);
+    invalid.sentences[0].displayText = 'Invented breakthrough';
+    expect(() => validateScript(story, invalid)).toThrow('not supported');
+    const inventedName = structuredClone(generated);
+    inventedName.sentences[0].text = inventedName.sentences[0].text.replace('A fictional', 'Meta');
+    expect(() => validateScript(story, inventedName)).toThrow('unsupported name');
   });
 });
 
@@ -161,5 +209,16 @@ describe('captions', () => {
     const text = buildSrt({ ...timing, words: [{ text: 'Hello', start: 0.1, end: 0.5 }, { text: '.', start: 0.5, end: 0.6 }] });
     expect(text).toContain('Hello.'); expect(text).not.toContain('Hello .');
     expect(text).toContain('00:00:00,600');
+  });
+  it('uses at most five words and highlights only the currently spoken word', () => {
+    const text = ['AI', 'tools', 'can', 'help', 'people', 'compare', 'answers.'];
+    const timed = { duration: 35, sampleRate: 24000, words: text.map((text, i) => ({ text, start: i, end: i + 0.8 })) };
+    expect(captionChunks(timed).every(chunk => chunk.words.length <= 5)).toBe(true);
+    const ass = buildAss(timed);
+    expect(ass).toContain('DejaVu Sans,64');
+    expect(ass).toContain('{\\1c&HCBEFB4&}AI{\\1c&HFFFFFF&} tools can help people');
+    expect(ass).toContain('AI {\\1c&HCBEFB4&}tools{\\1c&HFFFFFF&} can help people');
+    expect(ass).not.toContain('\\fad');
+    expect(captionChunks(timed).map(chunk => chunk.text).join(' ')).toBe(text.join(' '));
   });
 });

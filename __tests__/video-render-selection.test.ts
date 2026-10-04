@@ -71,4 +71,15 @@ describe('daily rendering tries usable evidence without changing frozen stories'
     expect(readLedger(options.ledgerPath!)).toEqual(ledger);
     expect(runCommand).not.toHaveBeenCalled();
   });
+  it('upgrades an unsubmitted legacy script while preserving its frozen story', async () => {
+    writeJson(options.ledgerPath!, { version: 1, issues: { [original.issueDate]: {
+      story: second, selectedAt: now.toISOString(), platforms: {},
+      script: { provider: 'extractive', sentences: [], narration: 'Previously frozen legacy script.' },
+    } } });
+    const result = await renderVideo(options);
+    expect(result.manifest).toMatchObject({ status: 'ready', story: { id: 'second' },
+      script: { version: 2 }, selectionReason: expect.any(String) });
+    expect(readLedger(options.ledgerPath!).issues[original.issueDate].story.id).toBe('second');
+    expect(axios.post).toHaveBeenCalledTimes(1);
+  });
 });

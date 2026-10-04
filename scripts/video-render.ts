@@ -10,7 +10,7 @@ async function main(): Promise<void> {
   output('issue_date', result.manifest.issueDate);
   output('status', result.manifest.status);
   appendSummary(result.manifest.status === 'ready' ?
-    `Video rendered: ${result.manifest.issueDate}, ${result.manifest.duration.toFixed(2)} seconds.\nManifest: ${result.manifestPath}` :
+    `Video rendered: ${result.manifest.issueDate}, ${result.manifest.duration.toFixed(2)} seconds.\nStory choice: ${result.manifest.selectionReason || 'Previously frozen story.'}\nManifest: ${result.manifestPath}` :
     `Video skipped: ${result.manifest.reason}`);
 }
 

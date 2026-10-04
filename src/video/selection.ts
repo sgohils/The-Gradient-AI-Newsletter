@@ -20,6 +20,27 @@ export function isFreshPublication(publishedAt: string, now = new Date()): boole
   return Number.isFinite(age) && age >= -5 * 60000 && age <= 72 * 3600000;
 }
 
+/** Use original evidence, never benefits or figures from a rewritten summary. */
+export function videoSuitability(story: VideoStory): { priority: number; reason: string } {
+  const evidence = story.sourceExcerpt;
+  const change = /\b(cuts?|cutting|reduc\w*|sav\w*|faster|cheaper|lower\w*|improv\w*)\b/i;
+  const measurable = /\d[\d.,]*\s*(?:%|percent|minutes?|hours?|seconds?|times|million|billion)|[$£€]\s*\d/i;
+  if (change.test(evidence) && measurable.test(evidence)) {
+    return { priority: 3, reason: 'A source-backed, measurable change in time, cost, or capability.' };
+  }
+  if (/\b(guide|roundup|recap|opinion|interview|perspective)\b/i.test(story.title)) {
+    return { priority: 0, reason: 'Guide or commentary; lower priority than a concrete development.' };
+  }
+  if (/\b(lets?|allows?|enables?|can|helps?)\b/i.test(evidence) &&
+      /\b(build|work|creat\w*|run|compar\w*|learn|us\w*|protect\w*|access|patients?|students?|workers?)\b/i.test(evidence)) {
+    return { priority: 3, reason: 'A concrete capability or everyday consequence in the original evidence.' };
+  }
+  if (/\b(releas\w*|launch\w*|introduc\w*|announc\w*|publish\w*|findings|research|legislation|regulat\w*)\b/i.test(evidence)) {
+    return { priority: 2, reason: 'A substantive release, finding, or policy development.' };
+  }
+  return { priority: 1, reason: 'Fresh AI news with original evidence; no clearer video angle found.' };
+}
+
 export function assessStoryCandidates(input: VideoInput, ledger: VideoLedger, now = new Date()): {
   stories: VideoStory[]; reason: string;
 } {
@@ -32,7 +53,8 @@ export function assessStoryCandidates(input: VideoInput, ledger: VideoLedger, no
   const used = new Set(Object.entries(ledger.issues)
     .filter(([date]) => date !== input.issueDate)
     .map(([, entry]) => storyKey(entry.story.sourceUrl)));
-  const candidates = selected ? [selected] : [...input.stories].sort((a, b) => a.rank - b.rank);
+  const candidates = selected ? [selected] : [...input.stories].sort((a, b) =>
+    videoSuitability(b).priority - videoSuitability(a).priority || a.rank - b.rank || a.id.localeCompare(b.id, 'en'));
   const rejected = { stale: 0, unknownOrFuture: 0, used: 0, insufficientEvidence: 0 };
   const stories = candidates.filter((story) => {
     const age = now.getTime() - Date.parse(story.publishedAt);

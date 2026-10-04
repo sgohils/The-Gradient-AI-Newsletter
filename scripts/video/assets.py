@@ -5,11 +5,11 @@ import os
 import re
 import shutil
 from pathlib import Path
-from PIL import Image, ImageDraw, ImageFont
+from PIL import ImageFont
 
 
 CAPTION_WIDTH = 740  # 12px outline fits inside x=100..864 around x=482.
-CAPTION_SIZES = range(52, 35, -2)
+CAPTION_SIZES = range(64, 35, -2)
 
 
 def caption_font_path(body):
@@ -68,9 +68,24 @@ def layout_captions(ass, font_path, metric_scale=1.0):
             fields = line.split(",", 9)
             if len(fields) != 10:
                 raise ValueError("Malformed caption dialogue")
-            text = re.sub(r"\{[^}]*\}", "", fields[9]).replace(r"\N", " ").replace(r"\n", " ")
+            original = fields[9]
+            highlight = re.search(r"\{\\1c&HCBEFB4&\}([^{}]+)\{\\1c&HFFFFFF&\}", original)
+            highlighted_index = None
+            if highlight:
+                prefix = re.sub(r"\{[^}]*\}", "", original[:highlight.start()]).replace(r"\N", " ").replace(r"\n", " ")
+                highlighted_index = len(prefix.split())
+            text = re.sub(r"\{[^}]*\}", "", original).replace(r"\N", " ").replace(r"\n", " ")
             size, lines, widths = fit_caption(text, font_path, metric_scale)
-            fields[9] = rf"{{\pos(482,1290)\fad(55,55)\q2\fs{size}}}" + r"\N".join(lines)
+            word_index, decorated = 0, []
+            for fitted_line in lines:
+                words = []
+                for word in fitted_line.split():
+                    words.append(r"{\1c&HCBEFB4&}" + word + r"{\1c&HFFFFFF&}" if word_index == highlighted_index else word)
+                    word_index += 1
+                decorated.append(" ".join(words))
+            # New highlighting events have no per-word fade, avoiding flicker.
+            fade = r"\fad(55,55)" if r"\fad(" in original else ""
+            fields[9] = rf"{{\pos(482,1290){fade}\q2\fs{size}}}" + r"\N".join(decorated)
             line = ",".join(fields)
             layouts.append({"start": fields[1], "end": fields[2], "fontSize": size,
                             "lines": lines, "widths": widths})
@@ -99,49 +114,22 @@ def main():
     parser.add_argument("--output-dir", required=True)
     args = parser.parse_args()
     output = Path(args.output_dir)
-    story = json.loads((output / "story.json").read_text(encoding="utf-8"))
     windows = Path(os.environ.get("WINDIR", "C:/Windows")) / "Fonts"
     body_candidates = [Path(os.environ.get("VIDEO_BODY_FONT", "")), Path("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"), windows / "arial.ttf"]
-    headline_candidates = [Path(os.environ.get("VIDEO_HEADLINE_FONT", "")), Path("/usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf"), windows / "georgia.ttf"]
     body = next((p for p in body_candidates if p.is_file()), None)
-    headline = next((p for p in headline_candidates if p.is_file()), None)
-    if body is None or headline is None:
-        raise RuntimeError("Install DejaVu fonts or set VIDEO_BODY_FONT and VIDEO_HEADLINE_FONT")
+    if body is None:
+        raise RuntimeError("Install DejaVu fonts or set VIDEO_BODY_FONT")
     fonts = output / "fonts"
     fonts.mkdir(exist_ok=True)
     shutil.copyfile(body, fonts / "body.ttf")
-    shutil.copyfile(headline, fonts / "headline.ttf")
     caption, metric_scale = caption_font_path(body)
     shutil.copyfile(caption, fonts / "caption.ttf")
     ass_path = output / "captions.ass"
     ass, caption_layouts = layout_captions(ass_path.read_text(encoding="utf-8"), caption, metric_scale)
     ass_path.write_text(ass, encoding="utf-8")
 
-    paper, ink, green, muted = "#f6f5f1", "#202421", "#176b5b", "#555c57"
-    image = Image.new("RGB", (1080, 1920), paper)
-    draw = ImageDraw.Draw(image)
-    small = ImageFont.truetype(str(body), 28)
-    label = ImageFont.truetype(str(body), 24)
-    draw.rectangle((96, 185, 103, 223), fill=green)
-    draw.text((122, 186), "AI / DAILY BRIEF", font=small, fill=ink)
-    draw.text((96, 246), story["issueDate"], font=label, fill=muted)
-    draw.line((96, 284, 876, 284), fill="#d9dcd5", width=2)
-    for size in (64, 60, 56, 52, 48, 44, 40, 36):
-        font = ImageFont.truetype(str(headline), size)
-        lines = wrap(story["title"], font, 780)
-        if len(lines) * (size + 14) <= 230:
-            break
-    else:
-        raise ValueError("Headline cannot fit the mobile safe area")
-    draw.multiline_text((96, 316), "\n".join(lines), font=font, fill=ink, spacing=14)
-    draw.text((96, 1436), "SOURCE", font=label, fill=green)
-    source_lines = wrap(story["sourceHost"], small, 780)
-    if len(source_lines) > 2:
-        raise ValueError("Source hostname cannot fit the safe area")
-    draw.multiline_text((96, 1473), "\n".join(source_lines), font=small, fill=muted, spacing=6)
-    image.save(output / "card.png")
-    (output / "layout.json").write_text(json.dumps({"headlineFontSize": size, "headlineLines": lines, "captionCenter": [482, 1290], "safeRight": 876,
-        "graphicsBounds": [96, 570, 876, 1130], "captions": caption_layouts}, indent=2), encoding="utf-8")
+    (output / "layout.json").write_text(json.dumps({"captionCenter": [482, 1290], "safeRight": 876,
+        "graphicsBounds": [96, 680, 876, 1135], "captions": caption_layouts}, indent=2), encoding="utf-8")
 
 
 if __name__ == "__main__":

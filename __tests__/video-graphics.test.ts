@@ -3,6 +3,7 @@ import { buildStoryboard, graphicTheme, numericCallout } from '../src/video/grap
 import { buildExtractiveScript } from '../src/video/script';
 import { sampleInput } from '../src/video/sample';
 import { NarrationTiming, VideoScript } from '../src/video/types';
+import { buildSrt } from '../src/video/captions';
 
 const story = sampleInput(new Date('2026-10-03T12:00:00Z')).stories[0];
 const script = buildExtractiveScript(story);
@@ -27,6 +28,25 @@ describe('animated story graphics', () => {
     expect(plan.scenes.filter(scene => scene.label.startsWith('KEY DETAIL')).every(scene => script.sentences.some(s => s.text === scene.text))).toBe(true);
     expect(new Set(plan.scenes.map(scene => scene.theme)).size).toBeGreaterThanOrEqual(3);
   });
+  it('adds short source-derived visual beats without changing the script or captions', () => {
+    const timing = timingFor(script);
+    const originalScript = JSON.stringify(script), originalCaptions = buildSrt(timing);
+    const plan = buildStoryboard(story, script, timing);
+    expect(plan).toMatchObject({ version: 2, width: 1080, height: 1920, renderWidth: 720, renderHeight: 1280 });
+    const clean = (text: string) => text.toLowerCase().replace(/[^\p{L}\p{N}]/gu, '');
+    const details = plan.scenes.filter(scene => scene.kind === 'detail');
+    expect(details.length).toBeGreaterThan(script.sentences.length);
+    expect(plan.scenes.filter(scene => scene.variant === 0).every(scene => !scene.excerpt)).toBe(true);
+    expect(details.some(scene => scene.variant > 0 && scene.excerpt)).toBe(true);
+    for (const scene of details) {
+      expect(scene.end - scene.start).toBeGreaterThanOrEqual(2);
+      expect(scene.end - scene.start).toBeLessThan(6);
+      expect(scene.displayText.split(/\s+/).length).toBeLessThanOrEqual(10);
+      expect(clean(script.narration)).toContain(clean(scene.displayText));
+    }
+    expect(JSON.stringify(script)).toBe(originalScript);
+    expect(buildSrt(timing)).toBe(originalCaptions);
+  });
   it('selects suitable illustrations from the actual story text', () => {
     for (const [text, theme] of [
       ['New GPU chips', 'chip'], ['A robot learns to grasp objects', 'robot'],
@@ -42,9 +62,10 @@ describe('animated story graphics', () => {
     expect(numericCallout('The model has 8 billion parameters.')).toBe('8 billion parameters');
     const numberedStory = { ...story, sourceExcerpt: story.sourceExcerpt.replace('an open toolkit', 'a toolkit with 30% coverage') };
     const numbered = { ...script, sentences: script.sentences.map((sentence, i) => ({ ...sentence,
-      text: i === 0 ? sentence.text.replace('an open toolkit', 'a toolkit with 30% coverage') : sentence.text,
-      evidenceQuote: i === 0 ? sentence.evidenceQuote.replace('an open toolkit', 'a toolkit with 30% coverage') : sentence.evidenceQuote })) };
-    numbered.narration = script.narration.replace(script.sentences[0].text, numbered.sentences[0].text);
+      text: sentence.text.replace('an open toolkit', 'a toolkit with 30% coverage'),
+      displayText: sentence.text.replace('an open toolkit', 'a toolkit with 30% coverage').split(/\s+/).slice(0, 8).join(' '),
+      evidenceQuote: sentence.evidenceQuote.replace('an open toolkit', 'a toolkit with 30% coverage') })) };
+    numbered.narration = numbered.sentences.map(sentence => sentence.text).join(' ') + '\nSource in the description.';
     const plan = buildStoryboard(numberedStory, numbered, timingFor(numbered));
     expect(plan.scenes.find(scene => scene.theme === 'number')?.callout).toBe('30%');
     expect(() => buildStoryboard(story, numbered, timingFor(numbered))).toThrow('source evidence');
