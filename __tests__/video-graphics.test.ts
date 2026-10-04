@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { buildStoryboard, graphicTheme, numericCallout, visualTerms } from '../src/video/graphics';
+import { buildStoryboard, graphicTheme, numericCallout, visualTerms, visualHeading } from '../src/video/graphics';
 import { buildExtractiveScript } from '../src/video/script';
 import { sampleInput } from '../src/video/sample';
 import { NarrationTiming, VideoScript } from '../src/video/types';
@@ -32,7 +32,7 @@ describe('animated story graphics', () => {
     const timing = timingFor(script);
     const originalScript = JSON.stringify(script), originalCaptions = buildSrt(timing);
     const plan = buildStoryboard(story, script, timing);
-    expect(plan).toMatchObject({ version: 3, width: 1080, height: 1920, renderWidth: 720, renderHeight: 1280 });
+    expect(plan).toMatchObject({ version: 4, fps: 30, width: 1080, height: 1920, renderWidth: 1080, renderHeight: 1920 });
     const clean = (text: string) => text.toLowerCase().replace(/[^\p{L}\p{N}]/gu, '');
     const details = plan.scenes.filter(scene => scene.kind === 'detail');
     expect(details.length).toBeGreaterThan(script.sentences.length);
@@ -55,14 +55,25 @@ describe('animated story graphics', () => {
       ['Research paper reports findings', 'research'], ['New language model', 'network'],
     ]) expect(graphicTheme(text)).toBe(theme);
   });
+  it('uses a short source phrase without a dangling conjunction or half of the next list item', () => {
+    expect(visualHeading('or orchestrating multi-step workflows across code repositories, databases, and external APIs')).toBe('Orchestrating multi-step workflows across code repositories');
+    expect(visualHeading('run checks locally and share findings with the')).toBe('Run checks locally and share findings');
+  });
   it('varies compositions and keeps every artwork term grounded in its spoken fact', () => {
-    const plan = buildStoryboard(story, script, timingFor(script));
+    const timing = timingFor(script);
+    const plan = buildStoryboard(story, script, timing);
     expect(plan.scenes[0].layout).toBe('hero');
     expect(plan.scenes.at(-1)?.layout).toBe('source');
     expect(new Set(plan.scenes.map(scene => scene.layout))).toEqual(new Set(['hero', 'panel', 'split', 'source']));
     for (const scene of plan.scenes) {
       expect(scene.terms!.length).toBeLessThanOrEqual(2);
       for (const term of scene.terms!) expect(scene.text.toLowerCase()).toContain(term.toLowerCase());
+      for (const word of scene.termTimings!) {
+        expect(scene.terms).toContain(word.text);
+        expect(timing.words.some(timed => timed.start === word.start && timed.end === word.end)).toBe(true);
+        expect(word.start).toBeGreaterThanOrEqual(scene.start);
+        expect(word.end).toBeLessThanOrEqual(scene.end);
+      }
     }
     expect(visualTerms('Answers, answers, PROMPTS and invented magic.')).toEqual(['Answers', 'PROMPTS']);
     expect(visualTerms('An unsupported claim.')).toEqual([]);

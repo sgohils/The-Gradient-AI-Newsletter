@@ -104,8 +104,8 @@ export async function renderVideo(options: RenderOptions): Promise<{ manifestPat
   fs.writeFileSync(path.join(directory, 'render.filter'),
     `[0:v]scale=1080:1920:flags=lanczos,fps=30,subtitles=captions.ass:fontsdir=fonts[v];\n` +
     `[1:a]loudnorm=I=-16:TP=-1.5:LRA=11[a]\n`, 'utf8');
-  // Stream the inexpensive 720p scene artwork straight into the final encode.
-  // Captions are rendered at 1080p; no PNG sequence or intermediate video is stored.
+  // Stream native 1080p/30fps artwork straight into the final encode.
+  // Static layers and illustrations are cached; no frame sequence is stored.
   await runCommand(python, [path.resolve('scripts/video/graphics.py'), '--output-dir', directory,
     '--ffmpeg', /[\\/]/.test(ffmpeg) ? path.resolve(ffmpeg) : ffmpeg, '--video-file', 'video.mp4'], directory);
   const baseUrl = (process.env.NEWSLETTER_BASE_URL || 'https://gradientnews.app').replace(/\/$/, '');

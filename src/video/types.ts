@@ -58,17 +58,18 @@ export interface VideoScene {
   variant: number;
   layout?: GraphicLayout;
   terms?: string[];
+  termTimings?: { text: string; start: number; end: number }[];
   callout?: string;
 }
 
 export interface VideoStoryboard {
-  version: 3;
+  version: 4;
   duration: number;
-  fps: 15;
+  fps: 30;
   width: 1080;
   height: 1920;
-  renderWidth: 720;
-  renderHeight: 1280;
+  renderWidth: 1080;
+  renderHeight: 1920;
   scenes: VideoScene[];
 }
 

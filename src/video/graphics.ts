@@ -2,7 +2,7 @@ import { captionChunks } from './captions';
 import { GraphicLayout, GraphicTheme, NarrationTiming, VideoScene, VideoScript, VideoStoryboard, VideoStory } from './types';
 import { SCRIPT_ENDING, validateScript } from './script';
 
-export const GRAPHICS_VERSION = 4;
+export const GRAPHICS_VERSION = 5;
 
 function normalized(text: string): string {
   return text.normalize('NFKC').toLowerCase().replace(/[^\p{L}\p{N}]/gu, '');
@@ -38,6 +38,17 @@ export function visualTerms(text: string): string[] {
   return terms;
 }
 
+export function visualHeading(spoken: string): string {
+  const clean = spoken.replace(/^[,;:\s]+/, '').replace(/^(?:and|or|but|whether)\s+/i, '').trim();
+  const words = clean.split(/\s+/).filter(Boolean).slice(0, 8);
+  // Keep a readable source phrase, rather than the start of the next list item.
+  const pause = words.findIndex((word, index) => index >= 3 && /[,;]$/.test(word));
+  if (pause >= 0) words.splice(pause + 1);
+  while (words.length > 1 && /^(?:and|or|the|a|an|to|for|with|using|before|after|of|in|on|by|from)$/i.test(words.at(-1)!.replace(/[.,;:!?]/g, ''))) words.pop();
+  const heading = words.join(' ').replace(/[,;:]+$/, '');
+  return heading ? heading[0].toUpperCase() + heading.slice(1) : spoken.trim();
+}
+
 function sceneLayout(scene: VideoScene, index: number): GraphicLayout {
   if (scene.kind === 'source') return 'source';
   if (scene.theme === 'number') return 'stat';
@@ -56,7 +67,7 @@ export function buildStoryboard(story: VideoStory, script: VideoScript, timing: 
   const spans = timing.words.map((word) => {
     const start = offset;
     offset += normalized(word.text).length;
-    return { from: start, to: offset, time: word.start, text: word.text };
+    return { from: start, to: offset, time: word.start, end: word.end, text: word.text };
   });
   if (normalized(timing.words.map(word => word.text).join(' ')) !== narration) {
     throw new Error('Graphics cannot synchronize: timed words differ from the narration.');
@@ -125,17 +136,20 @@ export function buildStoryboard(story: VideoStory, script: VideoScript, timing: 
       const start = boundaries[i], end = boundaries[i + 1];
       const spoken = spans.filter(word => word.time >= start && word.time < end).map(word => word.text).join(' ')
         .replace(/\s+([,.;:!?])/g, '$1');
-      const words = spoken.split(/\s+/).filter(Boolean);
-      const displayText = scene.kind === 'detail' && (script.version !== 2 || i > 0) ? words.slice(0, 8).join(' ') : scene.displayText;
+      const displayText = scene.kind === 'detail' && (script.version !== 2 || i > 0) ? visualHeading(spoken) : scene.displayText;
       const beat: VideoScene = { ...scene, start, end, displayText,
         excerpt: scene.kind === 'detail' && (script.version !== 2 || i > 0) && normalized(displayText) !== normalized(scene.text), variant: i,
         terms: visualTerms(spoken || scene.text) };
       const beatTheme = graphicTheme(spoken);
       if (scene.kind === 'detail' && scene.theme !== 'number' && beatTheme !== 'network') beat.theme = beatTheme;
+      beat.termTimings = beat.terms!.flatMap(term => {
+        const word = spans.find(word => word.time >= start && word.time < end && normalized(word.text) === normalized(term));
+        return word ? [{ text: term, start: word.time, end: word.end }] : [];
+      });
       beat.layout = sceneLayout(beat, beats.length);
       beats.push(beat);
     }
   }
-  return { version: 3, duration: timing.duration, fps: 15, width: 1080, height: 1920,
-    renderWidth: 720, renderHeight: 1280, scenes: beats };
+  return { version: 4, duration: timing.duration, fps: 30, width: 1080, height: 1920,
+    renderWidth: 1080, renderHeight: 1920, scenes: beats };
 }

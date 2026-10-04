@@ -8,6 +8,7 @@ import subprocess
 import tempfile
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
+from illustrations import Illustration
 
 
 def ease(value):
@@ -163,7 +164,7 @@ ILLUSTRATIONS = {"network": network, "code": code, "comparison": comparison, "re
 
 
 class DesignDraw:
-    """Draw in 1080p design coordinates on the less expensive 720p canvas."""
+    """Draw in 1080p coordinates, supporting native and older preview canvases."""
 
     def __init__(self, image, scale, offset=(0, 0)):
         self.draw = ImageDraw.Draw(image)
@@ -203,9 +204,9 @@ class DesignDraw:
 
 
 PALETTES = (
-    {"background": "#112c23", "ink": "#fbfaf7", "accent": "#b4efcb", "dim": "#457f66", "muted": "#a0baab", "panel": "#183d30"},
-    {"background": "#151e1b", "ink": "#fbfaf7", "accent": "#b4efcb", "dim": "#456457", "muted": "#a0baab", "panel": "#202f29"},
-    {"background": "#f6f5f1", "ink": "#202421", "accent": "#176b5b", "dim": "#b5c9bd", "muted": "#555c57", "panel": "#e8eee6"},
+    {"background": "#112c23", "ink": "#fbfaf7", "accent": "#b4efcb", "dim": "#457f66", "muted": "#a0baab", "panel": "#183d30", "blue": "#87cfe5", "warm": "#f6d7a0"},
+    {"background": "#151e1b", "ink": "#fbfaf7", "accent": "#b4efcb", "dim": "#456457", "muted": "#a0baab", "panel": "#202f29", "blue": "#87cfe5", "warm": "#f6d7a0"},
+    {"background": "#f6f5f1", "ink": "#202421", "accent": "#176b5b", "dim": "#b5c9bd", "muted": "#555c57", "panel": "#e8eee6", "blue": "#267a97", "warm": "#ab782a"},
 )
 FONT_SIZES = (20, 22, 24, 26, 28, 32, 36, 40, 44, 48, 52, 56, 60, 64, 68, 72, 80, 88, 96, 108, 128, 156, 180, 208, 240)
 
@@ -221,11 +222,19 @@ def background_image(plan, palette):
     draw = DesignDraw(image, scale)
     for radius in (360, 530, 710):
         draw.arc((790 - radius, 960 - radius, 790 + radius, 960 + radius), 210, 390, fill=palette["panel"], width=2)
+    if plan["version"] == 4:
+        # Restrained, deterministic grain keeps large gradients from banding.
+        import numpy as np
+        pixels = np.asarray(image).astype(np.int16)
+        grain = np.random.default_rng(42).integers(-1, 2, (height, width, 1), dtype=np.int16)
+        image = Image.fromarray(np.clip(pixels + grain, 0, 255).astype(np.uint8))
     return image
 
 
 def prepare_art(plan, story, output):
-    if plan["version"] not in (2, 3) or (plan["width"], plan["height"], plan["fps"], plan["renderWidth"], plan["renderHeight"]) != (1080, 1920, 15, 720, 1280):
+    specification = (plan["width"], plan["height"], plan["fps"], plan["renderWidth"], plan["renderHeight"])
+    if not ((plan["version"] in (2, 3) and specification == (1080, 1920, 15, 720, 1280)) or
+            (plan["version"] == 4 and specification == (1080, 1920, 30, 1080, 1920))):
         raise ValueError("Unexpected graphics version, dimensions, or frame rate")
     scale = plan["renderWidth"] / plan["width"]
     bold_path = output / "fonts/caption.ttf"
@@ -244,6 +253,12 @@ def prepare_art(plan, story, output):
                 not isinstance(term, str) or not term or len(term) > 16 or
                 term.casefold() not in source_words for term in terms):
             raise ValueError("Artwork label is not supported by the spoken fact")
+        term_timings = scene.get("termTimings", [])
+        if not isinstance(term_timings, list) or len(term_timings) > 2 or any(
+                not isinstance(word, dict) or word.get("text") not in terms or
+                not isinstance(word.get("start"), (float, int)) or not isinstance(word.get("end"), (float, int)) or
+                not scene["start"] <= word["start"] < word["end"] <= scene["end"] + 0.025 for word in term_timings):
+            raise ValueError("Artwork emphasis has invalid narration timing")
         text = scene["displayText"].strip(",;: ")
         if scene["excerpt"]:
             if scene["variant"]:
@@ -267,6 +282,19 @@ def prepare_art(plan, story, output):
     art = {"scale": scale, "fonts": fonts, "iconFonts": icon_fonts, "regular": regular, "layouts": layouts,
            "sourceLines": source_lines, "numbers": numbers,
            "backgrounds": [background_image(plan, palette) for palette in PALETTES]}
+    if plan["version"] == 4:
+        cache, art["illustrations"], art["illustrationPositions"] = {}, [], []
+        for index, scene in enumerate(plan["scenes"]):
+            factor, center_x, center_y = illustration_geometry(scene, art["layouts"][index])
+            art["illustrationPositions"].append((center_x, center_y))
+            if scene["theme"] == "number":
+                art["illustrations"].append(None)
+                continue
+            palette = scene_palette(scene, index)
+            key = (scene["theme"], factor, palette["background"])
+            if key not in cache:
+                cache[key] = Illustration(scene["theme"], palette, factor * scale, bold_path)
+            art["illustrations"].append(cache[key])
     # Cache immutable scene layers once. Encoding only draws the moving artwork
     # and progress, instead of redrawing branding, grids, and fonts 450+ times.
     art["bases"], art["settled"] = [], []
@@ -283,12 +311,28 @@ def scene_palette(scene, index):
     return PALETTES[0 if index == 0 else (2 if scene["kind"] == "source" else 1 + (index - 1) % 2)]
 
 
+def illustration_geometry(scene, headline):
+    layout = scene.get("layout", "panel")
+    if layout == "hero":
+        size, lines = headline
+        top = 328 + len(lines) * (size + 10) + 50
+        bottom = 1072
+        return round(min(1.25, (bottom-top) / 440), 3), 486, (top+bottom) / 2
+    if layout == "split":
+        return 0.5, 300, 897
+    if layout == "source":
+        return 0.7, 486, 936
+    return 0.98, 486, 875
+
+
 def draw_heading(image, plan, index, art, shift):
     draw = DesignDraw(image, art["scale"])
     size, lines = art["layouts"][index]
     y = 328 + shift
-    for line in lines:
-        draw.text((96, y), line, font=art["fonts"][size], fill=scene_palette(plan["scenes"][index], index)["ink"])
+    for line_index, line in enumerate(lines):
+        # Lines settle in sequence during the brief entrance, with no word loss.
+        extra = shift * min(1.5, 1 + line_index * 0.16) if plan["version"] == 4 else shift
+        draw.text((96, y + extra - shift), line, font=art["fonts"][size], fill=scene_palette(plan["scenes"][index], index)["ink"])
         y += size + 10
 
 
@@ -313,15 +357,21 @@ def scene_background(plan, story, index, art):
     draw.text((876, 263), f"{index + 1:02d} / {len(plan['scenes']):02d}", font=regular[24], fill=muted, anchor="ra")
 
     layout = scene.get("layout", "panel")
+    if plan["version"] == 4:
+        # A small accent ties the headline to the animated illustration.
+        draw.rounded_rectangle((96, 642, 156, 647), radius=2, fill=accent)
     if layout == "hero":
+        center_y = art["illustrationPositions"][index][1] if plan["version"] == 4 else 895
         for radius in (205, 225):
-            circle(draw, 486, 895, radius, outline=dim, width=1)
+            circle(draw, 486, center_y, radius, outline=dim, width=1)
         draw.rounded_rectangle((352, 1080, 620, 1120), radius=20, fill=panel)
         draw.text((486, 1100), scene["theme"].upper() + " / ILLUSTRATION", font=fonts[20], fill=accent, anchor="mm")
     else:
         draw.rounded_rectangle((96, 696, 876, 1151), radius=30, fill=palette["background"])
         draw.rounded_rectangle((96, 680, 876, 1135), radius=30, fill=panel)
         draw.line((130, 713, 830, 713), fill=dim, width=1)
+        if plan["version"] == 4:
+            draw.line((112, 696, 861, 696), fill=palette["accent"], width=1)
         if layout == "panel":
             for x in range(144, 838, 44):
                 for y in range(752, 1090, 44):
@@ -374,14 +424,28 @@ def render_frame(plan, story, index, seconds, art):
         draw.line((486 - width / 2, 1050, 486 + width / 2, 1050), fill=accent, width=3)
     else:
         factor = {"hero": 1.5, "panel": 1.4, "split": 0.72, "source": 1.0}.get(layout, 1.4)
-        center_x, center_y = (300, 897) if layout == "split" else (486, 936 if layout == "source" else 893)
+        center_x, center_y = (300, 897) if layout == "split" else (486, 936 if layout == "source" else 884 if layout == "hero" else 893)
         shift = (5 if layout == "split" else 10) * (-1 if scene["variant"] % 2 else 1) * math.sin(local * 0.7)
         offset = ((center_x - 390 * factor + shift) * scale, (center_y - 195 * factor) * scale)
         icon_draw = DesignDraw(image, factor * scale, offset)
         if layout == "hero":
             angle = 190 + 20 * math.sin(local * 0.7)
-            draw.arc((261, 670, 711, 1120), angle, angle + 80, fill=accent, width=3)
-        ILLUSTRATIONS[scene["theme"]](icon_draw, local + scene["variant"] * 2, ink, accent, dim, panel, art["iconFonts"][factor])
+            orbit_y = art["illustrationPositions"][index][1] if plan["version"] == 4 else 895
+            draw.arc((261, orbit_y-225, 711, orbit_y+225), angle, angle + 80, fill=accent, width=3)
+        if plan["version"] == 4:
+            illustration = art["illustrations"][index]
+            center_x, center_y = art["illustrationPositions"][index]
+            left = round((center_x + shift) * scale - illustration.static.width / 2)
+            top = round(center_y * scale - illustration.static.height / 2)
+            illustration.paint(image, (left, top), local + scene["variant"] * 2)
+        else:
+            ILLUSTRATIONS[scene["theme"]](icon_draw, local + scene["variant"] * 2, ink, accent, dim, panel, art["iconFonts"][factor])
+    if layout == "split" and plan["version"] == 4:
+        for word in scene.get("termTimings", []):
+            if word["start"] <= seconds < word["end"]:
+                term_index = scene["terms"].index(word["text"])
+                y = 775 + term_index * 142
+                draw.rounded_rectangle((528, y, 842, y + 116), radius=18, outline=accent, width=3)
     progress = max(0, min(1, seconds / plan["duration"]))
     if progress > 0:
         draw.rounded_rectangle((96, 1560, 96 + max(1, 780 * progress), 1566), radius=3, fill=accent)
@@ -397,8 +461,9 @@ def animated_frames(plan, story, art):
             index += 1
         image = render_frame(plan, story, index, seconds, art)
         local = seconds - plan["scenes"][index]["start"]
-        if previous is not None and local < 0.2:
-            image = Image.blend(previous, image, ease(local / 0.2))
+        transition = 0.24 if plan["version"] == 4 else 0.2
+        if previous is not None and local < transition:
+            image = Image.blend(previous, image, ease(local / transition))
         yield image
 
 
@@ -411,7 +476,7 @@ def encode_video(plan, story, art, output, ffmpeg, video_file):
                "-s", f"{plan['renderWidth']}x{plan['renderHeight']}", "-r", str(plan["fps"]), "-i", "pipe:0",
                "-i", "audio.wav", "-filter_complex", (output / "render.filter").read_text(encoding="utf-8"),
                "-map", "[v]", "-map", "[a]", "-t", str(plan["duration"]), "-c:v", "libx264", "-preset", "veryfast",
-               "-crf", "23", "-pix_fmt", "yuv420p", "-r", "30", "-c:a", "aac", "-b:a", "128k",
+               "-crf", "20" if plan["version"] == 4 else "23", "-pix_fmt", "yuv420p", "-r", "30", "-c:a", "aac", "-b:a", "128k",
                "-movflags", "+faststart", "-threads", "2", temporary_video.name]
     with tempfile.TemporaryFile() as errors:
         process = subprocess.Popen(command, cwd=output, stdin=subprocess.PIPE, stdout=subprocess.DEVNULL, stderr=errors,
@@ -457,14 +522,15 @@ def main():
     for i, scene in enumerate(plan["scenes"]):
         render_frame(plan, story, i, min(scene["end"] - 0.1, scene["start"] + 0.8), art).save(output / f"scene-{i + 1:02d}.png")
     render_frame(plan, story, 0, 0, art).save(output / "card.png")
-    (output / "graphics-layout.json").write_text(json.dumps({"version": plan["version"], "renderSize": [720, 1280],
-        "safeArea": [96, 160, 876, 1566], "artworkBounds": [96, 680, 876, 1135],
+    (output / "graphics-layout.json").write_text(json.dumps({"version": plan["version"], "renderSize": [plan["renderWidth"], plan["renderHeight"]],
+        "fps": plan["fps"], "illustrationSampling": 2 if plan["version"] == 4 else 1,
+        "safeArea": [96, 160, 876, 1566], "artworkBounds": [96, 440 if plan["version"] == 4 else 680, 876, 1135],
         "scenes": [{"fontSize": size, "lines": lines, "excerpt": scene["excerpt"], "layout": scene.get("layout", "panel"),
-                    "terms": scene.get("terms", []), "start": scene["start"], "end": scene["end"]}
+                    "terms": scene.get("terms", []), "termTimings": scene.get("termTimings", []), "start": scene["start"], "end": scene["end"]}
                    for scene, (size, lines) in zip(plan["scenes"], art["layouts"])]}, indent=2), encoding="utf-8")
     if not args.preview_only:
         encode_video(plan, story, art, output, args.ffmpeg, args.video_file)
-    print(f"Rendered {len(plan['scenes'])} full-screen scenes at {plan['fps']} fps; streamed 720p artwork, 1080p captions")
+    print(f"Rendered {len(plan['scenes'])} full-screen scenes at {plan['fps']} fps; streamed {plan['renderWidth']}x{plan['renderHeight']} artwork")
 
 
 if __name__ == "__main__":

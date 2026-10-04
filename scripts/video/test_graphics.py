@@ -7,9 +7,10 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from PIL import ImageChops
+from PIL import Image, ImageChops
 from assets import caption_font_path
 from graphics import ILLUSTRATIONS, encode_video, prepare_art, render_frame
+from illustrations import THEMES
 
 
 class GraphicsTests(unittest.TestCase):
@@ -104,4 +105,45 @@ class GraphicsTests(unittest.TestCase):
         plan = copy.deepcopy(self.plan)
         plan["scenes"][0]["terms"] = ["Breakthrough"]
         with self.assertRaisesRegex(ValueError, "not supported"):
+            prepare_art(plan, self.story, self.output)
+
+    def test_every_full_hd_illustration_is_antialiased_animated_and_cache_safe(self):
+        for theme in THEMES:
+            with self.subTest(theme=theme):
+                plan = copy.deepcopy(self.plan)
+                plan.update(version=4, fps=30, renderWidth=1080, renderHeight=1920)
+                plan["scenes"][0].update(theme=theme, layout="hero")
+                art = prepare_art(plan, self.story, self.output)
+                sprite = art["illustrations"][0]
+                static = sprite.static.tobytes()
+                self.assertTrue(any(0 < alpha < 255 for alpha in sprite.static.getchannel("A").getdata()))
+                first = render_frame(plan, self.story, 0, 0.8, art)
+                second = render_frame(plan, self.story, 0, 2.2, art)
+                self.assertEqual(first.size, (1080, 1920))
+                bounds = (96, 680, 876, 1080)
+                self.assertIsNotNone(ImageChops.difference(first.crop(bounds), second.crop(bounds)).getbbox())
+                self.assertEqual(static, sprite.static.tobytes())
+                center_x, center_y = art["illustrationPositions"][0]
+                position = (round(center_x-sprite.static.width/2), round(center_y-sprite.static.height/2))
+                isolated = Image.new("RGBA", (1080, 1920))
+                sprite.paint(isolated, position, 2.2)
+                left, top, right, bottom = isolated.getbbox()
+                self.assertGreaterEqual(left, 96)
+                self.assertLessEqual(right, 876)
+                self.assertGreaterEqual(top, 440)
+                self.assertLessEqual(bottom, 1080)
+
+    def test_full_hd_key_words_are_emphasized_only_during_their_spoken_window(self):
+        plan = copy.deepcopy(self.plan)
+        plan.update(version=4, fps=30, renderWidth=1080, renderHeight=1920)
+        plan["scenes"][0].update(layout="split", terms=["Source"],
+                                 termTimings=[{"text": "Source", "start": 1, "end": 2}])
+        art = prepare_art(plan, self.story, self.output)
+        before = render_frame(plan, self.story, 0, 0.8, art).crop((526, 773, 845, 894))
+        active = render_frame(plan, self.story, 0, 1.5, art).crop((526, 773, 845, 894))
+        after = render_frame(plan, self.story, 0, 2.2, art).crop((526, 773, 845, 894))
+        self.assertIsNone(ImageChops.difference(before, after).getbbox())
+        self.assertIsNotNone(ImageChops.difference(before, active).getbbox())
+        plan["scenes"][0]["termTimings"][0]["end"] = 32
+        with self.assertRaisesRegex(ValueError, "invalid narration timing"):
             prepare_art(plan, self.story, self.output)
