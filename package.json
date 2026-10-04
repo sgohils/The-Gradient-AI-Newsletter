@@ -12,6 +12,7 @@
     "video:render": "npm run build && node dist/scripts/video-render.js",
     "video:publish": "npm run build && node dist/scripts/video-publish.js",
     "video:sample": "npm run build && node dist/scripts/video-sample.js",
+    "video:prepare": "npm run build && node dist/scripts/video-prepare.js",
     "test": "vitest run",
     "lint": "eslint src --ext .ts"
   },

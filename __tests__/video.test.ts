@@ -28,7 +28,7 @@ describe('newsletter video handoff', () => {
   it('rejects missing input, invalid dates, and a corrupt ledger', () => {
     const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'gradient-video-')); temporary.push(dir);
     const file = path.join(dir, 'input.json');
-    expect(() => readInput(file)).toThrow();
+    expect(() => readInput(file)).toThrow('Missing video input');
     writeJson(file, { ...input, issueDate: '2026-02-30' });
     expect(() => readInput(file)).toThrow('Invalid issue date');
     writeJson(file, { version: 1, issues: [] });

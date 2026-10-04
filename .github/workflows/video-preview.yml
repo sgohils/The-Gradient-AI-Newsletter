@@ -36,6 +36,7 @@ jobs:
       ZERNIO_YOUTUBE_ACCOUNT_ID: ${{ vars.ZERNIO_YOUTUBE_ACCOUNT_ID }}
       ZERNIO_TIKTOK_ACCOUNT_ID: ${{ vars.ZERNIO_TIKTOK_ACCOUNT_ID }}
       VIDEO_LEDGER_GIT_SYNC: '1'
+      SOURCE_RUN_ID: ${{ inputs.source_run_id }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -47,7 +48,6 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build
-      - uses: ./.github/actions/video-runtime
       - name: Restore the exact reviewed video
         if: inputs.source_run_id != ''
         uses: actions/download-artifact@v4
@@ -57,20 +57,35 @@ jobs:
           pattern: '*video*'
           merge-multiple: true
           path: restored-video
-      - name: Render selected issue
-        id: render
+      - name: Prepare and validate the video source
+        id: source
         shell: bash
         run: |
-          if [ -d restored-video/video-output ]; then
-            node -e 'const fs=require("fs"),path=require("path"),s=require("./dist/src/video/storage");s.assertIssueDate(process.env.ISSUE_DATE);const p=path.resolve("restored-video/video-output",process.env.ISSUE_DATE,"manifest.json"),m=s.readManifest(p);if(m.issueDate!==process.env.ISSUE_DATE)throw Error("Issue mismatch");fs.appendFileSync(process.env.GITHUB_OUTPUT,"manifest="+p+"\nstatus="+m.status+"\n")'
-          elif [ "$ISSUE_DATE" = sample ]; then
+          args=(--issue-date "$ISSUE_DATE")
+          if [ -n "$SOURCE_RUN_ID" ]; then
+            args+=(--restored-dir restored-video)
+          fi
+          node dist/scripts/video-prepare.js "${args[@]}"
+      - uses: ./.github/actions/video-runtime
+        if: steps.source.outputs.mode != 'restored'
+      - name: Render selected issue
+        id: render
+        env:
+          VIDEO_MODE: ${{ steps.source.outputs.mode }}
+          VIDEO_INPUT: ${{ steps.source.outputs.video_input }}
+          REVIEWED_MANIFEST: ${{ steps.source.outputs.manifest }}
+          REVIEWED_STATUS: ${{ steps.source.outputs.status }}
+        shell: bash
+        run: |
+          if [ "$VIDEO_MODE" = restored ]; then
+            printf 'manifest=%s\nstatus=%s\n' "$REVIEWED_MANIFEST" "$REVIEWED_STATUS" >> "$GITHUB_OUTPUT"
+          elif [ "$VIDEO_MODE" = sample ]; then
             node dist/scripts/video-sample.js --output-dir video-output/sample
           else
-            node -e 'require("./dist/src/video/storage").assertIssueDate(process.env.ISSUE_DATE)'
-            node dist/scripts/video-render.js --input "posts/$ISSUE_DATE.video.json"
+            node dist/scripts/video-render.js --input "$VIDEO_INPUT"
           fi
       - name: Publish activation check
-        if: inputs.publish
+        if: inputs.publish && steps.render.outputs.status == 'ready'
         env:
           MANIFEST: ${{ steps.render.outputs.manifest }}
         shell: bash
@@ -93,6 +108,6 @@ jobs:
           name: video-preview
           path: |
             video-output/
-            restored-video/video-output/
             video-state/ledger.json
+            ${{ steps.source.outputs.video_input }}
           retention-days: 7

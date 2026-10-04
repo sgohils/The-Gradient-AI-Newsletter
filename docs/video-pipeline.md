@@ -16,7 +16,7 @@ The target is $0 additional monthly cost. Script generation makes at most one re
 
 After committing the implementation, open **Actions → Video preview and activation check → Run workflow** with `issue_date=sample` and `publish=false`. Download the `video-preview` artifact and inspect the MP4, captions, and narration. The fictional sample cannot be published. CI also renders and verifies an offline sample.
 
-For a real preview, use a date with a committed `.video.json` from the updated newsletter. Older Markdown issues lack the original evidence needed for video narration. Leave `publish=false` during review. The workflow freezes the selected story and script in `video-state/ledger.json`.
+For a real preview, use a date with a committed `.video.json` from the updated newsletter. If an older issue has only Markdown/HTML, the manual workflow first tries to recover its original stories from the configured RSS feeds, matching the publisher's **Read more** URLs and preserving newsletter rank and actual RSS publication times. It never uses a rewritten newsletter summary as original evidence or sends the newsletter again. Recovery is possible only while those original stories remain in the feeds. If none can be recovered, use `issue_date=sample` for a fictional preview or choose a later issue with an exported `.video.json`. Input checks run before the CPU runtime is installed. Leave `publish=false` during review. The workflow freezes the selected story and script in `video-state/ledger.json`.
 
 Local requirements: Node 20+, **Python 3.11**, FFmpeg with libass, ffprobe, and fonts. This Kokoro version does not support Python 3.13. Linux setup:
 
@@ -36,6 +36,14 @@ On Windows, set `VIDEO_PYTHON` to the venv's `Scripts/python.exe`, and set `VIDE
 npm run video:render -- --input posts/YYYY-MM-DD.video.json
 npm run video:publish -- --manifest video-output/YYYY-MM-DD/manifest.json --platforms youtube
 ```
+
+Recover an older issue's input locally without publishing or emailing:
+
+```sh
+npm run video:prepare -- --issue-date YYYY-MM-DD
+```
+
+Recovered inputs are included in preview artifacts. A recovered issue may be skipped when its stories are stale or its excerpts are too short. Future scheduled newsletters export inputs directly. When `source_run_id` is supplied, the workflow requires a ready, unchanged video for the exact requested date; it never substitutes a new render when a reviewed artifact is unavailable. Restored artifacts are copied into the standard output directory so successive reviews retain the same layout and media hash.
 
 Rendering never uploads. Outputs include the MP4, WAV, word timing JSON, SRT/ASS captions, script, layout, and typed manifest. Publishing is an explicit, separate command. With downloaded artifacts, point `--manifest` at the extracted file and `--ledger` at the current repository ledger. Keep the MP4 beside its manifest. Never replace the current ledger with an older artifact copy.
 

@@ -31,6 +31,7 @@ export function fileSha256(file: string): string {
 }
 
 export function readInput(file: string): VideoInput {
+  if (!fs.existsSync(file)) throw new Error(`Missing video input: ${file}. For an existing newsletter, run npm run video:prepare -- --issue-date YYYY-MM-DD; for a fictional preview, run npm run video:sample.`);
   const input = readJson(file) as VideoInput;
   if (!input || input.version !== 1 || !Array.isArray(input.stories) || input.stories.length > 25) {
     throw new Error('Invalid VideoInput version or stories.');
