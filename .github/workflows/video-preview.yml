@@ -33,7 +33,7 @@ jobs:
       DO_TIKTOK: ${{ inputs.tiktok }}
       GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
       ZERNIO_API_KEY: ${{ secrets.ZERNIO_API_KEY }}
-      ZERNIO_YOUTUBE_ACCOUNT_ID: ${{ vars.ZERNIO_YOUTUBE_ACCOUNT_ID }}
+      ZERNIO_YOUTUBE_ACCOUNT_ID: ${{ vars.ZERNIO_YOUTUBE_ACCOUNT_ID || secrets.ZERNIO_YOUTUBE_ACCOUNT_ID }}
       ZERNIO_TIKTOK_ACCOUNT_ID: ${{ vars.ZERNIO_TIKTOK_ACCOUNT_ID }}
       VIDEO_LEDGER_GIT_SYNC: '1'
       SOURCE_RUN_ID: ${{ inputs.source_run_id }}
