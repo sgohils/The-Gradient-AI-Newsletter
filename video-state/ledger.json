@@ -15,10 +15,9 @@
       "selectedAt": "2026-10-04T18:53:29.796Z",
       "platforms": {
         "youtube": {
-          "accountId": "",
-          "status": "blocked",
-          "idempotencyKey": "953b3218-3cee-48e5-94db-f654d4a3326c",
-          "error": "No active youtube account matches the configured ID; connect it in Zernio."
+          "accountId": "6ac27146281ee799a37065e4",
+          "status": "prepared",
+          "idempotencyKey": "7ea85a31-2c78-45aa-a658-192928b93a13"
         }
       },
       "script": {
@@ -35,7 +34,12 @@
         ],
         "narration": "Today's AI story: A model guide for the GPT-6 family.\nGPT-6 is our most advanced suite of models yet , and offers you a choice of models for different kinds of work. Whether you’re turning an idea into a working prototype, building and testing a feature, or orchestrating multi-step workflows across code repositories, databases, and external APIs, this guide explains how to choose a GPT-6 model, give it effective instructions, manage long-running work, and prepare for production.\nReporting from OpenAI Blog. The original source is linked in the description."
       },
-      "contentHash": "de84672ba672ac1b50aa5eea55c36d42c6d676bf0bf13e3c5a0a1b887c109d6b"
+      "contentHash": "de84672ba672ac1b50aa5eea55c36d42c6d676bf0bf13e3c5a0a1b887c109d6b",
+      "media": {
+        "publicUrl": "https://media.zernio.com/temp/1791141946127_50gw0psg_2026-10-04.mp4",
+        "videoSha256": "2a677a70e9fc2caf127e36399c9b672ff4839921be7f44a87149e2a0a6e91eb8",
+        "uploadedAt": "2026-10-04T19:25:46.790Z"
+      }
     }
   }
 }
