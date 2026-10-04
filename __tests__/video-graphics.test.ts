@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { buildStoryboard, graphicTheme, numericCallout } from '../src/video/graphics';
+import { buildStoryboard, graphicTheme, numericCallout, visualTerms } from '../src/video/graphics';
 import { buildExtractiveScript } from '../src/video/script';
 import { sampleInput } from '../src/video/sample';
 import { NarrationTiming, VideoScript } from '../src/video/types';
@@ -32,7 +32,7 @@ describe('animated story graphics', () => {
     const timing = timingFor(script);
     const originalScript = JSON.stringify(script), originalCaptions = buildSrt(timing);
     const plan = buildStoryboard(story, script, timing);
-    expect(plan).toMatchObject({ version: 2, width: 1080, height: 1920, renderWidth: 720, renderHeight: 1280 });
+    expect(plan).toMatchObject({ version: 3, width: 1080, height: 1920, renderWidth: 720, renderHeight: 1280 });
     const clean = (text: string) => text.toLowerCase().replace(/[^\p{L}\p{N}]/gu, '');
     const details = plan.scenes.filter(scene => scene.kind === 'detail');
     expect(details.length).toBeGreaterThan(script.sentences.length);
@@ -55,6 +55,18 @@ describe('animated story graphics', () => {
       ['Research paper reports findings', 'research'], ['New language model', 'network'],
     ]) expect(graphicTheme(text)).toBe(theme);
   });
+  it('varies compositions and keeps every artwork term grounded in its spoken fact', () => {
+    const plan = buildStoryboard(story, script, timingFor(script));
+    expect(plan.scenes[0].layout).toBe('hero');
+    expect(plan.scenes.at(-1)?.layout).toBe('source');
+    expect(new Set(plan.scenes.map(scene => scene.layout))).toEqual(new Set(['hero', 'panel', 'split', 'source']));
+    for (const scene of plan.scenes) {
+      expect(scene.terms!.length).toBeLessThanOrEqual(2);
+      for (const term of scene.terms!) expect(scene.text.toLowerCase()).toContain(term.toLowerCase());
+    }
+    expect(visualTerms('Answers, answers, PROMPTS and invented magic.')).toEqual(['Answers', 'PROMPTS']);
+    expect(visualTerms('An unsupported claim.')).toEqual([]);
+  });
   it('only highlights explicit amounts or percentages, not dates/model versions', () => {
     expect(numericCallout('The release is GPT-4.5, dated 2026-10-03.')).toBeUndefined();
     expect(numericCallout('The company raised $2.5 billion.')).toBe('$2.5 billion');
@@ -68,6 +80,7 @@ describe('animated story graphics', () => {
     numbered.narration = numbered.sentences.map(sentence => sentence.text).join(' ') + '\nSource in the description.';
     const plan = buildStoryboard(numberedStory, numbered, timingFor(numbered));
     expect(plan.scenes.find(scene => scene.theme === 'number')?.callout).toBe('30%');
+    expect(plan.scenes.find(scene => scene.theme === 'number')?.layout).toBe('stat');
     expect(() => buildStoryboard(story, numbered, timingFor(numbered))).toThrow('source evidence');
   });
   it('fails when timings or scene text no longer match the narration', () => {

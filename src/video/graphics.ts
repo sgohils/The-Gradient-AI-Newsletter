@@ -1,8 +1,8 @@
 import { captionChunks } from './captions';
-import { GraphicTheme, NarrationTiming, VideoScript, VideoStoryboard, VideoStory } from './types';
+import { GraphicLayout, GraphicTheme, NarrationTiming, VideoScene, VideoScript, VideoStoryboard, VideoStory } from './types';
 import { SCRIPT_ENDING, validateScript } from './script';
 
-export const GRAPHICS_VERSION = 3;
+export const GRAPHICS_VERSION = 4;
 
 function normalized(text: string): string {
   return text.normalize('NFKC').toLowerCase().replace(/[^\p{L}\p{N}]/gu, '');
@@ -25,6 +25,27 @@ export function graphicTheme(text: string): GraphicTheme {
 /** Promote explicit quantities, never model-version digits or invented charts. */
 export function numericCallout(text: string): string | undefined {
   return text.match(/(?:[$£€]\s*\d[\d,.]*(?:\s*(?:million|billion|trillion))?|\b\d[\d,.]*\s*(?:%|percent\b|(?:million|billion|trillion)\b(?:\s+(?:users|parameters|dollars|tokens))?))/i)?.[0];
+}
+
+/** Text on the illustrations comes from the validated narration, not a model. */
+export function visualTerms(text: string): string[] {
+  const matches = text.match(/\b(?:toolkits?|prompts?|responses?|answers?|questions?|tests?|checks?|models?|instructions?|workflows?|code|developers?|users?|privacy|security|robots?|chips?|GPUs?|APIs?|findings|research|data|costs?|patients?|students?|workers?)\b/gi) || [];
+  const terms: string[] = [];
+  for (const term of matches) {
+    if (!terms.some(existing => existing.toLowerCase() === term.toLowerCase())) terms.push(term);
+    if (terms.length === 2) break;
+  }
+  return terms;
+}
+
+function sceneLayout(scene: VideoScene, index: number): GraphicLayout {
+  if (scene.kind === 'source') return 'source';
+  if (scene.theme === 'number') return 'stat';
+  if (scene.kind === 'headline') return 'hero';
+  // Keep a comparison illustration intact; use source-word cards for other
+  // details, with a larger illustration between them to vary the composition.
+  if (scene.theme === 'comparison' || !scene.terms?.length) return 'panel';
+  return scene.label === 'THE TAKEAWAY' || index % 2 ? 'split' : 'panel';
 }
 
 export function buildStoryboard(story: VideoStory, script: VideoScript, timing: NarrationTiming): VideoStoryboard {
@@ -92,7 +113,11 @@ export function buildStoryboard(story: VideoStory, script: VideoScript, timing: 
     const boundaries = [scene.start];
     for (let i = 1; i < count; i++) {
       const target = scene.start + (scene.end - scene.start) * i / count;
-      const boundary = spans.find(word => word.to > word.from && word.time >= target && word.time < scene.end - 2)?.time;
+      const eligible = spans.filter(word => word.to > word.from && word.time >= boundaries[boundaries.length - 1] + 2.5 && word.time < scene.end - 2);
+      // Prefer a nearby spoken phrase boundary to interrupting a phrase.
+      const phrase = eligible.find(word => Math.abs(word.time - target) <= 0.8 &&
+        /[,;:.!?]$/.test(spans[spans.indexOf(word) - 1]?.text || ''));
+      const boundary = (phrase || eligible.find(word => word.time >= target))?.time;
       if (boundary !== undefined && boundary - boundaries[boundaries.length - 1] >= 2.5) boundaries.push(boundary);
     }
     boundaries.push(scene.end);
@@ -102,10 +127,15 @@ export function buildStoryboard(story: VideoStory, script: VideoScript, timing: 
         .replace(/\s+([,.;:!?])/g, '$1');
       const words = spoken.split(/\s+/).filter(Boolean);
       const displayText = scene.kind === 'detail' && (script.version !== 2 || i > 0) ? words.slice(0, 8).join(' ') : scene.displayText;
-      beats.push({ ...scene, start, end, displayText,
-        excerpt: scene.kind === 'detail' && (script.version !== 2 || i > 0) && normalized(displayText) !== normalized(scene.text), variant: i });
+      const beat: VideoScene = { ...scene, start, end, displayText,
+        excerpt: scene.kind === 'detail' && (script.version !== 2 || i > 0) && normalized(displayText) !== normalized(scene.text), variant: i,
+        terms: visualTerms(spoken || scene.text) };
+      const beatTheme = graphicTheme(spoken);
+      if (scene.kind === 'detail' && scene.theme !== 'number' && beatTheme !== 'network') beat.theme = beatTheme;
+      beat.layout = sceneLayout(beat, beats.length);
+      beats.push(beat);
     }
   }
-  return { version: 2, duration: timing.duration, fps: 15, width: 1080, height: 1920,
+  return { version: 3, duration: timing.duration, fps: 15, width: 1080, height: 1920,
     renderWidth: 720, renderHeight: 1280, scenes: beats };
 }

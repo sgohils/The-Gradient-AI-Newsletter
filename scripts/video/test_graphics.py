@@ -77,3 +77,31 @@ class GraphicsTests(unittest.TestCase):
             encode_video(plan, self.story, art, self.output, sys.executable, "video.mp4")
         self.assertEqual(completed.read_bytes(), b"previous completed video")
         self.assertFalse((self.output / ".video-rendering.mp4").exists())
+
+    def test_new_compositions_render_without_mutating_cached_layers(self):
+        frames = []
+        for layout in ("hero", "panel", "split", "stat", "source"):
+            with self.subTest(layout=layout):
+                plan = copy.deepcopy(self.plan)
+                plan["version"] = 3
+                scene = plan["scenes"][0]
+                scene.update(layout=layout, terms=["Source"], theme="number" if layout == "stat" else "code")
+                scene["callout"] = "30%"
+                if layout == "source":
+                    scene["kind"] = "source"
+                art = prepare_art(plan, self.story, self.output)
+                base, settled = art["bases"][0].tobytes(), art["settled"][0].tobytes()
+                first = render_frame(plan, self.story, 0, 1, art)
+                frames.append(first)
+                self.assertEqual(first.tobytes(), render_frame(plan, self.story, 0, 1, art).tobytes())
+                self.assertEqual(base, art["bases"][0].tobytes())
+                self.assertEqual(settled, art["settled"][0].tobytes())
+                self.assertIsNotNone(ImageChops.difference(first, render_frame(plan, self.story, 0, 2, art)).getbbox())
+        for frame in frames[1:]:
+            self.assertIsNotNone(ImageChops.difference(frames[0], frame).getbbox())
+
+    def test_rejects_invented_artwork_labels(self):
+        plan = copy.deepcopy(self.plan)
+        plan["scenes"][0]["terms"] = ["Breakthrough"]
+        with self.assertRaisesRegex(ValueError, "not supported"):
+            prepare_art(plan, self.story, self.output)

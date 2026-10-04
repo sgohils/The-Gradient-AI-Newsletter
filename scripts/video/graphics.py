@@ -3,6 +3,7 @@ import argparse
 import json
 import math
 import os
+import re
 import subprocess
 import tempfile
 from pathlib import Path
@@ -224,15 +225,25 @@ def background_image(plan, palette):
 
 
 def prepare_art(plan, story, output):
-    if (plan["version"], plan["width"], plan["height"], plan["fps"], plan["renderWidth"], plan["renderHeight"]) != (2, 1080, 1920, 15, 720, 1280):
+    if plan["version"] not in (2, 3) or (plan["width"], plan["height"], plan["fps"], plan["renderWidth"], plan["renderHeight"]) != (1080, 1920, 15, 720, 1280):
         raise ValueError("Unexpected graphics version, dimensions, or frame rate")
     scale = plan["renderWidth"] / plan["width"]
     bold_path = output / "fonts/caption.ttf"
     fonts = {size: ImageFont.truetype(str(bold_path), round(size * scale)) for size in FONT_SIZES}
-    icon_fonts = {size: ImageFont.truetype(str(bold_path), round(size * scale * 1.4)) for size in FONT_SIZES}
+    icon_fonts = {factor: {size: ImageFont.truetype(str(bold_path), round(size * scale * factor)) for size in (28, 40, 48, 72)}
+                  for factor in (0.72, 1.0, 1.4, 1.5)}
     regular = {size: ImageFont.truetype(str(output / "fonts/body.ttf"), round(size * scale)) for size in (22, 24, 26, 28)}
     layouts = []
     for scene in plan["scenes"]:
+        if scene.get("layout", "panel") not in ("hero", "panel", "split", "stat", "source"):
+            raise ValueError("Unexpected scene layout")
+        # A label on the artwork must be an actual word from the spoken fact.
+        terms = scene.get("terms", [])
+        source_words = set(re.findall(r"\w+", scene["text"].casefold()))
+        if not isinstance(terms, list) or len(terms) > 2 or any(
+                not isinstance(term, str) or not term or len(term) > 16 or
+                term.casefold() not in source_words for term in terms):
+            raise ValueError("Artwork label is not supported by the spoken fact")
         text = scene["displayText"].strip(",;: ")
         if scene["excerpt"]:
             if scene["variant"]:
@@ -253,14 +264,37 @@ def prepare_art(plan, story, output):
                     break
             if i not in numbers:
                 raise ValueError("Number callout cannot fit the mobile safe area")
-    return {"scale": scale, "fonts": fonts, "iconFonts": icon_fonts, "regular": regular, "layouts": layouts,
-            "sourceLines": source_lines, "numbers": numbers,
-            "backgrounds": [background_image(plan, palette) for palette in PALETTES]}
+    art = {"scale": scale, "fonts": fonts, "iconFonts": icon_fonts, "regular": regular, "layouts": layouts,
+           "sourceLines": source_lines, "numbers": numbers,
+           "backgrounds": [background_image(plan, palette) for palette in PALETTES]}
+    # Cache immutable scene layers once. Encoding only draws the moving artwork
+    # and progress, instead of redrawing branding, grids, and fonts 450+ times.
+    art["bases"], art["settled"] = [], []
+    for index in range(len(plan["scenes"])):
+        base = scene_background(plan, story, index, art)
+        settled = base.copy()
+        draw_heading(settled, plan, index, art, 0)
+        art["bases"].append(base)
+        art["settled"].append(settled)
+    return art
 
 
-def render_frame(plan, story, index, seconds, art):
+def scene_palette(scene, index):
+    return PALETTES[0 if index == 0 else (2 if scene["kind"] == "source" else 1 + (index - 1) % 2)]
+
+
+def draw_heading(image, plan, index, art, shift):
+    draw = DesignDraw(image, art["scale"])
+    size, lines = art["layouts"][index]
+    y = 328 + shift
+    for line in lines:
+        draw.text((96, y), line, font=art["fonts"][size], fill=scene_palette(plan["scenes"][index], index)["ink"])
+        y += size + 10
+
+
+def scene_background(plan, story, index, art):
+    """Immutable composition: publication, source, cards, and source-word labels."""
     scene = plan["scenes"][index]
-    local = max(0, seconds - scene["start"])
     palette_index = 0 if index == 0 else (2 if scene["kind"] == "source" else 1 + (index - 1) % 2)
     palette = PALETTES[palette_index]
     ink, accent, dim, muted, panel = (palette[key] for key in ("ink", "accent", "dim", "muted", "panel"))
@@ -278,19 +312,57 @@ def render_frame(plan, story, index, seconds, art):
     draw.text((96, 263), scene["label"], font=fonts[22], fill=accent)
     draw.text((876, 263), f"{index + 1:02d} / {len(plan['scenes']):02d}", font=regular[24], fill=muted, anchor="ra")
 
-    size, lines = art["layouts"][index]
-    y = 328 + 20 * (1 - ease(local / 0.35))
-    for line in lines:
-        draw.text((96, y), line, font=fonts[size], fill=ink)
-        y += size + 10
+    layout = scene.get("layout", "panel")
+    if layout == "hero":
+        for radius in (205, 225):
+            circle(draw, 486, 895, radius, outline=dim, width=1)
+        draw.rounded_rectangle((352, 1080, 620, 1120), radius=20, fill=panel)
+        draw.text((486, 1100), scene["theme"].upper() + " / ILLUSTRATION", font=fonts[20], fill=accent, anchor="mm")
+    else:
+        draw.rounded_rectangle((96, 696, 876, 1151), radius=30, fill=palette["background"])
+        draw.rounded_rectangle((96, 680, 876, 1135), radius=30, fill=panel)
+        draw.line((130, 713, 830, 713), fill=dim, width=1)
+        if layout == "panel":
+            for x in range(144, 838, 44):
+                for y in range(752, 1090, 44):
+                    circle(draw, x, y, 1, fill=dim)
+        elif layout == "split":
+            draw.line((495, 750, 495, 1060), fill=dim, width=1)
+            terms = scene.get("terms", [])
+            for i, term in enumerate(terms):
+                y = 775 + i * 142
+                draw.rounded_rectangle((528, y, 842, y + 116), radius=18, fill=palette["background"], outline=dim, width=1)
+                for size in (52, 48, 44, 40, 36):
+                    if fonts[size].getlength(term) / scale <= 274:
+                        break
+                draw.text((685, y + 56), term, font=fonts[size], fill=accent if i == 0 else ink, anchor="mm")
+        elif layout == "source":
+            draw.text((486, 782), "SOURCE IN THE DESCRIPTION", font=fonts[26], fill=accent, anchor="mm")
+        if scene["theme"] == "number":
+            draw.text((486, 1090), "FROM THE SOURCE", font=fonts[20], fill=muted, anchor="mm")
+        else:
+            draw.text((130, 1090), "ILLUSTRATION", font=regular[22], fill=muted)
+            draw.text((830, 1090), scene["theme"].upper(), font=fonts[22], fill=accent, anchor="ra")
 
-    # Large artwork with depth, moving signals, and a different crop on each beat.
-    draw.rounded_rectangle((96, 696, 876, 1151), radius=30, fill=palette["background"])
-    draw.rounded_rectangle((96, 680, 876, 1135), radius=30, fill=panel)
-    draw.line((130, 713, 830, 713), fill=dim, width=1)
-    for x in range(144, 838, 44):
-        for y in range(752, 1090, 44):
-            circle(draw, x, y, 1, fill=dim)
+    draw.text((96, 1436), "SOURCE / " + ("ORIGINAL REPORTING" if scene["kind"] == "source" else "AI DAILY BRIEF"),
+              font=fonts[20], fill=accent)
+    for i, line in enumerate(art["sourceLines"]):
+        draw.text((96, 1472 + i * 32), line, font=regular[26], fill=ink)
+    draw.rounded_rectangle((96, 1560, 876, 1566), radius=3, fill=dim)
+    return image
+
+
+def render_frame(plan, story, index, seconds, art):
+    scene = plan["scenes"][index]
+    local = max(0, seconds - scene["start"])
+    palette = scene_palette(scene, index)
+    ink, accent, dim, muted, panel = (palette[key] for key in ("ink", "accent", "dim", "muted", "panel"))
+    scale, fonts = art["scale"], art["fonts"]
+    image = art["settled"][index].copy() if local >= 0.35 else art["bases"][index].copy()
+    if local < 0.35:
+        draw_heading(image, plan, index, art, 20 * (1 - ease(local / 0.35)))
+    draw = DesignDraw(image, scale)
+    layout = scene.get("layout", "panel")
     if scene["theme"] == "number":
         number_size, number_lines = art["numbers"][index]
         y = 870 - (len(number_lines) - 1) * (number_size + 10) / 2
@@ -298,22 +370,19 @@ def render_frame(plan, story, index, seconds, art):
             draw.text((486, y + 10 * (1 - ease(local / 0.4))), line,
                       font=fonts[number_size], fill=accent, anchor="mm")
             y += number_size + 10
-        draw.text((486, 1090), "FROM THE SOURCE", font=fonts[20], fill=muted, anchor="mm")
+        width = 200 + 12 * math.sin(local * 1.5)
+        draw.line((486 - width / 2, 1050, 486 + width / 2, 1050), fill=accent, width=3)
     else:
-        factor = 1.4
-        shift = (10 if scene["variant"] % 2 else -10) * math.sin(local * 0.7)
-        offset = ((486 - 390 * factor + shift) * scale, (893 - 195 * factor) * scale)
+        factor = {"hero": 1.5, "panel": 1.4, "split": 0.72, "source": 1.0}.get(layout, 1.4)
+        center_x, center_y = (300, 897) if layout == "split" else (486, 936 if layout == "source" else 893)
+        shift = (5 if layout == "split" else 10) * (-1 if scene["variant"] % 2 else 1) * math.sin(local * 0.7)
+        offset = ((center_x - 390 * factor + shift) * scale, (center_y - 195 * factor) * scale)
         icon_draw = DesignDraw(image, factor * scale, offset)
-        ILLUSTRATIONS[scene["theme"]](icon_draw, local + scene["variant"] * 2, ink, accent, dim, panel, art["iconFonts"])
-        draw.text((130, 1090), "ILLUSTRATION", font=regular[22], fill=muted)
-        draw.text((830, 1090), scene["theme"].upper(), font=fonts[22], fill=accent, anchor="ra")
-
-    draw.text((96, 1436), "SOURCE / " + ("ORIGINAL REPORTING" if scene["kind"] == "source" else "AI DAILY BRIEF"),
-              font=fonts[20], fill=accent)
-    for i, line in enumerate(art["sourceLines"]):
-        draw.text((96, 1472 + i * 32), line, font=regular[26], fill=ink)
+        if layout == "hero":
+            angle = 190 + 20 * math.sin(local * 0.7)
+            draw.arc((261, 670, 711, 1120), angle, angle + 80, fill=accent, width=3)
+        ILLUSTRATIONS[scene["theme"]](icon_draw, local + scene["variant"] * 2, ink, accent, dim, panel, art["iconFonts"][factor])
     progress = max(0, min(1, seconds / plan["duration"]))
-    draw.rounded_rectangle((96, 1560, 876, 1566), radius=3, fill=dim)
     if progress > 0:
         draw.rounded_rectangle((96, 1560, 96 + max(1, 780 * progress), 1566), radius=3, fill=accent)
     return image
@@ -388,9 +457,10 @@ def main():
     for i, scene in enumerate(plan["scenes"]):
         render_frame(plan, story, i, min(scene["end"] - 0.1, scene["start"] + 0.8), art).save(output / f"scene-{i + 1:02d}.png")
     render_frame(plan, story, 0, 0, art).save(output / "card.png")
-    (output / "graphics-layout.json").write_text(json.dumps({"version": 2, "renderSize": [720, 1280],
+    (output / "graphics-layout.json").write_text(json.dumps({"version": plan["version"], "renderSize": [720, 1280],
         "safeArea": [96, 160, 876, 1566], "artworkBounds": [96, 680, 876, 1135],
-        "scenes": [{"fontSize": size, "lines": lines, "excerpt": scene["excerpt"], "start": scene["start"], "end": scene["end"]}
+        "scenes": [{"fontSize": size, "lines": lines, "excerpt": scene["excerpt"], "layout": scene.get("layout", "panel"),
+                    "terms": scene.get("terms", []), "start": scene["start"], "end": scene["end"]}
                    for scene, (size, lines) in zip(plan["scenes"], art["layouts"])]}, indent=2), encoding="utf-8")
     if not args.preview_only:
         encode_video(plan, story, art, output, args.ffmpeg, args.video_file)

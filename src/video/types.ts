@@ -44,6 +44,7 @@ export interface NarrationTiming {
 }
 
 export type GraphicTheme = 'network' | 'code' | 'comparison' | 'research' | 'chip' | 'robot' | 'security' | 'policy' | 'number' | 'link';
+export type GraphicLayout = 'hero' | 'panel' | 'split' | 'stat' | 'source';
 
 export interface VideoScene {
   start: number;
@@ -55,11 +56,13 @@ export interface VideoScene {
   excerpt: boolean;
   kind: 'headline' | 'detail' | 'source';
   variant: number;
+  layout?: GraphicLayout;
+  terms?: string[];
   callout?: string;
 }
 
 export interface VideoStoryboard {
-  version: 2;
+  version: 3;
   duration: number;
   fps: 15;
   width: 1080;
