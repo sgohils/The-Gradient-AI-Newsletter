@@ -10,7 +10,7 @@ import { buildNewsletterHtml, buildNewsletterText, sendEmail } from '../mailer';
 import { getResendSubscribers } from '../mailer';
 import { Article, NewsletterIssue, Source } from '../types';
 import type { Config } from '../config';
-import { buildVideoInput } from '../video/input';
+import { buildDailyVideoInput } from '../video/input';
 import { writeJson } from '../video/storage';
 
 export interface CliOptions {
@@ -187,7 +187,7 @@ export async function runPipeline(cliOptions: CliOptions): Promise<OrchestratorR
   if (!cliOptions.dryRun) {
     try {
       videoInputPath = path.join(outputDir, `${issue.date}.video.json`);
-      writeJson(videoInputPath, buildVideoInput(issue.date, summaries));
+      writeJson(videoInputPath, buildDailyVideoInput(issue.date, summaries, articles));
       if (process.env.GITHUB_OUTPUT) {
         fs.appendFileSync(process.env.GITHUB_OUTPUT, `video_input=${videoInputPath}\nissue_date=${issue.date}\n`);
       }

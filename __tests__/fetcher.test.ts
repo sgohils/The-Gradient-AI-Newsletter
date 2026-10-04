@@ -2,6 +2,7 @@ import { describe, it, expect, vi, beforeEach } from 'vitest';
 import { fetchArticles, setParserInstance, deduplicateArticles } from '../src/fetcher/fetcher';
 import { DEFAULT_SOURCES } from '../src/fetcher/sources';
 import { Article } from '../src/types';
+import Parser from 'rss-parser';
 
 describe('fetcher', () => {
   const mockParseURL = vi.fn();
@@ -16,6 +17,25 @@ describe('fetcher', () => {
   });
 
   describe('source registration', () => {
+    it('uses the full encoded RSS article when its description is only a teaser', async () => {
+      const full = '<p>Complete source evidence with more detail. </p>'.repeat(20);
+      const feed = await new Parser().parseString(`<?xml version="1.0"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+        <channel><title>Test feed</title><link>https://example.com</link><description>Test</description>
+        <item><title>Full article</title><link>https://example.com/full</link><pubDate>Sun, 04 Oct 2026 12:00:00 GMT</pubDate>
+        <description>Short teaser.</description><content:encoded><![CDATA[${full}]]></content:encoded></item></channel></rss>`);
+      mockParseURL.mockResolvedValue(feed);
+      const [article] = await fetchArticles({ sources: [DEFAULT_SOURCES[0]] });
+      expect(article.description).toBe('Short teaser.');
+      expect(article.sourceExcerpt).toBe(full);
+      expect(article.sourcePublishedAt).toBe('Sun, 04 Oct 2026 12:00:00 GMT');
+    });
+    it('does not count scripts or markup as a richer source body', async () => {
+      const visible = 'Actual source evidence. '.repeat(30);
+      mockParseURL.mockResolvedValue({ items: [{ title: 'Visible evidence', link: 'https://example.com/visible',
+        contentSnippet: visible, content: `<script>${'ignored '.repeat(1000)}</script><p>Short.</p>` }] });
+      const [article] = await fetchArticles({ sources: [DEFAULT_SOURCES[0]] });
+      expect(article.sourceExcerpt).toBe(visible);
+    });
     it('retains full RSS evidence without expanding the newsletter summary prompt', async () => {
       const content = 'Original source evidence. '.repeat(50);
       mockParseURL.mockResolvedValue({ items: [{ title: 'Original evidence', link: 'https://example.com/evidence', contentSnippet: content }] });

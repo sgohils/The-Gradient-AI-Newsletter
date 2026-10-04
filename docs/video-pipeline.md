@@ -1,6 +1,6 @@
 # Daily AI news videos
 
-The newsletter writes `posts/YYYY-MM-DD.video.json` with ranked stories, summaries, original RSS evidence, source URLs, and publication times. The existing 07:00 UTC schedule and UTC issue dates are unchanged. Video work runs only after the newsletter commit succeeds. Use **Re-run failed jobs** to retry video failures without rerunning newsletter delivery.
+The newsletter writes `posts/YYYY-MM-DD.video.json` with up to 25 ranked video candidates, original RSS evidence, source URLs, and publication times. Newsletter stories come first, followed by other fresh, relevant articles from the same feeds; these extra candidates need no summary API calls. Full RSS content is retained when it contains more evidence than the short description. The existing 07:00 UTC schedule and UTC issue dates are unchanged. Video work runs only after the newsletter commit succeeds. Use **Re-run failed jobs** to retry video failures without rerunning newsletter delivery.
 
 Live publishing starts disabled because the accounts are not connected. Connect and verify them before activation.
 
@@ -92,7 +92,9 @@ Both requests include source attribution and AI disclosure. YouTube receives syn
 
 ## Selection, retries, and recovery
 
-The highest-ranked unused story within 72 hours is selected if it has enough original evidence. The story and script are frozen across reruns. Canonical source URLs suppress repeats across dates, including changed tracking parameters. Missing input fails; empty, stale, repeated, or insufficient-evidence input skips. A skipped issue never uploads an earlier video.
+The highest-ranked unused story within 72 hours is tried if it has at least 60 words of original evidence. If its script fails validation, the next eligible story is tried using the offline fallback; the entire render still makes at most one Groq request. A story is frozen only after its script passes validation, and an existing choice is preserved across reruns. Canonical source URLs suppress repeats across dates, including changed tracking parameters. Missing input fails; empty, stale, repeated, or insufficient-evidence input skips. Skip messages report candidate counts and rejection reasons. A skipped issue never uploads an earlier video.
+
+Daily YouTube automation attempts a new video after each scheduled newsletter when repository **Variables** `VIDEO_ENABLED=true` and `VIDEO_PUBLISH_ENABLED=true` are set. It cannot guarantee an upload every day: the feeds must contain a fresh, unused story with enough evidence for a validated 75–105 word script. Re-running an old issue does not fetch new candidates when its exported input already exists; use the next current newsletter issue for new stories.
 
 The small ledger stores story identity, content hash, media, submission keys, provider IDs, platform states, and live URLs. Published platforms are never reposted. Temporary failures use bounded backoff and the same frozen request/key. Known failed posts use the existing-post retry endpoint. Reconcile pending IDs without uploads using:
 

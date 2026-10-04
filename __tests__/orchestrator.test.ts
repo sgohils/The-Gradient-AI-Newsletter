@@ -84,6 +84,26 @@ describe('orchestrator', () => {
   });
 
   describe('pipeline flow', () => {
+    it('exports additional video candidates without summarizing or publishing extra newsletter articles', async () => {
+      const primary = createMockArticle('newsletter', 'OpenAI Blog');
+      const fallback = createMockArticle('fallback', 'OpenAI Blog');
+      fallback.sourceExcerpt = 'A complete original sentence supporting the latest artificial intelligence research. '.repeat(10);
+      vi.spyOn(configModule, 'loadConfig').mockReturnValue(createMockConfig());
+      vi.spyOn(fetcherModule, 'fetchArticles').mockResolvedValue([primary, fallback]);
+      vi.spyOn(curatorModule, 'curate').mockImplementation((articles, options) =>
+        (options?.rules?.maxStories === 25 ? articles : [primary]).map(article => ({
+          ...article, score: 1, scoreDetails: { source: 1, recency: 1, keywords: 1, engagement: 1 },
+        })));
+      vi.spyOn(summarizerModule, 'summarizeArticle').mockResolvedValue({ headline: primary.title, intro: '', body: 'Newsletter body', sourceUrl: primary.url });
+      vi.spyOn(publisherModule, 'publish').mockResolvedValue({ mdPath: 'test-posts/issue.md', htmlPath: 'test-posts/issue.html' });
+      const result = await runPipeline({ dryRun: false });
+      expect(summarizerModule.summarizeArticle).toHaveBeenCalledTimes(1);
+      expect(publisherModule.publish).toHaveBeenCalledWith(expect.objectContaining({ articles: [expect.objectContaining({ id: primary.id })] }), expect.anything());
+      expect(videoStorage.writeJson).toHaveBeenCalledWith(result.videoInputPath, expect.objectContaining({ stories: [
+        expect.objectContaining({ id: primary.id, rank: 1, summary: 'Newsletter body' }),
+        expect.objectContaining({ id: fallback.id, rank: 2, summary: '', sourceExcerpt: fallback.sourceExcerpt.trim() }),
+      ] }));
+    });
     it('continues newsletter delivery when the optional video export fails', async () => {
       const article = createMockArticle('lab', 'Lab');
       const config = createMockConfig(); config.mailer.resendApiKey = 'configured-test-key';

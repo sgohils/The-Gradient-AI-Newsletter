@@ -1,8 +1,8 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import { captionChunks, buildSrt, buildAss } from './captions';
-import { generateScript } from './script';
-import { selectStory } from './selection';
+import { generateScript, validateScript } from './script';
+import { assessStoryCandidates } from './selection';
 import { compactLedger, fileSha256, readInput, readJson, readLedger, readManifest, sha256, writeJson } from './storage';
 import { runCommand } from './process';
 import { NarrationTiming, VideoManifest } from './types';
@@ -28,15 +28,15 @@ export async function renderVideo(options: RenderOptions): Promise<{ manifestPat
   const directory = path.resolve(options.outputDir || 'video-output', input.issueDate);
   fs.mkdirSync(directory, { recursive: true });
   const manifestPath = path.join(directory, 'manifest.json');
-  const story = selectStory(input, ledger, options.now);
+  const candidates = assessStoryCandidates(input, ledger, options.now);
+  let story = candidates.stories[0];
   if (!story) {
-    const manifest: VideoManifest = { version: 1, status: 'skipped', issueDate: input.issueDate, reason: 'No fresh, unused story with enough original source evidence.' };
+    const manifest: VideoManifest = { version: 1, status: 'skipped', issueDate: input.issueDate, reason: candidates.reason };
     writeJson(manifestPath, manifest);
     return { manifestPath, manifest };
   }
-  const entry = ledger.issues[input.issueDate] ||= { story, selectedAt: (options.now || new Date()).toISOString(), platforms: {} };
-  writeJson(ledgerPath, ledger);
-  const submitted = Boolean(entry.media || Object.values(entry.platforms).some(p => p?.firstSubmittedAt || p?.status === 'published'));
+  let entry = ledger.issues[input.issueDate];
+  const submitted = Boolean(entry && (entry.media || Object.values(entry.platforms).some(p => p?.firstSubmittedAt || p?.status === 'published')));
   if (options.rebuild && submitted) throw new Error('This video was already submitted; restore its original artifact instead of rebuilding it.');
   if (!options.rebuild && fs.existsSync(manifestPath)) {
     const cached = readManifest(manifestPath);
@@ -45,17 +45,39 @@ export async function renderVideo(options: RenderOptions): Promise<{ manifestPat
         fileSha256(path.join(directory, cached.videoFile)) === cached.videoSha256) {
       await runCommand(options.python || process.env.VIDEO_PYTHON || (process.platform === 'win32' ? 'python' : 'python3'),
         [path.resolve('scripts/video/verify.py'), '--directory', directory]);
+      if (!entry) {
+        validateScript(story, cached.script);
+        ledger.issues[input.issueDate] = { story, script: cached.script,
+          selectedAt: (options.now || new Date()).toISOString(), platforms: {} };
+        writeJson(ledgerPath, ledger);
+      }
       return { manifestPath, manifest: cached };
     }
   }
   if (submitted) throw new Error('The submitted video artifact is missing or changed; restore it before retrying.');
-  try {
-    entry.script ||= await generateScript(story, options);
-  } catch (error) {
-    const manifest: VideoManifest = { version: 1, status: 'skipped', issueDate: input.issueDate, reason: error instanceof Error ? error.message : 'Insufficient script evidence.' };
+  let script = entry?.script;
+  let lastFailure = '';
+  for (const [index, candidate] of candidates.stories.entries()) {
+    if (script) break;
+    try {
+      // Only the first candidate may call Groq. Later candidates use source
+      // sentences locally, keeping the entire render to at most one request.
+      script = await generateScript(candidate, index === 0 ? options : {});
+      story = candidate;
+    } catch (error) {
+      lastFailure = error instanceof Error ? error.message : 'Insufficient script evidence.';
+    }
+  }
+  if (!script) {
+    const manifest: VideoManifest = { version: 1, status: 'skipped', issueDate: input.issueDate,
+      reason: `None of ${candidates.stories.length} eligible stories produced a valid source-grounded script. ${lastFailure}` };
     writeJson(manifestPath, manifest);
     return { manifestPath, manifest };
   }
+  // Freeze only a validated choice. An unusable first story must not lock the
+  // date and prevent another eligible story from being tried on a later run.
+  entry ||= ledger.issues[input.issueDate] = { story, selectedAt: (options.now || new Date()).toISOString(), platforms: {} };
+  entry.script = script;
   writeJson(ledgerPath, ledger);
   fs.writeFileSync(path.join(directory, 'script.txt'), entry.script.narration, 'utf8');
   const python = options.python || process.env.VIDEO_PYTHON || (process.platform === 'win32' ? 'python' : 'python3');

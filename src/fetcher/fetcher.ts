@@ -1,6 +1,7 @@
 import Parser from 'rss-parser';
 import { Article, Source } from '../types';
 import { DEFAULT_SOURCES, getEnabledSources } from './sources';
+import { plainText } from '../text';
 
 let parserInstance: any = new Parser();
 
@@ -48,13 +49,19 @@ function mapFeedItemToArticle(item: any, source: Source): Article {
   const publishedAt = item.pubDate ? new Date(item.pubDate) : new Date();
   const description =
     item.contentSnippet || item.content || item.summary || '';
+  // A short RSS description often accompanies a complete content:encoded body.
+  // Choose by visible text so HTML, scripts, and styles cannot inflate evidence.
+  const sourceExcerpt = [item['content:encoded'], item.content, item.summary,
+    item['content:encodedSnippet'], item.contentSnippet]
+    .filter((value): value is string => typeof value === 'string')
+    .sort((a, b) => plainText(b).length - plainText(a).length)[0] || '';
 
   return {
     id: `${source.id}-${encodeURIComponent(url)}`,
     title,
     url,
     description: description.length > 500 ? description.substring(0, 500) : description,
-    sourceExcerpt: String(item.contentSnippet || item.content || item.summary || '').slice(0, 20000),
+    sourceExcerpt: sourceExcerpt.slice(0, 20000),
     sourcePublishedAt: String(item.pubDate || item.isoDate || ''),
     publishedAt,
     sourceId: source.id,
