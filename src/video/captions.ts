@@ -46,12 +46,10 @@ export function buildSrt(timing: NarrationTiming): string {
 }
 
 export function buildAss(timing: NarrationTiming): string {
-  const header = `[Script Info]\nScriptType: v4.00+\nPlayResX: 1080\nPlayResY: 1920\nWrapStyle: 0\n\n[V4+ Styles]\nFormat: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding\nStyle: Caption,DejaVu Sans,52,&H00FFFFFF,&H00FFFFFF,&H00212420,&H00212420,-1,0,0,0,100,100,0,0,3,12,0,5,100,220,0,1\n\n[Events]\nFormat: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text\n`;
+  const header = `[Script Info]\nScriptType: v4.00+\nPlayResX: 1080\nPlayResY: 1920\nWrapStyle: 2\n\n[V4+ Styles]\nFormat: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding\nStyle: Caption,DejaVu Sans,52,&H00FFFFFF,&H00FFFFFF,&H00212420,&H00212420,-1,0,0,0,100,100,0,0,3,12,0,5,100,220,0,1\n\n[Events]\nFormat: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text\n`;
   return header + captionChunks(timing).map((chunk) => {
     const text = chunk.text.replace(/[{}\\\r\n]/g, '');
-    const words = text.split(' ');
-    const split = words.length > 4 || text.length > 28 ? Math.ceil(words.length / 2) : words.length;
-    const lines = words.slice(0, split).join(' ') + (split < words.length ? `\\N${words.slice(split).join(' ')}` : '');
-    return `Dialogue: 0,${timestamp(chunk.start, true)},${timestamp(chunk.end, true)},Caption,,0,0,0,,{\\pos(482,1290)\\fad(55,55)}${lines}`;
+    // assets.py measures the installed font before choosing line breaks and size.
+    return `Dialogue: 0,${timestamp(chunk.start, true)},${timestamp(chunk.end, true)},Caption,,0,0,0,,{\\pos(482,1290)\\fad(55,55)}${text}`;
   }).join('\n') + '\n';
 }
