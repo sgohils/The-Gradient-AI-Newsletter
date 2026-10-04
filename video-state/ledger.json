@@ -1,4 +1,41 @@
 {
   "version": 1,
-  "issues": {}
+  "issues": {
+    "2026-10-04": {
+      "story": {
+        "id": "openai-blog-https%3A%2F%2Fopenai.com%2Findex%2Fpractical-guide-building-gpt-6",
+        "rank": 1,
+        "title": "A model guide for the GPT-6 family",
+        "sourceUrl": "https://openai.com/index/practical-guide-building-gpt-6",
+        "sourceName": "OpenAI Blog",
+        "publishedAt": "2026-10-02T16:15:00.000Z",
+        "sourceExcerpt": "GPT-6 is our most advanced suite of models yet , and offers you a choice of models for different kinds of work.\n\nWhether you’re turning an idea into a working prototype, building and testing a feature, or orchestrating multi-step workflows across code repositories, databases, and external APIs, this guide explains how to choose a GPT-6 model, give it effective instructions, manage long-running work, and prepare for production.",
+        "summary": "**What happened:** OpenAI published a concise guide that walks startups through selecting the right GPT‑6 model, adjusting reasoning effort, refining prompts and skills, orchestrating external tools, and shaping production‑ready workflows.\r\n\r\n**Why it matters:** As generative AI matures, early‑stage companies need clear, actionable advice to avoid costly trial‑and‑error and to deploy reliable, high‑performance AI services at scale.\r\n\r\n**Key stats:** No specific metrics were disclosed in the brief, but the guide covers multiple model sizes, configurable reasoning depth, and best‑practice integration patterns for enterprise pipelines.\r\n\r\n**Source:** https://openai.com/index/practical-guide-building-gpt-6"
+      },
+      "selectedAt": "2026-10-04T18:53:29.796Z",
+      "platforms": {
+        "youtube": {
+          "accountId": "",
+          "status": "blocked",
+          "idempotencyKey": "953b3218-3cee-48e5-94db-f654d4a3326c",
+          "error": "No active youtube account matches the configured ID; connect it in Zernio."
+        }
+      },
+      "script": {
+        "provider": "groq",
+        "sentences": [
+          {
+            "text": "GPT-6 is our most advanced suite of models yet , and offers you a choice of models for different kinds of work.",
+            "evidenceQuote": "GPT-6 is our most advanced suite of models yet , and offers you a choice of models for different kinds of work."
+          },
+          {
+            "text": "Whether you’re turning an idea into a working prototype, building and testing a feature, or orchestrating multi-step workflows across code repositories, databases, and external APIs, this guide explains how to choose a GPT-6 model, give it effective instructions, manage long-running work, and prepare for production.",
+            "evidenceQuote": "Whether you’re turning an idea into a working prototype, building and testing a feature, or orchestrating multi-step workflows across code repositories, databases, and external APIs, this guide explains how to choose a GPT-6 model, give it effective instructions, manage long-running work, and prepare for production."
+          }
+        ],
+        "narration": "Today's AI story: A model guide for the GPT-6 family.\nGPT-6 is our most advanced suite of models yet , and offers you a choice of models for different kinds of work. Whether you’re turning an idea into a working prototype, building and testing a feature, or orchestrating multi-step workflows across code repositories, databases, and external APIs, this guide explains how to choose a GPT-6 model, give it effective instructions, manage long-running work, and prepare for production.\nReporting from OpenAI Blog. The original source is linked in the description."
+      },
+      "contentHash": "de84672ba672ac1b50aa5eea55c36d42c6d676bf0bf13e3c5a0a1b887c109d6b"
+    }
+  }
 }
