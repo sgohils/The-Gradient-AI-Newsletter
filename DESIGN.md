@@ -1,19 +1,12 @@
 # The Gradient design system
 
-## Product audit
+## Direction
 
-The app is a Next.js App Router publication backed by Markdown files in `posts/`. The homepage renders the latest issue, publication counts, a daily briefing signup, and recent issues. `/archive` fetches the issue API and supports search, date filtering, and pagination. `/archive/[date]` reads an issue server-side and provides article summaries, source links, reading time, and previous/next navigation. `/subscribe` and the subscribe/unsubscribe API handle newsletter enrollment. Theme selection uses `next-themes` with system preference support. The issue model and editorial copy remain in Markdown; subscriber behavior remains in the existing API and mailer.
+The publication uses paper and ink, an evergreen accent, serif editorial headlines, and compact sans-serif metadata. Content establishes the identity: the homepage pairs the publication introduction with actual headlines from the latest edition.
 
-The former visual language used a dark hero, animated cursor mesh, multiple cyan/blue/purple gradients, floating translucent cards, several independent font families, and oversized rounded controls. The new system treats the publication itself as the visual identity: paper and ink, a restrained evergreen signal, serif editorial headlines, compact metadata, and thin rules. Real issue counts stay data-derived. Navigation now links only to implemented routes.
+The signature mark is three descending evergreen rules. It appears in the masthead, favicon, and default social preview. There is no continuous background animation.
 
-## Principles
-
-- Editorial content leads. Interfaces should read like a technical publication, not a dashboard or conversion template.
-- Use asymmetry, type, alignment, and rules to structure the page; add a filled surface only when it groups an interaction.
-- Motion is brief and informative. Avoid continuous effects and honor `prefers-reduced-motion`.
-- Preserve issue content, metadata, article links, archive behavior, signup behavior, and themes.
-
-## Tokens
+## Color
 
 | Role | Light | Dark |
 | --- | --- | --- |
@@ -22,38 +15,54 @@ The former visual language used a dark hero, animated cursor mesh, multiple cyan
 | Secondary surface | `#eeede7` | `#303733` |
 | Text | `#202421` | `#ecece5` |
 | Secondary text | `#555c57` | `#c0c5be` |
-| Muted text | `#777e78` | `#9ba39c` |
+| Muted text | `#626c65` | `#9ba39c` |
 | Border | `#d9dcd5` | `#414943` |
 | Accent | `#176b5b` | `#87c4ae` |
 
-Semantic CSS variables live in `web/app/globals.css`. Components should use `--background`, `--surface`, `--foreground`, `--text-secondary`, `--text-muted`, `--border`, `--accent`, `--accent-hover`, `--success`, `--warning`, `--error`, and `--focus` rather than local color literals.
+Tokens and prose defaults live in the global stylesheet. The editorial stylesheet supplies the shared layouts, typography scale, controls, and responsive rules. Components use semantic variables so both themes express the same hierarchy.
 
-## Type
+## Type and layout
 
-- Display: Georgia / Times, `clamp(2.4rem, 5vw, 3.25rem)`, 1.08 line height, balanced measure.
-- Headline: Georgia / Times, 2–3rem, medium weight, tight tracking.
-- Title: Georgia / Times, 1.25–1.75rem, 1.2 line height.
-- Subtitle: Inter, 1.125rem, 1.6 line height.
-- Body: Inter, 1rem, 1.65 line height; long-form text capped near 68 characters.
-- Small: Inter, .875rem, 1.5 line height.
-- Metadata/caption: Inter, .75rem, compact, muted; uppercase tracking used sparingly.
-- Button: Inter, .875rem, semibold.
+- **Display:** Georgia/Times, 54–86px on the homepage; italic evergreen emphasis.
+- **Page headline:** Georgia/Times, responsive 38–62px.
+- **Section headline:** Georgia/Times, 28–46px.
+- **Story headline:** Georgia/Times, 23–25px; compact latest-edition headlines use Inter.
+- **Body:** Inter, 14–16px; long-form prose uses a 68-character measure.
+- **Metadata:** Inter, 10–12px, muted; tracked uppercase reserved for short labels.
+- **Container:** 1200px maximum, including 32px desktop or 20px mobile gutters.
+- **Reading page:** 840px maximum, with comfortable text measures.
+- **Spacing:** 4, 8, 12, 16, 20, 24, 28, 32, 40, 48, 64, 72, 80, and 96px.
+- **Controls:** 48px primary actions; 44px navigation/theme controls, with a 40px theme button on the narrowest layouts.
+- **Surfaces:** thin rules, 3px control radii, and a subtle shadow only on the latest-edition panel.
 
-Inter is the interface/body face. Georgia supplies the editorial contrast for headlines. Metadata uses the body face with a restrained tracking treatment.
+## Page conventions
 
-## Layout and interaction
+1. The homepage presents the latest edition once, followed by data-derived statistics, six earlier editions, and subscription information.
+2. Edition panels and issue cards display dates, leading stories, and source labels. Missing featured images leave a complete text layout.
+3. Archive cards retain URL-based search, date, pagination, and return navigation. Their story headlines are derived server-side without changing the issue API response.
+4. The reading page keeps source links, story anchors, contents navigation, reading time, and adjacent editions.
+5. The About page uses an ordered six-stage pipeline, project facts, and explicit engineering tradeoffs.
+6. The shared subscription form reports actual outcomes. Without email configuration, it presents an archive link instead of a simulated signup.
 
-- Spacing follows 4, 8, 12, 16, 24, 32, 48, 64, and 96px increments.
-- Radii: 3px small, 7px medium, 12px large. Editorial content usually uses square edges.
-- Borders are one-pixel semantic rules. Shadows are limited to subtle control separation; no glow.
-- Motion uses 140ms fast and 220ms base transitions with `cubic-bezier(.2,.7,.2,1)`. Reduced motion disables nonessential motion.
-- Main reading width: 68ch. Desktop content width: 1120px. Mobile gutters: 20px; desktop gutters: 32px.
-- Breakpoints follow the existing Tailwind defaults: 640px, 768px, 1024px, 1280px.
-- Keyboard focus uses a 2px semantic focus outline with 3px offset. Controls retain visible text labels and live signup status.
+## Responsive behavior
 
-## Signature conventions
+- **Desktop:** introduction beside latest edition; three archive/card columns; three pipeline columns.
+- **Tablet:** two archive/card columns; two pipeline columns; signup controls can stack.
+- **Mobile:** introduction followed by edition; two-by-two statistics; collapsible navigation; stacked project/story sections.
+- **Below 540px:** single-column cards and pipeline; stacked signup controls.
 
-1. A compact masthead marked by one vertical evergreen rule.
-2. Thin horizontal rules separating edition sections and article entries.
-3. Tight issue metadata in muted uppercase text.
-4. Evergreen link and action color, used only for navigation and action affordance.
+Mobile navigation exposes its expanded state, closes after navigation, and returns focus to the menu button on Escape.
+
+## Accessibility and states
+
+Every page shares a skip-to-content link, semantic navigation, and visible focus outlines. Themes persist through next-themes. Native button keyboard behavior handles theme changes without a duplicate key handler.
+
+Route loading uses a labeled skeleton. Empty archives and missing issues use explanatory content. Unexpected load failures reach a retryable route error boundary; layout components have a dedicated client error boundary. Signup status uses a live region and keeps provider details out of user-facing errors.
+
+Motion is limited to brief control transitions and loading feedback. Reduced-motion preferences disable nonessential animation, smooth scrolling, and hover translation.
+
+## Visual verification
+
+Playwright checks the five primary pages at desktop, tablet, and mobile widths in both themes. Browser checks also exercise overflow, archive filters and return navigation, unavailable signup, keyboard controls, invalid dates, story anchors, and reduced motion.
+
+Final homepage screenshots in both themes, a mobile preview, and the About page are stored in `docs/screenshots/` and embedded in the README.

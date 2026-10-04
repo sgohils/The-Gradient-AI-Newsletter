@@ -5,11 +5,18 @@ on:
     - cron: "0 7 * * *"
   workflow_dispatch:
 
+concurrency:
+  group: gradient-daily-pipeline
+  cancel-in-progress: false
+
 jobs:
   publish:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+    outputs:
+      video_input: ${{ steps.newsletter.outputs.video_input }}
+      issue_date: ${{ steps.newsletter.outputs.issue_date }}
 
     steps:
       - name: Checkout repository
@@ -29,6 +36,7 @@ jobs:
         run: npm ci
 
       - name: Run publisher
+        id: newsletter
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
@@ -42,3 +50,78 @@ jobs:
           git add posts/
           git diff --cached --quiet || git commit -m "chore: publish daily newsletter issue"
           git push
+
+      - name: Retain newsletter video input
+        if: steps.newsletter.outputs.video_input != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: daily-video-input
+          path: ${{ steps.newsletter.outputs.video_input }}
+          retention-days: 7
+          if-no-files-found: error
+
+  video:
+    needs: publish
+    if: vars.VIDEO_ENABLED == 'true' && needs.publish.outputs.video_input != ''
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    permissions:
+      contents: write
+    env:
+      GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+      ZERNIO_API_KEY: ${{ secrets.ZERNIO_API_KEY }}
+      ZERNIO_YOUTUBE_ACCOUNT_ID: ${{ vars.ZERNIO_YOUTUBE_ACCOUNT_ID }}
+      ZERNIO_TIKTOK_ACCOUNT_ID: ${{ vars.ZERNIO_TIKTOK_ACCOUNT_ID }}
+      VIDEO_LEDGER_GIT_SYNC: '1'
+      ISSUE_DATE: ${{ needs.publish.outputs.issue_date }}
+    steps:
+      # Read the latest newsletter commit and publication ledger, not the trigger SHA.
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - uses: actions/download-artifact@v4
+        with:
+          name: daily-video-input
+          path: video-input
+      - name: Reconcile pending provider posts
+        if: vars.VIDEO_PUBLISH_ENABLED == 'true'
+        run: node dist/scripts/video-publish.js --reconcile-only
+      - uses: ./.github/actions/video-runtime
+      - name: Render today's story
+        id: render
+        run: node dist/scripts/video-render.js --input "video-input/$ISSUE_DATE.video.json"
+      - name: Publish connected platforms
+        if: vars.VIDEO_PUBLISH_ENABLED == 'true' && steps.render.outputs.status == 'ready'
+        env:
+          TIKTOK_ENABLED: ${{ vars.VIDEO_TIKTOK_ENABLED }}
+          MANIFEST: ${{ steps.render.outputs.manifest }}
+        shell: bash
+        run: |
+          platforms=youtube
+          approval=()
+          if [ "$TIKTOK_ENABLED" = true ]; then
+            platforms=youtube,tiktok
+            if [ -f "video-state/approvals/$ISSUE_DATE.json" ]; then
+              approval=(--tiktok-approval "video-state/approvals/$ISSUE_DATE.json")
+            fi
+          fi
+          node dist/scripts/video-publish.js --manifest "$MANIFEST" --platforms "$platforms" "${approval[@]}"
+      - name: Persist selected story and final platform states
+        if: always()
+        run: node -e 'const {gitCheckpoint}=require("./dist/src/video/cli"); gitCheckpoint("video-state/ledger.json")().catch(e=>{console.error(e.message);process.exitCode=1})'
+      - name: Retain video and recovery ledger
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: daily-video-output
+          path: |
+            video-output/
+            video-state/ledger.json
+          retention-days: 7

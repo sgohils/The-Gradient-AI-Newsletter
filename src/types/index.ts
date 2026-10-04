@@ -4,6 +4,10 @@ export interface Article {
   url: string;
   description?: string;
   content?: string;
+  /** Original feed text retained for video evidence; not sent to the newsletter LLM. */
+  sourceExcerpt?: string;
+  /** Original feed timestamp; empty means unknown, even if curation uses a fallback date. */
+  sourcePublishedAt?: string;
   publishedAt: Date;
   sourceId: string;
   sourceName: string;
@@ -58,3 +62,5 @@ export interface SummarizerConfig {
   groqModel?: string;
   groqTemperature?: number;
 }
+
+export type { VideoInput, VideoManifest } from '../video/types';

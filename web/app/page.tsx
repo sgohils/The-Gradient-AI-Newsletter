@@ -1,32 +1,25 @@
 import HeroSection from "@/components/hero-section";
 import StatsBar from "@/components/stats-bar";
-import FeaturedCard from "@/components/featured-card";
 import HomeGrid from "@/components/home-grid";
 import DataLoader from "@/components/data-loader";
+import SubscriptionSection from "@/components/subscription-section";
 
-export default async function Home() {
+export const dynamic = "force-dynamic";
+export default function Home() {
   return (
     <DataLoader>
-      {({ issues }) => {
-        const latestIssue = issues[0] ?? {
-          id: "",
-          title: "The Gradient",
-          date: "",
-          intro: "Your daily AI newsletter.",
-          tags: [],
-          featuredImageUrl: undefined,
-          articles: [],
-        };
-
-        return (
-          <>
-            <HeroSection />
-            <FeaturedCard issue={latestIssue} />
-            <StatsBar issues={issues} />
-            <HomeGrid issues={issues} />
-          </>
-        );
-      }}
+      {({ issues }) => (
+        <>
+          <HeroSection issue={issues[0]} />
+          {issues.length > 0 && (
+            <>
+              <StatsBar issues={issues} />
+              <HomeGrid issues={issues} />
+            </>
+          )}
+          <SubscriptionSection />
+        </>
+      )}
     </DataLoader>
   );
 }

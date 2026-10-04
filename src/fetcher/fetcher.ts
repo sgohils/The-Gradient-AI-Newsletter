@@ -54,6 +54,8 @@ function mapFeedItemToArticle(item: any, source: Source): Article {
     title,
     url,
     description: description.length > 500 ? description.substring(0, 500) : description,
+    sourceExcerpt: String(item.contentSnippet || item.content || item.summary || '').slice(0, 20000),
+    sourcePublishedAt: String(item.pubDate || item.isoDate || ''),
     publishedAt,
     sourceId: source.id,
     sourceName: source.name,

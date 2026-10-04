@@ -1,89 +1,53 @@
-'use client';
+import Link from "next/link";
+import SubscribeBox from "@/components/subscribe-box";
+import { readIssuesFromMarkdown } from "@/lib/posts";
 
-import { useState } from 'react';
+export const dynamic = "force-dynamic";
+export const metadata = {
+  title: "Subscribe | The Gradient",
+  description: "Get The Gradient’s daily AI briefing in your inbox.",
+};
 
 export default function SubscribePage() {
-  const [email, setEmail] = useState('');
-  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
-  const [message, setMessage] = useState('');
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setStatus('loading');
-    setMessage('');
-
-    try {
-      const response = await fetch('/api/subscribe', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email }),
-      });
-
-      const data = await response.json();
-
-      if (response.ok) {
-        setStatus('success');
-        setMessage('You\'re subscribed! Check your inbox for confirmation.');
-        setEmail('');
-      } else {
-        setStatus('error');
-        setMessage(data.error || 'Something went wrong. Please try again.');
-      }
-    } catch {
-      setStatus('error');
-      setMessage('Something went wrong. Please try again.');
-    }
-  };
-
+  const latest = readIssuesFromMarkdown()[0];
   return (
-    <div className="min-h-screen flex items-center justify-center px-4">
-      <div className="max-w-md w-full">
-        <div className="text-center mb-8">
-          <h1 className="text-3xl font-bold mb-2">Subscribe to The Gradient</h1>
-          <p className="text-[var(--text-secondary)]">
-            Get the latest AI news delivered to your inbox every day.
-          </p>
-        </div>
-
-        <form onSubmit={handleSubmit} className="space-y-4">
-          <div>
-            <label htmlFor="email" className="block text-sm font-medium mb-1">
-              Email address
-            </label>
-            <input
-              id="email"
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="you@example.com"
-              required
-              className="w-full px-4 py-2 border border-[var(--border)] rounded-md bg-background text-foreground "
-            />
-          </div>
-
-          <button
-            type="submit"
-            disabled={status === 'loading'}
-            className="primary-button w-full"
-          >
-            {status === 'loading' ? 'Subscribing...' : 'Subscribe'}
-          </button>
-
-          {message && (
-            <p
-              className={`text-sm text-center ${
-                status === 'success' ? 'text-[var(--success)]' : 'text-[var(--error)]'
-              }`}
-            >
-              {message}
-            </p>
-          )}
-        </form>
-
-        <p className="text-xs text-[var(--text-secondary)] text-center mt-6">
-          By subscribing, you agree to receive email newsletters. You can unsubscribe at any time.
+    <div className="site-container subscribe-page">
+      <div>
+        <p className="eyebrow accent-text">The Gradient / Delivered</p>
+        <h1 className="page-title mt-5">
+          Make room for
+          <br />
+          <em>better signal.</em>
+        </h1>
+        <p className="mt-6 max-w-[45ch] text-[var(--text-secondary)]">
+          A daily selection of AI research and industry updates, with a summary
+          of what happened and links to the original work.
         </p>
+        <ul className="subscription-benefits">
+          <li>Research, releases, and the bigger picture.</li>
+          <li>A short briefing with sources you can follow.</li>
+          <li>Every edition saved in a searchable archive.</li>
+        </ul>
+        {latest && (
+          <Link className="text-link" href={`/archive/${latest.date}`}>
+            Read a recent edition first <span aria-hidden="true">→</span>
+          </Link>
+        )}
       </div>
+      <section className="signup-panel" aria-labelledby="signup-heading">
+        <p className="eyebrow mb-4">Your daily reading ritual</p>
+        <h2 id="signup-heading" className="text-3xl mb-3">
+          The next edition awaits.
+        </h2>
+        <p className="text-sm text-[var(--text-secondary)] mb-7">
+          Sign up for the daily briefing.
+        </p>
+        <SubscribeBox available={Boolean(process.env.RESEND_API_KEY)} />
+        <p className="mt-5 text-xs text-[var(--text-muted)]">
+          By subscribing, you agree to receive newsletter emails. You can
+          unsubscribe at any time.
+        </p>
+      </section>
     </div>
   );
 }

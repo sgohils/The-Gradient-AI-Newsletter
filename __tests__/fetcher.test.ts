@@ -16,6 +16,14 @@ describe('fetcher', () => {
   });
 
   describe('source registration', () => {
+    it('retains full RSS evidence without expanding the newsletter summary prompt', async () => {
+      const content = 'Original source evidence. '.repeat(50);
+      mockParseURL.mockResolvedValue({ items: [{ title: 'Original evidence', link: 'https://example.com/evidence', contentSnippet: content }] });
+      const articles = await fetchArticles({ sources: [DEFAULT_SOURCES[0]] });
+      expect(articles[0].description).toHaveLength(500);
+      expect(articles[0].sourceExcerpt).toBe(content);
+      expect(articles[0].sourcePublishedAt).toBe('');
+    });
     it('should include all expected RSS sources', () => {
       const ids = DEFAULT_SOURCES.map((s) => s.id);
       expect(ids).toContain('techcrunch-ai');

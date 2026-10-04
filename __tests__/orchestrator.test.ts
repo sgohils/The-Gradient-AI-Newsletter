@@ -4,8 +4,18 @@ import * as fetcherModule from '../src/fetcher/fetcher';
 import * as curatorModule from '../src/curator';
 import * as summarizerModule from '../src/summarizer/summarizer';
 import * as publisherModule from '../src/publisher/publisher';
-import { Article, Config, Source } from '../src/types';
+import * as mailerModule from '../src/mailer';
+import * as videoStorage from '../src/video/storage';
+import * as fs from 'fs';
+import * as path from 'path';
+import type { Config } from '../src/config';
+import { Article, Source } from '../src/types';
 import { runPipeline, CliOptions } from '../src/cli/orchestrator';
+
+vi.mock('../src/mailer', async (importOriginal) => {
+  const actual = await importOriginal<typeof import('../src/mailer')>();
+  return { ...actual, getResendSubscribers: vi.fn().mockResolvedValue([]), sendEmail: vi.fn().mockResolvedValue(undefined) };
+});
 
 function createMockConfig(sources: Source[] = []): Config {
   return {
@@ -15,6 +25,8 @@ function createMockConfig(sources: Source[] = []): Config {
     outputDir: 'test-posts',
     sources,
     maxArticles: 5,
+    mailer: {},
+    imageGeneration: { enabled: false, outputDir: 'test-images', model: 'flux' },
   };
 }
 
@@ -34,6 +46,9 @@ function createMockArticle(sourceId: string, sourceName: string): Article {
 describe('orchestrator', () => {
   beforeEach(() => {
     vi.restoreAllMocks();
+    vi.spyOn(videoStorage, 'writeJson').mockImplementation(() => {});
+    vi.mocked(mailerModule.getResendSubscribers).mockReset().mockResolvedValue([]);
+    vi.mocked(mailerModule.sendEmail).mockReset().mockResolvedValue(undefined);
   });
 
   describe('argument parsing', () => {
@@ -69,6 +84,20 @@ describe('orchestrator', () => {
   });
 
   describe('pipeline flow', () => {
+    it('continues newsletter delivery when the optional video export fails', async () => {
+      const article = createMockArticle('lab', 'Lab');
+      const config = createMockConfig(); config.mailer.resendApiKey = 'configured-test-key';
+      vi.spyOn(configModule, 'loadConfig').mockReturnValue(config);
+      vi.spyOn(fetcherModule, 'fetchArticles').mockResolvedValue([article]);
+      vi.spyOn(curatorModule, 'curate').mockReturnValue([{ ...article, score: 1 } as any]);
+      vi.spyOn(summarizerModule, 'summarizeArticle').mockResolvedValue({ headline: article.title, intro: 'Intro', body: 'Body', sourceUrl: article.url });
+      vi.spyOn(publisherModule, 'publish').mockResolvedValue({ mdPath: 'test-posts/issue.md', htmlPath: 'test-posts/issue.html' });
+      vi.mocked(videoStorage.writeJson).mockImplementation(() => { throw new Error('Video export disk failure'); });
+      vi.mocked(mailerModule.getResendSubscribers).mockResolvedValue([{ email: 'reader@example.com', token: 'token', subscribedAt: '2026-01-01' }]);
+      const result = await runPipeline({ dryRun: false });
+      expect(result.issuesPublished).toBe(1); expect(result.videoInputPath).toBeUndefined();
+      expect(mailerModule.sendEmail).toHaveBeenCalledTimes(1);
+    });
     it('should run the full pipeline successfully', async () => {
       const source1: Source = { id: 'openai-blog', name: 'OpenAI Blog', feedUrl: 'https://example.com/rss', category: 'Company Blog', priorityWeight: 5, enabled: true };
       const source2: Source = { id: 'anthropic-blog', name: 'Anthropic Blog', feedUrl: 'https://example.com/rss2', category: 'Company Blog', priorityWeight: 5, enabled: true };
@@ -107,6 +136,10 @@ describe('orchestrator', () => {
       expect(result.issuesPublished).toBe(1);
       expect(result.mdPath).toContain('.md');
       expect(result.htmlPath).toContain('.html');
+      expect(result.videoInputPath).toMatch(/\.video\.json$/);
+      expect(videoStorage.writeJson).toHaveBeenCalledWith(result.videoInputPath, expect.objectContaining({
+        version: 1, stories: expect.arrayContaining([expect.objectContaining({ sourceExcerpt: article1.description, summary: 'Test body' })]),
+      }));
     });
 
     it('should reuse fallback when summarizer fails', async () => {
@@ -195,7 +228,10 @@ describe('orchestrator', () => {
       const source1: Source = { id: 'openai-blog', name: 'OpenAI Blog', feedUrl: 'https://example.com/rss', category: 'Company Blog', priorityWeight: 5, enabled: true };
       const article1 = createMockArticle('openai-blog', 'OpenAI Blog');
 
-      vi.spyOn(configModule, 'loadConfig').mockReturnValue(createMockConfig([source1]));
+      const config = createMockConfig([source1]);
+      config.mailer.resendApiKey = 'configured-test-key';
+      vi.spyOn(configModule, 'loadConfig').mockReturnValue(config);
+      vi.mocked(mailerModule.getResendSubscribers).mockResolvedValue([{ email: 'reader@example.com', token: 'test', subscribedAt: '2026-01-01' }]);
       vi.spyOn(fetcherModule, 'fetchArticles').mockResolvedValue([article1]);
       vi.spyOn(curatorModule, 'curate').mockReturnValue([
         { ...article1, score: 0.9, scoreDetails: { source: 1, recency: 1, keywords: 1, engagement: 1 } } as any,
@@ -212,6 +248,15 @@ describe('orchestrator', () => {
       expect(result.issuesPublished).toBe(1);
       expect(result.mdPath).toContain('.md');
       expect(result.htmlPath).toContain('.html');
+      expect(fs.readFileSync(result.mdPath, 'utf-8')).toContain('Test body');
+      expect(fs.readFileSync(result.htmlPath, 'utf-8')).toContain('Test body');
+      expect(mailerModule.getResendSubscribers).not.toHaveBeenCalled();
+      expect(mailerModule.sendEmail).not.toHaveBeenCalled();
+      expect(result.videoInputPath).toBeUndefined();
+      expect(videoStorage.writeJson).not.toHaveBeenCalled();
+      fs.unlinkSync(result.mdPath);
+      fs.unlinkSync(result.htmlPath);
+      fs.rmdirSync(path.dirname(result.mdPath));
     });
   });
 });

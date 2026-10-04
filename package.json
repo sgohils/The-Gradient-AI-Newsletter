@@ -5,9 +5,13 @@
   "main": "dist/scripts/run.js",
   "scripts": {
     "build": "tsc",
+    "typecheck": "tsc --noEmit",
     "dev": "npm run build && node dist/scripts/run.js",
     "publish": "npm run build && node dist/scripts/run.js",
     "backfill-image": "npm run build && node dist/scripts/backfill-image.js",
+    "video:render": "npm run build && node dist/scripts/video-render.js",
+    "video:publish": "npm run build && node dist/scripts/video-publish.js",
+    "video:sample": "npm run build && node dist/scripts/video-sample.js",
     "test": "vitest run",
     "lint": "eslint src --ext .ts"
   },

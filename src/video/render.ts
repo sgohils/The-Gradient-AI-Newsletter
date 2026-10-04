@@ -1,0 +1,109 @@
+import * as fs from 'fs';
+import * as path from 'path';
+import { captionChunks, buildSrt, buildAss } from './captions';
+import { generateScript } from './script';
+import { selectStory } from './selection';
+import { compactLedger, fileSha256, readInput, readJson, readLedger, readManifest, sha256, writeJson } from './storage';
+import { runCommand } from './process';
+import { NarrationTiming, VideoManifest } from './types';
+import { buildStoryboard, GRAPHICS_VERSION } from './graphics';
+
+export interface RenderOptions {
+  inputPath: string;
+  outputDir?: string;
+  ledgerPath?: string;
+  python?: string;
+  ffmpeg?: string;
+  groqApiKey?: string;
+  groqModel?: string;
+  now?: Date;
+  rebuild?: boolean;
+}
+
+export async function renderVideo(options: RenderOptions): Promise<{ manifestPath: string; manifest: VideoManifest }> {
+  const input = readInput(options.inputPath);
+  const ledgerPath = path.resolve(options.ledgerPath || 'video-state/ledger.json');
+  const ledger = readLedger(ledgerPath);
+  compactLedger(ledger, options.now);
+  const directory = path.resolve(options.outputDir || 'video-output', input.issueDate);
+  fs.mkdirSync(directory, { recursive: true });
+  const manifestPath = path.join(directory, 'manifest.json');
+  const story = selectStory(input, ledger, options.now);
+  if (!story) {
+    const manifest: VideoManifest = { version: 1, status: 'skipped', issueDate: input.issueDate, reason: 'No fresh, unused story with enough original source evidence.' };
+    writeJson(manifestPath, manifest);
+    return { manifestPath, manifest };
+  }
+  const entry = ledger.issues[input.issueDate] ||= { story, selectedAt: (options.now || new Date()).toISOString(), platforms: {} };
+  writeJson(ledgerPath, ledger);
+  const submitted = Boolean(entry.media || Object.values(entry.platforms).some(p => p?.firstSubmittedAt || p?.status === 'published'));
+  if (options.rebuild && submitted) throw new Error('This video was already submitted; restore its original artifact instead of rebuilding it.');
+  if (!options.rebuild && fs.existsSync(manifestPath)) {
+    const cached = readManifest(manifestPath);
+    if (cached.status === 'ready' && (cached.graphicsVersion === GRAPHICS_VERSION || submitted) &&
+        cached.story.id === story.id && fs.existsSync(path.join(directory, cached.videoFile)) &&
+        fileSha256(path.join(directory, cached.videoFile)) === cached.videoSha256) {
+      await runCommand(options.python || process.env.VIDEO_PYTHON || (process.platform === 'win32' ? 'python' : 'python3'),
+        [path.resolve('scripts/video/verify.py'), '--directory', directory]);
+      return { manifestPath, manifest: cached };
+    }
+  }
+  if (submitted) throw new Error('The submitted video artifact is missing or changed; restore it before retrying.');
+  try {
+    entry.script ||= await generateScript(story, options);
+  } catch (error) {
+    const manifest: VideoManifest = { version: 1, status: 'skipped', issueDate: input.issueDate, reason: error instanceof Error ? error.message : 'Insufficient script evidence.' };
+    writeJson(manifestPath, manifest);
+    return { manifestPath, manifest };
+  }
+  writeJson(ledgerPath, ledger);
+  fs.writeFileSync(path.join(directory, 'script.txt'), entry.script.narration, 'utf8');
+  const python = options.python || process.env.VIDEO_PYTHON || (process.platform === 'win32' ? 'python' : 'python3');
+  const narrationKey = sha256(entry.script.narration + fs.readFileSync('scripts/video/narrate.py', 'utf8') +
+    fs.readFileSync('scripts/video/requirements.txt', 'utf8') + fs.readFileSync('scripts/video/constraints.txt', 'utf8'));
+  const narrationCache = path.join(directory, 'narration-cache.json');
+  if (!(fs.existsSync(narrationCache) && fs.existsSync(path.join(directory, 'audio.wav')) && fs.existsSync(path.join(directory, 'timing.json')) &&
+      (readJson(narrationCache) as { key?: string }).key === narrationKey)) {
+    await runCommand(python, [path.resolve('scripts/video/narrate.py'), '--script', path.join(directory, 'script.txt'), '--output-dir', directory]);
+    writeJson(narrationCache, { key: narrationKey });
+  }
+  const timing = readJson(path.join(directory, 'timing.json')) as NarrationTiming;
+  captionChunks(timing); // Fail before rendering when timing is broken or outside 30–45 seconds.
+  fs.writeFileSync(path.join(directory, 'captions.srt'), buildSrt(timing), 'utf8');
+  fs.writeFileSync(path.join(directory, 'captions.ass'), buildAss(timing), 'utf8');
+  writeJson(path.join(directory, 'storyboard.json'), buildStoryboard(story, entry.script, timing));
+  writeJson(path.join(directory, 'story.json'), { issueDate: input.issueDate, title: story.title, sourceName: story.sourceName, sourceHost: new URL(story.sourceUrl).hostname });
+  await runCommand(python, [path.resolve('scripts/video/assets.py'), '--output-dir', directory]);
+  await runCommand(python, [path.resolve('scripts/video/graphics.py'), '--output-dir', directory]);
+  const ffmpeg = options.ffmpeg || process.env.VIDEO_FFMPEG || 'ffmpeg';
+  // All filter filenames are fixed relative names, never interpolated news text.
+  fs.writeFileSync(path.join(directory, 'render.filter'),
+    `[0:v]zoompan=z='1.008+0.008*sin(on/180)':x='iw/2-iw/zoom/2':y='ih/2-ih/zoom/2':d=1:s=1080x1920:fps=30,fade=t=in:st=0:d=0.35[paper];\n` +
+    `[2:v]fps=30,format=rgba[graphics];\n` +
+    `[paper][graphics]overlay=x=96:y=570:shortest=1,subtitles=captions.ass:fontsdir=fonts[v];\n` +
+    `[1:a]loudnorm=I=-16:TP=-1.5:LRA=11[a]\n`, 'utf8');
+  await runCommand(ffmpeg, ['-hide_banner', '-loglevel', 'error', '-y', '-loop', '1', '-framerate', '30', '-i', 'card.png',
+    '-i', 'audio.wav', '-framerate', '12', '-i', '.graphics-frames/frame-%05d.png',
+    '-filter_complex', fs.readFileSync(path.join(directory, 'render.filter'), 'utf8'), '-map', '[v]', '-map', '[a]', '-t', String(timing.duration),
+    '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '23', '-pix_fmt', 'yuv420p', '-r', '30', '-c:a', 'aac', '-b:a', '128k',
+    '-movflags', '+faststart', '-threads', '2', 'video.mp4'], directory);
+  const baseUrl = (process.env.NEWSLETTER_BASE_URL || 'https://gradientnews.app').replace(/\/$/, '');
+  const manifest: VideoManifest = {
+    version: 1, status: 'ready', issueDate: input.issueDate, story, script: entry.script,
+    graphicsVersion: GRAPHICS_VERSION,
+    ...(input.sample ? { sample: true } : {}),
+    duration: timing.duration, videoFile: 'video.mp4', videoSha256: fileSha256(path.join(directory, 'video.mp4')),
+    captionsFile: 'captions.srt', title: story.title.slice(0, 90),
+    description: `${story.title}\n\nSource: ${story.sourceName}\n${story.sourceUrl}\n\nThe Gradient: ${baseUrl}/archive/${input.issueDate}\nAI-generated narration. #AI #AINews #Shorts`,
+  };
+  entry.contentHash = sha256(JSON.stringify({ storyId: story.id, narration: entry.script.narration, title: manifest.title, description: manifest.description }));
+  writeJson(ledgerPath, ledger);
+  writeJson(manifestPath, manifest);
+  try {
+    await runCommand(python, [path.resolve('scripts/video/verify.py'), '--directory', directory]);
+  } catch (error) {
+    fs.unlinkSync(manifestPath); // An unverified file must never advertise itself as ready.
+    throw error;
+  }
+  return { manifestPath, manifest };
+}

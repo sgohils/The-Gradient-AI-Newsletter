@@ -1,0 +1,51 @@
+"""Verify a real encoded video, timing coverage, and non-silent audio locally/CI."""
+import argparse
+import json
+import os
+from pathlib import Path
+import re
+import subprocess
+
+
+def verify(directory):
+    import numpy as np
+    import soundfile as sf
+
+    manifest = json.loads((directory / "manifest.json").read_text(encoding="utf-8"))
+    if manifest["status"] != "ready":
+        raise ValueError("No finished video to verify")
+    probe = subprocess.run([os.environ.get("VIDEO_FFPROBE", "ffprobe"), "-v", "error", "-show_format", "-show_streams",
+                            "-of", "json", str(directory / manifest["videoFile"])], check=True, capture_output=True, text=True)
+    info = json.loads(probe.stdout)
+    video = next(s for s in info["streams"] if s["codec_type"] == "video")
+    audio_stream = next(s for s in info["streams"] if s["codec_type"] == "audio")
+    duration = float(info["format"]["duration"])
+    if not 30 <= duration <= 45 or abs(duration - manifest["duration"]) > 0.1:
+        raise ValueError(f"Encoded duration is invalid: {duration}")
+    if (video["width"], video["height"], video["codec_name"], video["pix_fmt"], video["r_frame_rate"]) != (1080, 1920, "h264", "yuv420p", "30/1"):
+        raise ValueError("Encoded video dimensions, frame rate, or codec are invalid")
+    if audio_stream["codec_name"] != "aac":
+        raise ValueError("Encoded audio must be AAC")
+    if (directory / manifest["videoFile"]).stat().st_size > 50 * 1024 * 1024:
+        raise ValueError("Video exceeds the artifact/upload size budget")
+    timing = json.loads((directory / "timing.json").read_text(encoding="utf-8"))
+    words = timing["words"]
+    previous = 0.0
+    for word in words:
+        if not word["text"] or word["start"] < previous - 0.025 or not 0 <= word["start"] < word["end"] <= duration:
+            raise ValueError("Word timings overlap or fall outside the video")
+        previous = word["end"]
+    clean = lambda text: "".join(re.findall(r"\w+", text.casefold()))
+    if clean(" ".join(w["text"] for w in words)) != clean(manifest["script"]["narration"]):
+        raise ValueError("Captions omit or change narration words")
+    audio, sample_rate = sf.read(directory / "audio.wav")
+    rms = float(np.sqrt(np.mean(audio ** 2)))
+    if sample_rate != 24000 or not np.isfinite(audio).all() or rms < 0.005:
+        raise ValueError("Narration audio is silent or invalid")
+    print(f"Verified: {duration:.2f}s, 1080x1920 H.264/30fps + AAC; {len(words)} caption tokens; narration RMS {rms:.4f}")
+
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--directory", type=Path, required=True)
+    verify(parser.parse_args().directory)

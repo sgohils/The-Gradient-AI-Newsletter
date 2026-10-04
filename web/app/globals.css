@@ -10,7 +10,7 @@
     --surface: #fbfaf7;
     --surface-secondary: #eeede7;
     --text-secondary: #555c57;
-    --text-muted: #777e78;
+    --text-muted: #626c65;
     --border: #d9dcd5;
     --accent: #176b5b;
     --accent-hover: #105447;
@@ -117,7 +117,7 @@
 .editorial-link:hover { color: var(--accent-hover); }
 .primary-button { display: inline-flex; align-items: center; justify-content: center; gap: .5rem; background: var(--accent); color: var(--on-accent); padding: 12px 20px; border-radius: var(--radius-md); font-weight: 600; }
 .primary-button:hover { background: var(--accent-hover); }
-.primary-button:disabled { opacity: .6; cursor: wait; }
+.primary-button:disabled { opacity: .65; cursor: wait; }
 .archive-filters { display: flex; flex-wrap: wrap; align-items: end; gap: 16px; }
 .archive-filters label { display: block; margin-bottom: 6px; font-size: .875rem; font-weight: 600; }
 .archive-filters input { width: 100%; min-width: 0; border: 1px solid var(--border); border-radius: var(--radius-md); background: var(--surface); color: var(--foreground); padding: 12px; }

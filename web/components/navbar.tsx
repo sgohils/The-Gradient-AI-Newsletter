@@ -1,12 +1,99 @@
 "use client";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import ThemeToggle from "@/components/theme-toggle";
+
+const links = [
+  { href: "/archive", label: "Archive" },
+  { href: "/about", label: "About" },
+  { href: "/subscribe", label: "Subscribe" },
+];
+
 export default function Navbar() {
   const [open, setOpen] = useState(false);
-  return <header className="border-b border-[var(--border)] bg-[var(--background)]"><nav aria-label="Main navigation" className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 sm:px-8">
-    <Link href="/" className="flex items-center gap-3" aria-label="The Gradient home"><span aria-hidden="true" className="h-7 w-[3px] bg-[var(--accent)]"/><span className="font-serif text-[22px] font-semibold tracking-[-.05em]">The Gradient</span><span className="hidden border-l border-[var(--border)] pl-3 text-[10px] uppercase tracking-[.14em] text-[var(--text-muted)] sm:block">AI, in focus</span></Link>
-    <div className="hidden items-center gap-7 md:flex"><Link className="text-sm text-[var(--text-secondary)] hover:text-[var(--accent)]" href="/archive">Archive</Link><Link className="text-sm font-semibold text-[var(--accent)]" href="/subscribe">Subscribe</Link><ThemeToggle /></div>
-    <div className="flex items-center gap-2 md:hidden"><ThemeToggle/><button type="button" aria-expanded={open} aria-controls="mobile-navigation" aria-label={open ? "Close navigation" : "Open navigation"} onClick={() => setOpen(!open)} className="border border-[var(--border)] px-3 py-2 text-sm">{open ? "Close" : "Menu"}</button></div>
-  </nav>{open && <div id="mobile-navigation" className="flex gap-6 border-t border-[var(--border)] px-5 py-4 md:hidden"><Link onClick={() => setOpen(false)} href="/archive">Archive</Link><Link onClick={() => setOpen(false)} href="/subscribe">Subscribe</Link></div>}</header>;
+  const pathname = usePathname();
+  const menuButton = useRef<HTMLButtonElement>(null);
+  return (
+    <header
+      className="masthead"
+      onKeyDown={(event) => {
+        if (event.key === "Escape" && open) {
+          setOpen(false);
+          menuButton.current?.focus();
+        }
+      }}
+    >
+      <nav
+        className="site-container masthead-inner"
+        aria-label="Main navigation"
+      >
+        <Link
+          href="/"
+          className="wordmark"
+          aria-label="The Gradient home"
+          onClick={() => setOpen(false)}
+        >
+          <span className="brand-mark" aria-hidden="true">
+            <span />
+            <span />
+            <span />
+          </span>
+          <span>
+            The Gradient<span className="wordmark-tagline">AI, IN FOCUS</span>
+          </span>
+        </Link>
+        <div className="desktop-navigation">
+          {links.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              aria-current={
+                pathname === link.href ||
+                (link.href === "/archive" && pathname.startsWith("/archive/"))
+                  ? "page"
+                  : undefined
+              }
+              className={
+                link.href === "/subscribe" ? "nav-subscribe" : "nav-link"
+              }
+            >
+              {link.label}
+            </Link>
+          ))}
+        </div>
+        <div className="navigation-controls">
+          <ThemeToggle />
+          <button
+            type="button"
+            ref={menuButton}
+            className="menu-button"
+            aria-expanded={open}
+            aria-controls="mobile-navigation"
+            onClick={() => setOpen(!open)}
+          >
+            {open ? "Close" : "Menu"}
+          </button>
+        </div>
+      </nav>
+      <nav
+        id="mobile-navigation"
+        aria-label="Mobile navigation"
+        className="mobile-navigation site-container"
+        hidden={!open}
+      >
+        {links.map((link) => (
+          <Link
+            key={link.href}
+            href={link.href}
+            aria-current={pathname === link.href ? "page" : undefined}
+            onClick={() => setOpen(false)}
+          >
+            {link.label}
+            <span aria-hidden="true">↗</span>
+          </Link>
+        ))}
+      </nav>
+    </header>
+  );
 }

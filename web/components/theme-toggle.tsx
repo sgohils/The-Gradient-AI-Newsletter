@@ -1,90 +1,40 @@
 "use client";
-
 import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
 import { useTheme } from "next-themes";
-import usePrefersReducedMotion from "@/hooks/use-prefers-reduced-motion";
-
-const iconVariants = {
-  initial: { scale: 0.5, opacity: 0, rotate: -90 },
-  animate: { scale: 1, opacity: 1, rotate: 0, transition: { duration: 0.3 } },
-  exit: { scale: 0.5, opacity: 0, rotate: 90, transition: { duration: 0.2 } },
-};
-
-const noMotionVariants = {
-  initial: { scale: 1, opacity: 1, rotate: 0 },
-  animate: { scale: 1, opacity: 1, rotate: 0, transition: { duration: 0 } },
-  exit: { scale: 1, opacity: 1, rotate: 0, transition: { duration: 0 } },
-};
 
 export default function ThemeToggle() {
   const { resolvedTheme, setTheme } = useTheme();
-  const prefersReducedMotion = usePrefersReducedMotion();
-  const reducedMotionVariants = prefersReducedMotion ? noMotionVariants : iconVariants;
   const [mounted, setMounted] = useState(false);
   useEffect(() => setMounted(true), []);
-
-  const showDark = mounted && resolvedTheme === "dark";
-
+  const isDark = mounted && resolvedTheme === "dark";
   return (
-    <motion.button
-      onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
-      className="relative flex h-9 w-9 items-center justify-center rounded-lg text-[var(--foreground)] transition-colors hover:bg-[var(--surface-secondary)]"
-      {...(prefersReducedMotion ? {} : { whileHover: { scale: 1.1 }, whileTap: { scale: 0.9 } })}
-       aria-label={`Switch to ${showDark ? "light" : "dark"} mode`}
+    <button
+      type="button"
+      className="theme-toggle"
+      disabled={!mounted}
+      aria-label={`Switch to ${isDark ? "light" : "dark"} mode`}
+      aria-pressed={isDark}
+      onClick={() => setTheme(isDark ? "light" : "dark")}
     >
-      <span className="sr-only">Toggle theme</span>
-      <motion.div className="relative" layout suppressHydrationWarning>
-        {showDark ? (
-          <motion.svg
-            key="moon"
-            variants={reducedMotionVariants}
-            initial="initial"
-            animate="animate"
-            exit="exit"
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            className="text-[var(--accent)]"
-          >
-            <path d="M12 3a6 6 0 0 0 9 9 6 6 0 1 1-9-9Z" />
-          </motion.svg>
+      <svg
+        aria-hidden="true"
+        width="19"
+        height="19"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+      >
+        {isDark ? (
+          <path d="M20.5 13.5A8.5 8.5 0 0 1 10.5 3.5a8.5 8.5 0 1 0 10 10Z" />
         ) : (
-          <motion.svg
-            key="sun"
-            variants={reducedMotionVariants}
-            initial="initial"
-            animate="animate"
-            exit="exit"
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            className="text-amber-500"
-          >
+          <>
             <circle cx="12" cy="12" r="4" />
-            <path d="M12 2v2" />
-            <path d="M12 20v2" />
-            <path d="m4.93 4.93 1.41 1.41" />
-            <path d="m17.66 17.66 1.41 1.41" />
-            <path d="M2 12h2" />
-            <path d="M20 12h2" />
-            <path d="m6.34 17.66-1.41 1.41" />
-            <path d="m19.07 4.93-1.41 1.41" />
-          </motion.svg>
+            <path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.4 1.4m11.2 11.2L19 19M5 19l1.4-1.4M17.6 6.4 19 5" />
+          </>
         )}
-      </motion.div>
-    </motion.button>
+      </svg>
+    </button>
   );
 }

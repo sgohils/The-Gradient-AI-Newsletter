@@ -1,26 +1,56 @@
-import { NextResponse } from 'next/server';
-import { addResendSubscriber } from '@/lib/mailer';
+import { NextResponse } from "next/server";
+import { addResendSubscriber } from "@/lib/mailer";
 
-export const dynamic = 'force-dynamic';
+export const dynamic = "force-dynamic";
 
 export async function POST(request: Request) {
+  let body: unknown;
   try {
-    const { email } = await request.json();
-
-    if (!email || typeof email !== 'string') {
-      return NextResponse.json({ error: 'Email is required' }, { status: 400 });
-    }
-
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-      return NextResponse.json({ error: 'Invalid email address' }, { status: 400 });
-    }
-
+    body = await request.json();
+  } catch {
+    return NextResponse.json(
+      { error: "Please send a valid email address." },
+      { status: 400 },
+    );
+  }
+  const email =
+    typeof body === "object" &&
+    body !== null &&
+    "email" in body &&
+    typeof body.email === "string"
+      ? body.email.trim()
+      : "";
+  if (!email)
+    return NextResponse.json({ error: "Email is required" }, { status: 400 });
+  if (email.length > 254 || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    return NextResponse.json(
+      { error: "Invalid email address" },
+      { status: 400 },
+    );
+  }
+  if (!process.env.RESEND_API_KEY) {
+    return NextResponse.json(
+      {
+        error:
+          "Email signup is currently unavailable. Please enjoy the archive and try again later.",
+      },
+      { status: 503 },
+    );
+  }
+  try {
     const subscriber = await addResendSubscriber(email);
-    return NextResponse.json({ success: true, email: subscriber.email }, { status: 201 });
+    return NextResponse.json(
+      { success: true, email: subscriber.email },
+      { status: 201 },
+    );
   } catch (error) {
-    console.error('Subscribe error:', error);
-    const message = error instanceof Error ? error.message : 'Internal server error';
-    return NextResponse.json({ error: message }, { status: 500 });
+    console.error(
+      "Subscribe failed:",
+      error instanceof Error ? error.name : "Unknown error",
+    );
+    return NextResponse.json(
+      { error: "We couldn’t subscribe you right now. Please try again later." },
+      { status: 500 },
+    );
   }
 }

@@ -10,6 +10,8 @@ import { buildNewsletterHtml, buildNewsletterText, sendEmail } from '../mailer';
 import { getResendSubscribers } from '../mailer';
 import { Article, NewsletterIssue, Source } from '../types';
 import type { Config } from '../config';
+import { buildVideoInput } from '../video/input';
+import { writeJson } from '../video/storage';
 
 export interface CliOptions {
   sources?: string[];
@@ -21,6 +23,7 @@ export interface OrchestratorResult {
   mdPath: string;
   htmlPath: string;
   issuesPublished: number;
+  videoInputPath?: string;
 }
 
 function parseArgs(argv: string[]): CliOptions {
@@ -50,7 +53,7 @@ function printUsage(): void {
 Options:
   --sources <ids>     Comma-separated source IDs to limit fetching (e.g. --sources openai-blog,arxiv-csai)
   --output-dir <dir>  Directory to write newsletter files (default: posts or config.json value)
-  --dry-run           Run the full pipeline but skip writing files to disk
+  --dry-run           Write previews to a temporary directory; skip publishing and email
   --help, -h          Show this help message`);
 }
 
@@ -150,6 +153,7 @@ export async function runPipeline(cliOptions: CliOptions): Promise<OrchestratorR
   console.log('[5/5] Publishing newsletter...');
   let mdPath = '';
   let htmlPath = '';
+  let videoInputPath: string | undefined;
 
   if (cliOptions.dryRun) {
     const dryRunDir = fs.mkdtempSync(path.join(os.tmpdir(), 'the-gradient-dry-run-'));
@@ -176,6 +180,26 @@ export async function runPipeline(cliOptions: CliOptions): Promise<OrchestratorR
     if (result.featuredImageUrl) {
       console.log(`  Featured image: ${result.featuredImageUrl}`);
     }
+  }
+
+  // Export original feed evidence, not the descriptions replaced by buildIssue.
+  // Video export is independent of newsletter and email delivery.
+  if (!cliOptions.dryRun) {
+    try {
+      videoInputPath = path.join(outputDir, `${issue.date}.video.json`);
+      writeJson(videoInputPath, buildVideoInput(issue.date, summaries));
+      if (process.env.GITHUB_OUTPUT) {
+        fs.appendFileSync(process.env.GITHUB_OUTPUT, `video_input=${videoInputPath}\nissue_date=${issue.date}\n`);
+      }
+    } catch (error) {
+      videoInputPath = undefined;
+      console.warn('Video input export failed; newsletter delivery will continue:', error);
+    }
+  }
+
+  if (cliOptions.dryRun) {
+    console.log('  Dry-run: subscriber lookup and email delivery skipped.');
+    return { mdPath, htmlPath, issuesPublished: 1 };
   }
 
   console.log('[6/6] Sending newsletter to subscribers...');
@@ -211,7 +235,7 @@ export async function runPipeline(cliOptions: CliOptions): Promise<OrchestratorR
   }
 
   console.log('Pipeline completed successfully.');
-  return { mdPath, htmlPath, issuesPublished: 1 };
+  return { mdPath, htmlPath, issuesPublished: 1, videoInputPath };
 }
 
 export async function main(): Promise<void> {
