@@ -2,7 +2,8 @@ name: Daily Newsletter Publisher
 
 on:
   schedule:
-    - cron: "0 7 * * *"
+    # Off the busy hour boundary, with safe recovery attempts later in the day.
+    - cron: "17 7,10,13 * * *"
   workflow_dispatch:
 
 concurrency:
@@ -15,13 +16,16 @@ jobs:
     permissions:
       contents: write
     outputs:
-      video_input: ${{ steps.newsletter.outputs.video_input }}
-      issue_date: ${{ steps.newsletter.outputs.issue_date }}
+      video_input: ${{ steps.newsletter.outputs.video_input || steps.preflight.outputs.video_input }}
+      issue_date: ${{ steps.preflight.outputs.issue_date }}
+      video_needed: ${{ steps.preflight.outputs.video_needed }}
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
+          # A delayed/queued retry must see earlier runs' committed issue files.
+          ref: ${{ github.event.repository.default_branch }}
           token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 0
 
@@ -35,15 +39,28 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Build pipeline
+        run: npm run build
+
+      - name: Check today's completed work
+        id: preflight
+        env:
+          VIDEO_ENABLED: ${{ vars.VIDEO_ENABLED }}
+          VIDEO_PUBLISH_ENABLED: ${{ vars.VIDEO_PUBLISH_ENABLED }}
+        run: node dist/scripts/daily-status.js
+
       - name: Run publisher
         id: newsletter
+        if: steps.preflight.outputs.newsletter_needed == 'true'
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           OUTPUT_DIR: posts
+          DAILY_ISSUE_DATE: ${{ steps.preflight.outputs.issue_date }}
         run: npm run publish
 
       - name: Commit and push new issue
+        if: steps.preflight.outputs.newsletter_needed == 'true'
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
@@ -52,17 +69,17 @@ jobs:
           git push
 
       - name: Retain newsletter video input
-        if: steps.newsletter.outputs.video_input != ''
+        if: steps.newsletter.outputs.video_input != '' || steps.preflight.outputs.video_input != ''
         uses: actions/upload-artifact@v4
         with:
           name: daily-video-input
-          path: ${{ steps.newsletter.outputs.video_input }}
+          path: ${{ steps.newsletter.outputs.video_input || steps.preflight.outputs.video_input }}
           retention-days: 7
           if-no-files-found: error
 
   video:
     needs: publish
-    if: vars.VIDEO_ENABLED == 'true' && needs.publish.outputs.video_input != ''
+    if: vars.VIDEO_ENABLED == 'true' && needs.publish.outputs.video_input != '' && needs.publish.outputs.video_needed == 'true'
     runs-on: ubuntu-24.04
     timeout-minutes: 25
     permissions:
@@ -93,9 +110,18 @@ jobs:
       - name: Reconcile pending provider posts
         if: vars.VIDEO_PUBLISH_ENABLED == 'true'
         run: node dist/scripts/video-publish.js --reconcile-only
+
+      - name: Check publication after reconciliation
+        id: preflight
+        env:
+          VIDEO_ENABLED: ${{ vars.VIDEO_ENABLED }}
+          VIDEO_PUBLISH_ENABLED: ${{ vars.VIDEO_PUBLISH_ENABLED }}
+        run: node dist/scripts/daily-status.js
       - uses: ./.github/actions/video-runtime
+        if: steps.preflight.outputs.video_needed == 'true'
       - name: Render today's story
         id: render
+        if: steps.preflight.outputs.video_needed == 'true'
         run: node dist/scripts/video-render.js --input "video-input/$ISSUE_DATE.video.json"
       - name: Publish connected platforms
         if: vars.VIDEO_PUBLISH_ENABLED == 'true' && steps.render.outputs.status == 'ready'

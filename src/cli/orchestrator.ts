@@ -11,7 +11,7 @@ import { getResendSubscribers } from '../mailer';
 import { Article, NewsletterIssue, Source } from '../types';
 import type { Config } from '../config';
 import { buildDailyVideoInput } from '../video/input';
-import { writeJson } from '../video/storage';
+import { assertIssueDate, writeJson } from '../video/storage';
 
 export interface CliOptions {
   sources?: string[];
@@ -70,7 +70,8 @@ function validateSources(sourceIds: string[], config: Config): Source[] {
 
 function buildIssue(articles: Article[], summaries: { article: Article; summary: { headline: string; intro: string; body: string; sourceUrl: string } }[]): NewsletterIssue {
   const now = new Date();
-  const date = now.toISOString().split('T')[0];
+  const date = process.env.DAILY_ISSUE_DATE || now.toISOString().split('T')[0];
+  assertIssueDate(date);
   const tags = Array.from(new Set(articles.map((a) => a.category).filter((c): c is string => !!c)));
   const intro = summaries[0]?.summary.intro || `The Gradient — ${date}`;
 

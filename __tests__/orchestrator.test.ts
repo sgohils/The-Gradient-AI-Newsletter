@@ -84,6 +84,25 @@ describe('orchestrator', () => {
   });
 
   describe('pipeline flow', () => {
+    it('uses the preflight edition date even when publication starts on a later UTC date', async () => {
+      const previousDate = process.env.DAILY_ISSUE_DATE;
+      process.env.DAILY_ISSUE_DATE = '2026-10-04';
+      try {
+        const article = createMockArticle('lab', 'Lab');
+        vi.spyOn(configModule, 'loadConfig').mockReturnValue(createMockConfig());
+        vi.spyOn(fetcherModule, 'fetchArticles').mockResolvedValue([article]);
+        vi.spyOn(curatorModule, 'curate').mockReturnValue([{ ...article, score: 1 } as any]);
+        vi.spyOn(summarizerModule, 'summarizeArticle').mockResolvedValue({ headline: article.title, intro: 'Intro', body: 'Body', sourceUrl: article.url });
+        vi.spyOn(publisherModule, 'publish').mockResolvedValue({ mdPath: 'test-posts/issue.md', htmlPath: 'test-posts/issue.html' });
+        await runPipeline({ dryRun: false });
+        expect(publisherModule.publish).toHaveBeenCalledWith(expect.objectContaining({ date: '2026-10-04' }), expect.anything());
+        expect(videoStorage.writeJson).toHaveBeenCalledWith(expect.stringContaining('2026-10-04.video.json'),
+          expect.objectContaining({ issueDate: '2026-10-04' }));
+      } finally {
+        if (previousDate === undefined) delete process.env.DAILY_ISSUE_DATE;
+        else process.env.DAILY_ISSUE_DATE = previousDate;
+      }
+    });
     it('exports additional video candidates without summarizing or publishing extra newsletter articles', async () => {
       const primary = createMockArticle('newsletter', 'OpenAI Blog');
       const fallback = createMockArticle('fallback', 'OpenAI Blog');
