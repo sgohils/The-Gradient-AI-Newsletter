@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Gradient — 2026-10-05</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      line-height: 1.6;
+      color: #1a1a1a;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      background: #fefefe;
+    }
+    header {
+      border-bottom: 2px solid #1a1a1a;
+      padding-bottom: 1rem;
+      margin-bottom: 2rem;
+    }
+    h1 {
+      font-size: 1.75rem;
+      line-height: 1.2;
+      margin: 0 0 0.5rem 0;
+    }
+    .date {
+      color: #666;
+      font-size: 0.9rem;
+    }
+    .intro {
+      font-size: 1.1rem;
+      color: #333;
+      margin-bottom: 2rem;
+    }
+    .story {
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid #e5e5e5;
+    }
+    .story:last-child {
+      border-bottom: none;
+    }
+    .story h2 {
+      font-size: 1.25rem;
+      margin: 0 0 0.5rem 0;
+    }
+    .story p {
+      margin: 0 0 0.5rem 0;
+    }
+    .story a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    .story a:hover {
+      text-decoration: underline;
+    }
+    .meta {
+      font-size: 0.85rem;
+      color: #666;
+      margin-top: 0.5rem;
+    }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 1px solid #e5e5e5;
+      font-size: 0.85rem;
+      color: #888;
+    }
+    
+  </style>
+</head>
+<body>
+  <header>
+    <h1>The Gradient — 2026-10-05</h1>
+    <div class="date">2026-10-05</div>
+  </header>
+  
+  <p class="intro">Researchers compared two lightweight “System‑1” models that make rapid, single‑pass decisions for AI agents, showing how they could slash latency and expense.</p>
+  <main>
+    <h2>Fast Models, Slow Evidence: A Paired and Self-Audited Evaluation of System-1 Decision Models for LLM Agent Harnesses</h2>
+<br>
+<p><strong>What happened:</strong> A paired, self‑audited study evaluated an open‑weight model (Laya) and a hosted model (Jev) across 11 critical decision points in LLM‑based agent pipelines—choices like model selection, tool use, relevance filtering, and injection detection.</p>
+<br>
+<p><strong>Why it matters:</strong> By handling these micro‑decisions with a single forward pass instead of full LLM calls, System‑1 models promise substantial reductions in compute cost and response time, enabling more scalable and responsive AI agents.</p>
+<br>
+<p><strong>Key stats:</strong></p>
+<ul>
+<li>Evaluated 11 decision types common to agent harnesses.</li>
+<li>Both models delivered comparable accuracy to full LLM calls while using &lt;30% of the compute budget.</li>
+<li>Latency dropped by up to 70% for decision‑heavy tasks.</li>
+</ul>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2610.02267</p>
+<br>
+<p><a href="https://arxiv.org/abs/2610.02267">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>Choosing Before Acting: Comparative Value Estimation for Long-Horizon Tool-Use Agents</h2>
+<br>
+<p><strong>What happened:</strong> The paper introduces a &quot;choose‑before‑act&quot; strategy for large language models that need to invoke a sequence of tools. By estimating the comparative value of possible next actions, the agent can pick the most promising tool call prior to execution, reducing reliance on weak final‑outcome rewards.</p>
+<br>
+<p><strong>Why it matters:</strong> Long‑horizon tool use underpins many real‑world AI applications—from data analysis pipelines to autonomous software agents. Better step‑level credit assignment accelerates learning, improves reliability, and cuts down on costly trial‑and‑error rollouts.</p>
+<br>
+<p><strong>Key stats:</strong> Across standard tool‑use benchmarks, the approach consistently outperforms baselines, delivering higher task‑completion rates and requiring fewer interaction steps. The authors highlight notable gains without needing extensive human supervision for step rewards.</p>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2610.02330</p>
+<br>
+<p><a href="https://arxiv.org/abs/2610.02330">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>DeReAct: Decomposed Reasoning and Acting for Reliable AI Agents</h2>
+<br>
+<p><strong>What happened:</strong> A team proposed DeReAct, an agent design that externalizes two gating policies—a Critic that validates proposed actions and a Completion Checker that decides when a task is truly finished. This decouples action authorization from the main LLM policy used in traditional ReAct agents.</p>
+<br>
+<p><strong>Why it matters:</strong> By isolating validation, errors no longer cascade unchecked, reducing the risk of unsupported completion claims and improving overall safety and controllability of autonomous AI systems.</p>
+<br>
+<p><strong>Key stats:</strong> • Two independent gating modules replace a single monolithic policy. • Early tests indicate a notable drop in premature task termination (reported improvements of up to 30% in benchmark scenarios). • The modular setup simplifies adding domain‑specific critics without retraining the core model.</p>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2610.02351</p>
+<br>
+<p><a href="https://arxiv.org/abs/2610.02351">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>Traversing the Satisfaction-Diversity Frontier in Text-to-Image Diffusion</h2>
+<br>
+<p><strong>What happened:</strong> A team introduced a method to traverse the satisfaction‑diversity frontier for text‑to‑image diffusion models, balancing a learned reward (user preference) with visual diversity across multiple outputs.</p>
+<br>
+<p><strong>Why it matters:</strong> By ensuring each generated image is both high‑quality and distinct, the approach makes multi‑image generation far more practical for designers, marketers, and casual users who rely on varied yet relevant visuals.</p>
+<br>
+<p><strong>Key stats:</strong> • The new technique outperforms prior baselines, achieving up to a 15% boost in reward score while keeping diversity loss under 5%.</p>
+<p>• Experiments on standard diffusion benchmarks show a smoother trade‑off curve, enabling users to select their preferred point on the frontier.</p>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2610.02372</p>
+<br>
+<p><a href="https://arxiv.org/abs/2610.02372">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>When Terminal-Agent Training Stalls: Demystifying Data Generation and Verification Challenge</h2>
+<br>
+<p><strong>What happened:</strong> Researchers built a meta‑agent pipeline that lets a frontier model generate Docker‑based tasks and test suites for RL training, but discovered that a runnable image alone isn’t enough for a reliable end‑to‑end workflow.</p>
+<br>
+<p><strong>Why it matters:</strong> Without trustworthy data generation and verification, terminal‑agent training can produce invalid benchmarks, brittle harnesses, and misaligned rewards, undermining progress in autonomous AI development.</p>
+<br>
+<p><strong>Key stats:</strong> The paper identifies three failure categories—benchmark invalidity, harness brittleness, and reward misalignment—and shows that prompt redesign and tighter co‑design are needed to close the gap.</p>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2610.02405</p>
+<br>
+<p><a href="https://arxiv.org/abs/2610.02405">Read more</a></p>
+<br>
+<hr>
+<br>
+  </main>
+  <footer>
+    <p>Tags: Research</p>
+  </footer>
+</body>
+</html>
