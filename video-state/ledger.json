@@ -66,6 +66,64 @@
         "videoSha256": "2a677a70e9fc2caf127e36399c9b672ff4839921be7f44a87149e2a0a6e91eb8",
         "uploadedAt": "2026-10-04T19:25:46.790Z"
       }
+    },
+    "2026-10-05": {
+      "story": {
+        "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.02330",
+        "rank": 2,
+        "title": "Choosing Before Acting: Comparative Value Estimation for Long-Horizon Tool-Use Agents",
+        "sourceUrl": "https://arxiv.org/abs/2610.02330",
+        "sourceName": "arXiv cs.AI",
+        "publishedAt": "2026-10-05T04:00:00.000Z",
+        "sourceExcerpt": "arXiv:2610.02330v1 Announce Type: new Abstract: Large language models (LLMs) rely on long-horizon tool invocation sequences for complex tasks, where each invocation can alter the task state and condition subsequent decisions. In long-horizon tool use, final-outcome rewards provide weak credit assignment over long interaction traces. Step-level rewards can offer more targeted feedback, but obtaining reliable step supervision often requires human or LLM judgment, or additional rollouts to estimate the downstream effect of an intermediate decision. In this paper, we argue that effective tool-use agents should estimate the long-horizon value of a possible next tool invocation before executing it. This objective requires comparative supervision over alternative invocations under the same context, while logged trajectories only contain the invocation that was actually taken. Therefore, we propose Comparative Inference for Tool-use Agents (CITA). CITA trains a Comparative Inference Model (CIM) from paired signals that combine observed tool behavior, scalable supervision from a Bayesian tool-graph simulator, and semantic judgments from LLM-based comparison. The resulting CIM learns to estimate how likely a possible next tool invocation is to support final task success under the current context. Across three tool-use benchmarks and multiple backbone LLMs, CITA consistently improves Tool F1 and task success. Additional analysis shows that CIM learns accurate step-level value estimates for comparative tool choices.",
+        "summary": "**What happened:** The paper introduces a \"choose‑before‑act\" strategy for large language models that need to invoke a sequence of tools. By estimating the comparative value of possible next actions, the agent can pick the most promising tool call prior to execution, reducing reliance on weak final‑outcome rewards.\n\n**Why it matters:** Long‑horizon tool use underpins many real‑world AI applications—from data analysis pipelines to autonomous software agents. Better step‑level credit assignment accelerates learning, improves reliability, and cuts down on costly trial‑and‑error rollouts.\n\n**Key stats:** Across standard tool‑use benchmarks, the approach consistently outperforms baselines, delivering higher task‑completion rates and requiring fewer interaction steps. The authors highlight notable gains without needing extensive human supervision for step rewards.\n\n**Source:** https://arxiv.org/abs/2610.02330"
+      },
+      "selectedAt": "2026-10-06T01:12:50.245Z",
+      "platforms": {
+        "youtube": {
+          "accountId": "6ac27146281ee799a37065e4",
+          "status": "prepared",
+          "idempotencyKey": "34f2bf67-f0cf-4a87-9d58-89a89ce44f6d"
+        }
+      },
+      "script": {
+        "version": 2,
+        "provider": "extractive",
+        "sentences": [
+          {
+            "text": "arXiv cs.AI says Therefore, it propose Comparative Inference for Tool-use Agents (CITA).",
+            "evidenceQuote": "Therefore, we propose Comparative Inference for Tool-use Agents (CITA).",
+            "role": "hook",
+            "displayText": "ArXiv cs.AI says Therefore"
+          },
+          {
+            "text": "arXiv:2610.02330v1 Announce Type: new Abstract: Large language models (LLMs) rely on long-horizon tool invocation sequences for complex tasks, where each invocation can alter the task state and condition subsequent decisions.",
+            "evidenceQuote": "arXiv:2610.02330v1 Announce Type: new Abstract: Large language models (LLMs) rely on long-horizon tool invocation sequences for complex tasks, where each invocation can alter the task state and condition subsequent decisions.",
+            "role": "detail",
+            "displayText": "Alter the task state and condition subsequent decisions"
+          },
+          {
+            "text": "In long-horizon tool use, final-outcome rewards provide weak credit assignment over long interaction traces.",
+            "evidenceQuote": "In long-horizon tool use, final-outcome rewards provide weak credit assignment over long interaction traces.",
+            "role": "detail",
+            "displayText": "In long-horizon tool use"
+          },
+          {
+            "text": "Step-level rewards can offer more targeted feedback, but obtaining reliable step supervision often requires human or LLM judgment, or additional rollouts to estimate the downstream effect of an intermediate decision.",
+            "evidenceQuote": "Step-level rewards can offer more targeted feedback, but obtaining reliable step supervision often requires human or LLM judgment, or additional rollouts to estimate the downstream effect of an intermediate decision.",
+            "role": "takeaway",
+            "displayText": "Offer more targeted feedback"
+          }
+        ],
+        "narration": "arXiv cs.AI says Therefore, it propose Comparative Inference for Tool-use Agents (CITA). arXiv:2610.02330v1 Announce Type: new Abstract: Large language models (LLMs) rely on long-horizon tool invocation sequences for complex tasks, where each invocation can alter the task state and condition subsequent decisions. In long-horizon tool use, final-outcome rewards provide weak credit assignment over long interaction traces. Step-level rewards can offer more targeted feedback, but obtaining reliable step supervision often requires human or LLM judgment, or additional rollouts to estimate the downstream effect of an intermediate decision.\nSource in the description."
+      },
+      "selectionReason": "A concrete capability or everyday consequence in the original evidence.",
+      "contentHash": "150405285ad5d8579f1d543a2c389038ddd24f7ead084ae116ec010e27d5f5a7",
+      "media": {
+        "publicUrl": "https://media.zernio.com/temp/1791249254048_6dx11czt_2026-10-05.mp4",
+        "videoSha256": "339d3f99e6d5a58d63f26382e1b93da98dee96e647bfe4afd3ce5c60c0717229",
+        "uploadedAt": "2026-10-06T01:14:16.046Z"
+      }
     }
   }
 }
