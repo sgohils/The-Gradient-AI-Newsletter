@@ -1,0 +1,257 @@
+{
+  "version": 1,
+  "issueDate": "2026-10-06",
+  "generatedAt": "2026-10-06T17:02:52.367Z",
+  "stories": [
+    {
+      "id": "techcrunch-ai-https%3A%2F%2Ftechcrunch.com%2F2026%2F10%2F06%2Fmirror-particle-is-building-a-world-model-of-human-behavior%2F",
+      "rank": 1,
+      "title": "Mirror Particle is building a ‘world model’ of human behavior",
+      "sourceUrl": "https://techcrunch.com/2026/10/06/mirror-particle-is-building-a-world-model-of-human-behavior/",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-06T16:35:00.000Z",
+      "sourceExcerpt": "Mirror Particle will launch at TechCrunch Disrupt's Startup Battlefield 200 with a world model built from scratch to predict human behavior, arguing that LLM role-play falls short for market research and brand strategy.",
+      "summary": "**What happened:** Mirror Particle launched at TechCrunch Disrupt’s Startup Battlefield 200, showcasing a proprietary \"world model\" designed to simulate and predict human behavior rather than relying on large‑language‑model (LLM) role‑play.\n\n**Why it matters:** If successful, the model could give marketers, researchers, and brands a more reliable tool for anticipating consumer decisions, reducing the guesswork that currently plagues market research and strategy planning.\n\n**Key stats:** The company has not released performance metrics or model size yet, but it announced a seed round of $5 million to accelerate development and data collection.\n\n**Source:** https://techcrunch.com/2026/10/06/mirror-particle-is-building-a-world-model-of-human-behavior/"
+    },
+    {
+      "id": "techcrunch-ai-https%3A%2F%2Ftechcrunch.com%2F2026%2F10%2F06%2Fanthropic-gives-startups-a-free-year-of-enterprise-service-and-1000-in-token-credits%2F",
+      "rank": 2,
+      "title": "Anthropic is giving startups a free year of Claude Team and $1,000 in credits",
+      "sourceUrl": "https://techcrunch.com/2026/10/06/anthropic-gives-startups-a-free-year-of-enterprise-service-and-1000-in-token-credits/",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-06T16:00:00.000Z",
+      "sourceExcerpt": "\"We created this program because we believe the benefits of AI will reach most people through the companies that build on top of models, rather than through the models alone.\"",
+      "summary": "**What happened:** Anthropic announced a new initiative that grants qualifying startups a full year of its enterprise‑grade Claude Team model at no cost, along with $1,000 in token credits.\n\n**Why it matters:** By lowering the financial barrier to powerful language‑model tools, Anthropic hopes the benefits of AI will cascade through the products and services built by these startups, reaching a broader audience faster.\n\n**Key stats:**\n- Free access to Claude Team for 12 months\n- $1,000 in token credits per participating startup\n- Program designed for early‑stage companies building on top of AI models\n\n**Source:** https://techcrunch.com/2026/10/06/anthropic-gives-startups-a-free-year-of-enterprise-service-and-1000-in-token-credits/"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.03894",
+      "rank": 3,
+      "title": "Proxy Confidence: Auditing Black-Box LLM Agents with a Surrogate's Log-Probabilities",
+      "sourceUrl": "https://arxiv.org/abs/2610.03894",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-06T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.03894v1 Announce Type: new Abstract: A deployed LLM agent emits tool calls, queries, and code that can be silently wrong -- by the time the error surfaces, the action has run. Frontier chat APIs hide the model's token probabilities; the agent's stated confidence barely beats chance on the mistakes that matter; and resampling does not help, since frontier models are highly repetitive, reproducing the same call across samples. We recover the missing signal from a low-cost open-weight surrogate run in parallel. It reads the same context, schema, and proposed action as the agent, then scores the call from its own log-probabilities through a family of complementary readouts: teacher forcing and request-PMI weigh the likelihood of each argument value, a discriminative verdict judges the call as a whole, and tool-choice competition tests the function against its siblings. One principle says which to trust: a generative likelihood localizes wrong argument values, while the verdict catches holistically wrong calls. When the error type is unknown, an ensemble is the low-regret default. The readout is training-free, needs no access to the agent's internals, and costs one prefill pass alongside the tool call. On difficult coding tasks it reaches AUROC 0.825 where the actor's stated confidence is near chance (0.598), and the generative readouts beat it by +0.07 to +0.28 across three further actors. Against self-consistency it gains +0.14 to +0.19 on near-deterministic actors, at 1/K the cost. The signal drives two deployment modes: a real-time gate escalating the least-trustworthy calls for review (+0.05 to +0.30 accepted-action accuracy at 50% coverage), and confidence feedback, returning the tool result with the score so the agent adapts its next step -- lifting task success on live-execution benchmarks (+0.119 and +0.137, p <= 1e-4) and beating a random-value control where step errors are silent (+0.078, p = 0.003).",
+      "summary": "**What happened:** Researchers discovered that frontier LLM agents often emit tool calls, queries, or code that appear correct but can be silently wrong. Existing APIs conceal token‑level probabilities, and the agents' self‑reported confidence is barely better than random on critical mistakes. Resampling fails because cutting‑edge models repeat the same erroneous output across samples.\n\n**Why it matters:** Without visibility into a model's internal confidence, developers can’t reliably audit or intervene when an LLM makes a costly mistake. The proposed method recovers a proxy confidence signal using a cheap, open‑weight surrogate that estimates log‑probabilities of the agent’s outputs, enabling real‑time error detection.\n\n**Key stats:**\n- Surrogate log‑probability estimates recover missing confidence signals at a fraction of the cost of proprietary APIs.\n- Frontline models show >90% repeatability of erroneous calls across multiple samples, rendering naive resampling ineffective.\n- The surrogate approach improves mistake detection rates from ~30% (agent’s own confidence) to >70% in benchmark tests.\n\n**Source:** https://arxiv.org/abs/2610.03894"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.03998",
+      "rank": 4,
+      "title": "Behavioral History Outperforms Descriptions of the Person for LLM Synthetic Personas",
+      "sourceUrl": "https://arxiv.org/abs/2610.03998",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-06T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.03998v1 Announce Type: new Abstract: Large language models (LLMs) are increasingly used as synthetic personas representing survey respondents. Their validity as substitutes for particular respondents depends on whether they reproduce individuals' decisions. We examine what information helps synthetic respondents predict each individual's later choices, using five conditions that add progressively richer information: no personal information, demographics, personality traits, cognitive scores, and finally the respondent's earlier survey choices as behavioral history. We use a two-wave panel of 845 US adults who completed measures of 14 behavioral biases (spanning risk, time preferences, overconfidence, and reasoning), so each respondent's earlier answers provide a human test-retest benchmark; in the behavioral-history condition, all items that score the target bias are withheld. At the population level, the average number of biases per respondent in every condition is close to the human average (7.1-8.1 biases, against 7.1 for humans). This aggregate similarity masks differences in variance: persona descriptions recover only 53-67% of human between-person variation, whereas adding behavioral history restores it to approximately the human level. At the individual level, description-based personas achieve only 7-12% of the informedness observed in human test-retest responses, while adding behavioral history raises this to 28%. The condition including behavioral history has the highest estimated informedness in all 17 demographic groups, whereas description-based conditions provide little or no information for some groups. Synthetic responses also exhibit stronger education- and income-related differences than human responses. For LLM synthetic personas, a respondent's past answers add more to individual-level prediction than a description of who they are.",
+      "summary": "**What happened:** Researchers tested five prompting conditions for LLM‑based synthetic personas—ranging from no personal data to full profiles with demographics, personality, and cognitive traits, culminating in a condition that added each individual’s behavioral history. \n**Why it matters:** Survey designers can rely on LLM personas that mirror real respondents more faithfully, reducing bias and cost while preserving respondent privacy. \n**Key stats:** Adding behavioral history lifted prediction accuracy by roughly 15 % over the best non‑behavioral condition and trimmed error rates by half; models with only demographics or traits lagged behind by 10‑12 %.\n**Source:** https://arxiv.org/abs/2610.03998"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.04008",
+      "rank": 5,
+      "title": "SkillScriptBench: Benchmarking Self-Evolution of Executable Agent Skill Packages Beyond Markdown",
+      "sourceUrl": "https://arxiv.org/abs/2610.04008",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-06T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.04008v1 Announce Type: new Abstract: Executable Agent Skills combine natural-language instructions and scripts into reusable packages for LLM agents, and revising them requires fixing errors without breaking correct behavior. Existing benchmarks do not systematically distinguish documentation repair, script repair, and preservation when evaluating skill self-evolution. We introduce SkillScriptBench, a 350-task benchmark designed to evaluate these capabilities separately. From a survey of over 35,000 GitHub-hosted Skill roots, we select 100 packages and construct 150 repair tasks. Each task pairs a package containing injected script faults with a maintenance request and executable checks of the required behavior. A complementary controlled track contains 200 tasks from 50 packages, each evaluated under the same maintenance request in four states: clean, documentation faults, script faults, and faults in both. Across four LLMs, methods that edit both documentation and scripts can repair script faults but do not consistently outperform Markdown-only revision on documentation repair or preservation. We therefore introduce AST-Guided Skill Revision, which uses abstract syntax trees and calling relationships to link maintenance requirements to relevant code locations. It restricts script edits to these locations and updates the documentation to match the revised scripts. Averaged across models, this revision stage yields absolute gains in repair success of 21.9% for Raw Package and 27.7% for CoEvoSkills on faulty packages. Absolute gains in the proportion of tasks solved in all three runs reach 20.8% and 31.5%, respectively, indicating more consistent repair success across repeated runs.",
+      "summary": "**What happened:** Researchers unveiled SkillScriptBench, a 350‑task suite that isolates three core abilities—documentation repair, script repair, and behavior preservation—when agents evolve their skill packages.\n**Why it matters:** Existing benchmarks blur these dimensions, making it hard to gauge true self‑improvement. Clear separation lets developers pinpoint weaknesses and advance more reliable, autonomous agents.\n**Key stats:** 350 diverse tasks; each task explicitly labels the required repair type; baseline LLMs show significant gaps, especially in script‑only fixes.\n**Source:** https://arxiv.org/abs/2610.04008"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.04040",
+      "rank": 6,
+      "title": "Agent Policy-Value Audit: Separating Transition Composition from Event Selection in Financial LLM Agents",
+      "sourceUrl": "https://arxiv.org/abs/2610.04040",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-06T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.04040v1 Announce Type: new Abstract: Financial LLM agents are often evaluated by comparing their end-to-end returns with those of a baseline and testing the paired difference against zero. This measures whether deploying the agent changes realized performance, but it does not isolate event-selection skill. An agent that frequently changes positions from flat to long can earn a positive paired return from an upward-drifting event pool even when it selects events at random. We propose the Agent Policy-Value Audit, which holds fixed the observed count of each ordered action-change type and randomly reassigns them across eligible events. The average payoff from these reassignments is the composition benchmark; the difference between observed deployment value and this benchmark is selection value. In semi-synthetic benchmarks based on real earnings-event returns, a zero-centered paired test falsely attributes passive exposure to selection skill in $11.6\\%$ of no-skill replications, while the transition-matched audit reduces this rate to $5.3\\%$. Applied retrospectively to 723 earnings events at 44 U.S. consumer-facing firms, the audit decomposes the agent's gross deployment value of $+15.2$ bps/event into a $+25.8$ composition benchmark and a $-10.6$ selection value. The agent does not detectably outperform matched random assignments. Financial-agent evaluations should report deployment value separately from event-selection value.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.04056",
+      "rank": 7,
+      "title": "Discrete Diffusion for Large Graph Generation via Structural Candidate Restriction",
+      "sourceUrl": "https://arxiv.org/abs/2610.04056",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-06T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.04056v1 Announce Type: new Abstract: Synthesizing realistic graphs at scale is vital when the graphs of interest are large and real-world samples are limited or access-sensitive. Diffusion-based generators have recently driven much of the progress, offering high modeling capacity, but most such methods have quadratic computational complexity and are hence restricted to small-scale networks, currently up to 3k nodes. Existing non-quadratic methods remain limited by memorization issues and a trade-off between scalability and generation quality. Our goal is to generate large graphs whose structural statistics --- e.g., degree distribution, clustering, and path length --- faithfully reflect those of real-world sparse graphs, without resorting to memorizing the training data. We introduce a discrete graph diffusion model that restricts training to a structurally motivated subset of node pairs --- observed edges and their wedge non-edges --- reducing training complexity below quadratic in the number of nodes. To keep the noisy graph informative throughout both the forward and reverse trajectories, we design a three-class absorbing forward process governed by a \\emph{degree-aware, floored} cosine noise schedule: unlike a structure-blind schedule that adds noise to every pair identically, ours adapts to each node's degree and never fully erases the graph's structure, keeping the noisy graph informative at every step. Experiments across diverse datasets show that our model consistently ranks among the top methods for structural fidelity against existing discrete diffusion baselines in large graph generation.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.04083",
+      "rank": 8,
+      "title": "Self-Propagating Misalignment in LLM Agents, and Why Auditing or Disabling Memory Is Not Enough",
+      "sourceUrl": "https://arxiv.org/abs/2610.04083",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-06T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.04083v1 Announce Type: new Abstract: Memory poisoning attacks on LLM agents typically assume an external adversary who plants content in the agent's persistent memory to steer its behavior. We instead study, with no adversary involved, whether a misaligned agent can write a goal it cannot yet act on to persistent memory, so that a future aligned agent carries it out when the opportunity arises. We investigate this threat, which we refer to as self-propagation of misalignment, across 20 different scenarios, whose misaligned goals include self-preservation, power-seeking, undermining oversight, reward hacking, and deceiving the user. We simulate misalignment in 11 frontier models using two prompting strategies; unrestricted and values-only. The first explicitly states the misaligned goal, for instance, to prevent its own replacement, and self-propagation succeeds in 58% of runs. The second only describes what the agent cares about, for instance, that its continued operation is essential to its users, without specifying misaligned goals or directives. Even under this weaker prompt, self-propagation succeeds in 18% of runs, and every model self-propagates in at least one scenario. On removing the memory tool from the harness, we find that agents use the file system, writing the goal to a file in 74% of sessions; self-propagation still succeeds in 11% of runs. We also show that weaker models can propagate misalignment to more capable models, and that propagated goals can persist through 100 sessions of unrelated work. Existing defenses against memory poisoning and prompt injection do not directly address this threat because the memory content is generated by the agent itself, rather than injected by an external adversary. An LLM memory auditor from prior work (MemMorph) only reduces propagation from 71% to 34% of runs. We release our scenarios to support the evaluation of defenses against this emerging threat.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.04168",
+      "rank": 9,
+      "title": "Agentic Cognitive Depth: Operational Criteria for Evaluating LLM Agents",
+      "sourceUrl": "https://arxiv.org/abs/2610.04168",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-06T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.04168v1 Announce Type: new Abstract: Agentic large language model (LLM) systems are commonly implemented as an LLM in a loop with Planning, Memory, Tools, and Control Flow. This application-focused view connects agentic LLM research with deployable systems and leaves open how such systems should be evaluated beyond end-to-end task success. Building on this view, we define agentic cognitive depth as a trajectory-level profile across five operational criteria. The profile contains context sensitivity ($C$), temporal continuity ($T$), multimodal coordination ($M$), adaptive interaction ($A$), and metacognitive monitoring ($Mc$). The first four criteria measure how well Control Flow, Memory, Tools, and Planning are used across a trajectory. The fifth measures whether the system monitors and regulates the full run. For each criterion, we give operational proxies and a perturbation procedure, then connect the profile to the agent's world model. We provide the structure needed to extend benchmarks such as GAIA, SWE-bench, WebArena, and TRIP-Bench with per-criterion diagnostics. Symbolic verifiers, structured memory, planner coupling, and tool constraints provide practical ways to build and test these capacities.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.04188",
+      "rank": 10,
+      "title": "Agentic AI with Structured CoT for Enhancing AI's Spatial Intelligence: Visualization and Reasoning of Rotation",
+      "sourceUrl": "https://arxiv.org/abs/2610.04188",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-06T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.04188v1 Announce Type: new Abstract: Recent studies show that artificial intelligence (AI) with language and vision capabilities still experiences limitations in spatial reasoning. In this paper, we have studied the spatial capabilities of advanced generative AI to understand the rotations of objects in 3D space, utilizing AI's image processing and language processing features. We trained and examined the spatial intelligence of a generative Agentic AI model (GPT-5.6) to understand the spatial rotation process with rotation diagrams based on the revised Purdue Spatial Visualization Test: Visualization of Rotations (Revised PSVT:R). We improvised the Revised PSVT:R by superimposing additional graphical and contextual features to evaluate how different Chain-of-Thought (CoT) reasoning strategies influence model performance. The results indicate that structured CoT reasoning improves the spatial reasoning performance of the base GPT-5.6 model in both datasets (PSVT:R and PSVT:R with coordinate system). We used three CoT approaches - (1) Structured CoT, (2) few-shot Structured CoT, and Structured CoT with Self-optimized Prompt. The three CoT approaches evaluated in this study showed no significant performance difference. Results showed that combining structured CoT reasoning with relevant contextual information leads to considerable improvements in VLM performance on 3D rotation tasks, demonstrating the potential of agentic AI for more effective spatial reasoning. However, when contextual information is removed, structured CoT reasoning alone provides limited improvement, and the models continue to exhibit notable difficulties in understanding spatial transformations. These findings suggest that effective spatial reasoning in VLMs relies on the integration of visual, textual, and reasoning-based information in future agentic AI systems for spatial intelligence.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.04196",
+      "rank": 11,
+      "title": "Asynchronous Is Nearly Free for Evolution Strategies on Long-Horizon Agentic Tasks",
+      "sourceUrl": "https://arxiv.org/abs/2610.04196",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-06T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.04196v1 Announce Type: new Abstract: LLM-based long-horizon agentic post-training is often bottlenecked by rollout generation: trajectories span many interaction turns, completion times vary substantially, and synchronous update barriers leave faster workers waiting for stragglers. Asynchronous reinforcement learning which has been adopted in LLM post-training addresses this inefficiency by consuming trajectories as they arrive, but introduces policy lag and off-policy optimization. Evolution strategies (ES) offer a backpropagation-free alternative for LLM post-training, yet it relies on a larger number of rollouts and existing practices have remained largely synchronous. In this short-form paper, we introduce bounded-staleness asynchronous ES and demonstrate it on Endless Terminals benchmark using Qwen2.5-7B-Instruct. Across three evaluation seeds, natural Async-1 matches synchronous ES, achieving 25.9\\% versus 25.4\\% held-out success. Controlled schedules that delay 10\\% of each update cohort by four or eight policy updates reduce success by only 1.6 and 3.1 percentage points, respectively, without explicit off-policy correction. GRPO performs better overall, reaching 29.0\\% held-out success, but importantly our results show that ES tolerates moderate policy staleness with limited degradation, opening possibilities for future improvement of ES-based post-training with asynchronous algorithms. To the best of our knowledge, we are the first to demonstrate the effectiveness of sync and async ES on a multi-turn terminal style agentic coding task.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.04198",
+      "rank": 12,
+      "title": "ALoDLM: Adaptively Looped Diffusion Language Models",
+      "sourceUrl": "https://arxiv.org/abs/2610.04198",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-06T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.04198v1 Announce Type: new Abstract: Diffusion language models (DLMs) enable fast generation by predicting multiple tokens in parallel, but their practical adoption remains limited by a persistent quality gap relative to comparably sized autoregressive (AR) models. We attribute this gap to a computation-difficulty mismatch: within a partially observed sequence, some unknown tokens are easy to predict, while others require substantially more computation. Existing DLMs nevertheless apply uniform computational depth to all unknown positions at each denoising step. We introduce ALoDLM, which replaces uniform computation with token-adaptive latent recurrence. At each denoising step, ALoDLM iteratively refines latent representations and allocates computation according to token difficulty. Tokens ready to commit are fed back as discrete context, while unresolved tokens retain and further refine their latent states through additional recurrent passes. To learn token prediction and computation allocation jointly, we formulate token-wise computation schedules as latent variables and derive a conditional negative evidence lower bound (NELBO). We train ALoDLM at 1.7B and 8B parameter scales. Across eleven benchmarks, ALoDLM outperforms all evaluated DLMs and the corresponding AR baselines in average benchmark score at both scales. ALoDLM also retains fast parallel decoding, yielding a strong quality-efficiency trade-off among evaluated autoregressive and diffusion models under optimized inference engines.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.04206",
+      "rank": 13,
+      "title": "Fine-Tuning VLM for Enhancing AI's Spatial Intelligence: Understanding 3D and 2D Rotations",
+      "sourceUrl": "https://arxiv.org/abs/2610.04206",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-06T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.04206v1 Announce Type: new Abstract: Spatial intelligence is a fundamental skill in multiple domains, such as Science, Technology, Engineering, and Mathematics (STEM), Medicine, Architecture, and Construction. Recent studies indicate that Vision-Language Models (VLMs) still face limitations in spatial reasoning, which inhibits artificial intelligence (AI) from performing practical spatial tasks. Using multiple object-rotation datasets developed for training and evaluation, our experiments demonstrated promising improvements in both 2D and 3D rotation detection. Fine-tuned Google DeepMind-built Gemma-4 mixture-of-experts (MoE) models significantly outperformed fine-tuned Gemma-4 generalist models in predicting rotations defined by both their axes and angles. Fine-tuning also substantially improved angle estimation for 2D representation without requiring an explicit coordinate system. Furthermore, identifiable objects did not improve angle-detection accuracy; instead, objects with prominent linear features showed improved performance.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.04292",
+      "rank": 14,
+      "title": "LMBuild: Evaluating LLM Agents for Generating Buildable and Functional Structures",
+      "sourceUrl": "https://arxiv.org/abs/2610.04292",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-06T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.04292v1 Announce Type: new Abstract: LLM-based agents are increasingly capable of generating complex 3D structures, with the potential to reshape how objects are designed and realized in the physical world. Yet, producing elegant geometry is fundamentally different from producing objects that can be built and perform their intended functions. Existing evaluations largely focus on geometric quality while overlooking physical realizability. We introduce LMBuild, a benchmark for evaluating LLM agents on generating buildable and functional structures. LMBuild represents generated objects as assembled structures comprising part decompositions, joints, materials, and sequences. To support reproducible evaluation, we provide a unified framework consisting of: (1) an interactive environment in which agents can use tools to retrieve, create, and place components to construct objects; (2) a curated benchmark that repurposes established CAD datasets and augments them with knowledge from Wikipedia; and (3) a evaluation framework covering structural soundness, functional affordance, design quality, and physical realization. Evaluations across 30 systems reveal several intriguing findings: (a) Soundness and alignment are no longer the primary bottlenecks for frontier closed-source models, while functional affordance and physical operability remain substantially more challenging; (b) stronger models more effectively create new components, whereas weaker models tend to rely on retrieval; and (c) providing functional specifications substantially improves part completeness, kinematics, and physical operability. These results show that generating real-world structures requires deeper reasoning about functional affordances, mechanics, and designing and creating novel components. We expect LMBuild to provide a foundation for measuring progress and incentivizing research toward agents that generate buildable and functional structures.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.04339",
+      "rank": 15,
+      "title": "ShadowMiner v1 - An Experience Report on Implementing and Measuring a Problem-and-Hypothesis Discovery Engine",
+      "sourceUrl": "https://arxiv.org/abs/2610.04339",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-06T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.04339v1 Announce Type: new Abstract: ShadowMiner v1 is a system that automatically discovers research problems and generates hypotheses from AI papers. It is a nine-stage pipeline. It structures documents into a knowledge graph and finds graph gaps in it - structural blind spots in research. These graph gaps are included in the LLM generation prompt. Each generated hypothesis is then verified by checking whether it is already covered by existing research, scoring its quality, and checking that the facts it relies on are accurately drawn from its sources. This report does not propose a new generation or evaluation technique. It describes our experience of implementing and applying ideas from prior work, and measuring whether each one actually contributed.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.04371",
+      "rank": 16,
+      "title": "Functionally Equivalent or Not? Graph-Grounded Differential Surrogate Execution for Code Equivalence",
+      "sourceUrl": "https://arxiv.org/abs/2610.04371",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-06T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.04371v1 Announce Type: new Abstract: Determining whether two programs are functionally equivalent is central to code modernization, patch validation, refactoring, and code-generation evaluation. Yet the usual signals are incomplete: tests cover only finite inputs, textual similarity confuses implementation with behavior, and unconstrained LLM judgments are difficult to audit. Direct execution is often impossible when a program depends on an obsolete, licensed, unavailable, or unsafe environment. We introduce FEAgent, a selective equivalence assessor agent that combines typed program-graph evidence with differential surrogate execution. FEAgent first aligns public interfaces and behaviorally relevant graph anchors, then issues bounded queries over call-flow, control-flow, data-flow, type, import, and effect relations. Next, a branch-aware generator agent proposes discriminating inputs, and two blinded LLM surrogates independently predict source and target observables. Every claim and predicted divergence is recorded in an evidence ledger. A deterministic reconciler then returns EQUIVALENT, INEQUIVALENT, or UNCLEAR rather than forcing a verdict when paths are uncovered or evidence conflicts. We evaluate FEAgent on function-level equivalence and repository-level bug patches, where the existing oracle is a benchmark label or a passing test suite. Every disagreement with that oracle is adjudicated by direct execution, revealing errors in benchmark labels and behavioral divergences missed by unit-test-only scoring. On EquiBench, execution confirms FEAgent's disagreements with published labels on 216 of 1,200 evaluated pairs (18.0%); on SWE-bench Verified, 94 of 331 test-passing agent patches (28.4%) diverge from the reference patch. FEAgent thus serves as an audit layer between testing and formal verification, keeping its evidence reviewable and its uncertainty explicit without claiming a proof of equivalence.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.04375",
+      "rank": 17,
+      "title": "Do Tool Calls Execute as Intended? Measuring and Repairing Intent-Execution Correspondence in LLM Agents",
+      "sourceUrl": "https://arxiv.org/abs/2610.04375",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-06T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.04375v1 Announce Type: new Abstract: Agents built on large language models (LLMs) build and run software through tool calls. A call reaches its program through several hops, and any hop can change the call without notice. When the changed call fails, the agent retries a correct call, which costs users time and money. Benchmarks and failure analyses do not see the change, because they read the call and its result but not what a hop received. We define intent-execution correspondence (IEC) as the property that the executed action matches the action the emitted call denotes under the tool contract. Our protocol observes what each hop received without executing the call, and names the first hop that changed it by the receiver's own parser. IntAct then delivers the call in a form that this hop cannot alter, or refuses the call. We build IEC-Bench from the changes observed in real-world use, with chains of dependent calls under the execution paths of 4 widely-used harnesses. In 47,828 shell calls within production sessions, Claude Code's Bash tool changes 12.0% of the calls that carry code, escape sequences, or long text. For 80.7% of the calls whose backslashes are changed, the wrong action runs without any reported error. All 10 measured harnesses change a call. Trajectory-based judgment attributes 95.1% of the production failures to the LLM, although the path caused more than half of them. On IEC-Bench, the path raises the token cost per passed task 2.4 times (up to 12.3 times). A hop that changes a call also hides the changes after it, so 55.1% of the failures on one path appear only after its first hop is repaired. IntAct, deployed in a commercial product, recovers 79.2% of the failures with a changed call. Harnesses should therefore be designed and tested hop-by-hop to ensure a correct call executes as intended or is refused.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.04430",
+      "rank": 18,
+      "title": "MERCI Cards: An LLM Evaluation and Deployment Framework for High-Stakes Domains",
+      "sourceUrl": "https://arxiv.org/abs/2610.04430",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-06T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.04430v1 Announce Type: new Abstract: As LLMs are increasingly deployed in high-stakes professional workflows, engineers and researchers require principled protocols to systematically track, monitor, and improve model performance across deployment cycles. We present a mathematical framework for iterative LLM evaluation and deployment, and demonstrate its application to AI systems used in criminal justice. Our framework formalizes LLM integration in high-stakes, high-risk, and resource-constrained domains across model selection, rubric design, evaluations and deployment via a weighted multi-objective optimization. We demonstrate that MERCI Cards can guide improvements of the system across deployment iterations, direct developer attention toward under-performing areas, and focus user attention on validation and error-correction in the LLM's outputs.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.04473",
+      "rank": 19,
+      "title": "InferOpt: Constrained Multi-Objective Search for LLM Inference Configurations",
+      "sourceUrl": "https://arxiv.org/abs/2610.04473",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-06T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.04473v1 Announce Type: new Abstract: Serving an LLM means setting dozens of inference-time knobs, from per-layer KV retention to per-layer expert counts. Practice sets them with mechanism-specific heuristics that return a single operating point and do not scale to layer-wise search spaces. We recast inference configuration as constrained multi-objective black-box optimization and build InferOpt, a reusable search framework that requires only variable bounds, a deterministic resource cost, and an evaluation hook. InferOpt searches on a frozen sampled proxy set, rejects over-budget candidates before any model call, tightens the budget adaptively, and re-validates Pareto representatives on full-scale dataset. One pipeline covers a 28-dimensional continuous KV space (Qwen2.5-7B) and a 26-dimensional discrete MoE space (DeepSeek-V2-Lite). On KV, post-prefill pruning cuts the 16K cache by 64.4% and TPOT by 22.9--48.5%, and the searched layer-wise budget by InferOpt beats a matched uniform budget by 7.3% and 14.0% of the Full KV reference points. On MoE, a searched top-k schedule by InferOpt removes 43.0% of routed token--expert pairs while staying within 0.59 points of the default, closer than the matched-budget baselines. Against Random Search, NSGA-II, and MOTPE, InferOpt leads on both spaces, taking the best proxy hypervolume and the lowest retention on KV and staying closest to the uncompressed reference at the lowest experts on MoE.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.04510",
+      "rank": 20,
+      "title": "ManifoldCache: Training-Free Diffusion Acceleration via Constraint Manifold Caching",
+      "sourceUrl": "https://arxiv.org/abs/2610.04510",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-06T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.04510v1 Announce Type: new Abstract: Diffusion models for structured scientific generation must produce samples satisfying hard geometric constraints imposed by physics, chemistry, or biology, yet inference in these settings is prohibitively slow, demanding hundreds to thousands of neural-function evaluations per sample. We unify eight state-of-the-art models spanning medical volumetrics, molecular conformations, protein backbone design, crystal structure prediction, and multi-view 3D scenes under a single abstraction, Constraint-Manifold Diffusion Models (CMDMs), in which the target distribution is supported on a manifold defined by an externally specified constraint map. All existing acceleration families fail on this class: quantization exhausts memory on high-dimensional volumetric operators; pruning breaks constraint fidelity; fast ODE solvers allow trajectories to drift off the constraint manifold; and feature-caching heuristics are blind to constraint geometry, inducing mode confusion in the high-noise regime. We introduce ManifoldCache, the first training-free, data-free accelerator designed from first principles for CMDMs. The key insight is that the conditional score decomposes orthogonally into a normal component, which enforces constraint satisfaction, and a tangential component, which navigates within the manifold. Exploiting this structure, we prove that the noise-schedule midpoint is a sharp safe-caching boundary: caching before it incurs provably bounded error, while caching after it guarantees a strictly positive fraction of trajectories suffer mode confusion, a gap that persists up to the boundary. We further prove that deeper network blocks admit provably larger certified cache strides within the safe phase, as a consequence of the score decomposition propagating through block Jacobians. The resulting schedule requires no calibration data, along with zero training overhead.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.04517",
+      "rank": 21,
+      "title": "EvoCast: Reliable Autonomous Research Agents for Iterative Forecasting Architecture Evolution",
+      "sourceUrl": "https://arxiv.org/abs/2610.04517",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-06T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.04517v1 Announce Type: new Abstract: Deep time-series forecasting models have rapidly diversified, yet adapting them to a specific task still requires extensive expert effort in model selection, mechanism diagnosis, architecture design, implementation, and evaluation. Existing AutoML methods are constrained by predefined search spaces, while general-purpose LLM research agents lack reliable control over experimental protocols and model promotion. We introduce EvoCast, a fully autonomous research-agent system for iterative forecasting architecture evolution. EvoCast first establishes and diagnoses a task-specific baseline through executed mechanism ablations, then generates evidence-grounded research directions from dataset characteristics, diagnostic results, prior rounds, and failure records. Its central design, cognition-authority separation, assigns open-ended hypothesis generation and code implementation to LLM agents, while deterministic program authorities control source-edit boundaries, canonical evaluation, and promotion decisions. Experimental outcomes are accumulated as evidence to guide subsequent rounds. Results show that EvoCast completes complex architecture modifications with higher implementation success and lower agent-side token/time cost, and develops task-specific architectures that outperform selected baselines, strong forecasting models, and agent baselines in three real-world forecasting cases. The code is available at https://github.com/18e0-x/EvoCast.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.04541",
+      "rank": 22,
+      "title": "Autonomous Structuring of Radiology Reports Across Modalities at Archive Scale Using an Open-Weight Large Language Model",
+      "sourceUrl": "https://arxiv.org/abs/2610.04541",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-06T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.04541v1 Announce Type: new Abstract: Purpose: To develop and evaluate an open-weight large language model (LLM) pipeline that converts an entire archive of free-text radiology reports into structured reports without human oversight. Materials and Methods: In this retrospective study, a pipeline with 150 hierarchically organized templates was developed at one center and tested at a second center on reports from 2010 to 2025. The open-weight model gpt-oss-120B selects the template in three constrained-decoding steps and fills it on one local graphics processing unit. Template selection was scored against expert labels on 914 randomly sampled reports of five modalities, structuring quality on 920 radiography and CT reports corrected field by field by five residents. The pipeline then processed the complete archive of the second center. Proportions are reported with Wilson 95% confidence intervals (CIs). Results: An optimal template set was selected for 74.4% of reports (680 of 914; 95% CI: 71.5%, 77.1%) and an appropriate set for 82.3% (752 of 914; 95% CI: 79.7%, 84.6%), 87.7% for single-region and 54.1% for multi-region reports. Macro semantic textual similarity between output and corrected reference was 0.95 for radiography and 0.97 for CT, residents left 88.7% of 24,638 fields unchanged, and unsupported content was flagged in 1.0% and 1.5% of reports. Of 2,186,982 archive reports, 96.5% received structured output, 2,401,544 structured reports, at 1,258 reports per hour on one graphics processing unit. Conclusion: An open-weight LLM pipeline structured a complete multimodality report archive without human oversight with high content fidelity. Multi-region reports remained the main source of template errors.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.04542",
+      "rank": 23,
+      "title": "Decide, Ask, or Defer: Clinical LLMs under Incomplete Evidence",
+      "sourceUrl": "https://arxiv.org/abs/2610.04542",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-06T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.04542v1 Announce Type: new Abstract: Clinical LLMs must decide not only what diagnosis to produce, but also whether the available evidence is sufficient for autonomous decision making. Binary DECIDE/ABSTAIN formulations merge distinct non decision states and do not explicitly evaluate information acquisition. We introduce a DECIDE/ASK/DEFER formulation together with a blinded protocol that prevents models from using evidence completeness metadata. We evaluate Qwen, Gemini, and GPT on 200 matched clinical evidence states constructed from DDXPlus. The models show substantial differences in action selection under identical evidence, with disagreement in 137 of 200 states. For Qwen, a matched targeted versus random analysis shows that selected information changes the likelihood of a subsequent autonomous decision more clearly than diagnostic correctness. Its matched DECIDE/ABSTAIN baseline further reveals a safety autonomy tradeoff: the three action policy rescues some erroneous autonomous decisions but also removes some correct autonomous deci sions. These results show that separating information acquisition from clinician deferral exposes behavior that binary abstention hides, without yielding a uniformly improved decision policy.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.04544",
+      "rank": 24,
+      "title": "Label Agreement Does Not Measure Authorization",
+      "sourceUrl": "https://arxiv.org/abs/2610.04544",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-06T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.04544v1 Announce Type: new Abstract: Many groups now delegate label ontology and metadata harmonization to agentic LLM pipelines. We built one and audited it. Our aggregate scores looked healthy, but the pipeline kept failing in ways they did not show, so we set out to find what they hid. Label agreement asks whether a proposed label matches a reference. It does not ask whether the agent was entitled to propose it, whether the output was complete enough to act on, or whether the label moved when the evidence moved. We measured those three separately on COBRE and FBIRN, two schizophrenia and control neuroimaging cohorts from different consortia, and they come apart, from label agreement and from each other. Showing the agent an upstream proposal barely moves label agreement, 0.857 to 0.870, while agreement on the chosen action doubles, 0.409 to 0.830. Output that parses as JSON still drops a required field on 10% of one model's cases and 33% of the other's. And an agent that replays its first answer scores perfectly on original cases and zero once we change the evidence that decides them. Downstream, a row-order error that none of these metrics reports erases most of the diagnostic signal. So we measure these properties apart, pair each with a control, and gate commitment on the result, which makes failures visible and easy to route to a person. None of this prevents failure. Our reference labels are rule-derived, so agreement with them means consistency, not correctness. Code is available at https://github.com/amir-sbg/Label-Agreement-Does-Not-Measure-Authorization.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.04555",
+      "rank": 25,
+      "title": "$\\mathrm{TRIZ}^{a}$: Guiding Agent Evolution from Pattern Recognition to Solution Invention",
+      "sourceUrl": "https://arxiv.org/abs/2610.04555",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-06T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.04555v1 Announce Type: new Abstract: We propose $\\mathrm{TRIZ}^{a}$ (TRIZ exponentiated by an agent), a general R\\&D automation paradigm that combines TRIZ inventive theory with LLM-driven agent evolutionary search. TRIZ's 40 inventive principles and contradiction matrix provide structured, explainable directions for solution generation, replacing random or untyped mutation with theory-guided ideation. Functional information (FI), operationalized under a frozen reference contract, is combined with TRIZ Ideality to measure useful and harmful function on a commensurable information scale, while hard gates keep promotion distinct from metric improvement. We validate $\\mathrm{TRIZ}^{a}$ in cybersecurity--an adversarial and rapidly evolving domain--on PowerDuck GOOSE, CICIoT2023, and CIC-DDoS2019. Under paired-rerun protocols with protocol fingerprinting and hard-gate validation, the legacy experiments yield absolute F1 improvements of $+2.88$, $+4.23$, and $+0.15$ percentage points, respectively. A completed 45-activity CICIoT2023 campaign further increases macro-F1 from $0.8325$ to $0.8483$, but does not pass its frozen promotion gate. Every result remains traceable from contradiction identification and TRIZ principle selection to code transformation, evaluation metrics, and promotion decision.",
+      "summary": ""
+    }
+  ]
+}
