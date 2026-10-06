@@ -85,7 +85,7 @@ To publish an edition:
 npm run publish
 ```
 
-This writes to the output directory and delivers email when Resend is configured and contacts are available. The daily publisher targets **07:17 UTC**, with recovery attempts at **10:17 and 13:17 UTC**. Attempts use the latest default branch, reuse an already committed edition without emailing it again, and skip an already published YouTube video. GitHub can delay scheduled triggers; check the run summary for publication status and the video activation switches.
+This writes to the output directory and delivers email when Resend is configured and contacts are available. The daily publisher targets **7:00 AM Eastern**, using `America/New_York` so daylight saving time is handled automatically. Recovery attempts run at :17 and :37 each hour from 7 AM through 11 AM Eastern. Attempts use the latest default branch, reuse an already committed edition without emailing it again, and skip an already published YouTube video. GitHub can delay or drop scheduled triggers, so this is a target rather than an exact delivery guarantee. Set `VIDEO_ENABLED=true` and `VIDEO_PUBLISH_ENABLED=true` under Actions **Variables**, not Secrets, to enable daily YouTube publication. The run summary reports their effective state. Manual runs accept an optional `issue_date` to recover a specific edition.
 
 ## Configuration
 
