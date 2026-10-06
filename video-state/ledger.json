@@ -82,8 +82,32 @@
       "platforms": {
         "youtube": {
           "accountId": "6ac27146281ee799a37065e4",
-          "status": "prepared",
-          "idempotencyKey": "34f2bf67-f0cf-4a87-9d58-89a89ce44f6d"
+          "status": "submitting",
+          "idempotencyKey": "34f2bf67-f0cf-4a87-9d58-89a89ce44f6d",
+          "request": {
+            "content": "Choosing Before Acting: Comparative Value Estimation for Long-Horizon Tool-Use Agents\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2610.02330\n\nThe Gradient: https://gradientnews.app/archive/2026-10-05\nAI-generated narration. #AI #AINews #Shorts",
+            "mediaItems": [
+              {
+                "type": "video",
+                "url": "https://media.zernio.com/temp/1791249254048_6dx11czt_2026-10-05.mp4"
+              }
+            ],
+            "platforms": [
+              {
+                "platform": "youtube",
+                "accountId": "6ac27146281ee799a37065e4",
+                "platformSpecificData": {
+                  "title": "arXiv cs.AI says Therefore, it propose Comparative Inference for Tool-use Agents (CITA).",
+                  "visibility": "public",
+                  "madeForKids": false,
+                  "containsSyntheticMedia": true,
+                  "categoryId": "28"
+                }
+              }
+            ],
+            "publishNow": true
+          },
+          "firstSubmittedAt": "2026-10-06T01:14:17.423Z"
         }
       },
       "script": {
