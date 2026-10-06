@@ -166,7 +166,7 @@
       "platforms": {
         "youtube": {
           "accountId": "6ac27146281ee799a37065e4",
-          "status": "submitting",
+          "status": "published",
           "idempotencyKey": "de63bf0c-c314-4076-bb17-7248d0d605fa",
           "request": {
             "content": "Proxy Confidence: Auditing Black-Box LLM Agents with a Surrogate's Log-Probabilities\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2610.03894\n\nThe Gradient: https://gradientnews.app/archive/2026-10-06\nAI-generated narration. #AI #AINews #Shorts",
@@ -191,7 +191,9 @@
             ],
             "publishNow": true
           },
-          "firstSubmittedAt": "2026-10-06T17:05:38.985Z"
+          "firstSubmittedAt": "2026-10-06T17:05:38.985Z",
+          "postId": "6ac52a657e5da59cfc5759be",
+          "postUrl": "https://www.youtube.com/watch?v=0K22_7bf9FA"
         }
       },
       "script": {
