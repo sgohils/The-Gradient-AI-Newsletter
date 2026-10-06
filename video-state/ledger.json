@@ -82,7 +82,7 @@
       "platforms": {
         "youtube": {
           "accountId": "6ac27146281ee799a37065e4",
-          "status": "submitting",
+          "status": "published",
           "idempotencyKey": "34f2bf67-f0cf-4a87-9d58-89a89ce44f6d",
           "request": {
             "content": "Choosing Before Acting: Comparative Value Estimation for Long-Horizon Tool-Use Agents\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2610.02330\n\nThe Gradient: https://gradientnews.app/archive/2026-10-05\nAI-generated narration. #AI #AINews #Shorts",
@@ -107,7 +107,9 @@
             ],
             "publishNow": true
           },
-          "firstSubmittedAt": "2026-10-06T01:14:17.423Z"
+          "firstSubmittedAt": "2026-10-06T01:14:17.423Z",
+          "postId": "6ac44b6a02fa04aa2fc6e78e",
+          "postUrl": "https://www.youtube.com/watch?v=B0dIrobfaFY"
         }
       },
       "script": {
