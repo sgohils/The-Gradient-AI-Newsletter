@@ -41,6 +41,17 @@ describe('clean, bounded short scripts', () => {
       expect(() => validateShortScript(story, { ...script, sentences, narration: sentences.map(sentence => sentence.text).join(' ') })).toThrow();
     }
   });
+  it('accepts source-backed hyphenated model names without relaxing figure checks', () => {
+    const script = buildShortScript(story);
+    const replace = (value: string) => value.replace(/model responses/g, 'GPT-6 responses');
+    const source = { ...story, sourceExcerpt: replace(story.sourceExcerpt) };
+    const sentences = script.sentences.map(sentence => ({ ...sentence, text: replace(sentence.text), evidenceQuote: replace(sentence.evidenceQuote),
+      displayText: sentence.displayText?.replace(/model responses/g, 'GPT-6 responses') }));
+    const updated = { ...script, sentences, narration: sentences.map(sentence => sentence.text).join(' ') };
+    expect(updated.narration).toContain('GPT-6'); expect(() => validateShortScript(source, updated)).not.toThrow();
+    const unsupported = updated.sentences.map(sentence => ({ ...sentence, text: sentence.text.replace(/GPT-6/g, 'GPT-7') }));
+    expect(() => validateShortScript(source, { ...updated, sentences: unsupported, narration: unsupported.map(sentence => sentence.text).join(' ') })).toThrow();
+  });
   it('calls writer and editor once each and accepts only checked candidates', async () => {
     const draft = buildShortScript(story); const payload = { candidates: [{ storyId: story.id, ...draft }] };
     const post = vi.fn().mockResolvedValue({ data: { choices: [{ message: { content: JSON.stringify(payload) } }] } });

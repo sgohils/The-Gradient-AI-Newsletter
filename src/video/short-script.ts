@@ -68,7 +68,9 @@ export function validateShortScript(story: VideoStory, script: VideoScript): voi
     }
     const names = [...sentence.text.matchAll(/(?:^|\s)([A-Z][A-Za-z0-9-]{2,})/g)].map(match => match[1].toLowerCase());
     const grammar = new Set(['this','that','these','those','the','its','researchers','according','developers','users','people','but','instead','however','for','with']);
-    if (names.some(name => !evidenceTokens.has(name) && !grammar.has(name))) throw new Error('Short claim contains an unsupported name.');
+    const namedEvidence = normalized(`${sentence.evidenceQuote} ${story.title}`).replace(/\p{Pd}/gu, '-');
+    if (names.some(name => !evidenceTokens.has(name) && !grammar.has(name) &&
+        !new RegExp(`(?:^|[^a-z0-9])${name}(?:$|[^a-z0-9])`).test(namedEvidence))) throw new Error('Short claim contains an unsupported name.');
     if (!sentence.displayText || wordCount(sentence.displayText) > 6 || banned.test(sentence.displayText) ||
         tokens(sentence.displayText).some(word => !words.includes(word))) throw new Error('Short display text must come from its spoken sentence.');
   }
