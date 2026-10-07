@@ -7,23 +7,18 @@ import { fileURLToPath } from 'node:url';
 import { dirname, resolve } from 'node:path';
 import sodium from 'libsodium-wrappers';
 import { githubJwt } from '../watchdog/worker.mjs';
+import { api } from './api.mjs';
 
 const repo = 'sgohils/The-Gradient-AI-Newsletter';
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '../..');
 const port = 8766;
 const origin = `http://127.0.0.1:${port}`;
-const session = randomBytes(32).toString('hex');
+const session = process.env.GRADIENT_SETUP_SESSION || randomBytes(32).toString('hex');
 const pkce = randomBytes(48).toString('base64url');
 let app, google, status = 'Complete these connections once. Keep keys out of chat.';
 const escape = value => String(value).replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char]));
 const field = `<input type="hidden" name="session" value="${session}">`;
 
-async function api(url, options = {}) {
-  const response = await fetch(url, { signal: AbortSignal.timeout(20000), ...options });
-  if (!response.ok) throw new Error(`Connection request failed (HTTP ${response.status}).`);
-  if (response.status === 204) return {};
-  return response.json();
-}
 function githubCredential() {
   const credential = execFileSync('git', ['credential', 'fill'], { input: 'protocol=https\nhost=github.com\n\n', encoding: 'utf8', stdio: ['pipe', 'pipe', 'pipe'], timeout: 15000, windowsHide: true });
   const token = credential.split(/\r?\n/).find(line => line.startsWith('password='))?.slice(9);

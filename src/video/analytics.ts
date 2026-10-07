@@ -65,7 +65,8 @@ export async function collectAnalytics(ledger: VideoLedger, state: ExperimentSta
           metric.averageViewPercentage = rows.reduce((sum: number, row: any) => sum + row.averageViewPercentage * row.engagedViews, 0) / engaged;
         }
         const curve = (await client.get('https://zernio.com/api/v1/analytics/youtube/video-retention', config)).data;
-        metric.retention = curve.retentionCurve?.filter((point: any) => Number.isFinite(point.elapsedVideoTimeRatio) && Number.isFinite(point.audienceWatchRatio));
+        metric.retention = curve.retentionCurve?.filter((point: any) => Number.isFinite(point.elapsedVideoTimeRatio) && Number.isFinite(point.audienceWatchRatio))
+          .slice(0, 100).map((point: any) => ({ elapsedVideoTimeRatio: point.elapsedVideoTimeRatio, audienceWatchRatio: point.audienceWatchRatio }));
         metric.duration ||= curve.durationSeconds || daily.durationSeconds;
       } catch (error: any) {
         if ([401, 402, 403, 412, 429].includes(error.response?.status)) zernioUnavailable = true;
@@ -92,7 +93,8 @@ export async function collectAnalytics(ledger: VideoLedger, state: ExperimentSta
             ids: 'channel==MINE', startDate: fromDate, endDate: toDate, filters: `video==${videoId}`,
             dimensions: 'elapsedVideoTimeRatio', metrics: 'audienceWatchRatio',
           } });
-          metric.retention = (curve.data.rows || []).map((row: number[]) => ({ elapsedVideoTimeRatio: row[0], audienceWatchRatio: row[1] }));
+          metric.retention = (curve.data.rows || []).slice(0, 100).filter((row: number[]) => Number.isFinite(row[0]) && Number.isFinite(row[1]))
+            .map((row: number[]) => ({ elapsedVideoTimeRatio: row[0], audienceWatchRatio: row[1] }));
         }
         if (!metric.duration && metric.averageViewPercentage! > 0) {
           metric.duration = metric.averageViewDuration! / (metric.averageViewPercentage! / 100);

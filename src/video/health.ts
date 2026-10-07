@@ -10,8 +10,9 @@ export function readHealth(file = 'video-state/health.json'): PipelineHealth {
   if (health?.version !== 1 || typeof health.paused !== 'boolean' || !Array.isArray(health.events)) throw new Error('Pipeline health state is invalid.');
   return health;
 }
-export function recordHealth(issueDate: string, phase: string, status: string, detail: string, file = 'video-state/health.json'): void {
+export function recordHealth(issueDate: string, phase: string, status: string, detail: string, file = 'video-state/health.json', paused?: boolean): void {
   const health = readHealth(file);
+  if (paused !== undefined) health.paused = paused;
   health.events = [...health.events, { at: new Date().toISOString(), issueDate, phase, status, detail: detail.slice(0, 500) }].slice(-60);
   writeJson(file, health);
 }

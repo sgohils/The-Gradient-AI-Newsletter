@@ -42,9 +42,9 @@ export default function FeaturedCard({ issue }: { issue: NewsletterIssue }) {
             <div>
               <p className="story-source">{story.sourceName}</p>
               <h3>
-                <Link href={`${href}#${articleAnchor(story.title, story.url)}`}>
+                <a href={`${href}#${articleAnchor(story.title, story.url)}`}>
                   {story.title}
-                </Link>
+                </a>
               </h3>
             </div>
           </li>

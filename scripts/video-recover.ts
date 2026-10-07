@@ -17,9 +17,10 @@ async function main(): Promise<void> {
   const token = process.env.GITHUB_TOKEN; const repository = process.env.GITHUB_REPOSITORY;
   if (token && repository === 'sgohils/The-Gradient-AI-Newsletter') {
     const client = axios.create({ timeout: 30000, headers: { Authorization: `Bearer ${token}`, Accept: 'application/vnd.github+json' } });
-    const response = await client.get(`https://api.github.com/repos/${repository}/actions/artifacts`, { params: { name: 'daily-video-output', per_page: 100 } });
-    const artifacts = (response.data.artifacts || []).filter((artifact: any) => !artifact.expired &&
+    const response = await client.get(`https://api.github.com/repos/${repository}/actions/artifacts`, { params: { per_page: 100 } });
+    const artifacts = (response.data.artifacts || []).filter((artifact: any) => ['daily-video-output', 'video-preview'].includes(artifact.name) && !artifact.expired &&
       Date.parse(artifact.created_at) >= Date.parse(entry.selectedAt) - 60000).sort((a: any, b: any) => b.id - a.id).slice(0, 12);
+    let unavailable = false;
     for (const artifact of artifacts) {
       try {
         const zip = await client.get(`https://api.github.com/repos/${repository}/actions/artifacts/${artifact.id}/zip`, {
@@ -33,10 +34,14 @@ async function main(): Promise<void> {
         if (entry.media && restored.manifest.videoSha256 !== entry.media.videoSha256) continue;
         output('mode', 'restored'); output('manifest', restored.manifestPath); output('status', 'ready');
         appendSummary(`Automatically restored the exact submitted video from artifact ${artifact.id}; the current ledger was preserved.`); return;
-      } catch { /* Try another artifact, never regenerate submitted media. */ }
+      } catch (error: any) {
+        if (axios.isAxiosError(error) && (error.response?.status === undefined || error.response.status === 429 || error.response.status >= 500)) unavailable = true;
+        /* Try another artifact, never regenerate submitted media. */
+      }
     }
+    if (unavailable) { output('mode', 'deferred'); appendSummary('Artifact service temporarily unavailable; exact-media recovery will retry automatically.'); return; }
   }
   entry.quarantineReason = 'Submitted video artifact is unavailable; this issue is quarantined automatically to prevent duplicate or changed uploads.';
   writeJson('video-state/ledger.json', ledger); output('mode', 'quarantined'); appendSummary(entry.quarantineReason);
 }
-main().catch(() => { output('mode', 'quarantined'); console.error('Submitted-media recovery could not verify an exact artifact; no replacement upload is allowed.'); process.exitCode = 1; });
+main().catch(() => { output('mode', 'deferred'); console.error('Submitted-media recovery is unavailable; a later automatic run will retry without rendering or uploading a replacement.'); process.exitCode = 1; });

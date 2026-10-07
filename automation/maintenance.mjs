@@ -23,7 +23,7 @@ if (response.ok) {
   for (const cache of caches.sort((a, b) => Date.parse(a.last_accessed_at) - Date.parse(b.last_accessed_at))) {
     if (bytes <= 8 * 1024 ** 3) break;
     // Remove only this pipeline's replaceable caches; never unrelated builds.
-    if (!/^(kokoro-cpu-|gradient-video-assets-)/.test(cache.key)) continue;
+    if (!/^(kokoro-cpu-|video-assets-v1-|gradient-video-assets-)/.test(cache.key)) continue;
     const removed = await fetch(`${base}/caches/${cache.id}`, { method: 'DELETE', headers });
     if (removed.ok) bytes -= cache.size_in_bytes;
   }
