@@ -94,7 +94,7 @@ function page() {
 const server = http.createServer(async (request, response) => {
   response.setHeader('Cache-Control', 'no-store');
   response.setHeader('Referrer-Policy', 'no-referrer');
-  response.setHeader('Content-Security-Policy', "default-src 'none'; style-src 'unsafe-inline'; form-action 'self' https://github.com; frame-ancestors 'none'; base-uri 'none'");
+  response.setHeader('Content-Security-Policy', "default-src 'none'; style-src 'unsafe-inline'; form-action 'self' https://github.com https://accounts.google.com; frame-ancestors 'none'; base-uri 'none'");
   try {
     if (request.headers.host !== `127.0.0.1:${port}`) throw new Error('Use the loopback setup address.');
     const url = new URL(request.url, origin);
