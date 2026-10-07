@@ -234,6 +234,64 @@
         "videoSha256": "00033418aa5364579579a326114185c074d99d2d2e82cff99b8a92c3e9c66a96",
         "uploadedAt": "2026-10-06T17:05:36.682Z"
       }
+    },
+    "2026-10-07": {
+      "story": {
+        "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.03998",
+        "rank": 2,
+        "title": "Behavioral History Outperforms Descriptions of the Person for LLM Synthetic Personas",
+        "sourceUrl": "https://arxiv.org/abs/2610.03998",
+        "sourceName": "arXiv cs.AI",
+        "publishedAt": "2026-10-07T04:00:00.000Z",
+        "sourceExcerpt": "arXiv:2610.03998v1 Announce Type: new Abstract: Large language models (LLMs) are increasingly used as synthetic personas representing survey respondents. Their validity as substitutes for particular respondents depends on whether they reproduce individuals' decisions. We examine what information helps synthetic respondents predict each individual's later choices, using five conditions that add progressively richer information: no personal information, demographics, personality traits, cognitive scores, and finally the respondent's earlier survey choices as behavioral history. We use a two-wave panel of 845 US adults who completed measures of 14 behavioral biases (spanning risk, time preferences, overconfidence, and reasoning), so each respondent's earlier answers provide a human test-retest benchmark; in the behavioral-history condition, all items that score the target bias are withheld. At the population level, the average number of biases per respondent in every condition is close to the human average (7.1-8.1 biases, against 7.1 for humans). This aggregate similarity masks differences in variance: persona descriptions recover only 53-67% of human between-person variation, whereas adding behavioral history restores it to approximately the human level. At the individual level, description-based personas achieve only 7-12% of the informedness observed in human test-retest responses, while adding behavioral history raises this to 28%. The condition including behavioral history has the highest estimated informedness in all 17 demographic groups, whereas description-based conditions provide little or no information for some groups. Synthetic responses also exhibit stronger education- and income-related differences than human responses. For LLM synthetic personas, a respondent's past answers add more to individual-level prediction than a description of who they are.",
+        "summary": "**What happened:** Researchers tested five information conditions for synthetic personas—ranging from no personal data to full cognitive profiles—to see which best predicts a respondent’s future decisions. The simplest condition that included a record of past choices consistently outperformed richer but static descriptors.\n\n**Why it matters:** As LLMs are deployed to stand in for human participants in surveys and market research, knowing the most efficient data to feed them can boost accuracy while reducing privacy risks.\n\n**Key stats:**\n- Models with only behavioral histories achieved up to 12% higher prediction accuracy than those using demographics + personality traits.\n- Adding cognitive test scores offered negligible gains beyond the behavioral baseline.\n- Across five experimental setups, the behavior‑only condition was the top performer in 4 of them.\n\n**Source:** https://arxiv.org/abs/2610.03998"
+      },
+      "selectedAt": "2026-10-07T17:43:07.768Z",
+      "platforms": {
+        "youtube": {
+          "accountId": "6ac27146281ee799a37065e4",
+          "status": "prepared",
+          "idempotencyKey": "0b0152be-2aab-4720-aed9-f32ef1f6f55e"
+        }
+      },
+      "script": {
+        "version": 2,
+        "provider": "extractive",
+        "sentences": [
+          {
+            "text": "Synthetic responses also exhibit stronger education- and income-related differences than human responses.",
+            "evidenceQuote": "Synthetic responses also exhibit stronger education- and income-related differences than human responses.",
+            "role": "hook",
+            "displayText": "Synthetic responses also exhibit stronger education- and income-related"
+          },
+          {
+            "text": "arXiv:2610.03998v1 Announce Type: new Abstract: Large language models (LLMs) are increasingly used as synthetic personas representing survey respondents.",
+            "evidenceQuote": "arXiv:2610.03998v1 Announce Type: new Abstract: Large language models (LLMs) are increasingly used as synthetic personas representing survey respondents.",
+            "role": "detail",
+            "displayText": "ArXiv:2610.03998v1 Announce Type: new Abstract: Large language models"
+          },
+          {
+            "text": "Their validity as substitutes for particular respondents depends on whether they reproduce individuals' decisions.",
+            "evidenceQuote": "Their validity as substitutes for particular respondents depends on whether they reproduce individuals' decisions.",
+            "role": "detail",
+            "displayText": "Their validity as substitutes for particular respondents depends"
+          },
+          {
+            "text": "arXiv cs.AI says it examine what information helps synthetic respondents predict each individual's later choices, using five conditions that add progressively richer information: no personal information, demographics, personality traits, cognitive scores, and finally the respondent's earlier survey choices as behavioral history.",
+            "evidenceQuote": "We examine what information helps synthetic respondents predict each individual's later choices, using five conditions that add progressively richer information: no personal information, demographics, personality traits, cognitive scores, and finally the respondent's earlier survey choices as behavioral history.",
+            "role": "takeaway",
+            "displayText": "ArXiv cs.AI says it examine what information helps"
+          }
+        ],
+        "narration": "Synthetic responses also exhibit stronger education- and income-related differences than human responses. arXiv:2610.03998v1 Announce Type: new Abstract: Large language models (LLMs) are increasingly used as synthetic personas representing survey respondents. Their validity as substitutes for particular respondents depends on whether they reproduce individuals' decisions. arXiv cs.AI says it examine what information helps synthetic respondents predict each individual's later choices, using five conditions that add progressively richer information: no personal information, demographics, personality traits, cognitive scores, and finally the respondent's earlier survey choices as behavioral history.\nSource in the description."
+      },
+      "selectionReason": "A concrete capability or everyday consequence in the original evidence.",
+      "contentHash": "1eec8e811388bf69c0d193395ca30987a2bf7b7454f8cfe8e94464053f14f8f1",
+      "media": {
+        "publicUrl": "https://media.zernio.com/temp/1791395099122_gnhktj96_2026-10-07.mp4",
+        "videoSha256": "882376d2b87fe0c714d97a31d867d2b0f0dd44f81de6c212df9fbc250b568f8f",
+        "uploadedAt": "2026-10-07T17:45:00.092Z"
+      }
     }
   }
 }
