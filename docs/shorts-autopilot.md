@@ -46,7 +46,7 @@ Health state keeps sixty events. The ledger compacts old source text and scripts
 
 First-seven-day UTC snapshots finalize after a ten-day processing wait. Metrics include actual duration, assigned format, engaged views, viewing seconds, percentage viewed, and available curves. Each run processes at most twelve snapshots. State caps at 120 metrics and thirty decisions.
 
-The first ten version-3 uploads establish the baseline. Stable date allocation then compares direct-benefit and supported-surprise hooks. Extractive fallback records its actual direct-benefit hook. Comparable topic/length groups need five videos and 1,000 engaged views per variant. Promotion requires ten percentage points more viewed without reducing viewing seconds. Insufficient evidence extends the test automatically. Visual pacing is tested separately afterward. Reports are optional.
+The first ten version-3 uploads establish the baseline. Successful uploads then alternate direct-benefit and supported-surprise hooks; each assignment is frozen for its edition. Extractive fallback records its actual direct-benefit hook. Comparable topic/length groups need five videos and 1,000 engaged views per variant, with identical stratum weights and at least 1,000 matched views. Promotion requires ten percentage points more viewed without reducing viewing seconds. Insufficient evidence extends the test automatically. Visual pacing is tested separately afterward. Reports are optional.
 
 The 65–75% average-viewed and 18–22-second goals are experimental targets, not guarantees.
 

@@ -1,6 +1,6 @@
 import * as fs from 'fs';
 import { ExperimentAssignment, ExperimentState, HookStyle, VideoLedger, VideoMetric } from './types';
-import { readJson, sha256 } from './storage';
+import { readJson } from './storage';
 import { visualTopic } from './visuals';
 
 export function initialExperiments(): ExperimentState {
@@ -20,8 +20,9 @@ export function assignExperiment(ledger: VideoLedger, issueDate: string, state: 
   if (frozen) return frozen;
   const count = Object.values(ledger.issues).filter(entry => (entry.experiment?.formatVersion === 3 || entry.script?.version === 3) && entry.platforms.youtube?.status === 'published').length;
   const phase = count < 10 ? 'baseline' : state.hookWinner ? 'pacing' : 'hook';
-  // Stable date-based allocation avoids changing the variant after a failed run.
-  const alternate = parseInt(sha256(issueDate).slice(0, 4), 16) % 2 === 0;
+  // Alternate successful uploads; skipped editions do not consume a variant.
+  // The chosen assignment is frozen in the date's ledger before rendering.
+  const alternate = count % 2 === 0;
   const hookStyle: HookStyle = phase === 'hook' ? alternate ? 'direct-benefit' : 'supported-surprise' : state.championHook;
   const beatSeconds: 2 | 3 = phase === 'pacing' && !state.pacingWinner ? alternate ? 2 : 3 : state.championBeatSeconds;
   return { phase, hookStyle, beatSeconds, formatVersion: 3, topic, cohort: `v3-${phase}-${hookStyle}-${beatSeconds}s` };
@@ -46,8 +47,17 @@ export function improveExperiments(state: ExperimentState, now = new Date()): Ex
     .filter(key => metrics.some(metric => variant(metric) === variants[1] && bucket(metric) === key)));
   const groups = variants.map(key => metrics.filter(metric => variant(metric) === key && common.has(bucket(metric))));
   if (groups.some(group => group.length < 5 || group.reduce((sum, metric) => sum + metric.engagedViews!, 0) < 1000)) return next;
-  const score = (group: VideoMetric[], key: 'averageViewPercentage' | 'averageViewDuration') =>
-    group.reduce((sum, metric) => sum + metric[key]! * metric.engagedViews!, 0) / group.reduce((sum, metric) => sum + metric.engagedViews!, 0);
+  // Both variants use the same stratum weights, preventing a different mix of
+  // easy topics from masquerading as a better hook (Simpson's paradox).
+  const weights = [...common].map(key => ({ key, views: Math.min(...groups.map(group => group.filter(metric => bucket(metric) === key)
+    .reduce((sum, metric) => sum + metric.engagedViews!, 0))) }));
+  const matchedViews = weights.reduce((sum, stratum) => sum + stratum.views, 0);
+  if (matchedViews < 1000) return next;
+  const score = (group: VideoMetric[], key: 'averageViewPercentage' | 'averageViewDuration') => weights.reduce((sum, stratum) => {
+    const items = group.filter(metric => bucket(metric) === stratum.key);
+    const average = items.reduce((total, metric) => total + metric[key]! * metric.engagedViews!, 0) / items.reduce((total, metric) => total + metric.engagedViews!, 0);
+    return sum + average * stratum.views;
+  }, 0) / matchedViews;
   const percentages = groups.map(group => score(group, 'averageViewPercentage'));
   const winner = percentages[0] >= percentages[1] ? 0 : 1;
   if (Math.abs(percentages[0] - percentages[1]) < 10 || score(groups[winner], 'averageViewDuration') < score(groups[1 - winner], 'averageViewDuration')) return next;

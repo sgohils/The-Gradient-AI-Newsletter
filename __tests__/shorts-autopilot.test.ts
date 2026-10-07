@@ -138,6 +138,18 @@ describe('automatic retention experiments', () => {
     for (const item of Object.values(state.metrics)) { item.engagedViews = 250; if (item.experiment!.hookStyle === 'supported-surprise') item.experiment!.topic = 'robotics'; }
     expect(improveExperiments(state).hookWinner).toBeUndefined();
   });
+  it('does not promote an unchanged hook merely because its topics received a different view mix', () => {
+    const state = initialExperiments();
+    for (let index = 0; index < 10; index++) {
+      const hook = index < 5 ? 'direct-benefit' : 'supported-surprise';
+      const easy = index % 5 < 3;
+      const item = metric(index, hook, easy ? 90 : 40, easy ? 25.2 : 11.2);
+      item.experiment!.topic = easy ? 'computers' : 'robotics';
+      item.engagedViews = hook === 'direct-benefit' ? easy ? 250 : 1000 : easy ? 1000 : 250;
+      state.metrics[item.issueDate] = item;
+    }
+    expect(improveExperiments(state).hookWinner).toBeUndefined();
+  });
   it('survives analytics failures without changing the champion or guessing engaged views', async () => {
     const published = { ...story, publishedAt: '2026-09-01T00:00:00Z' };
     const ledger = { version: 1 as const, issues: { '2026-09-01': { story: published, selectedAt: published.publishedAt, platforms: {
