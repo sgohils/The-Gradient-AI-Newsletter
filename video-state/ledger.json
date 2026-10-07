@@ -250,7 +250,7 @@
       "platforms": {
         "youtube": {
           "accountId": "6ac27146281ee799a37065e4",
-          "status": "submitting",
+          "status": "published",
           "idempotencyKey": "0b0152be-2aab-4720-aed9-f32ef1f6f55e",
           "request": {
             "content": "Behavioral History Outperforms Descriptions of the Person for LLM Synthetic Personas\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2610.03998\n\nThe Gradient: https://gradientnews.app/archive/2026-10-07\nAI-generated narration. #AI #AINews #Shorts",
@@ -275,7 +275,9 @@
             ],
             "publishNow": true
           },
-          "firstSubmittedAt": "2026-10-07T17:45:01.684Z"
+          "firstSubmittedAt": "2026-10-07T17:45:01.684Z",
+          "postId": "6ac6851fedc29d923a42d79c",
+          "postUrl": "https://www.youtube.com/watch?v=W6OxyK0k7BY"
         }
       },
       "script": {
