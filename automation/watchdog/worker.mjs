@@ -24,6 +24,7 @@ async function token(env, now, fetcher) {
   if (cachedToken && cachedToken.installation === env.GITHUB_INSTALLATION_ID && cachedToken.app === env.GITHUB_APP_ID && cachedToken.expires > now.getTime() + 60000) return cachedToken.value;
   const jwt = githubJwt(env.GITHUB_APP_ID, env.GITHUB_APP_PRIVATE_KEY, now);
   const response = await fetcher(`https://api.github.com/app/installations/${env.GITHUB_INSTALLATION_ID}/access_tokens`, {
+    signal: AbortSignal.timeout(10000),
     method: 'POST', headers: { Authorization: `Bearer ${jwt}`, Accept: 'application/vnd.github+json', 'User-Agent': 'GradientWatchdog' },
     body: JSON.stringify({ repositories: ['The-Gradient-AI-Newsletter'], permissions: { actions: 'write', contents: 'read', variables: 'read' } }),
   });
@@ -62,7 +63,7 @@ export async function runWatchdog(env, now = new Date(), fetcher = fetch) {
   const access = await token(env, now, fetcher);
   const headers = { Authorization: `Bearer ${access}`, Accept: 'application/vnd.github+json', 'User-Agent': 'GradientWatchdog', 'X-GitHub-Api-Version': '2022-11-28' };
   async function read(url) {
-    const response = await fetcher(url, { headers });
+    const response = await fetcher(url, { headers, signal: AbortSignal.timeout(10000) });
     if (response.status === 404) return undefined;
     if (!response.ok) throw new Error(`Repository check failed (${response.status}).`);
     return response.json();
@@ -88,6 +89,7 @@ export async function runWatchdog(env, now = new Date(), fetcher = fetch) {
   // Reserve before dispatch. A lost HTTP response cannot cause a burst of runs.
   await env.STATE.put(key, JSON.stringify({ attempts: state.attempts + 1, lastDispatch: now.getTime() }), { expirationTtl: 3 * 86400 });
   const response = await fetcher(`${api}/actions/workflows/daily-publish.yml/dispatches`, {
+    signal: AbortSignal.timeout(10000),
     method: 'POST', headers: { ...headers, 'Content-Type': 'application/json' },
     body: JSON.stringify({ ref: 'main', inputs: { issue_date: issueDate } }),
   });
