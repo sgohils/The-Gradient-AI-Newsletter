@@ -1,4 +1,6 @@
-# Daily AI news videos
+# Legacy video pipeline reference
+
+The default format is now version 3. See [Automatic Shorts](shorts-autopilot.md) for current durations, real-media sourcing, one-time setup, recovery, and automatic analytics. This file retains older commands and version-1/2 behavior for compatibility; its manual review and analytics steps do not govern the new unattended YouTube workflow.
 
 The newsletter writes `posts/YYYY-MM-DD.video.json` with up to 25 ranked video candidates, original RSS evidence, source URLs, and publication times. Newsletter stories come first, followed by other fresh, relevant articles from the same feeds; these extra candidates need no summary API calls. Full RSS content is retained when it contains more evidence than the short description. Daily runs target 7:00 AM Eastern using the `America/New_York` schedule timezone, including daylight saving time. Recovery attempts run at :17 and :37 each hour from 7 AM through 11 AM Eastern. UTC issue dates are unchanged. GitHub schedules can still be delayed or dropped; these triggers improve recovery rather than guarantee an exact delivery time. Video rendering and posting follow newsletter publication, so the video appears after the CPU render completes. A manual daily run can specify `issue_date` to recover a particular edition without resending its committed newsletter.
 

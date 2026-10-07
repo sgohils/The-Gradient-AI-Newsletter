@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "mediaHosts": ["upload.wikimedia.org"],
+  "acceptedLicenses": ["CC0", "Public domain", "CC BY 2.0", "CC BY 3.0", "CC BY 4.0"],
+  "note": "Official candidates require an individual creator, source URL and explicit supported license. An article image or og:image alone grants no reuse permission. Extend mediaHosts only after verifying a source's asset rights."
+}

@@ -2,6 +2,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 import { createHash } from 'crypto';
 import { VideoInput, VideoLedger, VideoManifest } from './types';
+import { profileFor, validDuration } from './profiles';
 
 export function assertIssueDate(value: unknown): asserts value is string {
   if (typeof value !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(value) ||
@@ -56,7 +57,7 @@ export function readManifest(file: string): VideoManifest {
   if (manifest.status === 'skipped' && typeof manifest.reason === 'string') return manifest;
   if (manifest.status !== 'ready' || !manifest.story || !manifest.script ||
       typeof manifest.script.narration !== 'string' || !Array.isArray(manifest.script.sentences) ||
-      !Number.isFinite(manifest.duration) || manifest.duration < 30 || manifest.duration > 45 ||
+      !validDuration(manifest.duration, profileFor(manifest.script)) ||
       !/^[a-f0-9]{64}$/.test(manifest.videoSha256) || typeof manifest.title !== 'string' ||
       typeof manifest.description !== 'string' || typeof manifest.videoFile !== 'string' ||
       path.basename(manifest.videoFile) !== manifest.videoFile) {
@@ -76,11 +77,17 @@ export function readLedger(file: string): VideoLedger {
       throw new Error('Incomplete publication ledger; restore it before publishing.');
     }
   }
+  if (ledger.scriptRequests && (Array.isArray(ledger.scriptRequests) || Object.entries(ledger.scriptRequests).some(([date, requests]) => {
+    assertIssueDate(date); return !Number.isInteger(requests) || requests < 0 || requests > 2;
+  }))) throw new Error('Invalid per-edition script request budget.');
   return ledger;
 }
 
 /** Older source text remains in posts; keep durable identity and submission state. */
 export function compactLedger(ledger: VideoLedger, now = new Date()): void {
+  for (const date of Object.keys(ledger.scriptRequests || {})) {
+    if (now.getTime() - Date.parse(date) > 7 * 86400000) delete ledger.scriptRequests![date];
+  }
   for (const entry of Object.values(ledger.issues)) {
     const age = now.getTime() - Date.parse(entry.story.publishedAt);
     if (!Number.isFinite(age) || age <= 7 * 86400000) continue;

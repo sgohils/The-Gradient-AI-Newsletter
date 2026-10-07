@@ -7,7 +7,7 @@ try {
   if (process.env.GITHUB_OUTPUT) fs.appendFileSync(process.env.GITHUB_OUTPUT, outputs);
   const summary = `Daily edition: ${status.issueDate} (UTC)\n` +
     `Newsletter: ${status.newsletterNeeded ? 'not committed yet; publication needed' : 'already committed; email will not be sent again'}\n` +
-    `YouTube: ${status.videoNeeded ? 'not published yet' : 'already published; no new upload'}\n` +
+    `YouTube: ${status.videoPauseReason || (status.videoNeeded ? 'not published yet' : 'complete or quarantined; no new upload')}\n` +
     `Automatic video rendering: ${process.env.VIDEO_ENABLED === 'true' ? 'enabled' : 'disabled (Actions variable VIDEO_ENABLED must be true; a secret does not enable it)'}\n` +
     `Automatic video publication: ${process.env.VIDEO_PUBLISH_ENABLED === 'true' ? 'enabled' : 'disabled (Actions variable VIDEO_PUBLISH_ENABLED must be true; a secret does not enable it)'}\n`;
   if (process.env.GITHUB_ACTIONS === 'true' && status.videoNeeded && process.env.VIDEO_ENABLED !== 'true') {

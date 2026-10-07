@@ -1,8 +1,9 @@
 import axios from 'axios';
 import { VideoScript, VideoStory, ScriptSentence } from './types';
 import { wordCount } from './selection';
+import { validateShortScript } from './short-script';
 
-export const SCRIPT_VERSION = 2;
+export const SCRIPT_VERSION = 3;
 export const SCRIPT_ENDING = 'Source in the description.';
 
 function displayLabel(text: string): string {
@@ -32,6 +33,7 @@ function figures(text: string): string[] {
 }
 
 export function validateScript(story: VideoStory, script: VideoScript): void {
+  if (script?.version === 3) return validateShortScript(story, script);
   if (!script || !['groq', 'extractive'].includes(script.provider) ||
       !Array.isArray(script.sentences) || !script.sentences.length || script.sentences.length > 8) {
     throw new Error('Invalid video script.');

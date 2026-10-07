@@ -6,3 +6,4 @@ web/public/issue-images/
 .cache/
 video-output/
 __pycache__/
+.wrangler/

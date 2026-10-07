@@ -1,0 +1,7 @@
+{
+  "version": 1,
+  "championHook": "direct-benefit",
+  "championBeatSeconds": 3,
+  "metrics": {},
+  "decisions": []
+}

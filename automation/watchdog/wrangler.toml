@@ -1,0 +1,20 @@
+name = "gradient-video-watchdog"
+main = "worker.mjs"
+compatibility_date = "2026-10-06"
+compatibility_flags = ["nodejs_compat"]
+workers_dev = true
+
+[triggers]
+crons = ["*/15 * * * *"]
+
+[vars]
+PAUSED = "false"
+
+# SQLite Durable Objects are supported on the Workers Free plan.
+[[durable_objects.bindings]]
+name = "COORDINATOR"
+class_name = "RecoveryCoordinator"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["RecoveryCoordinator"]

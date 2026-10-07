@@ -2,7 +2,7 @@ import { captionChunks } from './captions';
 import { GraphicLayout, GraphicTheme, NarrationTiming, VideoScene, VideoScript, VideoStoryboard, VideoStory } from './types';
 import { SCRIPT_ENDING, validateScript } from './script';
 
-export const GRAPHICS_VERSION = 5;
+export const GRAPHICS_VERSION = 6;
 
 function normalized(text: string): string {
   return text.normalize('NFKC').toLowerCase().replace(/[^\p{L}\p{N}]/gu, '');

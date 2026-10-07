@@ -4,7 +4,7 @@ import { assertIssueDate, readInput, readLedger } from '../video/storage';
 
 /** Scheduled recovery attempts reuse a committed edition instead of emailing it again. */
 export function dailyStatus(options: { outputDir?: string; ledgerPath?: string; now?: Date; issueDate?: string } = {}): {
-  issueDate: string; newsletterNeeded: boolean; videoNeeded: boolean; videoInputPath?: string;
+  issueDate: string; newsletterNeeded: boolean; videoNeeded: boolean; videoInputPath?: string; videoPauseReason?: string;
 } {
   const issueDate = options.issueDate || (options.now || new Date()).toISOString().slice(0, 10);
   assertIssueDate(issueDate);
@@ -22,5 +22,6 @@ export function dailyStatus(options: { outputDir?: string; ledgerPath?: string; 
     videoInputPath = inputPath;
   }
   return { issueDate, newsletterNeeded: present.length === 0,
-    videoNeeded: ledger.issues[issueDate]?.platforms.youtube?.status !== 'published', videoInputPath };
+    videoNeeded: !ledger.youtubePause && !ledger.issues[issueDate]?.quarantineReason && ledger.issues[issueDate]?.platforms.youtube?.status !== 'published', videoInputPath,
+    ...(ledger.youtubePause ? { videoPauseReason: ledger.youtubePause.reason } : {}) };
 }

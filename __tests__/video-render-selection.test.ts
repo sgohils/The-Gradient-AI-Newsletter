@@ -26,8 +26,8 @@ beforeEach(() => {
     if (args[0].endsWith('narrate.py')) {
       const output = args[args.indexOf('--output-dir') + 1];
       const words = fs.readFileSync(args[args.indexOf('--script') + 1], 'utf8').trim().split(/\s+/);
-      writeJson(path.join(output, 'timing.json'), { duration: 35, sampleRate: 24000,
-        words: words.map((text, i) => ({ text, start: i * 35 / words.length, end: (i + 1) * 35 / words.length })) });
+      writeJson(path.join(output, 'timing.json'), { duration: 28, sampleRate: 24000,
+        words: words.map((text, i) => ({ text, start: i * 28 / words.length, end: (i + 1) * 28 / words.length })) });
       fs.writeFileSync(path.join(output, 'audio.wav'), 'mock audio');
     }
     if (directory && args.includes('video.mp4')) fs.writeFileSync(path.join(directory, 'video.mp4'), 'mock video');
@@ -59,7 +59,7 @@ describe('daily rendering tries usable evidence without changing frozen stories'
   });
   it('reports short evidence before spending an API call or starting the renderer', async () => {
     writeJson(options.inputPath, { ...original, stories: [{ ...invalid, sourceExcerpt: 'Short teaser.' }] });
-    expect((await renderVideo(options)).manifest).toMatchObject({ status: 'skipped', reason: expect.stringContaining('1 with fewer than 60 source words') });
+    expect((await renderVideo(options)).manifest).toMatchObject({ status: 'skipped', reason: expect.stringContaining('1 with fewer than 40 source words') });
     expect(axios.post).not.toHaveBeenCalled();
     expect(runCommand).not.toHaveBeenCalled();
     expect(readLedger(options.ledgerPath!).issues).toEqual({});
@@ -68,7 +68,7 @@ describe('daily rendering tries usable evidence without changing frozen stories'
     const ledger = { version: 1, issues: { [original.issueDate]: { story: invalid, selectedAt: now.toISOString(), platforms: {} } } };
     writeJson(options.ledgerPath!, ledger);
     expect((await renderVideo(options)).manifest).toMatchObject({ status: 'skipped', reason: expect.stringContaining('None of 1 eligible stories') });
-    expect(readLedger(options.ledgerPath!)).toEqual(ledger);
+    expect(readLedger(options.ledgerPath!).issues).toEqual(ledger.issues);
     expect(runCommand).not.toHaveBeenCalled();
   });
   it('upgrades an unsubmitted legacy script while preserving its frozen story', async () => {
@@ -78,7 +78,7 @@ describe('daily rendering tries usable evidence without changing frozen stories'
     } } });
     const result = await renderVideo(options);
     expect(result.manifest).toMatchObject({ status: 'ready', story: { id: 'second' },
-      script: { version: 2 }, selectionReason: expect.any(String) });
+      script: { version: 3 }, selectionReason: expect.any(String) });
     expect(readLedger(options.ledgerPath!).issues[original.issueDate].story.id).toBe('second');
     expect(axios.post).toHaveBeenCalledTimes(1);
   });

@@ -121,11 +121,16 @@ describe('safe separate platform publication', () => {
 describe('credentials, retries, durable intent, and reconciliation', () => {
   it('records expired credentials and payment errors without paid fallbacks', async () => {
     for (const status of [401, 402]) {
+      store();
       const transport = vi.fn().mockRejectedValue(httpError(status));
       const result = await publishVideo({ ...options, transport, platforms: ['youtube'] });
       expect(result.issues[manifest.issueDate].platforms.youtube?.status).toBe('failed');
       expect(transport).toHaveBeenCalledTimes(1);
       expect(result.issues[manifest.issueDate].platforms.youtube?.error).toContain(status === 401 ? 'authorization failed' : 'requires payment');
+      expect(result.youtubePause?.reason).toBeTruthy();
+      transport.mockClear();
+      await publishVideo({ ...options, transport, platforms: ['youtube'] });
+      expect(transport).not.toHaveBeenCalled();
     }
     expect(posts).toBe(0);
   });

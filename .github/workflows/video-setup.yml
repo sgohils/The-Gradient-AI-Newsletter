@@ -1,0 +1,46 @@
+name: One-time Shorts connection checks
+on:
+  workflow_dispatch:
+    inputs:
+      activate:
+        description: 'Activate the deployed watchdog after the one-time launch approval'
+        type: boolean
+        default: false
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - name: Verify existing posting and free analytics permissions
+        env:
+          ZERNIO_API_KEY: ${{ secrets.ZERNIO_API_KEY }}
+          ZERNIO_YOUTUBE_ACCOUNT_ID: ${{ vars.ZERNIO_YOUTUBE_ACCOUNT_ID || secrets.ZERNIO_YOUTUBE_ACCOUNT_ID }}
+          YOUTUBE_ANALYTICS_CLIENT_ID: ${{ secrets.YOUTUBE_ANALYTICS_CLIENT_ID }}
+          YOUTUBE_ANALYTICS_CLIENT_SECRET: ${{ secrets.YOUTUBE_ANALYTICS_CLIENT_SECRET }}
+          YOUTUBE_ANALYTICS_REFRESH_TOKEN: ${{ secrets.YOUTUBE_ANALYTICS_REFRESH_TOKEN }}
+        run: node dist/scripts/video-setup.js
+      - name: Activate independently scheduled recovery
+        if: inputs.activate
+        env:
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: |
+          node -e 'if (!require("./video-output/setup/connections.json").ready) throw new Error("Initial posting and analytics checks must pass before activation")'
+          node automation/watchdog/activate.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: shorts-setup-checks
+          path: video-output/setup/connections.json
+          retention-days: 7
