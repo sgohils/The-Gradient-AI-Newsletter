@@ -4,7 +4,7 @@ import * as os from 'os';
 import * as path from 'path';
 import { sampleInput } from '../src/video/sample';
 import { buildShortScript, cleanEvidence, generateShortCandidates, simplifyShortScript, validateShortScript } from '../src/video/short-script';
-import { collectVisuals, allowedLicense } from '../src/video/visuals';
+import { collectVisuals, allowedLicense, readLibrary } from '../src/video/visuals';
 import { extractPermittedMedia } from '../src/video/source-media';
 import { buildPhotoStoryboard } from '../src/video/photo-storyboard';
 import { initialExperiments, assignExperiment, improveExperiments } from '../src/video/experiments';
@@ -84,6 +84,20 @@ describe('licensed real imagery and offline operation', () => {
     await collectVisuals(story, root, { offline: true, client, cacheRoot: path.join(root, 'cache') });
     expect(client.get).not.toHaveBeenCalled();
     expect(extractPermittedMedia('<meta property="og:image" content="https://example.com/photo.jpg"><figure><img src="/photo.jpg"></figure>', story)).toEqual([]);
+  });
+  it('does not reuse actual source imagery after the selected story changes before freezing', async () => {
+    const root = fixture(); const bytes = fs.readFileSync(readLibrary()[0].file);
+    const client = { get: vi.fn(async (url: string) => {
+      if (url === 'https://example.com/photo.jpg') return { data: bytes };
+      throw new Error('offline');
+    }) };
+    const first = await collectVisuals({ ...story, visualCandidates: [{ url: 'https://example.com/photo.jpg', sourceUrl: story.sourceUrl,
+      creator: 'Fixture creator', license: 'CC BY 4.0', licenseUrl: 'https://creativecommons.org/licenses/by/4.0/',
+      title: 'Fixture source photo', kind: 'photo', usage: 'actual' }] }, root, { client, cacheRoot: path.join(root, 'cache') });
+    expect(first.sourceSpecific).toBe(true);
+    const second = await collectVisuals({ ...story, id: 'different-story', sourceUrl: 'https://example.com/another-story' }, root,
+      { offline: true, client, cacheRoot: path.join(root, 'cache') });
+    expect(second.sourceSpecific).toBe(false); expect(second.assets.every(asset => asset.usage === 'illustrative')).toBe(true);
   });
   it('retains individual source-image licenses and excludes third-party or unlicensed images', () => {
     const html = '<meta name="author" content="Research Team"><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">License</a><figure><img src="/figure.png" alt="Measured result"></figure><figure><img src="https://other.example/photo.jpg"></figure><figure><img src="/copyright.png"><figcaption>Reproduced courtesy of someone else</figcaption></figure>';

@@ -98,8 +98,8 @@ export async function collectVisuals(story: VideoStory, directory: string, optio
   const client = options.client || axios;
   const savedPath = path.join(directory, 'visual-assets.json');
   if (fs.existsSync(savedPath)) {
-    const saved = readJson(savedPath) as { version: number; assets: VisualAsset[] };
-    if (saved.version === 1 && saved.assets?.length >= 2 && saved.assets.every(asset => {
+    const saved = readJson(savedPath) as { version: number; storyId?: string; sourceUrl?: string; assets: VisualAsset[] };
+    if (saved.version === 1 && saved.storyId === story.id && saved.sourceUrl === story.sourceUrl && saved.assets?.length >= 2 && saved.assets.every(asset => {
       const file = path.resolve(directory, asset.file);
       return file.startsWith(path.resolve(directory) + path.sep) && fs.existsSync(file) && fileSha256(file) === asset.sha256;
     })) return { assets: saved.assets, searches: 0, sourceSpecific: saved.assets.some(asset => asset.usage === 'actual') };
@@ -200,7 +200,7 @@ export async function collectVisuals(story: VideoStory, directory: string, optio
     assets.push({ ...asset, file });
   }
   if (assets.length < 2) throw new Error('At least two licensed real images are required.');
-  writeJson(path.join(directory, 'visual-assets.json'), { version: 1, searches, topic, assets });
+  writeJson(path.join(directory, 'visual-assets.json'), { version: 1, storyId: story.id, sourceUrl: story.sourceUrl, searches, topic, assets });
   pruneVisualCache(cacheRoot);
   return { assets, searches, sourceSpecific: assets.some(asset => asset.usage === 'actual') };
 }
