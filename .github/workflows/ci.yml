@@ -12,6 +12,31 @@ permissions:
   contents: read
 
 jobs:
+  shorts-setup:
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - name: Test existing YouTube and analytics connections
+        env:
+          ZERNIO_API_KEY: ${{ secrets.ZERNIO_API_KEY }}
+          ZERNIO_YOUTUBE_ACCOUNT_ID: ${{ vars.ZERNIO_YOUTUBE_ACCOUNT_ID || secrets.ZERNIO_YOUTUBE_ACCOUNT_ID }}
+          YOUTUBE_ANALYTICS_CLIENT_ID: ${{ secrets.YOUTUBE_ANALYTICS_CLIENT_ID }}
+          YOUTUBE_ANALYTICS_CLIENT_SECRET: ${{ secrets.YOUTUBE_ANALYTICS_CLIENT_SECRET }}
+          YOUTUBE_ANALYTICS_REFRESH_TOKEN: ${{ secrets.YOUTUBE_ANALYTICS_REFRESH_TOKEN }}
+        run: node dist/scripts/video-setup.js
+      - uses: actions/upload-artifact@v4
+        with:
+          name: shorts-setup-checks
+          path: video-output/setup/connections.json
+          retention-days: 7
   pipeline:
     runs-on: ubuntu-latest
     steps:

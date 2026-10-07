@@ -41,7 +41,7 @@ export function videoSuitability(story: VideoStory): { priority: number; reason:
   return { priority: 1, reason: 'Fresh AI news with original evidence; no clearer video angle found.' };
 }
 
-export function assessStoryCandidates(input: VideoInput, ledger: VideoLedger, now = new Date()): {
+export function assessStoryCandidates(input: VideoInput, ledger: VideoLedger, now = new Date(), minimumEvidenceWords = 60): {
   stories: VideoStory[]; reason: string;
 } {
   const age = now.getTime() - Date.parse(input.generatedAt);
@@ -61,12 +61,12 @@ export function assessStoryCandidates(input: VideoInput, ledger: VideoLedger, no
     if (!Number.isFinite(age) || age < -5 * 60000) { rejected.unknownOrFuture++; return false; }
     if (age > 72 * 3600000) { rejected.stale++; return false; }
     if (used.has(storyKey(story.sourceUrl))) { rejected.used++; return false; }
-    if (wordCount(story.sourceExcerpt) < 60) { rejected.insufficientEvidence++; return false; }
+    if (wordCount(story.sourceExcerpt) < minimumEvidenceWords) { rejected.insufficientEvidence++; return false; }
     return true;
   });
   return { stories, reason: `No fresh, unused story with enough original source evidence. Checked ${candidates.length}: ` +
     `${rejected.stale} older than 72 hours, ${rejected.unknownOrFuture} with unknown/future dates, ` +
-    `${rejected.used} already used, ${rejected.insufficientEvidence} with fewer than 60 source words.` };
+    `${rejected.used} already used, ${rejected.insufficientEvidence} with fewer than ${minimumEvidenceWords} source words.` };
 }
 
 export function selectStory(input: VideoInput, ledger: VideoLedger, now = new Date()): VideoStory | undefined {

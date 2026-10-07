@@ -20,7 +20,9 @@ def verify(directory):
     video = next(s for s in info["streams"] if s["codec_type"] == "video")
     audio_stream = next(s for s in info["streams"] if s["codec_type"] == "audio")
     duration = float(info["format"]["duration"])
-    if not 30 <= duration <= 45 or abs(duration - manifest["duration"]) > 0.1:
+    profile = manifest.get("profile", "legacy") if manifest["script"].get("version") == 3 else "legacy"
+    minimum, maximum = {"legacy": (30, 45), "standard": (25, 30), "simple": (18, 24)}[profile]
+    if not minimum <= duration <= maximum or abs(duration - manifest["duration"]) > 0.1:
         raise ValueError(f"Encoded duration is invalid: {duration}")
     if (video["width"], video["height"], video["codec_name"], video["pix_fmt"], video["r_frame_rate"]) != (1080, 1920, "h264", "yuv420p", "30/1"):
         raise ValueError("Encoded video dimensions, frame rate, or codec are invalid")
@@ -28,6 +30,23 @@ def verify(directory):
         raise ValueError("Encoded audio must be AAC")
     if (directory / manifest["videoFile"]).stat().st_size > 50 * 1024 * 1024:
         raise ValueError("Video exceeds the artifact/upload size budget")
+    if manifest["script"].get("version") == 3:
+        import hashlib
+        storyboard = json.loads((directory / "storyboard.json").read_text(encoding="utf-8"))
+        assets = {asset["id"]: asset for asset in manifest.get("assets", [])}
+        if len(assets) < 2 or storyboard.get("version") != 5:
+            raise ValueError("Real visual provenance is missing")
+        real_time = 0.0
+        for scene in storyboard["scenes"]:
+            asset = assets.get(scene.get("assetId"))
+            if not asset:
+                raise ValueError("Scene references missing media")
+            file = (directory / asset["file"]).resolve()
+            if directory.resolve() not in file.parents or not file.is_file() or hashlib.sha256(file.read_bytes()).hexdigest() != asset["sha256"]:
+                raise ValueError("Media is missing or changed")
+            real_time += scene["end"] - scene["start"]
+        if real_time / duration < 0.70:
+            raise ValueError("Real visuals cover less than 70 percent of the video")
     timing = json.loads((directory / "timing.json").read_text(encoding="utf-8"))
     words = timing["words"]
     previous = 0.0

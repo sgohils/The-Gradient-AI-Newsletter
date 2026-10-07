@@ -45,7 +45,7 @@ function failureInfo(error: unknown): { status?: number; code?: string; retryAft
 
 function safeError(error: unknown): string {
   const { status } = failureInfo(error);
-  if (status === 401 || status === 403) return 'Zernio authorization failed; check the API key and reconnect the platform account.';
+  if (status === 401 || status === 403) return 'Zernio authorization failed; affected publication is automatically paused.';
   if (status === 402) return 'Provider requires payment; stopped without enabling a paid fallback.';
   if (status) return `Provider request failed (HTTP ${status}); review the connected account in Zernio.`;
   // Local validation errors are useful; never print Axios request/config objects.
@@ -134,6 +134,11 @@ export async function publishVideo(options: PublishOptions): Promise<VideoLedger
   if (options.apiKey) {
     for (const entry of Object.values(ledger.issues)) {
       for (const [platform, publication] of Object.entries(entry.platforms)) {
+        if (publication?.firstSubmittedAt && !publication.postId && publication.status !== 'published' &&
+            now().getTime() - Date.parse(publication.firstSubmittedAt) >= 24 * 3600000) {
+          entry.quarantineReason = 'The 24-hour idempotency window expired with an unknown upload outcome; quarantined without creating another upload.';
+          publication.status = 'uncertain'; publication.error = entry.quarantineReason; await persist(); continue;
+        }
         if (!publication?.postId || publication.status === 'published' || publication.status === 'failed' || publication.status === 'blocked') continue;
         try {
           applyPost(publication, platform as Platform, providerPost(await request({ method: 'GET', url: `${BASE_URL}/posts/${encodeURIComponent(publication.postId)}` })));
@@ -162,6 +167,7 @@ export async function publishVideo(options: PublishOptions): Promise<VideoLedger
   if (entry.media && entry.media.videoSha256 !== manifest.videoSha256) throw new Error('Uploaded video differs from this render; restore the original artifact before retrying.');
 
   const configured = options.platforms || ['youtube', 'tiktok'];
+  if (ledger.youtubePause && configured.every(platform => platform === 'youtube')) return ledger;
   let connected: { _id: string; platform: string; isActive?: boolean }[] | undefined;
   let connectionError: unknown;
   if (options.apiKey) {
@@ -169,9 +175,11 @@ export async function publishVideo(options: PublishOptions): Promise<VideoLedger
     catch (error) { connectionError = error; }
   }
   for (const platform of configured) {
+    if (platform === 'youtube' && ledger.youtubePause) continue;
     const accountId = options.accounts[platform] || '';
     let publication = entry.platforms[platform];
     if (publication?.status === 'published') continue;
+    if (entry.quarantineReason) continue;
     if (publication && publication.accountId !== accountId && publication.firstSubmittedAt) {
       throw new Error(`The ${platform} account changed after submission; refusing to publish to a different account.`);
     }
@@ -202,7 +210,8 @@ export async function publishVideo(options: PublishOptions): Promise<VideoLedger
       } else {
         assertFresh(manifest, now());
         if (publication.firstSubmittedAt && now().getTime() - Date.parse(publication.firstSubmittedAt) >= 24 * 3600000) {
-          throw new Error('Submission outcome is unknown and the 24-hour idempotency window expired. Reconcile the provider post manually; do not create another upload.');
+          entry.quarantineReason = 'Submission outcome is unknown and the 24-hour idempotency window expired; automatically quarantined.';
+          throw new Error(entry.quarantineReason);
         }
         let tiktokSettings: Record<string, unknown> | undefined;
         if (platform === 'tiktok') {
@@ -276,6 +285,7 @@ export async function publishVideo(options: PublishOptions): Promise<VideoLedger
         else publication.status = status && status >= 400 ? 'failed' : 'blocked';
       }
       publication.error = safeError(error);
+      if (platform === 'youtube' && [401, 402, 403].includes(status || 0)) ledger.youtubePause = { at: now().toISOString(), reason: publication.error };
       await persist();
     }
   }

@@ -13,6 +13,9 @@
     "video:publish": "npm run build && node dist/scripts/video-publish.js",
     "video:sample": "npm run build && node dist/scripts/video-sample.js",
     "video:prepare": "npm run build && node dist/scripts/video-prepare.js",
+    "video:analytics": "npm run build && node dist/scripts/video-analytics.js",
+    "video:setup": "npm run build && node dist/scripts/video-setup.js",
+    "video:connect": "node automation/setup/server.mjs",
     "test": "vitest run",
     "lint": "eslint src --ext .ts"
   },
@@ -37,6 +40,7 @@
     "@typescript-eslint/eslint-plugin": "^7.0.0",
     "@typescript-eslint/parser": "^7.0.0",
     "eslint": "^8.55.0",
+    "libsodium-wrappers": "0.8.4",
     "typescript": "^5.3.0",
     "vitest": "^1.0.0"
   }

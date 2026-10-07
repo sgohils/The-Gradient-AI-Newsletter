@@ -12,6 +12,30 @@ MODEL_REPO = "hexgrad/Kokoro-82M"
 MODEL_REVISION = "f3ff3571791e39611d31c381e3a41a3af07b4987"
 
 
+def spoken_text(text, pronunciations):
+    pattern = r"\b(?:" + "|".join(re.escape(term) for term in sorted(pronunciations, key=len, reverse=True)) + r")\b"
+    return re.sub(pattern, lambda match: pronunciations[match.group()], text)
+
+
+def restore_pronunciations(words, pronunciations):
+    mappings = sorted(pronunciations.items(), key=lambda item: len(item[1].split()), reverse=True)
+    restored, index = [], 0
+    while index < len(words):
+        for original, expansion in mappings:
+            expected = expansion.casefold().split()
+            group = words[index:index + len(expected)]
+            actual = [re.sub(r"[^\w]", "", word["text"]).casefold() for word in group]
+            if actual == expected:
+                punctuation = re.search(r"[^\w]+$", group[-1]["text"])
+                restored.append({"text": original + (punctuation.group() if punctuation else ""), "start": group[0]["start"], "end": group[-1]["end"]})
+                index += len(expected)
+                break
+        else:
+            restored.append(words[index])
+            index += 1
+    return restored
+
+
 def main():
     import numpy as np
     import soundfile as sf
@@ -22,10 +46,13 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--script", required=True)
     parser.add_argument("--output-dir", required=True)
+    parser.add_argument("--profile", choices=("legacy", "standard", "simple"), default="legacy")
     args = parser.parse_args()
     output = Path(args.output_dir)
     output.mkdir(parents=True, exist_ok=True)
     text = Path(args.script).read_text(encoding="utf-8").strip()
+    pronunciations = {} if args.profile == "legacy" else json.loads(Path("assets/video/pronunciations.json").read_text(encoding="utf-8"))
+    speech = spoken_text(text, pronunciations) if pronunciations else text
     if not text or len(text) > 3000:
         raise ValueError("Narration is empty or too long")
     torch.set_num_threads(min(4, os.cpu_count() or 1))
@@ -38,7 +65,7 @@ def main():
     def synthesize(speed):
         audio_parts, words = [], []
         offset = 0.0
-        for result in pipeline(text, voice=files["voices/af_heart.pt"], speed=speed):
+        for result in pipeline(speech, voice=files["voices/af_heart.pt"], speed=speed):
             audio = result.audio.detach().cpu().numpy()
             duration = len(audio) / 24000
             for token in result.tokens or []:
@@ -54,18 +81,19 @@ def main():
                     raise ValueError(f"Speech token has no usable timing: {token.text}")
             audio_parts.append(audio)
             offset += duration
-        return np.concatenate(audio_parts), words, offset
+        return np.concatenate(audio_parts), restore_pronunciations(words, pronunciations), offset
 
+    minimum, maximum, target = {"legacy": (30, 45, 37), "standard": (25, 30, 28), "simple": (18, 24, 21)}[args.profile]
     audio, words, duration = synthesize(1.0)
-    if not 30 <= duration <= 45:
-        speed = max(0.80, min(1.20, duration / 37))
+    if not minimum <= duration <= maximum:
+        speed = max(0.80, min(1.20, duration / target))
         audio, words, duration = synthesize(speed)
-    if not 30 <= duration <= 45 or not words:
-        raise ValueError(f"Narration duration {duration:.2f}s cannot fit 30–45s naturally")
+    if not minimum <= duration <= maximum or not words:
+        raise ValueError(f"Narration duration {duration:.2f}s cannot fit {minimum}–{maximum}s naturally")
     if not np.isfinite(audio).all() or float(np.sqrt(np.mean(audio ** 2))) < 0.005:
         raise ValueError("Narration audio is silent or invalid")
     sf.write(output / "audio.wav", audio, 24000, subtype="PCM_16")
-    (output / "timing.json").write_text(json.dumps({"duration": duration, "sampleRate": 24000, "words": words}, indent=2), encoding="utf-8")
+    (output / "timing.json").write_text(json.dumps({"duration": duration, "sampleRate": 24000, "words": words, "profile": args.profile}, indent=2), encoding="utf-8")
     print(f"Kokoro CPU narration: {duration:.2f}s, {len(words)} timed tokens")
 
 

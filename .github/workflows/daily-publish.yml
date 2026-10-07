@@ -87,13 +87,15 @@ jobs:
 
   video:
     needs: publish
-    if: vars.VIDEO_ENABLED == 'true' && needs.publish.outputs.video_input != '' && needs.publish.outputs.video_needed == 'true'
+    if: vars.VIDEO_ENABLED == 'true' && vars.VIDEO_AUTOPILOT_PAUSED != 'true' && needs.publish.outputs.video_input != '' && needs.publish.outputs.video_needed == 'true'
     runs-on: ubuntu-24.04
     timeout-minutes: 25
     permissions:
       contents: write
+      actions: read
     env:
       GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+      PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
       ZERNIO_API_KEY: ${{ secrets.ZERNIO_API_KEY }}
       ZERNIO_YOUTUBE_ACCOUNT_ID: ${{ vars.ZERNIO_YOUTUBE_ACCOUNT_ID || secrets.ZERNIO_YOUTUBE_ACCOUNT_ID }}
       ZERNIO_TIKTOK_ACCOUNT_ID: ${{ vars.ZERNIO_TIKTOK_ACCOUNT_ID }}
@@ -125,28 +127,36 @@ jobs:
           VIDEO_ENABLED: ${{ vars.VIDEO_ENABLED }}
           VIDEO_PUBLISH_ENABLED: ${{ vars.VIDEO_PUBLISH_ENABLED }}
         run: node dist/scripts/daily-status.js
-      - uses: ./.github/actions/video-runtime
+      - name: Recover exact submitted media automatically
+        id: recovery
         if: steps.preflight.outputs.video_needed == 'true'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node dist/scripts/video-recover.js --issue-date "$ISSUE_DATE"
+      - uses: ./.github/actions/video-runtime
+        if: steps.preflight.outputs.video_needed == 'true' && steps.recovery.outputs.mode == 'render'
+      - name: Restore bounded photo cache
+        if: steps.recovery.outputs.mode == 'render'
+        uses: actions/cache@v4
+        with:
+          path: .cache/video-assets
+          key: video-assets-v1-${{ needs.publish.outputs.issue_date }}
+          restore-keys: video-assets-v1-
       - name: Render today's story
         id: render
-        if: steps.preflight.outputs.video_needed == 'true'
+        if: steps.preflight.outputs.video_needed == 'true' && steps.recovery.outputs.mode == 'render'
         run: node dist/scripts/video-render.js --input "video-input/$ISSUE_DATE.video.json"
-      - name: Publish connected platforms
-        if: vars.VIDEO_PUBLISH_ENABLED == 'true' && steps.render.outputs.status == 'ready'
+      - name: Publish YouTube Short
+        if: vars.VIDEO_PUBLISH_ENABLED == 'true' && (steps.render.outputs.status == 'ready' || steps.recovery.outputs.status == 'ready')
         env:
-          TIKTOK_ENABLED: ${{ vars.VIDEO_TIKTOK_ENABLED }}
-          MANIFEST: ${{ steps.render.outputs.manifest }}
+          MANIFEST: ${{ steps.render.outputs.manifest || steps.recovery.outputs.manifest }}
         shell: bash
-        run: |
-          platforms=youtube
-          approval=()
-          if [ "$TIKTOK_ENABLED" = true ]; then
-            platforms=youtube,tiktok
-            if [ -f "video-state/approvals/$ISSUE_DATE.json" ]; then
-              approval=(--tiktok-approval "video-state/approvals/$ISSUE_DATE.json")
-            fi
-          fi
-          node dist/scripts/video-publish.js --manifest "$MANIFEST" --platforms "$platforms" "${approval[@]}"
+        run: node dist/scripts/video-publish.js --manifest "$MANIFEST" --platforms youtube
+      - name: Record pipeline health
+        if: always()
+        env:
+          JOB_STATUS: ${{ job.status }}
+        run: node dist/scripts/video-health.js --phase daily --status "$JOB_STATUS"
       - name: Persist selected story and final platform states
         if: always()
         run: node -e 'const {gitCheckpoint}=require("./dist/src/video/cli"); gitCheckpoint("video-state/ledger.json")().catch(e=>{console.error(e.message);process.exitCode=1})'
@@ -159,3 +169,11 @@ jobs:
             video-output/
             video-state/ledger.json
           retention-days: 7
+      - name: Persist automatic health record
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add video-state/health.json
+          git diff --cached --quiet || git commit -m "chore: record automatic video health"
+          git push

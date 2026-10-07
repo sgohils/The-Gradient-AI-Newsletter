@@ -1,0 +1,47 @@
+name: Automatic video retention analysis
+on:
+  schedule:
+    - cron: '43 19 * * *'
+      timezone: America/New_York
+  workflow_dispatch:
+concurrency:
+  group: gradient-daily-pipeline
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - name: Collect finalized analytics and select supported improvements
+        env:
+          ZERNIO_API_KEY: ${{ secrets.ZERNIO_API_KEY }}
+          ZERNIO_YOUTUBE_ACCOUNT_ID: ${{ vars.ZERNIO_YOUTUBE_ACCOUNT_ID || secrets.ZERNIO_YOUTUBE_ACCOUNT_ID }}
+          YOUTUBE_ANALYTICS_CLIENT_ID: ${{ secrets.YOUTUBE_ANALYTICS_CLIENT_ID }}
+          YOUTUBE_ANALYTICS_CLIENT_SECRET: ${{ secrets.YOUTUBE_ANALYTICS_CLIENT_SECRET }}
+          YOUTUBE_ANALYTICS_REFRESH_TOKEN: ${{ secrets.YOUTUBE_ANALYTICS_REFRESH_TOKEN }}
+        run: node dist/scripts/video-analytics.js
+      - name: Persist bounded experiment state
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add video-state/experiments.json
+          git diff --cached --quiet || git commit -m "chore: update automatic retention experiments"
+          git push
+      - uses: actions/upload-artifact@v4
+        with:
+          name: retention-report
+          path: video-output/analytics/
+          retention-days: 7
+          if-no-files-found: warn

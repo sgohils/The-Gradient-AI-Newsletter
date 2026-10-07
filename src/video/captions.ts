@@ -1,9 +1,10 @@
 import { NarrationTiming, WordTiming } from './types';
+import { validDuration } from './profiles';
 
 interface Caption { start: number; end: number; text: string; words: WordTiming[] }
 
 export function captionChunks(timing: NarrationTiming): Caption[] {
-  if (!timing || !Number.isFinite(timing.duration) || timing.duration < 30 || timing.duration > 45 ||
+  if (!timing || !validDuration(timing.duration, timing.profile || 'legacy') ||
       !Array.isArray(timing.words) || !timing.words.length) throw new Error('Invalid narration timing or duration.');
   let previous = 0;
   const words: WordTiming[] = [];

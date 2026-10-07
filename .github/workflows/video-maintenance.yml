@@ -1,0 +1,56 @@
+name: Automatic video maintenance
+on:
+  schedule:
+    - cron: '23 4 * * 0'
+      timezone: America/New_York
+  workflow_dispatch:
+concurrency:
+  group: gradient-daily-pipeline
+  cancel-in-progress: false
+permissions:
+  contents: write
+  actions: write
+jobs:
+  maintain:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - name: Remove expired artifacts and cap asset caches
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node automation/maintenance.mjs
+      - name: Propose only same-minor dependency patches
+        run: node automation/patch-dependencies.mjs
+      - name: Propose stable Python library patches
+        run: node automation/patch-python.mjs
+      - uses: ./.github/actions/video-runtime
+      - name: Validate the candidate runtime
+        id: validation
+        continue-on-error: true
+        run: |
+          npm run lint
+          npm run typecheck
+          npm test
+          npm run build
+          python -m unittest discover -s scripts/video -p 'test_*.py'
+          node dist/scripts/video-sample.js --output-dir video-output/maintenance
+      - name: Adopt verified patch updates
+        if: steps.validation.outcome == 'success'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add package-lock.json scripts/video/requirements.txt scripts/video/constraints.txt
+          git diff --cached --quiet || git commit -m "chore: apply verified dependency patches"
+          git push
+      - name: Retain the existing runtime when verification fails
+        if: steps.validation.outcome != 'success'
+        run: echo 'Candidate patch failed verification; no dependency changes were committed.'
