@@ -334,8 +334,32 @@
       "platforms": {
         "youtube": {
           "accountId": "6ac27146281ee799a37065e4",
-          "status": "prepared",
-          "idempotencyKey": "3a27b3db-3887-47a3-b966-d2871ea7f178"
+          "status": "submitting",
+          "idempotencyKey": "3a27b3db-3887-47a3-b966-d2871ea7f178",
+          "request": {
+            "content": "AdaGuard: Enhancing Safety and Policy Compliance with Reasoning-Enabled LLM-As-A-Judge Guardrails\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2610.08923\n\nThe Gradient: https://gradientnews.app/archive/2026-10-08\nAI-generated narration. #AI #AINews #Shorts",
+            "mediaItems": [
+              {
+                "type": "video",
+                "url": "https://media.zernio.com/temp/1791481554227_s8p2z1b6_2026-10-08.mp4"
+              }
+            ],
+            "platforms": [
+              {
+                "platform": "youtube",
+                "accountId": "6ac27146281ee799a37065e4",
+                "platformSpecificData": {
+                  "title": "This flexibility enables developers to balance stringent latency requirements with the nee",
+                  "visibility": "public",
+                  "madeForKids": false,
+                  "containsSyntheticMedia": true,
+                  "categoryId": "28"
+                }
+              }
+            ],
+            "publishNow": true
+          },
+          "firstSubmittedAt": "2026-10-08T17:45:56.212Z"
         }
       },
       "script": {
