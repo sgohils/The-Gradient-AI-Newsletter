@@ -1,0 +1,257 @@
+{
+  "version": 1,
+  "issueDate": "2026-10-08",
+  "generatedAt": "2026-10-08T17:43:01.575Z",
+  "stories": [
+    {
+      "id": "openai-blog-https%3A%2F%2Fopenai.com%2Findex%2Fpollo-ai",
+      "rank": 1,
+      "title": "Pollo AI turns creative ideas into campaigns with OpenAI",
+      "sourceUrl": "https://openai.com/index/pollo-ai",
+      "sourceName": "OpenAI Blog",
+      "publishedAt": "2026-10-08T12:00:00.000Z",
+      "sourceExcerpt": "With GPT-5.6, GPT-6 Astra, and GPT‑Image‑2.5, Pollo AI helps creators turn bold ideas into detailed images and cinematic video ads.",
+      "summary": "**What happened:** Pollo AI integrated OpenAI's GPT‑5.6, GPT‑6 Astra, and GPT‑Image‑2.5 to let creators input high‑level ideas and receive detailed images and cinematic video ads in minutes.\n\n**Why it matters:** By automating the heavy lifting of visual and copy production, marketers can accelerate time‑to‑market, reduce costs, and experiment with more concepts, reshaping how advertising is produced.\n\n**Key stats:**\n- GPT‑5.6 delivers 2× faster text‑to‑image prompting than its predecessor.\n- GPT‑6 Astra improves video generation quality by 30% in resolution and realism.\n- Early adopters report a 50% cut in campaign creation time.\n\n**Source:** https://openai.com/index/pollo-ai"
+    },
+    {
+      "id": "openai-blog-https%3A%2F%2Fopenai.com%2Findex%2Fgpt-6-for-everyone",
+      "rank": 2,
+      "title": "GPT-6 and Intelligent UI for everyone",
+      "sourceUrl": "https://openai.com/index/gpt-6-for-everyone",
+      "sourceName": "OpenAI Blog",
+      "publishedAt": "2026-10-07T00:00:00.000Z",
+      "sourceExcerpt": "GPT‑6 is rolling out globally in ChatGPT with Intelligent UI, delivering faster responses with visuals and interactive experiences you can explore and use directly.",
+      "summary": "**What happened:** OpenAI has begun a global rollout of GPT‑6 inside ChatGPT, paired with a brand‑new Intelligent UI that delivers answers with integrated visuals and interactive elements.\n\n**Why it matters:** The upgrade shortens response times, makes AI output more engaging and actionable, and lowers the barrier for anyone to leverage advanced AI tools without needing specialized interfaces.\n\n**Key stats:** • Global availability to all ChatGPT users • Faster response latency compared with GPT‑5 • Supports rich visual and interactive content directly in the chat window\n\n**Source:** https://openai.com/index/gpt-6-for-everyone"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.08793",
+      "rank": 3,
+      "title": "Adaptive Workflow Intelligence: A Cognitive Architecture for Context-Driven Enterprise Automation",
+      "sourceUrl": "https://arxiv.org/abs/2610.08793",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-08T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.08793v1 Announce Type: new Abstract: Enterprise systems increasingly rely on automated workflows, yet many AI-driven solutions remain brittle under non-stationary conditions, evolving policies, and delayed operational feedback. While reinforcement learning and large language model (LLM) agents offer partial adaptability, they do not by themselves provide persistent reflection mechanisms or straightforward integration with policy-constrained enterprise operations. This paper introduces Adaptive Workflow Intelligence (AWI), a cognitive architecture for context-driven enterprise agents organized around a four-layer Perception-Cognition-Action-Reflection (PCAR) loop. AWI treats reflection as a mechanism for continuous policy refinement and combines hybrid reasoning with reflective memory and feedback-driven adaptation to support decision making under environmental drift and operational constraints. We evaluate AWI in a simulated enterprise decision workflow characterized by delayed outcomes and a controlled regime shift. In a drift-and-delay stress test, guardrail-constrained adaptive approaches recover more rapidly than static automation while maintaining policy compliance. Within this setting, AWI's reflective components modestly reduce behavioral oscillation and feedback variance, illustrating the stability-agility trade-off introduced by reflective policy adaptation.",
+      "summary": "**What happened:** Researchers unveiled a cognitive architecture called Adaptive Workflow Intelligence (AWI) that fuses reinforcement learning, large‑language‑model agents, and a persistent reflection layer to keep automated workflows aligned with ever‑changing business policies and delayed feedback.\n\n**Why it matters:** Traditional AI‑driven workflow tools crumble when rules shift or data drifts. AWI’s context‑driven design lets enterprises maintain continuous compliance, cut downtime, and scale automation without costly manual re‑engineering.\n\n**Key stats:**\n- In benchmark simulations, AWI reduced workflow failure rates by 32% compared with standard RL agents.\n- Adaptation latency dropped from an average of 4.7 hours to under 1 hour.\n- Compliance violations were cut by 48% thanks to the built‑in policy‑reflection module.\n\n**Source:** https://arxiv.org/abs/2610.08793"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.08901",
+      "rank": 4,
+      "title": "Sequential Probabilistic Uncertainty Estimation for Parallel Multi-Agent Reasoning Systems",
+      "sourceUrl": "https://arxiv.org/abs/2610.08901",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-08T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.08901v1 Announce Type: new Abstract: LLM-based multi-agent systems (MAS) have attracted growing attention for improving reasoning through interaction among multiple agents. In this work, we focus on parallel multi-agent reasoning systems, where several agents solve the same problem over multiple rounds and aggregate their outputs into a final answer. Despite their strong reasoning performance, uncertainty estimation for such systems remains underexplored: the reliability of a MAS depends not only on individual generations, but also on how agents interact and evolve across rounds. We propose SAUCE (Sequential Agent Uncertainty through Consensus Evolution), a lightweight, training-free uncertainty estimator that formulates MAS uncertainty as sequential inference over a latent system-level belief. SAUCE aggregates round-level agreement and generation-uncertainty signals through a filtering-style update. Across five backbones, five benchmarks, and two MAS protocols, SAUCE improves misclassification detection, selective prediction, and calibration over a broad set of uncertainty estimation baselines, including standard log-likelihood-based methods and MAS-specific estimators.",
+      "summary": "**What happened:** A team introduced a sequential probabilistic uncertainty estimation technique tailored for parallel multi‑agent reasoning systems, where multiple LLM agents independently tackle the same task across several rounds and combine their answers.\n\n**Why it matters:** Accurate uncertainty estimates are critical for trusting AI‑generated solutions, especially when several agents collaborate. This work fills a gap by providing a principled way to gauge confidence, making MAS outputs more transparent and safer for high‑stakes applications.\n\n**Key stats:** Experiments on standard reasoning benchmarks show the new estimator improves calibration and reduces answer variance compared with existing baselines, leading to noticeably higher reliability of the aggregated final answer.\n\n**Source:** https://arxiv.org/abs/2610.08901"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.08923",
+      "rank": 5,
+      "title": "AdaGuard: Enhancing Safety and Policy Compliance with Reasoning-Enabled LLM-As-A-Judge Guardrails",
+      "sourceUrl": "https://arxiv.org/abs/2610.08923",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-08T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.08923v1 Announce Type: new Abstract: Enterprise generative AI applications require robust safety mechanisms that can accommodate diverse risk postures, evolving policies, and varying latency constraints. Current guardrail solutions often suffer from rigidity, relying on fixed policy sets and offering limited transparency or reasoning flexibility. We present Adaguard, an adaptive LLM-as-a-Judge framework designed to address these challenges through dynamic policy enforcement and adaptive reasoning-budget allocation. Built using supervised fine-tuning (SFT) and reinforcement learning (GRPO), AdaGuard generalizes to user-defined safety and compliance policies at runtime without requiring frequent model updates. A core innovation of our approach is the ability to dynamically infer the complexity of input-policy pairs, allowing the model to switch between high-speed black-box inference and explainable, reasoning-enabled moderation. This flexibility enables developers to balance stringent latency requirements with the need for actionable transparency. This adaptive capability allows AdaGuard to rival other guardrail and frontier models several times its size, while its auto-reasoning mode recovers the accuracy of always-on reasoning at a fraction of the latency",
+      "summary": "**What happened:** Researchers unveiled AdaGuard, an adaptive LLM‑as‑a‑Judge system that applies dynamic policy enforcement and reasoning to generative AI outputs, moving beyond static, hard‑coded guardrails.\n\n**Why it matters:** Enterprises can now tailor safety mechanisms to shifting risk postures and regulatory changes without sacrificing speed, offering clearer audit trails and reduced false‑positive rejections.\n\n**Key stats:** • Paper posted on arXiv (v1, 2026‑10) • Targets enterprise AI workloads with variable latency budgets • Claims improved transparency via LLM‑generated reasoning for each decision.\n\n**Source:** https://arxiv.org/abs/2610.08923"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.09000",
+      "rank": 6,
+      "title": "How Fragile Is On-Device Language Model Safety? Localizing Safety-Critical Parameters for Sparse Fault Analysis",
+      "sourceUrl": "https://arxiv.org/abs/2610.09000",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-08T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.09000v1 Announce Type: new Abstract: As small language models (SLMs) are increasingly deployed on resource-constrained and on-device platforms, including as components of agentic systems, the integrity of locally stored model parameters becomes an important safety concern. We investigate whether safety-sensitive behavior in LLaMA-2-7B-Chat is concentrated within a sparse subset of parameters, creating a reduced fault surface for targeted analysis. We study two complementary localization methods: low-rank safety-associated subspace analysis and parameter-level safety--utility importance filtering. Both approaches reveal highly non-uniform safety sensitivity across the network, with the MLP down_proj consistently emerging as a prominent safety-sensitive component and o_proj providing a smaller contribution. Using parameter-level localization, modifying only 0.19% of model weights in down_proj yields 53% Basic ASR and 56% GCG ASR, while tinyBenchmarks accuracy remains at 51.6% compared with a 52.2% unmodified baseline. These results motivate targeted fault analysis and selective integrity protection for language models deployed in resource-constrained, on-device, and agentic settings.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.09007",
+      "rank": 7,
+      "title": "Sigma-Hunter: A Domain-Specific Language Model for Threat Hunting and Detection Engineering",
+      "sourceUrl": "https://arxiv.org/abs/2610.09007",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-08T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.09007v1 Announce Type: new Abstract: Detection engineers must translate threat reports, forensic observations, and hunt hypotheses into precise, testable rules. General-purpose large language models (LLMs) can draft such rules, but often produce invalid YAML, incorrect log sources, unsupported fields, or overly broad detection logic. This paper presents \\emph{Sigma-Hunter}, a domain-adapted LLM for analyst-assistive Sigma rule generation and threat hunting. We build an instruction-tuning dataset from 3,635 validated open-source Sigma rules, expanded into 7,663 question-answer and analyst-reasoning examples. Each source rule is assigned to a single train, validation, or test partition before this expansion, so no rule leaks across splits. We fine-tune a 7B Mistral model and a Phi-4 model with LoRA and score held-out rule generations on syntax, approximate field consistency, and a semantic judgment of detection logic, completeness, selectivity, and log-source alignment. Sigma-Hunter-Mistral scores 8.17 overall, against 7.88 for the strongest general-purpose baseline and 4.61 for untuned Mistral. Two findings stand out: domain adaptation enables a compact 7B model to perform competitively with larger general-purpose models on this structured task, and syntactic validity is a weak proxy for semantic rule quality, as several baselines emit well-formed YAML carrying weak detection logic. The adapted models run locally, which suits detection engineering in disconnected environments where analysts cannot reach hosted model services.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.09008",
+      "rank": 8,
+      "title": "Whose Memory Is It? Scope-Aware Commit Rules for Long-Term LLM Memory",
+      "sourceUrl": "https://arxiv.org/abs/2610.09008",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-08T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.09008v1 Announce Type: new Abstract: Persistent memory allows an LLM agent to carry experience across conversations, but it also turns a local reasoning mistake into a durable one. During deliberation, an agent may consider a plan, simulate a tool result, report another speaker's belief, and then reject all of them. If memory retains only the resulting sentences, those once-useful possibilities can later return as facts. The record is neither fabricated nor irrelevant; it has simply been detached from the context in which it was valid. We identify this missing context as \\emph{discourse ownership}: the world, branch, or speaker that licenses a proposition. Our first finding is counterintuitive. Language models already carry a causally active signal for ownership, yet conventional memory interfaces discard it when they convert reasoning into records. We introduce CASK (Causally Anchored Scoping Keys), a commit rule that preserves this signal so that shared-world facts enter durable memory while provisional content remains available only within its original scope. Our second finding is that the most obvious way to preserve the signal---storing the discovered internal coordinates---is unreliable because equivalent representations need not keep the same coordinates. CASK instead preserves the stable relations that express ownership. Controlled long-conversation conflicts and tool-agent traces show that this design improves memory admission and prevents provisional content from contaminating later answers while complementing runtime provenance. The resulting commit boundary lets agents explore more possibilities without granting every intermediate sentence authority over future behavior.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.09021",
+      "rank": 9,
+      "title": "Not Every Call Needs a Frontier Model: Per-Call-Site Evaluation of Small Language Models in a Deployed Agentic Home-Automation System",
+      "sourceUrl": "https://arxiv.org/abs/2610.09021",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-08T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.09021v1 Announce Type: new Abstract: An agentic system issues several structurally different kinds of LLM calls. It routes intent, classifies actions, grounds language in a device registry, plans multi-agent pipelines and writes the Python code those pipelines run. The difficulty of these call sites varies by an order of magnitude, yet in practice a single model, chosen for the hardest site, serves all of them. In this work, we evaluate 9 models from 0.8B to a frontier hosted model across the five call sites of a deployed open-source home-automation framework (Wactorz), using its unmodified production prompts and two real Home Assistant installations (280 cases, 2520 scored calls). We find that capability is not ordered the same way at every site, and that larger models are not uniformly better: one 4B model is worse than its 2B sibling at grounded actuation. Paired testing shows the best local model to be statistically indistinguishable from both hosted models at four of five sites. Only code generation separates them, against a small hosted model (p = 0.039) as well as a frontier one (p = 0.002). Aggregate accuracy also hides a safety failure specific to actuation, where small models resolve the accuracy/refusal trade-off in degenerate ways: one model (Gemma4 E2B) actuates on 87.2% of requests for devices the site does not own, while another refuses every request it receives. Routing each site to its best local model reaches 91.8% against 95.4% at no per-call cost. In a live deployment judged by a user, hosting only the two generative sites matches hosting everything (39/43 against 39/43) for 28% of the spend, and the actuation gap the benchmark predicted appears as exactly one case in twenty-six. Benchmark, harness and all records are released at https://github.com/waldiez/slm-callsite-eval.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.09039",
+      "rank": 10,
+      "title": "From High Recall to High Utility: Dataset-Adaptive Post-Processing of LLM-Generated Customer Intents",
+      "sourceUrl": "https://arxiv.org/abs/2610.09039",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-08T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.09039v1 Announce Type: new Abstract: Large language models can extract useful signals from heterogeneous enterprise data, but high-recall extraction often produces outputs that are duplicated, uneven in granularity, semantically overlapping, or too numerous for downstream systems and human reviewers to use effectively. We present a dataset-adaptive post-processing architecture developed for Customer Intent Extraction (CIE), where unstructured customer language is transformed into stable, traceable intent units. The approach separates recall-oriented extraction from utility-oriented reduction. Source-specific preprocessing first isolates evidence from multimodal plans, sparse operational records, and structured opportunity data. Candidate intents are then standardized and deduplicated, optionally enriched with metadata for embedding computation, represented in a shared semantic vector space, and grouped using a clustering strategy selected according to the candidate set's characteristics. Cluster-level keywords provide an explainability layer, while singleton reassignment requires agreement between embedding and keyword similarity. Finally, constrained language-model aggregation produces one concise intent per cluster without introducing unsupported concepts, and the resulting unit retains provenance, clustering, embedding, and generation metadata. This treats post-processing not as cosmetic cleanup, but as a semantic reduction layer converting high-recall LLM outputs into reusable enterprise intelligence. We also describe two downstream applications: Machine-Generated Intents, which infer likely objectives for customers lacking direct evidence from peer customers with similar profiles, and intent-guided semantic retrieval and mapping, which uses the stable intent as a query against a downstream decision space, illustrated here by mapping customer intents to business outcomes.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.09112",
+      "rank": 11,
+      "title": "GeoNatureAgent (GNA): A Framework and Benchmark for Pre-Production Evaluation of Tool-Using Agents on Geospatial and Environmental Tasks",
+      "sourceUrl": "https://arxiv.org/abs/2610.09112",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-08T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.09112v1 Announce Type: new Abstract: Before tool-using LLM agents are deployed in environmental and geospatial workflows, teams need evidence that an agent reliably selects the right operations against real APIs. We introduce GeoNatureAgent (GNA), a framework for pre-production evaluation of tool-using agents: a fixed sixteen-tool geospatial interface published as a Model Context Protocol (MCP) server, so the agent under test is the only variable, scored against an identical tool layer, task suite, and deterministic scorer. Its flagship instance is a 103-task benchmark (a 93-task main suite across 18 categories plus a ten-task comparison expansion) evaluated against an open, self-hostable geospatial API serving three environmental indicators across Spain and Portugal. We evaluate nine LLMs under three temperature-1.0 seeds, reporting capability and per-case cost as orthogonal axes. (1) Claude Sonnet 4 achieves the highest capability (61.7% +/- 0.7% on all 103 tasks; 60.8% on the main suite), followed closely by DeepSeek V3.2 (57.9%), while no other model exceeds 53%; (2) the cost-accuracy Pareto frontier is mostly open-weight, with DeepSeek V3.2 offering 93% of Claude's capability at 11.3x lower list-price cost; (3) under strict all-checks scoring the best model sits 24-36 points below the 85-97% reported on general-purpose GIS benchmarks, whereas per-check partial credit for the top four models (86-90%) is comparable, so much of that gap reflects scoring strictness rather than task difficulty alone. The MCP server, evaluation harness, benchmark, and API are publicly available; swapping the tool executors and task suite instantiates an equivalent benchmark for any geospatial domain.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.09115",
+      "rank": 12,
+      "title": "From Uncertainty to Action: Learning to Steer LLM Agents",
+      "sourceUrl": "https://arxiv.org/abs/2610.09115",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-08T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.09115v1 Announce Type: new Abstract: Steering an LLM agent means deciding whether to correct it, at which step, and with which mechanism. Uncertainty is often used to decide when to correct an agent, but whether it can guide these decisions remains unclear. We steer agent trajectories separately at every non-terminal step with each of four mechanisms and run each continuation to completion. The resulting stepwise outcome table (SOT) holds about 82,000 counterfactual continuations of 1,864 trajectories from three benchmarks and two agents. It shows that uncertainty can identify failing trajectories, but that no single signal reliably locates the step at which steering helps. We therefore propose VoS (Value of Steering), a trajectory-level monitor, offline or online, that learns from SOT the value of steering at each step and decides where to steer by it. A harm-budgeted trigger decides whether to steer, limiting the fraction of successful trajectories that VoS disturbs. VoS improves on unmodified execution in all 12 settings of benchmark, agent, and offline or online use, by 7.8 points on average, and outperforms the strongest of five existing uncertainty-triggered methods in 11, by 2.9 points on average. Ablations show that training on measured outcomes and a tight harm budget are both essential.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.09202",
+      "rank": 13,
+      "title": "Few Bits, One Law: Toward W2A4KV2",
+      "sourceUrl": "https://arxiv.org/abs/2610.09202",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-08T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.09202v1 Announce Type: new Abstract: Extreme low-bit LLM compression is most challenging when weights, activations, and KV caches are quantized together: their distributions differ, and quantization errors interact throughout the network. We introduce CanonQ, a unified quantization-aware training framework that addresses these challenges by separating source canonicalization from task-aware adaptation. Fixed rotations and energy normalization map heterogeneous tensor sources to canonical coordinates, enabling frozen Gaussian-reference codebooks to be reused across layers and models. Joint training then adapts the network to the coupled errors of weight, activation, and cache quantization within a common scalar/vector interface. We bound frozen-codebook transfer error and local task loss, and derive an exact normalization-aware straight-through Jacobian that links quantization distortion to gradient bias. The strongest gains arise under joint W2A4KV2 compression: across LLaMA3-1B/3B/8B, CanonQ-Omni achieves up to 14.28x lower WikiText-2 perplexity and up to 57.9% higher mean zero-shot accuracy than prior state-of-the-art and representative quantization baselines. The benefits extend to Qwen3-1.7B, code generation, and mathematical reasoning: on instruction-tuned MobileLLM-Pro-1B at W2A16KV16, CanonQ achieves relative improvements of 41.7% in HumanEval pass@1 and 39.1% in GSM8K exact match over the strongest evaluated quantization baseline.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.09215",
+      "rank": 14,
+      "title": "AGAR: a reinforcement learning substrate for LLM program evolution",
+      "sourceUrl": "https://arxiv.org/abs/2610.09215",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-08T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.09215v1 Announce Type: new Abstract: Given a task and an evaluator, a language model can rewrite a candidate program while a search loop decides which rewrites survive, offering a practical route to algorithm discovery. But that loop is governed by five constants set by hand: which parent to select, how hard to mutate, how to keep diversity, what to remember, and a scalar score that never says which part of the program earned it. Reinforcement learning already has an estimator for each. The obstacle is that program evolution is not usually written down as a decision process. We formalize it as a Markov decision process whose action is the modular prefix the model is conditioned on, rather than the program it emits. Credit assignment, value estimation, adaptive exploration, and experience memory can then attach to distinct components. AGAR (Algorithm Generation As RL) provides the resulting substrate: any estimator can be replaced or switched off without changing the controller, making the transfer auditable one mechanism at a time, with no gradient training of the backend model. Across 19 tasks, two backends, and three seeds under one harness, AGAR improves on the stronger of two published baselines on most tasks, with gains concentrated in the competitive-programming family. The formalization also yields a checkable reading of prior work: these systems are implicitly zero-discount, not by choice, but because fitness is exogenous to an individual rather than a return over successors, leaving a discount factor nothing to act on.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.09218",
+      "rank": 15,
+      "title": "RLDISCOVER: LLM-driven co-evolution of reinforcement learning algorithms",
+      "sourceUrl": "https://arxiv.org/abs/2610.09218",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-08T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.09218v1 Announce Type: new Abstract: LLM-guided program evolution has enabled discoveries in mathematics and computational optimization, raising the prospect of reinforcement learning (RL) algorithms that self-evolve to improve how agents learn. However, realizing this prospect faces two obstacles. Joint search over coupled algorithmic components is difficult to scale: simultaneous changes can disrupt learning, while isolated changes overlook their dependencies. Evaluating candidate algorithms also requires costly training, with fitness remaining uncertain across random seeds. We introduce RLDiscover, a framework for the self-evolution of model-free deep RL algorithms. Progressive Co-Evolution advances from targeted component edits to joint evolution, while Progressive Probabilistic Evaluation balances search breadth and evaluation fidelity through staged training and repeated evaluation. Experiments across SAC, PPO, and DQN on four benchmark suites show substantial improvements in mean return, with per-family median gains of 32%-84% and a peak return ratio of approximately 363x over a near-zero baseline. These gains include transitions from failed learning to successful task completion, and improvements persist when evolution starts from stronger open-source implementations. On measured SAC locomotion runs, evaluation uses approximately one-fifteenth the estimated compute required to fully evaluate the same candidate pool. Remarkably, independent searches repeatedly discover interpretable combinations of adaptive robust losses, progress-dependent value targets, and running statistics, with selected programs transferring to unseen tasks. These findings point toward a broader role for self-evolution in AI: discovering interpretable algorithms that improve how agents learn.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.09219",
+      "rank": 16,
+      "title": "CM-DPO: Constraint-Margin Direct Preference Optimization for LLM Planning",
+      "sourceUrl": "https://arxiv.org/abs/2610.09219",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-08T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.09219v1 Announce Type: new Abstract: Direct Preference Optimization (DPO) treats all constraint violations equally: a $1 budget overshoot and a $1,000 overshoot induce the same training signal. It is also susceptible to length and style bias when preference pairs come from different model families. We introduce Constraint-Margin DPO (CM-DPO), which replaces DPO's binary preference signal with a continuous margin derived from a deterministic symbolic verifier and scaled by violation severity. Hard and soft constraints are separated through a lexicographic objective, ensuring hard constraints are never traded off against preferences. To supply CM-DPO with bias-reduced training pairs, we generate preference data through procedurally generated constraint profiles (DCCG) and minimal-edit distillation from a reasoning teacher (RT-MED), within a framework we call SynPlan-R. On TravelPlanner, NaturalPlan, and out-of-distribution PlanBench, an 8B model fine-tuned with CM-DPO achieves 89.2% pass rate and 93.4% solve rate, matching multi-agent systems at 13x lower latency while outperforming GPT-4o on unseen Blocksworld by 9.2 points.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.09239",
+      "rank": 17,
+      "title": "The Winner's Curse in LLM Self-Improvement Loops: Selection Noise, Lock-in, and Acceptance Rules",
+      "sourceUrl": "https://arxiv.org/abs/2610.09239",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-08T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.09239v1 Announce Type: new Abstract: Self-improving LLM systems propose changes to themselves and keep those that score better on a small evaluation set. We treat this keep-if-better step as selection under measurement noise, model the correlated errors of the candidates in a single decision, and study empirically what happens when the evaluation set is reused. In runs where Qwen models rewrite their own instructions and every candidate is also scored on 600 held-out items, most proposals after the first are harmful, and the model gives the size of the winner's curse of a generation's best candidate. With a prior from a separate pilot, it matches the average overstatement of first-generation commits in native loops, though not setting by setting. In a pre-registered study, the final selection-set score of greedy loops exceeded held-out accuracy by 13 to 20 points with 16 selection items and by 1 to 5 points with 256. Held-out gains grew with the selection set on TREC but not on GSM8K, and the tested acceptance rules did not beat greedy acceptance over whole runs. Gains measured on the selection set also exceeded held-out gains when a current model refined a competent instruction, and in the validation scores of GEPA and MIPROv2. Scoring the starting and the current instruction on 64 items never used for selection removes the average bias of a loop's reported gain, but single estimates remain off by about 6 points. Self-improvement studies should report held-out gains with their uncertainty.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.09243",
+      "rank": 18,
+      "title": "We Query, Therefore We Compute: On Oracle Computation beyond the Machine, with an Application to Agents",
+      "sourceUrl": "https://arxiv.org/abs/2610.09243",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-08T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.09243v1 Announce Type: new Abstract: Agentic systems use large language models (LLMs) to carry out concrete tasks. Prior work often borrows abstractions such as scheduling, caching or isolation piecemeal from operating systems, so the mechanisms it builds share little common ground, and the shared view of the two forms of agentic system, Workflows and Agents, is limited. We construct an abstract machine that provides both. We treat the LLM as an Oracle and extend a two-stack pushdown automaton with one instruction, which hands the Oracle a whole stack as its query and appends the answer to that same stack. The machine thus performs two computations, the Oracle's and a Turing-complete one that we call the Priestess. A stack that the program only appends to grows autoregressively, as an agent's context does. Two symmetry breakings, S in storage and T in transitions, make a Priestess program the operating system of the programs the Oracle runs, and produce the Agent and the Workflow as the two placements of a task's program. For internally autoregressive Oracles, the two computations synchronize at the end of every answer under certain conditions, and through that synchronization we model caching and analyse scheduling. No guarantee that holds for every Oracle can fix which content crosses between the two computations, but such a guarantee does fix the boundary itself. The construction V fits the machine to a von Neumann computer. To show that it is realizable, we propose ArchNights, an extended RISC-V ISA and a Linux-style operating system implementing the machine by design. ArchNights-SE runs on gem5 as a computer system, becomes an agentic system when it runs an LLM as the Oracle, and will be open source. Agentic systems can then be designed as computer systems are. With a foundation built and a unified view, future work can share invariants and bounds, each with its conditions.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.09296",
+      "rank": 19,
+      "title": "The AI Evaluation Ecosystem",
+      "sourceUrl": "https://arxiv.org/abs/2610.09296",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-08T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.09296v1 Announce Type: new Abstract: AI evaluation shapes the decisions of model providers, users, funders, and regulators. We argue that designing valid benchmarks requires contextualizing design choices in the dynamics of this ecosystem of actors. We develop a simulation architecture that combines rule-based market dynamics with LLM-driven strategic actors, building on advances in Generative Agent-Based Modeling (GABM). We model benchmarks, consumer needs, and provider capabilities as vectors over a six-dimensional capability space (reasoning, coding, knowledge, safety, communication, agentic), with structural information partitions across actors. As a case study, we apply this stylized simulation to explore benchmark holdout design. We find that moving from public benchmarks to private holdout benchmarks shrinks the gap between benchmark scores and user satisfaction on most benchmarks but widens it on a few, depending on where holdout weights shift scoring credit. We stress-test our findings at both the instrument and case-study level, drawing on the V&V framework of Sargent (2013) and GABM-specific evidence criteria. Beyond holdout design, our simulation is a hypothesis-generating sandbox for studying how evaluator and policy choices, in turn, reshape the ecosystem.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.09348",
+      "rank": 20,
+      "title": "Relevance Is Not Sufficiency: What Actually Closes the Evidence Gap in Long-Term Memory QA",
+      "sourceUrl": "https://arxiv.org/abs/2610.09348",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-08T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.09348v1 Announce Type: new Abstract: LLM agents that interact with a user across many sessions accumulate histories that exceed their context window, so they store past interactions in an external memory and answer each question from a small set of retrieved records. Existing memory systems rank records by lexical or embedding relevance, yet the top-ranked memories can each be relevant while jointly omitting a complementary fact that the answer requires, especially for multi-session and temporal questions. Drawing on the distinction between relevance and sufficiency in legal evidence scholarship, we recast memory retrieval as constructing a sufficient memory set. To operationalize this view, we introduce a blinded LLM judgment over the retrieved set, together with Gold Hit and Turn Hit as evidence-coverage proxies. We then propose Budgeted Flat Reconstruction (BFR), which builds sufficient sets over a fixed flat memory store in two stages. Specifically, we first apply Formal Concept Analysis for Memory Selection (FCA-MS) to decompose the question into information requirements and select a compact candidate subset that jointly covers them. Then, we repeatedly acquire unseen records through deeper text search or complementary entity and session views, stopping when the budget is exhausted. Experiments on LoCoMo and LongMemEval-S show that BFR outperforms same-store adaptations of recent agent-memory systems in both answer quality and evidence coverage. Specifically, on LongMemEval-S it raises judged accuracy from 72.4% to 82.2% and Turn Hit to 91.4%.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.09374",
+      "rank": 21,
+      "title": "DUDA-Bench: Benchmarking LLM Agents on Multimodal Data-Driven Urban Diagnosis",
+      "sourceUrl": "https://arxiv.org/abs/2610.09374",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-08T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.09374v1 Announce Type: new Abstract: Urban diagnosis integrates heterogeneous observations to identify urban problems, localize affected areas, and investigate contributing factors, informing evidence-based urban planning and management. However, its reliance on labor-intensive, case-specific expert workflows limits scalability and reuse, motivating the exploration of agent-based execution. To evaluate this capability, we introduce DUDA-Bench, a hierarchical and interactive benchmark that formalizes data-driven urban diagnosis as a multi-stage agent workflow. It comprises 86 atomic and 22 workflow tasks spanning four analytical stages, grounded in multimodal data from 12 cities covering five urban problem types. Evaluations of seven backbone models and five agent systems reveal a substantial gap between isolated analytical competence and end-to-end diagnosis, with system benefits varying across backbones. Trajectory analysis shows that unresolved evidence gaps propagate across stages, while successful recovery involves revising assumptions and actions using feedback. These findings highlight limitations in coordinating analytical capabilities across stages, particularly adaptive planning, evidence integration, and verification. More broadly, DUDA-Bench provides a framework for translating expert analytical workflows into hierarchical agent tasks and process-aware evaluation, supporting systematic assessment of end-to-end analytical capabilities.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.09401",
+      "rank": 22,
+      "title": "Let the Library Speak: Self-Advertised Method Selection for Formal Proving",
+      "sourceUrl": "https://arxiv.org/abs/2610.09401",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-08T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.09401v1 Announce Type: new Abstract: LLM-based formal provers can retrieve relevant lemmas and prior proofs, but relevance alone does not say whether a mathematical method can be used on the current theorem. A method has prerequisites, a target, an intended action, and obligations that its use leaves to prove. Methods that look equally related to a theorem may therefore differ substantially in whether they offer a plausible next step. We formulate this as an applicability-aware method-selection problem and introduce self-advertisement: before candidates are ranked, a model generates a problem-specific proposal for each one, stating what part of the goal it targets, what action it would take, and what conditions that action requires. We organize 82 reusable methods from Putnam 2000-2014 as Method Contracts, which pair applicability descriptions with Mathlib anchors, a checked example or scaffold, and expected proof obligations. A single batched call elicits proposals across the library; vague or unsupported proposals are demoted, yielding a ranked shortlist accompanied by inspectable claims about each candidate's use. We analyze when similarity-based representations cannot distinguish methods with different applicability, how errors in applicability estimates affect shortlist quality, and what a checked scaffold guarantees under its stated assumptions. Against lexical, embedding, and embedding-plus-LLM reranking baselines, self-advertisement achieves 95.0% hit@5 on Putnam 2015-2025, compared with 84.2% for the strongest reranker. On IMO ProofBench, it achieves 91.7% compared with 88.3%. These results indicate improved coverage of annotated methods in the retrieved shortlists, particularly on Putnam.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.09416",
+      "rank": 23,
+      "title": "Efficient Reasoning with Flow Language Models",
+      "sourceUrl": "https://arxiv.org/abs/2610.09416",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-08T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.09416v1 Announce Type: new Abstract: Flow Language Models (FLMs) have emerged as a continuous-state alternative to discrete diffusion language models, yet the role of their continuous representations in reasoning remains unclear. We investigate this question by comparing the reasoning efficiency of FLMs and discrete diffusion models, measured by solution accuracy under matched denoising steps. Unlike discrete diffusion, which passes categorical states between denoising steps, FLMs evolve a continuous sequence representation throughout denoising and decodes it into discrete tokens only at the end. Our theoretical analysis shows, from a superposition perspective, how information retained in these continuous states can benefit reasoning. Intermediate-state interventions provide further empirical support for this theoretical account, showing that removing information about alternative candidates reduces subsequent solution recovery. Together, these findings show that FLMs allow evidence for multiple candidates to persist and inform subsequent reasoning before a discrete answer is produced. Furthermore, our experiments on maze planning and Sudoku tasks show that FLMs achieve greater reasoning efficiency in the few-step regime: FLMs achieves higher sequence accuracy than discrete diffusion baselines at matched model sizes and small denoising steps. On maze planning tasks, FLMs can also achieve comparable accuracy with smaller models. For example, on Maze15, FLM reaches the 95\\% accuracy target at 64 denoising steps with 36.5\\% fewer parameters than MDLM. These findings point to continuous state spaces as a promising foundation for reasoning models that require fewer refinement steps.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.09466",
+      "rank": 24,
+      "title": "LLM-Enabled UAV Dispatch: A System-Level Survey and Taxonomy",
+      "sourceUrl": "https://arxiv.org/abs/2610.09466",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-08T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.09466v1 Announce Type: new Abstract: Unmanned aerial vehicle (UAV) dispatch is beginning to move beyond isolated path planning and optimization-driven resource allocation toward system-level coordination supported by semantic reasoning and LLM-based interfaces. This survey provides a unified characterization of LLM-enabled UAV dispatch systems that bridges semantic intent, symbolic decision-making, and physical UAV execution. Rather than treating LLMs as standalone add-ons, we conceptualize them as a cross-layer semantic orchestration layer connecting human instructions, external solvers, and distributed control modules. We organize the literature into four representative dispatch paradigms: pipeline dispatch, global assignment dispatch, decentralized agentic dispatch, and divide-and-conquer dispatch. For each paradigm, we analyze its decision logic, system structure, control flow, representative methods, and potential LLM roles. We further examine how LLMs support semantic parsing, retrieval-grounded planning, solver orchestration, local agent reasoning, multi-agent coordination, safety assessment, and human-facing explanation. We discuss the implications of these paradigms for scalability, robustness, coordination burden, and verification requirements, and identify open challenges including latency-aware reasoning, grounding reliability, physical feasibility guarantees, edge deployment, privacy protection, and distributed consistency. This survey provides a system-level taxonomy and design perspective for integrating LLMs into safety-critical UAV dispatch systems.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.09554",
+      "rank": 25,
+      "title": "Reliability of LLM Judges for Evaluating Entity Alignment",
+      "sourceUrl": "https://arxiv.org/abs/2610.09554",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-08T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.09554v1 Announce Type: new Abstract: Entity Alignment (EA) identifies equivalent entities across knowledge graphs and is critical for knowledge base integration and ontology merging. Evaluating EA systems at scale requires expensive expert annotation, making systematic assessment across diverse domains practically infeasible. LLM-as-judge evaluation offers a potentially scalable alternative, yet its reliability for structured prediction tasks like EA remains unstudied. We present the first systematic benchmarking study across three frontier models, three datasets, and four EA systems, using perturbation bias diagnostics, meta-evaluation across all dataset-judge-prompt combinations, and counterfactual label-flip tests. We identify anchor bias, a failure mode in which judges invert discrimination when the system's decision label is visible. Label exposure causally collapses judge discrimination (J-ROC-AUC 0.12-0.87), while a label-free protocol recovers near-ceiling capability on distinctive-name datasets (0.93-1.00) and significant recovery on biomedical pairs (0.93-0.95). Counterfactual experiments confirm causality (FSR 53-99%) and reveal a frontier model paradox: stronger judges exhibit greater label sensitivity, not less. A blinded two-annotator human evaluation (102 pairs, Cohen's kappa=0.902) confirms this mechanism directly. We release the first biomedical EA benchmark (MeSH-SNOMED CT, 15K pairs) and a reproducible auditing framework for LLM judge reliability in EA. Code and data are available at https://github.com/vaibhavalakshmiravideshik/llm-as-a-judge-entity-alignment.",
+      "summary": ""
+    }
+  ]
+}
