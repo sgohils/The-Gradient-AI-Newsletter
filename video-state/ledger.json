@@ -334,7 +334,7 @@
       "platforms": {
         "youtube": {
           "accountId": "6ac27146281ee799a37065e4",
-          "status": "submitting",
+          "status": "failed",
           "idempotencyKey": "3a27b3db-3887-47a3-b966-d2871ea7f178",
           "request": {
             "content": "AdaGuard: Enhancing Safety and Policy Compliance with Reasoning-Enabled LLM-As-A-Judge Guardrails\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2610.08923\n\nThe Gradient: https://gradientnews.app/archive/2026-10-08\nAI-generated narration. #AI #AINews #Shorts",
@@ -359,7 +359,9 @@
             ],
             "publishNow": true
           },
-          "firstSubmittedAt": "2026-10-08T17:45:56.212Z"
+          "firstSubmittedAt": "2026-10-08T17:45:56.212Z",
+          "error": "Platform rejected the video; inspect the post in Zernio before retrying.",
+          "postId": "6ac7d6d5fa07b24157fcbd9d"
         }
       },
       "script": {
