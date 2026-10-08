@@ -318,6 +318,64 @@
         "videoSha256": "882376d2b87fe0c714d97a31d867d2b0f0dd44f81de6c212df9fbc250b568f8f",
         "uploadedAt": "2026-10-07T17:45:00.092Z"
       }
+    },
+    "2026-10-08": {
+      "story": {
+        "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.08923",
+        "rank": 5,
+        "title": "AdaGuard: Enhancing Safety and Policy Compliance with Reasoning-Enabled LLM-As-A-Judge Guardrails",
+        "sourceUrl": "https://arxiv.org/abs/2610.08923",
+        "sourceName": "arXiv cs.AI",
+        "publishedAt": "2026-10-08T04:00:00.000Z",
+        "sourceExcerpt": "arXiv:2610.08923v1 Announce Type: new Abstract: Enterprise generative AI applications require robust safety mechanisms that can accommodate diverse risk postures, evolving policies, and varying latency constraints. Current guardrail solutions often suffer from rigidity, relying on fixed policy sets and offering limited transparency or reasoning flexibility. We present Adaguard, an adaptive LLM-as-a-Judge framework designed to address these challenges through dynamic policy enforcement and adaptive reasoning-budget allocation. Built using supervised fine-tuning (SFT) and reinforcement learning (GRPO), AdaGuard generalizes to user-defined safety and compliance policies at runtime without requiring frequent model updates. A core innovation of our approach is the ability to dynamically infer the complexity of input-policy pairs, allowing the model to switch between high-speed black-box inference and explainable, reasoning-enabled moderation. This flexibility enables developers to balance stringent latency requirements with the need for actionable transparency. This adaptive capability allows AdaGuard to rival other guardrail and frontier models several times its size, while its auto-reasoning mode recovers the accuracy of always-on reasoning at a fraction of the latency",
+        "summary": "**What happened:** Researchers unveiled AdaGuard, an adaptive LLM‑as‑a‑Judge system that applies dynamic policy enforcement and reasoning to generative AI outputs, moving beyond static, hard‑coded guardrails.\n\n**Why it matters:** Enterprises can now tailor safety mechanisms to shifting risk postures and regulatory changes without sacrificing speed, offering clearer audit trails and reduced false‑positive rejections.\n\n**Key stats:** • Paper posted on arXiv (v1, 2026‑10) • Targets enterprise AI workloads with variable latency budgets • Claims improved transparency via LLM‑generated reasoning for each decision.\n\n**Source:** https://arxiv.org/abs/2610.08923"
+      },
+      "selectedAt": "2026-10-08T17:44:54.365Z",
+      "platforms": {
+        "youtube": {
+          "accountId": "6ac27146281ee799a37065e4",
+          "status": "prepared",
+          "idempotencyKey": "3a27b3db-3887-47a3-b966-d2871ea7f178"
+        }
+      },
+      "script": {
+        "version": 2,
+        "provider": "extractive",
+        "sentences": [
+          {
+            "text": "This flexibility enables developers to balance stringent latency requirements with the need for actionable transparency.",
+            "evidenceQuote": "This flexibility enables developers to balance stringent latency requirements with the need for actionable transparency.",
+            "role": "hook",
+            "displayText": "Developers to balance stringent latency requirements"
+          },
+          {
+            "text": "arXiv:2610.08923v1 Announce Type: new Abstract: Enterprise generative AI applications require robust safety mechanisms that can accommodate diverse risk postures, evolving policies, and varying latency constraints.",
+            "evidenceQuote": "arXiv:2610.08923v1 Announce Type: new Abstract: Enterprise generative AI applications require robust safety mechanisms that can accommodate diverse risk postures, evolving policies, and varying latency constraints.",
+            "role": "detail",
+            "displayText": "Accommodate diverse risk postures"
+          },
+          {
+            "text": "Current guardrail solutions often suffer from rigidity, relying on fixed policy sets and offering limited transparency or reasoning flexibility.",
+            "evidenceQuote": "Current guardrail solutions often suffer from rigidity, relying on fixed policy sets and offering limited transparency or reasoning flexibility.",
+            "role": "detail",
+            "displayText": "Current guardrail solutions often suffer from rigidity"
+          },
+          {
+            "text": "arXiv cs.AI says it present Adaguard, an adaptive LLM-as-a-Judge framework designed to address these challenges through dynamic policy enforcement and adaptive reasoning-budget allocation.",
+            "evidenceQuote": "We present Adaguard, an adaptive LLM-as-a-Judge framework designed to address these challenges through dynamic policy enforcement and adaptive reasoning-budget allocation.",
+            "role": "takeaway",
+            "displayText": "ArXiv cs.AI says it present Adaguard"
+          }
+        ],
+        "narration": "This flexibility enables developers to balance stringent latency requirements with the need for actionable transparency. arXiv:2610.08923v1 Announce Type: new Abstract: Enterprise generative AI applications require robust safety mechanisms that can accommodate diverse risk postures, evolving policies, and varying latency constraints. Current guardrail solutions often suffer from rigidity, relying on fixed policy sets and offering limited transparency or reasoning flexibility. arXiv cs.AI says it present Adaguard, an adaptive LLM-as-a-Judge framework designed to address these challenges through dynamic policy enforcement and adaptive reasoning-budget allocation.\nSource in the description."
+      },
+      "selectionReason": "A concrete capability or everyday consequence in the original evidence.",
+      "contentHash": "62d07d514da8f1abb0f7cd9a3e4e6f2f75a47a477af580ac02b2d0ecd6b18323",
+      "media": {
+        "publicUrl": "https://media.zernio.com/temp/1791481554227_s8p2z1b6_2026-10-08.mp4",
+        "videoSha256": "4294556940db9f5ef0aae48804a02c80f3ae4abecb4ae1a5ecff7db0b357e291",
+        "uploadedAt": "2026-10-08T17:45:55.015Z"
+      }
     }
   }
 }
