@@ -381,8 +381,32 @@
       "platforms": {
         "youtube": {
           "accountId": "6ac27146281ee799a37065e4",
-          "status": "prepared",
-          "idempotencyKey": "1703d858-788e-44e0-8306-08f705503a19"
+          "status": "submitting",
+          "idempotencyKey": "1703d858-788e-44e0-8306-08f705503a19",
+          "request": {
+            "content": "Plan-and-Patch: Diffusion Language Models for Agentic Planning\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2610.10786\n\nThe Gradient: https://gradientnews.app/archive/2026-10-09\nAI-generated narration. #AI #AINews #Shorts",
+            "mediaItems": [
+              {
+                "type": "video",
+                "url": "https://media.zernio.com/temp/1791566551510_pjt3uoza_2026-10-09.mp4"
+              }
+            ],
+            "platforms": [
+              {
+                "platform": "youtube",
+                "accountId": "6ac27146281ee799a37065e4",
+                "platformSpecificData": {
+                  "title": "Effective agents must therefore not only generate plans, but also revise them.",
+                  "visibility": "public",
+                  "madeForKids": false,
+                  "containsSyntheticMedia": true,
+                  "categoryId": "28"
+                }
+              }
+            ],
+            "publishNow": true
+          },
+          "firstSubmittedAt": "2026-10-09T17:22:33.511Z"
         }
       },
       "script": {
