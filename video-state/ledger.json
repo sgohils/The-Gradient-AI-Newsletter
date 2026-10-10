@@ -471,7 +471,7 @@
       "platforms": {
         "youtube": {
           "accountId": "6ac27146281ee799a37065e4",
-          "status": "submitting",
+          "status": "published",
           "idempotencyKey": "db8fc33e-d69f-4e5d-b8bb-c7dd01898d9a",
           "request": {
             "content": "StoreBench: A Live-Commerce Environment for Evaluating and Training Autonomous Operator Agents\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2610.10942\n\nThe Gradient: https://gradientnews.app/archive/2026-10-10\nAI-generated narration. #AI #AINews #Shorts",
@@ -496,7 +496,9 @@
             ],
             "publishNow": true
           },
-          "firstSubmittedAt": "2026-10-10T16:10:50.617Z"
+          "firstSubmittedAt": "2026-10-10T16:10:50.617Z",
+          "postId": "6aca638b418195fb36d57327",
+          "postUrl": "https://www.youtube.com/watch?v=oouPO1D4SlE"
         }
       },
       "script": {
