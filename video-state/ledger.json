@@ -455,6 +455,58 @@
         "videoSha256": "1fc5068ff8c4570e1a5e6aa43bf9e6b0c2a21c8dadc5eedf1bd1ea1518baa9c5",
         "uploadedAt": "2026-10-09T17:22:32.282Z"
       }
+    },
+    "2026-10-10": {
+      "story": {
+        "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.10942",
+        "rank": 5,
+        "title": "StoreBench: A Live-Commerce Environment for Evaluating and Training Autonomous Operator Agents",
+        "sourceUrl": "https://arxiv.org/abs/2610.10942",
+        "sourceName": "arXiv cs.AI",
+        "publishedAt": "2026-10-10T04:00:00.000Z",
+        "sourceExcerpt": "arXiv:2610.10942v1 Announce Type: new Abstract: Reinforcement learning environments are now a primary lever for improving large language model (LLM) capabilities in post-training, yet most agentic benchmarks remain static: the world moves only when the agent acts, the reward is a terminal verdict, and the pass bar is set arbitrarily. We introduce StoreBench, a live-commerce environment in which an agent runs a mid-size online apparel store on a production-grade commerce backend, testing long-horizon planning and economic judgment under uncertainty. Customers order around the clock, suppliers reprice and fail, and market shocks arrive with partial or no warning. The agent acts through the same 29 merchant tools a human operator would use, under a windowed operation budget that makes simulated time a function of actions taken, so model latency cannot influence simulated time. Pass thresholds are calibrated against scripted anchor policies, the reward is hardened against a catalogue of reward hacks, and every episode replays identically given a sequence of actions. We evaluate seven frontier LLMs on 11 scenarios of 30 to 45 days and a full simulated year, over three world seeds at matched reasoning effort. No model matches the scripted smart-triage policy on average: the best, DeepSeek-V4-Pro, passes 49% of task-seed cells against the heuristic's 97%. Human experts working through the same tools and budgets outscore every model (mean composite 0.708 vs. 0.700). Over a full simulated year under the Claude Code harness, most models show dramatic performance improvement. In a GRPO post-training run, Qwen3.5-27B trained on only five disjoint tasks raises its mean composite on the held-out evaluation tasks from 0.136 to 0.373. We release five example training-split tasks, ten sample trajectories, and the scoring and verification tooling; the full environment and evaluation suite are withheld to keep the benchmark uncontaminated.",
+        "summary": "**What happened:** Researchers unveiled StoreBench, a live‑commerce simulation where autonomous agents manage a mid‑size online clothing store using a production‑grade backend. The environment runs continuously, exposing agents to realistic customer behavior, inventory changes, and revenue pressures.\n\n**Why it matters:** Traditional RL benchmarks freeze the world until the agent acts and reward only at episode end, limiting long‑term planning. StoreBench introduces a dynamic, ongoing marketplace, enabling the training and evaluation of agents that must balance inventory, pricing, marketing, and fulfillment over weeks of simulated operation.\n\n**Key stats:** • Simulates a store with thousands of SKUs and realistic inventory levels\n• Handles tens of thousands of daily simulated customer visits\n• Supports episodes up to 30 days of continuous operation\n• Integrated with a production‑grade e‑commerce stack (catalog, checkout, analytics)\n\n**Source:** https://arxiv.org/abs/2610.10942"
+      },
+      "selectedAt": "2026-10-10T16:09:03.056Z",
+      "platforms": {
+        "youtube": {
+          "accountId": "6ac27146281ee799a37065e4",
+          "status": "prepared",
+          "idempotencyKey": "db8fc33e-d69f-4e5d-b8bb-c7dd01898d9a"
+        }
+      },
+      "script": {
+        "version": 2,
+        "provider": "extractive",
+        "sentences": [
+          {
+            "text": "Customers order around the clock, suppliers reprice and fail, and market shocks arrive with partial or no warning.",
+            "evidenceQuote": "Customers order around the clock, suppliers reprice and fail, and market shocks arrive with partial or no warning.",
+            "role": "hook",
+            "displayText": "Customers order around the clock"
+          },
+          {
+            "text": "arXiv:2610.10942v1 Announce Type: new Abstract: Reinforcement learning environments are now a primary lever for improving large language model (LLM) capabilities in post-training, yet most agentic benchmarks remain static: the world moves only when the agent acts, the reward is a terminal verdict, and the pass bar is set arbitrarily.",
+            "evidenceQuote": "arXiv:2610.10942v1 Announce Type: new Abstract: Reinforcement learning environments are now a primary lever for improving large language model (LLM) capabilities in post-training, yet most agentic benchmarks remain static: the world moves only when the agent acts, the reward is a terminal verdict, and the pass bar is set arbitrarily.",
+            "role": "detail",
+            "displayText": "ArXiv:2610.10942v1 Announce Type: new Abstract: Reinforcement learning environments"
+          },
+          {
+            "text": "arXiv cs.AI says it introduce StoreBench, a live-commerce environment in which an agent runs a mid-size online apparel store on a production-grade commerce backend, testing long-horizon planning and economic judgment under uncertainty.",
+            "evidenceQuote": "We introduce StoreBench, a live-commerce environment in which an agent runs a mid-size online apparel store on a production-grade commerce backend, testing long-horizon planning and economic judgment under uncertainty.",
+            "role": "takeaway",
+            "displayText": "ArXiv cs.AI says it introduce StoreBench"
+          }
+        ],
+        "narration": "Customers order around the clock, suppliers reprice and fail, and market shocks arrive with partial or no warning. arXiv:2610.10942v1 Announce Type: new Abstract: Reinforcement learning environments are now a primary lever for improving large language model (LLM) capabilities in post-training, yet most agentic benchmarks remain static: the world moves only when the agent acts, the reward is a terminal verdict, and the pass bar is set arbitrarily. arXiv cs.AI says it introduce StoreBench, a live-commerce environment in which an agent runs a mid-size online apparel store on a production-grade commerce backend, testing long-horizon planning and economic judgment under uncertainty.\nSource in the description."
+      },
+      "selectionReason": "A source-backed, measurable change in time, cost, or capability.",
+      "contentHash": "c6505d2ecd0514815c57640f5efc10b76fc664a901926e9b42c2460d94c7045f",
+      "media": {
+        "publicUrl": "https://media.zernio.com/temp/1791648648032_frp1u20r_2026-10-10.mp4",
+        "videoSha256": "608359fcffdb45f27ce7d79dc8264265f70d4b68b14188110012c32c684ef68d",
+        "uploadedAt": "2026-10-10T16:10:49.525Z"
+      }
     }
   }
 }
