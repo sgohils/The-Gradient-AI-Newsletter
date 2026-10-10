@@ -471,8 +471,32 @@
       "platforms": {
         "youtube": {
           "accountId": "6ac27146281ee799a37065e4",
-          "status": "prepared",
-          "idempotencyKey": "db8fc33e-d69f-4e5d-b8bb-c7dd01898d9a"
+          "status": "submitting",
+          "idempotencyKey": "db8fc33e-d69f-4e5d-b8bb-c7dd01898d9a",
+          "request": {
+            "content": "StoreBench: A Live-Commerce Environment for Evaluating and Training Autonomous Operator Agents\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2610.10942\n\nThe Gradient: https://gradientnews.app/archive/2026-10-10\nAI-generated narration. #AI #AINews #Shorts",
+            "mediaItems": [
+              {
+                "type": "video",
+                "url": "https://media.zernio.com/temp/1791648648032_frp1u20r_2026-10-10.mp4"
+              }
+            ],
+            "platforms": [
+              {
+                "platform": "youtube",
+                "accountId": "6ac27146281ee799a37065e4",
+                "platformSpecificData": {
+                  "title": "Customers order around the clock, suppliers reprice and fail, and market shocks arrive wit",
+                  "visibility": "public",
+                  "madeForKids": false,
+                  "containsSyntheticMedia": true,
+                  "categoryId": "28"
+                }
+              }
+            ],
+            "publishNow": true
+          },
+          "firstSubmittedAt": "2026-10-10T16:10:50.617Z"
         }
       },
       "script": {
