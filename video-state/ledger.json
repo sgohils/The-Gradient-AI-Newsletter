@@ -533,6 +533,52 @@
         "videoSha256": "608359fcffdb45f27ce7d79dc8264265f70d4b68b14188110012c32c684ef68d",
         "uploadedAt": "2026-10-10T16:10:49.525Z"
       }
+    },
+    "2026-10-11": {
+      "story": {
+        "id": "reddit-machinelearning-https%3A%2F%2Fwww.reddit.com%2Fr%2FMachineLearning%2Fcomments%2F1x1fjrv%2Fi_built_marn_a_pytorch_library_for_training%2F",
+        "rank": 23,
+        "title": "I built MaRN: a PyTorch library for training neural networks through low-dimensional parameter mappings [P]",
+        "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1x1fjrv/i_built_marn_a_pytorch_library_for_training/",
+        "sourceName": "Reddit r/MachineLearning",
+        "publishedAt": "2026-10-09T08:05:23.000Z",
+        "sourceExcerpt": "I built MaRN (Mapping Networks), a PyTorch library that lets you optimize a compact latent representation instead of directly training every model parameter. Some results from my current benchmarks: MNIST CNN: Reduced a 537,748-parameter CNN to 4,080 trainable parameters (131.8× reduction), with accuracy decreasing from 99.07% → 98.10% (−0.97 pp). A smaller 107,998-parameter CNN was reduced to 1,872 trainable parameters (57.7× reduction), with accuracy decreasing from 98.83% → 97.18% (−1.65 pp). These results come with trade-offs: mapped models can train substantially slower, and performance varies by task. The benchmarks are exploratory, using synthetic data for some tasks, and aren't evidence of general superiority over direct training. The library includes global and layer-wise mappings, regularization options, and pruning/LRD integrations. Code: https://github.com/arjunmnath/MaRN Docs: https://marn.readthedocs.io/ I'd value feedback on the approach, benchmark design, and where this kind of parameter-efficient optimization could be useful. submitted by /u/Less_Dream_6331 [link] [comments]",
+        "summary": ""
+      },
+      "selectedAt": "2026-10-11T16:34:33.604Z",
+      "platforms": {},
+      "script": {
+        "version": 2,
+        "provider": "extractive",
+        "sentences": [
+          {
+            "text": "The library includes global and layer-wise mappings, regularization options, and pruning/LRD integrations.",
+            "evidenceQuote": "The library includes global and layer-wise mappings, regularization options, and pruning/LRD integrations.",
+            "role": "hook",
+            "displayText": "The library includes global and layer-wise mappings"
+          },
+          {
+            "text": "I built MaRN (Mapping Networks), a PyTorch library that lets you optimize a compact latent representation instead of directly training every model parameter.",
+            "evidenceQuote": "I built MaRN (Mapping Networks), a PyTorch library that lets you optimize a compact latent representation instead of directly training every model parameter.",
+            "role": "detail",
+            "displayText": "You optimize a compact latent representation instead"
+          },
+          {
+            "text": "Some results from my current benchmarks: MNIST CNN: Reduced a 537,748-parameter CNN to 4,080 trainable parameters (131.8× reduction), with accuracy decreasing from 99.07% → 98.10% (−0.97 pp).",
+            "evidenceQuote": "Some results from my current benchmarks: MNIST CNN: Reduced a 537,748-parameter CNN to 4,080 trainable parameters (131.8× reduction), with accuracy decreasing from 99.07% → 98.10% (−0.97 pp).",
+            "role": "detail",
+            "displayText": "Some results from my current benchmarks: MNIST CNN"
+          },
+          {
+            "text": "A smaller 107,998-parameter CNN was reduced to 1,872 trainable parameters (57.7× reduction), with accuracy decreasing from 98.83% → 97.18% (−1.65 pp).",
+            "evidenceQuote": "A smaller 107,998-parameter CNN was reduced to 1,872 trainable parameters (57.7× reduction), with accuracy decreasing from 98.83% → 97.18% (−1.65 pp).",
+            "role": "takeaway",
+            "displayText": "A smaller 107,998-parameter CNN was reduced to 1,872"
+          }
+        ],
+        "narration": "The library includes global and layer-wise mappings, regularization options, and pruning/LRD integrations. I built MaRN (Mapping Networks), a PyTorch library that lets you optimize a compact latent representation instead of directly training every model parameter. Some results from my current benchmarks: MNIST CNN: Reduced a 537,748-parameter CNN to 4,080 trainable parameters (131.8× reduction), with accuracy decreasing from 99.07% → 98.10% (−0.97 pp). A smaller 107,998-parameter CNN was reduced to 1,872 trainable parameters (57.7× reduction), with accuracy decreasing from 98.83% → 97.18% (−1.65 pp).\nSource in the description."
+      },
+      "selectionReason": "A source-backed, measurable change in time, cost, or capability."
     }
   }
 }
