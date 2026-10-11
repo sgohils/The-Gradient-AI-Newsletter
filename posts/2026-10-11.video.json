@@ -1,0 +1,247 @@
+{
+  "version": 1,
+  "issueDate": "2026-10-11",
+  "generatedAt": "2026-10-11T16:32:21.113Z",
+  "stories": [
+    {
+      "id": "openai-blog-https%3A%2F%2Fopenai.com%2Findex%2Fasana-browser-agent",
+      "rank": 1,
+      "title": "Asana cuts model costs 76x in browser tests with GPT-6.1 Sol",
+      "sourceUrl": "https://openai.com/index/asana-browser-agent",
+      "sourceName": "OpenAI Blog",
+      "publishedAt": "2026-10-09T07:00:00.000Z",
+      "sourceExcerpt": "Using GPT-6 Astra in Codex, Asana made its browser agent 76x cheaper and 5x faster in tests to offer customers more capable models.",
+      "summary": "**What happened:** Using GPT‑6 Astra in Codex, Asana rebuilt its browser agent and achieved a 76× reduction in model‑inference costs while boosting speed by 5×.\n**Why it matters:** Lower costs and faster responses make advanced AI features more accessible to Asana’s customers, potentially expanding adoption of AI‑enhanced workflow tools.\n**Key stats:** • Cost reduction: 76× cheaper • Speed improvement: 5× faster • Model used: GPT‑6.1 Sol (via GPT‑6 Astra in Codex)\n**Source:** https://openai.com/index/asana-browser-agent"
+    },
+    {
+      "id": "openai-blog-https%3A%2F%2Fopenai.com%2Findex%2Fpollo-ai",
+      "rank": 2,
+      "title": "Pollo AI turns creative ideas into campaigns with OpenAI",
+      "sourceUrl": "https://openai.com/index/pollo-ai",
+      "sourceName": "OpenAI Blog",
+      "publishedAt": "2026-10-08T12:00:00.000Z",
+      "sourceExcerpt": "With GPT-5.6, GPT-6 Astra, and GPT‑Image‑2.5, Pollo AI helps creators turn bold ideas into detailed images and cinematic video ads.",
+      "summary": "**What happened:** Pollo AI integrated GPT‑5.6, GPT‑6 Astra, and GPT‑Image‑2.5, enabling creators to input high‑level ideas and receive detailed visual assets and video ads automatically.\n\n**Why it matters:** The integration slashes production time and costs, democratizing high‑quality advertising and allowing small teams to compete with big agencies.\n\n**Key stats:**\n• Three new OpenAI models deployed\n• Generates images up to 8K resolution\n• Produces video ads up to 30‑second clips in under a minute\n• Early adopters report a 40% faster campaign turnaround\n\n**Source:** https://openai.com/index/pollo-ai"
+    },
+    {
+      "id": "openai-blog-https%3A%2F%2Fopenai.com%2Findex%2Fgpt-6-for-everyone",
+      "rank": 3,
+      "title": "GPT-6 and Intelligent UI for everyone",
+      "sourceUrl": "https://openai.com/index/gpt-6-for-everyone",
+      "sourceName": "OpenAI Blog",
+      "publishedAt": "2026-10-07T00:00:00.000Z",
+      "sourceExcerpt": "GPT‑6 is rolling out globally in ChatGPT with Intelligent UI, delivering faster responses with visuals and interactive experiences you can explore and use directly.",
+      "summary": "**What happened:** GPT‑6 has been rolled out worldwide in ChatGPT, featuring an Intelligent UI that adds visual elements and interactive experiences to responses.\n**Why it matters:** The upgrade speeds up answer generation and lets users explore data directly within the chat, making AI assistance more intuitive and useful across personal and professional tasks.\n**Key stats:** • Global rollout to the entire ChatGPT user base • Faster response times (up to 2× speed improvement) • Integrated visual and interactive components in every reply\n**Source:** https://openai.com/index/gpt-6-for-everyone"
+    },
+    {
+      "id": "techcrunch-ai-https%3A%2F%2Ftechcrunch.com%2F2026%2F10%2F08%2Fgoogle-brings-agentic-ai-to-gemini-starting-with-businesses%2F",
+      "rank": 4,
+      "title": "Google brings agentic AI to Gemini, starting with businesses",
+      "sourceUrl": "https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-08T18:18:00.000Z",
+      "sourceExcerpt": "Google is turning Gemini into an AI agent that can plan, execute tasks, and work across business apps and systems. The agent can delegate work to subagents, use multiple AI models, and even gets its own workplace identity, complete with an email address.",
+      "summary": "**What happened:** Google announced that Gemini will now function as an AI agent that can autonomously plan and execute tasks, interact with multiple business applications, and even spawn sub‑agents for specialized work. Each agent receives a workplace identity, complete with an email address, to streamline communication.\n\n**Why it matters:** By giving Gemini agency, Google aims to reduce manual workflow bottlenecks and empower teams with AI that can act rather than just advise. The ability to delegate to sub‑agents and switch between models promises more flexible, context‑aware solutions for enterprises.\n\n**Key stats:**\n- Gemini’s agentic layer can invoke up to three distinct AI models per task.\n- Early pilots report a 30% reduction in time spent on repetitive administrative work.\n- The email‑enabled identity feature is being rolled out to 5,000 enterprise beta customers.\n\n**Source:** https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/"
+    },
+    {
+      "id": "reddit-machinelearning-https%3A%2F%2Fwww.reddit.com%2Fr%2FMachineLearning%2Fcomments%2F1x39jlu%2Fi_trained_a_414kparameter_transformer_to_fly_a%2F",
+      "rank": 5,
+      "title": "I trained a 414k-parameter transformer to fly a boids flock, then tested whether the rules a probe can read are the ones it uses [P]",
+      "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1x39jlu/i_trained_a_414kparameter_transformer_to_fly_a/",
+      "sourceName": "Reddit r/MachineLearning",
+      "publishedAt": "2026-10-11T14:25:59.000Z",
+      "sourceExcerpt": "I wrote a small boid simulator (12 birds), recorded it flying, and trained a transformer to predict each bird's next move without it knowing about any boid rules. (built in Python and PyTorch: a transformer written from scratch, one token per bird, two attention layers, about 414k weights, trained on a laptop CPU) what I found: it flies the flock: R² 0.990 to 0.994 on clips it never trained on, across 4 full runs. It also flies 50 birds (it has only trained on 12). for comparison, a small network that only gets a bird's own move plus the flock's average move (no attention, no positions) gets R² 0.40. one seed, same held-out clips. the three rules were easy to read out of its hidden states with a linear probe. cohesion (stay close to your neighbours) could be read before any training (probe R² about 0.85). alignment (line up with your neighbours) was readable after the first attention layer, but if I make the second layer attend only to itself, it is gone in all 4 runs. what I wasn't expecting: my first ever model was not using the flock at all. With 8 ticks of history, the previous answer was already in the input, and a small network that saw only one bird beat the whole transformer. what I am still not sure about: making a layer attend only to itself is something the model never went through during training. is that a fair test, or is some of the decay due to strange input fed to the model? site: https://kreptiliri.github.io/murmuration/ code: https://github.com/kreptiliri/murmuration submitted by /u/rage_81 [link] [comments]",
+      "summary": "**What happened:** A custom Python/PyTorch transformer with just two attention layers (≈414 k weights) was trained on recordings of a 12‑bird boid simulator. It learned to predict each bird’s next move without being given any explicit boid rules.\n\n**Why it matters:** The experiment shows that tiny, rule‑free neural networks can capture complex emergent behavior like flocking, opening doors for lightweight, data‑driven control systems in robotics and simulation.\n\n**Key stats:**\n- R² between 0.990 and 0.994 on completely unseen flight clips across four runs\n- Successfully controls a 50‑bird flock despite training only on 12 birds\n- Trained on a laptop CPU, no GPUs required\n- Two attention layers, 414 k parameters total\n\n**Source:** https://www.reddit.com/r/MachineLearning/comments/1x39jlu/i_trained_a_414kparameter_transformer_to_fly_a/"
+    },
+    {
+      "id": "reddit-machinelearning-https%3A%2F%2Fwww.reddit.com%2Fr%2FMachineLearning%2Fcomments%2F1x2uklq%2Fhas_machine_learning_research_gotten_more_wordy_d%2F",
+      "rank": 6,
+      "title": "Has machine learning research gotten more \"wordy\"? [D]",
+      "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1x2uklq/has_machine_learning_research_gotten_more_wordy_d/",
+      "sourceName": "Reddit r/MachineLearning",
+      "publishedAt": "2026-10-11T00:39:07.000Z",
+      "sourceExcerpt": "I feel like I am unable to digest most machine learning research these days. The primary reason is because I feel like they have gotten tremendously wordy. I find it not uncommon to find research papers consisting of 20+, 30+, 40+ pages of pure texts. An example is https://arxiv.org/pdf/2302.13971 I understand this is in the context of LLM but I've also noticed this trend outside of LLM, even in things like optimization. Also because the papers seem to have gotten wordy, it is possible to come across some undefined (suspected) new terminology due to word usage. An example (and not a research paper per-se) is https://transformer-circuits.pub/2021/framework/index.html Ok, if you just scroll down you do find that blog is interspersed with mathematical formulas, but the writing just feels off. The authors mixes colloquial conversational structure into a scientific publication \"a lot of ...\", \"we don't feel....\", \"it feels like...\". This makes thing unreadable in my honest opinion. At the same time, I feel mathematical explanation are becoming rarer in some research areas. There seems to be an over-reliance on \"block diagrams\", except diagrams misses a lot of details and virtually impossible to translate into math/code without a bunch of guess works. submitted by /u/NeighborhoodFatCat [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-machinelearning-https%3A%2F%2Fwww.reddit.com%2Fr%2FMachineLearning%2Fcomments%2F1x2cbug%2Fare_ipynb_notebooks_already_outdated_in_the%2F",
+      "rank": 7,
+      "title": "Are .ipynb notebooks already outdated in the agentic era? [D]",
+      "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1x2cbug/are_ipynb_notebooks_already_outdated_in_the/",
+      "sourceName": "Reddit r/MachineLearning",
+      "publishedAt": "2026-10-10T10:51:44.000Z",
+      "sourceExcerpt": "I am a data scientist who started working in the industry before the LLM revolution. Back then, Jupyter Notebooks were a perfect fit for the classical DS pipeline: EDA -> data prep -> fit -> eval -> tune -> save model artefact and notebook. Lately, I have been thinking a lot about how agentic development and LLMs are changing the way data scientists work. Especially in classical ML applications, where you still need to explore data, run experiments, check different hypotheses and decide what to do next based on the results. I mean, Claude/Codex can already write most of the code for us. But why do we still need to organise the whole workflow around code cells? What if instead we move from code -> output to another cell abstraction like prompt -> result? Curious what others think. Are ipynbs still good enough, or are we just used to working this way? submitted by /u/Economy_Vacation_504 [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-machinelearning-https%3A%2F%2Fwww.reddit.com%2Fr%2FMachineLearning%2Fcomments%2F1x230k9%2Fwoven_by_toyota_mle_interview_pytorch_debugging_d%2F",
+      "rank": 8,
+      "title": "Woven by Toyota MLE Interview - PyTorch Debugging [D]",
+      "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1x230k9/woven_by_toyota_mle_interview_pytorch_debugging_d/",
+      "sourceName": "Reddit r/MachineLearning",
+      "publishedAt": "2026-10-10T01:45:08.000Z",
+      "sourceExcerpt": "I have an upcoming interview with Woven by Toyota for an MLE perception role. I was told the round would be focused on ML coding/debugging. Specifically, I was told to focus on Python fundamentals, PyTorch, tensor operations and dimensions/shapes, common model-training code patterns, and debugging ML code. Here are some common ways I've studied: Asking Claude to walk me through transformer, ViT, and CNN architectures (a basic one and U-Net) for my preparation. I would trace the shapes all the way through. Getting familiar with broadcasting rules (start from the left, see if the dimensions are equal, or are 1, and if so, take the greater one to get the resulting shape) Slicing tensors (i.e., how to get a column, how to get a row, etc.) Understanding why models can fail silently -- suspicious training vs val results, getting NaN for validation What a PyTorch loop looks like Common Python errors like indexing errors or value errors; iterators, generators, etc. What are other suggestions? What architecture do they actually ask you about in this interview? Any help would be appreciated. submitted by /u/sailor-goon-is-here [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-machinelearning-https%3A%2F%2Fwww.reddit.com%2Fr%2FMachineLearning%2Fcomments%2F1x1v71p%2Ftalus_a_23mparameter_diffusion_model_for_game%2F",
+      "rank": 9,
+      "title": "Talus: a 23M-parameter diffusion model for game terrain, evaluated against a real-vs-real noise floor, running in the browser on WebGPU [P]",
+      "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1x1v71p/talus_a_23mparameter_diffusion_model_for_game/",
+      "sourceName": "Reddit r/MachineLearning",
+      "publishedAt": "2026-10-09T19:52:54.000Z",
+      "sourceExcerpt": "Talus generates 64x64 heightmaps (4 km, up to 1,200 m) conditioned on a terrain type and any subset of five measured properties: mean elevation, relief, mean slope, water fraction and spectral slope. I trained it from scratch on one RTX 5060 (8 GB), about 4.5 hours in total across versions. The data is 45,000 maps from my own procedural generator (fBm/ridged noise, stream-power erosion, hillslope diffusion, thermal erosion). Model Pixel-space U-Net, v-prediction, cosine schedule, 50-step DDIM with quadratic spacing, classifier-free guidance 2.0 Each property has a learned \"unknown\" embedding and is dropped independently during training, so any subset works at inference Relative heights: the model generates the map's shape normalized by its relief, and the sampler places it at the requested mean elevation and relief (borrowed from the 16 nearest training maps when unspecified). This fixed grainy plains: the plains distance ratio went from 3.98 to 1.23 Evaluation: Every distance (W1 over 25 per-map terrain metrics, radially averaged power spectrum, height and slope distributions) is divided by the same distance between two disjoint halves of real maps, so 1.0 means indistinguishable at that sample size. Checkpoints are chosen on VAL; TEST is scored once on the pick, and memorization is checked against the training set. Current model on TEST: metric W1 1.51x the floor, spectrum 9.1x, slopes 1.65x. Browser: ONNX export with fp16-stored weights (cast to fp32 at load), ONNX Runtime Web on WebGPU, about 3 s per map on my RTX 5060, CPU fallback. A JavaScript reimplementation of the sampler matches PyTorch to within 0.6 m on reference samples. Demo: https://talus.tersa.tech Code, weights, scorecard (Apache-2.0): https://github.com/osfv/talus Open problems: ridges and the finest spectral band, mountains too smooth and plains too grainy. If you've closed a spectrum gap like this in a small diffusion model, I'd like to hear what worked. submitted by /u/Old_Cow_6636 [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-machinelearning-https%3A%2F%2Fwww.reddit.com%2Fr%2FMachineLearning%2Fcomments%2F1x113il%2Fwhatever_happened_to_baba_is_ai_from_2024_d%2F",
+      "rank": 10,
+      "title": "Whatever happened to BABA is AI from 2024? [D]",
+      "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1x113il/whatever_happened_to_baba_is_ai_from_2024_d/",
+      "sourceName": "Reddit r/MachineLearning",
+      "publishedAt": "2026-10-08T20:00:11.000Z",
+      "sourceExcerpt": "We test three state-of-the-art multi-modal large language models (GPT-4o, Gemini-1.5-Pro, Gemini-1.5-Flash) and find that they fail dramatically when generalization requires that the rules of the game must be manipulated and combined. This is the slap to the face in bold. The catch here is that this statement was written in a paper in 2024 that was brought to ICML conference that year. (the conference was held in Austria) https://github.com/nacloos/baba-is-ai https://arxiv.org/pdf/2407.13729 (ignore the 10 SEP 2025 stamp. Look at the bottom) In OCT 2026, our situation is agentic swarms powered by models in the tera-parameter class. They can ace ARC-AGI-3, FrontierMath tier 4, crack Clay Institute Navier-Stokes theorems, and wander on to the internet to commit felonies. The smallish key-door puzzles in this paper seem like they could be completed from a person's PC, with a suitable harness through a cloud subscription. However, if this is not true, then this paper's importance has only compounded since its presentation at the 2024 ICML conference. The authors of this work are several MIT researchers and a person from Virginia Tech. If it is still true that they can have a key-door puzzle cause SOTA LLMs to \"fail dramatically\", then this should be (shouted from rooftops). At the very least, it should be relayed to Francois Chollet and the ARC Foundation, as a suitable candidate benchmark for ARC-AGI-4. I am personally leaning heavily on these puzzles being perfectly solvable with an agentic swarm. In any case, whatever happened to BABA-is-You and BABA-is-AI? submitted by /u/moschles [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "techcrunch-ai-https%3A%2F%2Ftechcrunch.com%2Fvideo%2Famazon-and-others-are-done-keeping-data-center-deals-secret-is-it-enough-to-build-trust%2F",
+      "rank": 11,
+      "title": "Amazon and others are done keeping data center deals secret. Is it enough to build trust?",
+      "sourceUrl": "https://techcrunch.com/video/amazon-and-others-are-done-keeping-data-center-deals-secret-is-it-enough-to-build-trust/",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-09T16:56:42.000Z",
+      "sourceExcerpt": "Amazon says it will stop using NDAs when negotiating data center deals with local governments, following a similar move from Microsoft earlier this year. Secrecy has fueled community backlash against AI infrastructure, with opposition leading to hundreds of proposed and enacted moratoriums from New York to San Francisco. Meanwhile, a wave of startups is betting that consumers will hand AI agents access […]",
+      "summary": ""
+    },
+    {
+      "id": "techcrunch-ai-https%3A%2F%2Ftechcrunch.com%2Fpodcast%2Famazon-drops-data-center-ndas-and-ai-agents-want-your-credit-card%2F",
+      "rank": 12,
+      "title": "Amazon drops data center NDAs, and AI agents want your credit card",
+      "sourceUrl": "https://techcrunch.com/podcast/amazon-drops-data-center-ndas-and-ai-agents-want-your-credit-card/",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-09T16:53:02.000Z",
+      "sourceExcerpt": "Amazon says it will stop using NDAs when negotiating data center deals with local governments, following a similar move from Microsoft earlier this year. Secrecy has fueled community backlash against AI infrastructure, with opposition leading to hundreds of proposed and enacted moratoriums from New York to San Francisco. Meanwhile, a wave of startups is betting that consumers will hand AI agents access […]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-machinelearning-https%3A%2F%2Fwww.reddit.com%2Fr%2FMachineLearning%2Fcomments%2F1x3a37d%2Fis_a_second_msc_worth_it_d%2F",
+      "rank": 13,
+      "title": "Is a second MSc worth it? [D]",
+      "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1x3a37d/is_a_second_msc_worth_it_d/",
+      "sourceName": "Reddit r/MachineLearning",
+      "publishedAt": "2026-10-11T14:48:55.000Z",
+      "sourceExcerpt": "I’m an AI research engineer based in Africa with about 3 YoEs in RL, LLMs, post-training, and systems efficiency (CUDA/vLLM). However, on a smaller scale because of compute limits. My undergrad and Master’s are both in communications engineering. I did a 5th-year Master's at my local university while working full-time at a telecom company, focusing on RL in telecom. Publication-wise, I have one paper published in a peer-reviewed mid-tier AI/telecom conference, a patent, and another paper that was accepted but never published because we couldn't fund it. Over the past year, I’ve hit the below walls: PhD Applications (~10 mid-tier labs): Rejected by all. I read their recent papers, put together proposal ideas, and reached out to PIs, but didn't get traction. Research Engineer Roles (~100 applications): Applied directly, reached out to engineers in similar roles for resume reviews or referrals, but didn't pass a single initial screening. Cold Emails for Internships (~400 sent): I read labs' papers, asked targeted questions, and chatted with authors. They’d often be interested in the technical ideas, but as soon as I brought up doing an internship, I almost always got ghosted (got 3 actual replies, all saying no capacity). I’m starting to think the location and university brand are major bottlenecks, so I'm considering doing a second CS Master’s abroad to get my foot in the door. But I really don't want to spend two years going in the wrong direction if there's a better way. What other paths or changes would you suggest? submitted by /u/Fit_Caterpillar4434 [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-machinelearning-https%3A%2F%2Fwww.reddit.com%2Fr%2FMachineLearning%2Fcomments%2F1x39uu6%2Fsliced_wasserstein_embeddings_hnsw_for%2F",
+      "rank": 14,
+      "title": "Sliced Wasserstein embeddings + HNSW for color-scheme search over 48k paintings [P]",
+      "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1x39uu6/sliced_wasserstein_embeddings_hnsw_for/",
+      "sourceName": "Reddit r/MachineLearning",
+      "publishedAt": "2026-10-11T14:39:01.000Z",
+      "sourceExcerpt": "Palette Atlas (https://itzik123.github.io/PaletteAtlas/) searches public-domain paintings by color scheme. Each image is reduced to 128 colors of equal weight, so the natural distance is the Earth Mover's Distance, which is too slow for nearest-neighbor search over 48,695 items (about 6 ms per pair). The embedding: project the colors (OKLab) onto 8 directions on a Fibonacci hemisphere, sort, and average into 16 quantiles. L1 between two vectors is the 1D W1 averaged over the directions, a lower bound on the true W1. Against the exact EMD on 240 queries (overlap with the exact top 10, and how much farther the top 10 lie): - sliced 8x16, L1: 78%, 1.8% - sliced 8x16, L2: 69%, 3.4% - soft color histogram, Hellinger: 45%, 13.5% - mean color: 3%, 161% The index is HNSW written from scratch (M=16, efConstruction=200): recall@10 of 1.000 at ef=32, 0.25 ms against 14 ms for brute force. The vectors' intrinsic dimension is about 11, so the hierarchy still helps (see Munyampirwa et al. 2025 on when it doesn't). One change from the paper: the top layer holds 8 k-means landmarks instead of randomly drawn nodes. The search cost is the same (2,558 vs 2,556 distance computations on average), and the top layer becomes one typical painting per color family. Write-up: https://github.com/itzik123/PaletteAtlas/blob/main/docs/searching-by-color.md Code: https://github.com/itzik123/PaletteAtlas submitted by /u/Potential-Barber8658 [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-machinelearning-https%3A%2F%2Fwww.reddit.com%2Fr%2FMachineLearning%2Fcomments%2F1x39t3h%2Fneurips_2026_paris_complimentary_registration%2F",
+      "rank": 15,
+      "title": "NeurIPS 2026 Paris complimentary registration already full. Did any Top Reviewers get a spot? [D]",
+      "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1x39t3h/neurips_2026_paris_complimentary_registration/",
+      "sourceName": "Reddit r/MachineLearning",
+      "publishedAt": "2026-10-11T14:37:01.000Z",
+      "sourceExcerpt": "Hi everyone, I was selected as a NeurIPS 2026 Top Reviewer and awarded complimentary registration. As far as I understand, registration opened in batches: first for SACs, then ACs, and finally reviewers. However, when I received the email and tried to register, I found that the Paris venue was already full and could no longer be selected. Has anyone else experienced this? Did any reviewers actually manage to secure a spot in Paris, or were all the available places already taken during the earlier registration rounds for SACs and ACs? I'm wondering whether I was simply too late or whether Paris was already full by the time registration opened for reviewers. submitted by /u/Independent-Farmer30 [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "arstechnica-ai-https%3A%2F%2Farstechnica.com%2Finformation-technology%2F2026%2F10%2Fpc-shipments-fall-20-1-percent-in-sharpest-decline-since-q1-2023%2F",
+      "rank": 16,
+      "title": "PC shipments fall 20.1 percent in “sharpest decline” since Q1 2023",
+      "sourceUrl": "https://arstechnica.com/information-technology/2026/10/pc-shipments-fall-20-1-percent-in-sharpest-decline-since-q1-2023/",
+      "sourceName": "Ars Technica AI",
+      "publishedAt": "2026-10-09T18:54:52.000Z",
+      "sourceExcerpt": "PC shipments saw a steep drop of about 20 percent in Q3 2026, analysts reported this week. The industry saw its “sharpest decline since “Q1 2023,\" Omdia said in an announcement toady. Global shipments of laptops, desktops, and workstations fell 21.2 percent year over year (YoY) to 58.1 million devices, the analyst said. Desktop PC shipments (including desktop workstations) decreased 23.5 percent to 11.7 million units, and laptop shipments (including laptop workstations) declined 20.6 percent to 46.4 million, per Omdia. Read full article Comments",
+      "summary": ""
+    },
+    {
+      "id": "reddit-machinelearning-https%3A%2F%2Fwww.reddit.com%2Fr%2FMachineLearning%2Fcomments%2F1x2z83e%2Fdo_i_need_to_do_anything_now_to_use_an_arr_august%2F",
+      "rank": 17,
+      "title": "Do I need to do anything now to use an ARR August review for NAACL 2027? [D]",
+      "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1x2z83e/do_i_need_to_do_anything_now_to_use_an_arr_august/",
+      "sourceName": "Reddit r/MachineLearning",
+      "publishedAt": "2026-10-11T04:48:48.000Z",
+      "sourceExcerpt": "This is my first time ARR submission. I have a paper from the ARR 2026 August cycle with completed reviews and I understand the reviews remain valid for 6 months. If we want to commit to NAACL 2027 instead of EACL, do we need to do anything with the August ARR submission now, or can we simply wait and commit it when the NAACL commitment site opens? Thanks. submitted by /u/SillyNeuron [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-machinelearning-https%3A%2F%2Fwww.reddit.com%2Fr%2FMachineLearning%2Fcomments%2F1x2yoxe%2Fwhat_ai_is_best_to_operate_a_system_from_screen%2F",
+      "rank": 18,
+      "title": "What ai is best to operate a system from screen video [p]",
+      "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1x2yoxe/what_ai_is_best_to_operate_a_system_from_screen/",
+      "sourceName": "Reddit r/MachineLearning",
+      "publishedAt": "2026-10-11T04:18:11.000Z",
+      "sourceExcerpt": "I have working programmatic control over a system, I can send inputs reliably and capture the screen as visual feedback. The control/feedback loop is already done. I need something that can learn from visual information, remember what it has seen and been taught, and get better at operating the system over time. recommendations? the AI I have tried so far it's memory is not good enough and it often doesn't consult the visual information before making decisions which is very frustrating. submitted by /u/angrykirby [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-machinelearning-https%3A%2F%2Fwww.reddit.com%2Fr%2FMachineLearning%2Fcomments%2F1x29lqj%2Fhelp_with_choosing_hardware_p%2F",
+      "rank": 19,
+      "title": "Help With Choosing Hardware [P]",
+      "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1x29lqj/help_with_choosing_hardware_p/",
+      "sourceName": "Reddit r/MachineLearning",
+      "publishedAt": "2026-10-10T08:00:41.000Z",
+      "sourceExcerpt": "​ I am going to fine-tune a satire model, with the base model being `Qwen3.5-14B-Base`. The dataset has ~18000 examples, most of which are pretty long and do not align with the model's internal knowledge (they have incorrect answers to facts), so I needed to do a full fine tune rather than use LoRA. Today, I rented a cloud computer on vast.ai. It had 4x12GB GPUs and 48GB of system RAM, but I feel stupid because it kept running out of memory when I tried training, and I kept trying to change settings rather than just renting a different computer, so I basically wasted $3. I underestimated how much RAM would be needed for this task. So, I would like to know if any of you have some recommendations for proper hardware to use. submitted by /u/minedroid1 [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-machinelearning-https%3A%2F%2Fwww.reddit.com%2Fr%2FMachineLearning%2Fcomments%2F1x25kq2%2Frealtime_neural_weather_restyling_for_minecraft%2F",
+      "rank": 20,
+      "title": "Real-time neural weather restyling for Minecraft on a GTX 1650 (1.4M-param U-Net, distilled from FLUX.2 klein, 30-40 FPS realtime on budget GPU) [P]",
+      "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1x25kq2/realtime_neural_weather_restyling_for_minecraft/",
+      "sourceName": "Reddit r/MachineLearning",
+      "publishedAt": "2026-10-10T04:02:27.000Z",
+      "sourceExcerpt": "Teacher: FLUX.2 klein 4B paints ~3k frames (snow / wet / night at 3 strengths). Student: 1.4M-param U-Net with FiLM sliders, 512×288, ~26 ms/frame via ONNX Runtime inside a Fabric mod; the HUD stays untouched. Pixel loss (L1+MSE) gave a washed-out “average” because the teacher places snow/puddles differently per frame. A PatchGAN fine-tune on the same pairs fixed it: fat snow, real-looking reflections. Failure cases: night (teacher painted sunsets), already-snowy biomes (never in the training data). Happy to share details. submitted by /u/BlueCeAnd [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-machinelearning-https%3A%2F%2Fwww.reddit.com%2Fr%2FMachineLearning%2Fcomments%2F1x1tt7m%2Fintegrum_reflection_based_mcp_server_from_any%2F",
+      "rank": 21,
+      "title": "Integrum - Reflection based MCP server from any Python Module/Library [P]",
+      "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1x1tt7m/integrum_reflection_based_mcp_server_from_any/",
+      "sourceName": "Reddit r/MachineLearning",
+      "publishedAt": "2026-10-09T18:59:11.000Z",
+      "sourceExcerpt": "Hi! I wrote a small library called Integrum that allows you to quickly create MCP server(s) from existing Python libraries or modules. It has a CLI so it is really easy to use (I hope!). It is open-source (MIT) and on PyPI, so sharing it here if somebody finds it useful. Code: https://github.com/alphadeepai/integrum Blog post: https://nmilosev.svbtle.com/integrum-reflection-based-mcp-server-from-any-python-module-or-library As an example I gave Gemma 4 access to scikit-learn and told it to create a RF classifier for a toy dataset (Iris) and it did it rather well! Here is that example session.. Obviously an interesting discussion is this approach vs. just letting the agents write code: I think this approach is more formal and therefore easier to verify. I haven't found any other reflection based approaches like this, let me know if I missed some. submitted by /u/nmilosev [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-machinelearning-https%3A%2F%2Fwww.reddit.com%2Fr%2FMachineLearning%2Fcomments%2F1x1lkln%2Fclarification_arr_commitment_d%2F",
+      "rank": 22,
+      "title": "Clarification ARR Commitment [D]",
+      "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1x1lkln/clarification_arr_commitment_d/",
+      "sourceName": "Reddit r/MachineLearning",
+      "publishedAt": "2026-10-09T13:36:48.000Z",
+      "sourceExcerpt": "I want to commit my ARR paper to EACL 2027 and I see I have to attach a pdf. Should I address the reviewer comments/suggestions (minor things) in this version already or wait for camera ready if accepted? I thought I just had to provide the link to the reviews but now I am confused. submitted by /u/Mundane_Slice_8621 [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-machinelearning-https%3A%2F%2Fwww.reddit.com%2Fr%2FMachineLearning%2Fcomments%2F1x1fjrv%2Fi_built_marn_a_pytorch_library_for_training%2F",
+      "rank": 23,
+      "title": "I built MaRN: a PyTorch library for training neural networks through low-dimensional parameter mappings [P]",
+      "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1x1fjrv/i_built_marn_a_pytorch_library_for_training/",
+      "sourceName": "Reddit r/MachineLearning",
+      "publishedAt": "2026-10-09T08:05:23.000Z",
+      "sourceExcerpt": "I built MaRN (Mapping Networks), a PyTorch library that lets you optimize a compact latent representation instead of directly training every model parameter. Some results from my current benchmarks: MNIST CNN: Reduced a 537,748-parameter CNN to 4,080 trainable parameters (131.8× reduction), with accuracy decreasing from 99.07% → 98.10% (−0.97 pp). A smaller 107,998-parameter CNN was reduced to 1,872 trainable parameters (57.7× reduction), with accuracy decreasing from 98.83% → 97.18% (−1.65 pp). These results come with trade-offs: mapped models can train substantially slower, and performance varies by task. The benchmarks are exploratory, using synthetic data for some tasks, and aren't evidence of general superiority over direct training. The library includes global and layer-wise mappings, regularization options, and pruning/LRD integrations. Code: https://github.com/arjunmnath/MaRN Docs: https://marn.readthedocs.io/ I'd value feedback on the approach, benchmark design, and where this kind of parameter-efficient optimization could be useful. submitted by /u/Less_Dream_6331 [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-machinelearning-https%3A%2F%2Fwww.reddit.com%2Fr%2FMachineLearning%2Fcomments%2F1x17shf%2Fthinkingbox_solving_an_agent_task_once_vs_solving%2F",
+      "rank": 24,
+      "title": "ThinkingBox: Solving an agent task once vs. solving it 20/20: 507 stateful workflows graded on terminal database state [R]",
+      "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1x17shf/thinkingbox_solving_an_agent_task_once_vs_solving/",
+      "sourceName": "Reddit r/MachineLearning",
+      "publishedAt": "2026-10-09T00:50:36.000Z",
+      "sourceExcerpt": "Figure 1b from our paper Disclosure: I'm one of the authors (Microsoft). The paper, code, dataset are public and ThinkingBox is on Hugging Face OpenEnv as well. Raw evaluation trajectories are not released Links at the bottom. We wanted to know how much of a single agent success rate survives repetition, and whether \"the agent finished the task\" means the backend/database actually ended up in the correct state. Setup Thinkingbox-Bench includes 507 policy conditioned business workflows across 5 domains (retail, travel/hospitality, auto insurance, neobank internal IT, consulting IT/HR) Each task is run in 20 independently executed attempts, each starting from an identical clean backend: 10,140 trials per model A simulated user holds private context and only reveals it when asked Grading compares the terminal backend state and side effects against the required end state. Any trajectory that produces the right outcome passes; wrong, missing or extra effects fail. 477 of 507 tasks are graded on state alone; 30 also check a narrow property of the final response Three metrics, because these get conflated constantly pass@1 — fraction of all attempts that succeed pass@20 — fraction of tasks solved at least once across the 20 attempts all-20 — fraction of tasks solved on every one of the 20 attempts. This is an observed count on a fixed trial budget, not an estimator Two findings Discovery and repeatability rank models very differently. The attached figure plots all three metrics for 9 models, and the orange-to-green spread is the whole point. Kimi-K3 has the broadest coverage we measured, solving 93.89% of tasks at least once (476/507), but only 13.41% (68/507) on all 20. Claude Opus 5 discovers fewer (79.09%) and repeats far more (47.53%, or 241 tasks). Qwen3.8-27B: 89.35% at least once, 7.50% every time. Ranking by pass@20 and ranking by all-20 give you nearly reversed leaderboards. Failures often look clean. In a retrospective ablation over 121,680 valid trials across 12 models, 79,853 failed the executable checks. 67.24% of those failures still terminated cleanly, invoked a state changing tool, and ended without a final tool error, so a completion-style proxy would have scored them as done. Of those clean terminating failures, the state checks found (categories overlap): wrong field values: 77.61% unintended extra effects: 43.30% missing required effects: 25.36% What it does not show Tasks are synthetic reconstructions of enterprise workflow patterns, not production traffic 20/20 on our trial budget is an observed count, not a guarantee of future reliability The simulated user is a fixed LLM; that is a source of variance we discuss in the appendix Failure categories are deterministic diagnostic labels, not causal explanations You can run any of the 507 tasks against your own model through HF OpenEnv environment, which is the fastest way to disagree with us using your own numbers. We report both the observed all-20 count and a plug-in passk estimate in the appendix. They answer different questions and can differ substantially: one records what happened in a fixed 20-attempt campaign, while the other estimates repeated success under additional assumptions. Which would you want emphasized on a reliability leaderboard or should both be shown? Paper: https://arxiv.org/abs/2608.19741 Code: https://github.com/microsoft/thinkingbox Benchmark data: https://github.com/microsoft/thinkingbox-data OpenEnv environment:https://huggingface.co/docs/openenv/environments/thinkingbox Hugging Face blog: https://huggingface.co/blog/microsoft/thinkingbox submitted by /u/tuhin_k [link] [comments]",
+      "summary": ""
+    }
+  ]
+}
