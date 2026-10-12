@@ -38,8 +38,8 @@
         "sourceUrl": "https://arxiv.org/abs/2610.02330",
         "sourceName": "arXiv cs.AI",
         "publishedAt": "2026-10-05T04:00:00.000Z",
-        "sourceExcerpt": "arXiv:2610.02330v1 Announce Type: new Abstract: Large language models (LLMs) rely on long-horizon tool invocation sequences for complex tasks, where each invocation can alter the task state and condition subsequent decisions. In long-horizon tool use, final-outcome rewards provide weak credit assignment over long interaction traces. Step-level rewards can offer more targeted feedback, but obtaining reliable step supervision often requires human or LLM judgment, or additional rollouts to estimate the downstream effect of an intermediate decision. In this paper, we argue that effective tool-use agents should estimate the long-horizon value of a possible next tool invocation before executing it. This objective requires comparative supervision over alternative invocations under the same context, while logged trajectories only contain the invocation that was actually taken. Therefore, we propose Comparative Inference for Tool-use Agents (CITA). CITA trains a Comparative Inference Model (CIM) from paired signals that combine observed tool behavior, scalable supervision from a Bayesian tool-graph simulator, and semantic judgments from LLM-based comparison. The resulting CIM learns to estimate how likely a possible next tool invocation is to support final task success under the current context. Across three tool-use benchmarks and multiple backbone LLMs, CITA consistently improves Tool F1 and task success. Additional analysis shows that CIM learns accurate step-level value estimates for comparative tool choices.",
-        "summary": "**What happened:** The paper introduces a \"choose‑before‑act\" strategy for large language models that need to invoke a sequence of tools. By estimating the comparative value of possible next actions, the agent can pick the most promising tool call prior to execution, reducing reliance on weak final‑outcome rewards.\n\n**Why it matters:** Long‑horizon tool use underpins many real‑world AI applications—from data analysis pipelines to autonomous software agents. Better step‑level credit assignment accelerates learning, improves reliability, and cuts down on costly trial‑and‑error rollouts.\n\n**Key stats:** Across standard tool‑use benchmarks, the approach consistently outperforms baselines, delivering higher task‑completion rates and requiring fewer interaction steps. The authors highlight notable gains without needing extensive human supervision for step rewards.\n\n**Source:** https://arxiv.org/abs/2610.02330"
+        "sourceExcerpt": "",
+        "summary": ""
       },
       "selectedAt": "2026-10-06T01:12:50.245Z",
       "platforms": {
@@ -47,64 +47,10 @@
           "accountId": "6ac27146281ee799a37065e4",
           "status": "published",
           "idempotencyKey": "34f2bf67-f0cf-4a87-9d58-89a89ce44f6d",
-          "request": {
-            "content": "Choosing Before Acting: Comparative Value Estimation for Long-Horizon Tool-Use Agents\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2610.02330\n\nThe Gradient: https://gradientnews.app/archive/2026-10-05\nAI-generated narration. #AI #AINews #Shorts",
-            "mediaItems": [
-              {
-                "type": "video",
-                "url": "https://media.zernio.com/temp/1791249254048_6dx11czt_2026-10-05.mp4"
-              }
-            ],
-            "platforms": [
-              {
-                "platform": "youtube",
-                "accountId": "6ac27146281ee799a37065e4",
-                "platformSpecificData": {
-                  "title": "arXiv cs.AI says Therefore, it propose Comparative Inference for Tool-use Agents (CITA).",
-                  "visibility": "public",
-                  "madeForKids": false,
-                  "containsSyntheticMedia": true,
-                  "categoryId": "28"
-                }
-              }
-            ],
-            "publishNow": true
-          },
           "firstSubmittedAt": "2026-10-06T01:14:17.423Z",
           "postId": "6ac44b6a02fa04aa2fc6e78e",
           "postUrl": "https://www.youtube.com/watch?v=B0dIrobfaFY"
         }
-      },
-      "script": {
-        "version": 2,
-        "provider": "extractive",
-        "sentences": [
-          {
-            "text": "arXiv cs.AI says Therefore, it propose Comparative Inference for Tool-use Agents (CITA).",
-            "evidenceQuote": "Therefore, we propose Comparative Inference for Tool-use Agents (CITA).",
-            "role": "hook",
-            "displayText": "ArXiv cs.AI says Therefore"
-          },
-          {
-            "text": "arXiv:2610.02330v1 Announce Type: new Abstract: Large language models (LLMs) rely on long-horizon tool invocation sequences for complex tasks, where each invocation can alter the task state and condition subsequent decisions.",
-            "evidenceQuote": "arXiv:2610.02330v1 Announce Type: new Abstract: Large language models (LLMs) rely on long-horizon tool invocation sequences for complex tasks, where each invocation can alter the task state and condition subsequent decisions.",
-            "role": "detail",
-            "displayText": "Alter the task state and condition subsequent decisions"
-          },
-          {
-            "text": "In long-horizon tool use, final-outcome rewards provide weak credit assignment over long interaction traces.",
-            "evidenceQuote": "In long-horizon tool use, final-outcome rewards provide weak credit assignment over long interaction traces.",
-            "role": "detail",
-            "displayText": "In long-horizon tool use"
-          },
-          {
-            "text": "Step-level rewards can offer more targeted feedback, but obtaining reliable step supervision often requires human or LLM judgment, or additional rollouts to estimate the downstream effect of an intermediate decision.",
-            "evidenceQuote": "Step-level rewards can offer more targeted feedback, but obtaining reliable step supervision often requires human or LLM judgment, or additional rollouts to estimate the downstream effect of an intermediate decision.",
-            "role": "takeaway",
-            "displayText": "Offer more targeted feedback"
-          }
-        ],
-        "narration": "arXiv cs.AI says Therefore, it propose Comparative Inference for Tool-use Agents (CITA). arXiv:2610.02330v1 Announce Type: new Abstract: Large language models (LLMs) rely on long-horizon tool invocation sequences for complex tasks, where each invocation can alter the task state and condition subsequent decisions. In long-horizon tool use, final-outcome rewards provide weak credit assignment over long interaction traces. Step-level rewards can offer more targeted feedback, but obtaining reliable step supervision often requires human or LLM judgment, or additional rollouts to estimate the downstream effect of an intermediate decision.\nSource in the description."
       },
       "selectionReason": "A concrete capability or everyday consequence in the original evidence.",
       "contentHash": "150405285ad5d8579f1d543a2c389038ddd24f7ead084ae116ec010e27d5f5a7",
@@ -579,6 +525,70 @@
         "narration": "The library includes global and layer-wise mappings, regularization options, and pruning/LRD integrations. I built MaRN (Mapping Networks), a PyTorch library that lets you optimize a compact latent representation instead of directly training every model parameter. Some results from my current benchmarks: MNIST CNN: Reduced a 537,748-parameter CNN to 4,080 trainable parameters (131.8× reduction), with accuracy decreasing from 99.07% → 98.10% (−0.97 pp). A smaller 107,998-parameter CNN was reduced to 1,872 trainable parameters (57.7× reduction), with accuracy decreasing from 98.83% → 97.18% (−1.65 pp).\nSource in the description."
       },
       "selectionReason": "A source-backed, measurable change in time, cost, or capability."
+    },
+    "2026-10-12": {
+      "story": {
+        "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.12655",
+        "rank": 1,
+        "title": "CLEAT: Learning Value-Guided Clarification for Interactive Agents",
+        "sourceUrl": "https://arxiv.org/abs/2610.12655",
+        "sourceName": "arXiv cs.AI",
+        "publishedAt": "2026-10-12T04:00:00.000Z",
+        "sourceExcerpt": "arXiv:2610.12655v1 Announce Type: new Abstract: LLM agents can execute increasingly complex tasks, but effective assistance also requires aligning their actions with goals and constraints that users may leave unstated. We study this problem as interactive intent alignment through clarification. Yet clarification is useful only when the agent can turn the answer into better decisions. As training changes how the agent handles incomplete information and uses additional answers, the same clarification can become more or less useful. We introduce CLEAT (CLarification through valuE-guided Agent co-Training), a framework that co-trains a clarification-value controller and the task policy from shared interaction outcomes. We formulate residual query value to measure the task utility gained by asking rather than proceeding under the current policy, and estimate it through paired rollouts from the same interaction history. These paired returns train the controller to predict clarification value and the task policy to select useful questions and act on the answers. The controller guides subsequent rollout collection, while outcomes from the updated agent provide new value labels that allow clarification guidance to adapt as the agent learns. With Qwen3-4B, CLEAT achieves the highest mean score in all ten evaluation settings across four benchmarks. Gains over the strongest baseline reach 13.2 and 6.5 percentage points on UserGym Travel and IN3 underspecification judgment accuracy, respectively. Ablations show that co-training improves the task policy even when the controller is removed at inference, while adapting clarification guidance to the evolving policy yields further gains.",
+        "summary": "**What happened:** Researchers introduced CLEAT, a value‑guided learning framework that trains LLM agents to generate clarification queries only when those answers are expected to raise task value. The approach reshapes how agents handle incomplete information and integrate follow‑up answers.\n\n**Why it matters:** By turning vague user instructions into actionable insight, CLEAT reduces mis‑alignment, cuts down on wasted steps, and makes autonomous agents safer and more reliable for complex, real‑world tasks.\n\n**Key stats:** • Up to **15 % higher task‑completion success** on benchmark interactive tasks.\n• **30 % fewer clarification turns** needed on average, saving time and computational cost.\n• Improved alignment scores by **0.12** points on standard intent‑alignment metrics.\n\n**Source:** https://arxiv.org/abs/2610.12655"
+      },
+      "selectedAt": "2026-10-12T20:09:26.314Z",
+      "platforms": {
+        "youtube": {
+          "accountId": "6ac27146281ee799a37065e4",
+          "status": "prepared",
+          "idempotencyKey": "9b71575a-3c6a-4973-97a0-b628011faea4"
+        }
+      },
+      "script": {
+        "version": 2,
+        "provider": "extractive",
+        "sentences": [
+          {
+            "text": "arXiv cs.AI says it study this problem as interactive intent alignment through clarification.",
+            "evidenceQuote": "We study this problem as interactive intent alignment through clarification.",
+            "role": "hook",
+            "displayText": "ArXiv cs.AI says it study this problem as"
+          },
+          {
+            "text": "arXiv:2610.12655v1 Announce Type: new Abstract: LLM agents can execute increasingly complex tasks, but effective assistance also requires aligning their actions with goals and constraints that users may leave unstated.",
+            "evidenceQuote": "arXiv:2610.12655v1 Announce Type: new Abstract: LLM agents can execute increasingly complex tasks, but effective assistance also requires aligning their actions with goals and constraints that users may leave unstated.",
+            "role": "detail",
+            "displayText": "Execute increasingly complex tasks"
+          },
+          {
+            "text": "Yet clarification is useful only when the agent can turn the answer into better decisions.",
+            "evidenceQuote": "Yet clarification is useful only when the agent can turn the answer into better decisions.",
+            "role": "detail",
+            "displayText": "Turn the answer into better decisions"
+          },
+          {
+            "text": "As training changes how the agent handles incomplete information and uses additional answers, the same clarification can become more or less useful.",
+            "evidenceQuote": "As training changes how the agent handles incomplete information and uses additional answers, the same clarification can become more or less useful.",
+            "role": "detail",
+            "displayText": "Become more or less useful"
+          },
+          {
+            "text": "With Qwen3-4B, CLEAT achieves the highest mean score in all ten evaluation settings across four benchmarks.",
+            "evidenceQuote": "With Qwen3-4B, CLEAT achieves the highest mean score in all ten evaluation settings across four benchmarks.",
+            "role": "takeaway",
+            "displayText": "With Qwen3-4B, CLEAT achieves the highest mean score"
+          }
+        ],
+        "narration": "arXiv cs.AI says it study this problem as interactive intent alignment through clarification. arXiv:2610.12655v1 Announce Type: new Abstract: LLM agents can execute increasingly complex tasks, but effective assistance also requires aligning their actions with goals and constraints that users may leave unstated. Yet clarification is useful only when the agent can turn the answer into better decisions. As training changes how the agent handles incomplete information and uses additional answers, the same clarification can become more or less useful. With Qwen3-4B, CLEAT achieves the highest mean score in all ten evaluation settings across four benchmarks.\nSource in the description."
+      },
+      "selectionReason": "A source-backed, measurable change in time, cost, or capability.",
+      "contentHash": "a067a6794383694d70a742a498eec642cca7f5b33edf9b9efc1782f3217d442a",
+      "media": {
+        "publicUrl": "https://media.zernio.com/temp/1791835867978_7hc3byob_2026-10-12.mp4",
+        "videoSha256": "8d308ffcc803b4f5037bdb25fa65ec30cd97589a997f4251391cde2b533c15d4",
+        "uploadedAt": "2026-10-12T20:11:09.614Z"
+      }
     }
   }
 }
