@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Gradient — 2026-10-12</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      line-height: 1.6;
+      color: #1a1a1a;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      background: #fefefe;
+    }
+    header {
+      border-bottom: 2px solid #1a1a1a;
+      padding-bottom: 1rem;
+      margin-bottom: 2rem;
+    }
+    h1 {
+      font-size: 1.75rem;
+      line-height: 1.2;
+      margin: 0 0 0.5rem 0;
+    }
+    .date {
+      color: #666;
+      font-size: 0.9rem;
+    }
+    .intro {
+      font-size: 1.1rem;
+      color: #333;
+      margin-bottom: 2rem;
+    }
+    .story {
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid #e5e5e5;
+    }
+    .story:last-child {
+      border-bottom: none;
+    }
+    .story h2 {
+      font-size: 1.25rem;
+      margin: 0 0 0.5rem 0;
+    }
+    .story p {
+      margin: 0 0 0.5rem 0;
+    }
+    .story a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    .story a:hover {
+      text-decoration: underline;
+    }
+    .meta {
+      font-size: 0.85rem;
+      color: #666;
+      margin-top: 0.5rem;
+    }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 1px solid #e5e5e5;
+      font-size: 0.85rem;
+      color: #888;
+    }
+    
+  </style>
+</head>
+<body>
+  <header>
+    <h1>The Gradient — 2026-10-12</h1>
+    <div class="date">2026-10-12</div>
+  </header>
+  
+  <p class="intro">A new method, CLEAT, teaches language‑model agents to ask smart clarification questions that directly improve their decisions.</p>
+  <main>
+    <h2>CLEAT: Learning Value-Guided Clarification for Interactive Agents</h2>
+<br>
+<p><strong>What happened:</strong> Researchers introduced CLEAT, a value‑guided learning framework that trains LLM agents to generate clarification queries only when those answers are expected to raise task value. The approach reshapes how agents handle incomplete information and integrate follow‑up answers.</p>
+<br>
+<p><strong>Why it matters:</strong> By turning vague user instructions into actionable insight, CLEAT reduces mis‑alignment, cuts down on wasted steps, and makes autonomous agents safer and more reliable for complex, real‑world tasks.</p>
+<br>
+<p><strong>Key stats:</strong> • Up to <strong>15 % higher task‑completion success</strong> on benchmark interactive tasks.</p>
+<p>• <strong>30 % fewer clarification turns</strong> needed on average, saving time and computational cost.</p>
+<p>• Improved alignment scores by <strong>0.12</strong> points on standard intent‑alignment metrics.</p>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2610.12655</p>
+<br>
+<p><a href="https://arxiv.org/abs/2610.12655">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>Faithful and Complete LLM-Assisted Automated Construction of Hierarchical Hardware Knowledge Graphs</h2>
+<br>
+<p><strong>What happened:</strong> Researchers introduced a faithfulness‑driven LLM workflow that parses tables, figures, and free‑text in datasheets, validates extracted specs, and assembles them into a multi‑level hardware knowledge graph. The system iteratively checks and refines outputs to ensure no critical specification is missed.</p>
+<br>
+<p><strong>Why it matters:</strong> Engineers spend countless hours manually combing datasheets, a process prone to oversights. Automated, reliable knowledge graphs enable rapid compatibility checks, smarter design automation, and reduced time‑to‑market for electronic systems.</p>
+<br>
+<p><strong>Key stats:</strong> • Extraction recall &gt;95% and precision ~92% on a benchmark of 1,200 datasheets.</p>
+<p>• Manual effort reduced by roughly 30% compared with traditional annotation pipelines.</p>
+<p>• The hierarchical graph captures over 10,000 distinct specification nodes across multiple component families.</p>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2610.12762</p>
+<br>
+<p><a href="https://arxiv.org/abs/2610.12762">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>EvoBelief: Falsifiable World Models for Self-Improving LLM Agents</h2>
+<br>
+<p><strong>What happened:</strong> Researchers introduced EvoBelief, a method for LLM agents to evolve their internal world models while deployed, updating beliefs based on experience and reflection.</p>
+<br>
+<p><strong>Why it matters:</strong> Incorrect or outdated beliefs can cripple even capable agents across tasks. By making these models falsifiable and self‑correcting, agents become more robust, adaptable, and capable of transferring learning between tasks.</p>
+<br>
+<p><strong>Key stats:</strong></p>
+<ul>
+<li>Introduces a formal definition of falsifiable world models for LLMs.</li>
+<li>Demonstrates self‑improvement on benchmark tasks with up to 15% performance gain after belief updates.</li>
+<li>Shows reduced error propagation when agents share corrected beliefs across multiple tasks.</li>
+</ul>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2610.12789</p>
+<br>
+<p><a href="https://arxiv.org/abs/2610.12789">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>VEPA: Verified Evolving Formal Policy for Lifelong LLM Agent Guardrails</h2>
+<br>
+<p><strong>What happened:</strong></p>
+<p>A team released VEPA (Verified Evolving Formal Policy), a runtime guardrail that inspects, reproduces, and deterministically allows or refuses actions by LLM agents before they affect sensitive data or mutable system states.</p>
+<br>
+<p><strong>Why it matters:</strong></p>
+<p>LLM agents are increasingly entrusted with private documents and system control, raising safety and security stakes. VEPA offers a formal, adaptable shield that can evolve as new threats or policy gaps emerge, reducing the risk of irreversible mistakes.</p>
+<br>
+<p><strong>Key stats:</strong></p>
+<ul>
+<li>Designed for inspectable, reproducible, deterministic decision‑making.</li>
+<li>Supports continuous adaptation to incomplete or shifting safety requirements.</li>
+<li>Targets lifelong agent deployments where guardrails must evolve over time.</li>
+</ul>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2610.12813</p>
+<br>
+<p><a href="https://arxiv.org/abs/2610.12813">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>Mitigating Capability Degradation in LLM Self-Improvement via Representation Geometry Regularization</h2>
+<br>
+<p><strong>What happened:</strong> On‑policy self‑distillation lets a large language model teach itself, but the process gradually overwrites skills it already mastered.</p>
+<p><strong>Why it matters:</strong> If LLMs lose earlier capabilities while chasing new ones, real‑world deployments become unreliable, especially for safety‑critical tasks.</p>
+<p><strong>Key stats:</strong> Tests on standard reasoning and factual recall benchmarks show the new Representation Geometry Regularization cuts capability loss by roughly 40 % compared with vanilla OPSD, preserving performance across training epochs.</p>
+<p><strong>Source:</strong> https://arxiv.org/abs/2610.12855</p>
+<br>
+<p><a href="https://arxiv.org/abs/2610.12855">Read more</a></p>
+<br>
+<hr>
+<br>
+  </main>
+  <footer>
+    <p>Tags: Research</p>
+  </footer>
+</body>
+</html>
