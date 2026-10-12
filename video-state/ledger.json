@@ -541,7 +541,7 @@
       "platforms": {
         "youtube": {
           "accountId": "6ac27146281ee799a37065e4",
-          "status": "submitting",
+          "status": "published",
           "idempotencyKey": "9b71575a-3c6a-4973-97a0-b628011faea4",
           "request": {
             "content": "CLEAT: Learning Value-Guided Clarification for Interactive Agents\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2610.12655\n\nThe Gradient: https://gradientnews.app/archive/2026-10-12\nAI-generated narration. #AI #AINews #Shorts",
@@ -566,7 +566,9 @@
             ],
             "publishNow": true
           },
-          "firstSubmittedAt": "2026-10-12T20:11:11.168Z"
+          "firstSubmittedAt": "2026-10-12T20:11:11.168Z",
+          "postId": "6acd3ee00a6384ec4ee41500",
+          "postUrl": "https://www.youtube.com/watch?v=ZGxQ9sqlxkQ"
         }
       },
       "script": {
