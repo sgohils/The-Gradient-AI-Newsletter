@@ -541,8 +541,32 @@
       "platforms": {
         "youtube": {
           "accountId": "6ac27146281ee799a37065e4",
-          "status": "prepared",
-          "idempotencyKey": "9b71575a-3c6a-4973-97a0-b628011faea4"
+          "status": "submitting",
+          "idempotencyKey": "9b71575a-3c6a-4973-97a0-b628011faea4",
+          "request": {
+            "content": "CLEAT: Learning Value-Guided Clarification for Interactive Agents\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2610.12655\n\nThe Gradient: https://gradientnews.app/archive/2026-10-12\nAI-generated narration. #AI #AINews #Shorts",
+            "mediaItems": [
+              {
+                "type": "video",
+                "url": "https://media.zernio.com/temp/1791835867978_7hc3byob_2026-10-12.mp4"
+              }
+            ],
+            "platforms": [
+              {
+                "platform": "youtube",
+                "accountId": "6ac27146281ee799a37065e4",
+                "platformSpecificData": {
+                  "title": "arXiv cs.AI says it study this problem as interactive intent alignment through clarificati",
+                  "visibility": "public",
+                  "madeForKids": false,
+                  "containsSyntheticMedia": true,
+                  "categoryId": "28"
+                }
+              }
+            ],
+            "publishNow": true
+          },
+          "firstSubmittedAt": "2026-10-12T20:11:11.168Z"
         }
       },
       "script": {
