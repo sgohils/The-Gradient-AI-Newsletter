@@ -577,8 +577,32 @@
       "platforms": {
         "youtube": {
           "accountId": "6ac27146281ee799a37065e4",
-          "status": "prepared",
-          "idempotencyKey": "4503d20f-b3e7-4d00-8364-3ad14f812c2f"
+          "status": "submitting",
+          "idempotencyKey": "4503d20f-b3e7-4d00-8364-3ad14f812c2f",
+          "request": {
+            "content": "Gemini 4 Argon: Built to solve your hardest problems\n\nSource: Google AI Blog\nhttps://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-10-13\nAI-generated narration. #AI #AINews #Shorts",
+            "mediaItems": [
+              {
+                "type": "video",
+                "url": "https://media.zernio.com/temp/1791922040872_8vewkrkx_2026-10-13.mp4"
+              }
+            ],
+            "platforms": [
+              {
+                "platform": "youtube",
+                "accountId": "6ac27146281ee799a37065e4",
+                "platformSpecificData": {
+                  "title": "Google AI Blog says At Google, it’ve been using Argon on its hardest engineering problems.",
+                  "visibility": "public",
+                  "madeForKids": false,
+                  "containsSyntheticMedia": true,
+                  "categoryId": "28"
+                }
+              }
+            ],
+            "publishNow": true
+          },
+          "firstSubmittedAt": "2026-10-13T20:07:23.866Z"
         }
       },
       "script": {
