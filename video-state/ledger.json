@@ -68,8 +68,8 @@
         "sourceUrl": "https://arxiv.org/abs/2610.03894",
         "sourceName": "arXiv cs.AI",
         "publishedAt": "2026-10-06T04:00:00.000Z",
-        "sourceExcerpt": "arXiv:2610.03894v1 Announce Type: new Abstract: A deployed LLM agent emits tool calls, queries, and code that can be silently wrong -- by the time the error surfaces, the action has run. Frontier chat APIs hide the model's token probabilities; the agent's stated confidence barely beats chance on the mistakes that matter; and resampling does not help, since frontier models are highly repetitive, reproducing the same call across samples. We recover the missing signal from a low-cost open-weight surrogate run in parallel. It reads the same context, schema, and proposed action as the agent, then scores the call from its own log-probabilities through a family of complementary readouts: teacher forcing and request-PMI weigh the likelihood of each argument value, a discriminative verdict judges the call as a whole, and tool-choice competition tests the function against its siblings. One principle says which to trust: a generative likelihood localizes wrong argument values, while the verdict catches holistically wrong calls. When the error type is unknown, an ensemble is the low-regret default. The readout is training-free, needs no access to the agent's internals, and costs one prefill pass alongside the tool call. On difficult coding tasks it reaches AUROC 0.825 where the actor's stated confidence is near chance (0.598), and the generative readouts beat it by +0.07 to +0.28 across three further actors. Against self-consistency it gains +0.14 to +0.19 on near-deterministic actors, at 1/K the cost. The signal drives two deployment modes: a real-time gate escalating the least-trustworthy calls for review (+0.05 to +0.30 accepted-action accuracy at 50% coverage), and confidence feedback, returning the tool result with the score so the agent adapts its next step -- lifting task success on live-execution benchmarks (+0.119 and +0.137, p <= 1e-4) and beating a random-value control where step errors are silent (+0.078, p = 0.003).",
-        "summary": "**What happened:** Researchers discovered that frontier LLM agents often emit tool calls, queries, or code that appear correct but can be silently wrong. Existing APIs conceal token‑level probabilities, and the agents' self‑reported confidence is barely better than random on critical mistakes. Resampling fails because cutting‑edge models repeat the same erroneous output across samples.\n\n**Why it matters:** Without visibility into a model's internal confidence, developers can’t reliably audit or intervene when an LLM makes a costly mistake. The proposed method recovers a proxy confidence signal using a cheap, open‑weight surrogate that estimates log‑probabilities of the agent’s outputs, enabling real‑time error detection.\n\n**Key stats:**\n- Surrogate log‑probability estimates recover missing confidence signals at a fraction of the cost of proprietary APIs.\n- Frontline models show >90% repeatability of erroneous calls across multiple samples, rendering naive resampling ineffective.\n- The surrogate approach improves mistake detection rates from ~30% (agent’s own confidence) to >70% in benchmark tests.\n\n**Source:** https://arxiv.org/abs/2610.03894"
+        "sourceExcerpt": "",
+        "summary": ""
       },
       "selectedAt": "2026-10-06T17:04:44.868Z",
       "platforms": {
@@ -77,64 +77,10 @@
           "accountId": "6ac27146281ee799a37065e4",
           "status": "published",
           "idempotencyKey": "de63bf0c-c314-4076-bb17-7248d0d605fa",
-          "request": {
-            "content": "Proxy Confidence: Auditing Black-Box LLM Agents with a Surrogate's Log-Probabilities\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2610.03894\n\nThe Gradient: https://gradientnews.app/archive/2026-10-06\nAI-generated narration. #AI #AINews #Shorts",
-            "mediaItems": [
-              {
-                "type": "video",
-                "url": "https://media.zernio.com/temp/1791306335551_10frnqqg_2026-10-06.mp4"
-              }
-            ],
-            "platforms": [
-              {
-                "platform": "youtube",
-                "accountId": "6ac27146281ee799a37065e4",
-                "platformSpecificData": {
-                  "title": "When the error type is unknown, an ensemble is the low-regret default.",
-                  "visibility": "public",
-                  "madeForKids": false,
-                  "containsSyntheticMedia": true,
-                  "categoryId": "28"
-                }
-              }
-            ],
-            "publishNow": true
-          },
           "firstSubmittedAt": "2026-10-06T17:05:38.985Z",
           "postId": "6ac52a657e5da59cfc5759be",
           "postUrl": "https://www.youtube.com/watch?v=0K22_7bf9FA"
         }
-      },
-      "script": {
-        "version": 2,
-        "provider": "extractive",
-        "sentences": [
-          {
-            "text": "When the error type is unknown, an ensemble is the low-regret default.",
-            "evidenceQuote": "When the error type is unknown, an ensemble is the low-regret default.",
-            "role": "hook",
-            "displayText": "When the error type is unknown"
-          },
-          {
-            "text": "arXiv:2610.03894v1 Announce Type: new Abstract: A deployed LLM agent emits tool calls, queries, and code that can be silently wrong -- by the time the error surfaces, the action has run.",
-            "evidenceQuote": "arXiv:2610.03894v1 Announce Type: new Abstract: A deployed LLM agent emits tool calls, queries, and code that can be silently wrong -- by the time the error surfaces, the action has run.",
-            "role": "detail",
-            "displayText": "Be silently wrong -- by the time"
-          },
-          {
-            "text": "Frontier chat APIs hide the model's token probabilities; the agent's stated confidence barely beats chance on the mistakes that matter; and resampling does not help, since frontier models are highly repetitive, reproducing the same call across samples.",
-            "evidenceQuote": "Frontier chat APIs hide the model's token probabilities; the agent's stated confidence barely beats chance on the mistakes that matter; and resampling does not help, since frontier models are highly repetitive, reproducing the same call across samples.",
-            "role": "detail",
-            "displayText": "Frontier chat APIs hide the model's token probabilities"
-          },
-          {
-            "text": "arXiv cs.AI says it recover the missing signal from a low-cost open-weight surrogate run in parallel.",
-            "evidenceQuote": "We recover the missing signal from a low-cost open-weight surrogate run in parallel.",
-            "role": "takeaway",
-            "displayText": "ArXiv cs.AI says it recover the missing signal"
-          }
-        ],
-        "narration": "When the error type is unknown, an ensemble is the low-regret default. arXiv:2610.03894v1 Announce Type: new Abstract: A deployed LLM agent emits tool calls, queries, and code that can be silently wrong -- by the time the error surfaces, the action has run. Frontier chat APIs hide the model's token probabilities; the agent's stated confidence barely beats chance on the mistakes that matter; and resampling does not help, since frontier models are highly repetitive, reproducing the same call across samples. arXiv cs.AI says it recover the missing signal from a low-cost open-weight surrogate run in parallel.\nSource in the description."
       },
       "selectionReason": "A concrete capability or everyday consequence in the original evidence.",
       "contentHash": "e77399006ec45f328b664064d8ae5a1a998b053ea2a561872beb000f9ad3c438",
@@ -614,6 +560,64 @@
         "publicUrl": "https://media.zernio.com/temp/1791835867978_7hc3byob_2026-10-12.mp4",
         "videoSha256": "8d308ffcc803b4f5037bdb25fa65ec30cd97589a997f4251391cde2b533c15d4",
         "uploadedAt": "2026-10-12T20:11:09.614Z"
+      }
+    },
+    "2026-10-13": {
+      "story": {
+        "id": "google-ai-blog-https%3A%2F%2Fblog.google%2Finnovation-and-ai%2Fmodels-and-research%2Fgemini-models%2Fintroducing-gemini-4-argon%2F",
+        "rank": 1,
+        "title": "Gemini 4 Argon: Built to solve your hardest problems",
+        "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
+        "sourceName": "Google AI Blog",
+        "publishedAt": "2026-10-13T16:00:00.000Z",
+        "sourceExcerpt": "Gemini 4 Argon is now globally available today for developers and enterprises via the API in AI Studio and Gemini platform, for Google AI Ultra subscribers in Google Antigravity, and Google AI Ultra and Pro subscribers in the Gemini app and AI Mode in Search.\n\nAt Google, we’ve been using Argon on our hardest engineering problems. Over the past few weeks, software engineers have been shipping high-quality code faster than ever. Argon in Antigravity has helped teams increase agentic code submissions by more than 35% while reducing code rollbacks by nearly a third.\n\nArgon works longer and harder to solve highly complex scientific, coding, and agentic problems. This is enabled by an industry-leading 1M unified input-output token limit via the Gemini API. Read through our documentation for developers and enterprises to learn about the new continuation protocol and ensure the appropriate setup for your needs. Argon is rolling out today globally:",
+        "summary": "**What happened:** Google announced that its newest frontier model, Gemini 4 Argon, is now available to a wide range of users—including developers, enterprises, scientists, and everyday consumers.\n\n**Why it matters:** By opening access to a cutting‑edge model, Google aims to accelerate AI innovation across industries, enable more sophisticated applications, and democratize advanced machine‑learning capabilities.\n\n**Key stats:** The announcement did not include specific performance metrics or capacity figures; the model is described as the latest iteration in the Gemini series, positioned as a step up from previous versions.\n\n**Source:** https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/"
+      },
+      "selectedAt": "2026-10-13T20:06:19.323Z",
+      "platforms": {
+        "youtube": {
+          "accountId": "6ac27146281ee799a37065e4",
+          "status": "prepared",
+          "idempotencyKey": "4503d20f-b3e7-4d00-8364-3ad14f812c2f"
+        }
+      },
+      "script": {
+        "version": 2,
+        "provider": "extractive",
+        "sentences": [
+          {
+            "text": "Google AI Blog says At Google, it’ve been using Argon on its hardest engineering problems.",
+            "evidenceQuote": "At Google, we’ve been using Argon on our hardest engineering problems.",
+            "role": "hook",
+            "displayText": "Google AI Blog says At Google"
+          },
+          {
+            "text": "Gemini 4 Argon is now globally available today for developers and enterprises via the API in AI Studio and Gemini platform, for Google AI Ultra subscribers in Google Antigravity, and Google AI Ultra and Pro subscribers in the Gemini app and AI Mode in Search.",
+            "evidenceQuote": "Gemini 4 Argon is now globally available today for developers and enterprises via the API in AI Studio and Gemini platform, for Google AI Ultra subscribers in Google Antigravity, and Google AI Ultra and Pro subscribers in the Gemini app and AI Mode in Search.",
+            "role": "detail",
+            "displayText": "Gemini 4 Argon is now globally available today"
+          },
+          {
+            "text": "Over the past few weeks, software engineers have been shipping high-quality code faster than ever.",
+            "evidenceQuote": "Over the past few weeks, software engineers have been shipping high-quality code faster than ever.",
+            "role": "detail",
+            "displayText": "Over the past few weeks"
+          },
+          {
+            "text": "Argon in Antigravity has helped teams increase agentic code submissions by more than 35% while reducing code rollbacks by nearly a third.",
+            "evidenceQuote": "Argon in Antigravity has helped teams increase agentic code submissions by more than 35% while reducing code rollbacks by nearly a third.",
+            "role": "takeaway",
+            "displayText": "Argon in Antigravity has helped teams increase agentic"
+          }
+        ],
+        "narration": "Google AI Blog says At Google, it’ve been using Argon on its hardest engineering problems. Gemini 4 Argon is now globally available today for developers and enterprises via the API in AI Studio and Gemini platform, for Google AI Ultra subscribers in Google Antigravity, and Google AI Ultra and Pro subscribers in the Gemini app and AI Mode in Search. Over the past few weeks, software engineers have been shipping high-quality code faster than ever. Argon in Antigravity has helped teams increase agentic code submissions by more than 35% while reducing code rollbacks by nearly a third.\nSource in the description."
+      },
+      "selectionReason": "A source-backed, measurable change in time, cost, or capability.",
+      "contentHash": "f86d1f7fac470082a8a41a2c887fd8ac430aab4228c81ca7cc364512d750412e",
+      "media": {
+        "publicUrl": "https://media.zernio.com/temp/1791922040872_8vewkrkx_2026-10-13.mp4",
+        "videoSha256": "6ee4f13b70f2ef482a62e56838b24f066d9e27275f0ed4c9e9a2c8d50783201c",
+        "uploadedAt": "2026-10-13T20:07:22.141Z"
       }
     }
   }
