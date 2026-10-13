@@ -115,7 +115,7 @@ export async function renderVideo(options: RenderOptions): Promise<{ manifestPat
     selectionReason: entry.selectionReason,
     ...(input.sample ? { sample: true } : {}),
     duration: timing.duration, videoFile: 'video.mp4', videoSha256: fileSha256(path.join(directory, 'video.mp4')),
-    captionsFile: 'captions.srt', title: entry.script.sentences[0].text.slice(0, 90),
+    captionsFile: 'captions.srt', title: story.title.slice(0, 90),
     description: `${story.title}\n\nSource: ${story.sourceName}\n${story.sourceUrl}\n\nThe Gradient: ${baseUrl}/archive/${input.issueDate}\nAI-generated narration. #AI #AINews #Shorts`,
   };
   entry.contentHash = sha256(JSON.stringify({ storyId: story.id, narration: entry.script.narration, title: manifest.title, description: manifest.description }));

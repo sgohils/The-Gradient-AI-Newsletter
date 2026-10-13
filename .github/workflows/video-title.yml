@@ -1,0 +1,61 @@
+name: Repair published YouTube title
+
+on:
+  workflow_dispatch:
+    inputs:
+      issue_date:
+        description: 'YYYY-MM-DD of an already published video; uses its source headline'
+        required: true
+
+concurrency:
+  group: gradient-daily-pipeline
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  title:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - name: Set the existing video title to its source headline
+        env:
+          ISSUE_DATE: ${{ inputs.issue_date }}
+          ZERNIO_API_KEY: ${{ secrets.ZERNIO_API_KEY }}
+        shell: bash
+        run: |
+          node <<'NODE'
+          const axios = require('axios');
+          const { assertIssueDate, readLedger } = require('./dist/src/video/storage');
+          async function main() {
+            const date = process.env.ISSUE_DATE;
+            assertIssueDate(date);
+            if (!process.env.ZERNIO_API_KEY) throw new Error('ZERNIO_API_KEY is missing.');
+            const entry = readLedger('video-state/ledger.json').issues[date];
+            const publication = entry?.platforms.youtube;
+            if (publication?.status !== 'published' || !publication.postId || !publication.accountId) {
+              throw new Error('This edition has no confirmed published YouTube video.');
+            }
+            const title = entry.story.title.trim().slice(0, 90);
+            if (!title) throw new Error('The source headline is empty.');
+            const result = await axios.post(`https://zernio.com/api/v1/posts/${encodeURIComponent(publication.postId)}/update-metadata`,
+              { platform: 'youtube', accountId: publication.accountId, title },
+              { timeout: 60000, headers: { Authorization: `Bearer ${process.env.ZERNIO_API_KEY}` } });
+            if (result.data?.success !== true) throw new Error('Zernio did not confirm the title update.');
+            console.log(`Updated YouTube title: ${title}\n${publication.postUrl || ''}`);
+          }
+          main().catch(error => {
+            console.error(axios.isAxiosError(error) ? `YouTube metadata update failed (HTTP ${error.response?.status || 'network error'}).` : error.message);
+            process.exitCode = 1;
+          });
+          NODE

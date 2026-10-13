@@ -71,6 +71,8 @@ The default branch must permit the Actions bot to push `video-state/ledger.json`
 
 YouTube requests include source attribution, AI disclosure, and synthetic-media metadata. Both the daily workflow and manual video activation workflow target YouTube explicitly. The video publishing command also defaults to YouTube.
 
+Video titles use the source headline. To correct the title of an existing upload, run **Actions → Repair published YouTube title** with its edition date. This updates the existing video's title through Zernio and keeps its video ID and media.
+
 ## Selection, retries, and recovery
 
 Unused stories within 72 hours and with at least 60 words of original evidence are ranked for video: measurable changes and practical capabilities first, substantive releases/findings/policy next, and guides or commentary last. Only original evidence and titles inform this deterministic ranking; newsletter rank and story ID break ties. The chosen reason is recorded in the manifest, ledger, and workflow summary. If its script fails validation, the next eligible story is tried using the offline fallback; the entire render still makes at most one Groq request. A story is frozen only after its script passes validation, and an existing choice is preserved across reruns. Unsubmitted legacy scripts gain the new structure on their next render; submitted media and publication records remain unchanged. Canonical source URLs suppress repeats across dates, including changed tracking parameters. Missing input fails; empty, stale, repeated, or insufficient-evidence input skips. Skip messages report candidate counts and rejection reasons. A skipped issue never uploads an earlier video.
