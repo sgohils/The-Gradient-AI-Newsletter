@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "issueDate": "2026-10-13",
+  "issueUrl": "https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-10-13",
+  "content": "Today's AI briefing from The Gradient | 2026-10-13\n\n1. Gemini 4 Argon: Built to solve your hardest problems\nGoogle announced that its newest frontier model, Gemini 4 Argon, is now available to a wide range of users—including developers, enterprises, scientists, and everyday consumers.\n\n2. Asana cuts model costs 76x in browser tests with GPT-6.1 Sol\nAsana used GPT-6 Astra in Codex to optimize a browser-agent workflow running on GPT-6.1 Sol. In its tests, the optimized workflow was 76 times cheaper and five times faster than its original production setup.\n\n3. Pollo AI turns creative ideas into campaigns with OpenAI\nPollo AI combines GPT-5.6, GPT-6 Astra and GPT-Image-2.5 to help creators develop storylines, images and video ads through a guided workflow.\n\nRead the full briefing and original sources:\nhttps://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-10-13\n\n#AI #ArtificialIntelligence #TheGradient",
+  "contentHash": "bff6449c43d60d07d54b6bf73e385d0eb097fea570f419951ad1cbb4d536752b",
+  "accountId": "6ac5a561b3c21905c0edcfba",
+  "organizationUrn": "urn:li:organization:136824048",
+  "idempotencyKey": "8b45a4c0-2b1e-4259-a223-226da620b9cb",
+  "status": "submitting",
+  "firstSubmittedAt": "2026-10-13T20:03:43.851Z"
+}
