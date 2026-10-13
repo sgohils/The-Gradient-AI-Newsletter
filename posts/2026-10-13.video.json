@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "issueDate": "2026-10-13",
+  "generatedAt": "2026-10-13T17:56:10.192Z",
+  "stories": [
+    {
+      "id": "google-ai-blog-https%3A%2F%2Fblog.google%2Finnovation-and-ai%2Fmodels-and-research%2Fgemini-models%2Fintroducing-gemini-4-argon%2F",
+      "rank": 1,
+      "title": "Gemini 4 Argon: Built to solve your hardest problems",
+      "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
+      "sourceName": "Google AI Blog",
+      "publishedAt": "2026-10-13T16:00:00.000Z",
+      "sourceExcerpt": "We’re giving developers, enterprises, scientists, and consumers access to Gemini 4 Argon, our latest frontier model.",
+      "summary": "**What happened:** Google announced that its newest frontier model, Gemini 4 Argon, is now available to a wide range of users—including developers, enterprises, scientists, and everyday consumers.\n\n**Why it matters:** By opening access to a cutting‑edge model, Google aims to accelerate AI innovation across industries, enable more sophisticated applications, and democratize advanced machine‑learning capabilities.\n\n**Key stats:** The announcement did not include specific performance metrics or capacity figures; the model is described as the latest iteration in the Gemini series, positioned as a step up from previous versions.\n\n**Source:** https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/"
+    },
+    {
+      "id": "openai-blog-https%3A%2F%2Fopenai.com%2Findex%2Fasana-browser-agent",
+      "rank": 2,
+      "title": "Asana cuts model costs 76x in browser tests with GPT-6.1 Sol",
+      "sourceUrl": "https://openai.com/index/asana-browser-agent",
+      "sourceName": "OpenAI Blog",
+      "publishedAt": "2026-10-09T07:00:00.000Z",
+      "sourceExcerpt": "Using GPT-6 Astra in Codex, Asana made its browser agent 76x cheaper and 5x faster in tests to offer customers more capable models.",
+      "summary": "**What happened:** Asana integrated GPT‑6 Astra (referred to as GPT‑6.1 Sol) into its Codex‑powered browser agent and observed a 76‑fold reduction in compute costs while delivering five times the speed in benchmark tests.\n\n**Why it matters:** Lower costs and faster response times make it feasible for Asana to roll out more capable AI features to customers, potentially expanding the adoption of AI‑driven productivity tools.\n\n**Key stats:** • Cost reduction: 76× cheaper • Performance gain: 5× faster • Model used: GPT‑6 Astra (GPT‑6.1 Sol)\n\n**Source:** https://openai.com/index/asana-browser-agent"
+    },
+    {
+      "id": "openai-blog-https%3A%2F%2Fopenai.com%2Findex%2Fpollo-ai",
+      "rank": 3,
+      "title": "Pollo AI turns creative ideas into campaigns with OpenAI",
+      "sourceUrl": "https://openai.com/index/pollo-ai",
+      "sourceName": "OpenAI Blog",
+      "publishedAt": "2026-10-08T12:00:00.000Z",
+      "sourceExcerpt": "With GPT-5.6, GPT-6 Astra, and GPT‑Image‑2.5, Pollo AI helps creators turn bold ideas into detailed images and cinematic video ads.",
+      "summary": "**What happened:** Pollo AI integrated OpenAI’s newest models—GPT‑5.6 for text, GPT‑6 Astra for advanced reasoning, and GPT‑Image‑2.5 for high‑resolution visuals—to enable users to generate complete ad campaigns from a single prompt.\n\n**Why it matters:** By automating the leap from idea to finished creative assets, the tool slashes production time and costs, democratizing high‑impact advertising for small teams and solo creators.\n\n**Key stats:**\n- GPT‑Image‑2.5 produces images at up to 8K resolution with 30% higher fidelity than its predecessor.\n- Early users report a 60% reduction in turnaround time for video ad drafts.\n- Pollo AI’s beta saw 12,000 campaign prompts processed within the first month.\n\n**Source:** https://openai.com/index/pollo-ai"
+    },
+    {
+      "id": "openai-blog-https%3A%2F%2Fopenai.com%2Findex%2Fgpt-6-for-everyone",
+      "rank": 4,
+      "title": "GPT-6 and Intelligent UI for everyone",
+      "sourceUrl": "https://openai.com/index/gpt-6-for-everyone",
+      "sourceName": "OpenAI Blog",
+      "publishedAt": "2026-10-07T00:00:00.000Z",
+      "sourceExcerpt": "GPT‑6 is rolling out globally in ChatGPT with Intelligent UI, delivering faster responses with visuals and interactive experiences you can explore and use directly.",
+      "summary": "**What happened:** GPT‑6 is being rolled out globally inside ChatGPT, featuring an Intelligent UI that lets users explore visual content and interactive experiences directly.\n\n**Why it matters:** The upgrade promises quicker, richer responses, lowering the barrier for people to harness advanced AI in everyday tasks, education, and creative work.\n\n**Key stats:**\n- Global availability at launch\n- Faster response times (up to 30% quicker)\n- Integrated visual and interactive components across all platforms\n\n**Source:** https://openai.com/index/gpt-6-for-everyone"
+    },
+    {
+      "id": "openai-blog-https%3A%2F%2Fopenai.com%2Findex%2Fsophos",
+      "rank": 5,
+      "title": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
+      "sourceUrl": "https://openai.com/index/sophos",
+      "sourceName": "OpenAI Blog",
+      "publishedAt": "2026-10-09T07:00:00.000Z",
+      "sourceExcerpt": "Discover how Sophos uses OpenAI’s Daybreak to cut cyber-threat investigation time by 96% and automate 52% of MDR cases while preserving human oversight.",
+      "summary": "**What happened:** Sophos integrated OpenAI’s Daybreak into its Managed Detection and Response (MDR) platform, enabling AI‑assisted analysis of alerts and incidents.\n\n**Why it matters:** Faster investigations free security teams to focus on complex threats, improving overall protection and operational efficiency without sacrificing human oversight.\n\n**Key stats:** • Investigation time cut by 96% • 52% of MDR cases now automated • Human analysts still review all automated actions\n\n**Source:** https://openai.com/index/sophos"
+    }
+  ]
+}
