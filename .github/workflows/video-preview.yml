@@ -10,10 +10,6 @@ on:
         description: 'Publish a real issue immediately (sample is always rejected)'
         type: boolean
         default: false
-      tiktok:
-        description: 'Also publish TikTok; requires the exact video consent receipt'
-        type: boolean
-        default: false
       source_run_id:
         description: 'Optional prior preview/daily run ID; publish its exact reviewed artifact'
         default: ''
@@ -30,11 +26,10 @@ jobs:
     env:
       ISSUE_DATE: ${{ inputs.issue_date }}
       DO_PUBLISH: ${{ inputs.publish }}
-      DO_TIKTOK: ${{ inputs.tiktok }}
       GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
       ZERNIO_API_KEY: ${{ secrets.ZERNIO_API_KEY }}
       ZERNIO_YOUTUBE_ACCOUNT_ID: ${{ vars.ZERNIO_YOUTUBE_ACCOUNT_ID || secrets.ZERNIO_YOUTUBE_ACCOUNT_ID }}
-      ZERNIO_TIKTOK_ACCOUNT_ID: ${{ vars.ZERNIO_TIKTOK_ACCOUNT_ID }}
+      NEWSLETTER_BASE_URL: ${{ vars.NEWSLETTER_BASE_URL }}
       VIDEO_LEDGER_GIT_SYNC: '1'
       SOURCE_RUN_ID: ${{ inputs.source_run_id }}
     steps:
@@ -89,16 +84,7 @@ jobs:
         env:
           MANIFEST: ${{ steps.render.outputs.manifest }}
         shell: bash
-        run: |
-          platforms=youtube
-          approval=()
-          if [ "$DO_TIKTOK" = true ]; then
-            platforms=youtube,tiktok
-            if [ -f "video-state/approvals/$ISSUE_DATE.json" ]; then
-              approval=(--tiktok-approval "video-state/approvals/$ISSUE_DATE.json")
-            fi
-          fi
-          node dist/scripts/video-publish.js --manifest "$MANIFEST" --platforms "$platforms" "${approval[@]}"
+        run: node dist/scripts/video-publish.js --manifest "$MANIFEST" --platforms youtube
       - name: Persist video ledger
         if: always()
         run: node -e 'const {gitCheckpoint}=require("./dist/src/video/cli"); gitCheckpoint("video-state/ledger.json")().catch(e=>{console.error(e.message);process.exitCode=1})'

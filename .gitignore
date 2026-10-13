@@ -5,4 +5,5 @@ dist
 web/public/issue-images/
 .cache/
 video-output/
+linkedin-output/
 __pycache__/

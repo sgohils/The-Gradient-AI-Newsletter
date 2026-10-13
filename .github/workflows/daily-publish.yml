@@ -26,6 +26,7 @@ jobs:
       video_input: ${{ steps.newsletter.outputs.video_input || steps.preflight.outputs.video_input }}
       issue_date: ${{ steps.preflight.outputs.issue_date }}
       video_needed: ${{ steps.preflight.outputs.video_needed }}
+      newsletter_available: ${{ steps.linkedin_source.outputs.available }}
 
     steps:
       - name: Checkout repository
@@ -65,6 +66,7 @@ jobs:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           OUTPUT_DIR: posts
           DAILY_ISSUE_DATE: ${{ steps.preflight.outputs.issue_date }}
+          NEWSLETTER_BASE_URL: ${{ vars.NEWSLETTER_BASE_URL }}
         run: npm run publish
 
       - name: Commit and push new issue
@@ -76,6 +78,18 @@ jobs:
           git diff --cached --quiet || git commit -m "chore: publish daily newsletter issue"
           git push
 
+      - name: Check LinkedIn source edition
+        id: linkedin_source
+        env:
+          ISSUE_DATE: ${{ steps.preflight.outputs.issue_date }}
+        shell: bash
+        run: |
+          if [ -s "posts/$ISSUE_DATE.md" ] && [ -s "posts/$ISSUE_DATE.html" ]; then
+            echo "available=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "available=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Retain newsletter video input
         if: steps.newsletter.outputs.video_input != '' || steps.preflight.outputs.video_input != ''
         uses: actions/upload-artifact@v4
@@ -85,9 +99,49 @@ jobs:
           retention-days: 7
           if-no-files-found: error
 
-  video:
+  linkedin:
     needs: publish
-    if: vars.VIDEO_ENABLED == 'true' && needs.publish.outputs.video_input != '' && needs.publish.outputs.video_needed == 'true'
+    if: needs.publish.outputs.newsletter_available == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    env:
+      ISSUE_DATE: ${{ needs.publish.outputs.issue_date }}
+      NEWSLETTER_BASE_URL: ${{ vars.NEWSLETTER_BASE_URL }}
+      ZERNIO_API_KEY: ${{ secrets.ZERNIO_API_KEY }}
+      ZERNIO_LINKEDIN_ACCOUNT_ID: ${{ vars.ZERNIO_LINKEDIN_ACCOUNT_ID }}
+      ZERNIO_LINKEDIN_ORGANIZATION_URN: ${{ vars.ZERNIO_LINKEDIN_ORGANIZATION_URN }}
+      LINKEDIN_PUBLISH_ENABLED: ${{ vars.LINKEDIN_PUBLISH_ENABLED }}
+      LINKEDIN_STATE_GIT_SYNC: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - name: Prepare or publish today's LinkedIn company Page post
+        run: node dist/scripts/linkedin.js --automatic
+      - name: Retain LinkedIn preview and recovery state
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: daily-linkedin-output
+          path: |
+            linkedin-output/
+            linkedin-state/
+          retention-days: 7
+          if-no-files-found: warn
+
+  video:
+    # Serialize Git state writers; a LinkedIn failure must not suppress video.
+    needs: [publish, linkedin]
+    if: always() && needs.publish.result == 'success' && vars.VIDEO_ENABLED == 'true' && needs.publish.outputs.video_input != '' && needs.publish.outputs.video_needed == 'true'
     runs-on: ubuntu-24.04
     timeout-minutes: 25
     permissions:
@@ -96,7 +150,7 @@ jobs:
       GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
       ZERNIO_API_KEY: ${{ secrets.ZERNIO_API_KEY }}
       ZERNIO_YOUTUBE_ACCOUNT_ID: ${{ vars.ZERNIO_YOUTUBE_ACCOUNT_ID || secrets.ZERNIO_YOUTUBE_ACCOUNT_ID }}
-      ZERNIO_TIKTOK_ACCOUNT_ID: ${{ vars.ZERNIO_TIKTOK_ACCOUNT_ID }}
+      NEWSLETTER_BASE_URL: ${{ vars.NEWSLETTER_BASE_URL }}
       VIDEO_LEDGER_GIT_SYNC: '1'
       ISSUE_DATE: ${{ needs.publish.outputs.issue_date }}
     steps:
@@ -131,22 +185,12 @@ jobs:
         id: render
         if: steps.preflight.outputs.video_needed == 'true'
         run: node dist/scripts/video-render.js --input "video-input/$ISSUE_DATE.video.json"
-      - name: Publish connected platforms
+      - name: Publish YouTube Short
         if: vars.VIDEO_PUBLISH_ENABLED == 'true' && steps.render.outputs.status == 'ready'
         env:
-          TIKTOK_ENABLED: ${{ vars.VIDEO_TIKTOK_ENABLED }}
           MANIFEST: ${{ steps.render.outputs.manifest }}
         shell: bash
-        run: |
-          platforms=youtube
-          approval=()
-          if [ "$TIKTOK_ENABLED" = true ]; then
-            platforms=youtube,tiktok
-            if [ -f "video-state/approvals/$ISSUE_DATE.json" ]; then
-              approval=(--tiktok-approval "video-state/approvals/$ISSUE_DATE.json")
-            fi
-          fi
-          node dist/scripts/video-publish.js --manifest "$MANIFEST" --platforms "$platforms" "${approval[@]}"
+        run: node dist/scripts/video-publish.js --manifest "$MANIFEST" --platforms youtube
       - name: Persist selected story and final platform states
         if: always()
         run: node -e 'const {gitCheckpoint}=require("./dist/src/video/cli"); gitCheckpoint("video-state/ledger.json")().catch(e=>{console.error(e.message);process.exitCode=1})'

@@ -161,7 +161,7 @@ export async function publishVideo(options: PublishOptions): Promise<VideoLedger
   if (fs.statSync(videoPath).size > 50 * 1024 * 1024) throw new Error('Video exceeds the 50 MB upload budget.');
   if (entry.media && entry.media.videoSha256 !== manifest.videoSha256) throw new Error('Uploaded video differs from this render; restore the original artifact before retrying.');
 
-  const configured = options.platforms || ['youtube', 'tiktok'];
+  const configured = options.platforms || ['youtube'];
   let connected: { _id: string; platform: string; isActive?: boolean }[] | undefined;
   let connectionError: unknown;
   if (options.apiKey) {

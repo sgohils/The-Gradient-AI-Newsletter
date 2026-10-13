@@ -12,7 +12,7 @@ The target is $0 additional monthly cost. Script generation makes at most one re
 
 [Kokoro](https://huggingface.co/hexgrad/Kokoro-82M) runs locally on CPU using American English `af_heart`. Configuration, weights, and voice are pinned to revision `f3ff3571791e39611d31c381e3a41a3af07b4987`. Python dependencies and CPU Torch are pinned and cached in Actions. FFmpeg renders 1080×1920 H.264/AAC at 30 fps, with the paper, ink, and evergreen palette, moving headlines, simple graphics, and captions from Kokoro's predicted word timings. There is no music, host, transcription service, or paid graphics API.
 
-[Zernio's free plan](https://zernio.com/pricing) currently advertises two accounts and unlimited posts. Connect one TikTok account and one YouTube channel. [GitHub standard runners](https://docs.github.com/en/billing/concepts/product-billing/github-actions) are free for public repositories; private repositories have allowances. Artifacts expire after seven days and videos are capped at 50 MB. Model caches also use Actions storage. Check allowances and disable paid overages if this repository is private. This implementation enables no subscription or paid fallback.
+[Zernio pricing](https://zernio.com/pricing) currently includes two connected accounts free and unlimited posts. Connect your YouTube channel and LinkedIn company Page as those two accounts; see the [LinkedIn setup guide](linkedin-pipeline.md) for daily text posts. [GitHub standard runners](https://docs.github.com/en/billing/concepts/product-billing/github-actions) are free for public repositories; private repositories have allowances. Artifacts expire after seven days and videos are capped at 50 MB. Model caches also use Actions storage. Check allowances and disable paid overages if this repository is private. This implementation enables no subscription or paid fallback.
 
 ## Preview and local commands
 
@@ -57,46 +57,19 @@ New version-2 scripts start immediately with a supported hook, explain the devel
 
 Graphics now render natively at 1080×1920 and 30 fps, then stream directly into one FFmpeg encode at CRF 20. This preserves fine edges and real motion instead of enlarging 720p frames or duplicating 15 fps animation frames. The higher quality uses more CPU time while retaining the same local Pillow/FFmpeg runtime and 50 MB output limit. Immutable scene backgrounds, branding, fitted headings, cards, font sizes, and illustration layers are cached in memory; each frame draws only the moving elements, entrance, narration emphasis, and progress. No PNG frame sequence or intermediate video is stored. Cache layers remain unchanged between frames, and a failed encode preserves the previous completed MP4. There are no new dependencies, paid graphics services, or additional API calls. `storyboard.json`, scene previews, `card.png`, and `graphics-layout.json` record the layouts, source terms, emphasis timings, native resolution, and artwork sampling. Once an output directory has been prepared, regenerate only its visual previews with `python scripts/video/graphics.py --output-dir video-output/YYYY-MM-DD --preview-only`; this skips video encoding and narration. Older version-2/3 storyboards retain support for local preview generation.
 
-Renders reuse verified completed artifacts. Older previews gain the new graphics automatically when they have never been submitted. `--rebuild` regenerates visuals while reusing unchanged narration and is rejected after submission. Review the new MP4 before recording consent: changing the video invalidates an earlier TikTok receipt. `video:sample` accepts `--issue-date YYYY-MM-DD` for a labeled sample edition.
+Renders reuse verified completed artifacts. Older previews gain the new graphics automatically when they have never been submitted. `--rebuild` regenerates visuals while reusing unchanged narration and is rejected after submission. Review the new MP4 before publication. `video:sample` accepts `--issue-date YYYY-MM-DD` for a labeled sample edition.
 
 ## Connect accounts and verify public posting
 
-1. Create a free [Zernio](https://zernio.com) account and connect your YouTube channel and TikTok account through its account connection flow. Keep the free two-account plan.
+1. Use your [Zernio](https://zernio.com) account and connect your YouTube channel. Your LinkedIn company Page uses the other free connected-account slot.
 2. Create a Zernio API key. Add it as GitHub **Settings → Secrets and variables → Actions → Secrets → `ZERNIO_API_KEY`**. Keep keys out of chat, files, and repository variables.
-3. Find the account IDs in Zernio's dashboard or authenticated `GET https://zernio.com/api/v1/accounts`. Set repository **Variables** `ZERNIO_YOUTUBE_ACCOUNT_ID` and `ZERNIO_TIKTOK_ACCOUNT_ID` to the matching `_id` values. YouTube also accepts a repository **Secret** named `ZERNIO_YOUTUBE_ACCOUNT_ID`; a nonempty variable takes precedence.
-4. Render and review a real preview. Run the manual workflow with that date, `publish=true`, and `source_run_id` set to the preview run's numeric ID. It restores the exact reviewed artifact. Initially leave `tiktok=false`. The story must still be within 72 hours. Confirm a public Short on the intended YouTube channel using the live workflow-summary URL.
-5. Complete the TikTok review below and publish the reviewed artifact. Confirm its public URL on the intended account. Leave daily publishing off until both platforms have been verified.
-6. In **Settings → Secrets and variables → Actions → Variables**, set repository variable `VIDEO_ENABLED=true` to render after future newsletters. After activation checks, set variable `VIDEO_PUBLISH_ENABLED=true` for daily YouTube publication. These two switches must be **Variables**, not Secrets: the workflow reads `vars`, so storing them as secrets leaves automation disabled. The daily preflight emits a warning when rendering or publication is disabled. Keep `VIDEO_TIKTOK_ENABLED` unset unless every submitted video has its own genuine consent receipt. Missing consent records TikTok as `blocked` and preserves successful YouTube uploads.
+3. Find your YouTube account ID in Zernio's dashboard or authenticated `GET https://zernio.com/api/v1/accounts`. Set repository **Variable** `ZERNIO_YOUTUBE_ACCOUNT_ID` to its matching `_id`. YouTube also accepts a repository **Secret** named `ZERNIO_YOUTUBE_ACCOUNT_ID`; a nonempty variable takes precedence. LinkedIn has its own [configuration variables](linkedin-pipeline.md).
+4. Render and review a real preview. Run the manual workflow with that date, `publish=true`, and `source_run_id` set to the preview run's numeric ID. It restores the exact reviewed artifact. The story must still be within 72 hours. Confirm a public Short on the intended YouTube channel using the live workflow-summary URL.
+5. In **Settings → Secrets and variables → Actions → Variables**, set repository variable `VIDEO_ENABLED=true` to render after future newsletters. After activation checks, set variable `VIDEO_PUBLISH_ENABLED=true` for daily YouTube publication. These two switches must be **Variables**, not Secrets: the workflow reads `vars`, so storing them as secrets leaves automation disabled. The daily preflight emits a warning when rendering or publication is disabled. LinkedIn activation uses its separate switch; see [its setup guide](linkedin-pipeline.md).
 
 The default branch must permit the Actions bot to push `video-state/ledger.json`. Daily and manual video workflows share a concurrency group. Each posting intent is committed and pushed before its external request. A rejected ledger push stops submission. Resolve branch protection or bot permissions before activation.
 
-## TikTok consent blocks fully unattended publication
-
-[Zernio's TikTok requirements](https://docs.zernio.com/platforms/tiktok) require a preview of the actual content, explicit posting consent, and creator privacy/interaction choices. The code never manufactures these confirmations. A blanket flag is insufficient. **Fully unattended TikTok posting remains blocked while fresh human review is required per video.** YouTube can run unattended once connected and verified.
-
-After viewing the exact MP4 and metadata, the account owner can record their actual choices in `video-state/approvals/YYYY-MM-DD.json` for Actions, or a local JSON file for `--tiktok-approval`. Copy the date and SHA-256 from that reviewed manifest and the connected account ID. Set confirmations only after those actions really happened:
-
-```json
-{
-  "issueDate": "YYYY-MM-DD",
-  "accountId": "connected-tiktok-account-id",
-  "videoSha256": "64-character-sha256-from-the-reviewed-manifest",
-  "contentPreviewConfirmed": true,
-  "expressConsentGiven": true,
-  "privacyLevel": "PUBLIC_TO_EVERYONE",
-  "allowComment": false,
-  "allowDuet": false,
-  "allowStitch": false
-}
-```
-
-The example is not a consent record. Choose interactions yourself; the API checks current creator limits. Commit an actual receipt when using Actions, then run the manual workflow with `publish=true`, `tiktok=true`, the date, and the previous `source_run_id`. Use the exact artifact you reviewed. Locally:
-
-```sh
-npm run video:publish -- --manifest extracted/video-output/YYYY-MM-DD/manifest.json --platforms youtube,tiktok --tiktok-approval approval.json
-```
-
-Both requests include source attribution and AI disclosure. YouTube receives synthetic-media metadata, and TikTok receives its AI flag. Each platform gets its own immediate-publication request. Neither account has been publicly tested here because they are not connected yet.
+YouTube requests include source attribution, AI disclosure, and synthetic-media metadata. Both the daily workflow and manual video activation workflow target YouTube explicitly. The video publishing command also defaults to YouTube.
 
 ## Selection, retries, and recovery
 

@@ -13,6 +13,8 @@
     "video:publish": "npm run build && node dist/scripts/video-publish.js",
     "video:sample": "npm run build && node dist/scripts/video-sample.js",
     "video:prepare": "npm run build && node dist/scripts/video-prepare.js",
+    "linkedin:preview": "npm run build && node dist/scripts/linkedin.js",
+    "linkedin:publish": "npm run build && node dist/scripts/linkedin.js --publish",
     "test": "vitest run",
     "lint": "eslint src --ext .ts"
   },

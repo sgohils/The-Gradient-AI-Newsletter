@@ -8,7 +8,7 @@ async function main(): Promise<void> {
   const ledgerPath = argument('--ledger') || 'video-state/ledger.json';
   const reconcileOnly = flag('--reconcile-only');
   const manifestPath = argument('--manifest', !reconcileOnly);
-  const platforms = (argument('--platforms') || 'youtube,tiktok').split(',') as Platform[];
+  const platforms = (argument('--platforms') || 'youtube').split(',') as Platform[];
   if (!platforms.length || platforms.some((platform) => !['youtube', 'tiktok'].includes(platform))) throw new Error('Only youtube and tiktok are supported.');
   const date = manifestPath ? readManifest(manifestPath).issueDate : undefined;
   try {

@@ -3,9 +3,9 @@ name: Project checks
 on:
   push:
     branches: [main]
-    paths-ignore: ['posts/**', 'video-state/**']
+    paths-ignore: ['posts/**', 'video-state/**', 'linkedin-state/**']
   pull_request:
-    paths-ignore: ['posts/**', 'video-state/**']
+    paths-ignore: ['posts/**', 'video-state/**', 'linkedin-state/**']
   workflow_dispatch:
 
 permissions:

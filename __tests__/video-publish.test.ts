@@ -53,13 +53,21 @@ beforeEach(() => {
   ledger = { version: 1, issues: { [manifest.issueDate]: { story, script, selectedAt: now.toISOString(),
     contentHash: sha256(JSON.stringify({ storyId: story.id, narration: script.narration, title: manifest.title, description: manifest.description })), platforms: {} } } };
   options = { manifestPath: path.join(directory, 'manifest.json'), ledgerPath: path.join(directory, 'ledger.json'),
-    apiKey: 'test-key', accounts: { youtube: 'yt', tiktok: 'tt' }, now: () => now, pollSeconds: 0,
+    apiKey: 'test-key', accounts: { youtube: 'yt', tiktok: 'tt' }, platforms: ['youtube', 'tiktok'], now: () => now, pollSeconds: 0,
     transport: provider, sleep: async () => {} };
   store();
 });
 afterEach(() => { fs.rmSync(directory, { recursive: true, force: true }); });
 
 describe('safe separate platform publication', () => {
+  it('publishes only YouTube by default even when another platform account is configured', async () => {
+    const result = await publishVideo({ ...options, platforms: undefined });
+    expect(result.issues[manifest.issueDate].platforms.youtube?.status).toBe('published');
+    expect(result.issues[manifest.issueDate].platforms.tiktok).toBeUndefined();
+    expect(posts).toBe(1);
+    expect(requests.filter(request => request.method === 'POST' && request.url.endsWith('/posts'))
+      .map(request => request.data.platforms[0].platform)).toEqual(['youtube']);
+  });
   it('requires credentials and never fabricates TikTok approval', async () => {
     const missing = await publishVideo({ ...options, apiKey: undefined });
     expect(missing.issues[manifest.issueDate].platforms.youtube?.status).toBe('blocked');

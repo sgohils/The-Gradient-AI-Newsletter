@@ -63,6 +63,7 @@ flowchart LR
     Publish --> Git[Versioned editions]
     Git --> Web[Next.js reading experience]
     Publish --> Mail[Optional Resend delivery]
+    Git --> LinkedIn[Optional daily LinkedIn company Page post]
     Schedule[GitHub Actions schedule] --> Fetch
 ```
 
@@ -97,11 +98,15 @@ Copy the root configuration example to `.env` for the pipeline, and the web exam
 | `OPENAI_API_KEY` | Pipeline | OpenAI summarization when no Groq key is set |
 | `RESEND_API_KEY` | Pipeline and website | Contacts, newsletter delivery, and website signup |
 | `MAILER_FROM_EMAIL` | Pipeline | Sender address; use a verified sender for delivery |
-| `NEWSLETTER_BASE_URL` | Pipeline and website | Public URL for unsubscribe links and absolute social metadata |
+| `NEWSLETTER_BASE_URL` | Pipeline and website | Public URL for email, metadata, and LinkedIn issue links; set as an Actions Variable for workflows |
 | `OUTPUT_DIR` | Pipeline | Generated issue directory; defaults to `posts` |
 | `GRADIENT_IMAGE_GEN` | Pipeline | Set to `off` to disable optional featured images |
 | `PIXAZ_API_KEY` | Pipeline | Optional Pixazo image generation |
 | `GRADIENT_IMAGE_MODEL` | Pipeline | `flux` or `turbo` |
+| `ZERNIO_API_KEY` | LinkedIn and video | Zernio publishing key; store as an Actions Secret |
+| `ZERNIO_LINKEDIN_ACCOUNT_ID` | LinkedIn | Connected LinkedIn account ID; store as an Actions Variable |
+| `ZERNIO_LINKEDIN_ORGANIZATION_URN` | LinkedIn | Explicit company Page target; store as an Actions Variable |
+| `LINKEDIN_PUBLISH_ENABLED` | LinkedIn | Actions Variable `true` enables daily posts; defaults to preview only |
 
 Provider keys stay on the server. The configuration examples contain no credentials. The website defaults its metadata URL to localhost; set `NEWSLETTER_BASE_URL` to the hosted URL when deploying.
 
@@ -160,4 +165,6 @@ After UI changes, regenerate the README screenshots with `npm run screenshots` f
 
 MIT licensed.
 
-Daily AI videos: see [video setup and activation](docs/video-pipeline.md) for free CPU rendering, previews, account connections, and TikTok consent. Commands: `npm run video:render` and `npm run video:publish`. Live video publishing starts disabled.
+Daily YouTube videos: see [video setup and activation](docs/video-pipeline.md) for free CPU rendering, previews, and account connections. Commands: `npm run video:render` and `npm run video:publish`. Live video publishing starts disabled. The workflow uses YouTube and LinkedIn as its two connected social accounts.
+
+Daily LinkedIn company Page posts: see the [complete setup and activation guide](docs/linkedin-pipeline.md). The daily workflow prepares the top three stories and full edition link after newsletter publication. Set `NEWSLETTER_BASE_URL` as an Actions Variable for previews, then connect the company Page and enable `LINKEDIN_PUBLISH_ENABLED` after testing. Commands: `npm run linkedin:preview` and `npm run linkedin:publish`. Live posting starts disabled.
