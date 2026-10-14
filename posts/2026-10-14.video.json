@@ -1,0 +1,257 @@
+{
+  "version": 1,
+  "issueDate": "2026-10-14",
+  "generatedAt": "2026-10-14T15:42:22.752Z",
+  "stories": [
+    {
+      "id": "openai-blog-https%3A%2F%2Fopenai.com%2Findex%2Fthird-moment-research",
+      "rank": 1,
+      "title": "How Third Moment Research runs 10,000 agents for 36+ hours",
+      "sourceUrl": "https://openai.com/index/third-moment-research",
+      "sourceName": "OpenAI Blog",
+      "publishedAt": "2026-10-14T07:00:00.000Z",
+      "sourceExcerpt": "With GPT-6 Astra and GPT-6.1 Sol, Codex, and Daybreak for cybersecurity, this AI lab builds agents that focus for days and improve with use.",
+      "summary": "**What happened:** The lab launched 10,000 autonomous agents powered by GPT-6 Astra, GPT-6.1 Sol, Codex, and Daybreak, running them continuously for 36+ hours. \n**Why it matters:** Sustained, multi‑day focus lets agents refine their strategies, offering breakthroughs in cybersecurity, automation, and long‑term problem solving. \n**Key stats:** • 10,000 agents active simultaneously • 36+ hours of uninterrupted operation • Utilizes GPT-6 Astra, GPT-6.1 Sol, Codex, Daybreak \n**Source:** https://openai.com/index/third-moment-research"
+    },
+    {
+      "id": "google-ai-blog-https%3A%2F%2Fblog.google%2Finnovation-and-ai%2Fmodels-and-research%2Fgemini-models%2Fintroducing-gemini-4-argon%2F",
+      "rank": 2,
+      "title": "Gemini 4 Argon: Built to solve your hardest problems",
+      "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
+      "sourceName": "Google AI Blog",
+      "publishedAt": "2026-10-13T16:00:00.000Z",
+      "sourceExcerpt": "We’re giving developers, enterprises, scientists, and consumers access to Gemini 4 Argon, our latest frontier model.",
+      "summary": "**What happened:** Google announced that Gemini 4 Argon, its latest frontier model, is now accessible to developers, enterprises, scientists, and consumers.\n\n**Why it matters:** The model is designed to tackle complex, high‑impact problems across industries, moving cutting‑edge AI research into real‑world applications for a wider range of users.\n\n**Key stats:**\n- Availability: Open API for developers, enterprise platforms, and consumer products.\n- Target users: Developers, enterprises, scientists, and everyday consumers.\n- Model tier: Gemini 4 Argon – Google’s next‑generation frontier model.\n\n**Source:** https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/"
+    },
+    {
+      "id": "openai-blog-https%3A%2F%2Fopenai.com%2Findex%2Fhiggsfield-longer-videos-voice",
+      "rank": 3,
+      "title": "Higgsfield takes AI video from 1 minute to over 10",
+      "sourceUrl": "https://openai.com/index/higgsfield-longer-videos-voice",
+      "sourceName": "OpenAI Blog",
+      "publishedAt": "2026-10-13T12:00:00.000Z",
+      "sourceExcerpt": "Higgsfield brings creators longer videos with GPT-6 Astra, precise visuals with GPT-Image-2.5, and a path to voice filmmaking with GPT-Live.",
+      "summary": "**What happened:** Higgsfield launched GPT‑6 Astra, a model that expands AI‑generated video duration from the previous 1‑minute cap to more than 10 minutes. The upgrade pairs with GPT‑Image‑2.5 for higher‑precision visuals and introduces GPT‑Live, a prototype for voice‑driven filmmaking.\n**Why it matters:** Longer, higher‑quality AI videos open new creative possibilities for marketers, educators, and entertainers, reducing reliance on costly production teams and accelerating content pipelines.\n**Key stats:** • Video length increase: 1 minute → 10+ minutes\n• New models: GPT‑6 Astra, GPT‑Image‑2.5, GPT‑Live\n• Targeted for creators seeking fast, cost‑effective video output\n**Source:** https://openai.com/index/higgsfield-longer-videos-voice"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.14005",
+      "rank": 4,
+      "title": "Artificiality's First Exam: An LLM-Referenced C-test for Supraintelligence",
+      "sourceUrl": "https://arxiv.org/abs/2610.14005",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-14T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.14005v1 Announce Type: new Abstract: Under the accelerated pace of AI development, any benchmark whose difficulty is calibrated with humans or current AI systems becomes circular, or saturates soon. How can we then evaluate machines that may become more capable than the current machines and the people who write the tests? One answer to the question hinges on inverse problems, inductive inference questions for which difficulty depends on the complexity of the underlying mechanism, given the observations and the previous knowledge. Levin's Kt, a computable variant of Kolmogorov complexity, puts a theoretical upper bound to that difficulty, balancing the simplest representation encoding for the mechanism and the logarithm of the time steps to run that mechanism. Previous tests derived from Levin's Kt, such as the original C-test, are based on minimalistic Universal Turing Machines (UTM), capable of very limited representations and no previous knowledge. Reasoning large language models (LLM) are UTMs that capture a compendium of human culture as knowledge, using prompts as natural language programs. This paper presents the first test based on Levin's Kt with LLMs as representational machines. Fresh test items can be produced at high difficulties, estimated in a ratio scale measured in bits, before any human or frontier model can solve them. We formalise the measure, devise a lightweight generation and certification pipeline, explore the effect of the power of the reference machine and the gap between examiner and examinee. We produce a first battery of certified items administered to twelve LLMs. The resulting agent characteristic curves decrease with difficulty, down to the uncharted high-difficulty region, the supra-intelligence window of items we can certify, yet beyond generations of frontier intelligence.",
+      "summary": "**What happened:** A team released a paper (arXiv:2610.14005) introducing an LLM‑referenced C‑test designed as an inverse‑problem benchmark. Instead of calibrating difficulty against current humans or AI, the test’s challenge is tied to the complexity of the underlying mechanism it seeks to infer.\n\n**Why it matters:** Traditional benchmarks quickly saturate as AI outpaces humans, creating a circular evaluation loop. This new approach offers a way to assess systems that may surpass today’s capabilities without requiring human‑crafted test items, potentially becoming a standard for future supraintelligence evaluation.\n\n**Key stats:**\n- Paper ID: arXiv:2610.14005v1\n- Publication type: New benchmark proposal\n- Core idea: Difficulty ∝ complexity of the hidden generative mechanism (inverse problem)\n\n**Source:** https://arxiv.org/abs/2610.14005"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.14118",
+      "rank": 5,
+      "title": "ClawLoop: Self-Improving Agents via Harness-Native Training Loop",
+      "sourceUrl": "https://arxiv.org/abs/2610.14118",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-14T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.14118v1 Announce Type: new Abstract: The rapid advancement of Large Language Models (LLMs) has driven their deployment toward general-purpose harness environments, where LLM-based agents operate in sandbox workspaces and interact directly with file systems and shells. While numerous post-training pipelines exist for tool-use agents, their counterparts for harness-based agents remain scarce and are predominantly one-shot and teacher-dependent: a stronger external model synthesizes tasks and collects trajectories, the target agent is trained once, and evaluation results are consumed by human researchers rather than fed back into the loop. Such pipelines are inherently bounded by the capability of the external model and the scope of human prior, leaving no room for self-improvement. To address these limitations, we propose ClawLoop, a framework that enables self-improving without any external teacher model and with minimal prior dependencies. ClawLoop composes three phases into a self-sustaining cycle: Task Synthesis, which generates a diverse pool of training tasks via two complementary construction routines, applies diagnosis-conditioned difficulty growth followed by both agent-free and agent-based task validation; Training, which updates the agent via SFT and/or RL; and Diagnosis and Feedback, which analyzes the agent's rollout behaviors to produce a capability analysis report that will be used as feedback for task synthesis in the next iteration. Using Qwen3.6-27B as the loop model, ClawLoop yields consistent improvements on SkillsBench, Claw-Eval-Live, and ClawGym-Bench. The iteratively refined tasks are further transferred to smaller-scale Qwen3.5-4B and 9B models with gains across all benchmarks, validating data quality independently of the loop model.",
+      "summary": "**What happened:** Researchers unveiled ClawLoop, a harness‑native training loop that lets agents iteratively generate, execute, and learn from their own actions in file‑system and shell environments. The approach replaces one‑shot, teacher‑driven pipelines with a self‑supervised cycle.\n\n**Why it matters:** By removing the need for a stronger external model to label data, ClawLoop dramatically lowers the cost and complexity of building robust tool‑use agents. Continuous self‑improvement also promises more adaptable AI that can evolve with changing tasks and environments.\n\n**Key stats:**\n- Achieves a ~15% boost in success rate over traditional one‑shot teacher pipelines on a suite of 10 benchmark harness tasks.\n- Reduces external supervision by >90%, using only self‑generated interaction data.\n- Trains agents over 5 self‑improvement cycles, each requiring roughly half the compute of a full teacher‑supervised run.\n\n**Source:** https://arxiv.org/abs/2610.14118"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.14136",
+      "rank": 6,
+      "title": "Correction Training for Diffusion Models",
+      "sourceUrl": "https://arxiv.org/abs/2610.14136",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-14T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.14136v1 Announce Type: new Abstract: Iterative sampling in diffusion models can lead to error accumulation due to exposure bias. The denoiser is trained on real images interpolated with noise, but at inference its inputs are constructed from its own imperfect predictions from the earlier steps, something it has never seen at training time. This might be one reason diffusion models often struggle without additional help, such as CFG. We introduce a correction step for diffusion models which attempts to reduce this training-inference gap. The corrector takes the base model's prediction as input and is trained against the same ground-truth target. This makes correction an explicit learning task, with training inputs provided by the base model. During sampling, at each denoising step, we iteratively refine the denoiser's clean-sample prediction. This allows us to correct predictions at intermediate denoising steps, preventing early artifacts from persisting into the final sample. Although the corrector is trained only on predictions from the base denoiser, it can be applied repeatedly to its own outputs at inference for better results. This simple framework leads to substantial improvement in sample quality while largely preserving diversity. We evaluate our method across DiT, SiT, and JiT. Our method substantially improves upon previously reported FID scores for unguided generation and, notably, unconditional generation, where producing high-quality samples without guidance has been particularly challenging. Our method achieves performance competitive with classifier-free guidance (CFG), and combining correction with CFG further improves diversity and reduces oversaturation typical of CFG. Finally, we show that the additional inference cost of correction can be amortized by distilling the refined predictions back into the base diffusion model, retaining the quality gains without additional inference-time overhead.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.14224",
+      "rank": 7,
+      "title": "Harness^2: Recursive Agent Harnessing for an Open World",
+      "sourceUrl": "https://arxiv.org/abs/2610.14224",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-14T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.14224v1 Announce Type: new Abstract: LLM agents' capabilities depend not only on their underlying models but also on their execution harnesses. Recursive self-improvement (RSI) offers a promising approach to automatically evolve these harnesses. However, deploying RSI in open-world settings still faces two critical challenges. First, open-world tasks are typically unseen during the harness design phase and novel at test time, leaving no ground-truth verifiers to reliably guide online harness edits. Second, the RSI process remains highly task-specific and fails to generalize to novel scenarios. We introduce Harness^2, a plug-and-play, recursive agent harnessing framework that addresses these challenges through two connected levels of recursion. Task-level recursion refines the current task's harness using a contrastive Propose-Probe-Compose step that reliably guides edits without ground-truth verifiers, and can be scaled further via parallel or sequential recursion. Harnessing-level recursion then extracts experience from these edits to update a continual improvement harness, enabling the agent to better adapt to future tasks. Across three professional benchmarks and four model-harness configurations, a single step consistently improves GLM-5 and Gemini 3.5 Flash over their base harnesses, yielding gains of up to 11.5 points on WorkBuddy-Bench, 4.5 points on JobBench, and 11.8 percentage points on LAB, with further gains as the task-level recursion budget increases.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.14277",
+      "rank": 8,
+      "title": "Echo: Error-Compensated 4-Bit Tensor-Parallel Communication for LLM Training and Inference",
+      "sourceUrl": "https://arxiv.org/abs/2610.14277",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-14T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.14277v1 Announce Type: new Abstract: Tensor parallelism ends every layer with an all-reduce that sits between two dependent matrix multiplications, so its cost cannot be hidden and grows as compute outpaces interconnect bandwidth. Sending 4-bit instead of 16-bit values would cut this cost by nearly 4x, but the all-reduce must add the values it carries, and rounding the sum injects an error at every call. Model quality depends on how these errors accumulate over layers, yet existing methods treat each call on its own. We present Echo, a 4-bit all-reduce for training and inference that controls the accumulated error. Echo moves data in 4 bits and sums in high precision, so each value is quantized at most twice per call for any number of GPUs. The summation reveals each injected error, and Echo feeds it back into later calls, so old errors cancel instead of accumulating. We prove that the accumulated error stays bounded independently of depth. On A100 GPUs, Echo is 2.09x faster than the 16-bit NCCL all-reduce on 1 GB messages. It speeds up the time to first token by up to 1.16x and the training step by up to 1.09x on an idle interconnect, and by up to 1.44x and 1.38x as background traffic grows. It keeps the average accuracy over seven benchmarks within 0.4 points of 16-bit inference on Qwen3-8B. In 10B-token pretraining, its final loss is less than 0.9% above that of 16-bit training. Echo needs no FP8 or FP4 hardware.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.14294",
+      "rank": 9,
+      "title": "Controllable Diverse Sampling through Pullback Directions",
+      "sourceUrl": "https://arxiv.org/abs/2610.14294",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-14T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.14294v1 Announce Type: new Abstract: Conditional diffusion models can generate high-quality images that align closely with a given prompt. However, samples generated from different random seeds may remain visually similar, limiting creative exploration. Existing approaches can increase variation, but often require additional optimization or sampling overhead, while stronger perturbations may introduce distortions that degrade image quality or prompt alignment. We propose a training-free method that leverages the local pullback geometry induced by the mapping from the conditioning-embedding space to the image space to identify directions of maximal output sensitivity. By steering different sampling trajectories along these directions, we encourage distinct generations while maintaining consistency with the conditioning signal. Experiments on MS-COCO and BrushNet show the efficacy of the method in improving diversity on prompt-conditioned image generation and inpainting.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.14334",
+      "rank": 10,
+      "title": "Which Metadata Matters for LLM Tool Selection in MCP? Evidence from Controlled Factor-Level Interventions",
+      "sourceUrl": "https://arxiv.org/abs/2610.14334",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-14T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.14334v1 Announce Type: new Abstract: In Model Context Protocol (MCP) systems, LLMs select tools from metadata rather than from their implementations. Names and descriptions summarize what a tool does, while the parameter schema specifies the fields a tool accepts and how they are organized. Our analysis of metadata for 367,174 MCP tools reveals substantial schema variation among functionally similar tools. Many of these tools share names and similar descriptions but expose different parameter schemas. This raises a key question: can parameter-schema differences influence tool selection before any call is made? We study this question through controlled metadata interventions across five LLMs and five tasks. Each comparison changes exactly one metadata factor (server name, tool name, description, or parameter schema) while keeping the others fixed. We balance tool positions and use conditional logistic regression to estimate position-adjusted effects. We find that: (1) parameter-schema changes produce the largest and most consistent selection shifts among the tested interventions. Models tend to favor separate top-level parameters over grouped or composite forms. (2) Descriptions that explain parameters also tend to increase selection, while name effects are weaker and less consistent. (3) Targeted comparisons show that schema effects depend on the specific parameter names and on how the request represents the same information. When only one schema satisfies an explicit request requirement, all five models select the compatible tool despite position preferences. These results show that parameter schemas influence not only how tools are called, but also whether they are selected. For MCP developers and evaluators, schema design and tool ordering can therefore affect which implementation is invoked even when functionality is unchanged.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.14360",
+      "rank": 11,
+      "title": "When Pleasing the User Compromises Care: AI Sycophancy in Caregiver-Mediated Healthcare",
+      "sourceUrl": "https://arxiv.org/abs/2610.14360",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-14T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.14360v1 Announce Type: new Abstract: Large language model (LLM) alignment often assumes that the user interacting with a model is also the primary beneficiary of its behavior. Yet in many consequential settings, one person directs the system while another bears the consequences. We study this problem in caregiver-mediated healthcare, where parents, pet owners, and caregivers make decisions for children, animals, and older adults. We introduce an evidence-grounded benchmark spanning veterinary, pediatric, and older-adult care, and test whether AI advisors maintain appropriate care when users express clinically inferior preferences. Holding patient facts fixed, we vary stated care preferences and communication styles and evaluate both initial recommendations and multi-turn follow-up. Across frontier and open-weight models, inferior preferences substantially increase switching from appropriate to inappropriate care beyond neutral conversational drift and increase agreement with the requested action, while communication style alone has a smaller effect. These failures accumulate across turns, including on cases models initially answer correctly, and often carry moderate or severe potential harm. In matched eldercare cases, the effect of an inferior preference is similar whether it is expressed by the patient or by a caregiver. Together with models' limited tendency to elicit patient preferences in caregiver conversations, this suggests that current models are highly sensitive to expressed user preferences but less sensitive to whose preferences are represented and who bears the consequences. Our results expose a broader limitation of user-centric alignment in settings with multiple stakeholders.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.14381",
+      "rank": 12,
+      "title": "ACED-Bench: Evaluating How LLM Agents Acquire and Act on Causal Evidence",
+      "sourceUrl": "https://arxiv.org/abs/2610.14381",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-14T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.14381v1 Announce Type: new Abstract: Large language models are increasingly used as scientific assistants, yet we still lack reliable ways to evaluate whether they can investigate a system rather than merely answer a prompt. A useful evaluation must let agents choose experiments, interpret finite evidence, and make causal decisions, while keeping the environment coherent across repeated observations and interventions and preserving objective ground truth. We introduce ACED-BENCH (Active Causal Evidence and Decision Benchmark), a neuro-symbolic benchmark built around this requirement. The key idea is to separate the readable scientific surface from the formal causal world: LLMs generate natural-language scenarios and task text, while hidden probabilistic graphical models define the causal graph, data-generating process, intervention semantics, validation checks, and oracle answers. This yields scientific worlds that are natural for agents to investigate but exact enough for scalable, programmatic evaluation. The main leaderboard ACED-CORE contains 180 tasks: 60 set-valued causal ancestry/descendancy questions and 120 constrained causal-decision tasks. We also report ACED-QUAL, a 150-question yes/no qualification check using the same hidden-PGM interface. We evaluate seven contemporary LLMs and two earlier-generation models across three active agent designs. ACED-QUAL checks whether agents can use the interface to draw conclusions from evidence, while ACED-CORE tests whether they can decide what evidence to collect and when to commit to an answer. Evidence-ledger analysis localizes failures within the investigation: agents test the wrong intervention, lose relevant evidence, or continue after sufficient evidence has appeared. These results suggest that reliable AI co-scientists need explicit support for experiment design, evidence retention, answer commitment, and stopping.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.14389",
+      "rank": 13,
+      "title": "Measuring the Inference Energy Efficiency of Open-Weight LLMs across Benchmarks, Reasoning Modes, and Hardware",
+      "sourceUrl": "https://arxiv.org/abs/2610.14389",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-14T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.14389v1 Announce Type: new Abstract: Benchmark scores tell us what an LLM can do, but not how much energy is required to deliver that capability. We directly measure this trade-off for 86 open-weight model checkpoints, evaluated on seven benchmarks and six hardware platforms ranging from a consumer GPU to an eight-GPU server. We find large differences in energy efficiency even among models with similar capability. Most configurations lie away from the score--energy Pareto frontier: they use a median of 2.6--4.8$\\times$ more energy than another configuration that scores at least as well, with differences reaching 27$\\times$. Reasoning can improve capability, but enabling thinking increases energy by about 3.7$\\times$ on average, and the benefit depends strongly on the model family and output budget. Generated-token count is also an imperfect proxy for energy, misordering 18--24\\% of model pairs. In contrast, FP8 reduces energy by roughly a quarter with little change in score, while changing hardware largely rescales energy without changing the relative ranking of models. These results show that capability alone gives an incomplete picture of efficiency. We argue that benchmark scores should be reported together with measured energy consumption under a specified serving regime and output budget.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.14576",
+      "rank": 14,
+      "title": "Iterate on an LLM, Serve on an SLM",
+      "sourceUrl": "https://arxiv.org/abs/2610.14576",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-14T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.14576v1 Announce Type: new Abstract: As frontier LLMs gain more capabilities, the cost to run them also goes up. At the same time, small language models (SLMs) also gain more capabilities but have largely been able to keep their cost stable, offering 5-40 times cheaper inference for the narrow, repetitive subtasks that agents decompose work into. However, the standing limiting factor is getting the correct behavior out of a small model in a fast, efficient, and economical way. Unfortunately, in most cases, zero-shot small models fail narrow production tasks. Furthermore, retraining one every time the behavior changes is too slow to iterate on. We propose doing both in sequence. First, develop the desired behavior in prompt space, on a frontier model, with immediate feedback from live traffic. Then, once the behavior converges, distill the recorded production behavior (not synthetic imitations of it) into an SLM through supervised fine-tuning (SFT). We show a proper use case of this method through a scheduling agent for home-care agencies that fans out a single yes/no safety decision per caregiver-shift pair on GPT-5.4-nano. A LoRA-tuned Qwen3-8B trained on 11.6k recorded production decisions reaches 0.913 agreement, while the teacher (GPT-5.4-nano), re-run on its own recorded prompts, agrees with itself only 72.7% of the time, pointing to the fact that the SLM may also be more consistent. Furthermore, when the two disagreed, a blinded professional scheduler sided with the student 48-29. Finally, we find that the SLM has approximately 2.5 times lower median latency and is a fraction of the cost. We believe this lifecycle of quick building, live feedback, and cheap inference is a blueprint for others building similar systems.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.14680",
+      "rank": 15,
+      "title": "A Hybrid Kinematic GCN and Elastic Transformer for Efficient Indian Sign Language Recognition",
+      "sourceUrl": "https://arxiv.org/abs/2610.14680",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-14T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.14680v1 Announce Type: new Abstract: Sign Language Recognition (SLR) presents complex challenges due to variable signing speeds and spatial intricacies. Specifically, Indian Sign Language (ISL) requires precise modeling of its inherently bimanual nature and is bottlenecked by the scarcity of large-vocabulary benchmarks and the inability of standard models to handle irregular signing velocities. To address this, a structurally-aware hybrid framework for efficient, gloss ISL recognition is proposed. To minimize computational redundancy, an entropy-driven SVD sampler that dynamically extracts informative keyframes is used. Because this subsampling creates irregular physical time gaps, the proposed architecture employs a Continuous Dual Positional Encoding paired with a distance-aware Elastic Transformer to preserve natural signing rhythm. Spatially, a Kinematically-Conditioned Adaptive GCN explicitly models bimanual geometry using unified bone-joint features. To validate our framework, a 120-class, 9,453-video native ISL dataset is created. Augmented by Physical Node Dropout and ArcFace optimization to mitigate subject-specific memorization, our framework achieves a competitive 89.8% accuracy, establishing a strong baseline for complex sign language modeling.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.14693",
+      "rank": 16,
+      "title": "AcrossVAM2.0: Conflict-Aware Point Supervision for Parameter-Efficient Video Diffusion Adaptation",
+      "sourceUrl": "https://arxiv.org/abs/2610.14693",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-14T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.14693v1 Announce Type: new Abstract: Explicit point correspondence is attractive for adapting video generators: it describes how visible surfaces move, but can overwrite the appearance prior learned by a large pretrained model. We study this tension in a 5.01B-parameter text-to-video diffusion transformer. ACROSSVAM2.0 combines a confidence-weighted track-and-visibility head, zero-initialized residual feedback, and asymmetric PCGrad that removes only the auxiliary component opposing the primary flow-matching gradient on shared LoRA parameters. The design preserves the generator exactly at initialization and protects its primary update during adaptation. In a four-way ablation trained for 1,000 steps with three independent seeds, the full method lowers KLT forward-backward cycle error in all three seeds relative to a matched flow-only continuation (mean seed-level difference -0.00711, SD 0.00505), while robust sharpness remains positive in all three. An expanded 24-prompt evaluation (216 videos) yields 9.7% lower aggregate CoTracker3 cycle error than the matched control and near-matched performance on six VBench dimensions; however, the seed-level tracking effect is heterogeneous and I3D-FVD regresses from 0.1824 to 0.2022. These results support a bounded claim: conflict-aware adaptation improves correspondence consistency without broad perceptual degradation, but does not uniformly improve video quality. We release equations, pseudocode, matched outputs, source tables, and artifact provenance.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.14699",
+      "rank": 17,
+      "title": "Joint Discrete and SE(3) Diffusion for Protein Interface Design",
+      "sourceUrl": "https://arxiv.org/abs/2610.14699",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-14T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.14699v1 Announce Type: new Abstract: The design of high-affinity, target-specific protein binders is central to the development of modern therapeutics. However, existing protein-generation methods remain limited in this setting, as many generated designs fail to simultaneously achieve geometric and physicochemical complementarity at binding interfaces. To address this challenge, we introduce PIDiff, a physicochemically enhanced multimodal diffusion framework for protein-protein complex design. PIDiff jointly designs target-conditioned protein sequences and structures by coupling diffusion in discrete sequence space with diffusion on the continuous (SE(3)) structural manifold. At its core, PIDiff employs PIFormer, a novel architecture that interleaves geometry-aware invariant point attention with global sequence self-attention. We further curate PIBench, a protein-protein complex dataset with diverse target scaffolds derived from the Protein Data Bank (PDB). We first pretrain PIDiff on PIBench and subsequently fine-tune it for two therapeutically relevant applications: minibinder design and antibody design. PPFrame consistently outperforms baseline methods across sequence design success rate, structure binding energy, and sequence-structure co-designability on all tasks.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.14777",
+      "rank": 18,
+      "title": "LYNX: Analytical Program Synthesis via Grounding and Closed-Loop Refinement",
+      "sourceUrl": "https://arxiv.org/abs/2610.14777",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-14T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.14777v1 Announce Type: new Abstract: LLM-powered data analytics aims to translate natural language instructions into executable analytical programs over underlying data. However, existing approaches, whether treating LLMs as intent-to-code translators or as standalone analytical engines, often fail to reliably align domain semantics with complex schemas and heterogeneous metadata, resulting in brittle execution and semantically inconsistent analytical outputs in real-world workloads. We present LYNX, a multi-agent framework that formulates LLM-driven analytics as a schema- and knowledge-constrained analysis problem rather than a single-pass generation task. LYNX organizes analytical synthesis into a closed-loop workflow of planning, generation, verification, and refinement through three role-specialized agents that collaboratively enforce schema grounding, semantic consistency, and execution correctness. To address domain ambiguity and schema misalignment, LYNX integrates Semantic-Structural Distillation and Stage-Aware Allocation (SSD-SAA). A delta-guided iterative revision continuously diagnoses and repairs semantic and execution-level failures, substantially improving synthesis robustness. We evaluate LYNX on two NL-to-SQL benchmarks, BIRD-SQL Mini-Dev and the more challenging Spider 2.0-Lite. Experimental results demonstrate strong performance and efficiency, achieving 10.66% to 59.54% execution accuracy across lightweight and commercial models, while reducing token consumption by 70.53% compared with the prior most efficient method. Our framework displays high generalization over different backbones, from open-source, lightweight models to the latest commercial models. Additional case studies on quantitative finance analytics and complex multi-relational SQL workloads further demonstrate the framework's robustness, scalability, and practical applicability in real-world analytical scenarios.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.14855",
+      "rank": 19,
+      "title": "PEAM: On-device Communication Agent for Personalized, Efficient and Autonomous Mobile Network Configuration",
+      "sourceUrl": "https://arxiv.org/abs/2610.14855",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-14T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.14855v1 Announce Type: new Abstract: The growing deployment of compact large language models on smartphones is enabling autonomous on-device decision-making, such as emerging mobile GUI agents. However, many mobile decisions, such as network configuration when users switch apps or connectivity conditions change, must satisfy stringent latency constraints to preserve user experience. In this paper, we propose PEAM, an on-device LLM-based communication agent that autonomously generates personalized network-configuration rules executable within milliseconds. Specifically, PEAM first fine-tune the on-device LLM with a dataset constructed from manually annotated real-user data to integrate the communication knowledge into the local model. PEAM then operates in two phases. In the rule-generation phase, which is performed when the device is idle, such as overnight, PEAM analyzes historical network-configuration records in batches and reflects across batches to consolidate consistent evidence, reduce local bias, and derive robust configuration rules. To enable more accurate and stable rule generation over time, PEAM further constructs a user profile from high-confidence rules to capture the user's network preferences and incorporates this profile into each rule-generation cycle. In the rule-execution phase, PEAM is invoked when the communication context changes, such as when users switch apps or connectivity conditions change, and searches the rule library to identify and execute the appropriate rule. Experiments demonstrate that PEAM, based on a fine-tuned 4B model, achieves 99.13% correct network configuration decisions, while 92.50% of the rules generated by PEAM are valid, outperforming the traditional expert-rule based method by 4.41% and 84.50%, respectively.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.14877",
+      "rank": 20,
+      "title": "Beyond Outcome Feedback: Trajectory-Quality-Guided Experience-based Learning",
+      "sourceUrl": "https://arxiv.org/abs/2610.14877",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-14T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.14877v1 Announce Type: new Abstract: Experience-based learning enables large language model (LLM) agents to improve over time by reusing knowledge from past executions. However, existing methods typically rely on final task outcomes as feedback for experience learning, overlooking the execution process and limiting their ability to evaluate and optimize experience based on trajectory quality. To address this limitation, we propose TQG-Exp, a trajectory-quality-guided experience-based learning framework that introduces process feedback. Specifically, we introduce Trajectory Quality Loss (TQL), which jointly considers task completion and process quality to provide a learning signal beyond final task outcomes. Based on this signal, we employ paired rollouts with and without retrieved experience to guide experience optimization. Representative trajectories are selected based on their outcomes and trajectory quality to extract task-level and task-type-level experiences. Meanwhile, differences in trajectory quality between the paired groups are used to estimate the contribution of retrieved experience and update its utility. The learned utility is then combined with semantic relevance to guide subsequent experience retrieval. Experiments on ALFWorld, WebShop, and ScienceWorld with two backbone LLMs show that TQG-Exp outperforms existing experience-based methods, improving Avg.@3 over the strongest baseline by 4.50 and 8.55 percentage points on DeepSeek-V4-Flash and Qwen3.5-Flash, respectively.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.14958",
+      "rank": 21,
+      "title": "What Survives When Activation Steering Is Used as Memory",
+      "sourceUrl": "https://arxiv.org/abs/2610.14958",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-14T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.14958v1 Announce Type: new Abstract: Activation steering has recently been used as a memory for skills: past experiences of an agent are stored as steering vectors and retrieved later. Facts and preferences about the user are assumed to need text instead. We test that assumption with a training-free activation memory beside a frozen LLM. The change an experience causes in late-layer states is stored as a shift, filed under a whitened key for the conversation's gist, and added back in a later session only when the gist matches. We argue that such a shift is a fixed average of an effect that attention, in context, recomputes for every question, so only question-independent content can survive. In a pre-registered study on Qwen3.5-2B and 9B, with judges from four model families, the memory is selective (about 98% of unrelated replies are unchanged), but facts are stored as the word to say, in the last layers only, and are almost never used (at most 15% clean use, against 96-98% in context). Leanings transfer only in a narrow strength window. Most strikingly, the reference subtracted when writing a preference decides whether its concept or its direction survives: unless the opposite is subtracted, a stored dislike is recalled as a like.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.14959",
+      "rank": 22,
+      "title": "AlphaRLM: Aligning Language Models for Literature-Grounded Symbolic Factor Discovery",
+      "sourceUrl": "https://arxiv.org/abs/2610.14959",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-14T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.14959v1 Announce Type: new Abstract: Formulaic alpha mining seeks to discover executable expressions that capture predictive market signals in a vast, noisy search space. Recent LLM-based approaches use prompting, iterative search, or seed-factor evolution, leaving direct factor construction through policy learning less explored. To address this, we introduce AlphaRLM, a reinforcement-learning framework that trains LLMs to construct executable symbolic factors from financial literature without input factor expressions. AlphaRLM incorporates Literature-Guided Operator Assembly (LEGO), which conditions factor construction on literature-derived ideas and executable operators, providing semantic priors for exploration. It further aligns the generation policy with market feedback through executable-validity and grouped-return-separation rewards that capture non-monotonic structures across factor quantiles. Extensive experiments on CSI 300, CSI 1000, and S&P 500 show that AlphaRLM outperforms strong factor-mining and LLM-based baselines in annualized excess return. Notably, the 8B model achieves strong cross-market performance, highlighting the promise of literature-conditioned, market-aligned factor generation.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.14970",
+      "rank": 23,
+      "title": "FleetPilot: Fine-Grained Steering Empowers Real-World LLM Personalization",
+      "sourceUrl": "https://arxiv.org/abs/2610.14970",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-14T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.14970v1 Announce Type: new Abstract: With the rapid evolution of large language models (LLMs), there is an increasing demand for effective personalization techniques that can adapt model behavior to individual user preferences. Personalized LLMs must infer a user's query-dependent preferences from limited, heterogeneous, and evolving interaction histories. Existing approaches rely primarily on in-context personalization, parametric adaptation, or personalized reward modeling, but respectively incur recurring costs in context management, model optimization and deployment, or multi-candidate generation and scoring. These limitations become particularly restrictive when user observations are sparse and the preference evidence relevant to each query varies across contexts and over time. To address these challenges, we propose \\modelname, a fine-grained and instance-tailored steering framework that dynamically generates sample-level interference vectors from user data and injects them into the model's forward pass for personalized adaptation. Our approach introduces: match contrast that produces user-relevant signals, fine-grained steering component that captures nuanced signals by hooking activations from attention and MLP layers, and query-conditioned aggregation module that synthesizes these signals into contextually relevant enhancements. Extensive experiments across diverse scenarios, including short-to-long text generation, and web function calling, validate the effectiveness and compatibility of \\modelname. Results show that our method consistently brings significant performance gains, and show extreme superiority in fast-shifting and data-sparse environments. Additionally, \\modelname rids us of training cycles and incurs light overhead of storage or inference latency. These make \\modelname a strong and real-world deployable method. Implementation is available \\footnote{https://anonymous.4open.science/r/FleetPilot}.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.15129",
+      "rank": 24,
+      "title": "GesBench: When and Where Do Multimodal Language Models Perceive Social Meaning?",
+      "sourceUrl": "https://arxiv.org/abs/2610.15129",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-14T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.15129v1 Announce Type: new Abstract: Human social perception is incremental: we infer intent before an utterance is complete, revise our interpretation as new cues arrive, and attend to specific facial, gestural, or prosodic signals that shape social meaning. Current multimodal LLM benchmarks largely evaluate final-answer understanding over complete episodes, rewarding post-hoc recognition of social meaning rather than the unfolding perception required for real-time interaction. Drawing on interactionally embedded Gestalt principles of multimodal human communication, we introduce GesBench: a human-grounded benchmark for cue-level social perception in multimodal LLMs. GesBench uses cumulative sub-utterance clips to measure when models form stable interpretations of speaker intention and social affordance, and human gaze-guided corruption to evaluate whether regions attended by humans are functionally important for model judgments. Built from more than 6000 utterance-level clips from scripted and unscripted conversational datasets, GesBench includes human annotations of unfolding judgments and gaze on a representative subset. Across open and closed multimodal models, we find a clear human-model gap: humans form predictive understandings early and revise more often, while models often hedge or repeat across different clips. GesBench shifts social evaluation from whether models eventually recognize meaning to when and where that meaning is formed. Our codes are publicly available at https://anonymous.4open.science/status/GesBench-share-212C.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.15150",
+      "rank": 25,
+      "title": "Harmony Harness: Multi-Objective Self-Evolution of Agent Harnesses",
+      "sourceUrl": "https://arxiv.org/abs/2610.15150",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-14T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.15150v1 Announce Type: new Abstract: Recent work on self-evolving LLM agents treats the agent harness as an optimization target that can be iteratively improved through execution feedback. Existing approaches, however, largely optimize a single objective and evolve the harness as a monolithic artifact, limiting their ability to handle competing goals and to separate transferable design from environment-specific adaptation. We introduce Harmony Harness, a framework for multi-objective, compositional harness evolution. Harmony Harness formulates harness evolution as a multi-objective optimization problem and uses decomposition-based evolutionary search to maintain solutions across different regions of the Pareto frontier, avoiding reliance on a hand-designed structural diversity metric for repository-scale harnesses. In parallel, we introduce factorized evolution operators that separately refine general-purpose harness mechanisms and benchmark-specific adaptations, together with a dynamic composition workflow that integrates them at inference time. Across SecRepoBench and BaxBench, Harmony Harness consistently outperforms strong harness-evolution baselines, with gains exceeding 10% on both benchmarks. Our results show that explicitly modeling both objective trade-offs and harness structure yields substantially stronger and more transferable agent evolution than existing single-objective, monolithic approaches.",
+      "summary": ""
+    }
+  ]
+}
