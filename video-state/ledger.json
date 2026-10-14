@@ -607,8 +607,32 @@
       "platforms": {
         "youtube": {
           "accountId": "6ac27146281ee799a37065e4",
-          "status": "prepared",
-          "idempotencyKey": "9295d48f-4b85-4d36-a359-108719cc5e7e"
+          "status": "submitting",
+          "idempotencyKey": "9295d48f-4b85-4d36-a359-108719cc5e7e",
+          "request": {
+            "content": "Artificiality's First Exam: An LLM-Referenced C-test for Supraintelligence\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2610.14005\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-10-14\nAI-generated narration. #AI #AINews #Shorts",
+            "mediaItems": [
+              {
+                "type": "video",
+                "url": "https://media.zernio.com/temp/1791992884452_jzxad03x_2026-10-14.mp4"
+              }
+            ],
+            "platforms": [
+              {
+                "platform": "youtube",
+                "accountId": "6ac27146281ee799a37065e4",
+                "platformSpecificData": {
+                  "title": "Artificiality's First Exam: An LLM-Referenced",
+                  "visibility": "public",
+                  "madeForKids": false,
+                  "containsSyntheticMedia": true,
+                  "categoryId": "28"
+                }
+              }
+            ],
+            "publishNow": true
+          },
+          "firstSubmittedAt": "2026-10-14T15:48:07.984Z"
         }
       },
       "script": {
