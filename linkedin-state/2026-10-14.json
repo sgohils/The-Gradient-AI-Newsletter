@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "issueDate": "2026-10-14",
+  "issueUrl": "https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-10-14",
+  "content": "Today's AI briefing from The Gradient | 2026-10-14\n\n1. How Third Moment Research runs 10,000 agents for 36+ hours\nThe lab launched 10,000 autonomous agents powered by GPT-6 Astra, GPT-6.1 Sol, Codex, and Daybreak, running them continuously for 36+ hours.\n\n2. Gemini 4 Argon: Built to solve your hardest problems\nGoogle announced that Gemini 4 Argon, its latest frontier model, is now accessible to developers, enterprises, scientists, and consumers.\n\n3. Higgsfield takes AI video from 1 minute to over 10\nHiggsfield launched GPT‑6 Astra, a model that expands AI‑generated video duration from the previous 1‑minute cap to more than 10 minutes. The upgrade pairs with GPT‑Image‑2.5 for higher‑precision visuals and introduces GPT‑Live, a prototype for voice‑driven filmmaking.\n\nRead the full briefing and original sources:\nhttps://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-10-14\n\n#AI #ArtificialIntelligence #TheGradient",
+  "contentHash": "9a3cfc7745d7a109e8124a7fcf554e3a4bffcf1d351ef4010e9622db282a296f",
+  "accountId": "6ac5a561b3c21905c0edcfba",
+  "organizationUrn": "urn:li:organization:136824048",
+  "idempotencyKey": "a8d66d73-545f-4c3c-b49d-9ac5c5faa957",
+  "status": "submitting",
+  "firstSubmittedAt": "2026-10-14T15:43:36.191Z"
+}
