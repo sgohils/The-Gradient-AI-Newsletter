@@ -2,9 +2,9 @@ import { describe, it, expect, vi, afterEach } from 'vitest';
 import * as fs from 'fs';
 import * as os from 'os';
 import * as path from 'path';
-import { sampleInput } from '../src/video/sample';
+import { sampleInput, sampleStructuredScript } from '../src/video/sample';
 import { buildDailyVideoInput, buildVideoInput } from '../src/video/input';
-import { buildExtractiveScript, generateScript, validateScript } from '../src/video/script';
+import { buildExtractiveScript, displayLabel, generateScript, validateScript } from '../src/video/script';
 import { assessStoryCandidates, selectStory, storyKey, wordCount } from '../src/video/selection';
 import { compactLedger, readInput, readLedger, readManifest, writeJson } from '../src/video/storage';
 import { buildAss, buildSrt, captionChunks } from '../src/video/captions';
@@ -133,13 +133,13 @@ describe('source-grounded scripts and exhausted API', () => {
   it('builds a factual 75–105 word script from complete source sentences', () => {
     const script = buildExtractiveScript(story);
     expect(wordCount(script.narration)).toBeGreaterThanOrEqual(75);
-    expect(wordCount(script.narration)).toBeLessThanOrEqual(105);
+    expect(wordCount(script.narration)).toBeLessThanOrEqual(95);
     expect(() => validateScript(story, script)).not.toThrow();
     expect(script.sentences.every(s => story.sourceExcerpt.includes(s.evidenceQuote))).toBe(true);
-    expect(script.version).toBe(2);
+    expect(script.version).toBe(3);
     expect(script.sentences[0].role).toBe('hook');
     expect(wordCount(script.sentences[0].text)).toBeLessThanOrEqual(18);
-    expect(script.sentences.at(-1)?.role).toBe('takeaway');
+    expect(script.sentences.at(-1)?.role).toBe('engagement');
     expect(script.narration.startsWith("Today's AI story")).toBe(false);
     expect(script.narration).not.toContain('Reporting from');
   });
@@ -150,16 +150,15 @@ describe('source-grounded scripts and exhausted API', () => {
   });
   it('keeps a complete short clause as a heading instead of starting the next list item', () => {
     const guide = { ...story, sourceExcerpt: 'This guide explains how to compare model answers, give it effective instructions, and prepare for production. ' + story.sourceExcerpt };
-    const script = buildExtractiveScript(guide);
-    expect(script.sentences[0].displayText).toBe('How to compare model answers');
+    expect(displayLabel('This guide explains how to compare model answers, give it effective instructions, and prepare for production.')).toBe('How to compare model answers');
   });
   it('rejects invented figures, unrelated evidence, malformed scripts and long narration', () => {
     const script = buildExtractiveScript(story);
     script.sentences[0].text += ' It costs $999.';
     expect(() => validateScript(story, script)).toThrow('unsupported figure');
     script.sentences[0].text = 'Satellites discover remarkable golden treasures beneath distant oceans.';
-    expect(() => validateScript(story, script)).toThrow('differs too far');
-    expect(() => validateScript(story, { ...script, sentences: [] })).toThrow('Invalid video script');
+    expect(() => validateScript(story, script)).toThrow(/differs too far|unsupported name/);
+    expect(() => validateScript(story, { ...script, sentences: [] })).toThrow('Invalid');
     expect(() => validateScript(story, { ...buildExtractiveScript(story), narration: 'hello' })).toThrow('grounded words');
   });
   it('rejects invalid model output and never calls a second provider', async () => {
@@ -169,21 +168,21 @@ describe('source-grounded scripts and exhausted API', () => {
     expect(() => buildExtractiveScript({ ...story, sourceExcerpt: 'Incomplete source text' })).toThrow();
   });
   it('asks for a grounded hook and labels without passing newsletter summaries', async () => {
-    const generated = buildExtractiveScript(story);
+    const generated = sampleStructuredScript(story);
     const client = { post: vi.fn().mockResolvedValue({ data: { choices: [{ message: {
-      content: JSON.stringify({ sentences: generated.sentences }),
+      content: JSON.stringify(generated),
     } }] } }) };
     const result = await generateScript({ ...story, summary: 'Invented benefit: 100x faster.' }, { groqApiKey: 'fake' }, client as any);
     expect(result.provider).toBe('groq');
     expect(client.post).toHaveBeenCalledTimes(1);
     const prompt = JSON.stringify(client.post.mock.calls[0]);
-    expect(prompt).toContain('8–12 words');
+    expect(prompt).toContain('8–10 words');
     expect(prompt).not.toContain('Invented benefit');
     const invalid = structuredClone(generated);
     invalid.sentences[0].displayText = 'Invented breakthrough';
     expect(() => validateScript(story, invalid)).toThrow('not supported');
     const inventedName = structuredClone(generated);
-    inventedName.sentences[0].text = inventedName.sentences[0].text.replace('A fictional', 'Meta');
+    inventedName.sentences[0].text = inventedName.sentences[0].text.replace('AI', 'Meta');
     expect(() => validateScript(story, inventedName)).toThrow('unsupported name');
   });
 });

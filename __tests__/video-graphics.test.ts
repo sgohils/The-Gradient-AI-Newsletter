@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import { buildStoryboard, graphicTheme, numericCallout, visualTerms, visualHeading } from '../src/video/graphics';
-import { buildExtractiveScript } from '../src/video/script';
+import { buildExtractiveScript } from '../src/video/legacy-script';
 import { sampleInput } from '../src/video/sample';
 import { NarrationTiming, VideoScript } from '../src/video/types';
 import { buildSrt } from '../src/video/captions';

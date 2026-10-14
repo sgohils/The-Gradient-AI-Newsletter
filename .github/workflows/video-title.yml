@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       issue_date:
-        description: 'YYYY-MM-DD of an already published video; uses its source headline'
+        description: 'YYYY-MM-DD of a published video; restores its saved working title or legacy source headline'
         required: true
 
 concurrency:
@@ -28,7 +28,7 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build
-      - name: Set the existing video title to its source headline
+      - name: Restore the existing video title
         env:
           ISSUE_DATE: ${{ inputs.issue_date }}
           ZERNIO_API_KEY: ${{ secrets.ZERNIO_API_KEY }}
@@ -46,7 +46,7 @@ jobs:
             if (publication?.status !== 'published' || !publication.postId || !publication.accountId) {
               throw new Error('This edition has no confirmed published YouTube video.');
             }
-            const title = entry.story.title.trim().slice(0, 90);
+            const title = entry.presentation?.title || entry.script?.workingTitle || entry.story.title.trim().slice(0, 90);
             if (!title) throw new Error('The source headline is empty.');
             const result = await axios.post(`https://zernio.com/api/v1/posts/${encodeURIComponent(publication.postId)}/update-metadata`,
               { platform: 'youtube', accountId: publication.accountId, title },

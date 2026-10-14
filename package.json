@@ -13,6 +13,7 @@
     "video:publish": "npm run build && node dist/scripts/video-publish.js",
     "video:sample": "npm run build && node dist/scripts/video-sample.js",
     "video:prepare": "npm run build && node dist/scripts/video-prepare.js",
+    "video:performance": "npm run build && node dist/scripts/video-performance.js",
     "linkedin:preview": "npm run build && node dist/scripts/linkedin.js",
     "linkedin:publish": "npm run build && node dist/scripts/linkedin.js --publish",
     "test": "vitest run",

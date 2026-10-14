@@ -242,7 +242,8 @@ def prepare_art(plan, story, output):
     icon_fonts = {factor: {size: ImageFont.truetype(str(bold_path), round(size * scale * factor)) for size in (28, 40, 48, 72)}
                   for factor in (0.72, 1.0, 1.4, 1.5)}
     regular = {size: ImageFont.truetype(str(output / "fonts/body.ttf"), round(size * scale)) for size in (22, 24, 26, 28)}
-    layouts = []
+    layouts, diagram_layouts = [], {}
+    spoken_words = set(re.findall(r"\w+", " ".join(scene["text"] for scene in plan["scenes"]).casefold()))
     for scene in plan["scenes"]:
         if scene.get("layout", "panel") not in ("hero", "panel", "split", "stat", "source"):
             raise ValueError("Unexpected scene layout")
@@ -266,6 +267,24 @@ def prepare_art(plan, story, output):
             if not text.endswith((".", "!", "?")):
                 text += "…"
         layouts.append(fitted_text(text, fonts, scale, scene["kind"] == "headline"))
+        diagram = scene.get("diagram")
+        if diagram:
+            labels = diagram.get("labels", [])
+            active = diagram.get("active")
+            if not 1 <= len(labels) <= 3 or not isinstance(active, int) or not 0 <= active < len(labels):
+                raise ValueError("Explanation diagram has invalid steps")
+            fitted = []
+            for label in labels:
+                if not isinstance(label, str) or not label or any(word not in spoken_words for word in re.findall(r"\w+", label.casefold())):
+                    raise ValueError("Explanation diagram is not supported by narration")
+                for size in (28, 26, 24, 22, 20):
+                    lines = wrap(label, fonts[size], 196, scale)
+                    if lines and len(lines) * (size + 3) <= 108:
+                        fitted.append((size, lines))
+                        break
+                else:
+                    raise ValueError("Explanation diagram text cannot fit")
+            diagram_layouts[len(layouts)-1] = fitted
     source_lines = wrap(story["sourceHost"], regular[26], 780, scale)
     if not source_lines or len(source_lines) > 2:
         raise ValueError("Source hostname cannot fit the mobile safe area")
@@ -281,7 +300,7 @@ def prepare_art(plan, story, output):
                 raise ValueError("Number callout cannot fit the mobile safe area")
     art = {"scale": scale, "fonts": fonts, "iconFonts": icon_fonts, "regular": regular, "layouts": layouts,
            "sourceLines": source_lines, "numbers": numbers,
-           "backgrounds": [background_image(plan, palette) for palette in PALETTES]}
+           "backgrounds": [background_image(plan, palette) for palette in PALETTES], "diagramLayouts": diagram_layouts}
     if plan["version"] == 4:
         cache, art["illustrations"], art["illustrationPositions"] = {}, [], []
         for index, scene in enumerate(plan["scenes"]):
@@ -313,6 +332,8 @@ def scene_palette(scene, index):
 
 def illustration_geometry(scene, headline):
     layout = scene.get("layout", "panel")
+    if scene.get("diagram"):
+        return 0.52, 486, 817
     if layout == "hero":
         size, lines = headline
         top = 328 + len(lines) * (size + 10) + 50
@@ -351,7 +372,8 @@ def scene_background(plan, story, index, art):
     for i, length in enumerate((36, 27, 18)):
         draw.rounded_rectangle((96, 168 + i * 9, 96 + length, 172 + i * 9), radius=2, fill=accent)
     draw.text((152, 165), "THE GRADIENT", font=fonts[26], fill=ink)
-    draw.text((876, 168), story["issueDate"], font=regular[22], fill=muted, anchor="ra")
+    if scene.get("sourceVisible", True):
+        draw.text((876, 168), story["issueDate"], font=regular[22], fill=muted, anchor="ra")
     draw.line((96, 220, 876, 220), fill=dim, width=1)
     draw.text((96, 263), scene["label"], font=fonts[22], fill=accent)
     draw.text((876, 263), f"{index + 1:02d} / {len(plan['scenes']):02d}", font=regular[24], fill=muted, anchor="ra")
@@ -393,11 +415,23 @@ def scene_background(plan, story, index, art):
         else:
             draw.text((130, 1090), "ILLUSTRATION", font=regular[22], fill=muted)
             draw.text((830, 1090), scene["theme"].upper(), font=fonts[22], fill=accent, anchor="ra")
+        if scene.get("diagram"):
+            for step, (size, lines) in enumerate(art["diagramLayouts"][index]):
+                x = 130 + step * 254
+                draw.rounded_rectangle((x, 950, x+224, 1080), radius=14, fill=palette["background"], outline=dim, width=2)
+                y = 1015 - len(lines) * (size+3) / 2
+                for line in lines:
+                    draw.text((x+112, y), line, font=fonts[size], fill=ink, anchor="ma")
+                    y += size+3
+                if step and not scene["diagram"].get("comparison"):
+                    draw.line((x-24, 1015, x-6, 1015), fill=dim, width=2)
+                    draw.line((x-12, 1009, x-6, 1015, x-12, 1021), fill=dim, width=2)
 
-    draw.text((96, 1436), "SOURCE / " + ("ORIGINAL REPORTING" if scene["kind"] == "source" else "AI DAILY BRIEF"),
-              font=fonts[20], fill=accent)
-    for i, line in enumerate(art["sourceLines"]):
-        draw.text((96, 1472 + i * 32), line, font=regular[26], fill=ink)
+    if scene.get("sourceVisible", True):
+        draw.text((96, 1436), "SOURCE / " + ("ORIGINAL REPORTING" if scene["kind"] == "source" else "AI DAILY BRIEF"),
+                  font=fonts[20], fill=accent)
+        for i, line in enumerate(art["sourceLines"]):
+            draw.text((96, 1472 + i * 32), line, font=regular[26], fill=ink)
     draw.rounded_rectangle((96, 1560, 876, 1566), radius=3, fill=dim)
     return image
 
@@ -408,8 +442,8 @@ def render_frame(plan, story, index, seconds, art):
     palette = scene_palette(scene, index)
     ink, accent, dim, muted, panel = (palette[key] for key in ("ink", "accent", "dim", "muted", "panel"))
     scale, fonts = art["scale"], art["fonts"]
-    image = art["settled"][index].copy() if local >= 0.35 else art["bases"][index].copy()
-    if local < 0.35:
+    image = art["settled"][index].copy() if local >= 0.35 or scene.get("immediate", False) else art["bases"][index].copy()
+    if local < 0.35 and not scene.get("immediate", False):
         draw_heading(image, plan, index, art, 20 * (1 - ease(local / 0.35)))
     draw = DesignDraw(image, scale)
     layout = scene.get("layout", "panel")
@@ -437,7 +471,7 @@ def render_frame(plan, story, index, seconds, art):
             center_x, center_y = art["illustrationPositions"][index]
             left = round((center_x + shift) * scale - illustration.static.width / 2)
             top = round(center_y * scale - illustration.static.height / 2)
-            illustration.paint(image, (left, top), local + scene["variant"] * 2)
+            illustration.paint(image, (left, top), local + scene.get("threadTime", scene["variant"] * 2))
         else:
             ILLUSTRATIONS[scene["theme"]](icon_draw, local + scene["variant"] * 2, ink, accent, dim, panel, art["iconFonts"][factor])
     if layout == "split" and plan["version"] == 4:
@@ -446,6 +480,19 @@ def render_frame(plan, story, index, seconds, art):
                 term_index = scene["terms"].index(word["text"])
                 y = 775 + term_index * 142
                 draw.rounded_rectangle((528, y, 842, y + 116), radius=18, outline=accent, width=3)
+    if scene.get("diagram"):
+        active = scene["diagram"]["active"]
+        x = 130 + active * 254
+        draw.rounded_rectangle((x, 950, x+224, 1080), radius=14, outline=accent, width=4)
+        # Reuse the explanation cards across beats; the cue changes emphasis
+        # using words actually spoken in this beat, never invented chart data.
+        if scene.get("cue") == "diagram":
+            draw.line((x+12, 941, x+212, 941), fill=accent, width=4)
+        elif scene.get("cue") == "highlight":
+            circle(draw, x+112, 935, 5+2*math.sin(local*2)**2, fill=accent)
+        elif scene.get("terms"):
+            phrase = " / ".join(scene["terms"])
+            draw.text((486, 911), phrase, font=fonts[28], fill=accent, anchor="mm")
     progress = max(0, min(1, seconds / plan["duration"]))
     if progress > 0:
         draw.rounded_rectangle((96, 1560, 96 + max(1, 780 * progress), 1566), radius=3, fill=accent)

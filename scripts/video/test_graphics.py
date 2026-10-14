@@ -107,6 +107,21 @@ class GraphicsTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "not supported"):
             prepare_art(plan, self.story, self.output)
 
+    def test_new_opening_has_visible_text_at_frame_zero_and_hides_formal_source(self):
+        plan = copy.deepcopy(self.plan)
+        plan.update(version=4, fps=30, renderWidth=1080, renderHeight=1920)
+        scene = plan["scenes"][0]
+        scene.update(kind="headline", layout="hero", immediate=True, sourceVisible=False)
+        art = prepare_art(plan, self.story, self.output)
+        frame = render_frame(plan, self.story, 0, 0, art)
+        heading = frame.crop((96, 328, 876, 600))
+        empty = art["bases"][0].crop((96, 328, 876, 600))
+        self.assertIsNotNone(ImageChops.difference(heading, empty).getbbox())
+        scene["sourceVisible"] = True
+        cited = render_frame(plan, self.story, 0, 0, prepare_art(plan, self.story, self.output))
+        self.assertIsNotNone(ImageChops.difference(frame.crop((96, 1436, 876, 1545)),
+                                                 cited.crop((96, 1436, 876, 1545))).getbbox())
+
     def test_every_full_hd_illustration_is_antialiased_animated_and_cache_safe(self):
         for theme in THEMES:
             with self.subTest(theme=theme):
@@ -132,6 +147,21 @@ class GraphicsTests(unittest.TestCase):
                 self.assertLessEqual(right, 876)
                 self.assertGreaterEqual(top, 440)
                 self.assertLessEqual(bottom, 1080)
+
+    def test_explanation_cards_remain_visible_and_only_use_narrated_labels(self):
+        plan = copy.deepcopy(self.plan)
+        plan.update(version=4, fps=30, renderWidth=1080, renderHeight=1920)
+        scene = plan["scenes"][0]
+        scene.update(text="Compare prompts and model responses before using code.", layout="panel", cue="highlight",
+                     diagram={"labels": ["Compare prompts", "model responses", "using code"], "active": 0, "comparison": False})
+        first = render_frame(plan, self.story, 0, 1, prepare_art(plan, self.story, self.output))
+        scene["diagram"]["active"] = 1
+        second = render_frame(plan, self.story, 0, 1, prepare_art(plan, self.story, self.output))
+        self.assertIsNotNone(ImageChops.difference(first.crop((130, 930, 862, 1082)),
+                                                 second.crop((130, 930, 862, 1082))).getbbox())
+        scene["diagram"]["labels"][1] = "Invented benchmark"
+        with self.assertRaisesRegex(ValueError, "not supported by narration"):
+            prepare_art(plan, self.story, self.output)
 
     def test_full_hd_key_words_are_emphasized_only_during_their_spoken_window(self):
         plan = copy.deepcopy(self.plan)

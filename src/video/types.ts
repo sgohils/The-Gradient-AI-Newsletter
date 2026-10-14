@@ -20,15 +20,21 @@ export interface VideoInput {
 export interface ScriptSentence {
   text: string;
   evidenceQuote: string;
-  role?: 'hook' | 'detail' | 'takeaway';
+  role?: 'hook' | 'detail' | 'takeaway' | 'breakthrough' | 'impact' | 'engagement';
   displayText?: string;
+  visual?: 'example' | 'process' | 'comparison' | 'highlight';
 }
 
 export interface VideoScript {
-  version?: 1 | 2;
+  version?: 1 | 2 | 3;
   provider: 'groq' | 'extractive';
   sentences: ScriptSentence[];
   narration: string;
+  workingTitle?: string;
+  format?: 'structured' | 'source-fallback';
+  angle?: 'comparison' | 'capability' | 'limitation' | 'workflow';
+  availability?: 'available' | 'research' | 'unknown';
+  hookStyle?: 'question' | 'counterintuitive' | 'source-fact';
 }
 
 export interface WordTiming {
@@ -60,6 +66,13 @@ export interface VideoScene {
   terms?: string[];
   termTimings?: { text: string; start: number; end: number }[];
   callout?: string;
+  role?: ScriptSentence['role'];
+  cue?: 'popup' | 'diagram' | 'highlight';
+  visual?: ScriptSentence['visual'];
+  sourceVisible?: boolean;
+  immediate?: boolean;
+  threadTime?: number;
+  diagram?: { labels: string[]; active: number; comparison: boolean };
 }
 
 export interface VideoStoryboard {
@@ -71,6 +84,7 @@ export interface VideoStoryboard {
   renderWidth: 1080;
   renderHeight: 1920;
   scenes: VideoScene[];
+  scriptVersion?: number;
 }
 
 export interface ReadyVideoManifest {
@@ -87,7 +101,9 @@ export interface ReadyVideoManifest {
   description: string;
   sample?: boolean;
   graphicsVersion?: number;
+  reviewOnly?: boolean;
   selectionReason?: string;
+  briefFile?: string;
 }
 
 export interface SkippedVideoManifest {
@@ -117,6 +133,11 @@ export interface VideoLedgerEntry {
   selectedAt: string;
   script?: VideoScript;
   selectionReason?: string;
+  presentation?: {
+    title: string; format: VideoScript['format']; angle: VideoScript['angle'];
+    hookStyle: VideoScript['hookStyle']; availability: VideoScript['availability'];
+    duration: number; wordCount: number; scriptVersion: number;
+  };
   contentHash?: string;
   media?: { publicUrl: string; videoSha256: string; uploadedAt: string };
   platforms: Partial<Record<Platform, PlatformPublication>>;

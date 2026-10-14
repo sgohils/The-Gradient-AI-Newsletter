@@ -3,7 +3,7 @@ import axios from 'axios';
 import * as fs from 'fs';
 import * as path from 'path';
 import * as os from 'os';
-import { sampleInput } from '../src/video/sample';
+import { sampleInput, sampleStructuredScript } from '../src/video/sample';
 import { renderVideo } from '../src/video/render';
 import { readLedger, writeJson } from '../src/video/storage';
 import { runCommand } from '../src/video/process';
@@ -37,6 +37,48 @@ beforeEach(() => {
 afterEach(() => { vi.restoreAllMocks(); fs.rmSync(root, { recursive: true, force: true }); });
 
 describe('daily rendering tries usable evidence without changing frozen stories', () => {
+  it('falls back after structured audio misses the pacing window without another service request', async () => {
+    writeJson(options.inputPath, original);
+    vi.mocked(axios.post).mockResolvedValueOnce({ data: { choices: [{ message: {
+      content: JSON.stringify(sampleStructuredScript(original.stories[0])),
+    } }] } });
+    const implementation = vi.mocked(runCommand).getMockImplementation()!;
+    vi.mocked(runCommand).mockImplementation(async (command, args, directory) => {
+      const result = await implementation(command, args, directory);
+      if (args[0].endsWith('narrate.py')) {
+        const script = JSON.parse(fs.readFileSync(args[args.indexOf('--script-json') + 1], 'utf8'));
+        if (script.format === 'structured') {
+          const file = path.join(args[args.indexOf('--output-dir') + 1], 'timing.json');
+          const timing = JSON.parse(fs.readFileSync(file, 'utf8'));
+          timing.words.forEach((word: any) => { word.start *= 40 / 35; word.end *= 40 / 35; });
+          timing.duration = 40; writeJson(file, timing);
+        }
+      }
+      return result;
+    });
+    const result = await renderVideo(options);
+    expect(result.manifest).toMatchObject({ status: 'ready', script: { format: 'source-fallback' } });
+    expect(axios.post).toHaveBeenCalledTimes(1);
+    expect(readLedger(options.ledgerPath!).issues[original.issueDate].script?.format).toBe('source-fallback');
+  });
+  it('does not freeze a candidate after narration failure, and tries the next story', async () => {
+    writeJson(options.inputPath, { ...original, stories: [original.stories[0], second] });
+    const implementation = vi.mocked(runCommand).getMockImplementation()!;
+    let voices = 0;
+    vi.mocked(runCommand).mockImplementation(async (command, args, directory) => {
+      if (args[0].endsWith('narrate.py') && ++voices === 1) {
+        expect(readLedger(options.ledgerPath!).issues).toEqual({});
+        throw new Error('Hook cannot fit naturally');
+      }
+      return implementation(command, args, directory);
+    });
+    expect((await renderVideo(options)).manifest).toMatchObject({ status: 'ready', story: { id: 'second' } });
+    expect(readLedger(options.ledgerPath!).issues[original.issueDate].story.id).toBe('second');
+  });
+  it('requires isolated review state', async () => {
+    await expect(renderVideo({ ...options, reviewOnly: true, ledgerPath: undefined })).rejects.toThrow('isolated');
+    await expect(renderVideo({ ...options, reviewOnly: true, outputDir: 'video-output' })).rejects.toThrow('isolated');
+  });
   it('renders the next valid story with only one API call, then preserves that choice on rerun', async () => {
     const result = await renderVideo(options);
     expect(result.manifest).toMatchObject({ status: 'ready', story: { id: 'second' }, script: { provider: 'extractive' } });
@@ -78,7 +120,7 @@ describe('daily rendering tries usable evidence without changing frozen stories'
     } } });
     const result = await renderVideo(options);
     expect(result.manifest).toMatchObject({ status: 'ready', story: { id: 'second' },
-      script: { version: 2 }, selectionReason: expect.any(String) });
+      script: { version: 3 }, selectionReason: expect.any(String) });
     expect(readLedger(options.ledgerPath!).issues[original.issueDate].story.id).toBe('second');
     expect(axios.post).toHaveBeenCalledTimes(1);
   });

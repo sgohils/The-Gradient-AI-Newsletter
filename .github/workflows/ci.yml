@@ -64,7 +64,7 @@ jobs:
       - uses: ./.github/actions/video-runtime
       - name: Check caption layout with the runner fonts
         run: python -m unittest discover -s scripts/video -p 'test_*.py'
-      - name: Render a complete offline sample
+      - name: Render a complete offline fallback sample
         id: sample
         run: npm run video:sample -- --output-dir video-output/sample
       - name: Check encoded media and audio
@@ -76,4 +76,17 @@ jobs:
         with:
           name: video-smoke-sample
           path: video-output/sample/
+          retention-days: 7
+      - name: Render the structured format offline
+        id: structured
+        run: npm run video:sample -- --format structured --output-dir video-output/structured
+      - name: Check structured media and pacing
+        env:
+          SAMPLE_DIRECTORY: ${{ steps.structured.outputs.directory }}
+        run: python scripts/video/verify.py --directory "$SAMPLE_DIRECTORY"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: video-smoke-structured
+          path: video-output/structured/
           retention-days: 7

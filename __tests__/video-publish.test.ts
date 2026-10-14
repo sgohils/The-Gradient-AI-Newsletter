@@ -48,7 +48,7 @@ beforeEach(() => {
   const bytes = Buffer.from('unit-test-video');
   fs.writeFileSync(path.join(directory, 'video.mp4'), bytes);
   manifest = { version: 1, status: 'ready', issueDate: '2026-10-03', story, script, duration: 35,
-    videoFile: 'video.mp4', videoSha256: sha256(bytes), captionsFile: 'captions.srt', title: story.title,
+    videoFile: 'video.mp4', videoSha256: sha256(bytes), captionsFile: 'captions.srt', title: script.workingTitle!,
     description: `${story.title}\nSource: ${story.sourceUrl}\nAI-generated narration.` };
   ledger = { version: 1, issues: { [manifest.issueDate]: { story, script, selectedAt: now.toISOString(),
     contentHash: sha256(JSON.stringify({ storyId: story.id, narration: script.narration, title: manifest.title, description: manifest.description })), platforms: {} } } };
@@ -60,6 +60,11 @@ beforeEach(() => {
 afterEach(() => { fs.rmSync(directory, { recursive: true, force: true }); });
 
 describe('safe separate platform publication', () => {
+  it('rejects real-news review previews before any external upload or post', async () => {
+    manifest.reviewOnly = true; store();
+    await expect(publishVideo(options)).rejects.toThrow('review previews');
+    expect(requests).toEqual([]);
+  });
   it('publishes only YouTube by default even when another platform account is configured', async () => {
     const result = await publishVideo({ ...options, platforms: undefined });
     expect(result.issues[manifest.issueDate].platforms.youtube?.status).toBe('published');

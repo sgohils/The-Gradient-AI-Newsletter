@@ -1,8 +1,9 @@
 import { captionChunks } from './captions';
 import { GraphicLayout, GraphicTheme, NarrationTiming, VideoScene, VideoScript, VideoStoryboard, VideoStory } from './types';
 import { SCRIPT_ENDING, validateScript } from './script';
+import { validateNarration } from './timing';
 
-export const GRAPHICS_VERSION = 5;
+export const GRAPHICS_VERSION = 6;
 
 function normalized(text: string): string {
   return text.normalize('NFKC').toLowerCase().replace(/[^\p{L}\p{N}]/gu, '');
@@ -29,7 +30,7 @@ export function numericCallout(text: string): string | undefined {
 
 /** Text on the illustrations comes from the validated narration, not a model. */
 export function visualTerms(text: string): string[] {
-  const matches = text.match(/\b(?:toolkits?|prompts?|responses?|answers?|questions?|tests?|checks?|models?|instructions?|workflows?|code|developers?|users?|privacy|security|robots?|chips?|GPUs?|APIs?|findings|research|data|costs?|patients?|students?|workers?)\b/gi) || [];
+  const matches = text.match(/\b(?:toolkits?|prompts?|responses?|answers?|questions?|tests?|checks?|models?|instructions?|workflows?|code|developers?|users?|privacy|security|robots?|chips?|GPUs?|APIs?|findings|research|data|costs?|patients?|students?|workers?|shipping|submissions|rollbacks|quality|training|reasoning|agents?|tokens?)\b/gi) || [];
   const terms: string[] = [];
   for (const term of matches) {
     if (!terms.some(existing => existing.toLowerCase() === term.toLowerCase())) terms.push(term);
@@ -59,8 +60,73 @@ function sceneLayout(scene: VideoScene, index: number): GraphicLayout {
   return scene.label === 'THE TAKEAWAY' || index % 2 ? 'split' : 'panel';
 }
 
+function buildNewStoryboard(story: VideoStory, script: VideoScript, timing: NarrationTiming): VideoStoryboard {
+  const sentences = validateNarration(script, timing);
+  const boundaries = new Set<number>([0, timing.duration]);
+  let previousCue = 0;
+  for (let target = 3; target < timing.duration - 0.5; target = previousCue + 3) {
+    const near = timing.words.filter(word => Math.abs(word.start - target) <= 0.5)
+      .sort((a, b) => Math.abs(a.start - target) - Math.abs(b.start - target))[0];
+    previousCue = near?.start ?? target;
+    boundaries.add(previousCue);
+  }
+  for (const sentence of sentences.slice(1)) boundaries.add(sentence.start);
+  // Merge a redundant grid cue with a nearby sentence change when coverage
+  // still meets the cadence, avoiding a fraction-of-a-second card flash.
+  const ordered = [...boundaries].sort((a, b) => a - b);
+  const mandatory = new Set([0, timing.duration, ...sentences.slice(1).map(sentence => sentence.start)]);
+  for (let i = ordered.length - 2; i > 0; i--) {
+    if (!mandatory.has(ordered[i]) && ordered[i + 1] - ordered[i - 1] <= 3.55 &&
+        Math.min(ordered[i] - ordered[i - 1], ordered[i + 1] - ordered[i]) < 0.5) ordered.splice(i, 1);
+  }
+  const thread = script.angle === 'comparison' ? 'comparison' :
+    graphicTheme(story.title + ' ' + script.sentences.slice(1, -1).map(s => s.text).join(' '));
+  const explanation = sentences.filter(sentence => sentence.role === 'breakthrough').slice(0, 3);
+  const diagramLabels = explanation.map(item => visualTerms(item.text).join(' / ') ||
+    item.displayText!.split(/\s+/).filter(word => word.length <= 16).slice(0, 3).join(' '));
+  const scenes: VideoScene[] = [];
+  for (let i = 0; i < ordered.length - 1; i++) {
+    const start = ordered[i], end = ordered[i + 1];
+    if (end <= start) continue;
+    const sentence = [...sentences].reverse().find(item => item.start <= start + 0.025) || sentences[0];
+    const spokenWords = timing.words.filter(word => word.start >= start && word.start < end);
+    const spoken = spokenWords.map(word => word.text).join(' ').replace(/\s+([,.;:!?])/g, '$1');
+    const closing = sentence.role === 'engagement';
+    const callout = closing ? undefined : numericCallout(spoken);
+    const terms = visualTerms(spoken || sentence.text);
+    const scene: VideoScene = {
+      start, end, label: closing ? 'YOUR TURN' : sentence.role === 'hook' ? 'THE QUESTION' :
+        sentence.role === 'impact' ? 'WHY IT MATTERS' : 'HOW IT WORKS',
+      theme: callout ? 'number' : thread, text: sentence.text,
+      displayText: closing ? sentence.text : sentence.displayText!,
+      excerpt: false, kind: sentence.role === 'hook' ? 'headline' : 'detail', variant: i,
+      role: sentence.role, cue: i % 3 === 0 ? 'popup' : i % 3 === 1 ? 'diagram' : 'highlight',
+      visual: sentence.visual, sourceVisible: sentence.role !== 'hook', immediate: sentence.role === 'hook' || closing,
+      threadTime: start, terms, ...(callout ? { callout } : {}),
+    };
+    if (!callout && sentence.role === 'breakthrough' && diagramLabels.every(Boolean)) {
+      scene.diagram = { labels: diagramLabels,
+        active: Math.min(explanation.length - 1, sentences.filter(item => item.role === 'breakthrough').findIndex(item => item.text === sentence.text)),
+        comparison: script.angle === 'comparison' };
+    }
+    scene.termTimings = terms.flatMap(term => {
+      const word = spokenWords.find(word => normalized(word.text) === normalized(term));
+      return word ? [{ text: term, start: word.start, end: Math.min(word.end, end) }] : [];
+    });
+    scene.layout = callout ? 'stat' : sentence.role === 'hook' || closing ? 'hero' : scene.diagram ? 'panel' :
+      sentence.visual === 'comparison' ? 'panel' : terms.length ? 'split' : 'panel';
+    scenes.push(scene);
+  }
+  if (scenes.some(scene => scene.end - scene.start > 3.55)) throw new Error('Visual cue gap exceeds three seconds plus pacing tolerance.');
+  const example = scenes.find(scene => scene.role === 'breakthrough' && ['example', 'comparison'].includes(scene.visual || ''));
+  if (!example || example.start > 8) throw new Error('Storyboard needs an early illustrated example.');
+  return { version: 4, scriptVersion: 3, duration: timing.duration, fps: 30, width: 1080, height: 1920,
+    renderWidth: 1080, renderHeight: 1920, scenes };
+}
+
 export function buildStoryboard(story: VideoStory, script: VideoScript, timing: NarrationTiming): VideoStoryboard {
   validateScript(story, script);
+  if (script.version === 3) return buildNewStoryboard(story, script, timing);
   captionChunks(timing);
   const narration = normalized(script.narration);
   let offset = 0;

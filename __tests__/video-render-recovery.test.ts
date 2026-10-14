@@ -3,7 +3,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 import * as os from 'os';
 import { sampleInput } from '../src/video/sample';
-import { buildExtractiveScript } from '../src/video/script';
+import { buildExtractiveScript } from '../src/video/legacy-script';
 import { renderVideo } from '../src/video/render';
 import { sha256, writeJson, readManifest } from '../src/video/storage';
 import { runCommand } from '../src/video/process';

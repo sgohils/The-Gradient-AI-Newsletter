@@ -6,7 +6,7 @@ import { Article } from '../src/types';
 import { prepareVideoInput } from '../src/video/prepare';
 import { restoreReviewedVideo } from '../src/video/preview';
 import { sampleInput } from '../src/video/sample';
-import { buildExtractiveScript } from '../src/video/script';
+import { buildExtractiveScript } from '../src/video/legacy-script';
 import { selectStory } from '../src/video/selection';
 import { readInput, sha256, writeJson } from '../src/video/storage';
 import { ReadyVideoManifest } from '../src/video/types';

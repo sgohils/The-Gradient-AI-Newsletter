@@ -165,6 +165,6 @@ After UI changes, regenerate the README screenshots with `npm run screenshots` f
 
 MIT licensed.
 
-Daily YouTube videos: see [video setup and activation](docs/video-pipeline.md) for free CPU rendering, previews, and account connections. Commands: `npm run video:render` and `npm run video:publish`. Live video publishing starts disabled. The workflow uses YouTube and LinkedIn as its two connected social accounts.
+Daily YouTube videos: see [video setup and activation](docs/video-pipeline.md) for free CPU rendering, previews, and account connections, and [the Shorts format guide](docs/shorts-format.md) for the 35–45 second structure, producer briefs, fallback, and performance review. Commands: `npm run video:render` and `npm run video:publish`. Live video publishing starts disabled. The workflow uses YouTube and LinkedIn as its two connected social accounts.
 
 Daily LinkedIn company Page posts: see the [complete setup and activation guide](docs/linkedin-pipeline.md). The daily workflow prepares the top three stories and full edition link after newsletter publication. Set `NEWSLETTER_BASE_URL` as an Actions Variable for previews, then connect the company Page and enable `LINKEDIN_PUBLISH_ENABLED` after testing. Commands: `npm run linkedin:preview` and `npm run linkedin:publish`. Live posting starts disabled.

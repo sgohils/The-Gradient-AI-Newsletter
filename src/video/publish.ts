@@ -149,6 +149,7 @@ export async function publishVideo(options: PublishOptions): Promise<VideoLedger
   const manifest = readManifest(options.manifestPath);
   if (manifest.status === 'skipped') return ledger;
   if (manifest.sample) throw new Error('Sample videos cannot be published. Render a real newsletter issue.');
+  if (manifest.reviewOnly) throw new Error('Isolated review previews cannot be published. Render with the production ledger.');
   validateScript(manifest.story, manifest.script);
   const entry = ledger.issues[manifest.issueDate];
   if (!entry || storyKey(entry.story.sourceUrl) !== storyKey(manifest.story.sourceUrl)) {

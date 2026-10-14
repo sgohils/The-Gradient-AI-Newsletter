@@ -62,6 +62,9 @@ export function readManifest(file: string): VideoManifest {
       path.basename(manifest.videoFile) !== manifest.videoFile) {
     throw new Error('Invalid or unfinished video manifest.');
   }
+  if (manifest.script.version === 3 && (manifest.duration < 35 || manifest.title !== manifest.script.workingTitle)) {
+    throw new Error('New video manifest must preserve its working title and 35–45 second duration.');
+  }
   return manifest;
 }
 
@@ -74,6 +77,10 @@ export function readLedger(file: string): VideoLedger {
     assertIssueDate(date);
     if (!entry.story || typeof entry.story.sourceUrl !== 'string' || !entry.platforms) {
       throw new Error('Incomplete publication ledger; restore it before publishing.');
+    }
+    if (entry.presentation && (typeof entry.presentation.title !== 'string' || !entry.presentation.title ||
+        !Number.isFinite(entry.presentation.duration) || !Number.isFinite(entry.presentation.wordCount))) {
+      throw new Error('Invalid durable presentation metadata.');
     }
   }
   return ledger;
