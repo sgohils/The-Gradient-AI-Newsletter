@@ -686,7 +686,7 @@
       "platforms": {
         "youtube": {
           "accountId": "6ac27146281ee799a37065e4",
-          "status": "submitting",
+          "status": "published",
           "idempotencyKey": "3e660b5d-9d8d-4b3f-80c8-e26df74db5e3",
           "request": {
             "content": "ClawLoop: Self-Improving Agents via Harness-Native Training Loop\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2610.14118\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-10-15\nAI-generated narration. #AI #AINews #Shorts",
@@ -711,7 +711,9 @@
             ],
             "publishNow": true
           },
-          "firstSubmittedAt": "2026-10-15T15:34:55.094Z"
+          "firstSubmittedAt": "2026-10-15T15:34:55.094Z",
+          "postId": "6ad0f2a0ccaaa522bb6ebf7a",
+          "postUrl": "https://www.youtube.com/watch?v=8zQ5VoKOpZM"
         }
       },
       "script": {
