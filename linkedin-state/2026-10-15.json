@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "issueDate": "2026-10-15",
+  "issueUrl": "https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-10-15",
+  "content": "Today's AI briefing from The Gradient | 2026-10-15\n\n1. Amp puts AI agents to work beyond code with OpenAI models\nAmp announced that its AI agents now run on cutting‑edge OpenAI models—including GPT‑6 Astra, Ultrafast, GPT‑Live‑1, and the new Sign‑in with ChatGPT—allowing them to handle non‑coding workflows.\n\n2. How Third Moment Research runs 10,000 agents for 36+ hours\nThe lab integrated GPT-6 Astra, GPT-6.1 Sol, Codex, and Daybreak cybersecurity models to create a fleet of 10,000 agents that operated nonstop for more than 36 hours, learning and adapting as they went.\n\n3. Google’s Universal Cart shopping tool launches in the US\nGoogle introduced Universal Cart, letting users add items from search results and the Gemini app directly into a single cart and complete purchases with Google Pay.\n\nRead the full briefing and original sources:\nhttps://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-10-15\n\n#AI #ArtificialIntelligence #TheGradient",
+  "contentHash": "a0c67bbf56d27ab5f574feedd6cd1cf97051c2e6cbb4a45358b5a8ee34ddd042",
+  "accountId": "6ac5a561b3c21905c0edcfba",
+  "organizationUrn": "urn:li:organization:136824048",
+  "idempotencyKey": "4841ba6f-090b-4065-8a94-5e0a92ac4aff",
+  "status": "submitting",
+  "firstSubmittedAt": "2026-10-15T15:31:24.317Z"
+}
