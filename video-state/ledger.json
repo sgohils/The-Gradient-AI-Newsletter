@@ -128,8 +128,8 @@
         "sourceUrl": "https://arxiv.org/abs/2610.08923",
         "sourceName": "arXiv cs.AI",
         "publishedAt": "2026-10-08T04:00:00.000Z",
-        "sourceExcerpt": "arXiv:2610.08923v1 Announce Type: new Abstract: Enterprise generative AI applications require robust safety mechanisms that can accommodate diverse risk postures, evolving policies, and varying latency constraints. Current guardrail solutions often suffer from rigidity, relying on fixed policy sets and offering limited transparency or reasoning flexibility. We present Adaguard, an adaptive LLM-as-a-Judge framework designed to address these challenges through dynamic policy enforcement and adaptive reasoning-budget allocation. Built using supervised fine-tuning (SFT) and reinforcement learning (GRPO), AdaGuard generalizes to user-defined safety and compliance policies at runtime without requiring frequent model updates. A core innovation of our approach is the ability to dynamically infer the complexity of input-policy pairs, allowing the model to switch between high-speed black-box inference and explainable, reasoning-enabled moderation. This flexibility enables developers to balance stringent latency requirements with the need for actionable transparency. This adaptive capability allows AdaGuard to rival other guardrail and frontier models several times its size, while its auto-reasoning mode recovers the accuracy of always-on reasoning at a fraction of the latency",
-        "summary": "**What happened:** Researchers unveiled AdaGuard, an adaptive LLM‑as‑a‑Judge system that applies dynamic policy enforcement and reasoning to generative AI outputs, moving beyond static, hard‑coded guardrails.\n\n**Why it matters:** Enterprises can now tailor safety mechanisms to shifting risk postures and regulatory changes without sacrificing speed, offering clearer audit trails and reduced false‑positive rejections.\n\n**Key stats:** • Paper posted on arXiv (v1, 2026‑10) • Targets enterprise AI workloads with variable latency budgets • Claims improved transparency via LLM‑generated reasoning for each decision.\n\n**Source:** https://arxiv.org/abs/2610.08923"
+        "sourceExcerpt": "",
+        "summary": ""
       },
       "selectedAt": "2026-10-08T17:44:54.365Z",
       "platforms": {
@@ -164,37 +164,6 @@
           "error": "Platform rejected the video; inspect the post in Zernio before retrying.",
           "postId": "6ac7d6d5fa07b24157fcbd9d"
         }
-      },
-      "script": {
-        "version": 2,
-        "provider": "extractive",
-        "sentences": [
-          {
-            "text": "This flexibility enables developers to balance stringent latency requirements with the need for actionable transparency.",
-            "evidenceQuote": "This flexibility enables developers to balance stringent latency requirements with the need for actionable transparency.",
-            "role": "hook",
-            "displayText": "Developers to balance stringent latency requirements"
-          },
-          {
-            "text": "arXiv:2610.08923v1 Announce Type: new Abstract: Enterprise generative AI applications require robust safety mechanisms that can accommodate diverse risk postures, evolving policies, and varying latency constraints.",
-            "evidenceQuote": "arXiv:2610.08923v1 Announce Type: new Abstract: Enterprise generative AI applications require robust safety mechanisms that can accommodate diverse risk postures, evolving policies, and varying latency constraints.",
-            "role": "detail",
-            "displayText": "Accommodate diverse risk postures"
-          },
-          {
-            "text": "Current guardrail solutions often suffer from rigidity, relying on fixed policy sets and offering limited transparency or reasoning flexibility.",
-            "evidenceQuote": "Current guardrail solutions often suffer from rigidity, relying on fixed policy sets and offering limited transparency or reasoning flexibility.",
-            "role": "detail",
-            "displayText": "Current guardrail solutions often suffer from rigidity"
-          },
-          {
-            "text": "arXiv cs.AI says it present Adaguard, an adaptive LLM-as-a-Judge framework designed to address these challenges through dynamic policy enforcement and adaptive reasoning-budget allocation.",
-            "evidenceQuote": "We present Adaguard, an adaptive LLM-as-a-Judge framework designed to address these challenges through dynamic policy enforcement and adaptive reasoning-budget allocation.",
-            "role": "takeaway",
-            "displayText": "ArXiv cs.AI says it present Adaguard"
-          }
-        ],
-        "narration": "This flexibility enables developers to balance stringent latency requirements with the need for actionable transparency. arXiv:2610.08923v1 Announce Type: new Abstract: Enterprise generative AI applications require robust safety mechanisms that can accommodate diverse risk postures, evolving policies, and varying latency constraints. Current guardrail solutions often suffer from rigidity, relying on fixed policy sets and offering limited transparency or reasoning flexibility. arXiv cs.AI says it present Adaguard, an adaptive LLM-as-a-Judge framework designed to address these challenges through dynamic policy enforcement and adaptive reasoning-budget allocation.\nSource in the description."
       },
       "selectionReason": "A concrete capability or everyday consequence in the original evidence.",
       "contentHash": "62d07d514da8f1abb0f7cd9a3e4e6f2f75a47a477af580ac02b2d0ecd6b18323",
@@ -700,6 +669,97 @@
         "publicUrl": "https://media.zernio.com/temp/1791992884452_jzxad03x_2026-10-14.mp4",
         "videoSha256": "5e39c23172eaa87f2b125a9299385734fb0c8644d9929d3e366fd545dfc9691f",
         "uploadedAt": "2026-10-14T15:48:06.287Z"
+      }
+    },
+    "2026-10-15": {
+      "story": {
+        "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.14118",
+        "rank": 6,
+        "title": "ClawLoop: Self-Improving Agents via Harness-Native Training Loop",
+        "sourceUrl": "https://arxiv.org/abs/2610.14118",
+        "sourceName": "arXiv cs.AI",
+        "publishedAt": "2026-10-15T04:00:00.000Z",
+        "sourceExcerpt": "arXiv:2610.14118v1 Announce Type: new Abstract: The rapid advancement of Large Language Models (LLMs) has driven their deployment toward general-purpose harness environments, where LLM-based agents operate in sandbox workspaces and interact directly with file systems and shells. While numerous post-training pipelines exist for tool-use agents, their counterparts for harness-based agents remain scarce and are predominantly one-shot and teacher-dependent: a stronger external model synthesizes tasks and collects trajectories, the target agent is trained once, and evaluation results are consumed by human researchers rather than fed back into the loop. Such pipelines are inherently bounded by the capability of the external model and the scope of human prior, leaving no room for self-improvement. To address these limitations, we propose ClawLoop, a framework that enables self-improving without any external teacher model and with minimal prior dependencies. ClawLoop composes three phases into a self-sustaining cycle: Task Synthesis, which generates a diverse pool of training tasks via two complementary construction routines, applies diagnosis-conditioned difficulty growth followed by both agent-free and agent-based task validation; Training, which updates the agent via SFT and/or RL; and Diagnosis and Feedback, which analyzes the agent's rollout behaviors to produce a capability analysis report that will be used as feedback for task synthesis in the next iteration. Using Qwen3.6-27B as the loop model, ClawLoop yields consistent improvements on SkillsBench, Claw-Eval-Live, and ClawGym-Bench. The iteratively refined tasks are further transferred to smaller-scale Qwen3.5-4B and 9B models with gains across all benchmarks, validating data quality independently of the loop model.",
+        "summary": ""
+      },
+      "selectedAt": "2026-10-15T15:34:17.937Z",
+      "platforms": {
+        "youtube": {
+          "accountId": "6ac27146281ee799a37065e4",
+          "status": "prepared",
+          "idempotencyKey": "3e660b5d-9d8d-4b3f-80c8-e26df74db5e3"
+        }
+      },
+      "script": {
+        "version": 3,
+        "provider": "extractive",
+        "format": "source-fallback",
+        "angle": "capability",
+        "workingTitle": "ClawLoop: Self-Improving Agents via",
+        "availability": "unknown",
+        "hookStyle": "question",
+        "sentences": [
+          {
+            "text": "Would you use ClawLoop?",
+            "evidenceQuote": "To address these limitations, we propose ClawLoop, a framework that enables self-improving without any external teacher model and with minimal prior dependencies.",
+            "role": "hook",
+            "visual": "example",
+            "displayText": "Would you use ClawLoop?"
+          },
+          {
+            "text": "Such pipelines are inherently bounded by the capability of the external model and the scope of human prior, leaving no room for self-improvement.",
+            "evidenceQuote": "Such pipelines are inherently bounded by the capability of the external model and the scope of human prior, leaving no room for self-improvement.",
+            "role": "breakthrough",
+            "visual": "example",
+            "displayText": "Such pipelines are inherently bounded by the capability"
+          },
+          {
+            "text": "Using Qwen3.6-27B as the loop model, ClawLoop yields consistent improvements on SkillsBench, Claw-Eval-Live, and ClawGym-Bench.",
+            "evidenceQuote": "Using Qwen3.6-27B as the loop model, ClawLoop yields consistent improvements on SkillsBench, Claw-Eval-Live, and ClawGym-Bench.",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "Using Qwen3.6-27B as the loop model"
+          },
+          {
+            "text": "The iteratively refined tasks are further transferred to smaller-scale Qwen3.5-4B and 9B models with gains across all benchmarks, validating data quality independently of the loop model.",
+            "evidenceQuote": "The iteratively refined tasks are further transferred to smaller-scale Qwen3.5-4B and 9B models with gains across all benchmarks, validating data quality independently of the loop model.",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "The iteratively refined tasks are further transferred"
+          },
+          {
+            "text": "This source excerpt does not confirm public access.",
+            "evidenceQuote": "arXiv:2610.14118v1 Announce Type: new Abstract: The rapid advancement of Large Language Models (LLMs) has driven their deployment toward general-purpose harness environments, where LLM-based agents operate in sandbox workspaces and interact directly with file systems and shells.",
+            "role": "impact",
+            "visual": "highlight",
+            "displayText": "does not confirm public access"
+          },
+          {
+            "text": "Would you try ClawLoop, or wait for more proof?",
+            "evidenceQuote": "To address these limitations, we propose ClawLoop, a framework that enables self-improving without any external teacher model and with minimal prior dependencies.",
+            "role": "engagement",
+            "visual": "highlight",
+            "displayText": "Would you try ClawLoop"
+          }
+        ],
+        "narration": "Would you use ClawLoop? Such pipelines are inherently bounded by the capability of the external model and the scope of human prior, leaving no room for self-improvement. Using Qwen3.6-27B as the loop model, ClawLoop yields consistent improvements on SkillsBench, Claw-Eval-Live, and ClawGym-Bench. The iteratively refined tasks are further transferred to smaller-scale Qwen3.5-4B and 9B models with gains across all benchmarks, validating data quality independently of the loop model. This source excerpt does not confirm public access. Would you try ClawLoop, or wait for more proof?"
+      },
+      "presentation": {
+        "title": "ClawLoop: Self-Improving Agents via",
+        "format": "source-fallback",
+        "angle": "capability",
+        "hookStyle": "question",
+        "availability": "unknown",
+        "duration": 40.325,
+        "wordCount": 85,
+        "scriptVersion": 3
+      },
+      "selectionReason": "A concrete capability or everyday consequence in the original evidence.",
+      "contentHash": "bb0ec1ab2a0a46323715796be31c8fefd7e2a3046c253f43fab5045377f70a22",
+      "media": {
+        "publicUrl": "https://media.zernio.com/temp/1792078492551_c1gu88s7_2026-10-15.mp4",
+        "videoSha256": "f5c96f1a43300c9d4b9786c75bcc636fa2eddb8a2c4c3ced3a027d975a091eb2",
+        "uploadedAt": "2026-10-15T15:34:53.562Z"
       }
     }
   }
