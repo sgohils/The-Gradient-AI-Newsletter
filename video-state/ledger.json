@@ -712,7 +712,7 @@
       "platforms": {
         "youtube": {
           "accountId": "6ac27146281ee799a37065e4",
-          "status": "submitting",
+          "status": "published",
           "idempotencyKey": "6ae4b66e-e244-44a3-83ef-a7ecc31798af",
           "request": {
             "content": "The World Won't Wait: Evaluating and Teaching Agents Under a Live Clock\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2610.20665\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-10-16\nAI-generated narration. #AI #AINews #Shorts",
@@ -737,7 +737,9 @@
             ],
             "publishNow": true
           },
-          "firstSubmittedAt": "2026-10-16T15:15:55.956Z"
+          "firstSubmittedAt": "2026-10-16T15:15:55.956Z",
+          "postId": "6ad23fae7f9ef04b94e5814b",
+          "postUrl": "https://www.youtube.com/watch?v=dzH_F1Js9bY"
         }
       },
       "script": {
