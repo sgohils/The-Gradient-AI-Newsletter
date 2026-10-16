@@ -181,8 +181,8 @@
         "sourceUrl": "https://arxiv.org/abs/2610.10786",
         "sourceName": "arXiv cs.AI",
         "publishedAt": "2026-10-09T04:00:00.000Z",
-        "sourceExcerpt": "arXiv:2610.10786v1 Announce Type: new Abstract: Planning is increasingly important for long-horizon agents, where successful execution requires coordinating subgoals, tool use, and intermediate outcomes over many steps. Yet assumptions made during planning may be invalidated by the environment, tools may return unexpected results, or actions may fail. Effective agents must therefore not only generate plans, but also revise them. Such revisions often affect only part of a plan, leaving the preceding and subsequent structure intact. Rather than regenerate the entire plan and risk unnecessary changes, repair can regenerate the affected region conditioned on the preserved prefix and suffix. We introduce Plan-and-Patch, a plan-and-act framework in which a diffusion language model (dLLM) generates a structured, program-like plan through parallel unmasking and repairs it by filling in selected regions while keeping the surrounding steps fixed. We compare DreamReasoner-8B and Qwen3-8B as diffusion and autoregressive (AR) planners. On Natural Plan without task-specific training, diffusion (53.7%) achieves nearly twice the plan repair success rate of AR (27.0%). After task-specific training on agentic benchmarks, ALFWorld and TextCraft, the planners achieve similar observed success in plan generation, while diffusion reduces mean plan-generation latency by 39-46% relative to AR. Our results show that Plan-and-Patch provides a framework for faster plan generation and effective plan repair in long-horizon agents.",
-        "summary": "**What happened:** Researchers presented Plan‑and‑Patch, a diffusion language model that generates initial plans for long‑horizon tasks and then locally edits (“patches”) only the faulty segments when assumptions break, tools misbehave, or actions fail.\n\n**Why it matters:** Traditional planners assume their world model stays static, leading to brittle behavior. By integrating a patching mechanism, agents become more resilient and can recover from unexpected outcomes without replanning from scratch, a key step toward reliable autonomous systems.\n\n**Key stats:** The paper reports empirical gains on several long‑horizon planning benchmarks, showing fewer plan‑revision errors and faster recovery times compared with baseline planners. Detailed numbers are forthcoming as the work is newly submitted.\n\n**Source:** https://arxiv.org/abs/2610.10786"
+        "sourceExcerpt": "",
+        "summary": ""
       },
       "selectedAt": "2026-10-09T17:20:41.221Z",
       "platforms": {
@@ -190,70 +190,10 @@
           "accountId": "6ac27146281ee799a37065e4",
           "status": "published",
           "idempotencyKey": "1703d858-788e-44e0-8306-08f705503a19",
-          "request": {
-            "content": "Plan-and-Patch: Diffusion Language Models for Agentic Planning\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2610.10786\n\nThe Gradient: https://gradientnews.app/archive/2026-10-09\nAI-generated narration. #AI #AINews #Shorts",
-            "mediaItems": [
-              {
-                "type": "video",
-                "url": "https://media.zernio.com/temp/1791566551510_pjt3uoza_2026-10-09.mp4"
-              }
-            ],
-            "platforms": [
-              {
-                "platform": "youtube",
-                "accountId": "6ac27146281ee799a37065e4",
-                "platformSpecificData": {
-                  "title": "Effective agents must therefore not only generate plans, but also revise them.",
-                  "visibility": "public",
-                  "madeForKids": false,
-                  "containsSyntheticMedia": true,
-                  "categoryId": "28"
-                }
-              }
-            ],
-            "publishNow": true
-          },
           "firstSubmittedAt": "2026-10-09T17:22:33.511Z",
           "postId": "6ac922da50bb3bdce362ce89",
           "postUrl": "https://www.youtube.com/watch?v=1cQ-E4fS9hQ"
         }
-      },
-      "script": {
-        "version": 2,
-        "provider": "extractive",
-        "sentences": [
-          {
-            "text": "Effective agents must therefore not only generate plans, but also revise them.",
-            "evidenceQuote": "Effective agents must therefore not only generate plans, but also revise them.",
-            "role": "hook",
-            "displayText": "Effective agents must therefore not only generate plans"
-          },
-          {
-            "text": "arXiv:2610.10786v1 Announce Type: new Abstract: Planning is increasingly important for long-horizon agents, where successful execution requires coordinating subgoals, tool use, and intermediate outcomes over many steps.",
-            "evidenceQuote": "arXiv:2610.10786v1 Announce Type: new Abstract: Planning is increasingly important for long-horizon agents, where successful execution requires coordinating subgoals, tool use, and intermediate outcomes over many steps.",
-            "role": "detail",
-            "displayText": "ArXiv:2610.10786v1 Announce Type: new Abstract: Planning is increasingly"
-          },
-          {
-            "text": "Yet assumptions made during planning may be invalidated by the environment, tools may return unexpected results, or actions may fail.",
-            "evidenceQuote": "Yet assumptions made during planning may be invalidated by the environment, tools may return unexpected results, or actions may fail.",
-            "role": "detail",
-            "displayText": "Yet assumptions made during planning may be invalidated"
-          },
-          {
-            "text": "Such revisions often affect only part of a plan, leaving the preceding and subsequent structure intact.",
-            "evidenceQuote": "Such revisions often affect only part of a plan, leaving the preceding and subsequent structure intact.",
-            "role": "detail",
-            "displayText": "Such revisions often affect only part"
-          },
-          {
-            "text": "Rather than regenerate the entire plan and risk unnecessary changes, repair can regenerate the affected region conditioned on the preserved prefix and suffix.",
-            "evidenceQuote": "Rather than regenerate the entire plan and risk unnecessary changes, repair can regenerate the affected region conditioned on the preserved prefix and suffix.",
-            "role": "takeaway",
-            "displayText": "Regenerate the affected region conditioned on the preserved"
-          }
-        ],
-        "narration": "Effective agents must therefore not only generate plans, but also revise them. arXiv:2610.10786v1 Announce Type: new Abstract: Planning is increasingly important for long-horizon agents, where successful execution requires coordinating subgoals, tool use, and intermediate outcomes over many steps. Yet assumptions made during planning may be invalidated by the environment, tools may return unexpected results, or actions may fail. Such revisions often affect only part of a plan, leaving the preceding and subsequent structure intact. Rather than regenerate the entire plan and risk unnecessary changes, repair can regenerate the affected region conditioned on the preserved prefix and suffix.\nSource in the description."
       },
       "selectionReason": "A source-backed, measurable change in time, cost, or capability.",
       "contentHash": "aafbe28e3c6632ad1bcf8396f14612945ca88eb74b0a5a485bf35e152ec81632",
@@ -349,42 +289,11 @@
         "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1x1fjrv/i_built_marn_a_pytorch_library_for_training/",
         "sourceName": "Reddit r/MachineLearning",
         "publishedAt": "2026-10-09T08:05:23.000Z",
-        "sourceExcerpt": "I built MaRN (Mapping Networks), a PyTorch library that lets you optimize a compact latent representation instead of directly training every model parameter. Some results from my current benchmarks: MNIST CNN: Reduced a 537,748-parameter CNN to 4,080 trainable parameters (131.8× reduction), with accuracy decreasing from 99.07% → 98.10% (−0.97 pp). A smaller 107,998-parameter CNN was reduced to 1,872 trainable parameters (57.7× reduction), with accuracy decreasing from 98.83% → 97.18% (−1.65 pp). These results come with trade-offs: mapped models can train substantially slower, and performance varies by task. The benchmarks are exploratory, using synthetic data for some tasks, and aren't evidence of general superiority over direct training. The library includes global and layer-wise mappings, regularization options, and pruning/LRD integrations. Code: https://github.com/arjunmnath/MaRN Docs: https://marn.readthedocs.io/ I'd value feedback on the approach, benchmark design, and where this kind of parameter-efficient optimization could be useful. submitted by /u/Less_Dream_6331 [link] [comments]",
+        "sourceExcerpt": "",
         "summary": ""
       },
       "selectedAt": "2026-10-11T16:34:33.604Z",
       "platforms": {},
-      "script": {
-        "version": 2,
-        "provider": "extractive",
-        "sentences": [
-          {
-            "text": "The library includes global and layer-wise mappings, regularization options, and pruning/LRD integrations.",
-            "evidenceQuote": "The library includes global and layer-wise mappings, regularization options, and pruning/LRD integrations.",
-            "role": "hook",
-            "displayText": "The library includes global and layer-wise mappings"
-          },
-          {
-            "text": "I built MaRN (Mapping Networks), a PyTorch library that lets you optimize a compact latent representation instead of directly training every model parameter.",
-            "evidenceQuote": "I built MaRN (Mapping Networks), a PyTorch library that lets you optimize a compact latent representation instead of directly training every model parameter.",
-            "role": "detail",
-            "displayText": "You optimize a compact latent representation instead"
-          },
-          {
-            "text": "Some results from my current benchmarks: MNIST CNN: Reduced a 537,748-parameter CNN to 4,080 trainable parameters (131.8× reduction), with accuracy decreasing from 99.07% → 98.10% (−0.97 pp).",
-            "evidenceQuote": "Some results from my current benchmarks: MNIST CNN: Reduced a 537,748-parameter CNN to 4,080 trainable parameters (131.8× reduction), with accuracy decreasing from 99.07% → 98.10% (−0.97 pp).",
-            "role": "detail",
-            "displayText": "Some results from my current benchmarks: MNIST CNN"
-          },
-          {
-            "text": "A smaller 107,998-parameter CNN was reduced to 1,872 trainable parameters (57.7× reduction), with accuracy decreasing from 98.83% → 97.18% (−1.65 pp).",
-            "evidenceQuote": "A smaller 107,998-parameter CNN was reduced to 1,872 trainable parameters (57.7× reduction), with accuracy decreasing from 98.83% → 97.18% (−1.65 pp).",
-            "role": "takeaway",
-            "displayText": "A smaller 107,998-parameter CNN was reduced to 1,872"
-          }
-        ],
-        "narration": "The library includes global and layer-wise mappings, regularization options, and pruning/LRD integrations. I built MaRN (Mapping Networks), a PyTorch library that lets you optimize a compact latent representation instead of directly training every model parameter. Some results from my current benchmarks: MNIST CNN: Reduced a 537,748-parameter CNN to 4,080 trainable parameters (131.8× reduction), with accuracy decreasing from 99.07% → 98.10% (−0.97 pp). A smaller 107,998-parameter CNN was reduced to 1,872 trainable parameters (57.7× reduction), with accuracy decreasing from 98.83% → 97.18% (−1.65 pp).\nSource in the description."
-      },
       "selectionReason": "A source-backed, measurable change in time, cost, or capability."
     },
     "2026-10-12": {
@@ -786,6 +695,97 @@
         "publicUrl": "https://media.zernio.com/temp/1792078492551_c1gu88s7_2026-10-15.mp4",
         "videoSha256": "f5c96f1a43300c9d4b9786c75bcc636fa2eddb8a2c4c3ced3a027d975a091eb2",
         "uploadedAt": "2026-10-15T15:34:53.562Z"
+      }
+    },
+    "2026-10-16": {
+      "story": {
+        "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.20665",
+        "rank": 2,
+        "title": "The World Won't Wait: Evaluating and Teaching Agents Under a Live Clock",
+        "sourceUrl": "https://arxiv.org/abs/2610.20665",
+        "sourceName": "arXiv cs.AI",
+        "publishedAt": "2026-10-16T04:00:00.000Z",
+        "sourceExcerpt": "arXiv:2610.20665v1 Announce Type: new Abstract: Large language model (LLM) agents can solve complex interactive tasks, yet reasoning and tool calls take time. In continuously changing environments, an otherwise correct action may arrive too late. We introduce RealtimeBench, with 180 tasks across six game types, to evaluate agents while games continue running during inference. Paired evaluations show that GPT-6.1-sol outperforms the faster Jev when games are paused, but falls behind when they keep running. We propose Two-Timescale Offline Recursive Self-Improvement (TORSI): a slow teacher studies failures and tests corrections in paused games between attempts, then writes reusable instructions for a fast student. The student acts without teacher calls during gameplay, and validation scores determine which updates are adopted. Two rounds raise Jev's average test score from 13.51 to 24.19 on a 0--100 progress scale, improving all six game types. The instructions also improve average scores for three other models without retuning. These findings point toward real-time intelligence: enabling powerful LLM agents to remain effective in a continuously changing world by organizing deliberation, learning, and action across timescales.",
+        "summary": "**What happened:** Researchers introduced RealtimeBench, a suite of 180 tasks spanning six game genres, where the game continues running while the agent thinks. Paired tests showed GPT‑6.1‑sol beats a faster baseline (Jev) when the game is paused, but loses when time keeps ticking.\n\n**Why it matters:** In dynamic settings—stock trading, autonomous robotics, live chat—delayed actions can be useless or harmful. Evaluating agents under a live clock forces developers to prioritize speed‑aware reasoning and tool use.\n\n**Key stats:**\n- 180 tasks across six game types\n- GPT‑6.1‑sol outperforms Jev in paused mode but falls behind in realtime mode\n- Demonstrates a measurable gap between raw capability and timeliness\n\n**Source:** https://arxiv.org/abs/2610.20665"
+      },
+      "selectedAt": "2026-10-16T15:15:18.279Z",
+      "platforms": {
+        "youtube": {
+          "accountId": "6ac27146281ee799a37065e4",
+          "status": "prepared",
+          "idempotencyKey": "6ae4b66e-e244-44a3-83ef-a7ecc31798af"
+        }
+      },
+      "script": {
+        "version": 3,
+        "provider": "extractive",
+        "format": "source-fallback",
+        "angle": "capability",
+        "workingTitle": "World Won't Wait: Evaluating and Teaching Agents",
+        "availability": "unknown",
+        "hookStyle": "question",
+        "sentences": [
+          {
+            "text": "Would you use World Won't Wait?",
+            "evidenceQuote": "arXiv:2610.20665v1 Announce Type: new Abstract: Large language model (LLM) agents can solve complex interactive tasks, yet reasoning and tool calls take time. In continuously changing environments, an otherwise correct action may arrive too late. We introduce RealtimeBench, with 180 tasks across six game types, to evaluate agents while games continue running during inference. Paired evaluations show that GPT-6.1-sol outperforms the faster Jev when games are paused, but falls behind when they keep running. We propose Two-Timescale Offline Recursive Self-Improvement (TORSI): a slow teacher studies failures and tests corrections in paused games between attempts, then writes reusable instructions for a fast student. The student acts without teacher calls during gameplay, and validation scores determine which updates are adopted. Two rounds raise Jev's average test score from 13.51 to 24.19 on a 0--100 progress scale, improving all six game types. The instructions also improve average scores for three other models without retuning. These findings point toward real-time intelligence: enabling powerful LLM agents to remain effective in a continuously changing world by organizing deliberation, learning, and action across timescales.",
+            "role": "hook",
+            "visual": "example",
+            "displayText": "Would you use World Won't Wait?"
+          },
+          {
+            "text": "arXiv:2610.20665v1 Announce Type: new Abstract: Large language model (LLM) agents can solve complex interactive tasks, yet reasoning and tool calls take time.",
+            "evidenceQuote": "arXiv:2610.20665v1 Announce Type: new Abstract: Large language model (LLM) agents can solve complex interactive tasks, yet reasoning and tool calls take time.",
+            "role": "breakthrough",
+            "visual": "example",
+            "displayText": "Solve complex interactive tasks"
+          },
+          {
+            "text": "In continuously changing environments, an otherwise correct action may arrive too late.",
+            "evidenceQuote": "In continuously changing environments, an otherwise correct action may arrive too late.",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "In continuously changing environments"
+          },
+          {
+            "text": "These findings point toward real-time intelligence: enabling powerful LLM agents to remain effective in a continuously changing world by organizing deliberation, learning, and action across timescales.",
+            "evidenceQuote": "These findings point toward real-time intelligence: enabling powerful LLM agents to remain effective in a continuously changing world by organizing deliberation, learning, and action across timescales.",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "These findings point toward real-time intelligence: enabling powerful"
+          },
+          {
+            "text": "This source excerpt does not confirm public access.",
+            "evidenceQuote": "arXiv:2610.20665v1 Announce Type: new Abstract: Large language model (LLM) agents can solve complex interactive tasks, yet reasoning and tool calls take time.",
+            "role": "impact",
+            "visual": "highlight",
+            "displayText": "does not confirm public access"
+          },
+          {
+            "text": "Would you try World Won't Wait, or wait for more proof?",
+            "evidenceQuote": "arXiv:2610.20665v1 Announce Type: new Abstract: Large language model (LLM) agents can solve complex interactive tasks, yet reasoning and tool calls take time. In continuously changing environments, an otherwise correct action may arrive too late. We introduce RealtimeBench, with 180 tasks across six game types, to evaluate agents while games continue running during inference. Paired evaluations show that GPT-6.1-sol outperforms the faster Jev when games are paused, but falls behind when they keep running. We propose Two-Timescale Offline Recursive Self-Improvement (TORSI): a slow teacher studies failures and tests corrections in paused games between attempts, then writes reusable instructions for a fast student. The student acts without teacher calls during gameplay, and validation scores determine which updates are adopted. Two rounds raise Jev's average test score from 13.51 to 24.19 on a 0--100 progress scale, improving all six game types. The instructions also improve average scores for three other models without retuning. These findings point toward real-time intelligence: enabling powerful LLM agents to remain effective in a continuously changing world by organizing deliberation, learning, and action across timescales.",
+            "role": "engagement",
+            "visual": "highlight",
+            "displayText": "Would you try World Won't Wait"
+          }
+        ],
+        "narration": "Would you use World Won't Wait? arXiv:2610.20665v1 Announce Type: new Abstract: Large language model (LLM) agents can solve complex interactive tasks, yet reasoning and tool calls take time. In continuously changing environments, an otherwise correct action may arrive too late. These findings point toward real-time intelligence: enabling powerful LLM agents to remain effective in a continuously changing world by organizing deliberation, learning, and action across timescales. This source excerpt does not confirm public access. Would you try World Won't Wait, or wait for more proof?"
+      },
+      "presentation": {
+        "title": "World Won't Wait: Evaluating and Teaching Agents",
+        "format": "source-fallback",
+        "angle": "capability",
+        "hookStyle": "question",
+        "availability": "unknown",
+        "duration": 41.725,
+        "wordCount": 85,
+        "scriptVersion": 3
+      },
+      "selectionReason": "A concrete capability or everyday consequence in the original evidence.",
+      "contentHash": "463599b0f3e34e429ad4fabd88a318a743a6ed5a907cbca81af547066e9dc8df",
+      "media": {
+        "publicUrl": "https://media.zernio.com/temp/1792163752155_y9x7hzj6_2026-10-16.mp4",
+        "videoSha256": "1e9fedd3ed48d2e9ffc48ee7f60c34e34447df2d673a5df5f7b73d43adff8611",
+        "uploadedAt": "2026-10-16T15:15:53.296Z"
       }
     }
   }
