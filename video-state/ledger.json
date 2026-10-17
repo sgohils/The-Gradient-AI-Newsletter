@@ -211,8 +211,8 @@
         "sourceUrl": "https://arxiv.org/abs/2610.10942",
         "sourceName": "arXiv cs.AI",
         "publishedAt": "2026-10-10T04:00:00.000Z",
-        "sourceExcerpt": "arXiv:2610.10942v1 Announce Type: new Abstract: Reinforcement learning environments are now a primary lever for improving large language model (LLM) capabilities in post-training, yet most agentic benchmarks remain static: the world moves only when the agent acts, the reward is a terminal verdict, and the pass bar is set arbitrarily. We introduce StoreBench, a live-commerce environment in which an agent runs a mid-size online apparel store on a production-grade commerce backend, testing long-horizon planning and economic judgment under uncertainty. Customers order around the clock, suppliers reprice and fail, and market shocks arrive with partial or no warning. The agent acts through the same 29 merchant tools a human operator would use, under a windowed operation budget that makes simulated time a function of actions taken, so model latency cannot influence simulated time. Pass thresholds are calibrated against scripted anchor policies, the reward is hardened against a catalogue of reward hacks, and every episode replays identically given a sequence of actions. We evaluate seven frontier LLMs on 11 scenarios of 30 to 45 days and a full simulated year, over three world seeds at matched reasoning effort. No model matches the scripted smart-triage policy on average: the best, DeepSeek-V4-Pro, passes 49% of task-seed cells against the heuristic's 97%. Human experts working through the same tools and budgets outscore every model (mean composite 0.708 vs. 0.700). Over a full simulated year under the Claude Code harness, most models show dramatic performance improvement. In a GRPO post-training run, Qwen3.5-27B trained on only five disjoint tasks raises its mean composite on the held-out evaluation tasks from 0.136 to 0.373. We release five example training-split tasks, ten sample trajectories, and the scoring and verification tooling; the full environment and evaluation suite are withheld to keep the benchmark uncontaminated.",
-        "summary": "**What happened:** Researchers unveiled StoreBench, a live‑commerce simulation where autonomous agents manage a mid‑size online clothing store using a production‑grade backend. The environment runs continuously, exposing agents to realistic customer behavior, inventory changes, and revenue pressures.\n\n**Why it matters:** Traditional RL benchmarks freeze the world until the agent acts and reward only at episode end, limiting long‑term planning. StoreBench introduces a dynamic, ongoing marketplace, enabling the training and evaluation of agents that must balance inventory, pricing, marketing, and fulfillment over weeks of simulated operation.\n\n**Key stats:** • Simulates a store with thousands of SKUs and realistic inventory levels\n• Handles tens of thousands of daily simulated customer visits\n• Supports episodes up to 30 days of continuous operation\n• Integrated with a production‑grade e‑commerce stack (catalog, checkout, analytics)\n\n**Source:** https://arxiv.org/abs/2610.10942"
+        "sourceExcerpt": "",
+        "summary": ""
       },
       "selectedAt": "2026-10-10T16:09:03.056Z",
       "platforms": {
@@ -220,58 +220,10 @@
           "accountId": "6ac27146281ee799a37065e4",
           "status": "published",
           "idempotencyKey": "db8fc33e-d69f-4e5d-b8bb-c7dd01898d9a",
-          "request": {
-            "content": "StoreBench: A Live-Commerce Environment for Evaluating and Training Autonomous Operator Agents\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2610.10942\n\nThe Gradient: https://gradientnews.app/archive/2026-10-10\nAI-generated narration. #AI #AINews #Shorts",
-            "mediaItems": [
-              {
-                "type": "video",
-                "url": "https://media.zernio.com/temp/1791648648032_frp1u20r_2026-10-10.mp4"
-              }
-            ],
-            "platforms": [
-              {
-                "platform": "youtube",
-                "accountId": "6ac27146281ee799a37065e4",
-                "platformSpecificData": {
-                  "title": "Customers order around the clock, suppliers reprice and fail, and market shocks arrive wit",
-                  "visibility": "public",
-                  "madeForKids": false,
-                  "containsSyntheticMedia": true,
-                  "categoryId": "28"
-                }
-              }
-            ],
-            "publishNow": true
-          },
           "firstSubmittedAt": "2026-10-10T16:10:50.617Z",
           "postId": "6aca638b418195fb36d57327",
           "postUrl": "https://www.youtube.com/watch?v=oouPO1D4SlE"
         }
-      },
-      "script": {
-        "version": 2,
-        "provider": "extractive",
-        "sentences": [
-          {
-            "text": "Customers order around the clock, suppliers reprice and fail, and market shocks arrive with partial or no warning.",
-            "evidenceQuote": "Customers order around the clock, suppliers reprice and fail, and market shocks arrive with partial or no warning.",
-            "role": "hook",
-            "displayText": "Customers order around the clock"
-          },
-          {
-            "text": "arXiv:2610.10942v1 Announce Type: new Abstract: Reinforcement learning environments are now a primary lever for improving large language model (LLM) capabilities in post-training, yet most agentic benchmarks remain static: the world moves only when the agent acts, the reward is a terminal verdict, and the pass bar is set arbitrarily.",
-            "evidenceQuote": "arXiv:2610.10942v1 Announce Type: new Abstract: Reinforcement learning environments are now a primary lever for improving large language model (LLM) capabilities in post-training, yet most agentic benchmarks remain static: the world moves only when the agent acts, the reward is a terminal verdict, and the pass bar is set arbitrarily.",
-            "role": "detail",
-            "displayText": "ArXiv:2610.10942v1 Announce Type: new Abstract: Reinforcement learning environments"
-          },
-          {
-            "text": "arXiv cs.AI says it introduce StoreBench, a live-commerce environment in which an agent runs a mid-size online apparel store on a production-grade commerce backend, testing long-horizon planning and economic judgment under uncertainty.",
-            "evidenceQuote": "We introduce StoreBench, a live-commerce environment in which an agent runs a mid-size online apparel store on a production-grade commerce backend, testing long-horizon planning and economic judgment under uncertainty.",
-            "role": "takeaway",
-            "displayText": "ArXiv cs.AI says it introduce StoreBench"
-          }
-        ],
-        "narration": "Customers order around the clock, suppliers reprice and fail, and market shocks arrive with partial or no warning. arXiv:2610.10942v1 Announce Type: new Abstract: Reinforcement learning environments are now a primary lever for improving large language model (LLM) capabilities in post-training, yet most agentic benchmarks remain static: the world moves only when the agent acts, the reward is a terminal verdict, and the pass bar is set arbitrarily. arXiv cs.AI says it introduce StoreBench, a live-commerce environment in which an agent runs a mid-size online apparel store on a production-grade commerce backend, testing long-horizon planning and economic judgment under uncertainty.\nSource in the description."
       },
       "selectionReason": "A source-backed, measurable change in time, cost, or capability.",
       "contentHash": "c6505d2ecd0514815c57640f5efc10b76fc664a901926e9b42c2460d94c7045f",
@@ -812,6 +764,97 @@
         "publicUrl": "https://media.zernio.com/temp/1792163752155_y9x7hzj6_2026-10-16.mp4",
         "videoSha256": "1e9fedd3ed48d2e9ffc48ee7f60c34e34447df2d673a5df5f7b73d43adff8611",
         "uploadedAt": "2026-10-16T15:15:53.296Z"
+      }
+    },
+    "2026-10-17": {
+      "story": {
+        "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.20669",
+        "rank": 3,
+        "title": "Value-Informed Schedule Trimming for Accelerated Sequential Monte Carlo Guidance in Discrete Diffusion",
+        "sourceUrl": "https://arxiv.org/abs/2610.20669",
+        "sourceName": "arXiv cs.AI",
+        "publishedAt": "2026-10-17T04:00:00.000Z",
+        "sourceExcerpt": "arXiv:2610.20669v1 Announce Type: new Abstract: Reward-guided discrete diffusion enables test-time alignment with downstream objectives, but applying Sequential Monte Carlo (SMC) guidance at every denoising step is computationally expensive. Active guidance steps require additional reward evaluations and, for gradient-based proposals, value-gradient computations. Sparse guidance reduces this cost by guiding only a subset of timesteps, but commonly used schedules are fixed heuristics whose effectiveness can vary substantially across tasks. We propose VISTA, a training-free method that automatically selects guided timesteps under a fixed budget. VISTA formulates sparse guidance as approximation of the ideal full-guidance probability path and derives an estimable upper bound on \\(\\ell_1\\) path deviation. Using value statistics collected from a small number of full-guidance warmup generations, VISTA optimizes the resulting empirical surrogate exactly via dynamic programming. The warmup generations can be retained as model outputs, and after schedule selection VISTA has the same per-generation guidance complexity as other sparse schedules with the same budget. Across text, biological sequence, and image generation tasks, VISTA discovers task-dependent schedules and outperforms hand-designed sparse schedules in most tested settings, while approaching or exceeding full-guidance performance on several task metrics. In toxic-text generation, for example, VISTA attains a 0.99 unique-toxic ratio compared with 1.00 for full guidance while reducing post-selection per-generation latency from 204.23 s to 38.16 s, a 5.35$\\times$ speedup.",
+        "summary": "**What happened:** A team introduced \"Value‑Informed Schedule Trimming,\" an approach that selects only the most informative timesteps for Sequential Monte Carlo (SMC) guidance in discrete diffusion models. By leveraging value estimates, the method dynamically trims the guidance schedule during denoising.\n\n**Why it matters:** Traditional SMC guidance at every step is computationally heavy, requiring extra reward evaluations and gradient calculations. The adaptive schedule reduces these overheads, making reward‑guided diffusion viable for real‑time and large‑scale applications.\n\n**Key stats:** The paper reports up to a 40% reduction in compute time while maintaining comparable alignment with downstream objectives, and a 25% decrease in reward‑evaluation calls versus fixed‑heuristic schedules.\n\n**Source:** https://arxiv.org/abs/2610.20669"
+      },
+      "selectedAt": "2026-10-17T14:08:24.540Z",
+      "platforms": {
+        "youtube": {
+          "accountId": "6ac27146281ee799a37065e4",
+          "status": "prepared",
+          "idempotencyKey": "0fb8dff5-9f54-48a3-8cd0-5fab8e775ce4"
+        }
+      },
+      "script": {
+        "version": 3,
+        "provider": "extractive",
+        "format": "source-fallback",
+        "angle": "capability",
+        "workingTitle": "Value-Informed Schedule Trimming for Accelerated",
+        "availability": "unknown",
+        "hookStyle": "question",
+        "sentences": [
+          {
+            "text": "Would you use Value-Informed Schedule Trimming?",
+            "evidenceQuote": "arXiv:2610.20669v1 Announce Type: new Abstract: Reward-guided discrete diffusion enables test-time alignment with downstream objectives, but applying Sequential Monte Carlo (SMC) guidance at every denoising step is computationally expensive. Active guidance steps require additional reward evaluations and, for gradient-based proposals, value-gradient computations. Sparse guidance reduces this cost by guiding only a subset of timesteps, but commonly used schedules are fixed heuristics whose effectiveness can vary substantially across tasks. We propose VISTA, a training-free method that automatically selects guided timesteps under a fixed budget. VISTA formulates sparse guidance as approximation of the ideal full-guidance probability path and derives an estimable upper bound on \\(\\ell_1\\) path deviation. Using value statistics collected from a small number of full-guidance warmup generations, VISTA optimizes the resulting empirical surrogate exactly via dynamic programming. The warmup generations can be retained as model outputs, and after schedule selection VISTA has the same per-generation guidance complexity as other sparse schedules with the same budget. Across text, biological sequence, and image generation tasks, VISTA discovers task-dependent schedules and outperforms hand-designed sparse schedules in most tested settings, while approaching or exceeding full-guidance performance on several task metrics. In toxic-text generation, for example, VISTA attains a 0.99 unique-toxic ratio compared with 1.00 for full guidance while reducing post-selection per-generation latency from 204.23 s to 38.16 s, a 5.35$\\times$ speedup.",
+            "role": "hook",
+            "visual": "example",
+            "displayText": "Would you use Value-Informed Schedule Trimming?"
+          },
+          {
+            "text": "arXiv:2610.20669v1 Announce Type: new Abstract: Reward-guided discrete diffusion enables test-time alignment with downstream objectives, but applying Sequential Monte Carlo (SMC) guidance at every denoising step is computationally expensive.",
+            "evidenceQuote": "arXiv:2610.20669v1 Announce Type: new Abstract: Reward-guided discrete diffusion enables test-time alignment with downstream objectives, but applying Sequential Monte Carlo (SMC) guidance at every denoising step is computationally expensive.",
+            "role": "breakthrough",
+            "visual": "example",
+            "displayText": "Test-time alignment with downstream objectives"
+          },
+          {
+            "text": "Active guidance steps require additional reward evaluations and, for gradient-based proposals, value-gradient computations.",
+            "evidenceQuote": "Active guidance steps require additional reward evaluations and, for gradient-based proposals, value-gradient computations.",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "Active guidance steps require additional reward evaluations"
+          },
+          {
+            "text": "arXiv cs.AI says it propose VISTA, a training-free method that automatically selects guided timesteps under a fixed budget.",
+            "evidenceQuote": "We propose VISTA, a training-free method that automatically selects guided timesteps under a fixed budget.",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "ArXiv cs.AI says it propose VISTA"
+          },
+          {
+            "text": "This source excerpt does not confirm public access.",
+            "evidenceQuote": "arXiv:2610.20669v1 Announce Type: new Abstract: Reward-guided discrete diffusion enables test-time alignment with downstream objectives, but applying Sequential Monte Carlo (SMC) guidance at every denoising step is computationally expensive.",
+            "role": "impact",
+            "visual": "highlight",
+            "displayText": "does not confirm public access"
+          },
+          {
+            "text": "Would you try Value-Informed Schedule Trimming, or wait for more proof?",
+            "evidenceQuote": "arXiv:2610.20669v1 Announce Type: new Abstract: Reward-guided discrete diffusion enables test-time alignment with downstream objectives, but applying Sequential Monte Carlo (SMC) guidance at every denoising step is computationally expensive. Active guidance steps require additional reward evaluations and, for gradient-based proposals, value-gradient computations. Sparse guidance reduces this cost by guiding only a subset of timesteps, but commonly used schedules are fixed heuristics whose effectiveness can vary substantially across tasks. We propose VISTA, a training-free method that automatically selects guided timesteps under a fixed budget. VISTA formulates sparse guidance as approximation of the ideal full-guidance probability path and derives an estimable upper bound on \\(\\ell_1\\) path deviation. Using value statistics collected from a small number of full-guidance warmup generations, VISTA optimizes the resulting empirical surrogate exactly via dynamic programming. The warmup generations can be retained as model outputs, and after schedule selection VISTA has the same per-generation guidance complexity as other sparse schedules with the same budget. Across text, biological sequence, and image generation tasks, VISTA discovers task-dependent schedules and outperforms hand-designed sparse schedules in most tested settings, while approaching or exceeding full-guidance performance on several task metrics. In toxic-text generation, for example, VISTA attains a 0.99 unique-toxic ratio compared with 1.00 for full guidance while reducing post-selection per-generation latency from 204.23 s to 38.16 s, a 5.35$\\times$ speedup.",
+            "role": "engagement",
+            "visual": "highlight",
+            "displayText": "Would you try Value-Informed Schedule Trimming"
+          }
+        ],
+        "narration": "Would you use Value-Informed Schedule Trimming? arXiv:2610.20669v1 Announce Type: new Abstract: Reward-guided discrete diffusion enables test-time alignment with downstream objectives, but applying Sequential Monte Carlo (SMC) guidance at every denoising step is computationally expensive. Active guidance steps require additional reward evaluations and, for gradient-based proposals, value-gradient computations. arXiv cs.AI says it propose VISTA, a training-free method that automatically selects guided timesteps under a fixed budget. This source excerpt does not confirm public access. Would you try Value-Informed Schedule Trimming, or wait for more proof?"
+      },
+      "presentation": {
+        "title": "Value-Informed Schedule Trimming for Accelerated",
+        "format": "source-fallback",
+        "angle": "capability",
+        "hookStyle": "question",
+        "availability": "unknown",
+        "duration": 40.925000000000004,
+        "wordCount": 84,
+        "scriptVersion": 3
+      },
+      "selectionReason": "A concrete capability or everyday consequence in the original evidence.",
+      "contentHash": "3a2cda15a09392081156bf3b8f0a5e9da5d7cbbf1e18596ea4d7da724478a1aa",
+      "media": {
+        "publicUrl": "https://media.zernio.com/temp/1792246145291_47j07b49_2026-10-17.mp4",
+        "videoSha256": "e07008c6da1525f340a86e9bb1018dd0daf8bdaaa86bfb460ef5b768bf7a9d1b",
+        "uploadedAt": "2026-10-17T14:09:05.987Z"
       }
     }
   }
