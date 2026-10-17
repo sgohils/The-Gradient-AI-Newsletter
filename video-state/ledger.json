@@ -781,8 +781,32 @@
       "platforms": {
         "youtube": {
           "accountId": "6ac27146281ee799a37065e4",
-          "status": "prepared",
-          "idempotencyKey": "0fb8dff5-9f54-48a3-8cd0-5fab8e775ce4"
+          "status": "submitting",
+          "idempotencyKey": "0fb8dff5-9f54-48a3-8cd0-5fab8e775ce4",
+          "request": {
+            "content": "Value-Informed Schedule Trimming for Accelerated Sequential Monte Carlo Guidance in Discrete Diffusion\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2610.20669\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-10-17\nAI-generated narration. #AI #AINews #Shorts",
+            "mediaItems": [
+              {
+                "type": "video",
+                "url": "https://media.zernio.com/temp/1792246145291_47j07b49_2026-10-17.mp4"
+              }
+            ],
+            "platforms": [
+              {
+                "platform": "youtube",
+                "accountId": "6ac27146281ee799a37065e4",
+                "platformSpecificData": {
+                  "title": "Value-Informed Schedule Trimming for Accelerated",
+                  "visibility": "public",
+                  "madeForKids": false,
+                  "containsSyntheticMedia": true,
+                  "categoryId": "28"
+                }
+              }
+            ],
+            "publishNow": true
+          },
+          "firstSubmittedAt": "2026-10-17T14:09:07.270Z"
         }
       },
       "script": {
