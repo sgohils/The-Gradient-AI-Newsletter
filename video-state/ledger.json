@@ -781,7 +781,7 @@
       "platforms": {
         "youtube": {
           "accountId": "6ac27146281ee799a37065e4",
-          "status": "submitting",
+          "status": "published",
           "idempotencyKey": "0fb8dff5-9f54-48a3-8cd0-5fab8e775ce4",
           "request": {
             "content": "Value-Informed Schedule Trimming for Accelerated Sequential Monte Carlo Guidance in Discrete Diffusion\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2610.20669\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-10-17\nAI-generated narration. #AI #AINews #Shorts",
@@ -806,7 +806,9 @@
             ],
             "publishNow": true
           },
-          "firstSubmittedAt": "2026-10-17T14:09:07.270Z"
+          "firstSubmittedAt": "2026-10-17T14:09:07.270Z",
+          "postId": "6ad38184528945623e1c1094",
+          "postUrl": "https://www.youtube.com/watch?v=tE9HDoYt_Co"
         }
       },
       "script": {
