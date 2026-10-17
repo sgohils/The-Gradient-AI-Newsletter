@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "issueDate": "2026-10-17",
+  "issueUrl": "https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-10-17",
+  "content": "Today's AI briefing from The Gradient | 2026-10-17\n\n1. Bringing GPT-Rosalind to academic research labs\nOpenAI announced the Rosalind Academic Plan, a sponsorship program that provides eligible academic laboratories with complimentary access to GPT‑Rosalind—a large language model fine‑tuned for life‑science tasks—and a suite of integrated analysis tools.\n\n2. The World Won't Wait: Evaluating and Teaching Agents Under a Live Clock\nResearchers introduced RealtimeBench, a suite of 180 tasks spanning six interactive game genres, where the game world keeps running while the agent thinks. Paired tests compared the heavyweight GPT‑6.1‑sol with the speed‑focused Jev model.\n\n3. Value-Informed Schedule Trimming for Accelerated Sequential Monte Carlo Guidance in Discrete Diffusion\nA team introduced \"Value‑Informed Schedule Trimming,\" an approach that selects only the most informative timesteps for Sequential Monte Carlo (SMC) guidance in discrete diffusion models. By leveraging value estimates, the method dynamically trims the guidance schedule during denoising.\n\nRead the full briefing and original sources:\nhttps://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-10-17\n\n#AI #ArtificialIntelligence #TheGradient",
+  "contentHash": "e0fe3fe72cca1921c7b52c42961ba3d56efcf163ebc3e89f602183e4cdc3215f",
+  "accountId": "6ac5a561b3c21905c0edcfba",
+  "organizationUrn": "urn:li:organization:136824048",
+  "idempotencyKey": "15c71ac3-01ba-452f-ba66-7e1fdb5a86e6",
+  "status": "submitting",
+  "firstSubmittedAt": "2026-10-17T14:05:30.159Z"
+}
