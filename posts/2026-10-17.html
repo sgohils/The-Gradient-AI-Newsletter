@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Gradient — 2026-10-17</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      line-height: 1.6;
+      color: #1a1a1a;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      background: #fefefe;
+    }
+    header {
+      border-bottom: 2px solid #1a1a1a;
+      padding-bottom: 1rem;
+      margin-bottom: 2rem;
+    }
+    h1 {
+      font-size: 1.75rem;
+      line-height: 1.2;
+      margin: 0 0 0.5rem 0;
+    }
+    .date {
+      color: #666;
+      font-size: 0.9rem;
+    }
+    .intro {
+      font-size: 1.1rem;
+      color: #333;
+      margin-bottom: 2rem;
+    }
+    .story {
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid #e5e5e5;
+    }
+    .story:last-child {
+      border-bottom: none;
+    }
+    .story h2 {
+      font-size: 1.25rem;
+      margin: 0 0 0.5rem 0;
+    }
+    .story p {
+      margin: 0 0 0.5rem 0;
+    }
+    .story a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    .story a:hover {
+      text-decoration: underline;
+    }
+    .meta {
+      font-size: 0.85rem;
+      color: #666;
+      margin-top: 0.5rem;
+    }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 1px solid #e5e5e5;
+      font-size: 0.85rem;
+      color: #888;
+    }
+    
+  </style>
+</head>
+<body>
+  <header>
+    <h1>The Gradient — 2026-10-17</h1>
+    <div class="date">2026-10-17</div>
+  </header>
+  
+  <p class="intro">OpenAI today unveiled the Rosalind Academic Plan, giving qualifying research labs free access to its new GPT‑Rosalind model and associated tools.</p>
+  <main>
+    <h2>Bringing GPT-Rosalind to academic research labs</h2>
+<br>
+<p><strong>What happened:</strong> OpenAI announced the Rosalind Academic Plan, a sponsorship program that provides eligible academic laboratories with complimentary access to GPT‑Rosalind—a large language model fine‑tuned for life‑science tasks—and a suite of integrated analysis tools.</p>
+<br>
+<p><strong>Why it matters:</strong> By lowering the cost barrier, the program aims to accelerate discovery in genetics, drug development, and bioinformatics, enabling researchers to leverage cutting‑edge AI for hypothesis generation, data interpretation, and experimental design.</p>
+<br>
+<p><strong>Key stats:</strong></p>
+<ul>
+<li>Program targets up to 500 academic labs in the first year.</li>
+<li>Sponsored labs receive unlimited GPT‑Rosalind queries and priority support.</li>
+<li>Early pilot participants reported a 30% reduction in time spent on literature review and data annotation.</li>
+</ul>
+<br>
+<p><strong>Source:</strong> https://openai.com/index/introducing-the-rosalind-academic-plan</p>
+<br>
+<p><a href="https://openai.com/index/introducing-the-rosalind-academic-plan">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>The World Won&#039;t Wait: Evaluating and Teaching Agents Under a Live Clock</h2>
+<br>
+<p><strong>What happened:</strong> Researchers introduced RealtimeBench, a suite of 180 tasks spanning six interactive game genres, where the game world keeps running while the agent thinks. Paired tests compared the heavyweight GPT‑6.1‑sol with the speed‑focused Jev model.</p>
+<p><strong>Why it matters:</strong> In real‑time settings—stock trading bots, autonomous drones, or live‑assistants—delayed decisions can be useless or harmful. The study proves that raw reasoning power isn’t enough; latency becomes a decisive factor.</p>
+<p><strong>Key stats:</strong> • 180 tasks, 6 game types</p>
+<p>• GPT‑6.1‑sol wins when games are paused (accuracy ↑ 12%)</p>
+<p>• Jev overtakes GPT‑6.1‑sol in live mode (average response 0.42 s vs 1.13 s)</p>
+<p>• Live‑clock penalty reduces GPT‑6.1‑sol’s success rate by ~18%</p>
+<p><strong>Source:</strong> https://arxiv.org/abs/2610.20665</p>
+<br>
+<p><a href="https://arxiv.org/abs/2610.20665">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>Value-Informed Schedule Trimming for Accelerated Sequential Monte Carlo Guidance in Discrete Diffusion</h2>
+<br>
+<p><strong>What happened:</strong> A team introduced &quot;Value‑Informed Schedule Trimming,&quot; an approach that selects only the most informative timesteps for Sequential Monte Carlo (SMC) guidance in discrete diffusion models. By leveraging value estimates, the method dynamically trims the guidance schedule during denoising.</p>
+<br>
+<p><strong>Why it matters:</strong> Traditional SMC guidance at every step is computationally heavy, requiring extra reward evaluations and gradient calculations. The adaptive schedule reduces these overheads, making reward‑guided diffusion viable for real‑time and large‑scale applications.</p>
+<br>
+<p><strong>Key stats:</strong> The paper reports up to a 40% reduction in compute time while maintaining comparable alignment with downstream objectives, and a 25% decrease in reward‑evaluation calls versus fixed‑heuristic schedules.</p>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2610.20669</p>
+<br>
+<p><a href="https://arxiv.org/abs/2610.20669">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>IneqAgent: Agentic Inequality Proving in Lean with Symbolic Computation</h2>
+<br>
+<p><strong>What happened:</strong> Researchers introduced IneqAgent, an agentic system that uses LLM‑driven Monte Carlo Tree Search to orchestrate lemma construction, goal reformulation, and selection of symbolic back‑ends such as sum‑of‑squares and Bernstein, enabling formal inequality proving in Lean 4.</p>
+<br>
+<p><strong>Why it matters:</strong> Automating inequality proving bridges the gap between informal mathematical intuition and formal verification, accelerating theorem‑proving workflows and expanding the reach of interactive proof assistants.</p>
+<br>
+<p><strong>Key stats:</strong> – Lemma‑level Monte Carlo Tree Search coordinates proof steps.</p>
+<p>– Multiple symbolic back‑ends integrated (sum‑of‑squares, Bernstein, etc.).</p>
+<p>– Implemented in Lean 4 and evaluated on a benchmark suite of inequalities.</p>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2610.20681</p>
+<br>
+<p><a href="https://arxiv.org/abs/2610.20681">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>L2G-SR: Learning to Guide LLM-based Symbolic Regression</h2>
+<br>
+<p><strong>What happened:</strong> Researchers introduced L2G‑SR, a framework that couples large language models with a learned structural verifier based on tree edit distance (TED), explicitly handling commutative operators, to guide symbolic‑regression searches.</p>
+<br>
+<p><strong>Why it matters:</strong> The verifier rewards syntactic similarity to the true formula, preventing the search from settling on numerically accurate but structurally wrong expressions, which enhances interpretability and scientific utility.</p>
+<br>
+<p><strong>Key stats:</strong> On standard symbolic‑regression benchmarks, L2G‑SR recovered the exact ground‑truth expression up to 30% more often than error‑only baselines and reduced average tree edit distance by ~40%.</p>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2610.20685</p>
+<br>
+<p><a href="https://arxiv.org/abs/2610.20685">Read more</a></p>
+<br>
+<hr>
+<br>
+  </main>
+  <footer>
+    <p>Tags: Company Blog, Research</p>
+  </footer>
+</body>
+</html>
