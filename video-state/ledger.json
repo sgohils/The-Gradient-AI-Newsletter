@@ -898,8 +898,32 @@
       "platforms": {
         "youtube": {
           "accountId": "6ac27146281ee799a37065e4",
-          "status": "prepared",
-          "idempotencyKey": "becff029-0179-4f25-8a0f-2ac11f2b72f5"
+          "status": "submitting",
+          "idempotencyKey": "becff029-0179-4f25-8a0f-2ac11f2b72f5",
+          "request": {
+            "content": "Who will win in AI race?\n\nSource: Reddit r/artificial\nhttps://www.reddit.com/r/artificial/comments/1x8oizy/who_will_win_in_ai_race/\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-10-18\nAI-generated narration. #AI #AINews #Shorts",
+            "mediaItems": [
+              {
+                "type": "video",
+                "url": "https://media.zernio.com/temp/1792333264031_qmzxyle5_2026-10-18.mp4"
+              }
+            ],
+            "platforms": [
+              {
+                "platform": "youtube",
+                "accountId": "6ac27146281ee799a37065e4",
+                "platformSpecificData": {
+                  "title": "Who will win in AI race?",
+                  "visibility": "public",
+                  "madeForKids": false,
+                  "containsSyntheticMedia": true,
+                  "categoryId": "28"
+                }
+              }
+            ],
+            "publishNow": true
+          },
+          "firstSubmittedAt": "2026-10-18T14:21:06.802Z"
         }
       },
       "script": {
