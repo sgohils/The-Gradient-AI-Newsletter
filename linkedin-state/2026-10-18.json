@@ -7,6 +7,8 @@
   "accountId": "6ac5a561b3c21905c0edcfba",
   "organizationUrn": "urn:li:organization:136824048",
   "idempotencyKey": "5a56ea56-7ac8-4d99-8a85-2c7a0dc3089f",
-  "status": "submitting",
-  "firstSubmittedAt": "2026-10-18T14:18:03.327Z"
+  "status": "published",
+  "firstSubmittedAt": "2026-10-18T14:18:03.327Z",
+  "postId": "6ad4d51d650fd6d84a60e078",
+  "postUrl": "https://www.linkedin.com/feed/update/urn:li:share:7517589834224254976/"
 }
