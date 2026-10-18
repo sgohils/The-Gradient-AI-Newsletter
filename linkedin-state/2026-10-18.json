@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "issueDate": "2026-10-18",
+  "issueUrl": "https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-10-18",
+  "content": "Today's AI briefing from The Gradient | 2026-10-18\n\n1. Replit makes OpenAI its default over Anthropic, CEO says\nOver the weekend, Replit CEO Amjad Masad confirmed that OpenAI will replace Anthropic as the platform’s default model provider. Existing users can still access Claude, but new projects will default to OpenAI’s models.\n\n2. Bringing GPT-Rosalind to academic research labs\nOpenAI announced the Rosalind Academic Plan, a program that provides qualified academic research labs with free, sponsored access to the GPT‑Rosalind language model and a suite of tools tailored for life‑sciences experiments.\n\n3. Elorian’s first AI model wants to reason with images, not just about them\nElorian released Glimpse, an AI model designed to reason directly with images. In internal tests, Glimpse surpassed the newer GPT‑6 Astra on scientific chart reasoning and short‑form video captioning, while delivering competitive scores on a range of other visual‑reasoning tasks.\n\nRead the full briefing and original sources:\nhttps://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-10-18\n\n#AI #ArtificialIntelligence #TheGradient",
+  "contentHash": "eeacac40d251ecd499f064bec107925ec7d67e0abf2d8eff1ccf3b0b1ebb46b8",
+  "accountId": "6ac5a561b3c21905c0edcfba",
+  "organizationUrn": "urn:li:organization:136824048",
+  "idempotencyKey": "5a56ea56-7ac8-4d99-8a85-2c7a0dc3089f",
+  "status": "submitting",
+  "firstSubmittedAt": "2026-10-18T14:18:03.327Z"
+}
