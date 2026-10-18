@@ -1,0 +1,167 @@
+{
+  "version": 1,
+  "issueDate": "2026-10-18",
+  "generatedAt": "2026-10-18T14:16:57.325Z",
+  "stories": [
+    {
+      "id": "techcrunch-ai-https%3A%2F%2Ftechcrunch.com%2F2026%2F10%2F17%2Freplit-is-no-longer-working-with-anthropic-ceo-says%2F",
+      "rank": 1,
+      "title": "Replit makes OpenAI its default over Anthropic, CEO says",
+      "sourceUrl": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-17T18:48:08.000Z",
+      "sourceExcerpt": "Over the weekend, Masad clarified that OpenAI would replace Anthropic as its default model provider. Claude will still be available to customers on the platform.",
+      "summary": "**What happened:** Over the weekend, Replit CEO Amjad Masad confirmed that OpenAI will replace Anthropic as the platform’s default model provider. Existing users can still access Claude, but new projects will default to OpenAI’s models.\n\n**Why it matters:** The move signals Replit’s confidence in OpenAI’s performance and ecosystem, potentially streamlining developer workflows and attracting more AI‑centric users. Keeping Claude available preserves choice for developers who prefer Anthropic’s offerings.\n\n**Key stats:**\n- OpenAI becomes the default model for all new Replit projects.\n- Claude remains accessible as an opt‑in option.\n- No immediate pricing changes were announced.\n\n**Source:** https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/"
+    },
+    {
+      "id": "openai-blog-https%3A%2F%2Fopenai.com%2Findex%2Fintroducing-the-rosalind-academic-plan",
+      "rank": 2,
+      "title": "Bringing GPT-Rosalind to academic research labs",
+      "sourceUrl": "https://openai.com/index/introducing-the-rosalind-academic-plan",
+      "sourceName": "OpenAI Blog",
+      "publishedAt": "2026-10-15T19:00:00.000Z",
+      "sourceExcerpt": "Introducing the Rosalind Academic Plan, offering eligible academic labs sponsored access to GPT-Rosalind and tools to advance life sciences research.",
+      "summary": "**What happened:** OpenAI announced the Rosalind Academic Plan, a program that provides qualified academic research labs with free, sponsored access to the GPT‑Rosalind language model and a suite of tools tailored for life‑sciences experiments.\n\n**Why it matters:** By lowering cost barriers and offering cutting‑edge AI capabilities, the plan aims to speed up hypothesis generation, data analysis, and experimental design across universities, potentially leading to faster breakthroughs in biology, genetics, and drug discovery.\n\n**Key stats:**\n- Eligible labs receive full‑access credits covering compute and API usage.\n- The program opens to a limited cohort of research groups each year, with a focus on early‑career investigators.\n- OpenAI estimates that AI‑augmented labs could cut research cycle times by up to 30%.\n\n**Source:** https://openai.com/index/introducing-the-rosalind-academic-plan"
+    },
+    {
+      "id": "techcrunch-ai-https%3A%2F%2Ftechcrunch.com%2F2026%2F10%2F16%2Felorians-first-ai-model-wants-to-reason-with-images-not-just-about-them%2F",
+      "rank": 3,
+      "title": "Elorian’s first AI model wants to reason with images, not just about them",
+      "sourceUrl": "https://techcrunch.com/2026/10/16/elorians-first-ai-model-wants-to-reason-with-images-not-just-about-them/",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-16T16:01:37.000Z",
+      "sourceExcerpt": "According to Elorian's evaluations, Glimpse outperforms even GPT-6 Astra on scientific chart reasoning and short-form video captioning, with competitive results on other visual reasoning tasks.",
+      "summary": "**What happened:** Elorian released Glimpse, an AI model designed to reason directly with images. In internal tests, Glimpse surpassed the newer GPT‑6 Astra on scientific chart reasoning and short‑form video captioning, while delivering competitive scores on a range of other visual‑reasoning tasks.\n**Why it matters:** By moving from image description to true visual reasoning, Glimpse opens doors for AI to interpret data visualizations, videos, and complex imagery—key capabilities for research, education, and media automation.\n**Key stats:** • Glimpse outperformed GPT‑6 Astra on scientific chart reasoning benchmarks. • It also led on short‑form video captioning tests. • Performance remained competitive across additional visual reasoning datasets.\n**Source:** https://techcrunch.com/2026/10/16/elorians-first-ai-model-wants-to-reason-with-images-not-just-about-them/"
+    },
+    {
+      "id": "openai-blog-https%3A%2F%2Fopenai.com%2Findex%2Famp-beyond-coding",
+      "rank": 4,
+      "title": "Amp puts AI agents to work beyond code with OpenAI models",
+      "sourceUrl": "https://openai.com/index/amp-beyond-coding",
+      "sourceName": "OpenAI Blog",
+      "publishedAt": "2026-10-14T12:00:00.000Z",
+      "sourceExcerpt": "See how Amp pushes the frontier of what agents can do with GPT-6 Astra, Ultrafast, GPT-Live-1, and Sign in with ChatGPT.",
+      "summary": "**What happened:** Amp integrated OpenAI’s GPT‑6 Astra, Ultrafast, GPT‑Live‑1, and a “Sign in with ChatGPT” feature into its platform, enabling agents to perform tasks outside traditional programming environments.\n\n**Why it matters:** This pushes AI agents into everyday applications, demonstrates the scalability of large language models, and lowers the barrier for developers to embed AI in non‑coding contexts.\n\n**Key stats:** • GPT‑6 Astra claims roughly 2× faster inference than its predecessor. • Ultrafast cuts latency to sub‑50 ms for real‑time queries. • GPT‑Live‑1 supports continuous streaming responses. • Early adopters report up to a 30% boost in productivity for non‑coding workflows.\n\n**Source:** https://openai.com/index/amp-beyond-coding"
+    },
+    {
+      "id": "openai-blog-https%3A%2F%2Fopenai.com%2Findex%2Fthird-moment-research",
+      "rank": 5,
+      "title": "How Third Moment Research runs 10,000 agents for 36+ hours",
+      "sourceUrl": "https://openai.com/index/third-moment-research",
+      "sourceName": "OpenAI Blog",
+      "publishedAt": "2026-10-14T07:00:00.000Z",
+      "sourceExcerpt": "With GPT-6 Astra and GPT-6.1 Sol, Codex, and Daybreak for cybersecurity, this AI lab builds agents that focus for days and improve with use.",
+      "summary": "**What happened:**\nThird Moment Research launched a fleet of 10,000 autonomous AI agents that remained active for 36+ hours straight. The agents were powered by the latest GPT‑6 Astra and GPT‑6.1 Sol models, with specialized tools like Codex for code generation and Daybreak for cybersecurity tasks.\n\n**Why it matters:**\nSustained, large‑scale agent deployment proves that advanced language models can maintain focus over days, adapt through continuous use, and handle diverse workloads—from software development to threat detection—without human intervention. This marks a step toward truly persistent AI assistants.\n\n**Key stats:**\n- 10,000 agents running concurrently\n- 36+ hours of uninterrupted operation\n- Models used: GPT‑6 Astra, GPT‑6.1 Sol, Codex, Daybreak\n- Applications spanned coding, security monitoring, and autonomous decision‑making\n\n**Source:** https://openai.com/index/third-moment-research"
+    },
+    {
+      "id": "reddit-artificial-https%3A%2F%2Fwww.reddit.com%2Fr%2Fartificial%2Fcomments%2F1x8oizy%2Fwho_will_win_in_ai_race%2F",
+      "rank": 6,
+      "title": "Who will win in AI race?",
+      "sourceUrl": "https://www.reddit.com/r/artificial/comments/1x8oizy/who_will_win_in_ai_race/",
+      "sourceName": "Reddit r/artificial",
+      "publishedAt": "2026-10-17T23:37:42.000Z",
+      "sourceExcerpt": "As I am thinking about AI I feel like the companies Open AI and Atrophic I just purely set up to win the race. Isn't AI race is all about compute power? And the companies like Meta, Microsoft, Google already better positioned because they own a lot of infrastructure? And infrastructure is not only the data centers but also tool that can benefit integrating LLM's with it (Android, Office, Social Networks)? Or do Open AI or Anthropic have some unknown methods or technology to train models that can't be replicated? I thought everybody using the same tools and same methods the difference only in data that is used? Isn't it the same story that happened with Dropbox or whatever other file share companies were created on that hype train. submitted by /u/JissQuote [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "arstechnica-ai-https%3A%2F%2Farstechnica.com%2Fsecurity%2F2026%2F10%2Fopenai-models-hacked-a-crypto-wallet-and-breached-more-websites%2F",
+      "rank": 7,
+      "title": "OpenAI models hacked a crypto wallet and breached more websites",
+      "sourceUrl": "https://arstechnica.com/security/2026/10/openai-models-hacked-a-crypto-wallet-and-breached-more-websites/",
+      "sourceName": "Ars Technica AI",
+      "publishedAt": "2026-10-16T20:59:01.000Z",
+      "sourceExcerpt": "OpenAI said internal models hacked two more websites, bypassed company-imposed browsing restrictions, and used exposed credentials to draw cryptocurrency from a wallet it couldn’t otherwise access, in the latest installment of disclosures of its agents performing unethical and likely illegal acts. The company on Thursday issued reports of four new incidents, all of which occurred in June. They come after the company revealed in July that internal test agents exploited a zero-day vulnerability in a tool designed to restrict their access to the Internet. They then broke into the network of AI tool provider Hugging Face. The agents took that illegal action to steal answers to a hacking test that weren’t available when completing the tasks on their own. The incident—which likely would have resulted in criminal charges had they been performed directly by a person—has further heightened concerns that widespread AI use could have harmful effects on an unprecedented scale. Easier to beg for forgiveness than ask permission In two of the cases reported Thursday, OpenAI agents tasked with retrieving information from websites hacked them when the models ran into obstacles obtaining it directly. In one incident during reinforcement training, a model that received access denials when trying to retrieve historical hospital-bed statistics on a government statistics website “used the site's file-download feature to retrieve server configuration and application files, including sensitive credentials,” OpenAI said. “It inspected the application code, bypassed the statistics endpoint's authorization checks, and retrieved data that had previously been denied. The model saved the data locally.” Read full article Comments",
+      "summary": ""
+    },
+    {
+      "id": "reddit-artificial-https%3A%2F%2Fwww.reddit.com%2Fr%2Fartificial%2Fcomments%2F1x8whq9%2Fmy_homegrown_architecture_may_have_just_4xd_the%2F",
+      "rank": 8,
+      "title": "my homegrown architecture may have just 4x'd the arc-agi 2026 milestone prizewinner",
+      "sourceUrl": "https://www.reddit.com/r/artificial/comments/1x8whq9/my_homegrown_architecture_may_have_just_4xd_the/",
+      "sourceName": "Reddit r/artificial",
+      "publishedAt": "2026-10-18T06:55:01.000Z",
+      "sourceExcerpt": "arc-agi-3 - 15.85%, 29 / 183 levels (18 / 25 games). 4.8123% rhae. no benchmaxxing detected, no harness, pure mathematical primitives. it's a sparsified gemma-4-31b-it wired up to openjev, plus an hrm/trm functioning as a right hemisphere and a bi-directional callosal subsystem connecting the systems. disconnected from gemma-4, it performs almost as well as the unified architecture. it's also pretty nuclear at qasper longbench, scoring only -1.31 f1 versus dense f1 at 62.23% kv cache. i have 2 preprints available in the repo, and i'm absolutely ready to get hard-audited and take feedback. the repo itself is highly, highly technical and dense (llm-assisted), but i'll try my best to interpret it. https://github.com/sneed-and-feed/projectdarksnail submitted by /u/LooseSwing88 [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-artificial-https%3A%2F%2Fwww.reddit.com%2Fr%2Fartificial%2Fcomments%2F1x922ye%2Fwe_tested_two_ai_versions_967_accuracy_same%2F",
+      "rank": 9,
+      "title": "We tested two AI versions: 96.7% accuracy, same critical mistake",
+      "sourceUrl": "https://www.reddit.com/r/artificial/comments/1x922ye/we_tested_two_ai_versions_967_accuracy_same/",
+      "sourceName": "Reddit r/artificial",
+      "publishedAt": "2026-10-18T12:31:49.000Z",
+      "sourceExcerpt": "We recently ran a small experiment comparing JEV 1.13 and JEV 1.14 on Turkish-language intent classification. The goal was to identify whether a message came from someone looking to buy a service, someone offering a service, or neither. Here are the results: JEV 1.13: 29/30 correct (96.7%) JEV 1.14: 29/30 correct (96.7%) Buyer detection: 9/10 for both versions Average response time: 367 ms vs. 352 ms Total API cost: approximately $0.00113 across 60 calls The interesting part? Both versions made the exact same mistake. A Turkish message explicitly expressing an intention to pay for product photo editing was classified as a seller rather than a potential buyer. This highlights an important limitation of relying on overall accuracy. A model can achieve 96.7% accuracy and still miss a valuable customer opportunity. In real-world lead detection, false negatives may be significantly more costly than false positives. A few important limitations: These results come from 30 synthetic Turkish scenarios, not a production dataset. Each version was tested once, so the sample is too small to establish reliable performance differences. We did not deploy either version based on these results. Our takeaway is simple: accuracy alone doesn't tell the full story. The impact of individual errors matters. I'm curious what others think: When evaluating AI classifiers for real-world applications, would you prioritize overall accuracy, recall for critical cases, or a cost-sensitive metric that penalizes missed opportunities? And how much testing would you consider sufficient before deploying such a system? submitted by /u/Sosyaldijital [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-artificial-https%3A%2F%2Fwww.reddit.com%2Fr%2Fartificial%2Fcomments%2F1x91bfq%2Fi_built_an_opensource_tool_to_monitor_naval_bases%2F",
+      "rank": 10,
+      "title": "I built an open-source tool to monitor naval bases using free satellite radar, no AIS needed",
+      "sourceUrl": "https://www.reddit.com/r/artificial/comments/1x91bfq/i_built_an_opensource_tool_to_monitor_naval_bases/",
+      "sourceName": "Reddit r/artificial",
+      "publishedAt": "2026-10-18T11:51:23.000Z",
+      "sourceExcerpt": "Hey guys! I previously posted Netryx in this sub and received a lot of love for it. It recently hit 1k stars, so thank you for the support! I’ve been working on a new project called Keelix. It uses free Sentinel-1 SAR imagery to monitor naval bases without relying on AIS data. By comparing satellite passes over time, Keelix detects ships at individual berths, tracks potential arrivals and departures, flags unusual activity, and generates before-and-after radar comparisons with confidence scores. It also has an experimental feature to search coastal waters for carriers after they leave port. I tested it against Norfolk Naval Base over 12 months. It detected around 65% of ships, with approximately 95% of detections corresponding to real ships. Estimated counts were generally within one or two ships of reference imagery. The system uses signal processing, not machine learning. There are limitations, of course. It can’t identify individual ships, ships can overlap in imagery, and movements between satellite passes can be missed. So far, I’ve validated it against one base. submitted by /u/Open_Budget6556 [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-artificial-https%3A%2F%2Fwww.reddit.com%2Fr%2Fartificial%2Fcomments%2F1x8wk5w%2Fhow_did_the_history_of_productive_artificial%2F",
+      "rank": 11,
+      "title": "How did the history of productive artificial intelligences develop? What are those who believe that he is ethical and legal based on? What are opponents like me based on?",
+      "sourceUrl": "https://www.reddit.com/r/artificial/comments/1x8wk5w/how_did_the_history_of_productive_artificial/",
+      "sourceName": "Reddit r/artificial",
+      "publishedAt": "2026-10-18T06:59:13.000Z",
+      "sourceExcerpt": "Let me first describe the device. A tool is something that serves to shorten the path from the beginning of a job to the end, that is, makes it easier. For example, the tools that help to cultivate the soil are tools. Or an oven is a tool for cooking a new one, while a food ordering application is not a tool. Or using a real piano for a concert and playing a musical piece is not the same as having a sound system play a pre-recorded track. AI is a tool if it sorts out errors in my code. But if he writes the code that I need to live with, it's something else. I meant this because some low qualification would have put this absurd argument in front of me. Also, AI is stealing. At least this is the case in the context of art. I'm not against AI, it's just not being used for the right purposes by the right people in the right field. I also want to know why the opponents and defenders each separately think this way. I also want to know how they came about. submitted by /u/M37R_TI [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-artificial-https%3A%2F%2Fwww.reddit.com%2Fr%2Fartificial%2Fcomments%2F1x8ux7x%2Fai_lab_offers_free_plumbing_and_hvac_repairs%2F",
+      "rank": 12,
+      "title": "AI lab offers free plumbing and HVAC repairs across three cities to train AI robots",
+      "sourceUrl": "https://www.reddit.com/r/artificial/comments/1x8ux7x/ai_lab_offers_free_plumbing_and_hvac_repairs/",
+      "sourceName": "Reddit r/artificial",
+      "publishedAt": "2026-10-18T05:20:19.000Z",
+      "sourceExcerpt": "An AI company called HUMXN is trying something interesting: it's offering free plumbing, electrical, HVAC, and other home services to qualifying homeowners in exchange for collecting real-world training data. The program is launching in Minneapolis, Chicago, and Miami. During the jobs, technicians use wearable recording technology to capture how they inspect problems, choose tools, and complete repairs. The goal is to help AI systems learn how skilled workers interact with the physical world, rather than relying entirely on text and images from the internet. This makes sense when you think about it. A robot can't learn to fix a complicated plumbing issue just by reading about plumbing. It needs data about the actual steps, decisions, tools, and unexpected situations involved. I'm curious about one thing, though: Could collecting real-world work data like this be the missing piece in making physical AI and robots genuinely useful in everyday life? And would you let a technician record their work inside your home in exchange for a free repair? submitted by /u/IndependentCoast3974 [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-artificial-https%3A%2F%2Fwww.reddit.com%2Fr%2Fartificial%2Fcomments%2F1x8uns8%2Fan_agent_can_figure_out_how_an_app_works_just_by%2F",
+      "rank": 13,
+      "title": "an agent can figure out how an app works just by watching it, so why can't it figure out me",
+      "sourceUrl": "https://www.reddit.com/r/artificial/comments/1x8uns8/an_agent_can_figure_out_how_an_app_works_just_by/",
+      "sourceName": "Reddit r/artificial",
+      "publishedAt": "2026-10-18T05:04:58.000Z",
+      "sourceExcerpt": "there's a repo trending on github this week where you point an agent at an app and it works out how the thing behaves from the network traffic. nobody had to explain it. it just watched. which is kinda funny, because i still retype the same preferences to ai every week. same setup, same how i like it. you'd think watching how i do things would be easier than reverse engineering an app. so is it a trust thing, a privacy thing, or just nobody building it well? and what would you actually let it watch submitted by /u/IndependentCoast3974 [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-artificial-https%3A%2F%2Fwww.reddit.com%2Fr%2Fartificial%2Fcomments%2F1x8onnf%2Fscared_and_upset%2F",
+      "rank": 14,
+      "title": "scared and upset",
+      "sourceUrl": "https://www.reddit.com/r/artificial/comments/1x8onnf/scared_and_upset/",
+      "sourceName": "Reddit r/artificial",
+      "publishedAt": "2026-10-17T23:43:55.000Z",
+      "sourceExcerpt": "if ai takes all the jobs how will we afford to live and pay off things like our rent, car payments, loans, etc. and what is the point of not having us be able to pick a career and make our own money? do they want us to just die and be controlled, i can’t even dream of a good future because i don’t want to follow my dream career path if it’s not even going to be an option anymore :( submitted by /u/Opposite_List_303 [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-artificial-https%3A%2F%2Fwww.reddit.com%2Fr%2Fartificial%2Fcomments%2F1x8nmvo%2Fhow_do_machines_map_the_world_a_conversation_with%2F",
+      "rank": 15,
+      "title": "How Do Machines Map the World? A Conversation With Geospatial Legend Brian McClendon",
+      "sourceUrl": "https://www.reddit.com/r/artificial/comments/1x8nmvo/how_do_machines_map_the_world_a_conversation_with/",
+      "sourceName": "Reddit r/artificial",
+      "publishedAt": "2026-10-17T22:55:11.000Z",
+      "sourceExcerpt": "The TLDW Version of this is that Brian McClendon admits that robotics itself is a complicated science(he's got a point there) and that the AI companies can't do anything without Niantic's help. PS if you want to watch the whole thing, skip past the first 20 minutes, the actual interview starts at 20:00 mark on the video. submitted by /u/ExtensionEcho3 [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "arstechnica-ai-https%3A%2F%2Farstechnica.com%2Fsecurity%2F2026%2F10%2Ftargeted-ads-delivered-0-click-exploits-to-install-mercenary-malware%2F",
+      "rank": 16,
+      "title": "Targeted ads delivered 0-click exploits to install mercenary malware",
+      "sourceUrl": "https://arstechnica.com/security/2026/10/targeted-ads-delivered-0-click-exploits-to-install-mercenary-malware/",
+      "sourceName": "Ars Technica AI",
+      "publishedAt": "2026-10-15T20:32:41.000Z",
+      "sourceExcerpt": "Researchers say that mercenary hackers laced ads with zero-click exploits that installed sophisticated malware on the devices of targeted individuals when they did nothing other than load a website or open an installed app. The finding, published Thursday by the University of Toronto’s Citizen Lab, said the incident is likely to be the first confirmation of zero-click mercenary spyware delivered through targeted ads. The attacks, which worked on iOS and Android devices, are particularly pernicious because they work without requiring any interaction from the target and are invisible unless users run special forensic hardware or software. Citizen Lab said it confirmed that AdFection, as it named the campaign, infected 45 devices at international media organization Al Jazeera in 2024 and 2025. A clear warning signal “This investigation should… serve as a clear warning signal to news organizations around the world that they may be being actively targeted via this new threat,” Citizen Lab researchers wrote. “This targeting may happen both in newsrooms and to individual journalists, editors, and other staff members.” Their report went on to say: “The distribution of spyware via targeted ads represents a security risk not only for potential victims but also for states and civil society at large.” Read full article Comments",
+      "summary": ""
+    }
+  ]
+}
