@@ -898,7 +898,7 @@
       "platforms": {
         "youtube": {
           "accountId": "6ac27146281ee799a37065e4",
-          "status": "submitting",
+          "status": "published",
           "idempotencyKey": "becff029-0179-4f25-8a0f-2ac11f2b72f5",
           "request": {
             "content": "Who will win in AI race?\n\nSource: Reddit r/artificial\nhttps://www.reddit.com/r/artificial/comments/1x8oizy/who_will_win_in_ai_race/\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-10-18\nAI-generated narration. #AI #AINews #Shorts",
@@ -923,7 +923,9 @@
             ],
             "publishNow": true
           },
-          "firstSubmittedAt": "2026-10-18T14:21:06.802Z"
+          "firstSubmittedAt": "2026-10-18T14:21:06.802Z",
+          "postId": "6ad4d5d46e31af6c3426a89f",
+          "postUrl": "https://www.youtube.com/watch?v=Asyt3zJw3iw"
         }
       },
       "script": {
