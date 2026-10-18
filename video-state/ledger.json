@@ -882,6 +882,97 @@
         "videoSha256": "e07008c6da1525f340a86e9bb1018dd0daf8bdaaa86bfb460ef5b768bf7a9d1b",
         "uploadedAt": "2026-10-17T14:09:05.987Z"
       }
+    },
+    "2026-10-18": {
+      "story": {
+        "id": "reddit-artificial-https%3A%2F%2Fwww.reddit.com%2Fr%2Fartificial%2Fcomments%2F1x8oizy%2Fwho_will_win_in_ai_race%2F",
+        "rank": 6,
+        "title": "Who will win in AI race?",
+        "sourceUrl": "https://www.reddit.com/r/artificial/comments/1x8oizy/who_will_win_in_ai_race/",
+        "sourceName": "Reddit r/artificial",
+        "publishedAt": "2026-10-17T23:37:42.000Z",
+        "sourceExcerpt": "As I am thinking about AI I feel like the companies Open AI and Atrophic I just purely set up to win the race. Isn't AI race is all about compute power? And the companies like Meta, Microsoft, Google already better positioned because they own a lot of infrastructure? And infrastructure is not only the data centers but also tool that can benefit integrating LLM's with it (Android, Office, Social Networks)? Or do Open AI or Anthropic have some unknown methods or technology to train models that can't be replicated? I thought everybody using the same tools and same methods the difference only in data that is used? Isn't it the same story that happened with Dropbox or whatever other file share companies were created on that hype train. submitted by /u/JissQuote [link] [comments]",
+        "summary": ""
+      },
+      "selectedAt": "2026-10-18T14:20:34.079Z",
+      "platforms": {
+        "youtube": {
+          "accountId": "6ac27146281ee799a37065e4",
+          "status": "prepared",
+          "idempotencyKey": "becff029-0179-4f25-8a0f-2ac11f2b72f5"
+        }
+      },
+      "script": {
+        "version": 3,
+        "provider": "extractive",
+        "format": "source-fallback",
+        "angle": "capability",
+        "workingTitle": "Who will win in AI race?",
+        "availability": "unknown",
+        "hookStyle": "question",
+        "sentences": [
+          {
+            "text": "Would you use Who will win in?",
+            "evidenceQuote": "As I am thinking about AI I feel like the companies Open AI and Atrophic I just purely set up to win the race. Isn't AI race is all about compute power? And the companies like Meta, Microsoft, Google already better positioned because they own a lot of infrastructure? And infrastructure is not only the data centers but also tool that can benefit integrating LLM's with it (Android, Office, Social Networks)? Or do Open AI or Anthropic have some unknown methods or technology to train models that can't be replicated? I thought everybody using the same tools and same methods the difference only in data that is used? Isn't it the same story that happened with Dropbox or whatever other file share companies were created on that hype train. submitted by /u/JissQuote [link] [comments]",
+            "role": "hook",
+            "visual": "example",
+            "displayText": "Would you use Who will win in?"
+          },
+          {
+            "text": "And the companies like Meta, Microsoft, Google already better positioned because they own a lot of infrastructure?",
+            "evidenceQuote": "And the companies like Meta, Microsoft, Google already better positioned because they own a lot of infrastructure?",
+            "role": "breakthrough",
+            "visual": "example",
+            "displayText": "And the companies like Meta"
+          },
+          {
+            "text": "And infrastructure is not only the data centers but also tool that can benefit integrating LLM's with it (Android, Office, Social Networks)?",
+            "evidenceQuote": "And infrastructure is not only the data centers but also tool that can benefit integrating LLM's with it (Android, Office, Social Networks)?",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "And infrastructure is not only the data centers"
+          },
+          {
+            "text": "Or do Open AI or Anthropic have some unknown methods or technology to train models that can't be replicated?",
+            "evidenceQuote": "Or do Open AI or Anthropic have some unknown methods or technology to train models that can't be replicated?",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "Or do Open AI or Anthropic have some"
+          },
+          {
+            "text": "This source excerpt does not confirm public access.",
+            "evidenceQuote": "As I am thinking about AI I feel like the companies Open AI and Atrophic I just purely set up to win the race.",
+            "role": "impact",
+            "visual": "highlight",
+            "displayText": "does not confirm public access"
+          },
+          {
+            "text": "Would you try Who will win in, or wait for more proof?",
+            "evidenceQuote": "As I am thinking about AI I feel like the companies Open AI and Atrophic I just purely set up to win the race. Isn't AI race is all about compute power? And the companies like Meta, Microsoft, Google already better positioned because they own a lot of infrastructure? And infrastructure is not only the data centers but also tool that can benefit integrating LLM's with it (Android, Office, Social Networks)? Or do Open AI or Anthropic have some unknown methods or technology to train models that can't be replicated? I thought everybody using the same tools and same methods the difference only in data that is used? Isn't it the same story that happened with Dropbox or whatever other file share companies were created on that hype train. submitted by /u/JissQuote [link] [comments]",
+            "role": "engagement",
+            "visual": "highlight",
+            "displayText": "Would you try Who will win"
+          }
+        ],
+        "narration": "Would you use Who will win in? And the companies like Meta, Microsoft, Google already better positioned because they own a lot of infrastructure? And infrastructure is not only the data centers but also tool that can benefit integrating LLM's with it (Android, Office, Social Networks)? Or do Open AI or Anthropic have some unknown methods or technology to train models that can't be replicated? This source excerpt does not confirm public access. Would you try Who will win in, or wait for more proof?"
+      },
+      "presentation": {
+        "title": "Who will win in AI race?",
+        "format": "source-fallback",
+        "angle": "capability",
+        "hookStyle": "question",
+        "availability": "unknown",
+        "duration": 36.4,
+        "wordCount": 85,
+        "scriptVersion": 3
+      },
+      "selectionReason": "A concrete capability or everyday consequence in the original evidence.",
+      "contentHash": "a9732cfb7bc443d383bc07ab41ecaa6a985c2cd40a261f6215173cfffd7480af",
+      "media": {
+        "publicUrl": "https://media.zernio.com/temp/1792333264031_qmzxyle5_2026-10-18.mp4",
+        "videoSha256": "4d364c7d58dc57a90d1265bbc27e63918e729463fbd4b5727e2c6afa5ab19849",
+        "uploadedAt": "2026-10-18T14:21:05.589Z"
+      }
     }
   }
 }
