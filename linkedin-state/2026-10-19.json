@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "issueDate": "2026-10-19",
+  "issueUrl": "https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-10-19",
+  "content": "Today's AI briefing from The Gradient | 2026-10-19\n\n1. Trust but Verify: Designing Region-Inhomogeneous Forward Dynamics for Discrete Diffusion\nResearchers introduced a hybrid forward process that applies absorbing dynamics to missing tokens while using uniform‑mixing elsewhere, enabling the model to \"trust but verify\" its context.\n\n2. TRACE: Transformer Residual Activation Codebook Encoding for Communication-efficient Distributed Edge Inference\nResearchers introduced TRACE (Transformer Residual Activation Codebook Encoding), a method that encodes residual activations into a learned codebook before sending them across devices. This eliminates the need for costly key/value projection on the receiving side, allowing computation to overlap with communication.\n\n3. On the SPOT: Enhancing Speculative Decoding for Diffusion Language Models via Commit-Order Prediction\nA team presented SPOT (Speculative Decoding via Commit‑Order Prediction), a framework that lets diffusion language models decide both what tokens to generate and where to place them, enabling lossless multi‑token decoding.\n\nRead the full briefing and original sources:\nhttps://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-10-19\n\n#AI #ArtificialIntelligence #TheGradient",
+  "contentHash": "c351f02a720dbf303350dc2f69e33d22b2baa8a3a682f5d5ccf304124a65b877",
+  "accountId": "6ac5a561b3c21905c0edcfba",
+  "organizationUrn": "urn:li:organization:136824048",
+  "idempotencyKey": "d67a23d0-b671-450e-8b9c-f035430b5acf",
+  "status": "submitting",
+  "firstSubmittedAt": "2026-10-19T17:21:22.715Z"
+}
