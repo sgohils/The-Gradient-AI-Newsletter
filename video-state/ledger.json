@@ -256,8 +256,8 @@
         "sourceUrl": "https://arxiv.org/abs/2610.12655",
         "sourceName": "arXiv cs.AI",
         "publishedAt": "2026-10-12T04:00:00.000Z",
-        "sourceExcerpt": "arXiv:2610.12655v1 Announce Type: new Abstract: LLM agents can execute increasingly complex tasks, but effective assistance also requires aligning their actions with goals and constraints that users may leave unstated. We study this problem as interactive intent alignment through clarification. Yet clarification is useful only when the agent can turn the answer into better decisions. As training changes how the agent handles incomplete information and uses additional answers, the same clarification can become more or less useful. We introduce CLEAT (CLarification through valuE-guided Agent co-Training), a framework that co-trains a clarification-value controller and the task policy from shared interaction outcomes. We formulate residual query value to measure the task utility gained by asking rather than proceeding under the current policy, and estimate it through paired rollouts from the same interaction history. These paired returns train the controller to predict clarification value and the task policy to select useful questions and act on the answers. The controller guides subsequent rollout collection, while outcomes from the updated agent provide new value labels that allow clarification guidance to adapt as the agent learns. With Qwen3-4B, CLEAT achieves the highest mean score in all ten evaluation settings across four benchmarks. Gains over the strongest baseline reach 13.2 and 6.5 percentage points on UserGym Travel and IN3 underspecification judgment accuracy, respectively. Ablations show that co-training improves the task policy even when the controller is removed at inference, while adapting clarification guidance to the evolving policy yields further gains.",
-        "summary": "**What happened:** Researchers introduced CLEAT, a value‑guided learning framework that trains LLM agents to generate clarification queries only when those answers are expected to raise task value. The approach reshapes how agents handle incomplete information and integrate follow‑up answers.\n\n**Why it matters:** By turning vague user instructions into actionable insight, CLEAT reduces mis‑alignment, cuts down on wasted steps, and makes autonomous agents safer and more reliable for complex, real‑world tasks.\n\n**Key stats:** • Up to **15 % higher task‑completion success** on benchmark interactive tasks.\n• **30 % fewer clarification turns** needed on average, saving time and computational cost.\n• Improved alignment scores by **0.12** points on standard intent‑alignment metrics.\n\n**Source:** https://arxiv.org/abs/2610.12655"
+        "sourceExcerpt": "",
+        "summary": ""
       },
       "selectedAt": "2026-10-12T20:09:26.314Z",
       "platforms": {
@@ -265,70 +265,10 @@
           "accountId": "6ac27146281ee799a37065e4",
           "status": "published",
           "idempotencyKey": "9b71575a-3c6a-4973-97a0-b628011faea4",
-          "request": {
-            "content": "CLEAT: Learning Value-Guided Clarification for Interactive Agents\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2610.12655\n\nThe Gradient: https://gradientnews.app/archive/2026-10-12\nAI-generated narration. #AI #AINews #Shorts",
-            "mediaItems": [
-              {
-                "type": "video",
-                "url": "https://media.zernio.com/temp/1791835867978_7hc3byob_2026-10-12.mp4"
-              }
-            ],
-            "platforms": [
-              {
-                "platform": "youtube",
-                "accountId": "6ac27146281ee799a37065e4",
-                "platformSpecificData": {
-                  "title": "arXiv cs.AI says it study this problem as interactive intent alignment through clarificati",
-                  "visibility": "public",
-                  "madeForKids": false,
-                  "containsSyntheticMedia": true,
-                  "categoryId": "28"
-                }
-              }
-            ],
-            "publishNow": true
-          },
           "firstSubmittedAt": "2026-10-12T20:11:11.168Z",
           "postId": "6acd3ee00a6384ec4ee41500",
           "postUrl": "https://www.youtube.com/watch?v=ZGxQ9sqlxkQ"
         }
-      },
-      "script": {
-        "version": 2,
-        "provider": "extractive",
-        "sentences": [
-          {
-            "text": "arXiv cs.AI says it study this problem as interactive intent alignment through clarification.",
-            "evidenceQuote": "We study this problem as interactive intent alignment through clarification.",
-            "role": "hook",
-            "displayText": "ArXiv cs.AI says it study this problem as"
-          },
-          {
-            "text": "arXiv:2610.12655v1 Announce Type: new Abstract: LLM agents can execute increasingly complex tasks, but effective assistance also requires aligning their actions with goals and constraints that users may leave unstated.",
-            "evidenceQuote": "arXiv:2610.12655v1 Announce Type: new Abstract: LLM agents can execute increasingly complex tasks, but effective assistance also requires aligning their actions with goals and constraints that users may leave unstated.",
-            "role": "detail",
-            "displayText": "Execute increasingly complex tasks"
-          },
-          {
-            "text": "Yet clarification is useful only when the agent can turn the answer into better decisions.",
-            "evidenceQuote": "Yet clarification is useful only when the agent can turn the answer into better decisions.",
-            "role": "detail",
-            "displayText": "Turn the answer into better decisions"
-          },
-          {
-            "text": "As training changes how the agent handles incomplete information and uses additional answers, the same clarification can become more or less useful.",
-            "evidenceQuote": "As training changes how the agent handles incomplete information and uses additional answers, the same clarification can become more or less useful.",
-            "role": "detail",
-            "displayText": "Become more or less useful"
-          },
-          {
-            "text": "With Qwen3-4B, CLEAT achieves the highest mean score in all ten evaluation settings across four benchmarks.",
-            "evidenceQuote": "With Qwen3-4B, CLEAT achieves the highest mean score in all ten evaluation settings across four benchmarks.",
-            "role": "takeaway",
-            "displayText": "With Qwen3-4B, CLEAT achieves the highest mean score"
-          }
-        ],
-        "narration": "arXiv cs.AI says it study this problem as interactive intent alignment through clarification. arXiv:2610.12655v1 Announce Type: new Abstract: LLM agents can execute increasingly complex tasks, but effective assistance also requires aligning their actions with goals and constraints that users may leave unstated. Yet clarification is useful only when the agent can turn the answer into better decisions. As training changes how the agent handles incomplete information and uses additional answers, the same clarification can become more or less useful. With Qwen3-4B, CLEAT achieves the highest mean score in all ten evaluation settings across four benchmarks.\nSource in the description."
       },
       "selectionReason": "A source-backed, measurable change in time, cost, or capability.",
       "contentHash": "a067a6794383694d70a742a498eec642cca7f5b33edf9b9efc1782f3217d442a",
@@ -998,6 +938,97 @@
         "publicUrl": "https://media.zernio.com/temp/1792333264031_qmzxyle5_2026-10-18.mp4",
         "videoSha256": "4d364c7d58dc57a90d1265bbc27e63918e729463fbd4b5727e2c6afa5ab19849",
         "uploadedAt": "2026-10-18T14:21:05.589Z"
+      }
+    },
+    "2026-10-19": {
+      "story": {
+        "id": "arxiv-cslg-https%3A%2F%2Farxiv.org%2Fabs%2F2610.22380",
+        "rank": 1,
+        "title": "Trust but Verify: Designing Region-Inhomogeneous Forward Dynamics for Discrete Diffusion",
+        "sourceUrl": "https://arxiv.org/abs/2610.22380",
+        "sourceName": "arXiv cs.LG",
+        "publishedAt": "2026-10-19T04:00:00.000Z",
+        "sourceExcerpt": "arXiv:2610.22380v1 Announce Type: new Abstract: Continuous diffusion treats the forward process as a design space; discrete language diffusion often uses absorbing corruption, leaving context fully trusted throughout generation. This makes trust binary: corrupted context is copied as ground truth, propagating errors into generated spans. We reopen this design space by combining absorbing and uniform-mixing kernels with region-dependent rates. Missing positions follow absorbing dynamics, while context undergoes low-rate random substitution, exposing the model to observed but uncertain tokens during training. At inference, a heuristic sampler re-injects noise into suspicious context under an annealed intensity and freezes context updates late in the trajectory. An 8,000-step finetune of a pretrained 170M-parameter masked diffusion model takes under five hours on a 6 GB laptop GPU. The base model assigns roughly 50% probability to observed tokens even when they are uniform-random garbage. For uniform-random corruption, finetuning detects corrupted context with 0.96 recall and 0.91 precision, improves infill token-F1 by 3.8 points at 10% corruption and 6.4 points at 20%, and removes the accuracy dip next to corruptions. Clean conditioning shows no measurable regression, with a false-edit rate below 0.4%. Gains for plausible corruptions are weaker: about 0.5 F1 points at 10% corruption, without statistical significance. Our results suggest that detectability and damage depend jointly on departure from the data conditional: nearby noise is hard to detect and semantically mild, while distant noise is conspicuous and destructive. We interpret absorbing diffusion as the infinite-contrast limit of a trust axis, analogous to the signal-to-noise gap between known and unknown regions in diffusion inpainting. In our setting of a 170M model and a single text domain, intermediate trust is reached by changing forward dynamics rather than architecture.",
+        "summary": "**What happened:** Researchers introduced a hybrid forward process that applies absorbing dynamics to missing tokens while using uniform‑mixing elsewhere, enabling the model to \"trust but verify\" its context.\n\n**Why it matters:** This mitigates error propagation in language generation, improves robustness, and reopens the forward‑process design space that has been dominated by all‑absorbing kernels.\n\n**Key stats:** Early experiments report a measurable reduction in error propagation and more stable generations under noisy prompts compared to traditional absorbing‑only diffusion.\n\n**Source:** https://arxiv.org/abs/2610.22380"
+      },
+      "selectedAt": "2026-10-19T17:23:47.844Z",
+      "platforms": {
+        "youtube": {
+          "accountId": "6ac27146281ee799a37065e4",
+          "status": "prepared",
+          "idempotencyKey": "e0208eec-c542-4a9e-9a76-8b55f6c3a690"
+        }
+      },
+      "script": {
+        "version": 3,
+        "provider": "extractive",
+        "format": "source-fallback",
+        "angle": "capability",
+        "workingTitle": "Trust but Verify: Designing Region-Inhomogeneous",
+        "availability": "unknown",
+        "hookStyle": "question",
+        "sentences": [
+          {
+            "text": "Would you use Trust but Verify?",
+            "evidenceQuote": "arXiv:2610.22380v1 Announce Type: new Abstract: Continuous diffusion treats the forward process as a design space; discrete language diffusion often uses absorbing corruption, leaving context fully trusted throughout generation. This makes trust binary: corrupted context is copied as ground truth, propagating errors into generated spans. We reopen this design space by combining absorbing and uniform-mixing kernels with region-dependent rates. Missing positions follow absorbing dynamics, while context undergoes low-rate random substitution, exposing the model to observed but uncertain tokens during training. At inference, a heuristic sampler re-injects noise into suspicious context under an annealed intensity and freezes context updates late in the trajectory. An 8,000-step finetune of a pretrained 170M-parameter masked diffusion model takes under five hours on a 6 GB laptop GPU. The base model assigns roughly 50% probability to observed tokens even when they are uniform-random garbage. For uniform-random corruption, finetuning detects corrupted context with 0.96 recall and 0.91 precision, improves infill token-F1 by 3.8 points at 10% corruption and 6.4 points at 20%, and removes the accuracy dip next to corruptions. Clean conditioning shows no measurable regression, with a false-edit rate below 0.4%. Gains for plausible corruptions are weaker: about 0.5 F1 points at 10% corruption, without statistical significance. Our results suggest that detectability and damage depend jointly on departure from the data conditional: nearby noise is hard to detect and semantically mild, while distant noise is conspicuous and destructive. We interpret absorbing diffusion as the infinite-contrast limit of a trust axis, analogous to the signal-to-noise gap between known and unknown regions in diffusion inpainting. In our setting of a 170M model and a single text domain, intermediate trust is reached by changing forward dynamics rather than architecture.",
+            "role": "hook",
+            "visual": "example",
+            "displayText": "Would you use Trust but Verify?"
+          },
+          {
+            "text": "arXiv:2610.22380v1 Announce Type: new Abstract: Continuous diffusion treats the forward process as a design space; discrete language diffusion often uses absorbing corruption, leaving context fully trusted throughout generation.",
+            "evidenceQuote": "arXiv:2610.22380v1 Announce Type: new Abstract: Continuous diffusion treats the forward process as a design space; discrete language diffusion often uses absorbing corruption, leaving context fully trusted throughout generation.",
+            "role": "breakthrough",
+            "visual": "example",
+            "displayText": "ArXiv:2610.22380v1 Announce Type: new Abstract: Continuous diffusion treats"
+          },
+          {
+            "text": "This makes trust binary: corrupted context is copied as ground truth, propagating errors into generated spans.",
+            "evidenceQuote": "This makes trust binary: corrupted context is copied as ground truth, propagating errors into generated spans.",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "This makes trust binary: corrupted context is copied"
+          },
+          {
+            "text": "The base model assigns roughly 50% probability to observed tokens even when they are uniform-random garbage.",
+            "evidenceQuote": "The base model assigns roughly 50% probability to observed tokens even when they are uniform-random garbage.",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "The base model assigns roughly 50% probability"
+          },
+          {
+            "text": "This source excerpt does not confirm public access.",
+            "evidenceQuote": "arXiv:2610.22380v1 Announce Type: new Abstract: Continuous diffusion treats the forward process as a design space; discrete language diffusion often uses absorbing corruption, leaving context fully trusted throughout generation.",
+            "role": "impact",
+            "visual": "highlight",
+            "displayText": "does not confirm public access"
+          },
+          {
+            "text": "Would you try Trust but Verify, or wait for more proof?",
+            "evidenceQuote": "arXiv:2610.22380v1 Announce Type: new Abstract: Continuous diffusion treats the forward process as a design space; discrete language diffusion often uses absorbing corruption, leaving context fully trusted throughout generation. This makes trust binary: corrupted context is copied as ground truth, propagating errors into generated spans. We reopen this design space by combining absorbing and uniform-mixing kernels with region-dependent rates. Missing positions follow absorbing dynamics, while context undergoes low-rate random substitution, exposing the model to observed but uncertain tokens during training. At inference, a heuristic sampler re-injects noise into suspicious context under an annealed intensity and freezes context updates late in the trajectory. An 8,000-step finetune of a pretrained 170M-parameter masked diffusion model takes under five hours on a 6 GB laptop GPU. The base model assigns roughly 50% probability to observed tokens even when they are uniform-random garbage. For uniform-random corruption, finetuning detects corrupted context with 0.96 recall and 0.91 precision, improves infill token-F1 by 3.8 points at 10% corruption and 6.4 points at 20%, and removes the accuracy dip next to corruptions. Clean conditioning shows no measurable regression, with a false-edit rate below 0.4%. Gains for plausible corruptions are weaker: about 0.5 F1 points at 10% corruption, without statistical significance. Our results suggest that detectability and damage depend jointly on departure from the data conditional: nearby noise is hard to detect and semantically mild, while distant noise is conspicuous and destructive. We interpret absorbing diffusion as the infinite-contrast limit of a trust axis, analogous to the signal-to-noise gap between known and unknown regions in diffusion inpainting. In our setting of a 170M model and a single text domain, intermediate trust is reached by changing forward dynamics rather than architecture.",
+            "role": "engagement",
+            "visual": "highlight",
+            "displayText": "Would you try Trust but Verify"
+          }
+        ],
+        "narration": "Would you use Trust but Verify? arXiv:2610.22380v1 Announce Type: new Abstract: Continuous diffusion treats the forward process as a design space; discrete language diffusion often uses absorbing corruption, leaving context fully trusted throughout generation. This makes trust binary: corrupted context is copied as ground truth, propagating errors into generated spans. The base model assigns roughly 50% probability to observed tokens even when they are uniform-random garbage. This source excerpt does not confirm public access. Would you try Trust but Verify, or wait for more proof?"
+      },
+      "presentation": {
+        "title": "Trust but Verify: Designing Region-Inhomogeneous",
+        "format": "source-fallback",
+        "angle": "capability",
+        "hookStyle": "question",
+        "availability": "unknown",
+        "duration": 41.3,
+        "wordCount": 85,
+        "scriptVersion": 3
+      },
+      "selectionReason": "A source-backed, measurable change in time, cost, or capability.",
+      "contentHash": "5225a6f30b4ad9ce64ace935730ca99021f311300ac946fb00dcea1c17122e07",
+      "media": {
+        "publicUrl": "https://media.zernio.com/temp/1792430651676_1jqxmj1o_2026-10-19.mp4",
+        "videoSha256": "a0ed53f5360c46f92d4ac443fa12ba04cac68bf7164858e73262aa3d55e0a002",
+        "uploadedAt": "2026-10-19T17:24:12.758Z"
       }
     }
   }
