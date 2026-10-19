@@ -955,8 +955,32 @@
       "platforms": {
         "youtube": {
           "accountId": "6ac27146281ee799a37065e4",
-          "status": "prepared",
-          "idempotencyKey": "e0208eec-c542-4a9e-9a76-8b55f6c3a690"
+          "status": "submitting",
+          "idempotencyKey": "e0208eec-c542-4a9e-9a76-8b55f6c3a690",
+          "request": {
+            "content": "Trust but Verify: Designing Region-Inhomogeneous Forward Dynamics for Discrete Diffusion\n\nSource: arXiv cs.LG\nhttps://arxiv.org/abs/2610.22380\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-10-19\nAI-generated narration. #AI #AINews #Shorts",
+            "mediaItems": [
+              {
+                "type": "video",
+                "url": "https://media.zernio.com/temp/1792430651676_1jqxmj1o_2026-10-19.mp4"
+              }
+            ],
+            "platforms": [
+              {
+                "platform": "youtube",
+                "accountId": "6ac27146281ee799a37065e4",
+                "platformSpecificData": {
+                  "title": "Trust but Verify: Designing Region-Inhomogeneous",
+                  "visibility": "public",
+                  "madeForKids": false,
+                  "containsSyntheticMedia": true,
+                  "categoryId": "28"
+                }
+              }
+            ],
+            "publishNow": true
+          },
+          "firstSubmittedAt": "2026-10-19T17:24:14.035Z"
         }
       },
       "script": {
