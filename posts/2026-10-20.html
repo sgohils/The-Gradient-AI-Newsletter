@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Gradient — 2026-10-20</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      line-height: 1.6;
+      color: #1a1a1a;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      background: #fefefe;
+    }
+    header {
+      border-bottom: 2px solid #1a1a1a;
+      padding-bottom: 1rem;
+      margin-bottom: 2rem;
+    }
+    h1 {
+      font-size: 1.75rem;
+      line-height: 1.2;
+      margin: 0 0 0.5rem 0;
+    }
+    .date {
+      color: #666;
+      font-size: 0.9rem;
+    }
+    .intro {
+      font-size: 1.1rem;
+      color: #333;
+      margin-bottom: 2rem;
+    }
+    .story {
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid #e5e5e5;
+    }
+    .story:last-child {
+      border-bottom: none;
+    }
+    .story h2 {
+      font-size: 1.25rem;
+      margin: 0 0 0.5rem 0;
+    }
+    .story p {
+      margin: 0 0 0.5rem 0;
+    }
+    .story a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    .story a:hover {
+      text-decoration: underline;
+    }
+    .meta {
+      font-size: 0.85rem;
+      color: #666;
+      margin-top: 0.5rem;
+    }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 1px solid #e5e5e5;
+      font-size: 0.85rem;
+      color: #888;
+    }
+    
+  </style>
+</head>
+<body>
+  <header>
+    <h1>The Gradient — 2026-10-20</h1>
+    <div class="date">2026-10-20</div>
+  </header>
+  
+  <p class="intro">A new benchmark called GardenBench promises to track large language model performance day by day with minimal overhead.</p>
+  <main>
+    <h2>GardenBench: A lightweight, daily evaluation of LLM capabilities</h2>
+<br>
+<p><strong>What happened:</strong> Researchers released GardenBench, an 11‑suite benchmark that probes LLMs with lightweight queries to capture daily shifts in accuracy, cost, and latency. </p>
+<p><strong>Why it matters:</strong> Traditional benchmarks miss short‑term fluctuations; GardenBench gives developers and users real‑time insight into model stability, provider differences, and version upgrades. </p>
+<p><strong>Key stats:</strong> 11 test suites covering diverse tasks; tracks run costs and response times alongside accuracy; enables side‑by‑side comparison of multiple model providers. </p>
+<p><strong>Source:</strong> https://arxiv.org/abs/2610.23866</p>
+<br>
+<p><a href="https://arxiv.org/abs/2610.23866">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>A Controlled LLM Workflow for Evidence-Grounded Diagnosis of Risk Score Differences</h2>
+<br>
+<p><strong>What happened:</strong></p>
+<p>The team introduced a controlled Large Language Model (LLM) workflow that first retrieves similar historical transactions, then applies contrastive SHapley Additive exPlanations (SHAP) to generate evidence, and finally feeds this reference‑based evidence into the LLM for reasoning. A deterministic validation step ensures the output is traceable.</p>
+<br>
+<p><strong>Why it matters:</strong></p>
+<p>Risk scoring systems—used in finance, insurance, and fraud detection—often produce opaque differences that analysts must explain. By grounding LLM outputs in concrete, retrieved examples and SHAP evidence, the workflow offers transparent, reproducible diagnoses, reducing reliance on black‑box explanations.</p>
+<br>
+<p><strong>Key stats:</strong></p>
+<ul>
+<li>Experiments on a dedicated test set showed the workflow yields diagnoses that are more consistent, evidence‑grounded, and traceable than a vanilla LLM lacking the retrieval‑SHAP components.</li>
+<li>The enhanced pipeline outperformed the baseline LLM across all measured consistency and traceability metrics (exact figures pending full paper release).</li>
+</ul>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2610.23962</p>
+<br>
+<p><a href="https://arxiv.org/abs/2610.23962">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>Unified Multiparadigm Fusion Intelligence for Rare Disease Diagnosis</h2>
+<br>
+<p><strong>What happened:</strong> A team introduced a Unified Multiparadigm Fusion Intelligence framework that merges symbolic methods, deep neural networks, and LLM‑based reasoning into a single diagnostic engine for rare diseases.</p>
+<br>
+<p><strong>Why it matters:</strong> By bridging the strengths of each AI paradigm, the system tackles the fragmented knowledge and data scarcity that have long slowed rare disease identification, promising faster, more accurate diagnoses for millions.</p>
+<br>
+<p><strong>Key stats:</strong></p>
+<ul>
+<li>Approximately 300 million people worldwide live with a rare disease.</li>
+<li>Existing AI approaches each suffer from distinct limitations—symbolic methods lack adaptability, deep learning needs massive labeled data, and LLMs can hallucinate.</li>
+<li>The new fusion model seeks to overcome these hurdles by leveraging complementary AI capabilities.</li>
+</ul>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2610.24024</p>
+<br>
+<p><a href="https://arxiv.org/abs/2610.24024">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>Persistent Memory and Iterative Improvement in an LLM Agent for Chinese-Character Drawing</h2>
+<br>
+<p><strong>What happened:</strong> Researchers built five versions of an LLM‑driven drawing agent and tasked each with programmatically reproducing 668 Chinese characters. Each version stored a growing “memory” of past attempts—ranging from free‑form notes to structured logs—and used that archive when tackling new characters.</p>
+<br>
+<p><strong>Why it matters:</strong> Demonstrating that AI systems can benefit from self‑generated experience moves us toward more autonomous, self‑improving agents. Persistent memory could reduce the need for repeated fine‑tuning and enable continual learning in real‑world tasks.</p>
+<br>
+<p><strong>Key stats:</strong></p>
+<ul>
+<li>Free‑form note memory raised first‑attempt success by 4.6 percentage points.</li>
+<li>Even with a substantial increase in stored data, overall gains remained modest, highlighting diminishing returns.</li>
+<li>The most effective design combined free‑form notes with selective retrieval, outperforming purely raw logs.</li>
+</ul>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2610.24090</p>
+<br>
+<p><a href="https://arxiv.org/abs/2610.24090">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>A Conditional No-Hair Theorem for Transformers: How Language Models Forget Their Prompt</h2>
+<br>
+<p><strong>What happened:</strong> Researchers measured the hidden‑state divergence between two identical transformer continuations that began with different prompts. Over the generation of t tokens, the distance between the states shrank following a power‑law pattern.</p>
+<br>
+<p><strong>Why it matters:</strong> Understanding prompt decay clarifies why models can drift from the original instruction and helps design better prompting strategies, fine‑tuning, and safety guards.</p>
+<br>
+<p><strong>Key stats:</strong> • Decay follows t^‑α with α ≈ 1. • The uniform‑attention component of a prompt shrinks at the same rate. • Results hold across several model scales and token lengths.</p>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2610.24133</p>
+<br>
+<p><a href="https://arxiv.org/abs/2610.24133">Read more</a></p>
+<br>
+<hr>
+<br>
+  </main>
+  <footer>
+    <p>Tags: Research</p>
+  </footer>
+</body>
+</html>

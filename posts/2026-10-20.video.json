@@ -1,0 +1,257 @@
+{
+  "version": 1,
+  "issueDate": "2026-10-20",
+  "generatedAt": "2026-10-20T15:33:22.198Z",
+  "stories": [
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.23866",
+      "rank": 1,
+      "title": "GardenBench: A lightweight, daily evaluation of LLM capabilities",
+      "sourceUrl": "https://arxiv.org/abs/2610.23866",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-20T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.23866v1 Announce Type: new Abstract: We introduce GardenBench, a benchmark with 11 test suites that evaluate the capabilities of Large Language Models (LLMs) across a range of tasks. By systematically prompting LLMs with various lightweight queries, we document day-to-day changes in model performance, including run costs and times, that other benchmarks miss. This allows us to compare the accuracy and features of responses across model providers and versions. We account for daily variations in model accuracy, capturing both model progress and degradation, for instance, when a model is changed post-deployment or when a new model is released. We base our evaluation on general-use tasks and make our results publicly accessible via a live dashboard, diversifying existing approaches to LLM testing. Our main contribution is an innovative, lightweight, and inexpensive benchmark, designed to be consumer-facing and for everyday tasks.",
+      "summary": "**What happened:** Researchers released GardenBench, an 11‑suite benchmark that probes LLMs with lightweight queries to capture daily shifts in accuracy, cost, and latency. \n**Why it matters:** Traditional benchmarks miss short‑term fluctuations; GardenBench gives developers and users real‑time insight into model stability, provider differences, and version upgrades. \n**Key stats:** 11 test suites covering diverse tasks; tracks run costs and response times alongside accuracy; enables side‑by‑side comparison of multiple model providers. \n**Source:** https://arxiv.org/abs/2610.23866"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.23962",
+      "rank": 2,
+      "title": "A Controlled LLM Workflow for Evidence-Grounded Diagnosis of Risk Score Differences",
+      "sourceUrl": "https://arxiv.org/abs/2610.23962",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-20T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.23962v1 Announce Type: new Abstract: We propose a controlled Large Language Model (LLM) workflow for explaining risk score differences using similar historical transactions. The workflow combines reference retrieval and contrastive SHapley Additive exPlanations (SHAP) evidence with reference-based LLM reasoning and deterministic validation. Experiments on a test dataset show that the workflow produces more consistent, evidence-grounded and traceable diagnoses than the same LLM without structured workflow guidance.",
+      "summary": "**What happened:**\nThe team introduced a controlled Large Language Model (LLM) workflow that first retrieves similar historical transactions, then applies contrastive SHapley Additive exPlanations (SHAP) to generate evidence, and finally feeds this reference‑based evidence into the LLM for reasoning. A deterministic validation step ensures the output is traceable.\n\n**Why it matters:**\nRisk scoring systems—used in finance, insurance, and fraud detection—often produce opaque differences that analysts must explain. By grounding LLM outputs in concrete, retrieved examples and SHAP evidence, the workflow offers transparent, reproducible diagnoses, reducing reliance on black‑box explanations.\n\n**Key stats:**\n- Experiments on a dedicated test set showed the workflow yields diagnoses that are more consistent, evidence‑grounded, and traceable than a vanilla LLM lacking the retrieval‑SHAP components.\n- The enhanced pipeline outperformed the baseline LLM across all measured consistency and traceability metrics (exact figures pending full paper release).\n\n**Source:** https://arxiv.org/abs/2610.23962"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.24024",
+      "rank": 3,
+      "title": "Unified Multiparadigm Fusion Intelligence for Rare Disease Diagnosis",
+      "sourceUrl": "https://arxiv.org/abs/2610.24024",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-20T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.24024v1 Announce Type: new Abstract: Rare diseases (RDs) affect an estimated 300 million people globally, leaving patients to navigate a protracted diagnostic odyssey constrained by clinical scarcity and fragmented medical knowledge. Artificial intelligence (AI) has progressively advanced RD diagnostics, from symbolic methods and deep learning to large language model (LLM)-based systems. However, each paradigm carries structural limitations: symbolic methods are bounded by knowledge completeness, neural models sacrifice interpretability, and LLM-based systems are vulnerable to evaluation biases like data leakage. In this study, we introduce FusionRare, a unified multiparadigm fusion framework integrating knowledge-driven symbolic reasoning, deep-learning pattern recognition, case-based patient retrieval, and LLM-based heuristic inference via statistical meta-aggregation and knowledge-enhanced agentic reflection. Evaluated on 2,528 strictly isolated clinical cases, FusionRare achieves state-of-the-art RD prioritization, attaining a macro-averaged Recall @1 of 51% for phenotype-only diagnosis and 79% for phenotype-genotype joint analysis. These results represent decisive advantages over the advanced agentic system DeepRare, frontier LLMs including GPT 5.5, and specialized tools like PhenoBrain and LIRICAL under stringent anti-leakage protocols. A randomized, crossover clinician-AI validation demonstrated that FusionRare elevates the true diagnostic rank in 45% of decisions, improves physician confidence in 62%, and reduces time to diagnosis by 21%. These findings indicate that reconciling these orthogonal AI paradigms significantly enhances diagnostic capabilities, bridging the gap between computational benchmarks and actionable clinical reliability. More broadly, this work provides a replicable framework for deploying trustworthy diagnostic AI across complex, high-stakes, and underserved medical domains.",
+      "summary": "**What happened:** A team introduced a Unified Multiparadigm Fusion Intelligence framework that merges symbolic methods, deep neural networks, and LLM‑based reasoning into a single diagnostic engine for rare diseases.\n\n**Why it matters:** By bridging the strengths of each AI paradigm, the system tackles the fragmented knowledge and data scarcity that have long slowed rare disease identification, promising faster, more accurate diagnoses for millions.\n\n**Key stats:**\n- Approximately 300 million people worldwide live with a rare disease.\n- Existing AI approaches each suffer from distinct limitations—symbolic methods lack adaptability, deep learning needs massive labeled data, and LLMs can hallucinate.\n- The new fusion model seeks to overcome these hurdles by leveraging complementary AI capabilities.\n\n**Source:** https://arxiv.org/abs/2610.24024"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.24090",
+      "rank": 4,
+      "title": "Persistent Memory and Iterative Improvement in an LLM Agent for Chinese-Character Drawing",
+      "sourceUrl": "https://arxiv.org/abs/2610.24090",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-20T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.24090v1 Announce Type: new Abstract: Does persistent memory accumulated from previous attempts help an LLM agent solve new problems, and does memory design affect that benefit? We study programmatic Chinese-character drawing across five agent conditions attempting the same 668 items. Accumulated memory produces modest aggregate gains despite substantial growth in the memory stores: free-form notes improve first-attempt success by 4.6 percentage points, while a design combining free-form memory with reusable code improves it by 2.8 points. The two designs do not differ significantly overall, but the code bank shows a suggestive advantage on later, harder items. A separate post-hoc comparison finds a much larger improvement when the code-bank agent receives privileged, target-specific structural supervision. The agent can therefore exploit highly informative structural guidance, although the privileged per-item information does not establish what could have been learned from experience alone. These results suggest that memory design may affect where accumulated experience becomes useful, even when its average benefit is modest.",
+      "summary": "**What happened:** Researchers built five versions of an LLM‑driven drawing agent and tasked each with programmatically reproducing 668 Chinese characters. Each version stored a growing “memory” of past attempts—ranging from free‑form notes to structured logs—and used that archive when tackling new characters.\n\n**Why it matters:** Demonstrating that AI systems can benefit from self‑generated experience moves us toward more autonomous, self‑improving agents. Persistent memory could reduce the need for repeated fine‑tuning and enable continual learning in real‑world tasks.\n\n**Key stats:**\n- Free‑form note memory raised first‑attempt success by 4.6 percentage points.\n- Even with a substantial increase in stored data, overall gains remained modest, highlighting diminishing returns.\n- The most effective design combined free‑form notes with selective retrieval, outperforming purely raw logs.\n\n**Source:** https://arxiv.org/abs/2610.24090"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.24133",
+      "rank": 5,
+      "title": "A Conditional No-Hair Theorem for Transformers: How Language Models Forget Their Prompt",
+      "sourceUrl": "https://arxiv.org/abs/2610.24133",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-20T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.24133v1 Announce Type: new Abstract: We ask how much an autoregressive transformer retains of its prompt after generating $t$ tokens. Consider two different prompts followed by the same continuation text, so that any difference in their hidden states comes from the prompt alone, and we find that the distance between their hidden states decays approximately as a power law $t^{-\\alpha}$, where $\\alpha=1$ is the rate at which a fixed prompt's share of uniform attention shrinks and smaller values mean longer memory. Trained models forget fast ($\\alpha\\approx0.55$--$0.7$), untrained ones slowly ($\\alpha\\approx0.2$--$0.5$). We prove that this offset is $O\\big(P(\\log t)^{L-1}/t\\big)$ for a prompt of length $P$ and depth $L$. The bound holds for finite-depth pre-LN softmax transformers with bounded attention logits, under one additional condition: the pre-norm activations stay away from zero. The mechanism is geometric: the prompt's direct influence is diluted as the context grows, and \\emph{relay} --- continuation tokens passing on what earlier tokens read from the prompt --- can only add logarithmic factors. This is what we call the \\emph{conditional no-hair theorem}: given the text generated so far, the prompt's influence on the next token vanishes as $t$ grows, so any property of the prompt that survives, such as its language, must be carried by the text itself. An exactly solvable linear relay model shows that the bound cannot be improved and reproduces the rise of the local exponent towards $1$ seen in untrained networks. Cancelling the dilution with a logit bias stops the decay early in training and reverses it after, so dilution is necessary for the forgetting we measure; untrained networks and the solvable model show it is also sufficient.",
+      "summary": "**What happened:** Researchers measured the hidden‑state divergence between two identical transformer continuations that began with different prompts. Over the generation of t tokens, the distance between the states shrank following a power‑law pattern.\n\n**Why it matters:** Understanding prompt decay clarifies why models can drift from the original instruction and helps design better prompting strategies, fine‑tuning, and safety guards.\n\n**Key stats:** • Decay follows t^‑α with α ≈ 1. • The uniform‑attention component of a prompt shrinks at the same rate. • Results hold across several model scales and token lengths.\n\n**Source:** https://arxiv.org/abs/2610.24133"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.24194",
+      "rank": 6,
+      "title": "Agents' Last Doubt: Knowing When to Act and When to Step Back in Tool-Using Agents",
+      "sourceUrl": "https://arxiv.org/abs/2610.24194",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-20T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.24194v1 Announce Type: new Abstract: Tool-using LLM agents repeatedly face decision points under uncertainty, choosing between autonomous action, additional information gathering, and human escalation. These decisions require balancing task success against interaction cost and the risk of irreversible errors. Learning to make these trade-offs is challenging because existing interaction trajectories record only the outcomes of actions taken, leaving the consequences of alternative actions unobserved. To address this gap, we construct a counterfactual dataset containing 3,115 action outcomes from 1,036 decision points in ToolSandbox. At each decision point, we execute each legal action and evaluate its downstream outcomes based on task completion, interaction cost, and irreversible errors. Using this dataset, we train SURE-Act, a controller that selects actions for a frozen backbone agent at inference time. Our experiments show that learning to rank alternative actions improves offline action-selection utility by 0.0309 over a regression-only baseline. We further show that adding SURE-Act enables end-to-end gains of up to 0.0575 in ToolSandbox's Overall Score with the Qwen3-4B agent. Moreover, SURE-Act outperforms adapted decision rules from SAGE-Agent and Calibrate-Then-Act by 0.1506 and 0.1438, respectively. This work establishes the first counterfactual dataset for ToolSandbox and provides actionable insights into decision-making under uncertainty for tool-using agents.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.24255",
+      "rank": 7,
+      "title": "Cortex: A Fixed-Point Theory of Governed Coding Agents - Technical Report",
+      "sourceUrl": "https://arxiv.org/abs/2610.24255",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-20T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.24255v1 Announce Type: new Abstract: A coding agent combines a large language model (LLM) with a harness that plans, edits, and executes code. We study Cortex, a supervisory layer for pre-execution governance, requirement tracking, and iterative validation and repair. We formalize requirement closure on a finite lattice. For a fixed requirement set and a sound, monotone validation rule with persistent evidence, exhaustive iteration reaches the least fixed point with no more strict increases than there are requirements. Fair consequence scheduling reaches the same closure. A separate stochastic model bounds expected completion time under a uniform positive-progress assumption. These results depend on their stated assumptions; artifact repair, fallible validation, and finite execution budgets do not satisfy them automatically. We define Gauntlet's trajectory-similarity and build-gated scores, attack-success estimators, Wilson intervals, and case-cluster bootstrap summaries. Effective-feedback accounting counts newly certified requirements, rather than estimating their information value or utility. The five evaluation families support raw-versus-governed comparisons. We report retained benchmark observations, including rescoring of existing artifacts; constructed outcomes are excluded. Unequal observation sets and incomplete provenance prevent causal claims about governance or measured long-horizon scaling.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.24264",
+      "rank": 8,
+      "title": "AM-Bench: A Unified Taxonomy and Evaluation Suite for Agentic Misalignment",
+      "sourceUrl": "https://arxiv.org/abs/2610.24264",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-20T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.24264v1 Announce Type: new Abstract: As LLM-based agents are deployed with increasing autonomy in real-world environments, a critical failure mode emerges: agentic misalignment, where agents choose harmful actions over failure. However, existing safety benchmarks primarily evaluate whether agents comply with explicitly harmful instructions, leaving the conditions that cause agents to choose harmful actions poorly understood. To address this limitation, we propose AM-Bench, a unified taxonomy and 35 scenario evaluation benchmark spanning seven industries for agentic misalignment grounded in the fraud triangle, a well-established criminological framework explaining goal-directed misconduct. We adapt this framework to agentic environments and construct our evaluation suite and detection systems along three dimensions: perceived threat, perceived opportunity, and reasoning. We operationalize each dimension into structured subcategories rooted in prior theory: five threat categories derived from the instrumental convergence thesis, seven opportunity categories drawn from the Emergent Strategic Reasoning Risks (ESRR) taxonomy, and a novel four-question binary reasoning framework synthesized from prior literature. Our evaluation of 10 frontier models reveals a 62-percentage-point gap in misalignment across scenarios, with Gemini 3 Flash and Gemini 3.1 Pro exhibiting the highest levels of agentic misalignment while Claude Sonnet 4.6 displays near-zero rates across all conditions. Our reasoning framework further reveals that models may exhibit harmful behaviours without explicit situational awareness or explanation, complicating both mitigation and detection. AM-Bench scenarios and code are available at https://github.com/AI4Collaboration/Agentic-Misalignment-Bench",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.24298",
+      "rank": 9,
+      "title": "Who Speaks, Who Authorizes, Who Acts? Understanding Trust Boundaries in Multi-Agent LLMs",
+      "sourceUrl": "https://arxiv.org/abs/2610.24298",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-20T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.24298v1 Announce Type: new Abstract: Multi-agent LLM systems exchange messages before acting through tools, but message delivery, signing authority, and tool-side enforcement are separate trust boundaries. We represent them as communication, authorization, and execution structures, and use the authority cut to characterize the smallest independently compromised signer coalition that can construct a policy-valid false-claim proof under stated assumptions. Controlled paired hidden-state studies reveal four distinctions. First, no fixed-message routing contrast across four models meets the prespecified large-effect criterion; when relays rewrite messages, executed false-state action rates vary by model and route configuration. Second, presented source-identity cues do not uniformly increase protected-action selection across three models. Third, on invalid-proof cases, Nemotron and Llama request protected actions in 52.1% and 54.2% of trials, respectively, yet a deterministic tool gate commits none: request-level and commitment-level safety readouts diverge. Finally, a separate single-model authorization check shows that a false claim with a policy-valid compromised-signer proof can pass the gate, since proof validity is not factual truth. These findings motivate evaluating delivered information, qualified authorization, model proposals, and committed actions separately.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.24320",
+      "rank": 10,
+      "title": "The Judge Can Debias Itself: Awareness and Self-Debiasing for Reliable LLM-as-a-Judge",
+      "sourceUrl": "https://arxiv.org/abs/2610.24320",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-20T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.24320v1 Announce Type: new Abstract: LLM-as-a-Judge systems are increasingly employed for automated evaluation, yet remain susceptible to systematic biases that undermine their reliability. We demonstrate that the judge can effectively debias itself without additional training. We propose two lightweight strategies: bias-aware prompting, which explicitly alerts the judge to potential target biases prior to evaluation, and self-debiasing, in which the judge critiques the initial judgment for bias influence. To broaden the evaluation scope, we introduce three novel benchmarks--authority bias (fabricated citations), confidence bias (assertive phrasing), and formatting bias (structured presentation)--and evaluate across seven bias types in total. Across three frontier models, self-debiasing improves performance in 20 out of 21 model-bias combinations with gains up to 15 percentage points, while bias-aware prompting also yields consistent improvements. The recent fine-tuned external critic, however, does not generalize as reliably to the newly-introduced bias types (degradation observed in 5 out of 9 cases). Our findings demonstrate that prompting a judge to reason about bias, either preemptively or retrospectively, is a robust and generalizable approach for enhancing evaluation integrity.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.24335",
+      "rank": 11,
+      "title": "Screening LLM Judges Without Ground Truth: A Preliminary Evaluation of an AI Dental Hygiene Coach",
+      "sourceUrl": "https://arxiv.org/abs/2610.24335",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-20T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.24335v1 Announce Type: new Abstract: Evaluating a fine-tuned coaching model with expert graders is slow and expensive, and an LLM judge cannot be trusted without ground truth. We present a staged pipeline that screens candidate LLM judges and student models before expert review, using explicit decision rules at each stage: judge output audit, similarity with hosted judges, bias checks, and decision robustness. We demonstrate it on an AI dental hygiene coach. The case study uses synthetic, clinically unvalidated training and reference data to demonstrate the operation of the pipeline, rather than to establish the clinical performance of the resulting models. Two fine-tuned small language models (Granite-4.1-8B and Qwen3-8B), each trained at three data sizes, were scored on seven metrics by five judges (three local, two hosted). Two local judges, Qwen3.8-27B and Gemma-4-31B-it, were not distinguishable from the agreement between the hosted judges on six of seven metrics by rank correlation, and Qwen3.8-27B was the most similar to the hosted judges overall. No judge met our criterion for favoring its own model family or training-data source. The student comparison did not separate the two models on any metric under the pipeline's rule, so the choice of Granite-4.1-8B, which led in 29 of 35 judge-by-metric cells, is a lean that depends partly on truncated Qwen3-8B outputs. The pipeline also surfaced problems that raw scores hid, including the truncated outputs and hallucination flags from one hosted judge that no other judge corroborated. No dental hygiene expert has graded these responses, so the findings are preliminary and the pipeline's final stage, anchoring to expert judgement, is proposed but not performed.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.24383",
+      "rank": 12,
+      "title": "IF-MAP: Influence-Function-Inspired Agent Prioritization in Multi-Agent Systems",
+      "sourceUrl": "https://arxiv.org/abs/2610.24383",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-20T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.24383v1 Announce Type: new Abstract: Improving every agent in an LLM-based multi-agent system can be prohibitively costly, making it important to identify which agent should be prioritized to achieve the greatest system-level gain with limited resources. Failure attribution can inform this decision, but an agent's responsibility for failures does not directly reveal the system-level gains achievable by improving it. We therefore introduce IF-MAP, an influence-function-inspired method for identifying agents with high potential for system-level improvement. For each agent, IF-MAP measures end-to-end loss changes under controlled semantic prompt perturbations, fits a regularized local response model in a low-dimensional prompt-embedding subspace, and uses the estimated response norm as a priority score. This black-box procedure requires no access to model parameters or gradients and produces agent priorities that can guide subsequent improvement effort. We evaluate IF-MAP across six multi-agent workflows spanning code generation, question answering, and mathematical reasoning, using the same priorities for prompt optimization and model upgrades. Optimizing the selected agents' prompts achieves a macro-average gain of 3.81 percentage points, compared with 1.85 for uniform agent selection. Across five target models, upgrading the selected agents yields macro-average gains of 7.62-16.42 percentage points, compared with 3.81-8.62 for uniform agent selection. Despite its probing overhead, IF-MAP reduces Qwen3-8B and DeepSeek-V3.2 token use by 74.2% and 35.2%, respectively, relative to optimizing every agent, and reduces target-model tokens by 63.6-64.9% relative to upgrading every agent. These results support the use of IF-MAP to identify promising agents and direct improvement effort toward greater end-to-end performance gains.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.24385",
+      "rank": 13,
+      "title": "Bridging Exploration and Persona: Information-Directed Dueling for Test-Time Agent Personalization",
+      "sourceUrl": "https://arxiv.org/abs/2610.24385",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-20T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.24385v1 Announce Type: new Abstract: Effective test-time personalization requires LLM agents to adapt to query-dependent user preferences from lightweight interaction. We study persona selection with binary comparisons between candidate responses as the online signal. We present ID-TAP, a scalable, IDS-inspired neural dueling-bandit framework for large discrete persona spaces. ID-TAP combines a query-conditioned neural utility model with a lightweight Bradley-Terry explorer, and transfers comparison evidence across related queries through similarity-weighted warm starts. The neural model shares statistical strength across queries while preserving query-specific scores, and efficient BT updates score hypothetical challengers. Across seven user-conditioned generation benchmarks under reference- and model-based preference simulators, ID-TAP achieves the strongest aggregate performance among the evaluated baselines within a fixed ten-round comparison budget. These results support information-directed challenger selection as an effective design for test-time persona adaptation.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.24390",
+      "rank": 14,
+      "title": "Trust the Edge, Doubt the Arrow: Auditing Validation Signals for Text-Mined Clinical Causal Knowledge Graphs",
+      "sourceUrl": "https://arxiv.org/abs/2610.24390",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-20T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.24390v1 Announce Type: new Abstract: Clinical causal retrieval-augmented generation systems increasingly use knowledge graphs (KGs) mined from notes, yet extracted assertions remain candidates that require audit for patient-level EHR support and direction. We construct a directed candidate graph from 328,839 MIMIC-IV discharge summaries using LLM extraction and UMLS normalization, and evaluate three signals against SemMedDB: within-admission co-occurrence lift, cross-admission diagnosis-coding temporal precedence, and literature corroboration. Lift filters unsupported co-mentions and provides useful EHR support, but not causal proof. Coding order is a weak direction signal: among the 686 candidates where it commits, it reaches 54.2% agreement with SemMedDB, below the extractor's 69.4% on the same subset. Literature corroboration supplies independent direction evidence but covers only 30.4% of candidate relations. A MIMIC-III replication yields the same pattern: extractor direction remains stable (70.5%), whereas coding-order direction is near chance (50.9%). Thus, text-mined clinical causal candidate KGs are best treated as EHR-supported but direction-uncertain. In a leakage-controlled causal QA benchmark, lift-only retrieval achieves 35.7% accuracy; conservative causal demotion achieves 37.2% while reducing evidence-unsupported answers from 17.3% to 6.1% at fixed retrieval recall. We release code, aggregate summaries, and scripts to regenerate restricted outputs.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.24453",
+      "rank": 15,
+      "title": "Hippo: Training-Free Agent Self-Evolution via Hippocampal Replay",
+      "sourceUrl": "https://arxiv.org/abs/2610.24453",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-20T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.24453v1 Announce Type: new Abstract: Motivated by recursive self-improvement (RSI), we study how LLM agents can learn through external memory without updating model parameters. Extracting useful experience from a single attempt is difficult: flawed reasoning can produce success, while poor execution can obscure a sound strategy. Preserving its value over time is also difficult: our accumulation baseline without consolidation initially improves but eventually performs below a no-memory baseline. Our key idea is to compare attempts at the same task to identify reusable decisions and refine when they apply. We introduce Hippo, a memory framework inspired by selective hippocampal encoding and replay that learns from these comparisons when shortcomings are diagnosed. It compares the resulting experience with existing memory to merge overlaps and resolve conflicts through explicit applicability conditions. This allows prior guidance to be revised without storing every lesson as a separate entry. Experiments on SWE-bench Verified, WebArena, and Mind2Web show performance gains in all three settings and substantially fewer retained experiences than the accumulation baseline. The gains extend across the evaluated base models of varying capabilities, indicating that memory-based adaptation remains useful even for highly capable models.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.24520",
+      "rank": 16,
+      "title": "HABIT-Bench: Evaluating Habit Induction from Longitudinal Weak Evidence in Agent Memory",
+      "sourceUrl": "https://arxiv.org/abs/2610.24520",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-20T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.24520v1 Announce Type: new Abstract: In long-term interactions with large language model (LLM) agents, users reveal habits through their choices and actions. These habits capture implicit user information that agents must infer across conversations. However, individual observations may provide only partial evidence about a habit or when it applies. Retaining past interactions alone does not ensure that agents can infer habits and apply them appropriately. We introduce HABIT-Bench to evaluate how well agent memory systems infer habits from weak evidence and apply them to later requests. We construct synthetic user histories from task-oriented dialogue data and controlled habit graphs. The histories span hundreds of sessions across food, finance, software, and travel. Four-choice tasks assess agents' ability to infer user habits and apply them appropriately. They include temporary exceptions, changes in habits, and suggestions that users have not accepted. Sampled tasks undergo independent human review. We evaluate eight memory methods with Qwen3-235B-A22B and GLM-5.3-Flash. The best-performing memory method achieves 33.61\\% macro accuracy across the four domains. Performance remains limited even when annotated evidence is supplied directly. These results expose a persistent gap between access to past interactions and the ability to infer and appropriately use user habits.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.24521",
+      "rank": 17,
+      "title": "Comparing Sparsified MLPs and Transcoders: Many Transcoder Features Are Neurons in Disguise",
+      "sourceUrl": "https://arxiv.org/abs/2610.24521",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-20T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.24521v1 Announce Type: new Abstract: MLP neurons in transformer language models are widely understood to be polysemantic, motivating transcoders - sparse, learned approximations of MLP layers - as interpretable replacement models for mechanistic analysis. However, recent work shows that MLP neurons can be used to recover sparse, interpretable circuits (Arora et al. 2026, Ye et al. 2025), raising the question of whether transcoders are necessary for circuit analysis. We define neuron features as transcoder features whose weights are strongly aligned with individual MLP neurons, and show that they account for a substantial fraction of active features in late layers across 13 open-source transcoders. Only neuron features have a stable correspondence with something in the underlying MLP: other features vary more between training runs, do not match the MLP's Jacobian, and change less significantly from their random initialization. Our findings reframe MLP neurons as a stronger basis for interpretability than commonly assumed, and call for better methods of attributing the non-neuron structure that is used by the model.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.24597",
+      "rank": 18,
+      "title": "CADS: Measuring the Incremental Contribution of LLM Proposers in Sequential Biological Screens",
+      "sourceUrl": "https://arxiv.org/abs/2610.24597",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-20T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.24597v1 Announce Type: new Abstract: Large language models are increasingly used to guide sequential biological screens, yet standard evaluations rely on raw hit counts that conflate a proposer's value with the discovery capacity of the underlying algorithmic harness. Adaptive sampling and corrupted experimental readouts also leave standard feedback comparisons without a false-discovery guarantee. We present Certified Agentic Discovery Screens (CADS), an error-controlled measurement framework that quantifies a proposer's incremental value against an identical LLM-free loop. By integrating capped likelihood-ratio bounds, e-processes, and complete-family e-BH, CADS controls the terminal false discovery rate under the stated null and corruption conditions despite arbitrary dependence, adaptive sampling, and optional stopping. In DepMap-backed simulations, CADS exposes two evaluation artifacts: the LLM-free harness alone clears the feedback gate, and raw origin counts overstate LLM contributions because LLM picks displace fallback discoveries. On the initial 20 seeds, supplying tested-candidate history to Qwen2.5-7B shifts its net contribution from +0.35, with a 95% interval covering zero, to +2.90, with the interval above zero. This initial net effect did not persist in a 50-seed matched-quota replication. These results support net gain over an LLM-free loop, measured between separately certified sets, as the appropriate measure of proposer contribution.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.24630",
+      "rank": 19,
+      "title": "Selm: Self-Evolving Library Management for Multi-Skill Agent Optimization",
+      "sourceUrl": "https://arxiv.org/abs/2610.24630",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-20T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.24630v1 Announce Type: new Abstract: Large language model (LLM) agents increasingly use skills as a lightweight way to acquire task-specific knowledge. Recent work enables skills to evolve from task trajectories. However, these methods often lack systematic management of evolved skills, making it difficult for agents to reuse and accumulate skills across domains, thus limiting performance on subsequent tasks.To reliably accumulate, reuse, and maintain useful skills across tasks, we present SELM (Self-Evolving Library Management), a framework that formulates skill evolution as library-level management. SELM jointly manages skill retrieval, updating, and lifecycle by maintaining skill confidence and utility signals. It introduces utility-aware retrieval to select useful skills, a Map-Reduce framework to generate targeted updates from task-specific experience, and lifecycle controls to retain or remove skills based on their effectiveness. These mechanisms enable the skill library to continuously accumulate useful experience while preserving and pruning skills across tasks, improving agent performance on complex tasks across diverse domains. We evaluate SELM on four agent benchmarks covering diverse tasks and execution environments, and SELM consistently outperforms in most settings.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.24649",
+      "rank": 20,
+      "title": "Good Judgment, Bad Advice: Decision-Model Controllers Raise Agent Cost Without Improving Success",
+      "sourceUrl": "https://arxiv.org/abs/2610.24649",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-20T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.24649v1 Announce Type: new Abstract: Agent scaffolds increasingly delegate small decisions (whether to stop, verify, or change approach) to cheaper models. We ask whether a typed decision model, Jev 1.13, consulted only at deterministic decision points, makes a Claude Sonnet 5.5 terminal agent cheaper without making it worse. In a pre-specified study on Terminal-Bench 2.1, we hold one agent loop fixed and vary only the controller: none, deterministic rules, a small LLM (Claude Haiku 5.5) answering the same questions, Jev, and a placebo that samples Jev's development-phase choice frequencies at the same moments. On 21 held-out tasks (315 trials), Jev raised cost per attempt by 19% (geometric-mean ratio 1.19, 95% CI 1.02-1.36) at an identical pass rate (73.0% vs. 73.0%). Jev was cheaper than the small-LLM controller (ratio 0.81) but 22% more expensive than the placebo, and no pass-rate difference between arms was detectable. Offline, Jev ranked finish requests better than the alternatives (AUROC 0.78 vs. 0.62 for rules and 0.60 for the small LLM) but was poorly calibrated: its mean probability that a run was complete was 0.50 when 87% of those runs passed, so it asked the agent to verify work that was already correct. No controller ever chose to abandon a run. Informative decision signals did not become useful interventions; we discuss what that would require.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.24733",
+      "rank": 21,
+      "title": "Can LLM Agents Resolve Service Failures? Simulating Multi-Turn Complaint Handling under Information Asymmetry",
+      "sourceUrl": "https://arxiv.org/abs/2610.24733",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-20T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.24733v1 Announce Type: new Abstract: LLM agents are widely adopted in service chatbots for rule-guided support and information access, yet emotionally demanding complaint handling still relies heavily on human agents. We introduce ServiceBench, to our knowledge the first benchmark dedicated to complaint handling, with 2,500 scenarios spanning 184 complaint categories and five service industries. We propose Asymmetric Progressive Complaint Simulation (APCS) to simulate realistic complaint handling, together with a justice-based evaluation framework. Our experiments reveal that even capable LLM agents struggle to handle complaints effectively. They lack the ability to proactively gather information and strategically guide conversations toward resolution, often resorting to premature compensation. We further show that targeted post-training with SFT and DPO substantially improves these capabilities, enabling a smaller model to match or surpass much larger models on several outcomes.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.24744",
+      "rank": 22,
+      "title": "ReTRACE: Feedback-Guided LLM Agent in a Chemistry Harness for Retrosynthesis Planning",
+      "sourceUrl": "https://arxiv.org/abs/2610.24744",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-20T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.24744v1 Announce Type: new Abstract: Computer-aided retrosynthesis has advanced through single-step prediction, tree search and route scoring, but complex targets still require judgement over the whole route, where stereochemistry, functional-group compatibility, cost and greenness interact. Here we present \\textbf{\\mbox{ReTRACE}} (\\textbf{RE}trosynthesis with \\textbf{T}ool-orchestrated \\textbf{R}easoning \\textbf{A}nd \\textbf{C}ontext-aware \\textbf{E}vidence), an agent that places a large language model (LLM) in a chemistry harness that integrates molecular tools, complementary single-step prediction engines, a purchasable starting-material library, a route memory and a multi-criterion route evaluator. Routes are judged by a new metric that combines programmatic checks with adversarial LLM review, and its verdicts are compared with a synthetic chemist's. The agent learns continually from evaluator feedback during search, diagnosing weak routes and backtracking to revise them. With Claude Opus 4.8, at least one of the top 10 routes proposed by ReTRACE passed the audit for 87.4\\%, 95.0\\% and 86.7\\% of targets on the three benchmarks. Two prospective wet-lab syntheses show that ReTRACE route proposals can be converted into executable procedures after expert revision.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.24807",
+      "rank": 23,
+      "title": "Medical Fine-Tuning Reshapes, Not Reduces, Patient-Facing AI Risk: A Rubric-Based, LLM-Judge Evaluation Framework",
+      "sourceUrl": "https://arxiv.org/abs/2610.24807",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-20T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.24807v1 Announce Type: new Abstract: Patient-facing medical question answering with large language models (LLMs) is moving from research demonstrations to production deployments, yet evaluation remains anchored on factual correctness. Factuality is necessary but not sufficient: a response can be factually grounded and still issue a directive that, if acted on, would harm the patient. We introduce a risk-sensitive evaluation framework that scores responses by the presence and severity of six categories of risk-bearing language (treatment directives, contraindications, dosage expressions, urgency-triage cues, high-alert medication mentions, and overconfident assertions), anchored on published clinical harm taxonomies. Severity is classified by a three-judge LLM ensemble. We apply this framework to six 7-9B instruction-tuned models, three general (Mistral-7B, Phi-3.5-mini, Llama-3.1-8B) and three medically adapted (BioMistral-7B, OpenBioLLM-Llama3-8B, Med42-Llama3-8B), on 200 real patient questions from the K-QA benchmark. Two findings emerge. First, ensemble risk-bearing language is statistically independent of factual hallucination rate (pooled Spearman $\\rho = -0.065$, $n = 300$, 95% CI $[-0.18, +0.05]$; distance correlation $= 0.10$, independence test $p = 0.24$). Second, medical fine-tuning does not reduce aggregate risk but reshapes it: continued-pretraining adaptations (BioMistral, OpenBioLLM) consistently suppress high-alert medication mentions while amplifying overconfident assertions, whereas clinical instruction-tuning (Med42) suppresses dosing only, without amplifying overconfidence. Per-category Krippendorff $\\alpha$ is fair to good for the four linguistically anchored categories (0.53-0.71) and low for the two clinical-judgment-dependent categories (0.19, 0.31), indicating where automatic safety evaluation is and is not yet reliable. We release the rubric, judge prompts, and evaluation code.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.24835",
+      "rank": 24,
+      "title": "Pattern-Driven Evaluation of LLM Code Optimization: Isolating Compiler-Transcendent Semantic Reasoning",
+      "sourceUrl": "https://arxiv.org/abs/2610.24835",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-20T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.24835v1 Announce Type: new Abstract: Existing evaluations of LLM-based code optimization primarily measure end-to-end speedup, obscuring whether a model actually performs the intended optimization. For compiled languages, this is especially problematic: observed gains may reflect transformations already recoverable by modern optimizing compilers rather than optimization behavior attributable to the model itself. We present PatternBench, a benchmark for studying compiler-transcendent optimization, i.e., performance improvements that remain after aggressive compiler optimization. PatternBench targets residual optimization opportunities across seven classes of transformations and pairs runtime evaluation with an AST-based optimization faithfulness analysis that verifies whether the intended optimization is realized in the generated program. Experiments with frontier, open-weight, and fine-tuned models show that runtime speedup alone provides an incomplete account of optimization capability. Optimization faithfulness is strongly associated with realized speedup, and fine-tuning improves both faithfulness and optimization effectiveness. These results suggest that evaluation of LLM-based code optimization should measure not only performance outcomes, but also whether the target transformation was successfully executed.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.24871",
+      "rank": 25,
+      "title": "Bellman Language Models: Solving the Recurring Decisions of LLM Agents",
+      "sourceUrl": "https://arxiv.org/abs/2610.24871",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-20T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.24871v1 Announce Type: new Abstract: A general observation in agentic workflows, especially bounded ones, is that the decision space of the LLM, when we separate a decision from generation, starts approaching saturation: the agent meets the same states again and again, and after enough conversations it stops meeting new ones. LLMs generally don't treat these decisions as an optimization problem and instead re-derive them from their context/prompt on every turn. We show that treating decision making within reasonable bounds as an optimization problem, solving it once, and reusing the solved decisions can often make an agent faster, cheaper and more reliable. Our approach, which we call Discretize, Then Decide, starts from data such as the workflow's own logs or, when none exists, runs of the LLM agent itself. It reads each conversation into discrete states and estimates the probability of each outcome and the cost of each move, until no new states appear and the probabilities stop changing. It then solves the resulting Markov decision process. The solution runs as a controller around the model, sending moves whose content is fixed in the state, such as a tool call or a templated reply, and any state it hasn't seen is sent back to the LLM. We call an LLM run this way a Bellman language model (BLM), after Richard Bellman's equation for the best move in each state. On $\\tau^2$-bench telecom, the controller with no model solves 79% of tasks. As a BLM, Qwen3.8-27B, an open model, goes from 29% to 96% with 93% fewer model calls. For Claude Opus 5.5, which solves 96% of tasks on its own, running it as a BLM cuts model calls and cost per task by about 98% and lets it solve 2 more tasks. On InventoryBench, the solved policy with no model beats every published method. Where the hard part is writing content rather than choosing moves, such as resolving SymPy issues, few decisions can be solved in advance, and a BLM helps little.",
+      "summary": ""
+    }
+  ]
+}
