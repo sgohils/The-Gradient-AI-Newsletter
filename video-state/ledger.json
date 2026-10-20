@@ -1072,7 +1072,7 @@
       "platforms": {
         "youtube": {
           "accountId": "6ac27146281ee799a37065e4",
-          "status": "submitting",
+          "status": "published",
           "idempotencyKey": "0286c398-ecdc-4fce-9858-eb2ea7749ad3",
           "request": {
             "content": "GardenBench: A lightweight, daily evaluation of LLM capabilities\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2610.23866\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-10-20\nAI-generated narration. #AI #AINews #Shorts",
@@ -1097,7 +1097,9 @@
             ],
             "publishNow": true
           },
-          "firstSubmittedAt": "2026-10-20T15:38:26.452Z"
+          "firstSubmittedAt": "2026-10-20T15:38:26.452Z",
+          "postId": "6ad78af367424c6bf465242f",
+          "postUrl": "https://www.youtube.com/watch?v=gxPhULejnnM"
         }
       },
       "script": {
