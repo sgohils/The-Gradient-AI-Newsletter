@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "issueDate": "2026-10-20",
+  "issueUrl": "https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-10-20",
+  "content": "Today's AI briefing from The Gradient | 2026-10-20\n\n1. GardenBench: A lightweight, daily evaluation of LLM capabilities\nResearchers released GardenBench, an 11‑suite benchmark that probes LLMs with lightweight queries to capture daily shifts in accuracy, cost, and latency.\n\n2. A Controlled LLM Workflow for Evidence-Grounded Diagnosis of Risk Score Differences\nThe team introduced a controlled Large Language Model (LLM) workflow that first retrieves similar historical transactions, then applies contrastive SHapley Additive exPlanations (SHAP) to generate evidence, and finally feeds this reference‑based evidence into the LLM for reasoning. A deterministic validation step…\n\n3. Unified Multiparadigm Fusion Intelligence for Rare Disease Diagnosis\nA team introduced a Unified Multiparadigm Fusion Intelligence framework that merges symbolic methods, deep neural networks, and LLM‑based reasoning into a single diagnostic engine for rare diseases.\n\nRead the full briefing and original sources:\nhttps://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-10-20\n\n#AI #ArtificialIntelligence #TheGradient",
+  "contentHash": "e963b3d2fa518a484a153aac8e80616bcd2b86056aa98c15c9852869d1a7c8c0",
+  "accountId": "6ac5a561b3c21905c0edcfba",
+  "organizationUrn": "urn:li:organization:136824048",
+  "idempotencyKey": "e85bad79-7e7a-4de7-a8db-34bd3fe485e9",
+  "status": "submitting",
+  "firstSubmittedAt": "2026-10-20T15:34:34.973Z"
+}
