@@ -1056,6 +1056,97 @@
         "videoSha256": "a0ed53f5360c46f92d4ac443fa12ba04cac68bf7164858e73262aa3d55e0a002",
         "uploadedAt": "2026-10-19T17:24:12.758Z"
       }
+    },
+    "2026-10-20": {
+      "story": {
+        "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.23866",
+        "rank": 1,
+        "title": "GardenBench: A lightweight, daily evaluation of LLM capabilities",
+        "sourceUrl": "https://arxiv.org/abs/2610.23866",
+        "sourceName": "arXiv cs.AI",
+        "publishedAt": "2026-10-20T04:00:00.000Z",
+        "sourceExcerpt": "arXiv:2610.23866v1 Announce Type: new Abstract: We introduce GardenBench, a benchmark with 11 test suites that evaluate the capabilities of Large Language Models (LLMs) across a range of tasks. By systematically prompting LLMs with various lightweight queries, we document day-to-day changes in model performance, including run costs and times, that other benchmarks miss. This allows us to compare the accuracy and features of responses across model providers and versions. We account for daily variations in model accuracy, capturing both model progress and degradation, for instance, when a model is changed post-deployment or when a new model is released. We base our evaluation on general-use tasks and make our results publicly accessible via a live dashboard, diversifying existing approaches to LLM testing. Our main contribution is an innovative, lightweight, and inexpensive benchmark, designed to be consumer-facing and for everyday tasks.",
+        "summary": "**What happened:** Researchers released GardenBench, an 11‑suite benchmark that probes LLMs with lightweight queries to capture daily shifts in accuracy, cost, and latency. \n**Why it matters:** Traditional benchmarks miss short‑term fluctuations; GardenBench gives developers and users real‑time insight into model stability, provider differences, and version upgrades. \n**Key stats:** 11 test suites covering diverse tasks; tracks run costs and response times alongside accuracy; enables side‑by‑side comparison of multiple model providers. \n**Source:** https://arxiv.org/abs/2610.23866"
+      },
+      "selectedAt": "2026-10-20T15:37:45.042Z",
+      "platforms": {
+        "youtube": {
+          "accountId": "6ac27146281ee799a37065e4",
+          "status": "prepared",
+          "idempotencyKey": "0286c398-ecdc-4fce-9858-eb2ea7749ad3"
+        }
+      },
+      "script": {
+        "version": 3,
+        "provider": "extractive",
+        "format": "source-fallback",
+        "angle": "capability",
+        "workingTitle": "GardenBench: A lightweight, daily evaluation of",
+        "availability": "unknown",
+        "hookStyle": "question",
+        "sentences": [
+          {
+            "text": "Would you use GardenBench?",
+            "evidenceQuote": "arXiv:2610.23866v1 Announce Type: new Abstract: We introduce GardenBench, a benchmark with 11 test suites that evaluate the capabilities of Large Language Models (LLMs) across a range of tasks.",
+            "role": "hook",
+            "visual": "example",
+            "displayText": "Would you use GardenBench?"
+          },
+          {
+            "text": "This allows us to compare the accuracy and features of responses across model providers and versions.",
+            "evidenceQuote": "This allows us to compare the accuracy and features of responses across model providers and versions.",
+            "role": "breakthrough",
+            "visual": "example",
+            "displayText": "Us to compare the accuracy and features"
+          },
+          {
+            "text": "arXiv cs.AI says By systematically prompting LLMs with various lightweight queries, it document day-to-day changes in model performance, including run costs and times, that other benchmarks miss.",
+            "evidenceQuote": "By systematically prompting LLMs with various lightweight queries, we document day-to-day changes in model performance, including run costs and times, that other benchmarks miss.",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "ArXiv cs.AI says By systematically prompting LLMs"
+          },
+          {
+            "text": "arXiv cs.AI says its main contribution is an innovative, lightweight, and inexpensive benchmark, designed to be consumer-facing and for everyday tasks.",
+            "evidenceQuote": "Our main contribution is an innovative, lightweight, and inexpensive benchmark, designed to be consumer-facing and for everyday tasks.",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "ArXiv cs.AI says its main contribution is"
+          },
+          {
+            "text": "This source excerpt does not confirm public access.",
+            "evidenceQuote": "arXiv:2610.23866v1 Announce Type: new Abstract: We introduce GardenBench, a benchmark with 11 test suites that evaluate the capabilities of Large Language Models (LLMs) across a range of tasks.",
+            "role": "impact",
+            "visual": "highlight",
+            "displayText": "does not confirm public access"
+          },
+          {
+            "text": "Would you try GardenBench, or wait for more proof?",
+            "evidenceQuote": "arXiv:2610.23866v1 Announce Type: new Abstract: We introduce GardenBench, a benchmark with 11 test suites that evaluate the capabilities of Large Language Models (LLMs) across a range of tasks.",
+            "role": "engagement",
+            "visual": "highlight",
+            "displayText": "Would you try GardenBench"
+          }
+        ],
+        "narration": "Would you use GardenBench? This allows us to compare the accuracy and features of responses across model providers and versions. arXiv cs.AI says By systematically prompting LLMs with various lightweight queries, it document day-to-day changes in model performance, including run costs and times, that other benchmarks miss. arXiv cs.AI says its main contribution is an innovative, lightweight, and inexpensive benchmark, designed to be consumer-facing and for everyday tasks. This source excerpt does not confirm public access. Would you try GardenBench, or wait for more proof?"
+      },
+      "presentation": {
+        "title": "GardenBench: A lightweight, daily evaluation of",
+        "format": "source-fallback",
+        "angle": "capability",
+        "hookStyle": "question",
+        "availability": "unknown",
+        "duration": 38.724999999999994,
+        "wordCount": 85,
+        "scriptVersion": 3
+      },
+      "selectionReason": "A concrete capability or everyday consequence in the original evidence.",
+      "contentHash": "e69a850edecf2b5ccc5acf1a5df7dae5a24375b53dd053c5ce20bada5fdfe865",
+      "media": {
+        "publicUrl": "https://media.zernio.com/temp/1792510704317_fe3vasam_2026-10-20.mp4",
+        "videoSha256": "65a3353afed0f8b7dd89ad070fb9cf70e600b120c2f645d6e88f17610061ec7a",
+        "uploadedAt": "2026-10-20T15:38:25.163Z"
+      }
     }
   }
 }
