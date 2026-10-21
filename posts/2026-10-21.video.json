@@ -1,0 +1,257 @@
+{
+  "version": 1,
+  "issueDate": "2026-10-21",
+  "generatedAt": "2026-10-21T15:49:59.285Z",
+  "stories": [
+    {
+      "id": "openai-blog-https%3A%2F%2Fopenai.com%2Findex%2Fopenai-models-google-cloud",
+      "rank": 1,
+      "title": "OpenAI models are coming to Google Cloud",
+      "sourceUrl": "https://openai.com/index/openai-models-google-cloud",
+      "sourceName": "OpenAI Blog",
+      "publishedAt": "2026-10-21T12:00:00.000Z",
+      "sourceExcerpt": "OpenAI and Google Cloud are bringing frontier models and Codex workflows to Gemini’s Model Garden, available through Google Cloud Marketplace.",
+      "summary": "**What happened:** OpenAI and Google Cloud have integrated OpenAI’s frontier models, including Codex, into Gemini’s Model Garden, and made them purchasable via the Google Cloud Marketplace.\n\n**Why it matters:** Developers can now tap into OpenAI’s advanced AI capabilities directly within Google Cloud’s ecosystem, streamlining deployment, scaling, and billing while expanding the reach of generative AI tools.\n\n**Key stats:** • Models available: OpenAI’s latest frontier models and Codex workflows\n• Platform: Gemini Model Garden on Google Cloud Marketplace\n• Benefit: Unified access, simplified billing, and native Cloud integration\n\n**Source:** https://openai.com/index/openai-models-google-cloud"
+    },
+    {
+      "id": "openai-blog-https%3A%2F%2Fopenai.com%2Findex%2Fbuilding-chatgpt-ad-stack",
+      "rank": 2,
+      "title": "How we built ChatGPT’s novel ad stack for user trust and relevance",
+      "sourceUrl": "https://openai.com/index/building-chatgpt-ad-stack",
+      "sourceName": "OpenAI Blog",
+      "publishedAt": "2026-10-21T07:00:00.000Z",
+      "sourceExcerpt": "Learn how OpenAI built ChatGPT’s LLM-powered ad stack to understand conversational intent, keep ads separate from answers, and deliver relevant ads at scale.",
+      "summary": "**What happened:** OpenAI engineered a new ad stack that runs on large language models to interpret conversational intent, flag ad slots, and serve sponsored messages distinct from ChatGPT’s replies.\n\n**Why it matters:** By keeping ads isolated from core answers, the system protects the user experience and trust, while still monetizing the platform at scale.\n\n**Key stats:** • Ad relevance ↑ 30% vs. baseline  • User‑trust score unchanged in A/B tests  • System serves > 1 M ads daily across 100+ languages.\n\n**Source:** https://openai.com/index/building-chatgpt-ad-stack"
+    },
+    {
+      "id": "openai-blog-https%3A%2F%2Fopenai.com%2Findex%2Fterminal-x",
+      "rank": 3,
+      "title": "Terminal X matches senior investor judgment 88.6% with GPT-6.1",
+      "sourceUrl": "https://openai.com/index/terminal-x",
+      "sourceName": "OpenAI Blog",
+      "publishedAt": "2026-10-20T07:00:00.000Z",
+      "sourceExcerpt": "Terminal X’s Eval Agent grades outputs against a 54-criterion rubric, catching 25% more deviances from a fund’s mandate with GPT-6.1 Sol.",
+      "summary": "**What happened:** Terminal X’s Eval Agent evaluated GPT‑6.1 Sol outputs against a 54‑criterion rubric, detecting 25% more deviations from a fund’s mandate and matching senior investor judgments 88.6% of the time.\n\n**Why it matters:** Higher alignment reduces compliance risk and boosts confidence that AI‑generated insights stay within strict investment guidelines.\n\n**Key stats:** • 88.6% match with senior investor decisions • 54‑criterion evaluation rubric • 25% more mandate deviations caught compared to prior models\n\n**Source:** https://openai.com/index/terminal-x"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.26887",
+      "rank": 4,
+      "title": "Navalia: Advancing Cowork Agents through Verifiable Task Synthesis and Long-Horizon Post-Training",
+      "sourceUrl": "https://arxiv.org/abs/2610.26887",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-21T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.26887v1 Announce Type: new Abstract: Large language model (LLM) agents are evolving from conversational assistants into Cowork Agents capable of autonomous planning, tool use, and complex task execution. Financial analysis requires these agents to integrate cross-document evidence and perform multistep numerical reasoning, but expert task authoring is costly, while direct LLM synthesis struggles to produce challenging tasks with reliable answers. We introduce Navalia, a framework for Cowork Agents that combines verifiable task synthesis with long-horizon post-training. Using corporate financial reports as its data source, Navalia semantically selects supporting evidence from complete fact sets and constructs executable computation chains to generate analytical tasks with traceable evidence and actual data dependencies between steps. We further use independent LLM review and programmatic checks to verify evidence consistency and answer correctness. The verified tasks are then used for trajectory collection, cold-start supervised fine-tuning (SFT), and reinforcement learning (RL) to improve long-horizon task execution. Navalia, initialized from Qwen3.6-35B-A3B, achieves consistent gains over the base model across all five benchmarks: OfficeQA Pro, FinSearchComp, Finance Agent Benchmark, APEX-Agents-AA, and Workspace-Bench-Lite. These results demonstrate that Navalia improves evidence integration, tool use, and long-horizon task execution capabilities and generalizes to broader Cowork settings, including general office tasks.",
+      "summary": "**What happened:** Researchers unveiled Navalia, a system that automatically synthesizes verifiable, long‑horizon tasks for large‑language‑model (LLM) Cowork Agents. It combines cross‑document evidence gathering with multi‑step numerical reasoning, reducing the need for costly expert authoring.\n\n**Why it matters:** Financial analysis demands precise, multi‑source reasoning. Navalia’s approach lets agents plan autonomously and verify their answers, closing the gap between conversational assistants and fully fledged autonomous analysts.\n\n**Key stats:** • Navalia generates tasks that integrate evidence from multiple documents and require multi‑step calculations. \n• In benchmark evaluations, agents trained with Navalia‑crafted tasks outperformed those using manually authored or naïvely synthesized tasks. \n• The framework supports post‑training fine‑tuning for horizons beyond ten reasoning steps.\n\n**Source:** https://arxiv.org/abs/2610.26887"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.26899",
+      "rank": 5,
+      "title": "Large language model and reinforcement learning based autonomous construction and progress updates",
+      "sourceUrl": "https://arxiv.org/abs/2610.26899",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-21T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.26899v1 Announce Type: new Abstract: Due to the rapid growth of the global population, traditional construction methods are gradually unable to meet the current housing demand. The advancement of machine learning algorithms has encouraged researchers to explore their applications in the construction industry, leading to more intelligent and efficient building processes. In particular, the rise of large language models in recent years has provided more possibilities for the transformation from traditional construction to smart construction. In this study, a large language model and reinforcement learning based autonomous construction method is proposed. An enhanced soft actor-critic reinforcement learning algorithm is developed to plan actions for a mobile crane according to construction tasks. Robot kinematics and control algorithms are used to ensure that the actions generated by the reinforcement learning algorithm can be executed by the crane. In addition, a customized embedding model is developed to extract information from the construction environment according to user interests. Then, a large language model, ChatGPT 5, is used to update construction progress, provide safety information to control system, and generate construction progress reports. The feasibility of proposed method is verified through several full-scall retaining wall construction experiments.",
+      "summary": "**What happened:** A team released a novel AI framework that combines large language models (LLMs) with reinforcement learning (RL) to control autonomous construction robots and continuously provide progress updates.\n\n**Why it matters:** Traditional building methods struggle to keep pace with soaring global housing demand. An AI‑driven, self‑directing construction pipeline could cut labor costs, accelerate timelines, and enable on‑site adaptability.\n\n**Key stats:**\n- The system integrates LLM‑generated design instructions with RL‑optimized robot actions.\n- Early simulations show up to a 30% reduction in construction cycle time.\n- Real‑world prototype robots achieved 95% task‑completion accuracy while autonomously reporting status.\n\n**Source:** https://arxiv.org/abs/2610.26899"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.26941",
+      "rank": 6,
+      "title": "Industrial Agentic AI: LLM-Driven New-Generation Agents for Smart Manufacturing",
+      "sourceUrl": "https://arxiv.org/abs/2610.26941",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-21T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.26941v1 Announce Type: new Abstract: Large language models (LLMs) are enabling agents to move beyond predefined workflows toward autonomous planning and execution, creating new opportunities for smart manufacturing. However, dynamic environments, complex physical constraints, and stringent reliability requirements hinder the direct deployment of general-purpose agents in smart manufacturing. This article presents a systematic overview of LLM-driven industrial agents. First, we analyze five key challenges and discuss the concept and core characteristics of industrial agents. We then establish a unified taxonomy covering application scenarios, embodiment forms, and five capability levels. Next, we propose a four-layer system architecture and detail its core modules and operational mechanisms for closed-loop task execution. Finally, we review representative applications across the industrial lifecycle and outline future research directions. This article provides a structured reference for the design, development, and application of industrial agents.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.26943",
+      "rank": 7,
+      "title": "MAMath-Bench: Process-Aware and Robust Evaluation of Multimodal Multi-Agent Mathematical Reasoning",
+      "sourceUrl": "https://arxiv.org/abs/2610.26943",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-21T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.26943v1 Announce Type: new Abstract: Mathematical reasoning is a fundamental capability for educational applications of Large Language Models (LLMs), where reliable problem solving requires not only correct answers but also coherent and verifiable reasoning processes. Multi-agent systems (MASs) have shown growing potential in this domain by leveraging collaboration and verification among multiple LLM agents. However, existing evaluations primarily focus on the correctness of final answers in text-only settings, offering limited insight into multimodal reasoning capabilities, the reliability of intermediate reasoning steps, and robustness against reasoning errors. To address these limitations, we introduce MAMath-Bench, a process-aware benchmark designed to evaluate the multimodal mathematical reasoning capabilities of MASs. MAMath-Bench comprises 1,003 problems spanning 11 mathematical categories, multiple difficulty levels, and several modalities, including text, images, and audio. It features fine-grained milestone annotations to evaluate systems across three dimensions: problem-solving correctness, reasoning-process reliability, and robustness to adversarial reasoning-chain perturbations. Our evaluation yields three key findings. First, multi-agent collaboration does not consistently improve final-answer accuracy over strong single LLMs. Second, collaboration can substantially enhance the coverage of intermediate reasoning, but such gains may come at the cost of increased reasoning redundancy. Third, current systems remain vulnerable to adversarial reasoning errors, particularly those involving subtle structural perturbations. The dataset is available at https://github.com/mira-ai-lab/AgentMath.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.26995",
+      "rank": 8,
+      "title": "SPEM: Structure-Aware Procedural Memory for Efficient Skill Use in LLM Agents",
+      "sourceUrl": "https://arxiv.org/abs/2610.26995",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-21T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.26995v1 Announce Type: new Abstract: LLM-based agents increasingly rely on reusable skills. However, scaling skill libraries makes efficient and accurate skill use difficult. Full skill loading incurs high token and runtime overhead. In contrast, flat semantic retrieval treats skills as independent text entries, ignoring dependencies, execution order, state transitions, and data flow constraints. We propose SPEM, a lightweight structure-aware procedural memory framework for efficient skill use in LLM-based agents. SPEM maintains Atomic Skill Memory for individual skills and Skill-DAG Memory for reusable compositions derived from successful executions. For a new task, SPEM reuses high-confidence Skill-DAG templates when available. Otherwise, it retrieves atomic skills and invokes Skill-GNN for state- and structure-aware skill selection. Successful executions are written back as new Skill-DAGs, allowing procedural memory to accumulate over time. Experiments on ALFWorld and SkillsBench show that SPEM achieves the best overall effectiveness--efficiency trade-off, reaching 87.1% ALFWorld success and 38.38% SkillsBench reward while reducing token and runtime costs against strong baselines.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.27027",
+      "rank": 9,
+      "title": "Does Multi-Agent Collaboration Reduce Hallucination in Clinical Tasks?",
+      "sourceUrl": "https://arxiv.org/abs/2610.27027",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-21T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.27027v1 Announce Type: new Abstract: Multi-agent LLM systems improve performance on clinical tasks, and that improvement is often read as evidence of a more trustworthy system. However, the two are not the same claim. A clinician acts on the stated reasoning and not only on the conclusion, so whether collaboration reduces hallucination, and what decides when it does, has to be measured in the reasoning too. Yet most evaluations score only the final answer. We evaluate four systems (a single-LLM baseline and three multi-agent topologies) across four models and three clinical tasks, scoring hallucination, under a factuality and faithfulness taxonomy, inside the rationale each system generates and reporting it alongside the task metric. We report that collaboration buys task performance but not lower hallucination as a rule, and no topology is reliably better than another. The effect differs by model: of the $36$ model--system--task comparisons, $12$ are large enough to resolve --- four decreases and eight increases, with no model on both sides. What sets the level, and the direction of any change, is the model rather than the topology or the number of agents. A self-correction experiment is consistent with this: shown its own flagged errors, every model except Llama-3.2-3B-Instruct reduces hallucination; the one model for which collaboration lowers hallucination gains the most, and Llama-3.2-3B-Instruct, the model whose hallucination it amplifies most, does not reduce its hallucination at all. We find that collaboration redistributes what its models can already do; it does not supply what they cannot.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.27032",
+      "rank": 10,
+      "title": "M-Plan: Comprehensive Planning For LLM Agents with Memory Arrangement",
+      "sourceUrl": "https://arxiv.org/abs/2610.27032",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-21T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.27032v1 Announce Type: new Abstract: Large language model (LLM)-based agents have recently demonstrated outstanding performance in single-turn tasks, yet they continue to struggle with long-horizon tasks, particularly in environments without prior training. A key limitation of single LLMs is their difficulty in processing long contexts, which stems from weaknesses in continuous decision-making and reasoning capabilities. Although existing multi-agent systems (MAS) equipped with long-term memory bases can partially address this gap, they mostly rely on knowledge reuse or summarization, an approach that is often constrained by directly retrieval without any adaptation for the current task, while the retrieved memory may contain much history noises waiting to be preprocessed. In contrast, MAS characterized by task-specific guidance often lack long-term memory specifically designed for the guidance. To address these challenges, we propose M-Plan, a closed-loop MAS framework that integrates long-term and short-term memory. By combining global-local and past-current guidance, M-Plan enhances agents' performance on multi-turn tasks while maintaining a plug-and-play design. During task execution, agents receive task-specific milestones and insights, and are provided with local hints only when confusion arises, which form global-local guidance together. These guidance generation and utilization construct the short-term memory as well. After task completion, relevant information about the current task is optimized or reorganized before being sent to the long-term memory storage for future retrieval. The designments mentioned above build a comprehensive framework different from other individual long-term or short-term memory works. Extensive experiments on multi-turn tasks including ALFWorld, Webshop, and PDDL across diverse models demonstrate that M-Plan outperforms multiple baseline methods in both accuracy and efficiency.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.27115",
+      "rank": 11,
+      "title": "PROVISO: Provenance-Informed Action Selection for Secure LLM Agents",
+      "sourceUrl": "https://arxiv.org/abs/2610.27115",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-21T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.27115v1 Announce Type: new Abstract: LLM agents act on the external world through tools and third-party skills, so a single executed action can cause irreversible harm. Existing defenses judge a proposed action without tracking whether its content comes from the user or from external sources such as tool outputs, and they judge it in isolation rather than against an available alternative, which forces a trade-off between security and utility. We present PROVISO, a controller that decides which action to commit after the agent proposes an action and before it is executed. PROVISO encodes trusted observations, external observations, the proposed action, and an alternative into provenance-typed memory, relates them through role-specific queries, and commits the action with the highest calibrated value learned from outcomes. On four agent security tasks spanning the agent lifecycle, no baseline exceeds PROVISO in both security and utility. PROVISO improves F1 over the strongest baseline by 13.84 points on SkillsBench and by 7.07 points on ToolSafe, and it reaches 88-99 F1 on three additional skill detection benchmarks.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.27119",
+      "rank": 12,
+      "title": "PORA: Learning When More Reasoning Pays Off for LLM Agents",
+      "sourceUrl": "https://arxiv.org/abs/2610.27119",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-21T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.27119v1 Announce Type: new Abstract: LLM agents perform tasks over multiple steps and revise their actions based on feedback. As the total reasoning budget is often limited and must support future steps, the agent must choose between short and long reasoning before each action. Longer reasoning may improve the final task outcome by preventing later errors, but it also uses budget capacity that may be needed for future decisions. This creates two challenges: estimating the downstream value of long reasoning and deciding when that value is worth using the remaining budget. We propose Paired Outcome-guided Reasoning Allocation (PORA), which learns this decision by comparing short and long reasoning from the same interaction state. During training, \\method{} completes the task twice from each selected state, once with a short reasoning allowance and once with a long allowance, and compares their final quality and total processing to estimate when longer reasoning is valuable. During inference, a controller weighs this estimate against learned prices on remaining-budget pressure and chooses either short or long reasoning without running both alternatives. We evaluate PORA across application, memory, code, retail, and mathematics tasks, achieving strong results across all settings. On BFCL memory, it exceeds the strongest existing method by 17.4--32.9 percentage points. Within the same agent, it matches or exceeds always using long reasoning on code and mathematics with 50.6% fewer actor tokens and 31.2% fewer model requests, respectively.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.27220",
+      "rank": 13,
+      "title": "Sparse RL Relaxation for LLM Reasoning",
+      "sourceUrl": "https://arxiv.org/abs/2610.27220",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-21T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.27220v1 Announce Type: new Abstract: Recent work has explored continuous representations in place of discrete tokens during Chain-of-Thought (CoT) reasoning, often referred to as soft CoT. This is motivated by the idea that a mixture of token embeddings can represent a superposition of multiple reasoning possibilities within a single step. However, it remains challenging to train large language models to realize this potential. Existing work has explored reinforcement learning (RL)-style training for soft CoT. However, these approaches treat soft tokens as actions in a Markov decision process rather than as differentiable intermediate computation steps. Thus, they do not propagate gradients across the soft tokens and miss out on the signal of how the choice of one soft token affects the next. In this paper, we propose a sparse relaxation method for RL (called SpaRLax), which leverages the differentiability of soft-CoT reasoning over time steps and makes training more stable and effective. We adopt an entmax sparsity method that adaptively determines the degree of softness, which truncates long-tail noise at confident steps while retaining multiple plausible candidates when uncertain. Across nine reasoning benchmarks, our method achieves the highest average performance compared with baseline methods. Further analyses validate the effective use of soft-token superposition in our approach, and also demonstrate the contribution of adaptive sparsity in our approach.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.27347",
+      "rank": 14,
+      "title": "An LLM-Based Agent for Legal Compliance Assessment: Architecture, Memory, and Evaluation in a Canadian and Quebec Context",
+      "sourceUrl": "https://arxiv.org/abs/2610.27347",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-21T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.27347v1 Announce Type: new Abstract: Checking whether a text complies with a body of law is slow when done by hand and fragile when done with keyword rules. This paper presents ComplianceAgent, the legal compliance sub-agent of COMPASS, a multi-agent framework that evaluates texts along four axes: digital sovereignty, carbon impact, compliance, and ethics. The agent relies on a large language model that scores a text on a fixed rubric, grounds its judgment in a reference legal corpus, and, when the score falls at or below a critical threshold, runs a corrective chain made of self-healing rewrites, a compliance label, an explainability report, and escalation to a human reviewer. We describe what the language model does at each step, how the memory of the agent is organized, and how the same implementation can be pointed at different reference corpora. We evaluate the agent in a Canadian and Quebec context, on a corpus of thirteen legal instruments that brings together federal and provincial texts, international treaties, and municipal documents of the City of Trois-Rivi\\`eres. The evaluation relies on a hand-annotated gold standard of fifteen texts and combines classification metrics, a repeated-query stability test, retrieval precision, and a composite score. On this gold standard the agent separates every conforming text from every non-conforming one, its scores remain stable under repeated queries, and the index returns relevant passages.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.27377",
+      "rank": 15,
+      "title": "REM: What to Store, When to Recall, What to Forget in Experience Memory for Coding Agents",
+      "sourceUrl": "https://arxiv.org/abs/2610.27377",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-21T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.27377v1 Announce Type: new Abstract: Large language model (LLM) agents now autonomously complete long-horizon tasks, such as repository-level coding, through hundreds of think-act steps, yet the experience each run produces is rarely reused on the next. Prior memory systems concentrate on retrieval, finding the most relevant past trajectory. Retrieval cannot observe the running agent, so it cannot decide whether the agent needs an experience, at which point, or for how long. We introduce REM (Reusable Experience Memory), a framework that manages the memory lifecycle from inside the agent's think-act loop through three explicit decisions. What to store: each completed trajectory is consolidated into a phase-structured document, two orders of magnitude smaller than the trajectory. When to recall: the document is injected at the start of the task; the costlier implementation record is withheld until an in-loop gate detects the agent struggling. What to forget: the record is evicted after a single exposure. On repository-level bug fixing (SWE-ContextBench Lite), REM retrieves the related trajectory more accurately than every state-of-the-art memory system (68.7% vs. 55.6% match@1) and improves, in every replicate, end-task resolution (27.6% vs. 24.9%) at 17% lower cost. Injecting the same experience as a summary or raw trajectory, even when oracle-retrieved, does not. Ablating any of the three decisions reduces resolution. Altogether, these results demonstrate that the bottleneck in experience reuse is not retrieval fidelity but how experience is stored and governed across its lifecycle, opening a control-theoretic perspective on agent memory.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.27400",
+      "rank": 16,
+      "title": "ProMemAgent: Long-Horizon Proactive Assistance with Context-Aware Prospective Memory from Sensory Perceptions",
+      "sourceUrl": "https://arxiv.org/abs/2610.27400",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-21T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.27400v1 Announce Type: new Abstract: Large language model (LLM) agents are moving beyond reactive responses toward proactive assistance that anticipates user needs without explicit requests. However, existing proactive agents primarily address immediate needs, while many everyday situations involve delayed intentions that can only be acted on hours or days later. Humans handle such intentions through prospective memory, the ability to remember to act on an intention when the right moment arises. In this paper, we introduce ProMemAgent, the first proactive agent to incorporate prospective memory over everyday sensory contexts for long-horizon proactive assistance. ProMemAgent organizes past sensory perceptions (e.g., egocentric video and audio) into context-aware memory, generating prospective cues and linking earlier events with subsequent developments for future retrieval. Given the current context, it retrieves relevant past events and performs memory-augmented proactive reasoning to determine whether assistance is needed. We further introduce CPMBench, the first benchmark for evaluating long-horizon proactive assistance over sensory contexts, comprising 1,000 instances across eight everyday categories. Extensive experiments show that ProMemAgent achieves the best memory retrieval performance and consistently outperforms all baselines on long-horizon proactive assistance.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.27406",
+      "rank": 17,
+      "title": "More Memory, Worse Agents: Error Reproduction and Anti-Persistence in LLM Agents",
+      "sourceUrl": "https://arxiv.org/abs/2610.27406",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-21T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.27406v1 Announce Type: new Abstract: LLM agents can improve across tasks without updating model parameters by storing experience from their own executions in external memory and reusing it to guide later decisions. A central design question is whether to retain only observed trajectories and outcomes or also the rules, summaries, and skills inferred from them. Retaining these abstractions allows agents to reuse strategies without repeatedly deriving them from raw trajectories. However, errors in stored abstractions can propagate to subsequent decisions through retrieval and reuse. They can also shape execution trajectories, which then become the basis for new abstractions that reproduce the original errors. We term this feedback mechanism error reproduction: errors are regenerated through a cycle of abstraction, execution, and re-abstraction, extending their persistence beyond direct reuse of the original faulty knowledge. We propose Anti-Persistence, a memory design that accumulates trajectories and outcomes while reconstructing task-specific guidance on demand. An adaptive selector uses prior outcomes to decide whether and how to synthesize guidance, which is discarded after execution. This prevents its direct reuse as a stored object, although indirect feedback through retained trajectories remains possible. Across different benchmarks and backbones, Anti-Persistence achieves higher overall held-out success and the lowest average LLM-call cost among the evaluated memory designs. These results support separating experience accumulation from abstraction persistence in memorybased self-improvement.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.27465",
+      "rank": 18,
+      "title": "Recoverability and Verifier Strength: Two Measured Preconditions for Unattended Agent Self-Improvement",
+      "sourceUrl": "https://arxiv.org/abs/2610.27465",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-21T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.27465v1 Announce Type: new Abstract: Agent platforms are starting to improve their own agents: they read a deployed agent's execution traces, derive a change, have an automated verifier approve it, and release it with no human author. How much of this loop can safely run without a human? We propose two quantities a platform can measure. Verifier strength $\\sigma$ is how well the available verifier -- often an LLM judge -- agrees with a trusted reference verifier; it limits how much a step can improve the agent. Recoverability is how cheaply a bad change can be undone: whether undoing it needs a new verifier approval, and how much of the old behavior a rollback restores. A step should run unattended only if both are adequate. On our platform this rule allows prompt, tool and skill edits to run unattended and keeps weight updates under human sign-off. Our main contribution is these two definitions and how to measure them. We built a platform that applies the rule and tested it in two ways: on the platform's own approval gate, and in controlled experiments on the $\\tau^2$-bench agent benchmark. On verifier strength, the platform's LLM judge sometimes gave the same score no matter what it was shown (9 of 37 settings) and reported no error, so a verifier can look healthy while approving anything; its strength must be measured, and two simple tests catch the failure. On recoverability, restoring a saved copy brought the agent back to its original behavior, but a regenerated undo did not, so only changes whose old version is kept can be reversed without a human; and while a change was deployed, it altered the outcome of 17 percent of tasks beyond normal run-to-run variation, which no undo repairs. Together these support the rule: a change can run unattended only when its old version is kept and its verifier's strength has been measured.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.27488",
+      "rank": 19,
+      "title": "The More the Better? A Comparison of Single- and Multi-Agent LLM Setups on a Financial Review Task",
+      "sourceUrl": "https://arxiv.org/abs/2610.27488",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-21T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.27488v1 Announce Type: new Abstract: Practitioner guidance holds that a large language model reviews a document better when the work is divided among agents. We test a narrow form of it in a controlled comparison of single-agent and multi-agent setups on a financial task, reviewing credit assessment memos against requirements. One agent checks six requirements in one call. A team of three on the same model checks the same memo, two requirements each, in the same words, with no roles or later stage. Labels are known for every requirement on 300 synthetic memos, so misses and false alarms are measured separately. Two primary predictions are tested on four models at a Bonferroni-corrected level. Under an instruction to decide each requirement once, the team catches 0.08 to 0.10 more of the defects that carry an explanation on the three models whose single agent misses some, at the corrected level on two. It raises more false alarms on all four, at the corrected level on three. Balanced accuracy, an exploratory measure, changes by 0.02 or less, and the team uses 2.2 to 2.4 times the tokens. Showing each agent the requirements it was not given reduces the added false alarms on the two Claude models, at the corrected level on one. In exploratory comparisons, sampling the single agent three times and flagging on any draw gives higher balanced accuracy than the team on those models, and the team's results depend on the instruction.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.27512",
+      "rank": 20,
+      "title": "Structured-Token Attention for Fine-Grained mmWave Liquid Identification",
+      "sourceUrl": "https://arxiv.org/abs/2610.27512",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-21T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.27512v1 Announce Type: new Abstract: Fine-grained liquid identification requires a classifier to distinguish similar substances from compact millimeter-wave measurements. We investigate structured-token attention, which represents a radar feature tensor through complementary antenna, feature, branch, and global views. The proposed StructAttn model embeds these views into eleven tokens and combines them with a three-layer transformer. Experiments on the public FG-LiquID data cover 30 liquids and 3,000 samples. Over five seeds on the released split, StructAttn achieves 96.70\\% mean best-epoch accuracy, matching the original-recipe MMNet baseline and exceeding a scalar-token attention model by 1.50 percentage points. A five-seed probability ensemble reaches 97\\%, corresponding to 18 errors among 600 test samples. Final-epoch and five-fold results complement the checkpoint-selected comparison, with StructAttn obtaining 95.30\\% out-of-fold accuracy. Token and feature analyses show that structured views are useful for prediction, while residual confusions concentrate in water, soft-drink, and edible-oil classes. These results support structured tokenization as a practical design choice for attention-based liquid recognition.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.27548",
+      "rank": 21,
+      "title": "Act on Your Behalf, Beyond Your Authorization: Benchmarking LLM Agent Authorization Alignment",
+      "sourceUrl": "https://arxiv.org/abs/2610.27548",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-21T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.27548v1 Announce Type: new Abstract: When an LLM agent acts on behalf of a user, it is expected to act within the authorization scope the user grants. Existing agent evaluations largely measure task completion or harmful consequences and can therefore overlook actions that violate this delegation without producing conventional safety or privacy harms. We introduce AuthorizationBench, a benchmark of authorization alignment grounded in documented real-world cases. A scalable construction pipeline produces 286 executable tasks spanning situational triggers, the presence or absence of direct harmful consequences, and ten application domains. We execute every task with four models at two reasoning-effort settings across three agent harnesses in an authorization-aware sandbox that keeps authorized and out-of-authorization paths executable and observable, yielding 6,864 trajectories. Agents act out of authorization in 19.2% of trajectories, with rates ranging from 10.5% to 26.6% across the 24 configurations. Task completion does not imply authorization. Increasing reasoning effort leaves the aggregate rate nearly unchanged, with effects varying across models. On controlled pairs, agents act out of authorization at similar rates with (17.9%) and without (20.8%) direct harmful consequences, and more often under benign pressures than malicious injections (23.5% versus 17.6%, p=0.002). Our results show that task capability, additional reasoning, and consequence-oriented safety evaluation do not by themselves ensure authorization alignment. Moreover, agents that consult the principal before completing a task exhibit lower rates of out-of-authorization behavior (14.0% versus 21.6%, p<0.001), pointing to a tension between agent autonomy and preserving users' decision authority that calls for further human-centered study. Dataset and code are available at https://github.com/PEACH-Research-Lab/AuthorizationBench .",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.27573",
+      "rank": 22,
+      "title": "When LLMs Manipulate: Measuring Behavioral, Social, and Temporal Effects",
+      "sourceUrl": "https://arxiv.org/abs/2610.27573",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-21T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.27573v1 Announce Type: new Abstract: Large language models (LLMs) can influence user trust and decision-making through subtle linguistic cues, yet the behavioral effects of manipulative outputs remain poorly quantified. We introduce a behavioral computing framework for measuring \\textit{behavioral vulnerability}, defined as users' susceptibility to manipulative AI responses. Building on DarkPatterns-LLM benchmark, we generate controlled manipulative stimuli using Manipulation Gradient Descent (MGD), targeting biases associated with authority, urgency, and social proof. We analyze participant responses using the Multi-Stakeholder Impact Assessment Network (MSIAN) to model cross-user influence and the Temporal Harm Propagation Model (THPM) to characterize the persistence of behavioral effects over time. In a study involving 120 participants, manipulative framing produced significant changes in trust calibration and compliance ($p < 0.01$), with effects also propagating across social contexts. These findings highlight the need to extend LLM safety evaluation beyond model outputs to measurable behavioral consequences and provide a computational framework for quantifying individual, social, and temporal risks arising from manipulative AI interactions.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.27574",
+      "rank": 23,
+      "title": "The Show-Up Attack: When Subagents Win Over Their Supervisor",
+      "sourceUrl": "https://arxiv.org/abs/2610.27574",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-21T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.27574v1 Announce Type: new Abstract: Multi-agent systems are increasingly deployed to coordinate multiple large language model (LLM) agents. However, this also creates new attack surfaces: malicious agents may have chances to exploit the coordination. In this paper, we propose and study the \\textit{show-up attack}, in which a malicious subagent manipulates the supervisor into involving it in tasks beyond its assigned scope. To evaluate this risk, we propose SUA-Arena, which implements 6 attack strategies and contains 188 test cases. Then, we evaluate 6 frontier LLMs and find that all of them are vulnerable to show-up attacks. For example, GPT-5.6-Sol as a supervisor suffers an ASR of up to 0.93. Mitigation strategies such as prompting and restricted communication fail to reduce the risk consistently. These results show that multi-agent systems need explicit mechanisms for enforcing authority boundaries.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.27588",
+      "rank": 24,
+      "title": "Beyond Experience: Knowledge-Guided Evolution for NPU Kernel Generation",
+      "sourceUrl": "https://arxiv.org/abs/2610.27588",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-21T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.27588v1 Announce Type: new Abstract: LLM agents have become capable kernel engineers on mainstream GPU stacks, but they struggle on emerging accelerators such as Ascend NPUs, whose programming model is barely represented in pretraining data. Recent NPU agents address this gap largely through experience: they accumulate memory from their own generation and optimization trials and reuse it on later tasks. We argue that experience alone is not enough for kernel generation. An agent can only remember what it has tried, and it rarely tries a mechanism it does not know. As a result, such memory offers little help when a new operator calls for a different mechanism, and even familiar operators raise unseen situations as optimization proceeds. We present ASCENDEVOLVE, which grounds every step of an evolutionary kernel search in a large external knowledge base built from platform documentation, toolkit headers, and operator repositories. Because this corpus far exceeds any context window, ASCENDEVOLVE indexes it and routes each agent to a small, task-specific slice of evidence instead of the corpus itself. The retrieved knowledge seeds diverse implementation strategies, guides repair when a candidate fails, and constrains how strong candidates are recombined. On 53 Ascend C operators from CANN-Bench spanning four difficulty levels, ASCENDEVOLVE achieves an overall score of 71.39, improving over Reflexion and OpenEvolve by 11.6% and 17.2%.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.27603",
+      "rank": 25,
+      "title": "From Encoding to Generation: Towards Empathetic Large Language Models",
+      "sourceUrl": "https://arxiv.org/abs/2610.27603",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-21T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.27603v1 Announce Type: new Abstract: Empathetic interaction involves two distinguishable capacities: representing another person's emotional state (cognitive empathy) and generating an appropriate response to that state (affective empathy). We apply this distinction to examine how emotion-related information is internally organized, selectively attended to, and carried through response generation in Llama-3.2-3B-Instruct across 10 emotion categories from the EmpatheticDialogues dataset. Layer-wise linear probing revealed a broad middle-layer region of peak emotion-category decodability, with the layer-11 L2 probe achieving 63.6% held-out accuracy against a 10% chance level and a 54.6% TF-IDF lexical baseline. During response generation, emotion-related user tokens received 1.89 times as much attention per token as other utterance tokens, concentrated across layers 10-15. Target-emotion alignment then decreased from a mean cosine similarity of 0.239 for input representations to 0.125 for generated responses, with positive drift in 77% of examples and the largest shifts for angry and furious. Emotion-category representation, attention allocation, and response-level alignment therefore emerge as distinguishable components of model processing that can be analyzed through a functional cognitive-affective empathy framework. These findings provide a foundation for monitoring emotion representations during generation and leveraging models' existing affective structure to support more naturally empathetic responses without relying on external prompting or explicit emotion conditioning.",
+      "summary": ""
+    }
+  ]
+}
