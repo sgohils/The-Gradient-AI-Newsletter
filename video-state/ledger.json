@@ -286,8 +286,8 @@
         "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
         "sourceName": "Google AI Blog",
         "publishedAt": "2026-10-13T16:00:00.000Z",
-        "sourceExcerpt": "Gemini 4 Argon is now globally available today for developers and enterprises via the API in AI Studio and Gemini platform, for Google AI Ultra subscribers in Google Antigravity, and Google AI Ultra and Pro subscribers in the Gemini app and AI Mode in Search.\n\nAt Google, we’ve been using Argon on our hardest engineering problems. Over the past few weeks, software engineers have been shipping high-quality code faster than ever. Argon in Antigravity has helped teams increase agentic code submissions by more than 35% while reducing code rollbacks by nearly a third.\n\nArgon works longer and harder to solve highly complex scientific, coding, and agentic problems. This is enabled by an industry-leading 1M unified input-output token limit via the Gemini API. Read through our documentation for developers and enterprises to learn about the new continuation protocol and ensure the appropriate setup for your needs. Argon is rolling out today globally:",
-        "summary": "**What happened:** Google announced that its newest frontier model, Gemini 4 Argon, is now available to a wide range of users—including developers, enterprises, scientists, and everyday consumers.\n\n**Why it matters:** By opening access to a cutting‑edge model, Google aims to accelerate AI innovation across industries, enable more sophisticated applications, and democratize advanced machine‑learning capabilities.\n\n**Key stats:** The announcement did not include specific performance metrics or capacity figures; the model is described as the latest iteration in the Gemini series, positioned as a step up from previous versions.\n\n**Source:** https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/"
+        "sourceExcerpt": "",
+        "summary": ""
       },
       "selectedAt": "2026-10-13T20:06:19.323Z",
       "platforms": {
@@ -295,64 +295,10 @@
           "accountId": "6ac27146281ee799a37065e4",
           "status": "published",
           "idempotencyKey": "4503d20f-b3e7-4d00-8364-3ad14f812c2f",
-          "request": {
-            "content": "Gemini 4 Argon: Built to solve your hardest problems\n\nSource: Google AI Blog\nhttps://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-10-13\nAI-generated narration. #AI #AINews #Shorts",
-            "mediaItems": [
-              {
-                "type": "video",
-                "url": "https://media.zernio.com/temp/1791922040872_8vewkrkx_2026-10-13.mp4"
-              }
-            ],
-            "platforms": [
-              {
-                "platform": "youtube",
-                "accountId": "6ac27146281ee799a37065e4",
-                "platformSpecificData": {
-                  "title": "Google AI Blog says At Google, it’ve been using Argon on its hardest engineering problems.",
-                  "visibility": "public",
-                  "madeForKids": false,
-                  "containsSyntheticMedia": true,
-                  "categoryId": "28"
-                }
-              }
-            ],
-            "publishNow": true
-          },
           "firstSubmittedAt": "2026-10-13T20:07:23.866Z",
           "postId": "6ace8f7d1bb03ec80464c968",
           "postUrl": "https://www.youtube.com/watch?v=ywWNA9S4_Z8"
         }
-      },
-      "script": {
-        "version": 2,
-        "provider": "extractive",
-        "sentences": [
-          {
-            "text": "Google AI Blog says At Google, it’ve been using Argon on its hardest engineering problems.",
-            "evidenceQuote": "At Google, we’ve been using Argon on our hardest engineering problems.",
-            "role": "hook",
-            "displayText": "Google AI Blog says At Google"
-          },
-          {
-            "text": "Gemini 4 Argon is now globally available today for developers and enterprises via the API in AI Studio and Gemini platform, for Google AI Ultra subscribers in Google Antigravity, and Google AI Ultra and Pro subscribers in the Gemini app and AI Mode in Search.",
-            "evidenceQuote": "Gemini 4 Argon is now globally available today for developers and enterprises via the API in AI Studio and Gemini platform, for Google AI Ultra subscribers in Google Antigravity, and Google AI Ultra and Pro subscribers in the Gemini app and AI Mode in Search.",
-            "role": "detail",
-            "displayText": "Gemini 4 Argon is now globally available today"
-          },
-          {
-            "text": "Over the past few weeks, software engineers have been shipping high-quality code faster than ever.",
-            "evidenceQuote": "Over the past few weeks, software engineers have been shipping high-quality code faster than ever.",
-            "role": "detail",
-            "displayText": "Over the past few weeks"
-          },
-          {
-            "text": "Argon in Antigravity has helped teams increase agentic code submissions by more than 35% while reducing code rollbacks by nearly a third.",
-            "evidenceQuote": "Argon in Antigravity has helped teams increase agentic code submissions by more than 35% while reducing code rollbacks by nearly a third.",
-            "role": "takeaway",
-            "displayText": "Argon in Antigravity has helped teams increase agentic"
-          }
-        ],
-        "narration": "Google AI Blog says At Google, it’ve been using Argon on its hardest engineering problems. Gemini 4 Argon is now globally available today for developers and enterprises via the API in AI Studio and Gemini platform, for Google AI Ultra subscribers in Google Antigravity, and Google AI Ultra and Pro subscribers in the Gemini app and AI Mode in Search. Over the past few weeks, software engineers have been shipping high-quality code faster than ever. Argon in Antigravity has helped teams increase agentic code submissions by more than 35% while reducing code rollbacks by nearly a third.\nSource in the description."
       },
       "selectionReason": "A source-backed, measurable change in time, cost, or capability.",
       "contentHash": "f86d1f7fac470082a8a41a2c887fd8ac430aab4228c81ca7cc364512d750412e",
@@ -370,8 +316,8 @@
         "sourceUrl": "https://arxiv.org/abs/2610.14005",
         "sourceName": "arXiv cs.AI",
         "publishedAt": "2026-10-14T04:00:00.000Z",
-        "sourceExcerpt": "arXiv:2610.14005v1 Announce Type: new Abstract: Under the accelerated pace of AI development, any benchmark whose difficulty is calibrated with humans or current AI systems becomes circular, or saturates soon. How can we then evaluate machines that may become more capable than the current machines and the people who write the tests? One answer to the question hinges on inverse problems, inductive inference questions for which difficulty depends on the complexity of the underlying mechanism, given the observations and the previous knowledge. Levin's Kt, a computable variant of Kolmogorov complexity, puts a theoretical upper bound to that difficulty, balancing the simplest representation encoding for the mechanism and the logarithm of the time steps to run that mechanism. Previous tests derived from Levin's Kt, such as the original C-test, are based on minimalistic Universal Turing Machines (UTM), capable of very limited representations and no previous knowledge. Reasoning large language models (LLM) are UTMs that capture a compendium of human culture as knowledge, using prompts as natural language programs. This paper presents the first test based on Levin's Kt with LLMs as representational machines. Fresh test items can be produced at high difficulties, estimated in a ratio scale measured in bits, before any human or frontier model can solve them. We formalise the measure, devise a lightweight generation and certification pipeline, explore the effect of the power of the reference machine and the gap between examiner and examinee. We produce a first battery of certified items administered to twelve LLMs. The resulting agent characteristic curves decrease with difficulty, down to the uncharted high-difficulty region, the supra-intelligence window of items we can certify, yet beyond generations of frontier intelligence.",
-        "summary": "**What happened:** A team released a paper (arXiv:2610.14005) introducing an LLM‑referenced C‑test designed as an inverse‑problem benchmark. Instead of calibrating difficulty against current humans or AI, the test’s challenge is tied to the complexity of the underlying mechanism it seeks to infer.\n\n**Why it matters:** Traditional benchmarks quickly saturate as AI outpaces humans, creating a circular evaluation loop. This new approach offers a way to assess systems that may surpass today’s capabilities without requiring human‑crafted test items, potentially becoming a standard for future supraintelligence evaluation.\n\n**Key stats:**\n- Paper ID: arXiv:2610.14005v1\n- Publication type: New benchmark proposal\n- Core idea: Difficulty ∝ complexity of the hidden generative mechanism (inverse problem)\n\n**Source:** https://arxiv.org/abs/2610.14005"
+        "sourceExcerpt": "",
+        "summary": ""
       },
       "selectedAt": "2026-10-14T15:47:31.873Z",
       "platforms": {
@@ -379,80 +325,10 @@
           "accountId": "6ac27146281ee799a37065e4",
           "status": "published",
           "idempotencyKey": "9295d48f-4b85-4d36-a359-108719cc5e7e",
-          "request": {
-            "content": "Artificiality's First Exam: An LLM-Referenced C-test for Supraintelligence\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2610.14005\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-10-14\nAI-generated narration. #AI #AINews #Shorts",
-            "mediaItems": [
-              {
-                "type": "video",
-                "url": "https://media.zernio.com/temp/1791992884452_jzxad03x_2026-10-14.mp4"
-              }
-            ],
-            "platforms": [
-              {
-                "platform": "youtube",
-                "accountId": "6ac27146281ee799a37065e4",
-                "platformSpecificData": {
-                  "title": "Artificiality's First Exam: An LLM-Referenced",
-                  "visibility": "public",
-                  "madeForKids": false,
-                  "containsSyntheticMedia": true,
-                  "categoryId": "28"
-                }
-              }
-            ],
-            "publishNow": true
-          },
           "firstSubmittedAt": "2026-10-14T15:48:07.984Z",
           "postId": "6acfa4394c1bac8681d7786b",
           "postUrl": "https://www.youtube.com/watch?v=8iyvzatT-3A"
         }
-      },
-      "script": {
-        "version": 3,
-        "provider": "extractive",
-        "format": "source-fallback",
-        "angle": "capability",
-        "workingTitle": "Artificiality's First Exam: An LLM-Referenced",
-        "availability": "research",
-        "hookStyle": "question",
-        "sentences": [
-          {
-            "text": "Would you use Artificiality's First Exam?",
-            "evidenceQuote": "arXiv:2610.14005v1 Announce Type: new Abstract: Under the accelerated pace of AI development, any benchmark whose difficulty is calibrated with humans or current AI systems becomes circular, or saturates soon. How can we then evaluate machines that may become more capable than the current machines and the people who write the tests? One answer to the question hinges on inverse problems, inductive inference questions for which difficulty depends on the complexity of the underlying mechanism, given the observations and the previous knowledge. Levin's Kt, a computable variant of Kolmogorov complexity, puts a theoretical upper bound to that difficulty, balancing the simplest representation encoding for the mechanism and the logarithm of the time steps to run that mechanism. Previous tests derived from Levin's Kt, such as the original C-test, are based on minimalistic Universal Turing Machines (UTM), capable of very limited representations and no previous knowledge. Reasoning large language models (LLM) are UTMs that capture a compendium of human culture as knowledge, using prompts as natural language programs. This paper presents the first test based on Levin's Kt with LLMs as representational machines. Fresh test items can be produced at high difficulties, estimated in a ratio scale measured in bits, before any human or frontier model can solve them. We formalise the measure, devise a lightweight generation and certification pipeline, explore the effect of the power of the reference machine and the gap between examiner and examinee. We produce a first battery of certified items administered to twelve LLMs. The resulting agent characteristic curves decrease with difficulty, down to the uncharted high-difficulty region, the supra-intelligence window of items we can certify, yet beyond generations of frontier intelligence.",
-            "role": "hook",
-            "visual": "example",
-            "displayText": "Would you use Artificiality's First Exam?"
-          },
-          {
-            "text": "arXiv:2610.14005v1 Announce Type: new Abstract: Under the accelerated pace of AI development, any benchmark whose difficulty is calibrated with humans or current AI systems becomes circular, or saturates soon.",
-            "evidenceQuote": "arXiv:2610.14005v1 Announce Type: new Abstract: Under the accelerated pace of AI development, any benchmark whose difficulty is calibrated with humans or current AI systems becomes circular, or saturates soon.",
-            "role": "breakthrough",
-            "visual": "example",
-            "displayText": "ArXiv:2610.14005v1 Announce Type: new Abstract: Under the accelerated"
-          },
-          {
-            "text": "arXiv cs.AI says it formalise the measure, devise a lightweight generation and certification pipeline, explore the effect of the power of the reference machine and the gap between examiner and examinee.",
-            "evidenceQuote": "We formalise the measure, devise a lightweight generation and certification pipeline, explore the effect of the power of the reference machine and the gap between examiner and examinee.",
-            "role": "breakthrough",
-            "visual": "process",
-            "displayText": "ArXiv cs.AI says it formalise the measure"
-          },
-          {
-            "text": "This source excerpt does not confirm public access.",
-            "evidenceQuote": "arXiv:2610.14005v1 Announce Type: new Abstract: Under the accelerated pace of AI development, any benchmark whose difficulty is calibrated with humans or current AI systems becomes circular, or saturates soon.",
-            "role": "impact",
-            "visual": "highlight",
-            "displayText": "does not confirm public access"
-          },
-          {
-            "text": "Would you try Artificiality's First Exam, or wait for more proof?",
-            "evidenceQuote": "arXiv:2610.14005v1 Announce Type: new Abstract: Under the accelerated pace of AI development, any benchmark whose difficulty is calibrated with humans or current AI systems becomes circular, or saturates soon. How can we then evaluate machines that may become more capable than the current machines and the people who write the tests? One answer to the question hinges on inverse problems, inductive inference questions for which difficulty depends on the complexity of the underlying mechanism, given the observations and the previous knowledge. Levin's Kt, a computable variant of Kolmogorov complexity, puts a theoretical upper bound to that difficulty, balancing the simplest representation encoding for the mechanism and the logarithm of the time steps to run that mechanism. Previous tests derived from Levin's Kt, such as the original C-test, are based on minimalistic Universal Turing Machines (UTM), capable of very limited representations and no previous knowledge. Reasoning large language models (LLM) are UTMs that capture a compendium of human culture as knowledge, using prompts as natural language programs. This paper presents the first test based on Levin's Kt with LLMs as representational machines. Fresh test items can be produced at high difficulties, estimated in a ratio scale measured in bits, before any human or frontier model can solve them. We formalise the measure, devise a lightweight generation and certification pipeline, explore the effect of the power of the reference machine and the gap between examiner and examinee. We produce a first battery of certified items administered to twelve LLMs. The resulting agent characteristic curves decrease with difficulty, down to the uncharted high-difficulty region, the supra-intelligence window of items we can certify, yet beyond generations of frontier intelligence.",
-            "role": "engagement",
-            "visual": "highlight",
-            "displayText": "Would you try Artificiality's First Exam"
-          }
-        ],
-        "narration": "Would you use Artificiality's First Exam? arXiv:2610.14005v1 Announce Type: new Abstract: Under the accelerated pace of AI development, any benchmark whose difficulty is calibrated with humans or current AI systems becomes circular, or saturates soon. arXiv cs.AI says it formalise the measure, devise a lightweight generation and certification pipeline, explore the effect of the power of the reference machine and the gap between examiner and examinee. This source excerpt does not confirm public access. Would you try Artificiality's First Exam, or wait for more proof?"
       },
       "presentation": {
         "title": "Artificiality's First Exam: An LLM-Referenced",
@@ -1172,6 +1048,97 @@
         "publicUrl": "https://media.zernio.com/temp/1792510704317_fe3vasam_2026-10-20.mp4",
         "videoSha256": "65a3353afed0f8b7dd89ad070fb9cf70e600b120c2f645d6e88f17610061ec7a",
         "uploadedAt": "2026-10-20T15:38:25.163Z"
+      }
+    },
+    "2026-10-21": {
+      "story": {
+        "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.26899",
+        "rank": 5,
+        "title": "Large language model and reinforcement learning based autonomous construction and progress updates",
+        "sourceUrl": "https://arxiv.org/abs/2610.26899",
+        "sourceName": "arXiv cs.AI",
+        "publishedAt": "2026-10-21T04:00:00.000Z",
+        "sourceExcerpt": "arXiv:2610.26899v1 Announce Type: new Abstract: Due to the rapid growth of the global population, traditional construction methods are gradually unable to meet the current housing demand. The advancement of machine learning algorithms has encouraged researchers to explore their applications in the construction industry, leading to more intelligent and efficient building processes. In particular, the rise of large language models in recent years has provided more possibilities for the transformation from traditional construction to smart construction. In this study, a large language model and reinforcement learning based autonomous construction method is proposed. An enhanced soft actor-critic reinforcement learning algorithm is developed to plan actions for a mobile crane according to construction tasks. Robot kinematics and control algorithms are used to ensure that the actions generated by the reinforcement learning algorithm can be executed by the crane. In addition, a customized embedding model is developed to extract information from the construction environment according to user interests. Then, a large language model, ChatGPT 5, is used to update construction progress, provide safety information to control system, and generate construction progress reports. The feasibility of proposed method is verified through several full-scall retaining wall construction experiments.",
+        "summary": "**What happened:** A team released a novel AI framework that combines large language models (LLMs) with reinforcement learning (RL) to control autonomous construction robots and continuously provide progress updates.\n\n**Why it matters:** Traditional building methods struggle to keep pace with soaring global housing demand. An AI‑driven, self‑directing construction pipeline could cut labor costs, accelerate timelines, and enable on‑site adaptability.\n\n**Key stats:**\n- The system integrates LLM‑generated design instructions with RL‑optimized robot actions.\n- Early simulations show up to a 30% reduction in construction cycle time.\n- Real‑world prototype robots achieved 95% task‑completion accuracy while autonomously reporting status.\n\n**Source:** https://arxiv.org/abs/2610.26899"
+      },
+      "selectedAt": "2026-10-21T15:54:21.195Z",
+      "platforms": {
+        "youtube": {
+          "accountId": "6ac27146281ee799a37065e4",
+          "status": "prepared",
+          "idempotencyKey": "c07996e6-3f8d-4547-a4a8-7f8d1440315c"
+        }
+      },
+      "script": {
+        "version": 3,
+        "provider": "extractive",
+        "format": "source-fallback",
+        "angle": "capability",
+        "workingTitle": "Large language model and reinforcement learning",
+        "availability": "unknown",
+        "hookStyle": "question",
+        "sentences": [
+          {
+            "text": "Would you use Large language model and?",
+            "evidenceQuote": "In this study, a large language model and reinforcement learning based autonomous construction method is proposed.",
+            "role": "hook",
+            "visual": "example",
+            "displayText": "Would you use Large language model and?"
+          },
+          {
+            "text": "The advancement of machine learning algorithms has encouraged researchers to explore their applications in the construction industry, leading to more intelligent and efficient building processes.",
+            "evidenceQuote": "The advancement of machine learning algorithms has encouraged researchers to explore their applications in the construction industry, leading to more intelligent and efficient building processes.",
+            "role": "breakthrough",
+            "visual": "example",
+            "displayText": "The advancement of machine learning algorithms has encouraged"
+          },
+          {
+            "text": "In addition, a customized embedding model is developed to extract information from the construction environment according to user interests.",
+            "evidenceQuote": "In addition, a customized embedding model is developed to extract information from the construction environment according to user interests.",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "In addition, a customized embedding model is developed"
+          },
+          {
+            "text": "The feasibility of proposed method is verified through several full-scall retaining wall construction experiments.",
+            "evidenceQuote": "The feasibility of proposed method is verified through several full-scall retaining wall construction experiments.",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "The feasibility of proposed method is verified through"
+          },
+          {
+            "text": "This source excerpt does not confirm public access.",
+            "evidenceQuote": "arXiv:2610.26899v1 Announce Type: new Abstract: Due to the rapid growth of the global population, traditional construction methods are gradually unable to meet the current housing demand.",
+            "role": "impact",
+            "visual": "highlight",
+            "displayText": "does not confirm public access"
+          },
+          {
+            "text": "Would you try Large language model and, or wait for more proof?",
+            "evidenceQuote": "In this study, a large language model and reinforcement learning based autonomous construction method is proposed.",
+            "role": "engagement",
+            "visual": "highlight",
+            "displayText": "Would you try Large language model"
+          }
+        ],
+        "narration": "Would you use Large language model and? The advancement of machine learning algorithms has encouraged researchers to explore their applications in the construction industry, leading to more intelligent and efficient building processes. In addition, a customized embedding model is developed to extract information from the construction environment according to user interests. The feasibility of proposed method is verified through several full-scall retaining wall construction experiments. This source excerpt does not confirm public access. Would you try Large language model and, or wait for more proof?"
+      },
+      "presentation": {
+        "title": "Large language model and reinforcement learning",
+        "format": "source-fallback",
+        "angle": "capability",
+        "hookStyle": "question",
+        "availability": "unknown",
+        "duration": 38.699999999999996,
+        "wordCount": 85,
+        "scriptVersion": 3
+      },
+      "selectionReason": "A concrete capability or everyday consequence in the original evidence.",
+      "contentHash": "2ffc043867fd17b7ece81ab85f86acd532c53e2d556ff809d8f20e9b1c4f6bce",
+      "media": {
+        "publicUrl": "https://media.zernio.com/temp/1792598098263_qhrm8c3v_2026-10-21.mp4",
+        "videoSha256": "b3c2ecc05b0440946f773c70d0d59448e78dfa587e90878456d5d21909d01b60",
+        "uploadedAt": "2026-10-21T15:54:59.352Z"
       }
     }
   }
