@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "issueDate": "2026-10-21",
+  "issueUrl": "https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-10-21",
+  "content": "Today's AI briefing from The Gradient | 2026-10-21\n\n1. OpenAI models are coming to Google Cloud\nOpenAI and Google Cloud have integrated OpenAI’s frontier models, including Codex, into Gemini’s Model Garden, and made them purchasable via the Google Cloud Marketplace.\n\n2. How we built ChatGPT’s novel ad stack for user trust and relevance\nOpenAI engineered a new ad stack that runs on large language models to interpret conversational intent, flag ad slots, and serve sponsored messages distinct from ChatGPT’s replies.\n\n3. Terminal X matches senior investor judgment 88.6% with GPT-6.1\nTerminal X’s Eval Agent evaluated GPT‑6.1 Sol outputs against a 54‑criterion rubric, detecting 25% more deviations from a fund’s mandate and matching senior investor judgments 88.6% of the time.\n\nRead the full briefing and original sources:\nhttps://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-10-21\n\n#AI #ArtificialIntelligence #TheGradient",
+  "contentHash": "65bb443b0c07a538d1243e29b9c8b0fba44ed4f38be38670b3ae0a0c09c5fde8",
+  "accountId": "6ac5a561b3c21905c0edcfba",
+  "organizationUrn": "urn:li:organization:136824048",
+  "idempotencyKey": "a2305241-7da8-45df-9f94-71257f018148",
+  "status": "submitting",
+  "firstSubmittedAt": "2026-10-21T15:50:57.204Z"
+}
