@@ -1065,7 +1065,7 @@
       "platforms": {
         "youtube": {
           "accountId": "6ac27146281ee799a37065e4",
-          "status": "submitting",
+          "status": "published",
           "idempotencyKey": "c07996e6-3f8d-4547-a4a8-7f8d1440315c",
           "request": {
             "content": "Large language model and reinforcement learning based autonomous construction and progress updates\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2610.26899\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-10-21\nAI-generated narration. #AI #AINews #Shorts",
@@ -1090,7 +1090,9 @@
             ],
             "publishNow": true
           },
-          "firstSubmittedAt": "2026-10-21T15:55:00.768Z"
+          "firstSubmittedAt": "2026-10-21T15:55:00.768Z",
+          "postId": "6ad8e056470804c7c3fced98",
+          "postUrl": "https://www.youtube.com/watch?v=pK-K6zFI4fw"
         }
       },
       "script": {
