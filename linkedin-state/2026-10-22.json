@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "issueDate": "2026-10-22",
+  "issueUrl": "https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-10-22",
+  "content": "Today's AI briefing from The Gradient | 2026-10-22\n\n1. OpenAI models are coming to Google Cloud\nOpenAI’s latest frontier models and Codex coding workflows are now listed in Gemini’s Model Garden, a curated collection on Google Cloud Marketplace.\n\n2. How we built ChatGPT’s novel ad stack for user trust and relevance\nOpenAI engineered a novel, large‑language‑model (LLM) driven ad stack that interprets user prompts, classifies intent, and serves contextual ads without mixing them with the AI’s responses. The system uses a dedicated “ad‑mode” LLM, strict content segregation, and real‑time relevance scoring.\n\n3. Claude Duet app is Anthropic’s bet on agents\nAnthropic unveiled Claude Duet, a new app that integrates its Claude‑3 models into a dedicated agent‑focused interface. Access is limited to users on the Pro and Max subscription tiers, who can join a waitlist to get early entry.\n\nRead the full briefing and original sources:\nhttps://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-10-22\n\n#AI #ArtificialIntelligence #TheGradient",
+  "contentHash": "9416e58f01a1398a39401965ee713d6e5d01b71b17ef9a7d3f657a5c5d0c6611",
+  "accountId": "6ac5a561b3c21905c0edcfba",
+  "organizationUrn": "urn:li:organization:136824048",
+  "idempotencyKey": "07fce6d0-4af6-4046-bf55-ae8715a066f1",
+  "status": "submitting",
+  "firstSubmittedAt": "2026-10-22T15:48:48.552Z"
+}
