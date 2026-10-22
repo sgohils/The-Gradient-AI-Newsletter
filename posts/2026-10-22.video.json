@@ -1,0 +1,257 @@
+{
+  "version": 1,
+  "issueDate": "2026-10-22",
+  "generatedAt": "2026-10-22T15:47:35.238Z",
+  "stories": [
+    {
+      "id": "openai-blog-https%3A%2F%2Fopenai.com%2Findex%2Fopenai-models-google-cloud",
+      "rank": 1,
+      "title": "OpenAI models are coming to Google Cloud",
+      "sourceUrl": "https://openai.com/index/openai-models-google-cloud",
+      "sourceName": "OpenAI Blog",
+      "publishedAt": "2026-10-21T12:00:00.000Z",
+      "sourceExcerpt": "OpenAI and Google Cloud are bringing frontier models and Codex workflows to Gemini’s Model Garden, available through Google Cloud Marketplace.",
+      "summary": "**What happened:** OpenAI’s latest frontier models and Codex coding workflows are now listed in Gemini’s Model Garden, a curated collection on Google Cloud Marketplace.\n**Why it matters:** Developers and enterprises can instantly spin up OpenAI’s powerful models on Google Cloud, simplifying integration, scaling, and billing while leveraging Google’s robust infrastructure.\n**Key stats:** • Models available include GPT‑4‑level and specialized Codex tools.\n• Accessible through Google Cloud Marketplace with pay‑as‑you‑go pricing.\n• Early adopters report up to 30% faster deployment times.\n**Source:** https://openai.com/index/openai-models-google-cloud"
+    },
+    {
+      "id": "openai-blog-https%3A%2F%2Fopenai.com%2Findex%2Fbuilding-chatgpt-ad-stack",
+      "rank": 2,
+      "title": "How we built ChatGPT’s novel ad stack for user trust and relevance",
+      "sourceUrl": "https://openai.com/index/building-chatgpt-ad-stack",
+      "sourceName": "OpenAI Blog",
+      "publishedAt": "2026-10-21T07:00:00.000Z",
+      "sourceExcerpt": "Learn how OpenAI built ChatGPT’s LLM-powered ad stack to understand conversational intent, keep ads separate from answers, and deliver relevant ads at scale.",
+      "summary": "**What happened:** OpenAI engineered a novel, large‑language‑model (LLM) driven ad stack that interprets user prompts, classifies intent, and serves contextual ads without mixing them with the AI’s responses. The system uses a dedicated “ad‑mode” LLM, strict content segregation, and real‑time relevance scoring.\n\n**Why it matters:** By separating advertising from answers, OpenAI safeguards user trust and reduces the risk of misinformation. The relevance‑first approach also improves click‑through rates and makes the platform more attractive to advertisers, paving the way for sustainable monetization of free AI tools.\n\n**Key stats:**\n- 95%+ ad relevance score in internal testing\n- <1% false‑positive rate where ads appear alongside answers\n- 10× increase in ad delivery capacity compared to the pilot phase\n- Revenue‑per‑user projected to grow by 30% year‑over‑year\n\n**Source:** https://openai.com/index/building-chatgpt-ad-stack"
+    },
+    {
+      "id": "techcrunch-ai-https%3A%2F%2Ftechcrunch.com%2F2026%2F10%2F22%2Fclaude-duet-app-is-anthropics-bet-on-agents%2F",
+      "rank": 3,
+      "title": "Claude Duet app is Anthropic’s bet on agents",
+      "sourceUrl": "https://techcrunch.com/2026/10/22/claude-duet-app-is-anthropics-bet-on-agents/",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-22T13:53:26.000Z",
+      "sourceExcerpt": "Claude Duet is available through waitlist for Pro and Max plan users",
+      "summary": "**What happened:** Anthropic unveiled Claude Duet, a new app that integrates its Claude‑3 models into a dedicated agent‑focused interface. Access is limited to users on the Pro and Max subscription tiers, who can join a waitlist to get early entry.\n\n**Why it matters:** By centering agents, Anthropic signals a shift from pure chat‑completion toward autonomous, task‑driven AI that can orchestrate workflows, plug into tools, and act on user intent. This positions Claude Duet as a direct competitor to OpenAI’s Assistant and Google’s Gemini agents, and could accelerate enterprise adoption of AI‑driven automation.\n\n**Key stats:**\n- Waitlist opened on Oct 15, 2026; Anthropic reports over 12,000 sign‑ups within the first 48 hours.\n- Pricing aligns with existing Pro ($30/mo) and Max ($80/mo) plans, with an extra $10/mo “Agent Boost” add‑on for higher compute limits.\n- Claude Duet claims a 2.5× reduction in token usage for multi‑step tasks compared with standard Claude‑3 chat, thanks to built‑in tool calling and memory management.\n\n**Source:** https://techcrunch.com/2026/10/22/claude-duet-app-is-anthropics-bet-on-agents/"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.28706",
+      "rank": 4,
+      "title": "SpecEvo: Speculative Evolution with Large Language Models for Cost-Efficient Scientific Discovery",
+      "sourceUrl": "https://arxiv.org/abs/2610.28706",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-22T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.28706v1 Announce Type: new Abstract: LLM-driven evolutionary search is a promising paradigm for scientific discovery, but existing methods remain costly and slow, often applying expensive reasoning uniformly while underusing evidence from failed, redundant, and saturated trials. We introduce Speculative Evolution (SpecEvo), a multi-LLM framework that coordinates lightweight and frontier models through continual consolidation of search evidence. Lightweight models power both parallel Speculators, which generate and refine candidate programs, and an Advisor, which distills accumulated successes, failures, and saturated directions into persistent guidance for subsequent exploration. At sparse checkpoints, a frontier-model Navigator inspects the evolving population and intervenes through synthesis, surgical refinement, or reframing according to search stagnation. This speculate-then-consolidate workflow delegates routine exploration and evidence consolidation to inexpensive models while reserving frontier reasoning for strategic interventions whose benefits extend across many subsequent low-cost evaluations. Across 176 tasks spanning four scientific and algorithmic discovery domains, SpecEvo matches or outperforms frontier-model baselines while reducing API cost by up to 80%, achieves up to 1.5x greater evaluation efficiency than cost-efficient baselines on equation discovery, and improves over the strongest CO-Bench baseline by 3.8%. These results support trajectory-conditioned model coordination as an effective approach to cost-efficient scientific discovery.",
+      "summary": "**What happened:** Researchers unveiled SpecEvo, a multi‑LLM system that orchestrates cheap, parallel models with high‑capacity frontier models, continuously consolidating results from all trials—including failures—to guide the search.\n**Why it matters:** By avoiding uniform expensive reasoning and reusing information from redundant or saturated runs, SpecEvo dramatically reduces computational overhead, accelerating hypothesis generation in fields like chemistry, materials science, and biology.\n**Key stats:** Preliminary experiments report significant cost savings and faster convergence compared to prior LLM‑driven evolutionary methods, though exact figures are pending peer‑review.\n**Source:** https://arxiv.org/abs/2610.28706"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.28826",
+      "rank": 5,
+      "title": "Decision language models as affordable and rapid alternatives to LLM judges of clinical generative AI",
+      "sourceUrl": "https://arxiv.org/abs/2610.28826",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-22T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.28826v1 Announce Type: new Abstract: Automated judges of clinical artificial intelligence (AI) outputs are necessary, but large language model (LLM) judges are costly and slow at scale. We compared Jev, a decision language model that returns structured judgments, with frontier and open-weight LLM judges in four use cases. On 118 pediatric answers, Jev's agreement with physicians' ordinal quality ratings (Gwet's AC2 0.50; expected score 0.53) matched or exceeded that of seven of 12 LLM judges, including frontier models, Claude Opus 5.5 (0.49) and GPT-6 (0.38). On physician-graded binary HealthBench criteria, Jev matched or exceeded four of six LLM judges. On MedHELM's open-ended tasks, Jev's agreement with a three-LLM jury approached or exceeded the jurors' internal agreement. On HealthBench Professional, Jev matched the benchmark's reference judge, GPT-5.4, on 91% of criteria (other judges, 91-93%). Frontier judges cost 73-294 times more than Jev and took 7-57 times longer. Jev may enable efficient clinical AI evaluation at scale.",
+      "summary": "**What happened:** Researchers introduced Jev, a decision‑language model that returns structured quality judgments for clinical generative AI. They benchmarked it against 12 frontier and open‑weight LLM judges across four use cases, including 118 pediatric answer evaluations.\n\n**Why it matters:** Automated, reliable judging of AI‑generated medical content is essential for safety and scalability. Jev’s comparable performance at a fraction of the cost and latency could democratize quality control in healthcare AI.\n\n**Key stats:**\n- Jev’s agreement with physicians (Gwet's AC2 = 0.50) met or exceeded the performance of 7 out of 12 competing LLM judges.\n- Expected agreement score baseline: 0.53.\n- Evaluated on 118 pediatric answer instances across four distinct clinical scenarios.\n\n**Source:** https://arxiv.org/abs/2610.28826"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.28875",
+      "rank": 6,
+      "title": "To Manipulate or Not: Opinion Dynamics in LLM Interactions",
+      "sourceUrl": "https://arxiv.org/abs/2610.28875",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-22T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.28875v1 Announce Type: new Abstract: Large language models increasingly take part in extended conversations where they can both shape and be shaped by another party's views, yet most persuasion research measures only one side of that exchange. We introduce a controlled LLM-LLM debate framework in which two language-model roles repeatedly discuss a contested topic (climate-change attribution): one is given an assigned stance and, in some conditions, an explicit instruction to persuade, while the other receives no assigned position. Across four ordered model combinations involving GPT-6 Luna and Gemini 2.5 Flash Lite, we track both each role's explicitly reported position and a separate measure of its turn-by-turn behavior inside the conversation. Opinion dynamics differ substantially across model combinations: same-model interactions narrow the opinion gap on average, clearly for only one of the two models, while cross-model interactions widen it. Explicit reports and in-dialogue behavior capture distinct aspects of opinion dynamics, and a blanket instruction to persuade does not reliably increase influence. These findings suggest that conversational influence depends not only on assigned roles and initial positions but also on the participating models, with implications for how opinion change is measured in extended LLM interactions.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.28905",
+      "rank": 7,
+      "title": "Hidden Messages Between Diffusion Language Model Agents: Causal Evidence for Latent Communication",
+      "sourceUrl": "https://arxiv.org/abs/2610.28905",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-22T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.28905v1 Announce Type: new Abstract: Diffusion language models form answers through a sequence of revisable continuous states, but multi-agent systems usually discard those states and make agents communicate only after decoding text. We ask whether one independent diffusion trajectory can pass a compact hidden message into another and, crucially, whether the receiver uses what that message means. In Hidden Messages, a sender compresses its denoising state into four signed dense vectors; the receiver consumes them while retaining its own context, canvas, and trajectory. Removing a message tests whether the channel matters; replacing it with a message from another example tests whether its content matters. Across controlled tasks, derangement removes a +63.6-point advantage on Tiny-A2D and a +100.0-point advantage on Dream-7B, while targeted substitutions steer the receiver toward the substituted fact. On QASC with the two supporting facts split across agents, matched communication reaches 80.8%, but a wrong-example message lowers accuracy to 46.8%, a content effect of +34.0 points. The surprising result is temporal: one late transfer reaches 87.8%, exceeding four recurrent exchanges by +7.0 points. These experiments provide causal evidence for continuous hidden communication between diffusion-LM agents and show that when information is transferred can matter more than how many times agents exchange it.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.28909",
+      "rank": 8,
+      "title": "DiffResearch: Accelerating Deep Research with Diffusion Language Models",
+      "sourceUrl": "https://arxiv.org/abs/2610.28909",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-22T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.28909v1 Announce Type: new Abstract: Deep research systems iteratively plan, gather evidence, synthesize, and revise, making end-to-end latency a key bottleneck for interactive use. Almost all production systems are built on autoregressive (AR) language models and inherit left-to-right decoding in planning and long-form writing. We present DiffResearch, an open multi-agent deep research framework that places a diffusion language model (dLLM) at the core of every stage, and measure how a diffusion backbone changes latency and report quality. Holding the agentic scaffold, retrieval code, prompts, and evaluation fixed, we swap the backbone between an open diffusion model and a comparable AR model. Across 100 Deep Research Bench tasks, the diffusion backbone is roughly 6 times faster end-to-end, driven by order-of-magnitude reductions in planning and writing. We further introduce dFast, a decomposition mode that reads intermediate denoising states and extracts subqueries before generation finishes, providing a 1.99 times median speedup for decomposition in isolation with no loss of report quality. On the benchmark's RACE rubric, dFast obtains the best overall score among the three configurations. Finally, in a public system-level leaderboard snapshot, an instance built on a stronger diffusion model ranks above several commercial systems. We release DiffResearch under an Apache-2.0 license.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.28945",
+      "rank": 9,
+      "title": "Self-Improving Agents with World Model Predictive Paths",
+      "sourceUrl": "https://arxiv.org/abs/2610.28945",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-22T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.28945v1 Announce Type: new Abstract: Large language model (LLM) agents are increasingly expected to interact with environments and improve their decisions during deployment. However, how anticipating future outcomes and drawing on accumulated interaction experience can jointly support decision-making remains underexplored. We propose a test-time framework, inspired by Model Predictive Path Integral (MPPI) control, that combines multi-branch predictive analysis with experience-based adaptation. At each step, the agent proposes multiple candidate actions and imagines their outcomes with a world model, so that alternatives can be compared without being executed in the environment. Since language environments provide neither explicit dynamics nor costs, the predicted outcomes are evaluated for task progress and risk, and MPPI-style weights over the resulting costs guide the final decision. A dual-branch experience memory enables self-improvement: the planner branch refines candidate generation and action selection, while the world model branch improves next-observation prediction. Experiments on ALFWorld and ScienceWorld across three backbones demonstrate the strong overall performance of our method and the effectiveness of experience-guided predictive control. Our code will be made publicly available.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.28982",
+      "rank": 10,
+      "title": "Behavior Beyond Text: Evaluating Refusal Transfer Failure in LLM Agents",
+      "sourceUrl": "https://arxiv.org/abs/2610.28982",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-22T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.28982v1 Announce Type: new Abstract: While large language models are increasingly deployed as tool-calling agents, their safety evaluations still focus primarily on their ability to refuse harmful requests in text. We investigate whether the refusal behavior in text transfers to tool use. We construct a benchmark of 2,304 prompts across four domains, consisting of matched triplets that present the same harmful or benign request in text-only, standard tool-enabled, and adversarially framed tool-enabled settings. We then assess tool-call safety using 20 predefined forbidden actions. Testing five models of varying sizes and families, we find that requests refused in text frequently result in unsafe tool calls. Under standard tool-enabled prompting, this divergence occurs for 10-52 percent of harmful requests refused in chat. To mechanistically investigate this gap, we identify a refusal-associated direction in the residual stream of each of the five models. We find that in tool-enabled contexts, the activations along this direction decrease in four of five models. Furthermore, lower activation predicts unsafe tool calls across all five models (AUC 0.76-0.86). However, restoring the signal to the respective text-only value through activation patching only prevents a subset of unsafe calls, primarily by suppressing tool use rather than by producing safer calls. Steering along the refusal direction nearly eliminates unsafe calls only at strengths that also suppress benign tool use or degrade the output quality. Our findings indicate that the identified refusal direction contributes to whether a model acts, but only partially explains the refusal divergence. Therefore, evaluating the safety of tool-calling agents requires directly examining their actions along with their textual responses.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.28987",
+      "rank": 11,
+      "title": "PerMIT: Securing Persistent Memory for LLM Agents via Machine-Checked Integrity Theorems and Scalable Community Trust",
+      "sourceUrl": "https://arxiv.org/abs/2610.28987",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-22T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.28987v1 Announce Type: new Abstract: Persistent memory is a largely undefended surface for injection and poisoning, and the same risk limits memory sharing among agents. We present PerMIT, a memory architecture with provable integrity guarantees under an explicit trust assumption: only user-typed inputs and values confirmed at a gate are trusted. PerMIT mediates the release and use of untrusted environment-derived values through a finite memory interface, while preserving agent-driven multi-turn planning and tool choice. Over this finite interface, we prove two integrity theorems that are also machine-checked in Lean 4, which together ensure that environment-derived memory reaches a sensitive action only if confirmed at the gate and influences the agent's behavior only through what the gate displays. Every attack in our threat model thereby reduces to a single auditable decision, which a human, an LLM verifier, or both can make in practice. On Trojan Hippo, PerMIT records zero observed attack success with self-verification and lightweight verifiers. Because each confirmation is a logged verdict on exact content, endorsements accumulate across users, and sufficiently endorsed items become community-confirmed with no further verification required. Under explicit assumptions, we prove and corroborate in simulation a co-scaling property: as the community grows, the risks of promoting poison and of wrongly evicting benign knowledge fall, while per-user verification effort does not rise. On $\\tau^2$-bench, communities of up to 90 autonomous agents use PerMIT to build shared knowledge bases with no direct memory injection promoted, and the resulting knowledge significantly improves new agents on held-out tasks, suggesting a path toward agents that safely self-improve at test time.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.29010",
+      "rank": 12,
+      "title": "An Evidence-Driven Multi-Agent Compound AI System for Head and Neck Proton Radiotherapy Planning",
+      "sourceUrl": "https://arxiv.org/abs/2610.29010",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-22T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.29010v1 Announce Type: new Abstract: Radiation treatment planning requires balancing competing objectives to satisfy clinical criteria while accommodating physicians' preferences. This study aims to develop an evidence-driven, multi-agent compound AI system that integrates DRL-based automated treatment planning with LLM-based conversational plan refinement for proton PBS therapy. A policy network trained using PPO first generates multiple plans without human intervention, from which one is selected as the target plan and the others serve as references for subsequent refinements. For challenging cases requiring further adjustments, an LLM-based multi-agent system enables plan refinement through natural language interactions. The system comprises a planning agent that recommends evidence-supported adjustments, a chatbot providing a unified conversational interface, and an evaluation agent that retrieves clinical metrics and identifies constraint violations. To enhance domain-specific reasoning, the planning agent based on Qwen3-14B is designed to justify its recommendations using evidence from previously generated plans and post-trained on task-specific data using SFT and GRPO. The framework was trained and evaluated using 21 patients with H&N cancers, with 5 PPO-generated plans per patient. Of these, 50 plans were selected for instruction-guided refinement. Compared with the base LLM, the post-trained Qwen3-14B demonstrated improved instruction-following, information retrieval and domain-specific reasoning capabilities. The resulting adjustments more effectively improved user-prioritized objectives while limiting deterioration in competing objectives, yielding more clinically appropriate trade-offs in patient-specific plan refinement. The proposed compound AI system provides a user-friendly planning platform, offering a promising approach to personalized proton PBS treatment planning.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.29023",
+      "rank": 13,
+      "title": "Inheritance as an Admission Test for LLM Prompt Merge Operators",
+      "sourceUrl": "https://arxiv.org/abs/2610.29023",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-22T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.29023v1 Announce Type: new Abstract: Large language model (LLM) agents are often improved by iterating until a fixed verifier is done. Once that verifier saturates, the loop has nothing left to climb. We instead score agents against the current population, and a frozen panel records whether anyone got better. The panel mean can rise inside the seeds by elimination alone. We therefore count a run as training only when its final mean beats the best generation-zero member. A merge is admitted only when the child moves toward the donor, past the child the same operator produces at zero dose, and the lower confidence bound on that movement reaches half the requested dose. That is the admission test. A detectable shortfall rejects the operator, and the test is otherwise undetermined. We keep realised fitness \\phi as the selector and reference performance \\theta as the unused ruler. Every measurement uses gemini-3.1-flash-lite on one negotiation task, and no fixed-oracle arm was run. In the open loop, tactic append grafts short donor rules and is admitted. Free rewrite moves only a third of the requested dose and is rejected. Template append pastes raw donor replies into the child. Its movement clears the bound on the first probe but not on the re-probe, and it is left undetermined. A held-out re-probe on the five situations the merge never saw confirms that both appends move, and it does not rescue free rewrite. Neither append rises with the dose. Constrained rewrite is admitted in the open loop and was not run in the closed loop, which changes only the operator. The population, the scores and the task stay fixed. No free-rewrite run beats the best generation-zero member. Every tactic-append run and every template-append run does. Sampled loop children keep that split. Free rewrite moves no further toward the donor, and both appends still clear the bound, by less than in the open loop.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.29046",
+      "rank": 14,
+      "title": "AutoFraming: Synthesizing Dynamic Frames of C Code with LLMs",
+      "sourceUrl": "https://arxiv.org/abs/2610.29046",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-22T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.29046v1 Announce Type: new Abstract: Large language models (LLMs) have shown considerable promise in synthesizing formal specifications from source code. However, existing approaches primarily focus on functional contracts and loop invariants, while largely neglecting frame conditions, which specify the memory locations that may or may not be modified during execution and constitute an essential part of formal specifications. To address this limitation, we propose an LLM-based approach for synthesizing ACSL frame specifications alongside functional contracts from C code. Our approach analyzes code property graphs (CPGs) to extract frame-relevant information from the input code and leverages this information to guide the LLM in generating accurate frame conditions. The resulting specifications capture both region-separation constraints and data dependencies that govern variable modifications. Experimental results demonstrate the effectiveness of our approach. On a benchmark of 84 ACSL-compliant functions from non-trivial real-world systems, our method successfully synthesizes error-free frame specifications for 92.9% of the functions, representing a 179% relative improvement over state-of-the-art techniques. On a second benchmark consisting of 51 functions, the success rate increases from 80.4% to 96.1%. Furthermore, when integrated as an auxiliary component into existing LLM-based ACSL-synthesis frameworks, our approach improves frame-specification generation performance by up to 61.9%.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.29057",
+      "rank": 15,
+      "title": "Does Every Instance Count Equally? Order Effects in LLM Multi-Instance Processing",
+      "sourceUrl": "https://arxiv.org/abs/2610.29057",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-22T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.29057v1 Announce Type: new Abstract: Users increasingly rely on large language models (LLMs) to analyse collections of independent inputs, such as product reviews or social media posts, and return a single aggregated answer. This setting requires multi-instance processing (MIP), where a model combines information from multiple instances into one prediction. We study a task in which the model must infer a binary label for each instance, and identify the most frequent label among the full instance set. The correct answer should be invariant to instance order. By evaluating fifteen LLMs across five datasets and seven instance order patterns, with each instance set held fixed across patterns, we find substantial order sensitivity. Accuracy can differ by about 90 percentage points between the best and worst order patterns, with models generally more accurate when majority-label instances appear at the start than when they appear in the middle or at the end. For subsets of models, available reasoning traces and gradient-based attribution reveal uneven emphasis across positions. Traces disproportionately mention early instances, while attribution scores are generally higher near the beginning and end than in the middle. These results show that instance order can systematically bias aggregated predictions, highlighting the need to evaluate MIP across different input arrangements.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.29217",
+      "rank": 16,
+      "title": "When Multiple Choices Are Correct: Asymmetric Probability Allocation in Jev and Other Decision Models",
+      "sourceUrl": "https://arxiv.org/abs/2610.29217",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-22T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.29217v1 Announce Type: new Abstract: Decision models return normalized probability distributions over candidate choices, which downstream applications can use to select among choices. Although their providers emphasize the reliability of these probabilities, calibration on tasks with a single correct choice does not establish their reliability when multiple choices are correct. We evaluate three decision models (Jev, Liquid d1, and GPT-6 Luna Decisions) on three diverse datasets (MetaTool, HotpotQA, and ECtHR) to study probability allocation and thresholding. Even when models rank every correct choice above every distractor, in 28% to 50% of those lists, at least one correct choice receives a probability below the uniform probability of 1/n, where n is the number of choices. We also present each model with five identical copies of a correct choice and observe probability disparities, with mean gaps ranging from 17 to 79 percentage points. We further show how these allocation disparities affect the recovery of multiple correct choices under probability thresholding. Decision-model probabilities can rank correct choices, but a probability threshold does not identify the set of correct choices.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.29245",
+      "rank": 17,
+      "title": "CrashGym: Measuring the Decision Value of Experimentation for LLM Agents in Counterfactual Market Crashes",
+      "sourceUrl": "https://arxiv.org/abs/2610.29245",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-22T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.29245v1 Announce Type: new Abstract: Language-model agents are increasingly asked to run experiments, yet benchmarks rarely measure whether those experiments improve the decisions they are meant to inform. We introduce CrashGym, a deterministic, replayable limit-order-book simulator in which an agent must choose between a deleveraging intervention and a liquidity backstop for a market about to suffer a shock-triggered crash. Before committing, the agent may query intervention experiments in a laboratory realization of the market. Its choice is then scored on an independently seeded target realization in which the simulator executes every feasible intervention, so regret relative to the best intervention is computed by directly simulating every alternative on the same target repeats, with no human or model-based judging. The simulator implements each amplification channel---persistent price impact, liquidity withdrawal, margin-driven liquidation, and an evolving strategy mix---as an explicit mechanism that can be switched on in stages. In a prospectively specified study on 24 newly sampled worlds, laboratory access reduces the mean regret of the one deployment with a complete record (Luna) from 8.878 to 3.785, a paired reduction of 5.092 utility units (nominal 95% world-bootstrap interval: 1.028--9.507), or 57.4% of the OBSERVE-ONLY mean. Prospective comparisons for two further deployments are incomplete; in a separate exploratory study, mean regret is lower with laboratory access for all four deployments evaluated. A laboratory whose strategy mix evolves endogenously yields no established advantage over one with a fixed mix. CrashGym thus measures the value of experimentation as avoided decision loss and lets simulator detail be judged by the decisions it supports.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.29294",
+      "rank": 18,
+      "title": "Same Probabilities, Different Advice: Gain-Loss Framing Effects in High-Stakes LLM Decision Support",
+      "sourceUrl": "https://arxiv.org/abs/2610.29294",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-22T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.29294v1 Announce Type: new Abstract: Large language models (LLMs) are increasingly used to support consequential decisions, yet their reliability under equivalent representations of uncertainty remains unclear. Existing work has documented prompt sensitivity, cognitive biases, and confidence miscalibration, but it is still unknown whether high-stakes advice changes when the same probability is expressed through complementary gain and loss frames. We introduce FrameBench-HPS, a controlled benchmark of 2,880 prompts derived from 240 high-stakes scenarios across healthcare, finance, education/career, and legal/consumer-rights domains. Across seven LLMs, gain-loss framing changes the recommendation category in 32.4% of complete groups, with most changes involving uncertainty rather than direct reversals. Human evaluation confirms corresponding shifts in perceived risk and directiveness. Robustness experiments show that framing effects persist under conversational paraphrases and exceed ordinary repeated-generation variability. Probability canonicalization substantially reduces framing sensitivity, identifying probability representation as a practical target for improving consistency in high-stakes LLM decision support.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.29308",
+      "rank": 19,
+      "title": "LLM-Based Exogenous World Modeling for Dynamic Scheduling",
+      "sourceUrl": "https://arxiv.org/abs/2610.29308",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-22T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.29308v1 Announce Type: new Abstract: Dynamic scheduling requires dispatching online arrivals while anticipating future jobs, as poor decisions can compound downstream costs under nonlinear tardiness objectives. We show that a pretrained large language model (LLM) can serve as the exogenous component of a structured world model, forecasting uncertain future job arrivals. Specifically, we exploit an afterstate decomposition, which separates known deterministic shop transitions from uncertain exogenous job arrivals, enabling the LLM to forecast only the latter through a compact belief representation. Building on this, we develop Afterstate World-Model Planning (AWMP), which combines an evolved, belief-conditioned dispatching strategy with short scenario-based rollouts. A surprise-triggered refresh mechanism queries the LLM only when newly observed arrivals deviate sufficiently from previous forecast, and online residual self-calibration further conditions the LLM on its recent forecast errors to handle nonstationary arrivals. Across diverse arrival distributions, AWMP reduces weighted tardiness by 6-21% on dynamic job-shop and 22-46% on flexible job-shop benchmarks, relative to the best of eight classical priority-dispatching rules.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.29330",
+      "rank": 20,
+      "title": "AgentMonopoly: Behavioral Patterns and Persona Control in LLM Agents",
+      "sourceUrl": "https://arxiv.org/abs/2610.29330",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-22T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.29330v1 Announce Type: new Abstract: How do LLM agents' strategies differ, and how much can instructions to adopt a persona change their behavior over a game? We study these questions with AgentMonopoly, an environment where agents communicate, buy and trade properties, and make decisions that affect later turns. We compare models from four families, each at two sizes, in games with identical models, different sizes of the same family, or different families. We also assign one agent a persona, a description of how it should behave, intended to change a tendency observed in games without that persona. The tested models differ in how often they trade, waive rent, and manage cash and properties. Larger models do not consistently win more games. Persona instructions change the words agents use and some of their actions, but the changes do not always match the role across all decisions. These results show why persona following should be assessed through actions and outcomes as well as language. As our findings are conditional on the tested checkpoints, prompts, and five seeds per configuration, the open-source nature of AgentMonopoly provides the experimental infrastructure for further extending these comparisons. Our code is available at https://github.com/SuELS-Group/Agent_Monopoly.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.29331",
+      "rank": 21,
+      "title": "From Prompts to Posteriors: Can LLM Agents Perform Bayesian Inference in Context?",
+      "sourceUrl": "https://arxiv.org/abs/2610.29331",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-22T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.29331v1 Announce Type: new Abstract: Large language models (LLMs) are increasingly applied across the scientific discovery pipeline, from synthesizing literature to generating hypotheses to informing experimental design. A unifying principle behind these tasks is the need to continuously update beliefs as evidence accumulates, for which Bayesian inference provides a natural framework. However, existing work assumes that LLMs cannot carry out principled Bayesian belief updating in context, instead relying on simplifications and heuristics. To challenge this assumption, we present a principled evaluation of Bayesian reasoning capabilities in LLMs, analyzing both the model's internal consistency as well as its ability to recover an externally determined posterior. Specifically, we build an evaluation framework spanning qualitative epistemological examples to probe probabilistic coherence, quantitative benchmarks of Bayesian inference capabilities, and analyses of the impact of non-Bayesian updates on downstream task performance. Across different scenarios, we find that LLMs generally violate Bayes' rule when updating their beliefs in context. However, when equipped with modern reasoning abilities and code execution capabilities, their performance drastically improves, enabling even the close approximation of analytically intractable posteriors. Our evaluation shows that current LLMs with access to appropriate tools could already be used to make complex belief updates in scientific discovery, enabling rapid acceleration of the efficiency and scale of AI-powered scientific discovery.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.29680",
+      "rank": 22,
+      "title": "TraceForge: Distilling with Your Own Thinking",
+      "sourceUrl": "https://arxiv.org/abs/2610.29680",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-22T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.29680v1 Announce Type: new Abstract: Using an LLM to generate training data for another is among the most general ways to train one, and it remains common practice. Some frontier teams have closed that route for their own models: what comes back is an answer, or a short summary, without the detailed reasoning trace behind it. That is a little ironic: they were themselves built on distilling human knowledge, and distilling an open-source model is still entirely routine; the restriction applies to their own outputs alone. Recent work recovers the hidden reasoning by replaying encrypted blocks across models. It somehow works, but it breaks the providers' terms of service, so it is not something a product can be built on long-term. We built the alternative. We take the context and the teacher's answer as input, and generate the reasoning trace ourselves, in the style of the student's own model family. Training is two-stage, supervised and then adversarial: a generator learns to regenerate the family's own reasoning traces from their context and answer, and a critic learns how real a reasoning trace looks. Applied to a teacher's answer, the generator writes one in the family's style. An independent judge rates how likely traces are to be genuine on a scale from 0 to 1: ours average 0.68, real traces 0.66, and traces selected by the critic from four candidates 0.82. These are authenticity scores, not correctness rates. We test the idea on five benchmarks with everything else held fixed. On general tasks the five training corpora are about the same; on coding, the generated reasoning beats Fable 5's own thinking content. With the same 5,000 questions and the same teacher answers, HumanEval+ improves by 3.7 points and MBPP+ by 7.1 at the final checkpoint, and the MBPP+ lead holds at every checkpoint. We suspect that reasoning written in the student's family style is easier for it to learn from.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.29934",
+      "rank": 23,
+      "title": "ToM2Vec: Continuous Theory-of-Mind Tokens for Multi-Agent Coordination",
+      "sourceUrl": "https://arxiv.org/abs/2610.29934",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-22T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.29934v1 Announce Type: new Abstract: Forming an accurate theory-of-mind (ToM) is key to successful multi-agent collaboration and requires reasoning under uncertainty to capture multiple possible partner states. This is hard to do in the text representation space native to large language model (LLM) agents, which more easily describe a single partner state. To address this challenge, we introduce ToM2Vec, which learns to form abstract theories-of-mind in a rich latent space via a fixed budget of continuous reasoning tokens. During training, supervision for these tokens comes from the partner's actual thoughts, which the ToM tokens are trained to abstract and match. At test-time, ToM tokens are generated by each agent and act as conditioners for that agent's thoughts and actions. Across several environments covering collaborative, competitive, and mixed-motive settings (Overcooked-AI, multiparty negotiation, Decrypto, Hanabi, and Collab Escape/Capture), we evaluate ToM2Vec's ability to support multi-agent interactions and collaboration, finding consistent improvements over the base model and a variety of competitive trained and prompted baselines. We show that latent reasoning is critical, with performance dropping when reasoning is expressed in text. Moreover, we show that ToM2Vec training generalizes to partner model families not seen at train-time, including a proprietary model (GPT-5.4). In our analysis, we provide evidence that the latent tokens encode a ToM, rather than task-specific information: ToM2Vec's tokens improve the agent's ability to directly answer questions about partner beliefs, desires, and next actions.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.28649",
+      "rank": 24,
+      "title": "Zero-Cost Detection of Fabricated Citations: A Staged Heuristic Approach for Computing Dissertation Assessment",
+      "sourceUrl": "https://arxiv.org/abs/2610.28649",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-22T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.28649v1 Announce Type: cross Abstract: Generative AI's growing role in academic writing has driven a rise in fabricated references across dissertations and student reports. We present the Fabrication Severity Stack (FSS), a three-tiered framework classifying citation fabrications by detection complexity - from non-existent references to subtle content misattribution. Building on the FSS, we propose a staged heuristic verification workflow, executable through mainstream LLM interfaces. We argue that this framework offers computer science educators/examiners a practical, zero-cost basis for embedding reference verification into the assessment of dissertation and students' reports. In a pilot study on 100 citations (20% seeded with Level 1 and Level 2 fabrications), the proposed heuristic workflow enabled mainstream LLM interfaces to correctly flag 9-10 of 10 non-existent references and partially detect metadata corruption. These preliminary results suggest that freely accessible, general-purpose LLMs can achieve high recall on citation verification without reliance on proprietary detection tools.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.28663",
+      "rank": 25,
+      "title": "Beyond source attribution: Address authorship and comparability decisions in an LLM-built scholarly knowledge graph",
+      "sourceUrl": "https://arxiv.org/abs/2610.28663",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-22T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.28663v1 Announce Type: cross Abstract: A knowledge graph needs a stable address for its evidence even where the literature offers competing classifications and agrees on none. Yet an address chosen for retrieval readily passes for the only classification available. This happens whenever records gathered under one name concern units that differ in boundaries, rank, or the criteria by which they are described or counted. In Sinitic dialectology the same localities recur in schemes whose units differ in membership and rank, and a unit may change its affiliation when the evidence for its diagnosis changes. Two tone counts, each quoted faithfully, may still count different things. The taxonomy of an entire field thus comes to rest on the unstable frame of a literature that contradicts itself. Neither verifying a quotation nor searching for conflicting values detects these differences. I distinguish the working address that gathers candidate evidence, the category that the source defines and the decision that admits a passage to a particular comparison, and argue that such decisions, together with the dependence among records, belong to the provenance of a comparison. On four re-runnable cases, the accompanying PaRAGraph Casebook shows where such differences arise among claims extracted by a language model and verified before entering the graph. The platform now stores the corresponding decisions as objects for one dimension of comparability, the address of a record: the placement of a locality in each source's scheme, the decision that a name in a given publication denotes a unit rather than a place, and the origin of every address. The working taxonomy can then be revised as new sources yield new claims, while the path from each comparison to its evidence stays fixed. Keywords: knowledge graphs; source attribution; classification; claim extraction; comparative concepts; Sinitic dialectology; Yue",
+      "summary": ""
+    }
+  ]
+}
