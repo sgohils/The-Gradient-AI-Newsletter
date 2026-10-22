@@ -1105,8 +1105,32 @@
       "platforms": {
         "youtube": {
           "accountId": "6ac27146281ee799a37065e4",
-          "status": "prepared",
-          "idempotencyKey": "4d196cf5-4005-4af9-be34-758488830b92"
+          "status": "submitting",
+          "idempotencyKey": "4d196cf5-4005-4af9-be34-758488830b92",
+          "request": {
+            "content": "SpecEvo: Speculative Evolution with Large Language Models for Cost-Efficient Scientific Discovery\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2610.28706\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-10-22\nAI-generated narration. #AI #AINews #Shorts",
+            "mediaItems": [
+              {
+                "type": "video",
+                "url": "https://media.zernio.com/temp/1792684311036_d5bbd96k_2026-10-22.mp4"
+              }
+            ],
+            "platforms": [
+              {
+                "platform": "youtube",
+                "accountId": "6ac27146281ee799a37065e4",
+                "platformSpecificData": {
+                  "title": "SpecEvo: Speculative Evolution with Large",
+                  "visibility": "public",
+                  "madeForKids": false,
+                  "containsSyntheticMedia": true,
+                  "categoryId": "28"
+                }
+              }
+            ],
+            "publishNow": true
+          },
+          "firstSubmittedAt": "2026-10-22T15:51:53.455Z"
         }
       },
       "script": {
