@@ -356,7 +356,7 @@
         "sourceUrl": "https://arxiv.org/abs/2610.14118",
         "sourceName": "arXiv cs.AI",
         "publishedAt": "2026-10-15T04:00:00.000Z",
-        "sourceExcerpt": "arXiv:2610.14118v1 Announce Type: new Abstract: The rapid advancement of Large Language Models (LLMs) has driven their deployment toward general-purpose harness environments, where LLM-based agents operate in sandbox workspaces and interact directly with file systems and shells. While numerous post-training pipelines exist for tool-use agents, their counterparts for harness-based agents remain scarce and are predominantly one-shot and teacher-dependent: a stronger external model synthesizes tasks and collects trajectories, the target agent is trained once, and evaluation results are consumed by human researchers rather than fed back into the loop. Such pipelines are inherently bounded by the capability of the external model and the scope of human prior, leaving no room for self-improvement. To address these limitations, we propose ClawLoop, a framework that enables self-improving without any external teacher model and with minimal prior dependencies. ClawLoop composes three phases into a self-sustaining cycle: Task Synthesis, which generates a diverse pool of training tasks via two complementary construction routines, applies diagnosis-conditioned difficulty growth followed by both agent-free and agent-based task validation; Training, which updates the agent via SFT and/or RL; and Diagnosis and Feedback, which analyzes the agent's rollout behaviors to produce a capability analysis report that will be used as feedback for task synthesis in the next iteration. Using Qwen3.6-27B as the loop model, ClawLoop yields consistent improvements on SkillsBench, Claw-Eval-Live, and ClawGym-Bench. The iteratively refined tasks are further transferred to smaller-scale Qwen3.5-4B and 9B models with gains across all benchmarks, validating data quality independently of the loop model.",
+        "sourceExcerpt": "",
         "summary": ""
       },
       "selectedAt": "2026-10-15T15:34:17.937Z",
@@ -365,87 +365,10 @@
           "accountId": "6ac27146281ee799a37065e4",
           "status": "published",
           "idempotencyKey": "3e660b5d-9d8d-4b3f-80c8-e26df74db5e3",
-          "request": {
-            "content": "ClawLoop: Self-Improving Agents via Harness-Native Training Loop\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2610.14118\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-10-15\nAI-generated narration. #AI #AINews #Shorts",
-            "mediaItems": [
-              {
-                "type": "video",
-                "url": "https://media.zernio.com/temp/1792078492551_c1gu88s7_2026-10-15.mp4"
-              }
-            ],
-            "platforms": [
-              {
-                "platform": "youtube",
-                "accountId": "6ac27146281ee799a37065e4",
-                "platformSpecificData": {
-                  "title": "ClawLoop: Self-Improving Agents via",
-                  "visibility": "public",
-                  "madeForKids": false,
-                  "containsSyntheticMedia": true,
-                  "categoryId": "28"
-                }
-              }
-            ],
-            "publishNow": true
-          },
           "firstSubmittedAt": "2026-10-15T15:34:55.094Z",
           "postId": "6ad0f2a0ccaaa522bb6ebf7a",
           "postUrl": "https://www.youtube.com/watch?v=8zQ5VoKOpZM"
         }
-      },
-      "script": {
-        "version": 3,
-        "provider": "extractive",
-        "format": "source-fallback",
-        "angle": "capability",
-        "workingTitle": "ClawLoop: Self-Improving Agents via",
-        "availability": "unknown",
-        "hookStyle": "question",
-        "sentences": [
-          {
-            "text": "Would you use ClawLoop?",
-            "evidenceQuote": "To address these limitations, we propose ClawLoop, a framework that enables self-improving without any external teacher model and with minimal prior dependencies.",
-            "role": "hook",
-            "visual": "example",
-            "displayText": "Would you use ClawLoop?"
-          },
-          {
-            "text": "Such pipelines are inherently bounded by the capability of the external model and the scope of human prior, leaving no room for self-improvement.",
-            "evidenceQuote": "Such pipelines are inherently bounded by the capability of the external model and the scope of human prior, leaving no room for self-improvement.",
-            "role": "breakthrough",
-            "visual": "example",
-            "displayText": "Such pipelines are inherently bounded by the capability"
-          },
-          {
-            "text": "Using Qwen3.6-27B as the loop model, ClawLoop yields consistent improvements on SkillsBench, Claw-Eval-Live, and ClawGym-Bench.",
-            "evidenceQuote": "Using Qwen3.6-27B as the loop model, ClawLoop yields consistent improvements on SkillsBench, Claw-Eval-Live, and ClawGym-Bench.",
-            "role": "breakthrough",
-            "visual": "process",
-            "displayText": "Using Qwen3.6-27B as the loop model"
-          },
-          {
-            "text": "The iteratively refined tasks are further transferred to smaller-scale Qwen3.5-4B and 9B models with gains across all benchmarks, validating data quality independently of the loop model.",
-            "evidenceQuote": "The iteratively refined tasks are further transferred to smaller-scale Qwen3.5-4B and 9B models with gains across all benchmarks, validating data quality independently of the loop model.",
-            "role": "breakthrough",
-            "visual": "process",
-            "displayText": "The iteratively refined tasks are further transferred"
-          },
-          {
-            "text": "This source excerpt does not confirm public access.",
-            "evidenceQuote": "arXiv:2610.14118v1 Announce Type: new Abstract: The rapid advancement of Large Language Models (LLMs) has driven their deployment toward general-purpose harness environments, where LLM-based agents operate in sandbox workspaces and interact directly with file systems and shells.",
-            "role": "impact",
-            "visual": "highlight",
-            "displayText": "does not confirm public access"
-          },
-          {
-            "text": "Would you try ClawLoop, or wait for more proof?",
-            "evidenceQuote": "To address these limitations, we propose ClawLoop, a framework that enables self-improving without any external teacher model and with minimal prior dependencies.",
-            "role": "engagement",
-            "visual": "highlight",
-            "displayText": "Would you try ClawLoop"
-          }
-        ],
-        "narration": "Would you use ClawLoop? Such pipelines are inherently bounded by the capability of the external model and the scope of human prior, leaving no room for self-improvement. Using Qwen3.6-27B as the loop model, ClawLoop yields consistent improvements on SkillsBench, Claw-Eval-Live, and ClawGym-Bench. The iteratively refined tasks are further transferred to smaller-scale Qwen3.5-4B and 9B models with gains across all benchmarks, validating data quality independently of the loop model. This source excerpt does not confirm public access. Would you try ClawLoop, or wait for more proof?"
       },
       "presentation": {
         "title": "ClawLoop: Self-Improving Agents via",
@@ -1165,6 +1088,97 @@
         "publicUrl": "https://media.zernio.com/temp/1792598098263_qhrm8c3v_2026-10-21.mp4",
         "videoSha256": "b3c2ecc05b0440946f773c70d0d59448e78dfa587e90878456d5d21909d01b60",
         "uploadedAt": "2026-10-21T15:54:59.352Z"
+      }
+    },
+    "2026-10-22": {
+      "story": {
+        "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.28706",
+        "rank": 4,
+        "title": "SpecEvo: Speculative Evolution with Large Language Models for Cost-Efficient Scientific Discovery",
+        "sourceUrl": "https://arxiv.org/abs/2610.28706",
+        "sourceName": "arXiv cs.AI",
+        "publishedAt": "2026-10-22T04:00:00.000Z",
+        "sourceExcerpt": "arXiv:2610.28706v1 Announce Type: new Abstract: LLM-driven evolutionary search is a promising paradigm for scientific discovery, but existing methods remain costly and slow, often applying expensive reasoning uniformly while underusing evidence from failed, redundant, and saturated trials. We introduce Speculative Evolution (SpecEvo), a multi-LLM framework that coordinates lightweight and frontier models through continual consolidation of search evidence. Lightweight models power both parallel Speculators, which generate and refine candidate programs, and an Advisor, which distills accumulated successes, failures, and saturated directions into persistent guidance for subsequent exploration. At sparse checkpoints, a frontier-model Navigator inspects the evolving population and intervenes through synthesis, surgical refinement, or reframing according to search stagnation. This speculate-then-consolidate workflow delegates routine exploration and evidence consolidation to inexpensive models while reserving frontier reasoning for strategic interventions whose benefits extend across many subsequent low-cost evaluations. Across 176 tasks spanning four scientific and algorithmic discovery domains, SpecEvo matches or outperforms frontier-model baselines while reducing API cost by up to 80%, achieves up to 1.5x greater evaluation efficiency than cost-efficient baselines on equation discovery, and improves over the strongest CO-Bench baseline by 3.8%. These results support trajectory-conditioned model coordination as an effective approach to cost-efficient scientific discovery.",
+        "summary": "**What happened:** Researchers unveiled SpecEvo, a multi‑LLM system that orchestrates cheap, parallel models with high‑capacity frontier models, continuously consolidating results from all trials—including failures—to guide the search.\n**Why it matters:** By avoiding uniform expensive reasoning and reusing information from redundant or saturated runs, SpecEvo dramatically reduces computational overhead, accelerating hypothesis generation in fields like chemistry, materials science, and biology.\n**Key stats:** Preliminary experiments report significant cost savings and faster convergence compared to prior LLM‑driven evolutionary methods, though exact figures are pending peer‑review.\n**Source:** https://arxiv.org/abs/2610.28706"
+      },
+      "selectedAt": "2026-10-22T15:51:24.855Z",
+      "platforms": {
+        "youtube": {
+          "accountId": "6ac27146281ee799a37065e4",
+          "status": "prepared",
+          "idempotencyKey": "4d196cf5-4005-4af9-be34-758488830b92"
+        }
+      },
+      "script": {
+        "version": 3,
+        "provider": "extractive",
+        "format": "source-fallback",
+        "angle": "workflow",
+        "workingTitle": "SpecEvo: Speculative Evolution with Large",
+        "availability": "unknown",
+        "hookStyle": "question",
+        "sentences": [
+          {
+            "text": "Would you use SpecEvo?",
+            "evidenceQuote": "We introduce Speculative Evolution (SpecEvo), a multi-LLM framework that coordinates lightweight and frontier models through continual consolidation of search evidence.",
+            "role": "hook",
+            "visual": "example",
+            "displayText": "Would you use SpecEvo?"
+          },
+          {
+            "text": "This speculate-then-consolidate workflow delegates routine exploration and evidence consolidation to inexpensive models while reserving frontier reasoning for strategic interventions whose benefits extend across many subsequent low-cost evaluations.",
+            "evidenceQuote": "This speculate-then-consolidate workflow delegates routine exploration and evidence consolidation to inexpensive models while reserving frontier reasoning for strategic interventions whose benefits extend across many subsequent low-cost evaluations.",
+            "role": "breakthrough",
+            "visual": "example",
+            "displayText": "This speculate-then-consolidate workflow delegates routine exploration and evidence"
+          },
+          {
+            "text": "arXiv cs.AI says it introduce Speculative Evolution (SpecEvo), a multi-LLM framework that coordinates lightweight and frontier models through continual consolidation of search evidence.",
+            "evidenceQuote": "We introduce Speculative Evolution (SpecEvo), a multi-LLM framework that coordinates lightweight and frontier models through continual consolidation of search evidence.",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "ArXiv cs.AI says it introduce Speculative Evolution (SpecEvo)"
+          },
+          {
+            "text": "These results support trajectory-conditioned model coordination as an effective approach to cost-efficient scientific discovery.",
+            "evidenceQuote": "These results support trajectory-conditioned model coordination as an effective approach to cost-efficient scientific discovery.",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "These results support trajectory-conditioned model coordination as"
+          },
+          {
+            "text": "This source excerpt does not confirm public access.",
+            "evidenceQuote": "arXiv:2610.28706v1 Announce Type: new Abstract: LLM-driven evolutionary search is a promising paradigm for scientific discovery, but existing methods remain costly and slow, often applying expensive reasoning uniformly while underusing evidence from failed, redundant, and saturated trials.",
+            "role": "impact",
+            "visual": "highlight",
+            "displayText": "does not confirm public access"
+          },
+          {
+            "text": "Would you try SpecEvo, or wait for more proof?",
+            "evidenceQuote": "We introduce Speculative Evolution (SpecEvo), a multi-LLM framework that coordinates lightweight and frontier models through continual consolidation of search evidence.",
+            "role": "engagement",
+            "visual": "highlight",
+            "displayText": "Would you try SpecEvo"
+          }
+        ],
+        "narration": "Would you use SpecEvo? This speculate-then-consolidate workflow delegates routine exploration and evidence consolidation to inexpensive models while reserving frontier reasoning for strategic interventions whose benefits extend across many subsequent low-cost evaluations. arXiv cs.AI says it introduce Speculative Evolution (SpecEvo), a multi-LLM framework that coordinates lightweight and frontier models through continual consolidation of search evidence. These results support trajectory-conditioned model coordination as an effective approach to cost-efficient scientific discovery. This source excerpt does not confirm public access. Would you try SpecEvo, or wait for more proof?"
+      },
+      "presentation": {
+        "title": "SpecEvo: Speculative Evolution with Large",
+        "format": "source-fallback",
+        "angle": "workflow",
+        "hookStyle": "question",
+        "availability": "unknown",
+        "duration": 42,
+        "wordCount": 85,
+        "scriptVersion": 3
+      },
+      "selectionReason": "A source-backed, measurable change in time, cost, or capability.",
+      "contentHash": "c8776eef99eadf20dcf91bbfe8d53233549896c3a13c3d75e39677a249b736cf",
+      "media": {
+        "publicUrl": "https://media.zernio.com/temp/1792684311036_d5bbd96k_2026-10-22.mp4",
+        "videoSha256": "9b3903ee4596643b62d3da122614793621e2bafe8a3a0f2346c61f4f7397f246",
+        "uploadedAt": "2026-10-22T15:51:52.073Z"
       }
     }
   }
