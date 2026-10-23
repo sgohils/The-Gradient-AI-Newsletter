@@ -1145,7 +1145,7 @@
       "platforms": {
         "youtube": {
           "accountId": "6ac27146281ee799a37065e4",
-          "status": "submitting",
+          "status": "published",
           "idempotencyKey": "373fe7a5-c201-4459-b66c-e0447a63f20e",
           "request": {
             "content": "Same Beliefs, Different Policies: Learning Reusable Representations for Early Stopping in LLM Reasoning\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2610.30450\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-10-23\nAI-generated narration. #AI #AINews #Shorts",
@@ -1170,7 +1170,9 @@
             ],
             "publishNow": true
           },
-          "firstSubmittedAt": "2026-10-23T16:07:11.142Z"
+          "firstSubmittedAt": "2026-10-23T16:07:11.142Z",
+          "postId": "6adb863056e58fbc983d041a",
+          "postUrl": "https://www.youtube.com/watch?v=38fbS0FqfcQ"
         }
       },
       "script": {
