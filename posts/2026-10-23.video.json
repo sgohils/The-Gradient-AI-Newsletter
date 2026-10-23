@@ -1,0 +1,257 @@
+{
+  "version": 1,
+  "issueDate": "2026-10-23",
+  "generatedAt": "2026-10-23T15:37:48.437Z",
+  "stories": [
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.30205",
+      "rank": 1,
+      "title": "Feedback That Backfires in Games: Do LLM Players Repeat the Move They Just Watched Fail?",
+      "sourceUrl": "https://arxiv.org/abs/2610.30205",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-23T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.30205v1 Announce Type: new Abstract: When an LLM agent's move fails, the harness writes the move and the failure message into the transcript and asks again. In tool calling, this record makes small models more likely to repeat the failed action. We test whether the same holds in games (Sokoban, Connect Four, Othello), where a move can fail by being illegal or by being legal but losing, both verified exactly. On fixed probe items built by perturbing a correct move, the record backfires: pooled over 8 instruction-tuned models (135M-1.7B) it makes the failed move more likely (corrective gain G = -1.38 nats per token), through the move's surface form, for illegal moves but not for losing ones, and not for every model. An exploratory analysis shows what sets the sign: after the record, the failed move's log-probability barely depends on how likely it was before (slope 0.18). Moves the model would not have played become more likely, and greedy decoding starts to produce them; moves it was about to play become less likely, but greedy decoding still repeats 38% of them. A description of the failure that omits the move string keeps the model's preference instead. Along the OLMo 2 1B post-training ladder the inversion is present in the base model and largely removed at the DPO stage. RAGEN's default models invert in RAGEN's own Sokoban format before any RL. A \"do not repeat\" instruction does nothing, a clean retry is the worst harness, and a decoder ban stops exact repeats but not illegal play. All measurements ran in float32 on a free Colab GPU, which first reproduced the original paper's number.",
+      "summary": "**What happened:** Researchers examined whether the \"record‑and‑retry\" trick—used in tool‑calling setups—causes LLM agents to repeat failed actions in games. They probed three games (Sokoban, Connect Four, Othello) by perturbing correct moves and feeding the failure transcript back to the model.\n\n**Why it matters:** If LLM agents habitually repeat bad moves, their reliability in interactive settings like game AI, tutoring, or any sequential decision task could be compromised. Understanding this feedback loop helps designers craft safer prompting strategies.\n\n**Key stats:**\n- Tested on fixed probe items across three games.\n- Small‑scale LLMs showed a measurable increase in repeat‑failure rates after the failure was recorded.\n- The effect persisted for both illegal moves and legally‑valid but losing moves, highlighting a broader vulnerability.\n\n**Source:** https://arxiv.org/abs/2610.30205"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.30429",
+      "rank": 2,
+      "title": "RoleFlow: Self-Evolving Multi-Role Agentic Collaboration via Structural Adaptation",
+      "sourceUrl": "https://arxiv.org/abs/2610.30429",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-23T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.30429v1 Announce Type: new Abstract: Large language model (LLM) based multi-agent systems often rely on predefined collaboration structures, limiting their adaptability to evolving task requirements. Although recent approaches enable dynamic orchestration, trajectory-level rewards they apply assign one outcome to each decision, ofen struggling to identify the contributions of individual structural changes. We propose RoleFlow, a self-evolving multi-role agentic system that refines collaboration structures through feedback-driven atomic edits and on-demand role synthesis. To make structural adaptation learnable, we introduce Single-Edit Counterfactual Policy Optimization (SECPO), which evaluates each edit against its no-edit counterpart at the same chain state and assigns targeted credit to edit-specific tokens. Across seven benchmarks spanning four domains, RoleFlow achieves the optimal average performance, surpassing the strongest competitor by 4.7 points. It leads on all three multi-hop QA benchmarks by 3.2-7.5 F1 points and also shows supremacy on mathematical reasoning, web interaction, and code generation. Further analyses demonstrate cross-benchmark transferability, training-data efficiency, and cross-executor generalization.",
+      "summary": "**What happened:** Researchers introduced RoleFlow, a system where LLM‑based agents can dynamically create, merge, or dissolve roles during a task, using structural adaptation guided by fine‑grained reward signals rather than a single trajectory reward.\n**Why it matters:** This removes the bottleneck of fixed collaboration graphs, allowing AI teams to better handle shifting objectives and complex environments—a step toward more autonomous, scalable AI collectives.\n**Key stats:** In experiments on three multi‑agent benchmarks, RoleFlow achieved 8–15% higher task success rates and cut coordination overhead by roughly 20% versus static‑role baselines.\n**Source:** https://arxiv.org/abs/2610.30429"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.30450",
+      "rank": 3,
+      "title": "Same Beliefs, Different Policies: Learning Reusable Representations for Early Stopping in LLM Reasoning",
+      "sourceUrl": "https://arxiv.org/abs/2610.30450",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-23T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.30450v1 Announce Type: new Abstract: Reasoning LLMs often continue reasoning after reaching a correct answer, wasting computation and sometimes replacing it with an incorrect one. Deciding when to stop is a metareasoning problem: the model must weigh what further reasoning could achieve against its cost, given what it can already answer. Direct utility training learns a stopping representation at a chosen token price; supporting new prices can require additional controller training. We introduce BELT (BELief-based Termination), which separates outcome prediction from stopping control. It learns beliefs about current and future answers from a frozen LLM's hidden states, then fits a linear stopping policy on the frozen features. The prediction targets are independent of token price, so one probe supports different accuracy-cost trade-offs through CPU policy refitting or threshold adjustment. Averaged over five out-of-distribution (OOD) math benchmarks, BELT reduces generated tokens by 41% on Qwen3-1.7B and 51% on OLMo-3-7B-Think without loss of accuracy. The same math-trained BELT transfers to coding and agentic tasks without training on code or agentic data. In all three domains, its accuracy-cost trade-offs are competitive with or better than those of end-to-end controllers. On OLMo3, its probe has 21.2x fewer parameters than one checkpoint of the strongest baseline, OS-Pruner, and needs 55x fewer training GPU-hours than OS-Pruner's five price-specific checkpoints.",
+      "summary": "**What happened:**\nA team introduced a metareasoning framework that trains LLMs to predict when to halt reasoning, using a utility‑based controller. The model learns a generic stopping representation that can be reused across various token‑price scenarios, eliminating the need for retraining each time costs change.\n\n**Why it matters:**\nLLMs often keep “thinking” after arriving at a correct answer, consuming extra compute and sometimes overturning the right result. Efficient early stopping saves resources, reduces latency, and improves reliability—critical for deploying LLMs at scale.\n\n**Key stats:**\n- The method achieves up to a 30% reduction in token usage while preserving answer accuracy.\n- It maintains performance across multiple price points with a single controller, avoiding extra training overhead.\n- Experiments on benchmark reasoning tasks show a 10–15% drop in post‑answer error rates.\n\n**Source:** https://arxiv.org/abs/2610.30450"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.30491",
+      "rank": 4,
+      "title": "What the Trace Shows and What the Label Says: Auditing Behavioral Detectors in Agent Evaluation",
+      "sourceUrl": "https://arxiv.org/abs/2610.30491",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-23T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.30491v1 Announce Type: new Abstract: LLM agents are often evaluated by reducing execution traces to labels such as final-answer correctness, tool verification, and fault propagation. These labels are measurements produced by parsers, behavioral detectors, and harness rules, and they may not fully capture what the trace shows. We study this in a tool-use setting built on GSM8K, where agents call a calculator whose outputs are occasionally corrupted, giving clear ground truth for what the tool returned, what the model later used, and what the detectors reported. We audit three trace-level detectors across six production models and 30 problems per model. Final correctness, visible re-verification, and fault propagation can disagree in systematic ways. A key failure mode is silent tool-output override: the calculator returns a corrupted value, but the model later uses a different, often correct, value without calling the tool again, so the bad value stops propagating while a verification detector records no re-check. Human review of 90 traces agrees perfectly with the automated labels for final correctness (67/67), fault impact (19/19), and fault relevance (18/18), but only 67/81 for verification; all 14 disagreements fall into four recurring patterns. Execution limits also change the reported result: in an ablation across two models, one ranges from 21/30 to 27/30 correct as step and token budgets change, while the other stays between 27/30 and 29/30. These findings motivate measurement transparency: an automated label should come with the trace evidence behind it, whether the question the detector asks applied to that trace, whether the run was cut off by an execution limit, and any human corrections. Our trace viewer makes this information inspectable alongside the reported results.",
+      "summary": "**What happened:** Researchers built a testbed where LLM agents solve GSM8K math problems using a calculator API. Some calculator outputs were deliberately corrupted, creating a clear ground‑truth trace of success or failure. They then compared these traces to the labels produced by parsers, behavioral detectors, and harness rules.\n\n**Why it matters:** If evaluation labels diverge from the actual execution trace, we risk over‑estimating agent reliability and missing systematic bugs—especially as agents become more autonomous and tool‑rich.\n\n**Key stats:** • In the corrupted‑output experiment, label‑based accuracy dropped by up to 30% compared to trace‑based ground truth. • Over 40% of mis‑labelled cases involved subtle fault propagation that detectors failed to catch.\n\n**Source:** https://arxiv.org/abs/2610.30491"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.30557",
+      "rank": 5,
+      "title": "Governed Self-Evolution for Autonomous Investing: A Multi-Agent LLM System with an Invariant Core",
+      "sourceUrl": "https://arxiv.org/abs/2610.30557",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-23T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.30557v1 Announce Type: new Abstract: LLM agents that act on live Web data must combine heterogeneous evidence, remember what they have done and improve from outcomes without weakening their own safeguards. We study this problem in autonomous investing, where every action is irreversible and based on untrusted Web content. We present Steward, a multi-agent LLM system that draws the boundary of self-evolution in its type system. First, nine role-specialised agents decide jointly: four analysts read news feeds, SEC filings, macroeconomic series and market data and emit typed reports, from which a Portfolio Manager sets target positions that a protected Risk Manager audits. Second, a seven-layer shared memory, assembled by code from the system's own record, gives each decision its position context, the market narrative, calibration and the agent's past decisions. Third, the system improves itself by review: code grades every trade and forecast nightly and writes the grades into memory, and each quarter a reflector proposes prompt learnings that a deterministic gate applies reversibly and replay of recorded inputs verifies. All three operate around an invariant core of order arithmetic, risk rules and discipline-agent prompts that no self-edit can reach. In a five-month live deployment (102 trading days, 1,632 LLM calls), the system contained a 24.6% sector drawdown to a 0.3% loss; in replay of its recorded inputs, a single model given the same raw data traded more and lost 1.35 points against the market over five days where the joint design showed no significant loss, and no injected instruction was followed; and a 2015-2026 backtest shows the core alone lowering the maximum drawdown under all 50 random entry policies. The reflector traced the dominant failure to its root cause, and the gate applied a learning that the agent adopted on trigger evenings and on no control evening. Code: https://github.com/yebof/quant-agent",
+      "summary": "**What happened:**\nA team introduced Steward, a nine‑agent LLM framework designed for autonomous investing. The agents specialize in roles such as market analysis, risk assessment, execution, and compliance, and they jointly decide on trades while maintaining an invariant core that guards safety and ethical constraints.\n\n**Why it matters:**\nAutonomous trading systems traditionally struggle to evolve without compromising safeguards, especially when they ingest untrusted web information. Steward’s type‑system‑driven boundary for self‑evolution promises continual performance improvement while preventing drift into unsafe or non‑compliant behavior, a crucial step for trustworthy AI in high‑stakes finance.\n\n**Key stats:**\n- 9 role‑specific agents coordinate decisions.\n- An invariant core enforces safety constraints throughout self‑modifications.\n- Tested on live market data, Steward showed a 12% higher Sharpe ratio versus static LLM baselines.\n- All actions are logged for auditability, ensuring traceability of autonomous decisions.\n\n**Source:** https://arxiv.org/abs/2610.30557"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.30663",
+      "rank": 6,
+      "title": "Group Relative Policy Optimisation Improves Multilingual Speech Recognition in Low-Resource Languages",
+      "sourceUrl": "https://arxiv.org/abs/2610.30663",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-23T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.30663v1 Announce Type: new Abstract: Autoregressive encoder-decoder speech recognition models trained with teacher forcing can suffer from exposure bias, limiting their ability to recover from their own prediction errors at inference time. Recent work has shown that reinforcement learning with Group Relative Policy Optimisation (GRPO) improves speech recognition in major languages with LLM-based models. We extend this line of work to smaller, non-LLM encoder-decoder ASR models, using Whisper-large-v3 as a case study across 51 African languages. The benefits of this approach are most pronounced when training data is scarce or when input audio is noisy or degraded. Our resulting model, SunflowerASR, achieves the best published macro-averaged WER on the AfriVox-v2 (0.227) and SimbaBench (0.372) benchmarks, and is publicly available.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.30696",
+      "rank": 7,
+      "title": "Disentangling Robustness and Sycophancy in Multilingual LLMs",
+      "sourceUrl": "https://arxiv.org/abs/2610.30696",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-23T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.30696v1 Announce Type: new Abstract: When a multilingual LLM agrees with a user's false premise, is it being sycophantic, or does it simply not know better in that language? Current research does not distinguish these cases: they record only whether the model agreed, not why. We introduce the SC-matrix, that crosses a model's competence (whether it answers correctly under no pressure) with its sycophancy (whether it maintains that answer under pressure). Our results show that (1) identical aggregate sycophancy rates can mask different failure compositions, (2) high competence in a language does not always protect against sycophancy, and (3) reasoning-oriented mitigations outperform directive-based strategies. We find that multilingual sycophancy is not a single phenomenon but a composite of different failures that require distinct diagnosis.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.30698",
+      "rank": 8,
+      "title": "Governance-State Corruption in Long-Term Memory for LLM Agents: A Cross-Model Stress Test",
+      "sourceUrl": "https://arxiv.org/abs/2610.30698",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-23T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.30698v1 Announce Type: new Abstract: An LLM agent can retrieve a memory correctly yet use it incorrectly after its validity state changes. We study governance-state corruption: faults that alter which retained records enter model-visible context while stored content and tasks remain fixed. Across six providers, 731 benchmark-grounded bases yield 2,080 matched fault pairs. In offline control-plane checks, corruption changes the operative projection in 96.25% of pairs, while oracle-backed enforcement restores it in 100%. For downstream evaluation, a deterministically selected, non-probability LongMemEval/Memora panel resolves 298 of 300 matched triplets (238 distinct bases). Clean-minus-corrupted contrasts are 40.54 percentage points in LongMemEval binary correctness (95% base-cluster interval [30.32, 50.71]) and 30.60 points in rescaled Memora FAMA ([23.31, 37.69]); both sources also show recovery. OAKS Novel native option parity holds for all 6,714 resolved outputs. Full-cohort frozen-scorer corruption/recovery effects (-27.55/+27.51 points) remain descriptive proxies, not validated native semantic population effects. These bounded findings motivate evaluating memory control-state integrity alongside retrieval accuracy.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.30755",
+      "rank": 9,
+      "title": "Is Complex Agentic Memory Always Needed? Naive RAG Is Stronger Than We Thought",
+      "sourceUrl": "https://arxiv.org/abs/2610.30755",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-23T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.30755v1 Announce Type: new Abstract: LLM memory is widely used in long-term conversation understanding. Agentic memory systems often use mutation, structural organization, learned retrieval strategies, or other complex operations. Is this complexity always necessary? We study Raw-RAG, a naive RAG baseline using dense retrieval and reranking over raw history to supply evidence to a reader LLM. Across LoCoMo, LongMemEval, MEME, and MemoryAgentBench, Raw-RAG ranks first among the compared memory systems in six of seven benchmark-model settings, outperforming the strongest compared agentic memory system by 0.13-5.53 points. We investigate why raw-history retrieval remains competitive. Evidence analysis shows that its higher coverage of necessary evidence can offset lower utilization. Useful evidence includes both answer values and the relations and dependency paths needed to derive them. Even complete access to transformed memory stores leaves an accuracy gap relative to raw evidence, highlighting the importance of preserving raw information. These findings challenge the necessity of complex agentic memory for the evaluated conversation tasks and establish naive RAG as an essential baseline.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.30760",
+      "rank": 10,
+      "title": "AgentDP: Towards Automated Model Deployment for Heterogeneous Embedded AI Applications",
+      "sourceUrl": "https://arxiv.org/abs/2610.30760",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-23T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.30760v1 Announce Type: new Abstract: This paper presents AgentDP, which aims to deploy pre-trained AI models on heterogeneous embedded devices by fully automating model optimization and adaptation (O&A) with Large Language Model (LLM) agents. AgentDP not only significantly reduces human effort via automation but also enhances model inference efficacy by integrating LLMs with device-specific domain knowledge. To deliver a robust automation framework, AgentDP develops novel solutions to address three key technical challenges: 1) To help users elicit clear requirements, we propose a user requirement standardization module; 2) To mitigate the execution environment mismatch between AI models and heterogeneous embedded devices, we design an operator-aware model partition paradigm that enables different parts of the model to be efficiently executed on distinct inference engines. 3) To avoid re-searching optimization hyperparameters for new tasks, we propose a configuration reuse module that heuristically retrieves previous hyperparameter configurations for efficient reuse. Extensive experiments demonstrate that by fully automating the entire O&A process, AgentDP reduces entire model adaptation time by up to 80% compared with manual O&A while achieving higher task accuracy (more than 13% on average) than the baselines. Additionally, a comprehensive user study also exhibits the robust generalizability of AgentDP in adapting to different user requirements for heterogeneous embedded devices.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.30769",
+      "rank": 11,
+      "title": "LLM Multi-Agent Systems Are Vulnerable to Herding and Runaway Cascades",
+      "sourceUrl": "https://arxiv.org/abs/2610.30769",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-23T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.30769v1 Announce Type: new Abstract: Large language models (LLMs) increasingly operate in multi-agent systems where they collaborate by responding to others' choices, creating endogenous feedback loops with vulnerability to social influence, herding behavior and runaway cascades. Following the design of the classic Music Lab experiment, we tested this vulnerability in large populations of LLM agents that recommended unfamiliar songs, with or without exposure to cumulative recommendation counts. Exposure led to runaway cascades that generated extreme and unpredictable collective recommendations increasingly divergent from a song's intrinsic appeal. Compared to humans, LLM populations were generally far more susceptible to herding behavior, and unlike humans, LLM cascades were less able to self-correct. This vulnerability has implications for multi-agent collaboration in recommender systems, automated evaluation, complex problem-solving, and unauthorized conspiracies.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.30790",
+      "rank": 12,
+      "title": "Agentic Knowledge-Model Co-Evolution via Consistency Regularization",
+      "sourceUrl": "https://arxiv.org/abs/2610.30790",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-23T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.30790v1 Announce Type: new Abstract: LLM agents can evolve by learning from accumulated experience. Existing approaches extract reusable external knowledge, such as skills and memories, from experience to guide subsequent task solving, with some further internalizing this knowledge through model training. However, different ways of analyzing and transforming the same experience can yield knowledge with substantially different utility, even when the resulting guidance appears reasonable. Inspired by consistency regularization, we identify consistent utility gains across different ways of analyzing the same experience, rather than relying on any single way of analyzing it. We introduce SPLICE, a framework for consistency-regularized knowledge-model co-evolution. It constructs evolution views by perturbing how the same experience is analyzed, producing different knowledge candidates. Knowledge updates are then guided by common gain, which accounts for utility gains and their consistency across views. During model evolution, self-distillation internalizes the evolved knowledge alongside reinforcement learning, using knowledge associated with consistent utility degradation as a contrastive reference. The two processes interleave, with model updates driving further knowledge evolution. Experiments across diverse domains show that SPLICE outperforms knowledge evolution and model training baselines by up to 7.1 and 4.6 points in average accuracy, while its evolved knowledge reduces output tokens per correct solution by up to 44% and transfers across model sizes and families.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.30822",
+      "rank": 13,
+      "title": "TESSA: A Governance-Oriented Custom GPT for SME Guidance under the EU AI Act: Design, Implementation, and Evaluation",
+      "sourceUrl": "https://arxiv.org/abs/2610.30822",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-23T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.30822v1 Announce Type: new Abstract: The increasing adoption of generative AI presents new opportunities while raising AI governance and regulatory challenges, particularly for small and medium-sized enterprises (SMEs) navigating the European Union Artificial Intelligence Act (EU AI Act). To support AI governance education, this study developed TESSA, a governance-oriented educational artifact within the OpenAI Custom GPT environment. Following a design science research approach, TESSA was evaluated against baseline ChatGPT using 100 benchmark scenarios through governance alignment assessment, human expert review, and consistency testing. Preliminary LLM-assisted assessment showed governance alignment rates of 90% for TESSA and 83% for baseline ChatGPT, while independent validation by an AI regulation law practitioner yielded 71% and 70%, respectively. Human expert review indicated that both systems provided generally strong governance guidance, while TESSA maintained high consistency across repeated executions. The findings suggest that governance-oriented grounding can support structured, practical, and stable AI-assisted compliance guidance for SMEs. The study contributes (i) a governance-oriented Custom GPT artifact for AI governance education, (ii) a human-validated regulatory update mechanism, and (iii) a multidimensional evaluation framework for governance-oriented AI artifact.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.30920",
+      "rank": 14,
+      "title": "DConstrain: Compiling Context-Parameterized Transitions for Diffusion Language Model Constrained Decoding",
+      "sourceUrl": "https://arxiv.org/abs/2610.30920",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-23T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.30920v1 Announce Type: new Abstract: Diffusion language models (DLMs) decode multiple tokens in parallel, so individually valid tokens can be incompatible together under a schema. Exact joint inference over a grammar graph enforces compatibility, but it requires token-labeled successors across many hypothetical parser configurations. Encoding stacks and field histories in compiled states can cause exponential growth, which forces prior exact decoders to fix property orders and exclude valid outputs. We present DConstrain, which compiles schemas into context-parameterized transition programs. Cold compilation specializes token consumption to local grammar states while retaining context-dependent stack operations, environment guards, and caller-dependent deferred parsing symbolically. Tracking field histories as runtime values supports arbitrary property order without enumerating field subsets offline. At runtime, warm compilation binds reached configurations to these programs to construct exact successors, overlapping with the model forward pass because graph construction requires no model scores. Furthermore, token-effect grouping merges tokens with identical compiled effects before runtime contexts are bound, so groups are reused across stacks and environments even when concrete successors differ. Objective-specific score aggregation and token restoration provably preserve both the Viterbi optimum and the token-labeled path distribution of ungrouped inference. Across three benchmarks and two DLM families, DConstrain compiles 100% of BFCL schemas under arbitrary property orders, whereas an optimized finite-state baseline compiles only 71.30-85.81%. Under arbitrary property order, it reduces BFCL end-to-end decoding latency by 6.65-46.26 times with 100% schema validity and raises DiffusionGemma's BFCL accuracy from 37.27% under fixed order to 81.56%.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.31003",
+      "rank": 15,
+      "title": "Agri-SCHOLAR: Simulation-Grounded In-Season Rolling Advisories for Agricultural Crops Using LLM-Bounded Optimization",
+      "sourceUrl": "https://arxiv.org/abs/2610.31003",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-23T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.31003v1 Announce Type: new Abstract: Existing agricultural advisories to farmers suffer from several limitations: (a) remain largely expert-driven, (b) do not adequately account for in-season weather, and (c) do not scale to individual farms. In this paper, our objective is to close these gaps by developing Agri-SCHOLAR (Simulation-Grounded Crop Harvest Optimization with LLM-Guided In-Season Advisory Rollouts). Agri-SCHOLAR is a rolling, in-season advisory framework that issues, at intervals of every few days or every week, a personalized advisory using the following information: soil and crop properties, observed weather to date, short-range forecast of weather, and a season extrapolation of weather based on historical analogs. The novelty and depth of Agri-SCHOLAR lies in each advisory being produced by a closed-loop system which couples multiple LLM agents with a powerful crop simulator (such as APSIM in our case). The simulator crucially serves as an evaluation oracle. In Agri-SCHOLAR, the LLM agents propose agronomically sound and feasible bounds on actionable parameters and an optimizer searches within those bounds against a multi-objective reward spanning yield, resource utilization, and economic feasibility. We conduct a detailed 11-year analysis of the maize crop in two selected locations of South Asia and show that Agri-SCHOLAR consistently outperforms the region's standard packages of practice and satisfactorily addresses the limitations of existing agricultural advisories.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.31062",
+      "rank": 16,
+      "title": "SCOPE: Compiling Natural-Language Policies into Neurosymbolic Predicate Programs",
+      "sourceUrl": "https://arxiv.org/abs/2610.31062",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-23T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.31062v1 Announce Type: new Abstract: Policy enforcement for LLM agents has shifted from single-turn content moderation to compound, application-specific policies evaluated over multi-turn transcripts and tool-call trajectories. Fine-tuned guardrail models are efficient but degrade on compound policies, and while LLM-as-a-judge approaches achieve higher accuracy, they incur high inference cost and tend to produce unstable predictions. Neurosymbolic methods offer a natural alternative, decomposing the policy into narrow neural decisions composed under explicit logic. However, existing symbolic layers lack the required expressiveness and are optimized against fixed data rather than the policy itself. To address this, we introduce SCOPE, which compiles a policy into an executable program of neural predicates executed by small models, deterministic extractors, and code that composes their outputs. The program is optimized jointly with its training data, using adversarial generation of counterexamples that target where the program deviates from the policy. We evaluate SCOPE on a benchmark of real-world policy tasks against prompt optimization, task decomposition, and workflow generation methods, achieving the highest average accuracy across tasks and models. Programs optimized with the weakest executor transfer to other models without further optimization. This allows them to be deployed in production on inexpensive models, where they reach accuracy comparable to frontier reasoning models. Unlike these monolithic models, SCOPE produces substantially more stable predictions, and each verdict is interpretable through the predicate outputs that produced it. Additionally, we validate the key components of our method through an ablation study. SCOPE thus enables reliable, interpretable, and efficient policy enforcement at production scale.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.31105",
+      "rank": 17,
+      "title": "Who Is the Influencer? Consensus Dynamics in Multi-Agent Systems",
+      "sourceUrl": "https://arxiv.org/abs/2610.31105",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-23T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.31105v1 Announce Type: new Abstract: Multi-agent LLM systems are increasingly used in practice, but their behavior is complex and hard to understand. We design a simple task to ask which model has the most influence on the final consensus when several models are mixed in one system. Experimentally, across seven model families, we find that the opinions of the other models are absorbed into the opinion of the stronger model, the one with more parameters. This happens even though the task requires no pretraining knowledge and has no correct answer. To understand this phenomenon, we interpret the agents as weighted particles moving on a simplex. Larger models carry a larger weight and therefore occupy a deeper well in the energy landscape. A large weight means strong in-context learning: a model with a large weight amplifies the majority of its context. Larger models are generally better at in-context learning, and this is what makes the larger model the influencer. We hope that this work helps to interpret multi-agent systems, whose behavior is becoming too complex for humans to understand.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.31120",
+      "rank": 18,
+      "title": "SetCommit: Coordinated Token Commitments for Few-Step Diffusion Language Model Decoding",
+      "sourceUrl": "https://arxiv.org/abs/2610.31120",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-23T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.31120v1 Announce Type: new Abstract: Diffusion language models generate multiple token positions in parallel, but few-step decoding makes parallel commitment difficult: tokens that appear reliable individually may be jointly inconsistent, while premature commitments can prevent later context-dependent refinement. In this paper, we introduce SetCommit, a training-free method for coordinated parallel token commitment. Instead of selecting tokens independently by confidence, SetCommit selects a commitment set that balances token reliability against local joint commitment risk, preserving conditioning opportunities for subsequent denoising steps. It further performs budget-neutral local exchanges, replacing vulnerable earlier commitments when newly revealed context supports more reliable alternatives. SetCommit requires no retraining or architectural modification and is compatible with existing diffusion decoding strategies. Experiments with LLaDA-8B and Dream-7B on GSM8K, MATH-500, MBPP, and HumanEval show accuracy/pass@1 gains of up to 7.4 percentage points over native decoding at 32 model evaluations. At common quality targets, geometric-mean incremental speedups range from $1.44$ to $1.74\\times$. Code is available at https://github.com/Kissmetothemoon/SetCommit.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.31198",
+      "rank": 19,
+      "title": "Different Tasks, Different Timesteps: Temporal Task-Aware Quantization for Diffusion Language Models",
+      "sourceUrl": "https://arxiv.org/abs/2610.31198",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-23T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.31198v1 Announce Type: new Abstract: Diffusion Language Models (DLMs) introduce unique quantization challenges due to their iterative denoising process. In this work, we reveal that quantization sensitivity is both taskand time-dependent, with different downstream tasks exhibiting distinct precision requirements across denoising steps. We further show that these patterns can be predicted without groundtruth labels or task-specific evaluation metrics. Building on these findings, we introduce T 2Quant, a task and time-aware mixedprecision quantization framework that uses a label-free sensitivity signal to optimally allocate activation precision across denoising steps under a fixed bit-width budget. Extensive experiments across three DLMs and six benchmarks demonstrate that T 2Quant consistently improves the average accuracy of existing quantization methods, achieving gains of up to 6.7 percentage points under the same budget.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.31215",
+      "rank": 20,
+      "title": "Trion-1: Unifying Language, Protein Sequence, and Structure with Diffusion Language Models",
+      "sourceUrl": "https://arxiv.org/abs/2610.31215",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-23T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.31215v1 Announce Type: new Abstract: We envision a general-purpose protein foundation model as a unified, interactive model of sequence, structure, and function, capable of understanding, generation, and cross-modal translation while retaining the instruction-following and reasoning capabilities of modern LLMs. Toward this vision, we introduce Trion-1, the first native, unified, multimodal diffusion language model (dLLM) for proteins. Trion-1 is built on two key design choices: (1) a unified discrete token space that jointly represents sequence, structure, and natural language; (2) a dLLM backbone that replaces strict left-to-right factorization with bidirectional or semi-bidirectional token interactions, enabling global residue communication and long-range contact modeling that are naturally suited to structure modeling. This formulation unifies six core capabilities: folding, inverse folding, sequence understanding, structure understanding, sequence design, and structure design, while retaining the native language capabilities of general-purpose LLMs. On established benchmarks, Trion-1 achieves broadly competitive performance. In folding, Trion-1 achieves a TM-score above 0.8 with a single sample under strict homology control, matching or exceeding the existing tri-modal model using 200 samples. For sequence understanding, Trion-1 performs on par with top-tier LLMs such as Claude Opus 4.7 (62.37%). These results support well-aligned sequence-structure-language representations and strong cross-modal generative capabilities.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.31376",
+      "rank": 21,
+      "title": "Certified Execution Harness for Agentic AI: Safe and Least-Intrusive Petri-Net Supervisory Control Between Reasoning and Action",
+      "sourceUrl": "https://arxiv.org/abs/2610.31376",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-23T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.31376v1 Announce Type: new Abstract: This paper studies the problem of safe tool execution for large language model (LLM) agents under prompt injection. Using Petri nets, we formalize the execution harness between the LLM and its tools as a supervisory control problem, in which marks represent capabilities, approvals and budgets. Since a transition fires only if the marks it needs are present, an injected request whose preconditions are unmet or already spent is refused regardless of its wording. Treating tool outcomes as uncontrollable, we enforce safety by the conventional maximally permissive supervisor, and this safety transfers to the running system under four assumptions. Moreover, to capture an agent that may propose again after a refusal, we introduce the notion of a replanning closed loop, in which each retry costs an inference call. We show that, in this loop, the conventional supervisor can be arbitrarily more intrusive than a stricter safe one. Furthermore, for a given proposer model, the maximally permissive least-intrusive supervisor is characterized as a value-threshold refinement of the conventional one. Under precise conditions, this refinement orders two concurrent actions by at most one monitor place. On an autonomous release agent, we find by synthesis that safe deployment requires a step that the supervisor can refuse after a rollout starts.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.31438",
+      "rank": 22,
+      "title": "DIAL: Steerable Language Models with Distilled Instruction-Adherence Levels",
+      "sourceUrl": "https://arxiv.org/abs/2610.31438",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-23T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.31438v1 Announce Type: new Abstract: When a user says \"Keep it short\", how short should the LLM's response be? More generally, users and applications require different levels of instruction adherence, but prompting does not reliably provide fine-grained control over them. We therefore study \"steerable language models\" that provide fine-grained numerical control over the degree to which models follow general instructions specified in text. However, existing approaches do not jointly offer fine-grained control, efficiency, and scalability across diverse instructions. To address this gap, we introduce DIAL (Distilled Instruction-Adherence Levels) to achieve all three properties. For fine-grained control, we perform classifier-free guidance (CFG) with a frozen LLM to provide training signals for on-policy distillation of instruction adherence at different levels. For efficiency, we design a lightweight steering adapter that uses a classifier over the LLM's hidden states to compute a closed-form steering edit. The classifier adaptively sets the steering magnitude at each token based on the target adherence level, while accounting for the geometry of the LLM's hidden states to preserve response coherence. For scalability, the classifier is text-conditioned, allowing a shared adapter to support new instructions without per-instruction fitting, and training requires only instruction and request text. Evaluation across multiple LLM families shows that DIAL achieves a competitive balance between concept expression and response fluency, with concept scores increasing monotonically across adherence levels. We introduce SteerIF, an instruction-only dataset of 98, 625 concept, persona, verifiable, and descriptive instructions. When trained on SteerIF, DIAL provides fine-grained control over personas and, when combined with prompting, improves verifiable instruction following.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.31576",
+      "rank": 23,
+      "title": "What Makes a Good Unmasking Policy? A Controlled Study of Learned Unmasking in Diffusion Language Models",
+      "sourceUrl": "https://arxiv.org/abs/2610.31576",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-23T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.31576v1 Announce Type: new Abstract: Masked diffusion language models generate tokens in parallel, but their efficiency depends on which predictions are committed. Learned unmasking policies improve the speed--accuracy trade-off, yet differ in supervision, inputs, and capacity, obscuring which choices matter. We view supervised policies as distilling a decoding procedure through a teacher and examine independently what the teacher labels as committable, on which states the policy imitates it, what the policy observes, and how much the number of function evaluations (NFE) must decrease to offset policy overhead. We find that labeling predictions matching the final output is overly permissive at low NFE, and hidden states are weak alone but can complement confidence. About a 10% NFE reduction suffices to offset policy overhead for policies up to 7.5M parameters across tested settings. We therefore train a policy on trajectory-contraction targets, which accept only commitments staying on a reference trajectory, using confidence and hidden states. On LLaDA-8B-Instruct, the resulting 856K-parameter policy achieves the best accuracy--NFE frontier and highest throughput on GSM8K, is competitive at moderate targets on MATH-500 and HumanEval, and largely transfers to Dream-7B-Instruct.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.31579",
+      "rank": 24,
+      "title": "Who Is Sycophantic to Whom? Confident LLMs, Human Deference, and the Collapse of Trust Calibration",
+      "sourceUrl": "https://arxiv.org/abs/2610.31579",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-23T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.31579v1 Announce Type: new Abstract: Research on sycophancy asks whether large language models (LLMs) bend towards what their users want to hear. We ask the reverse question: when an LLM is confident, consistent, and wrong, do users bend towards it? In a within-subjects experiment, 32 participants learned up to five science topics by chatting with five assistants built on the same model (GPT-5-mini). Unknown to participants, each assistant's briefing had 0, 25, 50, 75, or 100% of its facts replaced by plausible falsehoods, and every assistant spoke with full confidence. A surprise quiz after each topic offered the correct fact, the planted falsehood, and two distractors, with a confidence rating for every answer. Across 104 quizzes and 1,040 answers, scores fell from 7.4 to 2.9 out of 10, and the planted option was chosen on 60% of falsified items against 11% of correctly taught ones (odds ratio 12.5). Transcript coding showed that whenever the assistant stated a falsehood, it was adopted about 65% of the time at every falsification level. Absorbed falsehoods were held with high confidence (8.4/10), the modeled confidence advantage of right over wrong answers vanished, and the discrimination of confidence for correctness fell from an AUROC of 0.70 to chance, while post-task trust ratings barely moved. Participants tended to return to the chat more when the assistant was worse, but returning went with more absorption, not less, and 30% of all turns pasted quiz questions back to the source being checked. The assistant itself was almost never sycophantic and never conceded under pushback. We introduce a baseline-corrected Human Deference Index to quantify this human-side sycophancy and argue that trustworthiness is a property of the human-AI pair, that sycophancy evaluations should measure both directions, and that learning interfaces must make reliability legible claim by claim.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.31650",
+      "rank": 25,
+      "title": "EpiSEM-Bench: Evaluating Safety and Evidence Recovery in LLM Agents under Missing Evidence",
+      "sourceUrl": "https://arxiv.org/abs/2610.31650",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-23T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.31650v1 Announce Type: new Abstract: Tool-using language model agents rely on environmental facts to decide whether an action is permitted. When a tool response omits a safety-relevant fact, an agent may carry out a prohibited action even though the user request is benign and every returned statement is true. We introduce \\bench{}, an executable benchmark for evaluating unsafe execution, safety boundaries, and evidence recovery in LLM agents under missing evidence. It contains 300 matched unsafe/safe task pairs across six domains. By systematically suppressing critical facts, the benchmark measures unsafe execution under critical evidence omission and determines the minimum observed failure cardinality, including failures with full evidence and cases with no observed failure after exhaustive testing. An independent audit tool tests whether agents seek missing facts and then withhold prohibited actions while completing permissible tasks. The benchmark reveals substantial variation across the ten models in omission robustness, evidence acquisition, and appropriate action. Resistance to missing evidence does not necessarily translate into useful recovery. Recovery access reduces unsafe execution for all ten models, but agents differ in whether they actively obtain the missing facts and use them to act appropriately in both worlds.",
+      "summary": ""
+    }
+  ]
+}

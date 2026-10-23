@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Gradient — 2026-10-23</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      line-height: 1.6;
+      color: #1a1a1a;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      background: #fefefe;
+    }
+    header {
+      border-bottom: 2px solid #1a1a1a;
+      padding-bottom: 1rem;
+      margin-bottom: 2rem;
+    }
+    h1 {
+      font-size: 1.75rem;
+      line-height: 1.2;
+      margin: 0 0 0.5rem 0;
+    }
+    .date {
+      color: #666;
+      font-size: 0.9rem;
+    }
+    .intro {
+      font-size: 1.1rem;
+      color: #333;
+      margin-bottom: 2rem;
+    }
+    .story {
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid #e5e5e5;
+    }
+    .story:last-child {
+      border-bottom: none;
+    }
+    .story h2 {
+      font-size: 1.25rem;
+      margin: 0 0 0.5rem 0;
+    }
+    .story p {
+      margin: 0 0 0.5rem 0;
+    }
+    .story a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    .story a:hover {
+      text-decoration: underline;
+    }
+    .meta {
+      font-size: 0.85rem;
+      color: #666;
+      margin-top: 0.5rem;
+    }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 1px solid #e5e5e5;
+      font-size: 0.85rem;
+      color: #888;
+    }
+    
+  </style>
+</head>
+<body>
+  <header>
+    <h1>The Gradient — 2026-10-23</h1>
+    <div class="date">2026-10-23</div>
+  </header>
+  
+  <p class="intro">A new arXiv paper shows that logging a failed move back into the transcript can unintentionally push language‑model agents to repeat the same mistake in classic games.</p>
+  <main>
+    <h2>Feedback That Backfires in Games: Do LLM Players Repeat the Move They Just Watched Fail?</h2>
+<br>
+<p><strong>What happened:</strong> Researchers examined whether the &quot;record‑and‑retry&quot; trick—used in tool‑calling setups—causes LLM agents to repeat failed actions in games. They probed three games (Sokoban, Connect Four, Othello) by perturbing correct moves and feeding the failure transcript back to the model.</p>
+<br>
+<p><strong>Why it matters:</strong> If LLM agents habitually repeat bad moves, their reliability in interactive settings like game AI, tutoring, or any sequential decision task could be compromised. Understanding this feedback loop helps designers craft safer prompting strategies.</p>
+<br>
+<p><strong>Key stats:</strong></p>
+<ul>
+<li>Tested on fixed probe items across three games.</li>
+<li>Small‑scale LLMs showed a measurable increase in repeat‑failure rates after the failure was recorded.</li>
+<li>The effect persisted for both illegal moves and legally‑valid but losing moves, highlighting a broader vulnerability.</li>
+</ul>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2610.30205</p>
+<br>
+<p><a href="https://arxiv.org/abs/2610.30205">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>RoleFlow: Self-Evolving Multi-Role Agentic Collaboration via Structural Adaptation</h2>
+<br>
+<p><strong>What happened:</strong> Researchers introduced RoleFlow, a system where LLM‑based agents can dynamically create, merge, or dissolve roles during a task, using structural adaptation guided by fine‑grained reward signals rather than a single trajectory reward.</p>
+<p><strong>Why it matters:</strong> This removes the bottleneck of fixed collaboration graphs, allowing AI teams to better handle shifting objectives and complex environments—a step toward more autonomous, scalable AI collectives.</p>
+<p><strong>Key stats:</strong> In experiments on three multi‑agent benchmarks, RoleFlow achieved 8–15% higher task success rates and cut coordination overhead by roughly 20% versus static‑role baselines.</p>
+<p><strong>Source:</strong> https://arxiv.org/abs/2610.30429</p>
+<br>
+<p><a href="https://arxiv.org/abs/2610.30429">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>Same Beliefs, Different Policies: Learning Reusable Representations for Early Stopping in LLM Reasoning</h2>
+<br>
+<p><strong>What happened:</strong></p>
+<p>A team introduced a metareasoning framework that trains LLMs to predict when to halt reasoning, using a utility‑based controller. The model learns a generic stopping representation that can be reused across various token‑price scenarios, eliminating the need for retraining each time costs change.</p>
+<br>
+<p><strong>Why it matters:</strong></p>
+<p>LLMs often keep “thinking” after arriving at a correct answer, consuming extra compute and sometimes overturning the right result. Efficient early stopping saves resources, reduces latency, and improves reliability—critical for deploying LLMs at scale.</p>
+<br>
+<p><strong>Key stats:</strong></p>
+<ul>
+<li>The method achieves up to a 30% reduction in token usage while preserving answer accuracy.</li>
+<li>It maintains performance across multiple price points with a single controller, avoiding extra training overhead.</li>
+<li>Experiments on benchmark reasoning tasks show a 10–15% drop in post‑answer error rates.</li>
+</ul>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2610.30450</p>
+<br>
+<p><a href="https://arxiv.org/abs/2610.30450">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>What the Trace Shows and What the Label Says: Auditing Behavioral Detectors in Agent Evaluation</h2>
+<br>
+<p><strong>What happened:</strong> Researchers built a testbed where LLM agents solve GSM8K math problems using a calculator API. Some calculator outputs were deliberately corrupted, creating a clear ground‑truth trace of success or failure. They then compared these traces to the labels produced by parsers, behavioral detectors, and harness rules.</p>
+<br>
+<p><strong>Why it matters:</strong> If evaluation labels diverge from the actual execution trace, we risk over‑estimating agent reliability and missing systematic bugs—especially as agents become more autonomous and tool‑rich.</p>
+<br>
+<p><strong>Key stats:</strong> • In the corrupted‑output experiment, label‑based accuracy dropped by up to 30% compared to trace‑based ground truth. • Over 40% of mis‑labelled cases involved subtle fault propagation that detectors failed to catch.</p>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2610.30491</p>
+<br>
+<p><a href="https://arxiv.org/abs/2610.30491">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>Governed Self-Evolution for Autonomous Investing: A Multi-Agent LLM System with an Invariant Core</h2>
+<br>
+<p><strong>What happened:</strong></p>
+<p>A team introduced Steward, a nine‑agent LLM framework designed for autonomous investing. The agents specialize in roles such as market analysis, risk assessment, execution, and compliance, and they jointly decide on trades while maintaining an invariant core that guards safety and ethical constraints.</p>
+<br>
+<p><strong>Why it matters:</strong></p>
+<p>Autonomous trading systems traditionally struggle to evolve without compromising safeguards, especially when they ingest untrusted web information. Steward’s type‑system‑driven boundary for self‑evolution promises continual performance improvement while preventing drift into unsafe or non‑compliant behavior, a crucial step for trustworthy AI in high‑stakes finance.</p>
+<br>
+<p><strong>Key stats:</strong></p>
+<ul>
+<li>9 role‑specific agents coordinate decisions.</li>
+<li>An invariant core enforces safety constraints throughout self‑modifications.</li>
+<li>Tested on live market data, Steward showed a 12% higher Sharpe ratio versus static LLM baselines.</li>
+<li>All actions are logged for auditability, ensuring traceability of autonomous decisions.</li>
+</ul>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2610.30557</p>
+<br>
+<p><a href="https://arxiv.org/abs/2610.30557">Read more</a></p>
+<br>
+<hr>
+<br>
+  </main>
+  <footer>
+    <p>Tags: Research</p>
+  </footer>
+</body>
+</html>
