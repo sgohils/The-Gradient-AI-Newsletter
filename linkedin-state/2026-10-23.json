@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "issueDate": "2026-10-23",
+  "issueUrl": "https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-10-23",
+  "content": "Today's AI briefing from The Gradient | 2026-10-23\n\n1. Feedback That Backfires in Games: Do LLM Players Repeat the Move They Just Watched Fail?\nResearchers examined whether the \"record‑and‑retry\" trick—used in tool‑calling setups—causes LLM agents to repeat failed actions in games. They probed three games (Sokoban, Connect Four, Othello) by perturbing correct moves and feeding the failure transcript back to the model.\n\n2. RoleFlow: Self-Evolving Multi-Role Agentic Collaboration via Structural Adaptation\nResearchers introduced RoleFlow, a system where LLM‑based agents can dynamically create, merge, or dissolve roles during a task, using structural adaptation guided by fine‑grained reward signals rather than a single trajectory reward.\n\n3. Same Beliefs, Different Policies: Learning Reusable Representations for Early Stopping in LLM Reasoning\nA team introduced a metareasoning framework that trains LLMs to predict when to halt reasoning, using a utility‑based controller. The model learns a generic stopping representation that can be reused across various token‑price scenarios, eliminating the need for retraining each time costs change.\n\nRead the full briefing and original sources:\nhttps://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-10-23\n\n#AI #ArtificialIntelligence #TheGradient",
+  "contentHash": "6db4c9abb06b18f25b8ec873209efd034dcdf79fa4e894c8aa35e2003aa76d44",
+  "accountId": "6ac5a561b3c21905c0edcfba",
+  "organizationUrn": "urn:li:organization:136824048",
+  "idempotencyKey": "86e8c8e6-7871-453f-a5a4-497d70861631",
+  "status": "submitting",
+  "firstSubmittedAt": "2026-10-23T15:38:09.791Z"
+}
