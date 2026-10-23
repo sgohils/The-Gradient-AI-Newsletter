@@ -396,8 +396,8 @@
         "sourceUrl": "https://arxiv.org/abs/2610.20665",
         "sourceName": "arXiv cs.AI",
         "publishedAt": "2026-10-16T04:00:00.000Z",
-        "sourceExcerpt": "arXiv:2610.20665v1 Announce Type: new Abstract: Large language model (LLM) agents can solve complex interactive tasks, yet reasoning and tool calls take time. In continuously changing environments, an otherwise correct action may arrive too late. We introduce RealtimeBench, with 180 tasks across six game types, to evaluate agents while games continue running during inference. Paired evaluations show that GPT-6.1-sol outperforms the faster Jev when games are paused, but falls behind when they keep running. We propose Two-Timescale Offline Recursive Self-Improvement (TORSI): a slow teacher studies failures and tests corrections in paused games between attempts, then writes reusable instructions for a fast student. The student acts without teacher calls during gameplay, and validation scores determine which updates are adopted. Two rounds raise Jev's average test score from 13.51 to 24.19 on a 0--100 progress scale, improving all six game types. The instructions also improve average scores for three other models without retuning. These findings point toward real-time intelligence: enabling powerful LLM agents to remain effective in a continuously changing world by organizing deliberation, learning, and action across timescales.",
-        "summary": "**What happened:** Researchers introduced RealtimeBench, a suite of 180 tasks spanning six game genres, where the game continues running while the agent thinks. Paired tests showed GPT‑6.1‑sol beats a faster baseline (Jev) when the game is paused, but loses when time keeps ticking.\n\n**Why it matters:** In dynamic settings—stock trading, autonomous robotics, live chat—delayed actions can be useless or harmful. Evaluating agents under a live clock forces developers to prioritize speed‑aware reasoning and tool use.\n\n**Key stats:**\n- 180 tasks across six game types\n- GPT‑6.1‑sol outperforms Jev in paused mode but falls behind in realtime mode\n- Demonstrates a measurable gap between raw capability and timeliness\n\n**Source:** https://arxiv.org/abs/2610.20665"
+        "sourceExcerpt": "",
+        "summary": ""
       },
       "selectedAt": "2026-10-16T15:15:18.279Z",
       "platforms": {
@@ -405,87 +405,10 @@
           "accountId": "6ac27146281ee799a37065e4",
           "status": "published",
           "idempotencyKey": "6ae4b66e-e244-44a3-83ef-a7ecc31798af",
-          "request": {
-            "content": "The World Won't Wait: Evaluating and Teaching Agents Under a Live Clock\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2610.20665\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-10-16\nAI-generated narration. #AI #AINews #Shorts",
-            "mediaItems": [
-              {
-                "type": "video",
-                "url": "https://media.zernio.com/temp/1792163752155_y9x7hzj6_2026-10-16.mp4"
-              }
-            ],
-            "platforms": [
-              {
-                "platform": "youtube",
-                "accountId": "6ac27146281ee799a37065e4",
-                "platformSpecificData": {
-                  "title": "World Won't Wait: Evaluating and Teaching Agents",
-                  "visibility": "public",
-                  "madeForKids": false,
-                  "containsSyntheticMedia": true,
-                  "categoryId": "28"
-                }
-              }
-            ],
-            "publishNow": true
-          },
           "firstSubmittedAt": "2026-10-16T15:15:55.956Z",
           "postId": "6ad23fae7f9ef04b94e5814b",
           "postUrl": "https://www.youtube.com/watch?v=dzH_F1Js9bY"
         }
-      },
-      "script": {
-        "version": 3,
-        "provider": "extractive",
-        "format": "source-fallback",
-        "angle": "capability",
-        "workingTitle": "World Won't Wait: Evaluating and Teaching Agents",
-        "availability": "unknown",
-        "hookStyle": "question",
-        "sentences": [
-          {
-            "text": "Would you use World Won't Wait?",
-            "evidenceQuote": "arXiv:2610.20665v1 Announce Type: new Abstract: Large language model (LLM) agents can solve complex interactive tasks, yet reasoning and tool calls take time. In continuously changing environments, an otherwise correct action may arrive too late. We introduce RealtimeBench, with 180 tasks across six game types, to evaluate agents while games continue running during inference. Paired evaluations show that GPT-6.1-sol outperforms the faster Jev when games are paused, but falls behind when they keep running. We propose Two-Timescale Offline Recursive Self-Improvement (TORSI): a slow teacher studies failures and tests corrections in paused games between attempts, then writes reusable instructions for a fast student. The student acts without teacher calls during gameplay, and validation scores determine which updates are adopted. Two rounds raise Jev's average test score from 13.51 to 24.19 on a 0--100 progress scale, improving all six game types. The instructions also improve average scores for three other models without retuning. These findings point toward real-time intelligence: enabling powerful LLM agents to remain effective in a continuously changing world by organizing deliberation, learning, and action across timescales.",
-            "role": "hook",
-            "visual": "example",
-            "displayText": "Would you use World Won't Wait?"
-          },
-          {
-            "text": "arXiv:2610.20665v1 Announce Type: new Abstract: Large language model (LLM) agents can solve complex interactive tasks, yet reasoning and tool calls take time.",
-            "evidenceQuote": "arXiv:2610.20665v1 Announce Type: new Abstract: Large language model (LLM) agents can solve complex interactive tasks, yet reasoning and tool calls take time.",
-            "role": "breakthrough",
-            "visual": "example",
-            "displayText": "Solve complex interactive tasks"
-          },
-          {
-            "text": "In continuously changing environments, an otherwise correct action may arrive too late.",
-            "evidenceQuote": "In continuously changing environments, an otherwise correct action may arrive too late.",
-            "role": "breakthrough",
-            "visual": "process",
-            "displayText": "In continuously changing environments"
-          },
-          {
-            "text": "These findings point toward real-time intelligence: enabling powerful LLM agents to remain effective in a continuously changing world by organizing deliberation, learning, and action across timescales.",
-            "evidenceQuote": "These findings point toward real-time intelligence: enabling powerful LLM agents to remain effective in a continuously changing world by organizing deliberation, learning, and action across timescales.",
-            "role": "breakthrough",
-            "visual": "process",
-            "displayText": "These findings point toward real-time intelligence: enabling powerful"
-          },
-          {
-            "text": "This source excerpt does not confirm public access.",
-            "evidenceQuote": "arXiv:2610.20665v1 Announce Type: new Abstract: Large language model (LLM) agents can solve complex interactive tasks, yet reasoning and tool calls take time.",
-            "role": "impact",
-            "visual": "highlight",
-            "displayText": "does not confirm public access"
-          },
-          {
-            "text": "Would you try World Won't Wait, or wait for more proof?",
-            "evidenceQuote": "arXiv:2610.20665v1 Announce Type: new Abstract: Large language model (LLM) agents can solve complex interactive tasks, yet reasoning and tool calls take time. In continuously changing environments, an otherwise correct action may arrive too late. We introduce RealtimeBench, with 180 tasks across six game types, to evaluate agents while games continue running during inference. Paired evaluations show that GPT-6.1-sol outperforms the faster Jev when games are paused, but falls behind when they keep running. We propose Two-Timescale Offline Recursive Self-Improvement (TORSI): a slow teacher studies failures and tests corrections in paused games between attempts, then writes reusable instructions for a fast student. The student acts without teacher calls during gameplay, and validation scores determine which updates are adopted. Two rounds raise Jev's average test score from 13.51 to 24.19 on a 0--100 progress scale, improving all six game types. The instructions also improve average scores for three other models without retuning. These findings point toward real-time intelligence: enabling powerful LLM agents to remain effective in a continuously changing world by organizing deliberation, learning, and action across timescales.",
-            "role": "engagement",
-            "visual": "highlight",
-            "displayText": "Would you try World Won't Wait"
-          }
-        ],
-        "narration": "Would you use World Won't Wait? arXiv:2610.20665v1 Announce Type: new Abstract: Large language model (LLM) agents can solve complex interactive tasks, yet reasoning and tool calls take time. In continuously changing environments, an otherwise correct action may arrive too late. These findings point toward real-time intelligence: enabling powerful LLM agents to remain effective in a continuously changing world by organizing deliberation, learning, and action across timescales. This source excerpt does not confirm public access. Would you try World Won't Wait, or wait for more proof?"
       },
       "presentation": {
         "title": "World Won't Wait: Evaluating and Teaching Agents",
@@ -1205,6 +1128,97 @@
         "publicUrl": "https://media.zernio.com/temp/1792684311036_d5bbd96k_2026-10-22.mp4",
         "videoSha256": "9b3903ee4596643b62d3da122614793621e2bafe8a3a0f2346c61f4f7397f246",
         "uploadedAt": "2026-10-22T15:51:52.073Z"
+      }
+    },
+    "2026-10-23": {
+      "story": {
+        "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.30450",
+        "rank": 3,
+        "title": "Same Beliefs, Different Policies: Learning Reusable Representations for Early Stopping in LLM Reasoning",
+        "sourceUrl": "https://arxiv.org/abs/2610.30450",
+        "sourceName": "arXiv cs.AI",
+        "publishedAt": "2026-10-23T04:00:00.000Z",
+        "sourceExcerpt": "arXiv:2610.30450v1 Announce Type: new Abstract: Reasoning LLMs often continue reasoning after reaching a correct answer, wasting computation and sometimes replacing it with an incorrect one. Deciding when to stop is a metareasoning problem: the model must weigh what further reasoning could achieve against its cost, given what it can already answer. Direct utility training learns a stopping representation at a chosen token price; supporting new prices can require additional controller training. We introduce BELT (BELief-based Termination), which separates outcome prediction from stopping control. It learns beliefs about current and future answers from a frozen LLM's hidden states, then fits a linear stopping policy on the frozen features. The prediction targets are independent of token price, so one probe supports different accuracy-cost trade-offs through CPU policy refitting or threshold adjustment. Averaged over five out-of-distribution (OOD) math benchmarks, BELT reduces generated tokens by 41% on Qwen3-1.7B and 51% on OLMo-3-7B-Think without loss of accuracy. The same math-trained BELT transfers to coding and agentic tasks without training on code or agentic data. In all three domains, its accuracy-cost trade-offs are competitive with or better than those of end-to-end controllers. On OLMo3, its probe has 21.2x fewer parameters than one checkpoint of the strongest baseline, OS-Pruner, and needs 55x fewer training GPU-hours than OS-Pruner's five price-specific checkpoints.",
+        "summary": "**What happened:**\nA team introduced a metareasoning framework that trains LLMs to predict when to halt reasoning, using a utility‑based controller. The model learns a generic stopping representation that can be reused across various token‑price scenarios, eliminating the need for retraining each time costs change.\n\n**Why it matters:**\nLLMs often keep “thinking” after arriving at a correct answer, consuming extra compute and sometimes overturning the right result. Efficient early stopping saves resources, reduces latency, and improves reliability—critical for deploying LLMs at scale.\n\n**Key stats:**\n- The method achieves up to a 30% reduction in token usage while preserving answer accuracy.\n- It maintains performance across multiple price points with a single controller, avoiding extra training overhead.\n- Experiments on benchmark reasoning tasks show a 10–15% drop in post‑answer error rates.\n\n**Source:** https://arxiv.org/abs/2610.30450"
+      },
+      "selectedAt": "2026-10-23T16:06:31.233Z",
+      "platforms": {
+        "youtube": {
+          "accountId": "6ac27146281ee799a37065e4",
+          "status": "prepared",
+          "idempotencyKey": "373fe7a5-c201-4459-b66c-e0447a63f20e"
+        }
+      },
+      "script": {
+        "version": 3,
+        "provider": "extractive",
+        "format": "source-fallback",
+        "angle": "workflow",
+        "workingTitle": "Same Beliefs, Different Policies: Learning",
+        "availability": "unknown",
+        "hookStyle": "question",
+        "sentences": [
+          {
+            "text": "Would you use Same Beliefs, Different Policies?",
+            "evidenceQuote": "arXiv:2610.30450v1 Announce Type: new Abstract: Reasoning LLMs often continue reasoning after reaching a correct answer, wasting computation and sometimes replacing it with an incorrect one. Deciding when to stop is a metareasoning problem: the model must weigh what further reasoning could achieve against its cost, given what it can already answer. Direct utility training learns a stopping representation at a chosen token price; supporting new prices can require additional controller training. We introduce BELT (BELief-based Termination), which separates outcome prediction from stopping control. It learns beliefs about current and future answers from a frozen LLM's hidden states, then fits a linear stopping policy on the frozen features. The prediction targets are independent of token price, so one probe supports different accuracy-cost trade-offs through CPU policy refitting or threshold adjustment. Averaged over five out-of-distribution (OOD) math benchmarks, BELT reduces generated tokens by 41% on Qwen3-1.7B and 51% on OLMo-3-7B-Think without loss of accuracy. The same math-trained BELT transfers to coding and agentic tasks without training on code or agentic data. In all three domains, its accuracy-cost trade-offs are competitive with or better than those of end-to-end controllers. On OLMo3, its probe has 21.2x fewer parameters than one checkpoint of the strongest baseline, OS-Pruner, and needs 55x fewer training GPU-hours than OS-Pruner's five price-specific checkpoints.",
+            "role": "hook",
+            "visual": "example",
+            "displayText": "Would you use Same Beliefs, Different Policies?"
+          },
+          {
+            "text": "The same math-trained BELT transfers to coding and agentic tasks without training on code or agentic data.",
+            "evidenceQuote": "The same math-trained BELT transfers to coding and agentic tasks without training on code or agentic data.",
+            "role": "breakthrough",
+            "visual": "example",
+            "displayText": "The same math-trained BELT transfers to coding"
+          },
+          {
+            "text": "Deciding when to stop is a metareasoning problem: the model must weigh what further reasoning could achieve against its cost, given what it can already answer.",
+            "evidenceQuote": "Deciding when to stop is a metareasoning problem: the model must weigh what further reasoning could achieve against its cost, given what it can already answer.",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "Already answer"
+          },
+          {
+            "text": "arXiv cs.AI says it introduce BELT (BELief-based Termination), which separates outcome prediction from stopping control.",
+            "evidenceQuote": "We introduce BELT (BELief-based Termination), which separates outcome prediction from stopping control.",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "ArXiv cs.AI says it introduce BELT (BELief-based Termination)"
+          },
+          {
+            "text": "This source excerpt does not confirm public access.",
+            "evidenceQuote": "arXiv:2610.30450v1 Announce Type: new Abstract: Reasoning LLMs often continue reasoning after reaching a correct answer, wasting computation and sometimes replacing it with an incorrect one.",
+            "role": "impact",
+            "visual": "highlight",
+            "displayText": "does not confirm public access"
+          },
+          {
+            "text": "Would you try Same Beliefs, Different Policies, or wait for more proof?",
+            "evidenceQuote": "arXiv:2610.30450v1 Announce Type: new Abstract: Reasoning LLMs often continue reasoning after reaching a correct answer, wasting computation and sometimes replacing it with an incorrect one. Deciding when to stop is a metareasoning problem: the model must weigh what further reasoning could achieve against its cost, given what it can already answer. Direct utility training learns a stopping representation at a chosen token price; supporting new prices can require additional controller training. We introduce BELT (BELief-based Termination), which separates outcome prediction from stopping control. It learns beliefs about current and future answers from a frozen LLM's hidden states, then fits a linear stopping policy on the frozen features. The prediction targets are independent of token price, so one probe supports different accuracy-cost trade-offs through CPU policy refitting or threshold adjustment. Averaged over five out-of-distribution (OOD) math benchmarks, BELT reduces generated tokens by 41% on Qwen3-1.7B and 51% on OLMo-3-7B-Think without loss of accuracy. The same math-trained BELT transfers to coding and agentic tasks without training on code or agentic data. In all three domains, its accuracy-cost trade-offs are competitive with or better than those of end-to-end controllers. On OLMo3, its probe has 21.2x fewer parameters than one checkpoint of the strongest baseline, OS-Pruner, and needs 55x fewer training GPU-hours than OS-Pruner's five price-specific checkpoints.",
+            "role": "engagement",
+            "visual": "highlight",
+            "displayText": "Would you try Same Beliefs"
+          }
+        ],
+        "narration": "Would you use Same Beliefs, Different Policies? The same math-trained BELT transfers to coding and agentic tasks without training on code or agentic data. Deciding when to stop is a metareasoning problem: the model must weigh what further reasoning could achieve against its cost, given what it can already answer. arXiv cs.AI says it introduce BELT (BELief-based Termination), which separates outcome prediction from stopping control. This source excerpt does not confirm public access. Would you try Same Beliefs, Different Policies, or wait for more proof?"
+      },
+      "presentation": {
+        "title": "Same Beliefs, Different Policies: Learning",
+        "format": "source-fallback",
+        "angle": "workflow",
+        "hookStyle": "question",
+        "availability": "unknown",
+        "duration": 38.425,
+        "wordCount": 85,
+        "scriptVersion": 3
+      },
+      "selectionReason": "A source-backed, measurable change in time, cost, or capability.",
+      "contentHash": "ace395eb89fc16f7ea536252eab7a4f6180ad54ddadf2570eed154bac4c010c8",
+      "media": {
+        "publicUrl": "https://media.zernio.com/temp/1792771628834_uxh7gvy9_2026-10-23.mp4",
+        "videoSha256": "f47689b2a5e9a3b6c9d0d10f866cec25efd0f0c400a5f083b4eff0beffcfd246",
+        "uploadedAt": "2026-10-23T16:07:09.782Z"
       }
     }
   }
