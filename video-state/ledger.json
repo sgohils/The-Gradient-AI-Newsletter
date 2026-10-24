@@ -1185,7 +1185,7 @@
       "platforms": {
         "youtube": {
           "accountId": "6ac27146281ee799a37065e4",
-          "status": "submitting",
+          "status": "published",
           "idempotencyKey": "a0ae9760-6e4f-4466-812f-a463d8bd839c",
           "request": {
             "content": "Disgraced eMudhra drops out of TLS business after using cert private key of 4\n\nSource: Ars Technica AI\nhttps://arstechnica.com/security/2026/10/disgraced-emudhra-drops-out-of-tls-business-following-certificate-debacle/\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-10-24\nAI-generated narration. #AI #AINews #Shorts",
@@ -1210,7 +1210,9 @@
             ],
             "publishNow": true
           },
-          "firstSubmittedAt": "2026-10-24T14:17:36.953Z"
+          "firstSubmittedAt": "2026-10-24T14:17:36.953Z",
+          "postId": "6adcbe02e50faaacf0624411",
+          "postUrl": "https://www.youtube.com/watch?v=xAIr2KCflLc"
         }
       },
       "script": {
