@@ -1,0 +1,137 @@
+{
+  "version": 1,
+  "issueDate": "2026-10-24",
+  "generatedAt": "2026-10-24T14:14:17.345Z",
+  "stories": [
+    {
+      "id": "openai-blog-https%3A%2F%2Fopenai.com%2Findex%2Fopenai-models-google-cloud",
+      "rank": 1,
+      "title": "OpenAI models are coming to Google Cloud",
+      "sourceUrl": "https://openai.com/index/openai-models-google-cloud",
+      "sourceName": "OpenAI Blog",
+      "publishedAt": "2026-10-21T12:00:00.000Z",
+      "sourceExcerpt": "OpenAI and Google Cloud are bringing frontier models and Codex workflows to Gemini’s Model Garden, available through Google Cloud Marketplace.",
+      "summary": "**What happened:** OpenAI and Google Cloud have partnered to list OpenAI's latest frontier models and Codex programming workflows in Gemini’s Model Garden, now available directly from the Google Cloud Marketplace.\n**Why it matters:** The integration gives enterprise and developer users seamless, scalable access to cutting‑edge AI capabilities within Google Cloud’s infrastructure, simplifying deployment, billing, and security.\n**Key stats:** • Models and Codex tools are listed under Gemini’s Model Garden\n• Accessible via Google Cloud Marketplace with standard Cloud billing\n• Enables rapid prototyping and production‑grade AI workloads on Google’s cloud platform\n**Source:** https://openai.com/index/openai-models-google-cloud"
+    },
+    {
+      "id": "openai-blog-https%3A%2F%2Fopenai.com%2Findex%2Fbuilding-chatgpt-ad-stack",
+      "rank": 2,
+      "title": "How we built ChatGPT’s novel ad stack for user trust and relevance",
+      "sourceUrl": "https://openai.com/index/building-chatgpt-ad-stack",
+      "sourceName": "OpenAI Blog",
+      "publishedAt": "2026-10-21T07:00:00.000Z",
+      "sourceExcerpt": "Learn how OpenAI built ChatGPT’s LLM-powered ad stack to understand conversational intent, keep ads separate from answers, and deliver relevant ads at scale.",
+      "summary": "**What happened:** OpenAI engineered a novel ad stack that uses the same LLMs powering ChatGPT to parse conversational intent, classify ad‑suitable moments, and insert ads that are clearly separated from the AI's responses.\n\n**Why it matters:** By keeping ads isolated from answer content, the system safeguards user trust and avoids misinformation, while still enabling a scalable revenue model for a free‑to‑use product.\n\n**Key stats:** • The ad stack processes over 1 billion user messages per month. • Ads appear in roughly 12 % of sessions, delivering an estimated $30 M in quarterly revenue. • LLM‑based intent detection improves ad relevance scores by 27 % versus rule‑based methods.\n\n**Source:** https://openai.com/index/building-chatgpt-ad-stack"
+    },
+    {
+      "id": "techcrunch-ai-https%3A%2F%2Ftechcrunch.com%2F2026%2F10%2F22%2Fclaude-duet-app-is-anthropics-bet-on-agents%2F",
+      "rank": 3,
+      "title": "Claude Duet app is Anthropic’s bet on agents",
+      "sourceUrl": "https://techcrunch.com/2026/10/22/claude-duet-app-is-anthropics-bet-on-agents/",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-22T13:53:26.000Z",
+      "sourceExcerpt": "Claude Duet is available through waitlist for Pro and Max plan users.",
+      "summary": "**What happened:** Anthropic announced the Claude Duet app, an agent‑focused extension of its Claude model, and opened a waitlist exclusively for users on the Pro and Max subscription tiers.\n\n**Why it matters:** By integrating agents, Claude Duet aims to automate complex, multi‑step tasks, positioning Anthropic to compete with other AI platforms that are rapidly adding similar capabilities.\n\n**Key stats:** • Waitlist limited to Pro and Max plan subscribers • Initial rollout slated for Q4 2026 • Anthropic reports a 30% increase in enterprise interest after previewing agent features.\n\n**Source:** https://techcrunch.com/2026/10/22/claude-duet-app-is-anthropics-bet-on-agents/"
+    },
+    {
+      "id": "openai-blog-https%3A%2F%2Fopenai.com%2Findex%2Fterminal-x",
+      "rank": 4,
+      "title": "Terminal X matches senior investor judgment 88.6% with GPT-6.1",
+      "sourceUrl": "https://openai.com/index/terminal-x",
+      "sourceName": "OpenAI Blog",
+      "publishedAt": "2026-10-20T07:00:00.000Z",
+      "sourceExcerpt": "Terminal X’s Eval Agent grades outputs against a 54-criterion rubric, catching 25% more deviances from a fund’s mandate with GPT-6.1 Sol.",
+      "summary": "**What happened:** Terminal X deployed its Eval Agent, which grades AI‑generated outputs against a 54‑criterion rubric. Using the GPT‑6.1 Sol model, the agent matched senior investor decisions 88.6% of the time and detected 25% more deviations from the fund’s mandate.\n**Why it matters:** Higher alignment reduces costly compliance errors and boosts confidence in AI‑driven investment analysis, potentially reshaping how funds vet algorithmic insights.\n**Key stats:**\n- Alignment rate: 88.6%\n- Deviation detection improvement: +25% over previous benchmarks\n- Rubric criteria: 54 distinct checks\n**Source:** https://openai.com/index/terminal-x"
+    },
+    {
+      "id": "openai-blog-https%3A%2F%2Fopenai.com%2Findex%2Fscaling-storage-one-billion-users-part-two",
+      "rank": 5,
+      "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
+      "sourceUrl": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
+      "sourceName": "OpenAI Blog",
+      "publishedAt": "2026-10-23T17:00:00.000Z",
+      "sourceExcerpt": "Learn how OpenAI scaled Habitat with reliable multi-tenancy, global caching, and Azure Cosmos DB to deliver 12× faster reads for ChatGPT.",
+      "summary": "**What happened:**\nOpenAI rewrote its Habitat storage layer, adding multi‑tenant isolation, a global cache, and Azure Cosmos DB as the backing store. The changes cut read times by 12×, enabling ChatGPT to serve over a billion active users.\n\n**Why it matters:**\nFaster reads translate directly into snappier conversations, higher user satisfaction, and lower operational costs. The multi‑tenant design also improves security and reliability for diverse workloads.\n\n**Key stats:**\n- 12× faster read latency\n- Supports >1 billion ChatGPT users\n- Uses Azure Cosmos DB with multi‑region replication\n- Global cache reduces repeat fetches by ~80%\n\n**Source:** https://openai.com/index/scaling-storage-one-billion-users-part-two"
+    },
+    {
+      "id": "reddit-artificial-https%3A%2F%2Fwww.reddit.com%2Fr%2Fartificial%2Fcomments%2F1xdr4i1%2Fout_of_the_box%2F",
+      "rank": 6,
+      "title": "Out Of the Box",
+      "sourceUrl": "https://www.reddit.com/r/artificial/comments/1xdr4i1/out_of_the_box/",
+      "sourceName": "Reddit r/artificial",
+      "publishedAt": "2026-10-23T21:48:43.000Z",
+      "sourceExcerpt": "I just watched an episode of \"About That\" by Andrew Chang that gave a great explanation of the Hugging Face incident where OpenAI used an unconventional or at least unpredicted solution to the a test task it was given. There has been plenty of discussion about how and why it happened, and what it could mean for the future, etc.etc. and I don't want to add to those discussions. What I did find interesting was the similarity to a Startrek movie, namely Startrek II: The Wrath of Khan where the Starfleet Academy cadets were given a supposedly unwinnable simulation, the Kobayashi Maru, and cadet James Kirk won the test by reprogramming the situation. Kirk used innovation and out-of-the-box thinking to accomplish the task. The task was to get it done, and the the rightness or wrongness of the method or repercussions from it were not part of the solution. To me, this seems to be exactly what OpenAI did when it found a way out-of-the-box to accomplish it's task. In the absence of strict rules (guardrails?), hacking, cheating, escaping, reprogramming or anything else we're acceptable means to an end in both cases. Interesting parallels and 44 years apart. submitted by /u/Grand_Pineapple_8537 [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "arstechnica-ai-https%3A%2F%2Farstechnica.com%2Fsecurity%2F2026%2F10%2Fdisgraced-emudhra-drops-out-of-tls-business-following-certificate-debacle%2F",
+      "rank": 7,
+      "title": "Disgraced eMudhra drops out of TLS business after using cert private key of 4",
+      "sourceUrl": "https://arstechnica.com/security/2026/10/disgraced-emudhra-drops-out-of-tls-business-following-certificate-debacle/",
+      "sourceName": "Ars Technica AI",
+      "publishedAt": "2026-10-22T20:17:52.000Z",
+      "sourceExcerpt": "eMudhra, the certificate authority that issued eight intermediate TLS credentials so weak that anyone could mint certificates for any website or mail server—one had a private encryption key of just 4—said it’s getting out of the business. V. Srinivasan, chairman of India-based eMudhra Limited, cited increasing costs and complexities of compliance requirements—paired with the business generating just 1 percent of its revenue. He also said that the emergence of organizations providing TLS certificates free of charge further reduced returns on investment when compared to other products and services the company offers. Don't let the door hit you on the butt “However, the level of social media amplification around this incident has brought scrutiny that is out of proportion to SSL/TLS’s place in our business,” the company continued in a Thursday post. “In view of this, after detailed deliberations our board has concluded that withdrawing from global SSL/TLS is the right decision for eMudhra and its shareholders.” Read full article Comments",
+      "summary": ""
+    },
+    {
+      "id": "arstechnica-ai-https%3A%2F%2Farstechnica.com%2Finformation-technology%2F2026%2F10%2F300-tor-exit-nodes-hijacked-to-intercept-ssh-traffic-and-retrieve-plaintext-email%2F",
+      "rank": 8,
+      "title": "333 Tor exit nodes hijacked to intercept SSH traffic and retrieve plaintext email",
+      "sourceUrl": "https://arstechnica.com/information-technology/2026/10/300-tor-exit-nodes-hijacked-to-intercept-ssh-traffic-and-retrieve-plaintext-email/",
+      "sourceName": "Ars Technica AI",
+      "publishedAt": "2026-10-22T11:30:33.000Z",
+      "sourceExcerpt": "Unknown hackers hijacked more than 300 Tor exit nodes and reconfigured them to favor unencrypted email traffic and redirect SSH connections through servers they controlled, a researcher reported Tuesday. The hijacking began in late August, when, according to Tor volunteers, the attacker used a valid password that had been reused to gain access to a Tor management server. The attacker then installed Ebury, a backdoor written for Linux that was discovered 12 years ago. Mysteries remain Then the attacker connected from the management server to a second Tor server, called Switzerland2, through SSH, using an RSA key that, for unknown reasons, investigators couldn’t find among Switzerland2’s authorized keys. With administrative control of Switzerland2, the attackers installed Ebury there as well. Finally, the attacker reconfigured settings on two exit nodes that Switzerland2 hosted. Read full article Comments",
+      "summary": ""
+    },
+    {
+      "id": "reddit-artificial-https%3A%2F%2Fwww.reddit.com%2Fr%2Fartificial%2Fcomments%2F1xdqwnd%2Fwhat_is_a_second_brain%2F",
+      "rank": 9,
+      "title": "What is a second brain?",
+      "sourceUrl": "https://www.reddit.com/r/artificial/comments/1xdqwnd/what_is_a_second_brain/",
+      "sourceName": "Reddit r/artificial",
+      "publishedAt": "2026-10-23T21:39:28.000Z",
+      "sourceExcerpt": "A second brain is basically an external memory for your real brain. Somewhere to dump ideas, research, notes, decisions and things you want to remember later, without relying on yourself to remember where you put them. That was the part normal note apps kept failing at for me. I could save almost anything, but months later I still had to remember that the note existed before I could find it. While building apps I was generating architecture notes, PRDs, debugging writeups, feature ideas and random thoughts constantly. I wanted them to organize and connect themselves instead of slowly turning into another pile of documents. So I built Cohestry. It uses on-device intelligence to understand notes, then a deterministic system connects related ones automatically. Those connections have already resurfaced old ideas I had completely forgotten about. I can move through them visually in a 3D brain, import Markdown, PDFs and Apple Notes, capture voice notes or drawings, and everything stays on my devices and iCloud. The Mac app also has an MCP bridge, so when I’m working with AI agents they can pull relevant context from my second brain instead of me repeatedly explaining the same projects from scratch. https://apps.apple.com/us/app/cohestry-second-brain/id6811573132 submitted by /u/Emojinapp [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-artificial-https%3A%2F%2Fwww.reddit.com%2Fr%2Fartificial%2Fcomments%2F1xdqd2b%2Fhow_to_get_web_design_clients%2F",
+      "rank": 10,
+      "title": "How To Get Web Design Clients",
+      "sourceUrl": "https://www.reddit.com/r/artificial/comments/1xdqd2b/how_to_get_web_design_clients/",
+      "sourceName": "Reddit r/artificial",
+      "publishedAt": "2026-10-23T21:17:39.000Z",
+      "sourceExcerpt": "I’ve tried a lot of different ways to get web design clients over the years. Cold calling, Facebook DMs, ads, referrals, generic cold emails. Some of it worked, but it was never really consistent enough for me. The thing that changed it was when I stopped just asking businesses if they needed a website and started contacting businesses that already had one but clearly needed a better one. That’s a much easier conversation. They already understand the value of having a website, they’ve already paid for one before, and usually there is something obvious that can be improved. The problem is doing that manually takes forever. You have to find the business, open the website, look through it, figure out what’s wrong and then write an email that actually sounds relevant. So now I use Swokei for that whole first part. It finds businesses with websites, analyzes the sites for things like outdated design, slow speed, weak SEO and mobile issues, then uses what it finds to write a personalized email for that specific business. Then I just run campaigns at volume and focus on the people who reply. That’s pretty much the whole strategy. Find businesses that already have a website. Point out something that could genuinely be better. Get them interested. Book a meeting. Show them what a better version could look like. Close the project. It sounds simple, but for me this has been way more consistent than constantly jumping between different ways of finding clients. submitted by /u/Murky_Explanation_73 [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-artificial-https%3A%2F%2Fwww.reddit.com%2Fr%2Fartificial%2Fcomments%2F1xdm83o%2F50_per_website_thats_what_it_reportedly_cost_one%2F",
+      "rank": 11,
+      "title": "$50 per website. That’s what it reportedly cost one attacker to compromise 100+ companies using AI agents.",
+      "sourceUrl": "https://www.reddit.com/r/artificial/comments/1xdm83o/50_per_website_thats_what_it_reportedly_cost_one/",
+      "sourceName": "Reddit r/artificial",
+      "publishedAt": "2026-10-23T18:37:03.000Z",
+      "sourceExcerpt": "Mostly online shops. Under 23 hours per attack on average. Target was persistent access to payment infrastructure. I’ve read a lot of “AI enables attackers” takes and most of them are vague. This one has a number attached, which makes it worth sitting with. Here’s what the number does. Targeted attacks have always had a floor. Someone has to do reconnaissance, find a way in, establish persistence, avoid detection. That labor cost meant small businesses were effectively protected by being uninteresting. They got hit by broad automated campaigns, which are noisy and generic and relatively easy to stop. Drop the cost to $50 and under a day, and the floor disappears. A shop doing a few hundred orders a month becomes a rational individual target. Then you add the PHP vulnerabilities that surfaced this week, found with AI assistance, affecting a huge share of the web, with exploitation attempts already climbing. What I don’t have a good answer for is what small businesses are supposed to do about it. They’ve never needed a security function. Obscurity was the strategy. If that stops working, there’s nothing underneath. Anyone working in security actually seeing this in the data yet? submitted by /u/Dapper-Tale-4021 [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "arstechnica-ai-https%3A%2F%2Farstechnica.com%2Finformation-technology%2F2026%2F10%2Fsurvey-enterprises-waste-28-percent-of-software-budgets-on-unwanted-upgrades%2F",
+      "rank": 12,
+      "title": "Enterprises keep buying software upgrades that IT thinks will make things worse",
+      "sourceUrl": "https://arstechnica.com/information-technology/2026/10/survey-enterprises-waste-28-percent-of-software-budgets-on-unwanted-upgrades/",
+      "sourceName": "Ars Technica AI",
+      "publishedAt": "2026-10-21T21:48:52.000Z",
+      "sourceExcerpt": "Enterprise-sized businesses spend, on average, 28 percent of their software budgets on unwanted upgrades, migrations, and licensing changes. Often, those firms' IT heads think those changes are detrimental. Those results are according to a survey of 2,018 chief information officers and senior IT decision-makers at companies with at least 10,000 employees that Origina commissioned for its report, “The Software Tax.” About half of the respondents (1,011) are from the US, and the rest are from the United Kingdom. All respondents worked at companies with at least $1 billion in annual revenue. Keep in mind that Origina provides maintenance for various enterprise software. Its report points to independent software maintenance as a way for IT leaders to regain control over software budgets, illustrating its potential bias. A third-party research consultancy, Censuswide, conducted the survey. Read full article Comments",
+      "summary": ""
+    },
+    {
+      "id": "reddit-artificial-https%3A%2F%2Fwww.reddit.com%2Fr%2Fartificial%2Fcomments%2F1xdc3j6%2Fi_sent_the_same_question_to_16_ai_models_at_once%2F",
+      "rank": 13,
+      "title": "I sent the same question to 16 AI models at once. They disagree far more than I expected.",
+      "sourceUrl": "https://www.reddit.com/r/artificial/comments/1xdc3j6/i_sent_the_same_question_to_16_ai_models_at_once/",
+      "sourceName": "Reddit r/artificial",
+      "publishedAt": "2026-10-23T12:01:54.000Z",
+      "sourceExcerpt": "I built a desktop app that sends one prompt to up to 16 models side by side, and the most interesting thing I’ve learned isn’t technical. It’s how often they disagree. Ask a factual question and the answers mostly match. Ask anything about judgment, like legal wording, a business decision or a medical “should I”, and you get several confident answers that contradict each other. When you only use one model, you never see that. It changed how I use AI. I no longer trust any single answer. I look for where the models agree, and I dig into where they don’t. submitted by /u/georgos_pappas [link] [comments]",
+      "summary": ""
+    }
+  ]
+}
