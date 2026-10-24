@@ -1185,8 +1185,32 @@
       "platforms": {
         "youtube": {
           "accountId": "6ac27146281ee799a37065e4",
-          "status": "prepared",
-          "idempotencyKey": "a0ae9760-6e4f-4466-812f-a463d8bd839c"
+          "status": "submitting",
+          "idempotencyKey": "a0ae9760-6e4f-4466-812f-a463d8bd839c",
+          "request": {
+            "content": "Disgraced eMudhra drops out of TLS business after using cert private key of 4\n\nSource: Ars Technica AI\nhttps://arstechnica.com/security/2026/10/disgraced-emudhra-drops-out-of-tls-business-following-certificate-debacle/\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-10-24\nAI-generated narration. #AI #AINews #Shorts",
+            "mediaItems": [
+              {
+                "type": "video",
+                "url": "https://media.zernio.com/temp/1792851454241_i1j38ut0_2026-10-24.mp4"
+              }
+            ],
+            "platforms": [
+              {
+                "platform": "youtube",
+                "accountId": "6ac27146281ee799a37065e4",
+                "platformSpecificData": {
+                  "title": "Disgraced eMudhra drops out of TLS business after",
+                  "visibility": "public",
+                  "madeForKids": false,
+                  "containsSyntheticMedia": true,
+                  "categoryId": "28"
+                }
+              }
+            ],
+            "publishNow": true
+          },
+          "firstSubmittedAt": "2026-10-24T14:17:36.953Z"
         }
       },
       "script": {
