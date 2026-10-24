@@ -436,8 +436,8 @@
         "sourceUrl": "https://arxiv.org/abs/2610.20669",
         "sourceName": "arXiv cs.AI",
         "publishedAt": "2026-10-17T04:00:00.000Z",
-        "sourceExcerpt": "arXiv:2610.20669v1 Announce Type: new Abstract: Reward-guided discrete diffusion enables test-time alignment with downstream objectives, but applying Sequential Monte Carlo (SMC) guidance at every denoising step is computationally expensive. Active guidance steps require additional reward evaluations and, for gradient-based proposals, value-gradient computations. Sparse guidance reduces this cost by guiding only a subset of timesteps, but commonly used schedules are fixed heuristics whose effectiveness can vary substantially across tasks. We propose VISTA, a training-free method that automatically selects guided timesteps under a fixed budget. VISTA formulates sparse guidance as approximation of the ideal full-guidance probability path and derives an estimable upper bound on \\(\\ell_1\\) path deviation. Using value statistics collected from a small number of full-guidance warmup generations, VISTA optimizes the resulting empirical surrogate exactly via dynamic programming. The warmup generations can be retained as model outputs, and after schedule selection VISTA has the same per-generation guidance complexity as other sparse schedules with the same budget. Across text, biological sequence, and image generation tasks, VISTA discovers task-dependent schedules and outperforms hand-designed sparse schedules in most tested settings, while approaching or exceeding full-guidance performance on several task metrics. In toxic-text generation, for example, VISTA attains a 0.99 unique-toxic ratio compared with 1.00 for full guidance while reducing post-selection per-generation latency from 204.23 s to 38.16 s, a 5.35$\\times$ speedup.",
-        "summary": "**What happened:** A team introduced \"Value‑Informed Schedule Trimming,\" an approach that selects only the most informative timesteps for Sequential Monte Carlo (SMC) guidance in discrete diffusion models. By leveraging value estimates, the method dynamically trims the guidance schedule during denoising.\n\n**Why it matters:** Traditional SMC guidance at every step is computationally heavy, requiring extra reward evaluations and gradient calculations. The adaptive schedule reduces these overheads, making reward‑guided diffusion viable for real‑time and large‑scale applications.\n\n**Key stats:** The paper reports up to a 40% reduction in compute time while maintaining comparable alignment with downstream objectives, and a 25% decrease in reward‑evaluation calls versus fixed‑heuristic schedules.\n\n**Source:** https://arxiv.org/abs/2610.20669"
+        "sourceExcerpt": "",
+        "summary": ""
       },
       "selectedAt": "2026-10-17T14:08:24.540Z",
       "platforms": {
@@ -445,87 +445,10 @@
           "accountId": "6ac27146281ee799a37065e4",
           "status": "published",
           "idempotencyKey": "0fb8dff5-9f54-48a3-8cd0-5fab8e775ce4",
-          "request": {
-            "content": "Value-Informed Schedule Trimming for Accelerated Sequential Monte Carlo Guidance in Discrete Diffusion\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2610.20669\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-10-17\nAI-generated narration. #AI #AINews #Shorts",
-            "mediaItems": [
-              {
-                "type": "video",
-                "url": "https://media.zernio.com/temp/1792246145291_47j07b49_2026-10-17.mp4"
-              }
-            ],
-            "platforms": [
-              {
-                "platform": "youtube",
-                "accountId": "6ac27146281ee799a37065e4",
-                "platformSpecificData": {
-                  "title": "Value-Informed Schedule Trimming for Accelerated",
-                  "visibility": "public",
-                  "madeForKids": false,
-                  "containsSyntheticMedia": true,
-                  "categoryId": "28"
-                }
-              }
-            ],
-            "publishNow": true
-          },
           "firstSubmittedAt": "2026-10-17T14:09:07.270Z",
           "postId": "6ad38184528945623e1c1094",
           "postUrl": "https://www.youtube.com/watch?v=tE9HDoYt_Co"
         }
-      },
-      "script": {
-        "version": 3,
-        "provider": "extractive",
-        "format": "source-fallback",
-        "angle": "capability",
-        "workingTitle": "Value-Informed Schedule Trimming for Accelerated",
-        "availability": "unknown",
-        "hookStyle": "question",
-        "sentences": [
-          {
-            "text": "Would you use Value-Informed Schedule Trimming?",
-            "evidenceQuote": "arXiv:2610.20669v1 Announce Type: new Abstract: Reward-guided discrete diffusion enables test-time alignment with downstream objectives, but applying Sequential Monte Carlo (SMC) guidance at every denoising step is computationally expensive. Active guidance steps require additional reward evaluations and, for gradient-based proposals, value-gradient computations. Sparse guidance reduces this cost by guiding only a subset of timesteps, but commonly used schedules are fixed heuristics whose effectiveness can vary substantially across tasks. We propose VISTA, a training-free method that automatically selects guided timesteps under a fixed budget. VISTA formulates sparse guidance as approximation of the ideal full-guidance probability path and derives an estimable upper bound on \\(\\ell_1\\) path deviation. Using value statistics collected from a small number of full-guidance warmup generations, VISTA optimizes the resulting empirical surrogate exactly via dynamic programming. The warmup generations can be retained as model outputs, and after schedule selection VISTA has the same per-generation guidance complexity as other sparse schedules with the same budget. Across text, biological sequence, and image generation tasks, VISTA discovers task-dependent schedules and outperforms hand-designed sparse schedules in most tested settings, while approaching or exceeding full-guidance performance on several task metrics. In toxic-text generation, for example, VISTA attains a 0.99 unique-toxic ratio compared with 1.00 for full guidance while reducing post-selection per-generation latency from 204.23 s to 38.16 s, a 5.35$\\times$ speedup.",
-            "role": "hook",
-            "visual": "example",
-            "displayText": "Would you use Value-Informed Schedule Trimming?"
-          },
-          {
-            "text": "arXiv:2610.20669v1 Announce Type: new Abstract: Reward-guided discrete diffusion enables test-time alignment with downstream objectives, but applying Sequential Monte Carlo (SMC) guidance at every denoising step is computationally expensive.",
-            "evidenceQuote": "arXiv:2610.20669v1 Announce Type: new Abstract: Reward-guided discrete diffusion enables test-time alignment with downstream objectives, but applying Sequential Monte Carlo (SMC) guidance at every denoising step is computationally expensive.",
-            "role": "breakthrough",
-            "visual": "example",
-            "displayText": "Test-time alignment with downstream objectives"
-          },
-          {
-            "text": "Active guidance steps require additional reward evaluations and, for gradient-based proposals, value-gradient computations.",
-            "evidenceQuote": "Active guidance steps require additional reward evaluations and, for gradient-based proposals, value-gradient computations.",
-            "role": "breakthrough",
-            "visual": "process",
-            "displayText": "Active guidance steps require additional reward evaluations"
-          },
-          {
-            "text": "arXiv cs.AI says it propose VISTA, a training-free method that automatically selects guided timesteps under a fixed budget.",
-            "evidenceQuote": "We propose VISTA, a training-free method that automatically selects guided timesteps under a fixed budget.",
-            "role": "breakthrough",
-            "visual": "process",
-            "displayText": "ArXiv cs.AI says it propose VISTA"
-          },
-          {
-            "text": "This source excerpt does not confirm public access.",
-            "evidenceQuote": "arXiv:2610.20669v1 Announce Type: new Abstract: Reward-guided discrete diffusion enables test-time alignment with downstream objectives, but applying Sequential Monte Carlo (SMC) guidance at every denoising step is computationally expensive.",
-            "role": "impact",
-            "visual": "highlight",
-            "displayText": "does not confirm public access"
-          },
-          {
-            "text": "Would you try Value-Informed Schedule Trimming, or wait for more proof?",
-            "evidenceQuote": "arXiv:2610.20669v1 Announce Type: new Abstract: Reward-guided discrete diffusion enables test-time alignment with downstream objectives, but applying Sequential Monte Carlo (SMC) guidance at every denoising step is computationally expensive. Active guidance steps require additional reward evaluations and, for gradient-based proposals, value-gradient computations. Sparse guidance reduces this cost by guiding only a subset of timesteps, but commonly used schedules are fixed heuristics whose effectiveness can vary substantially across tasks. We propose VISTA, a training-free method that automatically selects guided timesteps under a fixed budget. VISTA formulates sparse guidance as approximation of the ideal full-guidance probability path and derives an estimable upper bound on \\(\\ell_1\\) path deviation. Using value statistics collected from a small number of full-guidance warmup generations, VISTA optimizes the resulting empirical surrogate exactly via dynamic programming. The warmup generations can be retained as model outputs, and after schedule selection VISTA has the same per-generation guidance complexity as other sparse schedules with the same budget. Across text, biological sequence, and image generation tasks, VISTA discovers task-dependent schedules and outperforms hand-designed sparse schedules in most tested settings, while approaching or exceeding full-guidance performance on several task metrics. In toxic-text generation, for example, VISTA attains a 0.99 unique-toxic ratio compared with 1.00 for full guidance while reducing post-selection per-generation latency from 204.23 s to 38.16 s, a 5.35$\\times$ speedup.",
-            "role": "engagement",
-            "visual": "highlight",
-            "displayText": "Would you try Value-Informed Schedule Trimming"
-          }
-        ],
-        "narration": "Would you use Value-Informed Schedule Trimming? arXiv:2610.20669v1 Announce Type: new Abstract: Reward-guided discrete diffusion enables test-time alignment with downstream objectives, but applying Sequential Monte Carlo (SMC) guidance at every denoising step is computationally expensive. Active guidance steps require additional reward evaluations and, for gradient-based proposals, value-gradient computations. arXiv cs.AI says it propose VISTA, a training-free method that automatically selects guided timesteps under a fixed budget. This source excerpt does not confirm public access. Would you try Value-Informed Schedule Trimming, or wait for more proof?"
       },
       "presentation": {
         "title": "Value-Informed Schedule Trimming for Accelerated",
@@ -1245,6 +1168,90 @@
         "publicUrl": "https://media.zernio.com/temp/1792771628834_uxh7gvy9_2026-10-23.mp4",
         "videoSha256": "f47689b2a5e9a3b6c9d0d10f866cec25efd0f0c400a5f083b4eff0beffcfd246",
         "uploadedAt": "2026-10-23T16:07:09.782Z"
+      }
+    },
+    "2026-10-24": {
+      "story": {
+        "id": "arstechnica-ai-https%3A%2F%2Farstechnica.com%2Fsecurity%2F2026%2F10%2Fdisgraced-emudhra-drops-out-of-tls-business-following-certificate-debacle%2F",
+        "rank": 7,
+        "title": "Disgraced eMudhra drops out of TLS business after using cert private key of 4",
+        "sourceUrl": "https://arstechnica.com/security/2026/10/disgraced-emudhra-drops-out-of-tls-business-following-certificate-debacle/",
+        "sourceName": "Ars Technica AI",
+        "publishedAt": "2026-10-22T20:17:52.000Z",
+        "sourceExcerpt": "eMudhra, the certificate authority that issued eight intermediate TLS credentials so weak that anyone could mint certificates for any website or mail server—one had a private encryption key of just 4—said it’s getting out of the business. V. Srinivasan, chairman of India-based eMudhra Limited, cited increasing costs and complexities of compliance requirements—paired with the business generating just 1 percent of its revenue. He also said that the emergence of organizations providing TLS certificates free of charge further reduced returns on investment when compared to other products and services the company offers. Don't let the door hit you on the butt “However, the level of social media amplification around this incident has brought scrutiny that is out of proportion to SSL/TLS’s place in our business,” the company continued in a Thursday post. “In view of this, after detailed deliberations our board has concluded that withdrawing from global SSL/TLS is the right decision for eMudhra and its shareholders.” Read full article Comments",
+        "summary": ""
+      },
+      "selectedAt": "2026-10-24T14:16:56.817Z",
+      "platforms": {
+        "youtube": {
+          "accountId": "6ac27146281ee799a37065e4",
+          "status": "prepared",
+          "idempotencyKey": "a0ae9760-6e4f-4466-812f-a463d8bd839c"
+        }
+      },
+      "script": {
+        "version": 3,
+        "provider": "extractive",
+        "format": "source-fallback",
+        "angle": "capability",
+        "workingTitle": "Disgraced eMudhra drops out of TLS business after",
+        "availability": "unknown",
+        "hookStyle": "question",
+        "sentences": [
+          {
+            "text": "Would you use Disgraced eMudhra drops out?",
+            "evidenceQuote": "eMudhra, the certificate authority that issued eight intermediate TLS credentials so weak that anyone could mint certificates for any website or mail server—one had a private encryption key of just 4—said it’s getting out of the business. V. Srinivasan, chairman of India-based eMudhra Limited, cited increasing costs and complexities of compliance requirements—paired with the business generating just 1 percent of its revenue. He also said that the emergence of organizations providing TLS certificates free of charge further reduced returns on investment when compared to other products and services the company offers. Don't let the door hit you on the butt “However, the level of social media amplification around this incident has brought scrutiny that is out of proportion to SSL/TLS’s place in our business,” the company continued in a Thursday post. “In view of this, after detailed deliberations our board has concluded that withdrawing from global SSL/TLS is the right decision for eMudhra and its shareholders.” Read full article Comments",
+            "role": "hook",
+            "visual": "example",
+            "displayText": "Would you use Disgraced eMudhra drops out?"
+          },
+          {
+            "text": "Srinivasan, chairman of India-based eMudhra Limited, cited increasing costs and complexities of compliance requirements—paired with the business generating just 1 percent of its revenue.",
+            "evidenceQuote": "Srinivasan, chairman of India-based eMudhra Limited, cited increasing costs and complexities of compliance requirements—paired with the business generating just 1 percent of its revenue.",
+            "role": "breakthrough",
+            "visual": "example",
+            "displayText": "Srinivasan, chairman of India-based eMudhra Limited, cited increasing"
+          },
+          {
+            "text": "He also said that the emergence of organizations providing TLS certificates free of charge further reduced returns on investment when compared to other products and services the company offers.",
+            "evidenceQuote": "He also said that the emergence of organizations providing TLS certificates free of charge further reduced returns on investment when compared to other products and services the company offers.",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "He also said that the emergence of organizations"
+          },
+          {
+            "text": "This source excerpt does not confirm public access.",
+            "evidenceQuote": "eMudhra, the certificate authority that issued eight intermediate TLS credentials so weak that anyone could mint certificates for any website or mail server—one had a private encryption key of just 4—said it’s getting out of the business.",
+            "role": "impact",
+            "visual": "highlight",
+            "displayText": "does not confirm public access"
+          },
+          {
+            "text": "Would you try Disgraced eMudhra drops out, or wait for more proof?",
+            "evidenceQuote": "eMudhra, the certificate authority that issued eight intermediate TLS credentials so weak that anyone could mint certificates for any website or mail server—one had a private encryption key of just 4—said it’s getting out of the business. V. Srinivasan, chairman of India-based eMudhra Limited, cited increasing costs and complexities of compliance requirements—paired with the business generating just 1 percent of its revenue. He also said that the emergence of organizations providing TLS certificates free of charge further reduced returns on investment when compared to other products and services the company offers. Don't let the door hit you on the butt “However, the level of social media amplification around this incident has brought scrutiny that is out of proportion to SSL/TLS’s place in our business,” the company continued in a Thursday post. “In view of this, after detailed deliberations our board has concluded that withdrawing from global SSL/TLS is the right decision for eMudhra and its shareholders.” Read full article Comments",
+            "role": "engagement",
+            "visual": "highlight",
+            "displayText": "Would you try Disgraced eMudhra drops out"
+          }
+        ],
+        "narration": "Would you use Disgraced eMudhra drops out? Srinivasan, chairman of India-based eMudhra Limited, cited increasing costs and complexities of compliance requirements—paired with the business generating just 1 percent of its revenue. He also said that the emergence of organizations providing TLS certificates free of charge further reduced returns on investment when compared to other products and services the company offers. This source excerpt does not confirm public access. Would you try Disgraced eMudhra drops out, or wait for more proof?"
+      },
+      "presentation": {
+        "title": "Disgraced eMudhra drops out of TLS business after",
+        "format": "source-fallback",
+        "angle": "capability",
+        "hookStyle": "question",
+        "availability": "unknown",
+        "duration": 38.199999999999996,
+        "wordCount": 80,
+        "scriptVersion": 3
+      },
+      "selectionReason": "A source-backed, measurable change in time, cost, or capability.",
+      "contentHash": "6f46e0b7aa9e60a5d8b6f6af759d3c5551efa94b50220ac318926b040f594b80",
+      "media": {
+        "publicUrl": "https://media.zernio.com/temp/1792851454241_i1j38ut0_2026-10-24.mp4",
+        "videoSha256": "3d17cd3951cd24d6fadbd8a2cfbff551408c6618c7869fa534682b9ce3ecee4a",
+        "uploadedAt": "2026-10-24T14:17:35.672Z"
       }
     }
   }
