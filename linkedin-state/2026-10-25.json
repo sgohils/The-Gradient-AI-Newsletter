@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "issueDate": "2026-10-25",
+  "issueUrl": "https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-10-25",
+  "content": "Today's AI briefing from The Gradient | 2026-10-25\n\n1. Forced to pick, Grok’s AI model chooses Republicans. OpenAI’s picks Democrats.\nA new analysis compared the candidate recommendations of Grok’s AI model and OpenAI’s GPT across nearly 500 simulated election races. Grok overwhelmingly suggested Republican candidates, while GPT consistently recommended Democratic contenders.\n\n2. OpenAI models are coming to Google Cloud\nOpenAI and Google Cloud have integrated OpenAI’s frontier models and Codex development tools into Gemini’s Model Garden, now listed on the Google Cloud Marketplace.\n\n3. How we built ChatGPT’s novel ad stack for user trust and relevance\nOpenAI engineered a lightweight, LLM‑driven ad stack that parses conversational intent, tags ad‑eligible moments, and serves relevant sponsored content without mixing it with the model’s replies.\n\nRead the full briefing and original sources:\nhttps://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-10-25\n\n#AI #ArtificialIntelligence #TheGradient",
+  "contentHash": "d7ed31a32c65493305348db4d2767ae5969d93b614ac9db405bf7c3c87d22b50",
+  "accountId": "6ac5a561b3c21905c0edcfba",
+  "organizationUrn": "urn:li:organization:136824048",
+  "idempotencyKey": "47a4b74a-fd40-4f97-a147-b7c6d22a1cf3",
+  "status": "submitting",
+  "firstSubmittedAt": "2026-10-25T14:46:33.547Z"
+}
