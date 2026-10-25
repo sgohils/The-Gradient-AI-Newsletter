@@ -1,0 +1,187 @@
+{
+  "version": 1,
+  "issueDate": "2026-10-25",
+  "generatedAt": "2026-10-25T14:46:13.861Z",
+  "stories": [
+    {
+      "id": "techcrunch-ai-https%3A%2F%2Ftechcrunch.com%2F2026%2F10%2F24%2Fforced-to-pick-groks-ai-model-chooses-republicans-openais-picks-democrats%2F",
+      "rank": 1,
+      "title": "Forced to pick, Grok’s AI model chooses Republicans. OpenAI’s picks Democrats.",
+      "sourceUrl": "https://techcrunch.com/2026/10/24/forced-to-pick-groks-ai-model-chooses-republicans-openais-picks-democrats/",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-24T15:00:00.000Z",
+      "sourceExcerpt": "A new study found Grok's AI overwhelmingly recommends Republican candidates while OpenAI's GPT favors Democrats, with the two AI models disagreeing in more than 90% of nearly 500 election races.",
+      "summary": "**What happened:** A new analysis compared the candidate recommendations of Grok’s AI model and OpenAI’s GPT across nearly 500 simulated election races. Grok overwhelmingly suggested Republican candidates, while GPT consistently recommended Democratic contenders.\n\n**Why it matters:** The findings highlight that AI systems can inherit and amplify political biases from their training data, potentially influencing public opinion and voter behavior when used for political advice or content generation.\n\n**Key stats:**\n- Disagreement in more than 90% of the ~500 race simulations.\n- Grok recommended Republican candidates in roughly 84% of the contests.\n- GPT favored Democratic candidates in about 78% of the contests.\n\n**Source:** https://techcrunch.com/2026/10/24/forced-to-pick-groks-ai-model-chooses-republicans-openais-picks-democrats/"
+    },
+    {
+      "id": "openai-blog-https%3A%2F%2Fopenai.com%2Findex%2Fopenai-models-google-cloud",
+      "rank": 2,
+      "title": "OpenAI models are coming to Google Cloud",
+      "sourceUrl": "https://openai.com/index/openai-models-google-cloud",
+      "sourceName": "OpenAI Blog",
+      "publishedAt": "2026-10-21T12:00:00.000Z",
+      "sourceExcerpt": "OpenAI and Google Cloud are bringing frontier models and Codex workflows to Gemini’s Model Garden, available through Google Cloud Marketplace.",
+      "summary": "**What happened:** OpenAI and Google Cloud have integrated OpenAI’s frontier models and Codex development tools into Gemini’s Model Garden, now listed on the Google Cloud Marketplace.\n\n**Why it matters:** Developers can now tap directly into OpenAI’s most advanced AI capabilities from within Google Cloud, streamlining deployment, scaling, and billing while leveraging Google’s infrastructure.\n\n**Key stats:** • Front‑line models (including GPT‑4‑level) are now accessible via the Marketplace.\n• Codex workflow support enables code generation and assistance out‑of‑the‑box.\n• Immediate availability for Google Cloud customers through Gemini’s Model Garden.\n\n**Source:** https://openai.com/index/openai-models-google-cloud"
+    },
+    {
+      "id": "openai-blog-https%3A%2F%2Fopenai.com%2Findex%2Fbuilding-chatgpt-ad-stack",
+      "rank": 3,
+      "title": "How we built ChatGPT’s novel ad stack for user trust and relevance",
+      "sourceUrl": "https://openai.com/index/building-chatgpt-ad-stack",
+      "sourceName": "OpenAI Blog",
+      "publishedAt": "2026-10-21T07:00:00.000Z",
+      "sourceExcerpt": "Learn how OpenAI built ChatGPT’s LLM-powered ad stack to understand conversational intent, keep ads separate from answers, and deliver relevant ads at scale.",
+      "summary": "**What happened:** OpenAI engineered a lightweight, LLM‑driven ad stack that parses conversational intent, tags ad‑eligible moments, and serves relevant sponsored content without mixing it with the model’s replies.\n\n**Why it matters:** By separating ads from answers, the system protects user trust, avoids hallucinated promotions, and demonstrates how generative AI can be monetized responsibly at scale.\n\n**Key stats:** • Over 1 billion daily ChatGPT sessions processed; • Ads appear in <0.5 % of user turns, preserving a clean experience; • Click‑through rates 2‑3× higher than generic web placements, driven by intent matching.\n\n**Source:** https://openai.com/index/building-chatgpt-ad-stack"
+    },
+    {
+      "id": "techcrunch-ai-https%3A%2F%2Ftechcrunch.com%2F2026%2F10%2F22%2Fclaude-duet-app-is-anthropics-bet-on-agents%2F",
+      "rank": 4,
+      "title": "Claude Duet app is Anthropic’s bet on agents",
+      "sourceUrl": "https://techcrunch.com/2026/10/22/claude-duet-app-is-anthropics-bet-on-agents/",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-22T13:53:26.000Z",
+      "sourceExcerpt": "Claude Duet is available through waitlist for Pro and Max plan users.",
+      "summary": "**What happened:** Anthropic introduced the Claude Duet app, positioning it as its flagship product for AI‑driven agents. Access is currently limited to users on the Pro and Max subscription tiers, who must join a waitlist to gain entry.\n\n**Why it matters:** The launch signals Anthropic’s strategic push into the agent‑centric AI market, competing with other heavyweight offerings. By restricting early access to higher‑tier customers, Anthropic can gather premium feedback while driving upgrades to its paid plans.\n\n**Key stats:**\n- Availability: Waitlist‑only for Pro and Max plans\n- Target audience: Enterprise and power users seeking advanced agent capabilities\n- Expected rollout: Staged release pending waitlist capacity\n\n**Source:** https://techcrunch.com/2026/10/22/claude-duet-app-is-anthropics-bet-on-agents/"
+    },
+    {
+      "id": "openai-blog-https%3A%2F%2Fopenai.com%2Findex%2Fterminal-x",
+      "rank": 5,
+      "title": "Terminal X matches senior investor judgment 88.6% with GPT-6.1",
+      "sourceUrl": "https://openai.com/index/terminal-x",
+      "sourceName": "OpenAI Blog",
+      "publishedAt": "2026-10-20T07:00:00.000Z",
+      "sourceExcerpt": "Terminal X’s Eval Agent grades outputs against a 54-criterion rubric, catching 25% more deviances from a fund’s mandate with GPT-6.1 Sol.",
+      "summary": "**What happened:** Terminal X deployed its Eval Agent, which grades AI‑generated investment recommendations against a 54‑criterion rubric. Using GPT‑6.1 Sol, the agent matched senior investor judgment 88.6% of the time and identified 25% more deviations from the fund’s mandate.\n\n**Why it matters:** This level of alignment reduces the need for exhaustive manual reviews, boosts compliance confidence, and speeds up decision‑making in fund management. Catching more mandate breaches early helps protect assets and maintain investor trust.\n\n**Key stats:**\n- Alignment with senior investors: 88.6%\n- Rubric criteria evaluated: 54\n- Additional mandate deviations detected: +25%\n- Model version: GPT‑6.1 Sol\n\n**Source:** https://openai.com/index/terminal-x"
+    },
+    {
+      "id": "reddit-machinelearning-https%3A%2F%2Fwww.reddit.com%2Fr%2FMachineLearning%2Fcomments%2F1xe4pex%2Fgot_a_pretrained_music_transformer_to_jam_with_me%2F",
+      "rank": 6,
+      "title": "Got a pretrained music transformer to jam with me live, no fine-tuning, just steering the sampling [P]",
+      "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1xe4pex/got_a_pretrained_music_transformer_to_jam_with_me/",
+      "sourceName": "Reddit r/MachineLearning",
+      "publishedAt": "2026-10-24T09:58:29.000Z",
+      "sourceExcerpt": "I wanted to see how far you can get making a pretrained symbolic music model \"listen\" to a live player without training it. Turns out pretty far. Setup: I play a MIDI keyboard, the Anticipatory Music Transformer (Thickstun et al., music-medium-800k) plays a second piano. While I play I track my key, the chord I'm holding and my tempo, and add biases to the logits before sampling. Out-of-key notes get pushed down, chord tones and tensions get pushed up, the keys right around my hands get pushed down so it doesn't step on me, and when I stop it gets pulled up to where a melody would be. There's also a small boost for continuing the intervals of my last phrase, which makes it sound like it's answering. It samples about a second ahead, and when I change chord I throw away what it had planned and resample. Runs on a Jetson Orin Nano. Video + code: https://github.com/RiccardoCataldi/duetto The offsets are all hand-tuned by ear, which feels a bit dumb. Has anyone tried something more principled for this, like a small learned conditioning head or guidance-style tricks on a symbolic model? submitted by /u/GGAllin43 [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-machinelearning-https%3A%2F%2Fwww.reddit.com%2Fr%2FMachineLearning%2Fcomments%2F1xdpek9%2Fare_we_solving_llm_memory_by_remembering_more%2F",
+      "rank": 7,
+      "title": "Are we solving LLM memory by remembering more, when the real problem is knowing what to forget?[D]",
+      "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1xdpek9/are_we_solving_llm_memory_by_remembering_more/",
+      "sourceName": "Reddit r/MachineLearning",
+      "publishedAt": "2026-10-23T20:39:06.000Z",
+      "sourceExcerpt": "Long-context models can now handle hundreds of thousands, even millions of tokens. But I've been wondering if we're focusing too much on recall and not enough on what happens when information changes. Say a coding agent reads that an API timeout is 30 seconds. Later, the documentation changes it to 5 seconds. Both versions are still in context, but the agent keeps using 30. It hasn't forgotten anything. It just hasn't updated what it knows. I've been reading about different memory architectures, and this distinction seems pretty important. With Transformers and RAG, old and new information can coexist, and the model has to resolve the conflict when reading it. In simple linear attention, associations accumulate in a shared state, so writing something new doesn't necessarily remove what's already there. DeltaNet tries to address this through prediction-error-based updates. BDH (Dragon Hatchling) takes another route with Hebbian-style synaptic plasticity. But even with these approaches, there's still the question of when to update something, when to keep it, and how to avoid messing up unrelated memories. I also wonder if we're testing this properly. Most long-context evaluations focus on whether a model can find information. What if we instead tested whether it changes its answer when given newer, contradictory evidence, while still remembering what was previously true? Curious what people here think. Is this mostly a problem with how memory is stored and updated, or with how models reason over conflicting information? Also, are there any good benchmarks specifically targeting this? Would be interested in reading them. submitted by /u/Prestigious-Tip6030 [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-machinelearning-https%3A%2F%2Fwww.reddit.com%2Fr%2FMachineLearning%2Fcomments%2F1xdfeki%2Fstudy_notes_on_transformers_and_hamiltonian_monte%2F",
+      "rank": 8,
+      "title": "Study Notes on Transformers and Hamiltonian Monte Carlo [P]",
+      "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1xdfeki/study_notes_on_transformers_and_hamiltonian_monte/",
+      "sourceName": "Reddit r/MachineLearning",
+      "publishedAt": "2026-10-23T14:20:54.000Z",
+      "sourceExcerpt": "I’m sharing my study notes in case they might be useful to someone else. The Transformer notes are mostly based on the original architecture described in Attention Is All You Need. https://doi.org/10.5281/zenodo.22031925 I’ve also written notes on Hamiltonian Monte Carlo (HMC). https://doi.org/10.5281/zenodo.21841086 I’d appreciate any feedback on the notes, including corrections, suggestions for improvement, or topics you think I should add. submitted by /u/aybehrouz [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-machinelearning-https%3A%2F%2Fwww.reddit.com%2Fr%2FMachineLearning%2Fcomments%2F1xdctou%2Fi_made_transformer_architecture_from_scratch_p%2F",
+      "rank": 9,
+      "title": "I made Transformer Architecture from scratch [P]",
+      "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1xdctou/i_made_transformer_architecture_from_scratch_p/",
+      "sourceName": "Reddit r/MachineLearning",
+      "publishedAt": "2026-10-23T12:36:12.000Z",
+      "sourceExcerpt": "I implemented the 2017 transformer architecture using pytorch, the model right now doesn't predict very good due to the fact that I am using on 2 layers of encoder and decoder with just 1000 sentences to train it , due to the fact that it takes a lot of time to train my implementation. Looking at the code is there a way that I can reduce the time it takes for training or maybe improve its results? submitted by /u/Jumbledsaturn52 [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-machinelearning-https%3A%2F%2Fwww.reddit.com%2Fr%2FMachineLearning%2Fcomments%2F1xd7bsu%2Fi_just_came_across_nextconcept_modeling_and_the%2F",
+      "rank": 10,
+      "title": "I just came across Next-Concept Modeling and the idea is fascinating[R]",
+      "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1xd7bsu/i_just_came_across_nextconcept_modeling_and_the/",
+      "sourceName": "Reddit r/MachineLearning",
+      "publishedAt": "2026-10-23T07:24:12.000Z",
+      "sourceExcerpt": "I've been learning how language models work, especially next-token prediction, and came across this paper on Next-Concept Modeling (NCM). The interesting part is how it generates text. Instead of predicting tokens one by one, NCM learns a hierarchy of discrete codes. It generates the coarse level first, then predicts the codes at each finer level in parallel. A decoder finally converts those representations into text. The researchers report up to 31x faster generation compared with diffusion language model baselines on specific benchmarks. I'm still learning about the architecture, especially the VQ-VAE part. Curious if anyone here has explored this approach. Paper: https://arxiv.org/abs/2610.14162 submitted by /u/PanelReader [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-machinelearning-https%3A%2F%2Fwww.reddit.com%2Fr%2FMachineLearning%2Fcomments%2F1xeu0ht%2Fmemt10_architecture_breakdown_gated_deltanet2%2F",
+      "rank": 11,
+      "title": "memt-1.0 architecture breakdown gated deltanet-2, mixture-of-storage, and 66x smaller storage footprint for agent memory [D]",
+      "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1xeu0ht/memt10_architecture_breakdown_gated_deltanet2/",
+      "sourceName": "Reddit r/MachineLearning",
+      "publishedAt": "2026-10-25T05:31:19.000Z",
+      "sourceExcerpt": "been digesting the details behind memt-1.0's memory-native architecture recently, and the engineering tradeoffs between full context kv caching and internalized parametric memory are pretty wild. instead of using append-only prompt stacking or external rag pipelines, memt-1.0 bakes memory directly into the model computation layer using gated deltanet-2 with a stable token-level memory update mechanism within each turn, combined with a mixture-of-storage (mos) layer to scale capacity. a few quick technical takeaways from the setup: internalizing procedural experience: standard agents retrieve past execution logs as raw text, which bloats the context window. memt-1.0 continuously internalizes retrieved procedural experience into model weights/states during multi-turn agentic tasks. efficiency at 128k context: at a history length of 128k tokens, memt-1.0-nano delivers roughly 1.86x end-to-end inference speedup and a 66x reduction in persistent storage compared to a full-context kv cache setup. general capability preservation: training parametric memory layers usually degrades base llm capabilities, but their two-stage training pipeline (continued pre-training + post-training across 34b tokens) keeps general reasoning competitive while outperforming existing parametric memory baselines. for those building long-horizon agents, is internalizing state via architecture-level update layers (like gated deltanet / mos) the endgame to escape kv cache memory bottlenecks? submitted by /u/Mrs-Grumpy23 [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-machinelearning-https%3A%2F%2Fwww.reddit.com%2Fr%2FMachineLearning%2Fcomments%2F1xdhf7r%2Fr_the_hive_mind_is_a_single_reinforcement%2F",
+      "rank": 12,
+      "title": "[R] The Hive Mind is a Single Reinforcement Learning Agent: Deriving the Exact Equivalence Between Swarm Dynamics and Multi-Armed Bandits",
+      "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1xdhf7r/r_the_hive_mind_is_a_single_reinforcement/",
+      "sourceName": "Reddit r/MachineLearning",
+      "publishedAt": "2026-10-23T15:37:23.000Z",
+      "sourceExcerpt": "TL;DR We prove a mathematical equivalence between collective decision-making via local imitation (such as honey bees choosing a nest site via the waggle dance) and single-agent Reinforcement Learning (RL) in a multi-armed bandit setting. Even when individual members have no learning capability and merely blindly imitate peers, the population distribution pi updates according to a macroscopic bandit RL algorithm that we call Maynard-Cross Learning (MCL), where N individuals act as N parallel environment rollouts with an effective per-sample step size of alpha = 1/N. Main intuition In nature, optimal decision-making emerges through two seemingly distinct paradigms: Individual trial-and-error (RL): A single agent interacts with its environment and updates its policy based on reward signals. Collective imitation (Swarm Intelligence / Evolutionary Game Theory): Simple individuals copy neighbors' strategies (e.g., best-of-n collective decision-making). Biologists have long described insect colonies as \"superorganisms\" or \"hive minds\" with parallels to vertebrate brains. We wanted to see if this metaphor holds up mathematically under the lens of RL: Does a swarm of non-learning imitators literally execute a single-agent RL update at the macro level? Core development The paper's core theoretical development establishes a mathematical equivalence between decentralized social imitation in large populations and single-agent reinforcement learning (RL) in multi-armed bandits. By treating the proportion of individuals committed to each option as the action-probability policy of a single macro-agent, we use evolutionary replicator dynamics to bridge local individual interactions and global policy updates. First, we show that a population following the classic \"imitation of success\" protocol (where individuals copy neighbors with a probability proportional to those neighbors' payoffs) evolves identically to the expected update of the Cross Learning bandit algorithm. Extending this approach to the \"weighted voter\" model of the honey bee waggle dance (where scouts advertise nesting sites for a duration proportional to site quality and peers blindly copy the first advertisement they encounter without comparing payoffs) we derive a new macro-level RL algorithm that we call Maynard-Cross Learning. Under this duality, each non-learning individual acts as a single parallel environment sample whose fractional influence on the group mirrors an RL learning rate equal to the inverse of the swarm size. In practice, this development demonstrates how blind local imitation aggregates into a coherent, parallelized reinforcement learner at the collective level. Impact By proving a mathematical equivalence between local social imitation and single-agent reinforcement learning, this work provides a formal mechanism explaining how \"hive mind\" intelligence and trial-and-error learning emerge at the group level from simple, non-learning individuals. Beyond substantiating evolutionary theories of collective cognition in biology, this framework offers new tools for analyzing imitative dynamics in social and economic systems and for designing scalable, decentralized swarm robotics algorithms. Links Paper: https://arxiv.org/abs/2410.17517 Project page: https://hivemind.yannbouteiller.com/ Code/reproducibility: https://github.com/MISTLab/HiveMindRL submitted by /u/mistlab [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-machinelearning-https%3A%2F%2Fwww.reddit.com%2Fr%2FMachineLearning%2Fcomments%2F1xcurgj%2Fi_built_openxttstrainer_now_you_can_add_new%2F",
+      "rank": 13,
+      "title": "I built Open-XTTS-Trainer: Now you can add new language scripts and train all 3 XTTS v2 components in 1 click [P]",
+      "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1xcurgj/i_built_openxttstrainer_now_you_can_add_new/",
+      "sourceName": "Reddit r/MachineLearning",
+      "publishedAt": "2026-10-22T21:03:28.000Z",
+      "sourceExcerpt": "TL;DR: When Coqui AI shut down, they left XTTS v2 without official training code for the DVAE audio tokenizer and Latent HiFi-GAN vocoder, and fine-tuning new scripts (Arabic, Indic, etc.) broke on fixed vocabularies. I built Open-XTTS-Trainer — an open-source, modular 3-component training suite under MPL-2.0 with verified GPU loss convergence on real human speech and a 1-click Colab demo. Why I Built This XTTS v2 is one of the best local zero-shot TTS models we have, but training/adapting it has been painful since Coqui closed: Missing Component Recipes: Only GPT fine-tuning was commonly available. Stage 1 (DVAE) and Stage 3 (HiFi-GAN vocoder) training pipelines were either unreleased or fragmented. The Tokenizer Wall: XTTS was hardcoded for 17 languages. Feeding text with new Unicode scripts (Hindi, Arabic, Thai, Dhivehi, etc.) caused token out-of-vocab or matrix dimension crashes. Dependency Rot: Upgrading to modern PyTorch (2.4+) broke on missing torchcodec and licensing prompts. What’s in the Suite Stage 1 (Audio Tokenizer — DVAE): Full training & fine-tuning loop with Gumbel-Softmax codebook annealing and mel-spectrogram reconstruction loss. Stage 2 (Text & Vocab Extender — GPT): Scans a new language corpus, discovers unique Unicode glyphs, appends them to the tokenizer, and dynamically resizes the GPT embedding matrix without corrupting existing weights. Includes the autoregressive GPT training loop. Stage 3 (Neural Vocoder — Latent HiFi-GAN): Latent-conditioned vocoder training with Multi-Period (MPD) and Multi-Scale (MSD) discriminators and feature-matching loss. Dependency-Rot Free: Runs out-of-the-box on modern PyTorch (Python 3.10–3.13) without torchcodec blocking. Verification & GPU Benchmarks Tested on an NVIDIA T4 GPU using real human speech (LJSpeech + JFK address): HiFi-GAN Mel Reconstruction Loss: Plunged 67% ($190.83 \\rightarrow 63.49$) over 10 epochs. Discriminator Equilibrium: MPD + MSD stabilized cleanly at 3.62 (no mode collapse). DVAE Mel Error: Dropped 67% ($8.14 \\rightarrow 2.71$). (Note: These benchmarks verify component-level training convergence and gradient stability. Full end-to-end text-to-speech inference connects the trained modules into the standard XTTS generation pipeline). Links & Code GitHub: https://github.com/amitbhakt/open-xtts-trainer Hugging Face: https://huggingface.co/amitbhakt/open-xtts-trainer 1-Click Google Colab: open_xtts_train_demo.ipynb License: Mozilla Public License 2.0 (MPL-2.0) Feedback, PRs, and experiments with new languages are very welcome! submitted by /u/yashubhakt [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-machinelearning-https%3A%2F%2Fwww.reddit.com%2Fr%2FMachineLearning%2Fcomments%2F1xdekrf%2Fis_symbolic_ai_dead_d%2F",
+      "rank": 14,
+      "title": "Is symbolic ai dead? [D]",
+      "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1xdekrf/is_symbolic_ai_dead_d/",
+      "sourceName": "Reddit r/MachineLearning",
+      "publishedAt": "2026-10-23T13:49:16.000Z",
+      "sourceExcerpt": "New research keeps finding things that keep reintroducing symbolic ai structures to machine learning and I have wondered why more research hasnt been done with it. There was a heyday in the 70s for it but after neural nets came out it seems to be completely out of the discussions. I think it could make a comeback if we can resolve the primary issues of self-instantiation and feedback loops. Even using several random reservoir nets and a little bit of math creates strong signals for the component parts that contribute to what something is made of and how it works. submitted by /u/Velocitank [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "arstechnica-ai-https%3A%2F%2Farstechnica.com%2Fsecurity%2F2026%2F10%2Fdisgraced-emudhra-drops-out-of-tls-business-following-certificate-debacle%2F",
+      "rank": 15,
+      "title": "Disgraced eMudhra drops out of TLS business after using cert private key of 4",
+      "sourceUrl": "https://arstechnica.com/security/2026/10/disgraced-emudhra-drops-out-of-tls-business-following-certificate-debacle/",
+      "sourceName": "Ars Technica AI",
+      "publishedAt": "2026-10-22T20:17:52.000Z",
+      "sourceExcerpt": "eMudhra, the certificate authority that issued eight intermediate TLS credentials so weak that anyone could mint certificates for any website or mail server—one had a private encryption key of just 4—said it’s getting out of the business. V. Srinivasan, chairman of India-based eMudhra Limited, cited increasing costs and complexities of compliance requirements—paired with the business generating just 1 percent of its revenue. He also said that the emergence of organizations providing TLS certificates free of charge further reduced returns on investment when compared to other products and services the company offers. Don't let the door hit you on the butt “However, the level of social media amplification around this incident has brought scrutiny that is out of proportion to SSL/TLS’s place in our business,” the company continued in a Thursday post. “In view of this, after detailed deliberations our board has concluded that withdrawing from global SSL/TLS is the right decision for eMudhra and its shareholders.” Read full article Comments",
+      "summary": ""
+    },
+    {
+      "id": "reddit-machinelearning-https%3A%2F%2Fwww.reddit.com%2Fr%2FMachineLearning%2Fcomments%2F1xdkcav%2Fstenosis_detection_in_coronary_angiograms_need%2F",
+      "rank": 16,
+      "title": "Stenosis detection in coronary angiograms, need recall over precision [D]",
+      "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1xdkcav/stenosis_detection_in_coronary_angiograms_need/",
+      "sourceName": "Reddit r/MachineLearning",
+      "publishedAt": "2026-10-23T17:25:52.000Z",
+      "sourceExcerpt": "Starting a project to detect candidate stenoses in x-ray coronary angiograms. The goal is high recall, false positives are fine as long as it doesn't flag half the image. I already tried YOLO on a couple of in-house datasets earlier. It looked fine in-domain and fell apart on the other dataset, and a big chunk of that turned out to be annotation format. One set had fixed-size boxes around a point, the other had boxes fitted to the lesion. Same disease, basically two different tasks. I also have vessel segmentation and centerlines, so my first instinct is a radius profile along the vessel to flag narrowing, then maybe a network to filter the candidates. Has anyone actually done something like that, or is there a smarter way in? The part that bugs me most is evaluation. The labels come from doctors and they obviously don't mark every narrowing, so any recall I compute against them is probably too optimistic. How do you get an honest number when the ground truth is incomplete? Also open to papers, repos, or public datasets beyond ARCADE. And if you think I'm approaching this wrong, say so. submitted by /u/Future-Structure-296 [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-machinelearning-https%3A%2F%2Fwww.reddit.com%2Fr%2FMachineLearning%2Fcomments%2F1xdbvrf%2Fhow_does_arxiv_prepublishing_work_with_iclrs%2F",
+      "rank": 17,
+      "title": "How does arXiv prepublishing work with ICLR's double-blind review? [R]",
+      "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1xdbvrf/how_does_arxiv_prepublishing_work_with_iclrs/",
+      "sourceName": "Reddit r/MachineLearning",
+      "publishedAt": "2026-10-23T11:51:47.000Z",
+      "sourceExcerpt": "Hey folks, maybe a really dumb question from an inexperienced PhD student. I recently submitted to ICLR and spotted a bunch of papers that I was already familiar with because I had seen them on arXiv before. Doesn't this break the double-blind review process? I mean, on the one hand, people pre-publishing their work want to establish priority as quickly as possible, but on the other hand, they still want their papers to be treated as valid submissions in a double-blind review system. I generally avoid pre-publishing my work for this reason, although this can cause some trouble when it comes to novelty claims, because I'm worried about getting desk-rejected. I mean, I can just Google the paper title or even parts of the abstract and immediately find the preprint. It seems quite frustrating... submitted by /u/richapeee [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-machinelearning-https%3A%2F%2Fwww.reddit.com%2Fr%2FMachineLearning%2Fcomments%2F1xcum4s%2Fwe_shrank_our_steerable_small_tts_to_1184_mb_wer%2F",
+      "rank": 18,
+      "title": "We shrank our steerable small TTS to 11.84 MB. WER is unchanged, UTMOS drops ~0.1 [p]",
+      "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1xcum4s/we_shrank_our_steerable_small_tts_to_1184_mb_wer/",
+      "sourceName": "Reddit r/MachineLearning",
+      "publishedAt": "2026-10-22T20:57:42.000Z",
+      "sourceExcerpt": "A while back I posted SteerTTS v1, a small English TTS you steer with numbers (https://huggingface.co/WhissleAI/steer-tts). Today I am releasing the edge variant: https://huggingface.co/WhissleAI/steer-tts-edge Size: everything an app has to ship (weights, voices, text front end and Python runtime) totals 11.84 MB. How: Acoustic model (9.25M params, attention + bidirectional Mamba-3) is quantization-aware trained to int4 6.2M-param Vocos-style vocoder is distilled from charactr/vocos-mel-24khz, also int4 QAT Text front end is pure numpy, with no NLTK, g2p_en, torchaudio or num2words at runtime Quality (Open TTS Leaderboard protocol, run locally, not an official submission): Seed-TTS WER / UTMOS CV3-Eval WER / UTMOS v1 fp32 (no refiner) 0.96% / 4.20 edge 0.96% / 4.11 Intelligibility is essentially unchanged. UTMOS drops about 0.1, almost all of it from the small int4 vocoder. Steering survives quantization. Every one of the 12 controls (rate, loudness, pitch, pitch range, final rise, pauses, tilt, breathiness, and more) keeps at least 95% of its fp32 effect. You also get 50 style tags and inline markup: Well, *that* was fast. [pause 400ms] <slow>Let me think.</slow> <whisper>Don't tell anyone.</whisper> Speed (CPU only, a 2018 Threadripper under load): RTF 0.053 with 4 threads (~19x realtime), ~120 ms to first audio, with sentence-level streaming. Limitations: English only, and 200 voices (a subset of the full model’s 2,825) No voice cloning, free-text prompts or flow refiner on device. Those stay in the full model. Weights are dequantized to fp32 at load, so the win is size, not speed. Unless we write new kernels for edge devices. Emotion tags are mostly style switches, and fast/anger are weak I need feedback, especially on the vocoder quality gap and any edge targets you’d like to see (ONNX, mobile, WASM). Some examples here: https://whissleai.github.io/steer-tts/ submitted by /u/Working_Hat5120 [link] [comments]",
+      "summary": ""
+    }
+  ]
+}
