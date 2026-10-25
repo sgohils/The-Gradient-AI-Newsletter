@@ -476,7 +476,7 @@
         "sourceUrl": "https://www.reddit.com/r/artificial/comments/1x8oizy/who_will_win_in_ai_race/",
         "sourceName": "Reddit r/artificial",
         "publishedAt": "2026-10-17T23:37:42.000Z",
-        "sourceExcerpt": "As I am thinking about AI I feel like the companies Open AI and Atrophic I just purely set up to win the race. Isn't AI race is all about compute power? And the companies like Meta, Microsoft, Google already better positioned because they own a lot of infrastructure? And infrastructure is not only the data centers but also tool that can benefit integrating LLM's with it (Android, Office, Social Networks)? Or do Open AI or Anthropic have some unknown methods or technology to train models that can't be replicated? I thought everybody using the same tools and same methods the difference only in data that is used? Isn't it the same story that happened with Dropbox or whatever other file share companies were created on that hype train. submitted by /u/JissQuote [link] [comments]",
+        "sourceExcerpt": "",
         "summary": ""
       },
       "selectedAt": "2026-10-18T14:20:34.079Z",
@@ -485,87 +485,10 @@
           "accountId": "6ac27146281ee799a37065e4",
           "status": "published",
           "idempotencyKey": "becff029-0179-4f25-8a0f-2ac11f2b72f5",
-          "request": {
-            "content": "Who will win in AI race?\n\nSource: Reddit r/artificial\nhttps://www.reddit.com/r/artificial/comments/1x8oizy/who_will_win_in_ai_race/\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-10-18\nAI-generated narration. #AI #AINews #Shorts",
-            "mediaItems": [
-              {
-                "type": "video",
-                "url": "https://media.zernio.com/temp/1792333264031_qmzxyle5_2026-10-18.mp4"
-              }
-            ],
-            "platforms": [
-              {
-                "platform": "youtube",
-                "accountId": "6ac27146281ee799a37065e4",
-                "platformSpecificData": {
-                  "title": "Who will win in AI race?",
-                  "visibility": "public",
-                  "madeForKids": false,
-                  "containsSyntheticMedia": true,
-                  "categoryId": "28"
-                }
-              }
-            ],
-            "publishNow": true
-          },
           "firstSubmittedAt": "2026-10-18T14:21:06.802Z",
           "postId": "6ad4d5d46e31af6c3426a89f",
           "postUrl": "https://www.youtube.com/watch?v=Asyt3zJw3iw"
         }
-      },
-      "script": {
-        "version": 3,
-        "provider": "extractive",
-        "format": "source-fallback",
-        "angle": "capability",
-        "workingTitle": "Who will win in AI race?",
-        "availability": "unknown",
-        "hookStyle": "question",
-        "sentences": [
-          {
-            "text": "Would you use Who will win in?",
-            "evidenceQuote": "As I am thinking about AI I feel like the companies Open AI and Atrophic I just purely set up to win the race. Isn't AI race is all about compute power? And the companies like Meta, Microsoft, Google already better positioned because they own a lot of infrastructure? And infrastructure is not only the data centers but also tool that can benefit integrating LLM's with it (Android, Office, Social Networks)? Or do Open AI or Anthropic have some unknown methods or technology to train models that can't be replicated? I thought everybody using the same tools and same methods the difference only in data that is used? Isn't it the same story that happened with Dropbox or whatever other file share companies were created on that hype train. submitted by /u/JissQuote [link] [comments]",
-            "role": "hook",
-            "visual": "example",
-            "displayText": "Would you use Who will win in?"
-          },
-          {
-            "text": "And the companies like Meta, Microsoft, Google already better positioned because they own a lot of infrastructure?",
-            "evidenceQuote": "And the companies like Meta, Microsoft, Google already better positioned because they own a lot of infrastructure?",
-            "role": "breakthrough",
-            "visual": "example",
-            "displayText": "And the companies like Meta"
-          },
-          {
-            "text": "And infrastructure is not only the data centers but also tool that can benefit integrating LLM's with it (Android, Office, Social Networks)?",
-            "evidenceQuote": "And infrastructure is not only the data centers but also tool that can benefit integrating LLM's with it (Android, Office, Social Networks)?",
-            "role": "breakthrough",
-            "visual": "process",
-            "displayText": "And infrastructure is not only the data centers"
-          },
-          {
-            "text": "Or do Open AI or Anthropic have some unknown methods or technology to train models that can't be replicated?",
-            "evidenceQuote": "Or do Open AI or Anthropic have some unknown methods or technology to train models that can't be replicated?",
-            "role": "breakthrough",
-            "visual": "process",
-            "displayText": "Or do Open AI or Anthropic have some"
-          },
-          {
-            "text": "This source excerpt does not confirm public access.",
-            "evidenceQuote": "As I am thinking about AI I feel like the companies Open AI and Atrophic I just purely set up to win the race.",
-            "role": "impact",
-            "visual": "highlight",
-            "displayText": "does not confirm public access"
-          },
-          {
-            "text": "Would you try Who will win in, or wait for more proof?",
-            "evidenceQuote": "As I am thinking about AI I feel like the companies Open AI and Atrophic I just purely set up to win the race. Isn't AI race is all about compute power? And the companies like Meta, Microsoft, Google already better positioned because they own a lot of infrastructure? And infrastructure is not only the data centers but also tool that can benefit integrating LLM's with it (Android, Office, Social Networks)? Or do Open AI or Anthropic have some unknown methods or technology to train models that can't be replicated? I thought everybody using the same tools and same methods the difference only in data that is used? Isn't it the same story that happened with Dropbox or whatever other file share companies were created on that hype train. submitted by /u/JissQuote [link] [comments]",
-            "role": "engagement",
-            "visual": "highlight",
-            "displayText": "Would you try Who will win"
-          }
-        ],
-        "narration": "Would you use Who will win in? And the companies like Meta, Microsoft, Google already better positioned because they own a lot of infrastructure? And infrastructure is not only the data centers but also tool that can benefit integrating LLM's with it (Android, Office, Social Networks)? Or do Open AI or Anthropic have some unknown methods or technology to train models that can't be replicated? This source excerpt does not confirm public access. Would you try Who will win in, or wait for more proof?"
       },
       "presentation": {
         "title": "Who will win in AI race?",
@@ -1278,6 +1201,104 @@
         "publicUrl": "https://media.zernio.com/temp/1792851454241_i1j38ut0_2026-10-24.mp4",
         "videoSha256": "3d17cd3951cd24d6fadbd8a2cfbff551408c6618c7869fa534682b9ce3ecee4a",
         "uploadedAt": "2026-10-24T14:17:35.672Z"
+      }
+    },
+    "2026-10-25": {
+      "story": {
+        "id": "reddit-machinelearning-https%3A%2F%2Fwww.reddit.com%2Fr%2FMachineLearning%2Fcomments%2F1xd7bsu%2Fi_just_came_across_nextconcept_modeling_and_the%2F",
+        "rank": 10,
+        "title": "I just came across Next-Concept Modeling and the idea is fascinating[R]",
+        "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1xd7bsu/i_just_came_across_nextconcept_modeling_and_the/",
+        "sourceName": "Reddit r/MachineLearning",
+        "publishedAt": "2026-10-23T07:24:12.000Z",
+        "sourceExcerpt": "I've been learning how language models work, especially next-token prediction, and came across this paper on Next-Concept Modeling (NCM). The interesting part is how it generates text. Instead of predicting tokens one by one, NCM learns a hierarchy of discrete codes. It generates the coarse level first, then predicts the codes at each finer level in parallel. A decoder finally converts those representations into text. The researchers report up to 31x faster generation compared with diffusion language model baselines on specific benchmarks. I'm still learning about the architecture, especially the VQ-VAE part. Curious if anyone here has explored this approach. Paper: https://arxiv.org/abs/2610.14162 submitted by /u/PanelReader [link] [comments]",
+        "summary": ""
+      },
+      "selectedAt": "2026-10-25T14:51:02.649Z",
+      "platforms": {
+        "youtube": {
+          "accountId": "6ac27146281ee799a37065e4",
+          "status": "prepared",
+          "idempotencyKey": "e9d6e851-5db3-4bd6-864f-b43c7f6f53cb"
+        }
+      },
+      "script": {
+        "version": 3,
+        "provider": "extractive",
+        "format": "source-fallback",
+        "angle": "capability",
+        "workingTitle": "I just came across Next-Concept Modeling and the",
+        "availability": "research",
+        "hookStyle": "question",
+        "sentences": [
+          {
+            "text": "Would you use I just came across?",
+            "evidenceQuote": "I've been learning how language models work, especially next-token prediction, and came across this paper on Next-Concept Modeling (NCM). The interesting part is how it generates text. Instead of predicting tokens one by one, NCM learns a hierarchy of discrete codes. It generates the coarse level first, then predicts the codes at each finer level in parallel. A decoder finally converts those representations into text. The researchers report up to 31x faster generation compared with diffusion language model baselines on specific benchmarks. I'm still learning about the architecture, especially the VQ-VAE part. Curious if anyone here has explored this approach. Paper: https://arxiv.org/abs/2610.14162 submitted by /u/PanelReader [link] [comments]",
+            "role": "hook",
+            "visual": "example",
+            "displayText": "Would you use I just came across?"
+          },
+          {
+            "text": "I've been learning how language models work, especially next-token prediction, and came across this paper on Next-Concept Modeling (NCM).",
+            "evidenceQuote": "I've been learning how language models work, especially next-token prediction, and came across this paper on Next-Concept Modeling (NCM).",
+            "role": "breakthrough",
+            "visual": "example",
+            "displayText": "I've been learning how language models work"
+          },
+          {
+            "text": "The interesting part is how it generates text.",
+            "evidenceQuote": "The interesting part is how it generates text.",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "The interesting part is how it generates text"
+          },
+          {
+            "text": "Instead of predicting tokens one by one, NCM learns a hierarchy of discrete codes.",
+            "evidenceQuote": "Instead of predicting tokens one by one, NCM learns a hierarchy of discrete codes.",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "Instead of predicting tokens one by one"
+          },
+          {
+            "text": "The researchers report up to 31x faster generation compared with diffusion language model baselines on specific benchmarks.",
+            "evidenceQuote": "The researchers report up to 31x faster generation compared with diffusion language model baselines on specific benchmarks.",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "Up to 31x faster generation compared with diffusion"
+          },
+          {
+            "text": "This source excerpt does not confirm public access.",
+            "evidenceQuote": "I've been learning how language models work, especially next-token prediction, and came across this paper on Next-Concept Modeling (NCM).",
+            "role": "impact",
+            "visual": "highlight",
+            "displayText": "does not confirm public access"
+          },
+          {
+            "text": "Would you try I just came across, or wait for more proof?",
+            "evidenceQuote": "I've been learning how language models work, especially next-token prediction, and came across this paper on Next-Concept Modeling (NCM). The interesting part is how it generates text. Instead of predicting tokens one by one, NCM learns a hierarchy of discrete codes. It generates the coarse level first, then predicts the codes at each finer level in parallel. A decoder finally converts those representations into text. The researchers report up to 31x faster generation compared with diffusion language model baselines on specific benchmarks. I'm still learning about the architecture, especially the VQ-VAE part. Curious if anyone here has explored this approach. Paper: https://arxiv.org/abs/2610.14162 submitted by /u/PanelReader [link] [comments]",
+            "role": "engagement",
+            "visual": "highlight",
+            "displayText": "Would you try I just came across"
+          }
+        ],
+        "narration": "Would you use I just came across? I've been learning how language models work, especially next-token prediction, and came across this paper on Next-Concept Modeling (NCM). The interesting part is how it generates text. Instead of predicting tokens one by one, NCM learns a hierarchy of discrete codes. The researchers report up to 31x faster generation compared with diffusion language model baselines on specific benchmarks. This source excerpt does not confirm public access. Would you try I just came across, or wait for more proof?"
+      },
+      "presentation": {
+        "title": "I just came across Next-Concept Modeling and the",
+        "format": "source-fallback",
+        "angle": "capability",
+        "hookStyle": "question",
+        "availability": "research",
+        "duration": 37.975,
+        "wordCount": 85,
+        "scriptVersion": 3
+      },
+      "selectionReason": "Fresh AI news with original evidence; no clearer video angle found.",
+      "contentHash": "5347c67cf4a818c44681537ff6f2841fddec644d758a92f8d5a85fe6711c13e3",
+      "media": {
+        "publicUrl": "https://media.zernio.com/temp/1792939895979_v04lv8sc_2026-10-25.mp4",
+        "videoSha256": "f7c6c54e54bbf117ced95f5993ef8dd0a062adcc3f7fa77f39778b3c0b653c94",
+        "uploadedAt": "2026-10-25T14:51:36.814Z"
       }
     }
   }
