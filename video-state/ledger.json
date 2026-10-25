@@ -1218,8 +1218,32 @@
       "platforms": {
         "youtube": {
           "accountId": "6ac27146281ee799a37065e4",
-          "status": "prepared",
-          "idempotencyKey": "e9d6e851-5db3-4bd6-864f-b43c7f6f53cb"
+          "status": "submitting",
+          "idempotencyKey": "e9d6e851-5db3-4bd6-864f-b43c7f6f53cb",
+          "request": {
+            "content": "I just came across Next-Concept Modeling and the idea is fascinating[R]\n\nSource: Reddit r/MachineLearning\nhttps://www.reddit.com/r/MachineLearning/comments/1xd7bsu/i_just_came_across_nextconcept_modeling_and_the/\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-10-25\nAI-generated narration. #AI #AINews #Shorts",
+            "mediaItems": [
+              {
+                "type": "video",
+                "url": "https://media.zernio.com/temp/1792939895979_v04lv8sc_2026-10-25.mp4"
+              }
+            ],
+            "platforms": [
+              {
+                "platform": "youtube",
+                "accountId": "6ac27146281ee799a37065e4",
+                "platformSpecificData": {
+                  "title": "I just came across Next-Concept Modeling and the",
+                  "visibility": "public",
+                  "madeForKids": false,
+                  "containsSyntheticMedia": true,
+                  "categoryId": "28"
+                }
+              }
+            ],
+            "publishNow": true
+          },
+          "firstSubmittedAt": "2026-10-25T14:51:38.181Z"
         }
       },
       "script": {
