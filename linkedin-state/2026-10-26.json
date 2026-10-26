@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "issueDate": "2026-10-26",
+  "issueUrl": "https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-10-26",
+  "content": "Today's AI briefing from The Gradient | 2026-10-26\n\n1. Anthropic’s IPO filing reveals its strategy for keeping enterprise customers hooked\nThe S‑1 filing discloses that more than 50% of Anthropic’s enterprise customers with contracts over $100,000 are using a bundled offering – the Claude Platform plus a first‑party application built on top of it. This mirrors Amazon’s strategy of pairing core services with proprietary add‑ons to increase usage.\n\n2. TACS-RF: Tool-driven Agentic Circuit Synthesis of RF and mmWave Modules\nResearchers introduced TACS‑RF, a tool‑driven agentic circuit synthesis framework where the Claude Opus 4.8 LLM directly controls Cadence Virtuoso/Spectre, Calibre, Cadence EMX, and Ansys HFSS to design RF and mmWave modules. The system successfully generated a 240–251 GHz sub‑THz transmitter.\n\n3. Beyond On-Policy vs. Off-Policy: At What Level Should LLM Agent Distillation Follow the Student?\nResearchers introduced a hierarchical framework that separates the policy governing the interaction history from the policy that selects the token prefix of each action. This reframes distillation as a multi‑level problem rather than a binary choice.\n\nRead the full briefing and original sources:\nhttps://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-10-26\n\n#AI #ArtificialIntelligence #TheGradient",
+  "contentHash": "22958161e452d16a61fe131d70d9583e75646b665610cdf2b51d6b640b75b9b9",
+  "accountId": "6ac5a561b3c21905c0edcfba",
+  "organizationUrn": "urn:li:organization:136824048",
+  "idempotencyKey": "88beddc1-a35d-4a82-b85c-f241d9ea09df",
+  "status": "submitting",
+  "firstSubmittedAt": "2026-10-26T17:07:22.307Z"
+}
