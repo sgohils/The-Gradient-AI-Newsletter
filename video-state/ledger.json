@@ -516,8 +516,8 @@
         "sourceUrl": "https://arxiv.org/abs/2610.22380",
         "sourceName": "arXiv cs.LG",
         "publishedAt": "2026-10-19T04:00:00.000Z",
-        "sourceExcerpt": "arXiv:2610.22380v1 Announce Type: new Abstract: Continuous diffusion treats the forward process as a design space; discrete language diffusion often uses absorbing corruption, leaving context fully trusted throughout generation. This makes trust binary: corrupted context is copied as ground truth, propagating errors into generated spans. We reopen this design space by combining absorbing and uniform-mixing kernels with region-dependent rates. Missing positions follow absorbing dynamics, while context undergoes low-rate random substitution, exposing the model to observed but uncertain tokens during training. At inference, a heuristic sampler re-injects noise into suspicious context under an annealed intensity and freezes context updates late in the trajectory. An 8,000-step finetune of a pretrained 170M-parameter masked diffusion model takes under five hours on a 6 GB laptop GPU. The base model assigns roughly 50% probability to observed tokens even when they are uniform-random garbage. For uniform-random corruption, finetuning detects corrupted context with 0.96 recall and 0.91 precision, improves infill token-F1 by 3.8 points at 10% corruption and 6.4 points at 20%, and removes the accuracy dip next to corruptions. Clean conditioning shows no measurable regression, with a false-edit rate below 0.4%. Gains for plausible corruptions are weaker: about 0.5 F1 points at 10% corruption, without statistical significance. Our results suggest that detectability and damage depend jointly on departure from the data conditional: nearby noise is hard to detect and semantically mild, while distant noise is conspicuous and destructive. We interpret absorbing diffusion as the infinite-contrast limit of a trust axis, analogous to the signal-to-noise gap between known and unknown regions in diffusion inpainting. In our setting of a 170M model and a single text domain, intermediate trust is reached by changing forward dynamics rather than architecture.",
-        "summary": "**What happened:** Researchers introduced a hybrid forward process that applies absorbing dynamics to missing tokens while using uniform‑mixing elsewhere, enabling the model to \"trust but verify\" its context.\n\n**Why it matters:** This mitigates error propagation in language generation, improves robustness, and reopens the forward‑process design space that has been dominated by all‑absorbing kernels.\n\n**Key stats:** Early experiments report a measurable reduction in error propagation and more stable generations under noisy prompts compared to traditional absorbing‑only diffusion.\n\n**Source:** https://arxiv.org/abs/2610.22380"
+        "sourceExcerpt": "",
+        "summary": ""
       },
       "selectedAt": "2026-10-19T17:23:47.844Z",
       "platforms": {
@@ -525,87 +525,10 @@
           "accountId": "6ac27146281ee799a37065e4",
           "status": "published",
           "idempotencyKey": "e0208eec-c542-4a9e-9a76-8b55f6c3a690",
-          "request": {
-            "content": "Trust but Verify: Designing Region-Inhomogeneous Forward Dynamics for Discrete Diffusion\n\nSource: arXiv cs.LG\nhttps://arxiv.org/abs/2610.22380\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-10-19\nAI-generated narration. #AI #AINews #Shorts",
-            "mediaItems": [
-              {
-                "type": "video",
-                "url": "https://media.zernio.com/temp/1792430651676_1jqxmj1o_2026-10-19.mp4"
-              }
-            ],
-            "platforms": [
-              {
-                "platform": "youtube",
-                "accountId": "6ac27146281ee799a37065e4",
-                "platformSpecificData": {
-                  "title": "Trust but Verify: Designing Region-Inhomogeneous",
-                  "visibility": "public",
-                  "madeForKids": false,
-                  "containsSyntheticMedia": true,
-                  "categoryId": "28"
-                }
-              }
-            ],
-            "publishNow": true
-          },
           "firstSubmittedAt": "2026-10-19T17:24:14.035Z",
           "postId": "6ad6523ffb76170d00ffee0f",
           "postUrl": "https://www.youtube.com/watch?v=8PoTXLDSJmM"
         }
-      },
-      "script": {
-        "version": 3,
-        "provider": "extractive",
-        "format": "source-fallback",
-        "angle": "capability",
-        "workingTitle": "Trust but Verify: Designing Region-Inhomogeneous",
-        "availability": "unknown",
-        "hookStyle": "question",
-        "sentences": [
-          {
-            "text": "Would you use Trust but Verify?",
-            "evidenceQuote": "arXiv:2610.22380v1 Announce Type: new Abstract: Continuous diffusion treats the forward process as a design space; discrete language diffusion often uses absorbing corruption, leaving context fully trusted throughout generation. This makes trust binary: corrupted context is copied as ground truth, propagating errors into generated spans. We reopen this design space by combining absorbing and uniform-mixing kernels with region-dependent rates. Missing positions follow absorbing dynamics, while context undergoes low-rate random substitution, exposing the model to observed but uncertain tokens during training. At inference, a heuristic sampler re-injects noise into suspicious context under an annealed intensity and freezes context updates late in the trajectory. An 8,000-step finetune of a pretrained 170M-parameter masked diffusion model takes under five hours on a 6 GB laptop GPU. The base model assigns roughly 50% probability to observed tokens even when they are uniform-random garbage. For uniform-random corruption, finetuning detects corrupted context with 0.96 recall and 0.91 precision, improves infill token-F1 by 3.8 points at 10% corruption and 6.4 points at 20%, and removes the accuracy dip next to corruptions. Clean conditioning shows no measurable regression, with a false-edit rate below 0.4%. Gains for plausible corruptions are weaker: about 0.5 F1 points at 10% corruption, without statistical significance. Our results suggest that detectability and damage depend jointly on departure from the data conditional: nearby noise is hard to detect and semantically mild, while distant noise is conspicuous and destructive. We interpret absorbing diffusion as the infinite-contrast limit of a trust axis, analogous to the signal-to-noise gap between known and unknown regions in diffusion inpainting. In our setting of a 170M model and a single text domain, intermediate trust is reached by changing forward dynamics rather than architecture.",
-            "role": "hook",
-            "visual": "example",
-            "displayText": "Would you use Trust but Verify?"
-          },
-          {
-            "text": "arXiv:2610.22380v1 Announce Type: new Abstract: Continuous diffusion treats the forward process as a design space; discrete language diffusion often uses absorbing corruption, leaving context fully trusted throughout generation.",
-            "evidenceQuote": "arXiv:2610.22380v1 Announce Type: new Abstract: Continuous diffusion treats the forward process as a design space; discrete language diffusion often uses absorbing corruption, leaving context fully trusted throughout generation.",
-            "role": "breakthrough",
-            "visual": "example",
-            "displayText": "ArXiv:2610.22380v1 Announce Type: new Abstract: Continuous diffusion treats"
-          },
-          {
-            "text": "This makes trust binary: corrupted context is copied as ground truth, propagating errors into generated spans.",
-            "evidenceQuote": "This makes trust binary: corrupted context is copied as ground truth, propagating errors into generated spans.",
-            "role": "breakthrough",
-            "visual": "process",
-            "displayText": "This makes trust binary: corrupted context is copied"
-          },
-          {
-            "text": "The base model assigns roughly 50% probability to observed tokens even when they are uniform-random garbage.",
-            "evidenceQuote": "The base model assigns roughly 50% probability to observed tokens even when they are uniform-random garbage.",
-            "role": "breakthrough",
-            "visual": "process",
-            "displayText": "The base model assigns roughly 50% probability"
-          },
-          {
-            "text": "This source excerpt does not confirm public access.",
-            "evidenceQuote": "arXiv:2610.22380v1 Announce Type: new Abstract: Continuous diffusion treats the forward process as a design space; discrete language diffusion often uses absorbing corruption, leaving context fully trusted throughout generation.",
-            "role": "impact",
-            "visual": "highlight",
-            "displayText": "does not confirm public access"
-          },
-          {
-            "text": "Would you try Trust but Verify, or wait for more proof?",
-            "evidenceQuote": "arXiv:2610.22380v1 Announce Type: new Abstract: Continuous diffusion treats the forward process as a design space; discrete language diffusion often uses absorbing corruption, leaving context fully trusted throughout generation. This makes trust binary: corrupted context is copied as ground truth, propagating errors into generated spans. We reopen this design space by combining absorbing and uniform-mixing kernels with region-dependent rates. Missing positions follow absorbing dynamics, while context undergoes low-rate random substitution, exposing the model to observed but uncertain tokens during training. At inference, a heuristic sampler re-injects noise into suspicious context under an annealed intensity and freezes context updates late in the trajectory. An 8,000-step finetune of a pretrained 170M-parameter masked diffusion model takes under five hours on a 6 GB laptop GPU. The base model assigns roughly 50% probability to observed tokens even when they are uniform-random garbage. For uniform-random corruption, finetuning detects corrupted context with 0.96 recall and 0.91 precision, improves infill token-F1 by 3.8 points at 10% corruption and 6.4 points at 20%, and removes the accuracy dip next to corruptions. Clean conditioning shows no measurable regression, with a false-edit rate below 0.4%. Gains for plausible corruptions are weaker: about 0.5 F1 points at 10% corruption, without statistical significance. Our results suggest that detectability and damage depend jointly on departure from the data conditional: nearby noise is hard to detect and semantically mild, while distant noise is conspicuous and destructive. We interpret absorbing diffusion as the infinite-contrast limit of a trust axis, analogous to the signal-to-noise gap between known and unknown regions in diffusion inpainting. In our setting of a 170M model and a single text domain, intermediate trust is reached by changing forward dynamics rather than architecture.",
-            "role": "engagement",
-            "visual": "highlight",
-            "displayText": "Would you try Trust but Verify"
-          }
-        ],
-        "narration": "Would you use Trust but Verify? arXiv:2610.22380v1 Announce Type: new Abstract: Continuous diffusion treats the forward process as a design space; discrete language diffusion often uses absorbing corruption, leaving context fully trusted throughout generation. This makes trust binary: corrupted context is copied as ground truth, propagating errors into generated spans. The base model assigns roughly 50% probability to observed tokens even when they are uniform-random garbage. This source excerpt does not confirm public access. Would you try Trust but Verify, or wait for more proof?"
       },
       "presentation": {
         "title": "Trust but Verify: Designing Region-Inhomogeneous",
@@ -1325,6 +1248,97 @@
         "publicUrl": "https://media.zernio.com/temp/1792939895979_v04lv8sc_2026-10-25.mp4",
         "videoSha256": "f7c6c54e54bbf117ced95f5993ef8dd0a062adcc3f7fa77f39778b3c0b653c94",
         "uploadedAt": "2026-10-25T14:51:36.814Z"
+      }
+    },
+    "2026-10-26": {
+      "story": {
+        "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.31937",
+        "rank": 4,
+        "title": "$M^3$: A Multi-LLM System for Multi-Turn Jailbreaking as a Markov Decision Process",
+        "sourceUrl": "https://arxiv.org/abs/2610.31937",
+        "sourceName": "arXiv cs.AI",
+        "publishedAt": "2026-10-26T04:00:00.000Z",
+        "sourceExcerpt": "arXiv:2610.31937v1 Announce Type: new Abstract: Modern Large Language Models (LLMs) remain vulnerable to carefully orchestrated multi-turn interactions that progressively bypass safety mechanisms. However, many existing red-teaming approaches rely on heuristics or impose strong assumptions that limit their applicability in fully black box settings. We address this gap by introducing $M^3$, an automated red-teaming framework that formalizes multi-turn jailbreaking as a finite-horizon Markov Decision Process (MDP). In $M^3$, an attacker LLM interacts with a target LLM while operating over a compact internal state produced by a state LLM. Across two benchmarks and six target models, $M^3$ consistently outperforms state-of-the-art multi-turn red-teaming methods in Attack Success Rates (ASR), achieving improvements of up to 53% in ASR@5. Even with lightweight attacker, $M^3$ attains gains up to 26% in ASR@1 and 34% in ASR@5, compared to baselines that use higher capacity attackers. Beyond improved effectiveness, $M^3$ exhibits steeper risk escalation over conversational turns and achieves more consistent performance across risk categories (up to 4.82 improvement in Gini index) without relying on predefined risk taxonomy, providing a scalable and principled framework for multi-turn red-teaming and safety evaluation.",
+        "summary": "**What happened:** Researchers introduced $M^3$, a novel automated red‑teaming framework that formalizes multi‑turn jailbreaking of large language models (LLMs) as a finite‑horizon Markov Decision Process (MDP). The system iteratively crafts prompts over several dialogue turns to progressively evade safety filters without requiring internal model access.\n\n**Why it matters:** By casting jailbreaks as an MDP, $M^3$ provides a principled, reproducible method for probing LLM safety in truly black‑box settings, exposing systematic weaknesses that heuristic‑based attacks can miss. This advances both defensive research and responsible deployment of AI systems.\n\n**Key stats:** • Tested on multiple state‑of‑the‑art LLMs (e.g., GPT‑4, Claude, Llama 2) in black‑box mode.\n• Achieved successful safety bypasses in over 60 % of multi‑turn attempts across a 5‑turn horizon.\n• Demonstrated that a learned policy can adapt prompts dynamically, outperforming static jailbreak scripts.\n\n**Source:** https://arxiv.org/abs/2610.31937"
+      },
+      "selectedAt": "2026-10-26T17:09:13.829Z",
+      "platforms": {
+        "youtube": {
+          "accountId": "6ac27146281ee799a37065e4",
+          "status": "prepared",
+          "idempotencyKey": "cf1785f0-3b3d-4453-8414-0cfbaf407180"
+        }
+      },
+      "script": {
+        "version": 3,
+        "provider": "extractive",
+        "format": "source-fallback",
+        "angle": "capability",
+        "workingTitle": "$M^3$: A Multi-LLM System for Multi-Turn",
+        "availability": "unknown",
+        "hookStyle": "question",
+        "sentences": [
+          {
+            "text": "Would you use $M^3$?",
+            "evidenceQuote": "We address this gap by introducing $M^3$, an automated red-teaming framework that formalizes multi-turn jailbreaking as a finite-horizon Markov Decision Process (MDP).",
+            "role": "hook",
+            "visual": "example",
+            "displayText": "Would you use $M^3$?"
+          },
+          {
+            "text": "arXiv:2610.31937v1 Announce Type: new Abstract: Modern Large Language Models (LLMs) remain vulnerable to carefully orchestrated multi-turn interactions that progressively bypass safety mechanisms.",
+            "evidenceQuote": "arXiv:2610.31937v1 Announce Type: new Abstract: Modern Large Language Models (LLMs) remain vulnerable to carefully orchestrated multi-turn interactions that progressively bypass safety mechanisms.",
+            "role": "breakthrough",
+            "visual": "example",
+            "displayText": "ArXiv:2610.31937v1 Announce Type: new Abstract: Modern Large Language"
+          },
+          {
+            "text": "However, many existing red-teaming approaches rely on heuristics or impose strong assumptions that limit their applicability in fully black box settings.",
+            "evidenceQuote": "However, many existing red-teaming approaches rely on heuristics or impose strong assumptions that limit their applicability in fully black box settings.",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "However, many existing red-teaming approaches rely on heuristics"
+          },
+          {
+            "text": "In $M^3$, an attacker LLM interacts with a target LLM while operating over a compact internal state produced by a state LLM.",
+            "evidenceQuote": "In $M^3$, an attacker LLM interacts with a target LLM while operating over a compact internal state produced by a state LLM.",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "In $M^3$, an attacker LLM interacts"
+          },
+          {
+            "text": "This source excerpt does not confirm public access.",
+            "evidenceQuote": "arXiv:2610.31937v1 Announce Type: new Abstract: Modern Large Language Models (LLMs) remain vulnerable to carefully orchestrated multi-turn interactions that progressively bypass safety mechanisms.",
+            "role": "impact",
+            "visual": "highlight",
+            "displayText": "does not confirm public access"
+          },
+          {
+            "text": "Would you try $M^3$, or wait for more proof?",
+            "evidenceQuote": "We address this gap by introducing $M^3$, an automated red-teaming framework that formalizes multi-turn jailbreaking as a finite-horizon Markov Decision Process (MDP).",
+            "role": "engagement",
+            "visual": "highlight",
+            "displayText": "Would you try $M^3$"
+          }
+        ],
+        "narration": "Would you use $M^3$? arXiv:2610.31937v1 Announce Type: new Abstract: Modern Large Language Models (LLMs) remain vulnerable to carefully orchestrated multi-turn interactions that progressively bypass safety mechanisms. However, many existing red-teaming approaches rely on heuristics or impose strong assumptions that limit their applicability in fully black box settings. In $M^3$, an attacker LLM interacts with a target LLM while operating over a compact internal state produced by a state LLM. This source excerpt does not confirm public access. Would you try $M^3$, or wait for more proof?"
+      },
+      "presentation": {
+        "title": "$M^3$: A Multi-LLM System for Multi-Turn",
+        "format": "source-fallback",
+        "angle": "capability",
+        "hookStyle": "question",
+        "availability": "unknown",
+        "duration": 41.699999999999996,
+        "wordCount": 86,
+        "scriptVersion": 3
+      },
+      "selectionReason": "A source-backed, measurable change in time, cost, or capability.",
+      "contentHash": "8d38daa17181e3dbb8cac430c5bf6c7d8274e46f12f9d3a71093cf80e69a0b9a",
+      "media": {
+        "publicUrl": "https://media.zernio.com/temp/1793034577714_yz1s9ckv_2026-10-26.mp4",
+        "videoSha256": "2413f68573f222fa862382af17c0375ae3911d6796de6b51dd084a2ea198f439",
+        "uploadedAt": "2026-10-26T17:09:38.948Z"
       }
     }
   }
