@@ -1265,8 +1265,32 @@
       "platforms": {
         "youtube": {
           "accountId": "6ac27146281ee799a37065e4",
-          "status": "prepared",
-          "idempotencyKey": "cf1785f0-3b3d-4453-8414-0cfbaf407180"
+          "status": "submitting",
+          "idempotencyKey": "cf1785f0-3b3d-4453-8414-0cfbaf407180",
+          "request": {
+            "content": "$M^3$: A Multi-LLM System for Multi-Turn Jailbreaking as a Markov Decision Process\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2610.31937\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-10-26\nAI-generated narration. #AI #AINews #Shorts",
+            "mediaItems": [
+              {
+                "type": "video",
+                "url": "https://media.zernio.com/temp/1793034577714_yz1s9ckv_2026-10-26.mp4"
+              }
+            ],
+            "platforms": [
+              {
+                "platform": "youtube",
+                "accountId": "6ac27146281ee799a37065e4",
+                "platformSpecificData": {
+                  "title": "$M^3$: A Multi-LLM System for Multi-Turn",
+                  "visibility": "public",
+                  "madeForKids": false,
+                  "containsSyntheticMedia": true,
+                  "categoryId": "28"
+                }
+              }
+            ],
+            "publishNow": true
+          },
+          "firstSubmittedAt": "2026-10-26T17:09:40.321Z"
         }
       },
       "script": {
