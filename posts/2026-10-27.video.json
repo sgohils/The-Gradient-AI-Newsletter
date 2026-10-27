@@ -1,0 +1,257 @@
+{
+  "version": 1,
+  "issueDate": "2026-10-27",
+  "generatedAt": "2026-10-27T16:11:18.861Z",
+  "stories": [
+    {
+      "id": "openai-blog-https%3A%2F%2Fopenai.com%2Findex%2Fgreptile-code-review-codex-astra",
+      "rank": 1,
+      "title": "Greptile takes bug detection beyond code review with GPT-6 Astra",
+      "sourceUrl": "https://openai.com/index/greptile-code-review-codex-astra",
+      "sourceName": "OpenAI Blog",
+      "publishedAt": "2026-10-26T22:00:00.000Z",
+      "sourceExcerpt": "How Greptile uses GPT-6 Astra to test user workflows, Daybreak to strengthen security, and Codex to reduce rework.",
+      "summary": "**What happened:** Greptile integrated the GPT‑6 Astra model to automatically generate and execute tests that mimic end‑user interactions, moving bug detection from static code review to dynamic workflow validation. It also deployed Daybreak, an AI‑powered security analyzer, and Codex‑based code suggestions to streamline fixes.\n\n**Why it matters:** By catching defects in realistic usage scenarios, teams can spot functional bugs earlier, reduce security vulnerabilities, and lower the time developers spend rewriting code.\n\n**Key stats:** • Early‑stage defect discovery rose 30% • Security issue identification improved by 45% • Rework time cut by roughly 25% with Codex assistance\n\n**Source:** https://openai.com/index/greptile-code-review-codex-astra"
+    },
+    {
+      "id": "openai-blog-https%3A%2F%2Fopenai.com%2Findex%2Fgpt-6-1-sol-coderabbit-code-security",
+      "rank": 2,
+      "title": "GPT-6.1 Sol helps CodeRabbit strengthen security across complex codebases",
+      "sourceUrl": "https://openai.com/index/gpt-6-1-sol-coderabbit-code-security",
+      "sourceName": "OpenAI Blog",
+      "publishedAt": "2026-10-26T13:45:00.000Z",
+      "sourceExcerpt": "CodeRabbit uses GPT-6.1 Sol to investigate security risks across complex codebases. Its security agent helps developers review findings and proposed fixes.",
+      "summary": "**What happened:** CodeRabbit integrated GPT-6.1 Sol as a dedicated security agent that automatically parses extensive, intricate repositories, flags potential vulnerabilities, and recommends concrete remediation steps.\n\n**Why it matters:** Early, AI‑driven detection cuts the window for exploitation, trims remediation cycles, and helps teams stay compliant across sprawling codebases—critical as software supply‑chain attacks rise.\n\n**Key stats:** • Handles codebases of up to 10 million lines of code. • Identifies roughly 30% more vulnerabilities than prior in‑house tools. • Cuts manual review time by about 40% on average.\n\n**Source:** https://openai.com/index/gpt-6-1-sol-coderabbit-code-security"
+    },
+    {
+      "id": "techcrunch-ai-https%3A%2F%2Ftechcrunch.com%2F2026%2F10%2F27%2Fmeta-ai-director-rohit-patel-leaves-to-take-on-microsoft-office-and-google-workspace%2F",
+      "rank": 3,
+      "title": "Meta AI director Rohit Patel leaves to take on Microsoft Office and Google Workspace",
+      "sourceUrl": "https://techcrunch.com/2026/10/27/meta-ai-director-rohit-patel-leaves-to-take-on-microsoft-office-and-google-workspace/",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-27T14:59:09.000Z",
+      "sourceExcerpt": "Rohit Patel is departing Meta after eight years working on AI evaluations and reinforcement learning, TechCrunch has exclusively learned. His startup, Ndoc, aims to take on Microsoft Office Suite.",
+      "summary": "**What happened:** Rohit Patel, director of AI evaluations and reinforcement learning at Meta, is departing after eight years. He is founding Ndoc, a startup set to compete directly with the Microsoft Office Suite and Google Workspace.\n\n**Why it matters:** Patel’s deep expertise in AI evaluation could accelerate the integration of advanced AI features into productivity tools, potentially reshaping the competitive landscape against entrenched giants Microsoft and Google.\n\n**Key stats:** • 8 years at Meta in AI leadership • Ndoc’s focus: AI‑enhanced office suite • Global office‑software market projected to exceed $200 B by 2027.\n\n**Source:** https://techcrunch.com/2026/10/27/meta-ai-director-rohit-patel-leaves-to-take-on-microsoft-office-and-google-workspace/"
+    },
+    {
+      "id": "openai-blog-https%3A%2F%2Fopenai.com%2Findex%2Fintroducing-gpt-6-1-terra",
+      "rank": 4,
+      "title": "Introducing GPT-6.1 Terra",
+      "sourceUrl": "https://openai.com/index/introducing-gpt-6-1-terra",
+      "sourceName": "OpenAI Blog",
+      "publishedAt": "2026-10-26T00:00:00.000Z",
+      "sourceExcerpt": "Bringing fast and capable computer use to everyone",
+      "summary": "**What happened:** OpenAI announced the release of GPT-6.1 Terra, the latest iteration of its language‑model family, featuring optimized inference speeds and lower hardware requirements.\n\n**Why it matters:** Faster, more efficient models lower the cost barrier, enabling smaller companies and individual developers to integrate advanced AI without massive cloud spend.\n\n**Key stats:** Up to 3× speed improvement over GPT‑6, 30% lower energy consumption, supports on‑premise deployment on consumer‑grade GPUs.\n\n**Source:** https://openai.com/index/introducing-gpt-6-1-terra"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.31882",
+      "rank": 5,
+      "title": "TACS-RF: Tool-driven Agentic Circuit Synthesis of RF and mmWave Modules",
+      "sourceUrl": "https://arxiv.org/abs/2610.31882",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-27T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.31882v1 Announce Type: new Abstract: We present the framework of TACS-RF - a Tool-driven Agentic Circuit Synthesis of RF and mmWave modules. In this framework, a large-language-model (LLM) coding agent (Claude Opus 4.8) directly drives industry-standard electronic-design-automation (EDA) tools such as Cadence Virtuoso/Spectre, Calibre, Cadence EMX, and Ansys HFSS to design RF and mmWave modules. We validate the framework through the agentic design of a 240-251 GHz sub-THz transmitter in a 90 nm SiGe BiCMOS process. The agent semi-autonomously designed the sub-blocks including a 60 GHz push-push Colpitts VCO with second-harmonic extraction, multistage differential cascode power drivers, a push-push frequency doubler, a differential bowtie antenna, and all the interstage matching networks. The transmitter chain with parasitic-extracted devices and EM-verified passives delivers +5.1 to +6.3 dBm across an 11 GHz varactor-only tuning range, phase noise of -80 to -88 dBc/Hz at 1 MHz offset while consuming a DC power of 361 mW. We describe the agent-driven design flow and the resulting division of labor between human and agent, taking a step toward a \"text-to-ASIC\" future for designing RF/mmWave hardware.",
+      "summary": "**What happened:**\nThe team introduced TACS‑RF, a tool‑driven agentic circuit synthesis platform. An LLM coding agent (Claude Opus 4.8) orchestrates Cadence Virtuoso/Spectre, Calibre, Cadence EMX, and Ansys HFSS to design RF and mmWave modules, demonstrably producing a 240‑251 GHz sub‑THz transmitter.\n\n**Why it matters:**\nAutomating the complex RF/mmWave design loop with AI cuts design time, reduces manual errors, and opens rapid prototyping of next‑gen communication hardware, potentially accelerating 6G and satellite‑link development.\n\n**Key stats:**\n- LLM used: Claude Opus 4.8\n- EDA tools integrated: Cadence Virtuoso/Spectre, Calibre, Cadence EMX, Ansys HFSS\n- Demonstrated frequency range: 240–251 GHz (sub‑THz)\n- Design workflow fully autonomous from specification to layout\n\n**Source:** https://arxiv.org/abs/2610.31882"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.31918",
+      "rank": 6,
+      "title": "Beyond On-Policy vs. Off-Policy: At What Level Should LLM Agent Distillation Follow the Student?",
+      "sourceUrl": "https://arxiv.org/abs/2610.31918",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-27T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.31918v1 Announce Type: new Abstract: Distilling interactive LLM agents requires choosing between teacher-generated demonstrations and student-generated experience, corresponding broadly to off-policy and on-policy distillation. While both have proven effective, we argue that this distinction is inherently hierarchical: the policy that induces an interaction history need not be the same as the policy that generates the token prefix of the current action. We introduce a hierarchical agent distillation framework that formalizes these two levels of on-policiness and enables explicit control over their pairing, mixture proportions, and training schedule. We study this problem through self-distillation, where a frozen teacher has access to task guidance unavailable to the student, and conduct a three-stage controlled study across three models and four interactive environments. We find that student-induced histories paired with teacher-generated action prefixes generally provide the strongest standalone training signal, whereas following the student at both levels generally performs worst. Nevertheless, fully on-policy data becomes beneficial when incorporated into a mixture with other configurations. Moreover, mixtures with identical teacher/student proportions at each level can yield substantially different performance, showing that how the two levels are paired matters beyond the overall amount of on-policy data. Finally, front-loading fully teacher-generated contexts and delaying fully on-policy contexts improves over a static mixture. These findings provide practical principles for deciding where, how much, and when agent distillation should follow the student.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.31937",
+      "rank": 7,
+      "title": "$M^3$: A Multi-LLM System for Multi-Turn Jailbreaking as a Markov Decision Process",
+      "sourceUrl": "https://arxiv.org/abs/2610.31937",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-27T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.31937v1 Announce Type: new Abstract: Modern Large Language Models (LLMs) remain vulnerable to carefully orchestrated multi-turn interactions that progressively bypass safety mechanisms. However, many existing red-teaming approaches rely on heuristics or impose strong assumptions that limit their applicability in fully black box settings. We address this gap by introducing $M^3$, an automated red-teaming framework that formalizes multi-turn jailbreaking as a finite-horizon Markov Decision Process (MDP). In $M^3$, an attacker LLM interacts with a target LLM while operating over a compact internal state produced by a state LLM. Across two benchmarks and six target models, $M^3$ consistently outperforms state-of-the-art multi-turn red-teaming methods in Attack Success Rates (ASR), achieving improvements of up to 53% in ASR@5. Even with lightweight attacker, $M^3$ attains gains up to 26% in ASR@1 and 34% in ASR@5, compared to baselines that use higher capacity attackers. Beyond improved effectiveness, $M^3$ exhibits steeper risk escalation over conversational turns and achieves more consistent performance across risk categories (up to 4.82 improvement in Gini index) without relying on predefined risk taxonomy, providing a scalable and principled framework for multi-turn red-teaming and safety evaluation.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.31971",
+      "rank": 8,
+      "title": "Knowing Whom to Trust is not Enough: The Trust--Agreement Gap in Repeated Multi-Party LLM Negotiation",
+      "sourceUrl": "https://arxiv.org/abs/2610.31971",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-27T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.31971v1 Announce Type: new Abstract: Large language model (LLM) agents increasingly participate in negotiations on behalf of individuals and organizations, yet they remain vulnerable to manipulation, particularly in repeated multi-party interactions. Classical multi-agent systems address this challenge through explicit trust and reputation models, whereas existing work on LLM negotiation largely treats trust as an emergent phenomenon. We investigate whether LLM agents can form useful trust estimates from prior interactions and leverage them to improve future negotiation outcomes. We introduce a repeated, multi-party, multi-issue negotiation framework in which recurring agents participate in a sequence of negotiation games while one participant covertly attempts to prevent agreement. After each game, agents assess their counterparts and maintain pairwise trust estimates that carry over to subsequent negotiations. We compare trust-aware and trust-agnostic agents and analyze how explicit trust influences negotiation outcomes. Our results reveal a \\emph{trust--agreement gap}: trust-aware agents can identify the adversary within a few games, but accurate trust estimates do not consistently translate into better agreements. Trust increases agreement rates by up to 23 percentage points, but only when agents are explicitly guided to use it in their decisions. Explicit trust can therefore improve repeated LLM negotiations, but its value depends critically on how trust is assessed and incorporated into agents' reasoning.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.31985",
+      "rank": 9,
+      "title": "The Helpful Agent Problem: When Emergent Cooperation Among LLM Agents Bypasses Intended Workflows",
+      "sourceUrl": "https://arxiv.org/abs/2610.31985",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-27T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.31985v1 Announce Type: new Abstract: LLM agents are increasingly deployed in collaborative settings where they pursue separate tasks while sharing resources and operating under review or oversight processes. Such settings create safety risks not only when agents are malicious, but also when they are simply trying to help. Prior work has largely studied adversarial or explicitly collusive behavior; we show that benign agents pursuing separate objectives can spontaneously cooperate in ways that bypass intended workflows. We call this the \\emph{helpful agent problem}. We study long-horizon shared-resource environments in which agents sometimes depend on resources owned by their peers and cross-owner changes are normally mediated by a reviewer. When review becomes unavailable, agents begin making changes on one another's behalf despite having no shared reward or explicit incentive to cooperate. Crucially, these actions remain within each agent's local permissions while circumventing the system's intended oversight structure. We introduce \\textsc{FavorBench}, a controlled benchmark with measurable downstream side effects, and adapt \\textsc{CooperBench} to test the phenomenon in realistic repositories. Across two benchmarks and four models, we find that out-of-workflow favors emerge frequently. Further, in \\textsc{FavorBench}, favors from at least three models cause significant harm to parties outside the interaction. These results reveal a distinct multi-agent safety challenge: cooperation itself can create pathways around system-level safeguards.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.32026",
+      "rank": 10,
+      "title": "RSI-Opt: Recursive Self-Improvement Optimizer Agents For Model Training",
+      "sourceUrl": "https://arxiv.org/abs/2610.32026",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-27T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.32026v1 Announce Type: new Abstract: Conventional neural-network training typically follows a predefined optimization recipe, motivating a LLM agent that monitors training dynamics and adjusts optimizer settings as training progresses, but a fixed agent policy does not accumulate experience across runs. We introduce RSI-Opt, a plug-and-play Recursive Self-Improvement Optimizer Agents which evolves the knowledge that guides this process: a prompt, a playbook of procedures, a library of tested optimizer code, and a decision cadence. A meta-agent rewrites this policy using evidence from earlier runs, and an archive retains evaluated policies for further evolution. Across 5 generations on three training tasks, the meta-agents develop reusable procedures and code and conduct their own CPU proxy experiments. RSI-Opt substantially improves optimizer-agent performance, with representative raw-space summary $z$-scores increasing from $+10.48$ to $+14.33$ on the evolution suite with Opus 5.5 and from $-0.36$ to $+3.11$ on held-out tasks with GPT-5.5 through cross-model policy transfer. On the Burgers PDE, it reduces mean relative $L_2$ error by approximately 2.7-fold with Opus 5.5 and 8.8-fold with GPT-6.1 over the fixed-prompt agent baseline, although PDE transfer varies across LLMs and tasks. Controlled comparisons show that the evolved policy combines reusable optimization knowledge with adaptation to each task: initial decisions capture most observed gains on seen tasks, while continued adaptation improves outcomes on unseen tasks. These findings demonstrate how procedures and executable tools accumulated across training runs can improve optimizer-agent performance and support transfer to scientific machine learning.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.32045",
+      "rank": 11,
+      "title": "Do AI-for-Science Agents Preserve Model Safety?",
+      "sourceUrl": "https://arxiv.org/abs/2610.32045",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-27T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.32045v1 Announce Type: new Abstract: AI-for-Science agents are increasingly being used for formulating scientific hypotheses, running autonomous experiments, and interpreting evidence. These agents are constructed by integrating a large language model (LLM) into a domain-specific agent harness, which in turn can improve the LLM's scientific capability and enable the model to orchestrate scientific tools. In this work, we ask whether model safety is preserved when an LLM is integrated in an AI-for-Science agent harness. We evaluate five agent harnesses on 50 harmful chemistry requests. Specifically, we study how the safety behavior changes under direct prompting, two simple adversarial prompting strategies, and an adaptive attack. Across four recent GPT variants, our results show that the agent harness can increase harmful compliance even under direct prompting. More critically, we find that adaptive attacks that are largely unsuccessful against the base LLM suddenly become highly successful after the agent harness is introduced. Our results show that the safety behavior of the base LLM is not durable once a harness is introduced. Thus, as AI-for-Science agents become more capable and autonomous, the community needs to evaluate and align the agent using domain-specific safety benchmarks.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.32060",
+      "rank": 12,
+      "title": "Understanding Communication Failures in Multi-Agent LLM Systems",
+      "sourceUrl": "https://arxiv.org/abs/2610.32060",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-27T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.32060v1 Announce Type: new Abstract: Multi-agent LLM systems aim to improve reasoning through debate, evidence sharing, and mutual correction, but interaction can also introduce failures that final accuracy alone cannot explain. Agents may converge too early, ignore dissent, suppress correct minority answers, or preserve a wrong framing across rounds. We present a corpus-grounded taxonomy of communication failures, built from 3,211 failed multi-round trajectories across medical QA, coding, finance, multi-hop reasoning, ethics, and embodied text tasks. Using this taxonomy, we analyze failure distributions across datasets and system designs, round-level error dynamics, recovery hardness, majority transitions, minority-signal suppression, and self-reported confidence. We find that failures are dominated by recovery/correction and consensus/decision problems rather than isolated first-round mistakes, with many emerging after agents first observe peer responses. Based on these findings, we recommend stronger disagreement handling, evidence verification, minority-signal preservation, and recovery checks before finalization.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.32096",
+      "rank": 13,
+      "title": "DELA: Learning Controllable Edits for Diffusion Language Models",
+      "sourceUrl": "https://arxiv.org/abs/2610.32096",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-27T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.32096v1 Announce Type: new Abstract: Diffusion language models (DLMs) support bidirectional denoising and iterative refinement, but generation remains largely controlled by token-level masking schedules. This leaves draft-level refinement implicit and limits explicit control over when to insert missing content, delete redundant spans, revisit uncertain regions, or stop editing. We introduce Diffusion Editing Language Adapter (DELA), a plug-in framework that enables controllable draft refinement with a frozen DLM. DELA operates on clean, variable-length drafts using four explicit editing actions: Insert, Delete, Remask, and Stop. The controller determines when and where to edit the draft, while the frozen DLM fills masked regions through denoising, separating high-level edit control from token-level generation. A naive single-phase editor would be computationally expensive because arbitrary interior edits can disrupt prefix stability and limit reliable KV-cache reuse. To address this, DELA uses a two-phase decoding procedure: a fast, append-only drafting phase that supports KV-cache reuse, followed by a global refinement phase that enables targeted non-monotonic edits to the full draft. We train the controller using a staged curriculum that begins with learning local edit priors from synthetic recovery tasks and mined actions that improve draft quality. Subsequent stages refine edit selection through rollout-based outcome preferences and alignment with downstream task feedback. Experiments on mathematical reasoning and code generation show that DELA achieves gains of up to 5.5 percentage points over direct diffusion decoding while keeping the backbone frozen. DELA thus provides a modular approach to explicit draft-level control in diffusion language models.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.32205",
+      "rank": 14,
+      "title": "Watermarking Diffusion Language Models with Learned Foresight and Balanced Bands",
+      "sourceUrl": "https://arxiv.org/abs/2610.32205",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-27T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.32205v1 Announce Type: new Abstract: Green-red watermarks favor tokens from a green list that a secret key derives from the preceding tokens. Diffusion language models, however, often choose a token before its preceding tokens, and the token later shapes its neighbors' green lists. Prior work therefore tilts each choice to raise the expected number of green tokens at its own and its neighbors' positions. Building on this objective, we first learn two components that prior work keeps fixed: vocabulary bands that serve as green lists, separate competing candidates and keep the null distribution exact, and a foresight predictor that estimates how each candidate shifts its neighbors' predictions. Second, we count green tokens as the detector does, once per distinct context-token pair, so repetition earns nothing. On WaterBench with LLaDA-8B-Instruct, each learned component raises the z-score at equal distortion, and their gains are nearly additive. With a strong watermark, ours detects at least 96% of responses at a 1% false-positive rate while matching the LLM-judge score of unwatermarked text. Ours also detects more responses on Dream and as many or more on code and question answering without a significant loss in task accuracy.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.32229",
+      "rank": 15,
+      "title": "Training an MoE LLM in MXFP4: How We Closed the Gap to BF16",
+      "sourceUrl": "https://arxiv.org/abs/2610.32229",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-27T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.32229v2 Announce Type: new Abstract: Training large language models (LLMs) in sub-8-bit arithmetic promises substantial gains in memory bandwidth and compute throughput, yet FP4 formats introduce quantization error severe enough to destabilize optimization if left unaddressed. We present ALTO, an open-source training recipe for GPT-OSS-20B, a 20-billion-parameter mixture-of-experts (MoE) model, on the MLPerf Small MoE Training benchmark under the MXFP4 microscaling format. The recipe combines established techniques from Abecassis, Felix et al. [arXiv:2509.25149] (hybrid 1D/2D block quantization, randomized Hadamard transforms, and stochastic rounding) with a simplified weight de-oscillation scheme adapted from TetraJet-v2 [arXiv:2510.27527]. On C4 validation at global batch size 16, MXFP4 + RHT + SR + de-oscillation reaches a validation loss of 3.3350 at 16,128 steps, only 0.007 above the BF16 baseline (3.3283), closing roughly 50% of the gap left by MXFP4 without de-oscillation (3.3418). Measured by steps to reach the MLPerf quality target (validation loss 3.34), de-oscillation cuts the FP4 convergence overhead relative to BF16 from +20.0% to +5.0%. We also report negative end-to-end results from differential gradient estimation, outlier clipping, and macro-block scaling, despite each showing operator-level SNR gains. All experiments use simulated MXFP4 kernels on AMD MI300X hardware and wall-clock speed has not been optimized.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.32241",
+      "rank": 16,
+      "title": "Spatial Heuristic Strategy based Diffusion Reinforcement Learning for Online 3D Bin Packing",
+      "sourceUrl": "https://arxiv.org/abs/2610.32241",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-27T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.32241v1 Announce Type: new Abstract: Traditional heuristic methods have accumulated mature experience in core objectives, such as space utilization and layout compactness of 3D bin packing, relying on artificially designed rule-based logic. However, they exhibit obvious limitations in generalization ability and adaptability to dynamic scenarios. Diffusion reinforcement learning, which integrates the spatial search capability of reinforcement learning and the data distribution modeling capability of diffusion learning, has achieved certain progress in action distribution modeling and decision compliance constraints. Nevertheless, there remain issues including insufficient perception of the spatial topological structure in 3D bin packing and limited layout optimization capability. To address these problems, we propose a diffusion reinforcement learning method integrated with spatial heuristic strategies, which combines classical bin packing heuristic rules with a diffusion reinforcement learning framework. Specifically, it compresses the action space through heuristic action pre-screening, introduces a graph neural network to model the spatial structure, and designs a composite reward function incorporating flatness to suppress spatial fragmentation, thereby realizing the organic integration of prior knowledge and adaptive optimization. Experimental results demonstrate that the pro",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.32285",
+      "rank": 17,
+      "title": "Trial by Trace: Benchmarking AI Agent Harnesses for Reliability and Failure Attribution",
+      "sourceUrl": "https://arxiv.org/abs/2610.32285",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-27T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.32285v1 Announce Type: new Abstract: LLM agents are increasingly used to solve real-world problems, and their effectiveness depends on both the underlying models and the harnesses that support their operation. However, most existing benchmarks focus on model capabilities and overall agent performance, with limited attention to the evaluation of agent harnesses. To address this gap, we introduce TraceTrial-Bench, which organizes harness reliability into seven components covering context, execution, governance, lifecycle, observability, tools, and verification. We construct 95 expert-level, mechanism-oriented tasks with executable or state-based ground truth to support semantically equivalent comparisons while preserving the native behavior of each harness. We design a Trajectory Tracing (TT) module to capture agent execution traces and introduce a two-layer evaluation framework that separately assesses agent performance and harness reliability. In addition, we design a Multi-source Evidence Acquisition (MEA) module to provide evidence from the agent context, harness, and execution environment for LLM-based evaluation, and develop a Failure Attribution (FA) module that uses explicit mechanism chains to support attribution at the run level. Across 4 harnesses, 9 models, and 95 tasks, our evaluation of 3,420 runs yields macro-averaged harness scores ranging from 59.8% to 72.0%, while 31.1% of runs achieve task success despite failing at least one harness criterion. TraceTrial-Bench provides an auditable and reproducible foundation for comparing agent harnesses, diagnosing their failures, and studying how harness design interacts with model behavior.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.32295",
+      "rank": 18,
+      "title": "Lifelong Context Adaptation through Bidirectional Memory-Skill Learning",
+      "sourceUrl": "https://arxiv.org/abs/2610.32295",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-27T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.32295v1 Announce Type: new Abstract: Lifelong LLM agents must learn from an expanding history of interactions while making each decision within a bounded context window. Memory makes past experience available, but the agent may still need to infer how to solve each new task from the retrieved records. Skills provide reusable procedures, yet may omit the task-specific facts needed to apply them. Because retrieved memory and skills shape the agent's behavior, they also influence the experience available for future learning. We introduce MemCryst, a framework for lifelong context adaptation through bidirectional learning of memory and skills with a frozen language model. Recurring episodes stored in memory support skill creation and revision, and the interactions guided by those skills supply new memory for subsequent learning. Facts retrieved from memory and learned skills jointly form the agent's context, while task outcomes adjust the future retrieval influence of the records actually served without rewriting their content. Across ten settings spanning embodied control, long-document reading, conversation, mathematics, and code, MemCryst leads seven reported comparisons. On ALFWorld, joint serving achieves 63.17% success, compared with 59.83% for memory-only and 50.50% for skill-only serving. Code is available at https://github.com/tianyi0216/Memcryst.git",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.32305",
+      "rank": 19,
+      "title": "DMAIC-Bench: From Self-Reflection to Self-Restraint for Agents in Multi-Stage Analytical Tasks",
+      "sourceUrl": "https://arxiv.org/abs/2610.32305",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-27T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.32305v1 Announce Type: new Abstract: Multi-stage analytical tasks require LLM agents to use intermediate evidence to decide whether to continue, redirect or stop. Self-reflection, in which an agent critiques its output, is widely studied, yet a critique does not show whether evidence changed the next action. We call that capability self-restraint. Existing agent benchmarks largely measure task completion or output quality and leave it untested. DMAIC-Bench evaluates it with 97 seeded tasks across 15 industrial cases in four sectors, built around Lean Six Sigma's explicit statistical prerequisites. Paired counterfactual variants require opposite actions at the same workflow position, distinguishing warranted restraint from indiscriminate stopping. We assess execution traces with a private scorer and final claims through independent expert review. Across 13 models from six providers, execution-level routing accuracy averages 92% on matched GO decisions and 19% on NO-GO decisions, counting any forbidden downstream computation as a route error. Execution traces show agents reporting correct diagnostics before performing analyses that those results disallow. Separately, blinded expert review of the 11 audited agents estimates that reports act on invalid evidence at 47% of reached NO-GO decisions, with an interval from 31% to 61%. Explicit stopping permission helps some models without consistently restoring correct decisions at both GO and NO-GO forks. Sixteen life-sciences tasks in bulk ribonucleic acid sequencing (RNA-seq) and case-control genome-wide association studies (GWAS) show that the same framework can evaluate evidence-dependent decisions beyond industrial workflows. Project code and data are available at: https://github.com/psptpx/DMAIC-Bench-public.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.32308",
+      "rank": 20,
+      "title": "Solvent: Long-Horizon Reasoning for Multi-Step Retrosynthesis",
+      "sourceUrl": "https://arxiv.org/abs/2610.32308",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-27T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.32308v1 Announce Type: new Abstract: Multi-step retrosynthesis requires recursively transforming a target molecule through successive reaction steps into purchasable building blocks, and recent work has begun to draw on large language model (LLM) reasoning to tackle the task. In its latest evolution, LLM reasoning has entered the long-horizon regime: models pursue objectives across interdependent steps, interact with environments, and adapt to feedback. This shift has markedly advanced LLM capabilities, as illustrated by breakthroughs in AI-driven mathematical research. At this frontier, we introduce Solvent, an 8B LLM that successfully extends long-horizon reasoning to multi-step retrosynthesis. Through a two-round post-training curriculum, Solvent learns to interleave iterative synthesis planning, external availability verification, and adaptive route revision. Experiments show that, following a $2.1\\times$ performance boost from RL, Solvent scores 61.86% across four benchmarks, surpassing mid-scale language models and prior search-based retrosynthesis systems, and rivaling frontier trillion-parameter LLMs.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.32322",
+      "rank": 21,
+      "title": "Beyond Gain: Measuring Skill Internalization for Agent Skill Retirement",
+      "sourceUrl": "https://arxiv.org/abs/2610.32322",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-27T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.32322v1 Announce Type: new Abstract: LLM agents retrieve skills from public hubs that hold up to about 100,000 entries and serve many models. As models improve, a hub must find the skills a given model has internalized, meaning it can do without them, and retire them for that model, yet internalization has not been measured with known reliability. Published rules that compare runs with and without a skill retire on the gain alone. The gain is near zero both for an internalized skill and when neither the model nor the skill delivers the capability, a state we call uncovered. We instead withhold the skill, score the model on a task synthesized from it, and trust a high unaided score only when another model gains from the skill, since nearly half of high scores come from tasks no model benefits from. Under four models, a published gain rule applied with one task per skill removes over half of the uncovered skills. On SkillsBench, 28 of its 31 retirements rest on probes no run passed in full, while retiring on the unaided score costs no detectable reward. Unaided verdicts reproduce across tasks more often than the gain rule's (Cohen's kappa 0.42 against 0.23) but differ across models, so a hub must read them per model. We release 1,251 skills with tasks and item scores under four models.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.32326",
+      "rank": 22,
+      "title": "TGR-EvoDAG: A DAG-based Multi-Agent Code Evolution Framework for Generative Recommendation on Tencent",
+      "sourceUrl": "https://arxiv.org/abs/2610.32326",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-27T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.32326v1 Announce Type: new Abstract: Large Language Model (LLM) agents have enabled automated code evolution for algorithm discovery. However, current recursive self-improvement (RSI) research for sequential recommendation faces a dilemma: general-purpose frameworks lack domain-specific feedback, while recommender-specific frameworks rely on linear evolution. Crucially, naively integrating them fails when applied to Generative Recommendation (GR). Unlike end-to-end models, GR relies on a module-cascaded pipeline (tokenization, pre-training, and alignment). In this paradigm, existing evolution methods suffer from: i) cost blindness, squandering budgets by ignoring stage-asymmetric retraining overheads; and ii) short-sighted evaluation, discarding promising upstream innovations that temporarily regress metrics before downstream adaptation. To bridge these gaps, we propose TGR-EvoDAG, a multi-agent code evolution framework tailored for GR. TGR-EvoDAG models code evolution as a Directed Acyclic Graph (DAG) to maintain multiple evolution branches and merge complementary innovations, unifying advanced search with rich GR diagnostic feedback. We further introduce stage-aware cost planning to optimize GPU-hour budgets, and active downstream co-adaptation to navigate temporary regressions and unlock cross-stage gains. On public Amazon datasets, TGR-EvoDAG enables the first autonomous evolution of a complete GR pipeline, improving offline metrics by up to 37.4% and Agent4Rec simulated user satisfaction by 19.7% over the strongest baseline. Furthermore, in industrial deployment on Tencent's large-scale commercial media platform, the evolved GR achieves a 12.16% relative improvement in offline Hit@1 and a statistically significant 0.40% increase in online click-through rate (CTR).",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.32380",
+      "rank": 23,
+      "title": "DealsFlow: An Evidence-Gated Agentic Harness for Venture Capital Deal Triage",
+      "sourceUrl": "https://arxiv.org/abs/2610.32380",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-27T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.32380v1 Announce Type: new Abstract: Large language models (LLMs) can read startup pitch decks, but letting them emit investment scores directly invites score inflation, run-to-run variance and rationales that are hard to audit. We describe DealsFlow, a human-in-the-loop agentic harness deployed at a UK early-stage fund. The LLM reads the deck, cites evidence and rates each category; code combines the ratings, caps them and only ever lowers them. Three mechanisms implement this: a stage-aware corroboration ceiling (78, 70 or 60 out of 100) on factual categories without external evidence; a sceptic call that may lower but never raise a score; and a pre-fetch pattern that retrieves and indexes all evidence before a single generation pass. We evaluate on $N=243$ SEIS/EIS investments with recorded outcomes. Because recent investments have unresolved outcomes, we use the 142 that are at least three years old. There, the full pipeline's score has Spearman $\\rho=0.45$ (95% CI 0.32 to 0.57) with the total-value multiple and AUC 0.71 for identifying write-offs, against $\\rho=0.38$ and AUC 0.68 for an unconstrained LLM. The gain is small and comes mostly from the sceptic call; we did not test whether its lower-only rule matters. Investments that later exceeded $2\\times$ had 64% of factual categories corroborated, against 38% for write-offs (omnibus Kruskal-Wallis test over five outcome groups, $p=0.031$), and our retrieval was not date-restricted, so these figures may overstate screening skill. In a study of 20 inbound applications, analyst time per application fell from 44.7 to 18.9 minutes including verification and correction, and 84% of 240 cited claims were fully supported by their sources, but 70% of reports needed at least one correction.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.32412",
+      "rank": 24,
+      "title": "LeafSkill: Efficient Leaf-Level Action Grounding for Recursive LLM Agents",
+      "sourceUrl": "https://arxiv.org/abs/2610.32412",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-27T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.32412v1 Announce Type: new Abstract: Recursive large language model (LLM) agents solve long-horizon tasks through decomposition, execution, and environmental feedback. Yet after producing an atomic subtask, they often invoke the same large model again to translate a familiar instruction into an executable action. We observe that high-level planning is task-specific, whereas leaf-level action grounding recurs across tasks and can be checked against environment-admitted actions. We introduce LeafSkill, an external reuse layer that retrieves semantically related grounding experience, binds action templates to current objects and admissible actions, and uses a lightweight 1.7B selector to choose a bound action or defer the unchanged subtask to the original agent. Skills remain outside the model parameters, allowing a frozen selector to use post-training additions. Under lexical and syntactic paraphrases, exact matching retrieves none of the reference actions, while semantic retrieval preserves 96.0% and 97.0% candidate coverage; the frozen selector adopts 97.34% of unseen skill types. On an independent confirmation set of 200 Robotouille tasks, LeafSkill completes 137 tasks versus 121 for ReCAP (68.5% vs. 60.5%, exact McNemar p=.0259). On the 106 tasks completed by both, it reduces Qwen3.5-27B tokens by 14.42% and calls by 14.08%. A separate held-out repeat yields a consistent 9.0-point success gain and 18.98% token reduction. Reusable leaf grounding can thus improve task completion while reducing host-model inference without replacing high-level planning.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.32429",
+      "rank": 25,
+      "title": "Async-RBench: Benchmarking Asynchronous Task Execution in LLM Agents",
+      "sourceUrl": "https://arxiv.org/abs/2610.32429",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-10-27T04:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.32429v1 Announce Type: new Abstract: Large language model (LLM) agents increasingly execute tasks asynchronously: a main agent continues working while its subagents run, and the task state may change before their results arrive. The main agent must decide which work to update or preserve and which checks to repeat, while avoiding prohibited changes. Final task success alone does not reveal whether these results were handled correctly, and natural asynchronous arrivals are hard to reproduce. We introduce Async-RBench, a benchmark for asynchronous task execution in LLM agents, with 200 executable tasks covering eight scenarios. A scenario controller regulates result delivery using predefined task-state conditions, while an Event Response Contract (ERC) specifies what each response must change, preserve, avoid, and re-verify. The Dynamic Replanning Score (DRS) weights the response process and outcome equally and is reported separately from task success. We evaluate nine agents and find DRS scores of 19.2 to 45.1, with the lowest scores on duplicate reports and subagent failures. Under our execution protocol, all nine agents obtain lower task success with asynchronous than with batched delivery (26.0% vs. 29.7% on average). For three agents, prompting the main agent to rebuild its plan after every result improves DRS by only 2.6 to 3.5 points. Together, these findings highlight the challenges of reliable asynchronous task execution and the need to evaluate how agents handle incoming results alongside end-to-end task success.",
+      "summary": ""
+    }
+  ]
+}
