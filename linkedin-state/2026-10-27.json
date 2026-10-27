@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "issueDate": "2026-10-27",
+  "issueUrl": "https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-10-27",
+  "content": "Today's AI briefing from The Gradient | 2026-10-27\n\n1. Greptile takes bug detection beyond code review with GPT-6 Astra\nGreptile integrated the GPT‑6 Astra model to automatically generate and execute tests that mimic end‑user interactions, moving bug detection from static code review to dynamic workflow validation. It also deployed Daybreak, an AI‑powered security analyzer, and Codex‑based code suggestions to streamline fixes.\n\n2. GPT-6.1 Sol helps CodeRabbit strengthen security across complex codebases\nCodeRabbit integrated GPT-6.1 Sol as a dedicated security agent that automatically parses extensive, intricate repositories, flags potential vulnerabilities, and recommends concrete remediation steps.\n\n3. Meta AI director Rohit Patel leaves to take on Microsoft Office and Google Workspace\nRohit Patel, director of AI evaluations and reinforcement learning at Meta, is departing after eight years. He is founding Ndoc, a startup set to compete directly with the Microsoft Office Suite and Google Workspace.\n\nRead the full briefing and original sources:\nhttps://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-10-27\n\n#AI #ArtificialIntelligence #TheGradient",
+  "contentHash": "56495c9f2c9edf71e8017fd09e4cc34a55ae43b78a15acaca62818232f682262",
+  "accountId": "6ac5a561b3c21905c0edcfba",
+  "organizationUrn": "urn:li:organization:136824048",
+  "idempotencyKey": "1dbd386e-fd92-4a57-99d1-b962612185d6",
+  "status": "submitting",
+  "firstSubmittedAt": "2026-10-27T16:11:48.852Z"
+}
