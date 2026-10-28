@@ -1228,7 +1228,7 @@
       "platforms": {
         "youtube": {
           "accountId": "6ac27146281ee799a37065e4",
-          "status": "submitting",
+          "status": "published",
           "idempotencyKey": "a88726dc-674b-4666-bc2d-0cd96c8ff762",
           "request": {
             "content": "Skill Dreaming: Evolving Repository Skills through Pull Request Streams\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2610.36188\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-10-28\nAI-generated narration. #AI #AINews #Shorts",
@@ -1253,7 +1253,9 @@
             ],
             "publishNow": true
           },
-          "firstSubmittedAt": "2026-10-28T17:01:56.627Z"
+          "firstSubmittedAt": "2026-10-28T17:01:56.627Z",
+          "postId": "6ae22a868930d0062046aef4",
+          "postUrl": "https://www.youtube.com/watch?v=Rl4F9BvWmPQ"
         }
       },
       "script": {
