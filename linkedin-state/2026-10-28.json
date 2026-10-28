@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "issueDate": "2026-10-28",
+  "issueUrl": "https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-10-28",
+  "content": "Today's AI briefing from The Gradient | 2026-10-28\n\n1. Retell uses OpenAI models to help power 100M monthly calls\nRetell integrated OpenAI’s GPT‑6 Astra for its voice‑agent benchmark and Codex for code generation, enabling the platform to support 100 M monthly calls.\n\n2. Greptile takes bug detection beyond code review with GPT-6 Astra\nGreptile integrated OpenAI's GPT-6 Astra to automatically test real user workflows, paired it with Daybreak for security hardening, and used Codex to cut down on repetitive rework.\n\n3. GPT-6.1 Sol helps CodeRabbit strengthen security across complex codebases\nCodeRabbit integrated GPT-6.1 Sol as a security agent to automatically investigate and flag vulnerabilities across complex, large‑scale code repositories. The model not only identifies risks but also proposes concrete remediation steps for developers to review.\n\nRead the full briefing and original sources:\nhttps://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-10-28\n\n#AI #ArtificialIntelligence #TheGradient",
+  "contentHash": "50670cbdec41d2518eb54551951ea5747bf4e94082e48808052b479b86a77f2f",
+  "accountId": "6ac5a561b3c21905c0edcfba",
+  "organizationUrn": "urn:li:organization:136824048",
+  "idempotencyKey": "75d6145d-0d9c-4de1-973b-87f830c7890a",
+  "status": "submitting",
+  "firstSubmittedAt": "2026-10-28T16:58:18.829Z"
+}
