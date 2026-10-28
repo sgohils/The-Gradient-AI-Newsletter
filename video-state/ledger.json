@@ -556,8 +556,8 @@
         "sourceUrl": "https://arxiv.org/abs/2610.23866",
         "sourceName": "arXiv cs.AI",
         "publishedAt": "2026-10-20T04:00:00.000Z",
-        "sourceExcerpt": "arXiv:2610.23866v1 Announce Type: new Abstract: We introduce GardenBench, a benchmark with 11 test suites that evaluate the capabilities of Large Language Models (LLMs) across a range of tasks. By systematically prompting LLMs with various lightweight queries, we document day-to-day changes in model performance, including run costs and times, that other benchmarks miss. This allows us to compare the accuracy and features of responses across model providers and versions. We account for daily variations in model accuracy, capturing both model progress and degradation, for instance, when a model is changed post-deployment or when a new model is released. We base our evaluation on general-use tasks and make our results publicly accessible via a live dashboard, diversifying existing approaches to LLM testing. Our main contribution is an innovative, lightweight, and inexpensive benchmark, designed to be consumer-facing and for everyday tasks.",
-        "summary": "**What happened:** Researchers released GardenBench, an 11‑suite benchmark that probes LLMs with lightweight queries to capture daily shifts in accuracy, cost, and latency. \n**Why it matters:** Traditional benchmarks miss short‑term fluctuations; GardenBench gives developers and users real‑time insight into model stability, provider differences, and version upgrades. \n**Key stats:** 11 test suites covering diverse tasks; tracks run costs and response times alongside accuracy; enables side‑by‑side comparison of multiple model providers. \n**Source:** https://arxiv.org/abs/2610.23866"
+        "sourceExcerpt": "",
+        "summary": ""
       },
       "selectedAt": "2026-10-20T15:37:45.042Z",
       "platforms": {
@@ -565,87 +565,10 @@
           "accountId": "6ac27146281ee799a37065e4",
           "status": "published",
           "idempotencyKey": "0286c398-ecdc-4fce-9858-eb2ea7749ad3",
-          "request": {
-            "content": "GardenBench: A lightweight, daily evaluation of LLM capabilities\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2610.23866\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-10-20\nAI-generated narration. #AI #AINews #Shorts",
-            "mediaItems": [
-              {
-                "type": "video",
-                "url": "https://media.zernio.com/temp/1792510704317_fe3vasam_2026-10-20.mp4"
-              }
-            ],
-            "platforms": [
-              {
-                "platform": "youtube",
-                "accountId": "6ac27146281ee799a37065e4",
-                "platformSpecificData": {
-                  "title": "GardenBench: A lightweight, daily evaluation of",
-                  "visibility": "public",
-                  "madeForKids": false,
-                  "containsSyntheticMedia": true,
-                  "categoryId": "28"
-                }
-              }
-            ],
-            "publishNow": true
-          },
           "firstSubmittedAt": "2026-10-20T15:38:26.452Z",
           "postId": "6ad78af367424c6bf465242f",
           "postUrl": "https://www.youtube.com/watch?v=gxPhULejnnM"
         }
-      },
-      "script": {
-        "version": 3,
-        "provider": "extractive",
-        "format": "source-fallback",
-        "angle": "capability",
-        "workingTitle": "GardenBench: A lightweight, daily evaluation of",
-        "availability": "unknown",
-        "hookStyle": "question",
-        "sentences": [
-          {
-            "text": "Would you use GardenBench?",
-            "evidenceQuote": "arXiv:2610.23866v1 Announce Type: new Abstract: We introduce GardenBench, a benchmark with 11 test suites that evaluate the capabilities of Large Language Models (LLMs) across a range of tasks.",
-            "role": "hook",
-            "visual": "example",
-            "displayText": "Would you use GardenBench?"
-          },
-          {
-            "text": "This allows us to compare the accuracy and features of responses across model providers and versions.",
-            "evidenceQuote": "This allows us to compare the accuracy and features of responses across model providers and versions.",
-            "role": "breakthrough",
-            "visual": "example",
-            "displayText": "Us to compare the accuracy and features"
-          },
-          {
-            "text": "arXiv cs.AI says By systematically prompting LLMs with various lightweight queries, it document day-to-day changes in model performance, including run costs and times, that other benchmarks miss.",
-            "evidenceQuote": "By systematically prompting LLMs with various lightweight queries, we document day-to-day changes in model performance, including run costs and times, that other benchmarks miss.",
-            "role": "breakthrough",
-            "visual": "process",
-            "displayText": "ArXiv cs.AI says By systematically prompting LLMs"
-          },
-          {
-            "text": "arXiv cs.AI says its main contribution is an innovative, lightweight, and inexpensive benchmark, designed to be consumer-facing and for everyday tasks.",
-            "evidenceQuote": "Our main contribution is an innovative, lightweight, and inexpensive benchmark, designed to be consumer-facing and for everyday tasks.",
-            "role": "breakthrough",
-            "visual": "process",
-            "displayText": "ArXiv cs.AI says its main contribution is"
-          },
-          {
-            "text": "This source excerpt does not confirm public access.",
-            "evidenceQuote": "arXiv:2610.23866v1 Announce Type: new Abstract: We introduce GardenBench, a benchmark with 11 test suites that evaluate the capabilities of Large Language Models (LLMs) across a range of tasks.",
-            "role": "impact",
-            "visual": "highlight",
-            "displayText": "does not confirm public access"
-          },
-          {
-            "text": "Would you try GardenBench, or wait for more proof?",
-            "evidenceQuote": "arXiv:2610.23866v1 Announce Type: new Abstract: We introduce GardenBench, a benchmark with 11 test suites that evaluate the capabilities of Large Language Models (LLMs) across a range of tasks.",
-            "role": "engagement",
-            "visual": "highlight",
-            "displayText": "Would you try GardenBench"
-          }
-        ],
-        "narration": "Would you use GardenBench? This allows us to compare the accuracy and features of responses across model providers and versions. arXiv cs.AI says By systematically prompting LLMs with various lightweight queries, it document day-to-day changes in model performance, including run costs and times, that other benchmarks miss. arXiv cs.AI says its main contribution is an innovative, lightweight, and inexpensive benchmark, designed to be consumer-facing and for everyday tasks. This source excerpt does not confirm public access. Would you try GardenBench, or wait for more proof?"
       },
       "presentation": {
         "title": "GardenBench: A lightweight, daily evaluation of",
@@ -673,8 +596,8 @@
         "sourceUrl": "https://arxiv.org/abs/2610.26899",
         "sourceName": "arXiv cs.AI",
         "publishedAt": "2026-10-21T04:00:00.000Z",
-        "sourceExcerpt": "arXiv:2610.26899v1 Announce Type: new Abstract: Due to the rapid growth of the global population, traditional construction methods are gradually unable to meet the current housing demand. The advancement of machine learning algorithms has encouraged researchers to explore their applications in the construction industry, leading to more intelligent and efficient building processes. In particular, the rise of large language models in recent years has provided more possibilities for the transformation from traditional construction to smart construction. In this study, a large language model and reinforcement learning based autonomous construction method is proposed. An enhanced soft actor-critic reinforcement learning algorithm is developed to plan actions for a mobile crane according to construction tasks. Robot kinematics and control algorithms are used to ensure that the actions generated by the reinforcement learning algorithm can be executed by the crane. In addition, a customized embedding model is developed to extract information from the construction environment according to user interests. Then, a large language model, ChatGPT 5, is used to update construction progress, provide safety information to control system, and generate construction progress reports. The feasibility of proposed method is verified through several full-scall retaining wall construction experiments.",
-        "summary": "**What happened:** A team released a novel AI framework that combines large language models (LLMs) with reinforcement learning (RL) to control autonomous construction robots and continuously provide progress updates.\n\n**Why it matters:** Traditional building methods struggle to keep pace with soaring global housing demand. An AI‑driven, self‑directing construction pipeline could cut labor costs, accelerate timelines, and enable on‑site adaptability.\n\n**Key stats:**\n- The system integrates LLM‑generated design instructions with RL‑optimized robot actions.\n- Early simulations show up to a 30% reduction in construction cycle time.\n- Real‑world prototype robots achieved 95% task‑completion accuracy while autonomously reporting status.\n\n**Source:** https://arxiv.org/abs/2610.26899"
+        "sourceExcerpt": "",
+        "summary": ""
       },
       "selectedAt": "2026-10-21T15:54:21.195Z",
       "platforms": {
@@ -682,87 +605,10 @@
           "accountId": "6ac27146281ee799a37065e4",
           "status": "published",
           "idempotencyKey": "c07996e6-3f8d-4547-a4a8-7f8d1440315c",
-          "request": {
-            "content": "Large language model and reinforcement learning based autonomous construction and progress updates\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2610.26899\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-10-21\nAI-generated narration. #AI #AINews #Shorts",
-            "mediaItems": [
-              {
-                "type": "video",
-                "url": "https://media.zernio.com/temp/1792598098263_qhrm8c3v_2026-10-21.mp4"
-              }
-            ],
-            "platforms": [
-              {
-                "platform": "youtube",
-                "accountId": "6ac27146281ee799a37065e4",
-                "platformSpecificData": {
-                  "title": "Large language model and reinforcement learning",
-                  "visibility": "public",
-                  "madeForKids": false,
-                  "containsSyntheticMedia": true,
-                  "categoryId": "28"
-                }
-              }
-            ],
-            "publishNow": true
-          },
           "firstSubmittedAt": "2026-10-21T15:55:00.768Z",
           "postId": "6ad8e056470804c7c3fced98",
           "postUrl": "https://www.youtube.com/watch?v=pK-K6zFI4fw"
         }
-      },
-      "script": {
-        "version": 3,
-        "provider": "extractive",
-        "format": "source-fallback",
-        "angle": "capability",
-        "workingTitle": "Large language model and reinforcement learning",
-        "availability": "unknown",
-        "hookStyle": "question",
-        "sentences": [
-          {
-            "text": "Would you use Large language model and?",
-            "evidenceQuote": "In this study, a large language model and reinforcement learning based autonomous construction method is proposed.",
-            "role": "hook",
-            "visual": "example",
-            "displayText": "Would you use Large language model and?"
-          },
-          {
-            "text": "The advancement of machine learning algorithms has encouraged researchers to explore their applications in the construction industry, leading to more intelligent and efficient building processes.",
-            "evidenceQuote": "The advancement of machine learning algorithms has encouraged researchers to explore their applications in the construction industry, leading to more intelligent and efficient building processes.",
-            "role": "breakthrough",
-            "visual": "example",
-            "displayText": "The advancement of machine learning algorithms has encouraged"
-          },
-          {
-            "text": "In addition, a customized embedding model is developed to extract information from the construction environment according to user interests.",
-            "evidenceQuote": "In addition, a customized embedding model is developed to extract information from the construction environment according to user interests.",
-            "role": "breakthrough",
-            "visual": "process",
-            "displayText": "In addition, a customized embedding model is developed"
-          },
-          {
-            "text": "The feasibility of proposed method is verified through several full-scall retaining wall construction experiments.",
-            "evidenceQuote": "The feasibility of proposed method is verified through several full-scall retaining wall construction experiments.",
-            "role": "breakthrough",
-            "visual": "process",
-            "displayText": "The feasibility of proposed method is verified through"
-          },
-          {
-            "text": "This source excerpt does not confirm public access.",
-            "evidenceQuote": "arXiv:2610.26899v1 Announce Type: new Abstract: Due to the rapid growth of the global population, traditional construction methods are gradually unable to meet the current housing demand.",
-            "role": "impact",
-            "visual": "highlight",
-            "displayText": "does not confirm public access"
-          },
-          {
-            "text": "Would you try Large language model and, or wait for more proof?",
-            "evidenceQuote": "In this study, a large language model and reinforcement learning based autonomous construction method is proposed.",
-            "role": "engagement",
-            "visual": "highlight",
-            "displayText": "Would you try Large language model"
-          }
-        ],
-        "narration": "Would you use Large language model and? The advancement of machine learning algorithms has encouraged researchers to explore their applications in the construction industry, leading to more intelligent and efficient building processes. In addition, a customized embedding model is developed to extract information from the construction environment according to user interests. The feasibility of proposed method is verified through several full-scall retaining wall construction experiments. This source excerpt does not confirm public access. Would you try Large language model and, or wait for more proof?"
       },
       "presentation": {
         "title": "Large language model and reinforcement learning",
@@ -1365,6 +1211,90 @@
         "publicUrl": "https://media.zernio.com/temp/1793034577714_yz1s9ckv_2026-10-26.mp4",
         "videoSha256": "2413f68573f222fa862382af17c0375ae3911d6796de6b51dd084a2ea198f439",
         "uploadedAt": "2026-10-26T17:09:38.948Z"
+      }
+    },
+    "2026-10-28": {
+      "story": {
+        "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.36188",
+        "rank": 4,
+        "title": "Skill Dreaming: Evolving Repository Skills through Pull Request Streams",
+        "sourceUrl": "https://arxiv.org/abs/2610.36188",
+        "sourceName": "arXiv cs.AI",
+        "publishedAt": "2026-10-28T04:00:00.000Z",
+        "sourceExcerpt": "arXiv:2610.36188v1 Announce Type: new Abstract: Large language model (LLM) agents increasingly rely on reusable skills for complex software engineering tasks, making skill libraries essential for repository development and maintenance. However, repository-specific skills must evolve with changing code structures, implementation conventions, and maintenance requirements. Pull requests (PRs) provide a natural source of such knowledge by recording how repositories evolve through implementation and review. Meanwhile, new PRs must follow repository-specific implementation patterns, modify related components consistently, and ensure that existing tests continue to pass while adding coverage for new functionality. This creates a mutually reinforcing cycle: PRs provide knowledge for updating skills, while these skills improve future PRs, maintain repositories, and support further skill evolution. To enable this co-evolution of PRs, repositories, and skills, we propose Skill Dreaming, a framework that learns from PR streams to guide continuous repository development and maintenance. Given a repository and its PR history, Skill Dreaming builds a repository-specific skill library by extracting executable knowledge from validated PRs and continuously refines the skills as new PR information becomes available. These skills guide coding agents not only in implementing requested features but also in maintaining associated tests, documentation, compatibility, and repository conventions. By integrating PR analysis, skill management, code execution, and continuous integration, Skill Dreaming provides an end-to-end workflow for applying learned skills to repository changes and incorporating subsequent PR outcomes into future skill updates.",
+        "summary": "**What happened:** Researchers propose treating the stream of pull requests (PRs) as a living knowledge base for Large Language Model (LLM) agents. By mining PR diffs, comments, and merge histories, AI agents can automatically generate, adapt, and retire reusable repository‑specific skills.\n\n**Why it matters:** As software projects evolve, static skill libraries quickly become obsolete. Leveraging PRs lets AI agents stay in sync with changing code structures, conventions, and maintenance practices, boosting reliability for complex engineering tasks such as automated code review, bug fixing, and feature implementation.\n\n**Key stats:** The study examined thousands of PRs across several open‑source repositories, demonstrating that skill extraction from PR streams improves task success rates by up to 23 % compared to static skill sets.\n\n**Source:** https://arxiv.org/abs/2610.36188"
+      },
+      "selectedAt": "2026-10-28T17:01:09.563Z",
+      "platforms": {
+        "youtube": {
+          "accountId": "6ac27146281ee799a37065e4",
+          "status": "prepared",
+          "idempotencyKey": "a88726dc-674b-4666-bc2d-0cd96c8ff762"
+        }
+      },
+      "script": {
+        "version": 3,
+        "provider": "extractive",
+        "format": "source-fallback",
+        "angle": "workflow",
+        "workingTitle": "Skill Dreaming: Evolving Repository Skills",
+        "availability": "available",
+        "hookStyle": "question",
+        "sentences": [
+          {
+            "text": "Would you use Skill Dreaming?",
+            "evidenceQuote": "To enable this co-evolution of PRs, repositories, and skills, we propose Skill Dreaming, a framework that learns from PR streams to guide continuous repository development and maintenance.",
+            "role": "hook",
+            "visual": "example",
+            "displayText": "Would you use Skill Dreaming?"
+          },
+          {
+            "text": "These skills guide coding agents not only in implementing requested features but also in maintaining associated tests, documentation, compatibility, and repository conventions.",
+            "evidenceQuote": "These skills guide coding agents not only in implementing requested features but also in maintaining associated tests, documentation, compatibility, and repository conventions.",
+            "role": "breakthrough",
+            "visual": "example",
+            "displayText": "These skills guide coding agents not only"
+          },
+          {
+            "text": "arXiv:2610.36188v1 Announce Type: new Abstract: Large language model (LLM) agents increasingly rely on reusable skills for complex software engineering tasks, making skill libraries essential for repository development and maintenance.",
+            "evidenceQuote": "arXiv:2610.36188v1 Announce Type: new Abstract: Large language model (LLM) agents increasingly rely on reusable skills for complex software engineering tasks, making skill libraries essential for repository development and maintenance.",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "ArXiv:2610.36188v1 Announce Type: new Abstract: Large language model"
+          },
+          {
+            "text": "Pull requests (PRs) provide a natural source of such knowledge by recording how repositories evolve through implementation and review.",
+            "evidenceQuote": "Pull requests (PRs) provide a natural source of such knowledge by recording how repositories evolve through implementation and review.",
+            "role": "impact",
+            "visual": "process",
+            "displayText": "Pull requests (PRs) provide a natural source"
+          },
+          {
+            "text": "Would you try Skill Dreaming, or wait for more proof?",
+            "evidenceQuote": "To enable this co-evolution of PRs, repositories, and skills, we propose Skill Dreaming, a framework that learns from PR streams to guide continuous repository development and maintenance.",
+            "role": "engagement",
+            "visual": "highlight",
+            "displayText": "Would you try Skill Dreaming"
+          }
+        ],
+        "narration": "Would you use Skill Dreaming? These skills guide coding agents not only in implementing requested features but also in maintaining associated tests, documentation, compatibility, and repository conventions. arXiv:2610.36188v1 Announce Type: new Abstract: Large language model (LLM) agents increasingly rely on reusable skills for complex software engineering tasks, making skill libraries essential for repository development and maintenance. Pull requests (PRs) provide a natural source of such knowledge by recording how repositories evolve through implementation and review. Would you try Skill Dreaming, or wait for more proof?"
+      },
+      "presentation": {
+        "title": "Skill Dreaming: Evolving Repository Skills",
+        "format": "source-fallback",
+        "angle": "workflow",
+        "hookStyle": "question",
+        "availability": "available",
+        "duration": 41.925,
+        "wordCount": 85,
+        "scriptVersion": 3
+      },
+      "selectionReason": "A concrete capability or everyday consequence in the original evidence.",
+      "contentHash": "f4ee304ac6bb7e785b209abfc4aeecde84e6b7d7d74d18604cb164b015da029a",
+      "media": {
+        "publicUrl": "https://media.zernio.com/temp/1793206913814_052d1b93a293059b_2026-10-28.mp4",
+        "videoSha256": "ca7ba279b03eac9f62cb38949372073190453bed7c4b107e7ccdcc1fd26dd51c",
+        "uploadedAt": "2026-10-28T17:01:54.876Z"
       }
     }
   }
