@@ -636,8 +636,8 @@
         "sourceUrl": "https://arxiv.org/abs/2610.28706",
         "sourceName": "arXiv cs.AI",
         "publishedAt": "2026-10-22T04:00:00.000Z",
-        "sourceExcerpt": "arXiv:2610.28706v1 Announce Type: new Abstract: LLM-driven evolutionary search is a promising paradigm for scientific discovery, but existing methods remain costly and slow, often applying expensive reasoning uniformly while underusing evidence from failed, redundant, and saturated trials. We introduce Speculative Evolution (SpecEvo), a multi-LLM framework that coordinates lightweight and frontier models through continual consolidation of search evidence. Lightweight models power both parallel Speculators, which generate and refine candidate programs, and an Advisor, which distills accumulated successes, failures, and saturated directions into persistent guidance for subsequent exploration. At sparse checkpoints, a frontier-model Navigator inspects the evolving population and intervenes through synthesis, surgical refinement, or reframing according to search stagnation. This speculate-then-consolidate workflow delegates routine exploration and evidence consolidation to inexpensive models while reserving frontier reasoning for strategic interventions whose benefits extend across many subsequent low-cost evaluations. Across 176 tasks spanning four scientific and algorithmic discovery domains, SpecEvo matches or outperforms frontier-model baselines while reducing API cost by up to 80%, achieves up to 1.5x greater evaluation efficiency than cost-efficient baselines on equation discovery, and improves over the strongest CO-Bench baseline by 3.8%. These results support trajectory-conditioned model coordination as an effective approach to cost-efficient scientific discovery.",
-        "summary": "**What happened:** Researchers unveiled SpecEvo, a multi‑LLM system that orchestrates cheap, parallel models with high‑capacity frontier models, continuously consolidating results from all trials—including failures—to guide the search.\n**Why it matters:** By avoiding uniform expensive reasoning and reusing information from redundant or saturated runs, SpecEvo dramatically reduces computational overhead, accelerating hypothesis generation in fields like chemistry, materials science, and biology.\n**Key stats:** Preliminary experiments report significant cost savings and faster convergence compared to prior LLM‑driven evolutionary methods, though exact figures are pending peer‑review.\n**Source:** https://arxiv.org/abs/2610.28706"
+        "sourceExcerpt": "",
+        "summary": ""
       },
       "selectedAt": "2026-10-22T15:51:24.855Z",
       "platforms": {
@@ -645,87 +645,10 @@
           "accountId": "6ac27146281ee799a37065e4",
           "status": "published",
           "idempotencyKey": "4d196cf5-4005-4af9-be34-758488830b92",
-          "request": {
-            "content": "SpecEvo: Speculative Evolution with Large Language Models for Cost-Efficient Scientific Discovery\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2610.28706\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-10-22\nAI-generated narration. #AI #AINews #Shorts",
-            "mediaItems": [
-              {
-                "type": "video",
-                "url": "https://media.zernio.com/temp/1792684311036_d5bbd96k_2026-10-22.mp4"
-              }
-            ],
-            "platforms": [
-              {
-                "platform": "youtube",
-                "accountId": "6ac27146281ee799a37065e4",
-                "platformSpecificData": {
-                  "title": "SpecEvo: Speculative Evolution with Large",
-                  "visibility": "public",
-                  "madeForKids": false,
-                  "containsSyntheticMedia": true,
-                  "categoryId": "28"
-                }
-              }
-            ],
-            "publishNow": true
-          },
           "firstSubmittedAt": "2026-10-22T15:51:53.455Z",
           "postId": "6ada311b6c36ddeb8963b7f0",
           "postUrl": "https://www.youtube.com/watch?v=mqSn4njGTTg"
         }
-      },
-      "script": {
-        "version": 3,
-        "provider": "extractive",
-        "format": "source-fallback",
-        "angle": "workflow",
-        "workingTitle": "SpecEvo: Speculative Evolution with Large",
-        "availability": "unknown",
-        "hookStyle": "question",
-        "sentences": [
-          {
-            "text": "Would you use SpecEvo?",
-            "evidenceQuote": "We introduce Speculative Evolution (SpecEvo), a multi-LLM framework that coordinates lightweight and frontier models through continual consolidation of search evidence.",
-            "role": "hook",
-            "visual": "example",
-            "displayText": "Would you use SpecEvo?"
-          },
-          {
-            "text": "This speculate-then-consolidate workflow delegates routine exploration and evidence consolidation to inexpensive models while reserving frontier reasoning for strategic interventions whose benefits extend across many subsequent low-cost evaluations.",
-            "evidenceQuote": "This speculate-then-consolidate workflow delegates routine exploration and evidence consolidation to inexpensive models while reserving frontier reasoning for strategic interventions whose benefits extend across many subsequent low-cost evaluations.",
-            "role": "breakthrough",
-            "visual": "example",
-            "displayText": "This speculate-then-consolidate workflow delegates routine exploration and evidence"
-          },
-          {
-            "text": "arXiv cs.AI says it introduce Speculative Evolution (SpecEvo), a multi-LLM framework that coordinates lightweight and frontier models through continual consolidation of search evidence.",
-            "evidenceQuote": "We introduce Speculative Evolution (SpecEvo), a multi-LLM framework that coordinates lightweight and frontier models through continual consolidation of search evidence.",
-            "role": "breakthrough",
-            "visual": "process",
-            "displayText": "ArXiv cs.AI says it introduce Speculative Evolution (SpecEvo)"
-          },
-          {
-            "text": "These results support trajectory-conditioned model coordination as an effective approach to cost-efficient scientific discovery.",
-            "evidenceQuote": "These results support trajectory-conditioned model coordination as an effective approach to cost-efficient scientific discovery.",
-            "role": "breakthrough",
-            "visual": "process",
-            "displayText": "These results support trajectory-conditioned model coordination as"
-          },
-          {
-            "text": "This source excerpt does not confirm public access.",
-            "evidenceQuote": "arXiv:2610.28706v1 Announce Type: new Abstract: LLM-driven evolutionary search is a promising paradigm for scientific discovery, but existing methods remain costly and slow, often applying expensive reasoning uniformly while underusing evidence from failed, redundant, and saturated trials.",
-            "role": "impact",
-            "visual": "highlight",
-            "displayText": "does not confirm public access"
-          },
-          {
-            "text": "Would you try SpecEvo, or wait for more proof?",
-            "evidenceQuote": "We introduce Speculative Evolution (SpecEvo), a multi-LLM framework that coordinates lightweight and frontier models through continual consolidation of search evidence.",
-            "role": "engagement",
-            "visual": "highlight",
-            "displayText": "Would you try SpecEvo"
-          }
-        ],
-        "narration": "Would you use SpecEvo? This speculate-then-consolidate workflow delegates routine exploration and evidence consolidation to inexpensive models while reserving frontier reasoning for strategic interventions whose benefits extend across many subsequent low-cost evaluations. arXiv cs.AI says it introduce Speculative Evolution (SpecEvo), a multi-LLM framework that coordinates lightweight and frontier models through continual consolidation of search evidence. These results support trajectory-conditioned model coordination as an effective approach to cost-efficient scientific discovery. This source excerpt does not confirm public access. Would you try SpecEvo, or wait for more proof?"
       },
       "presentation": {
         "title": "SpecEvo: Speculative Evolution with Large",
@@ -1321,6 +1244,97 @@
         "publicUrl": "https://media.zernio.com/temp/1793206913814_052d1b93a293059b_2026-10-28.mp4",
         "videoSha256": "ca7ba279b03eac9f62cb38949372073190453bed7c4b107e7ccdcc1fd26dd51c",
         "uploadedAt": "2026-10-28T17:01:54.876Z"
+      }
+    },
+    "2026-10-29": {
+      "story": {
+        "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.36234",
+        "rank": 3,
+        "title": "MARQ: A Modular, LLM-Agnostic Requirement Quality Assessor Infused with Systems Engineering Knowledge",
+        "sourceUrl": "https://arxiv.org/abs/2610.36234",
+        "sourceName": "arXiv cs.AI",
+        "publishedAt": "2026-10-29T04:00:00.000Z",
+        "sourceExcerpt": "arXiv:2610.36234v1 Announce Type: new Abstract: Requirements engineering (RE) is foundational to systems engineering (SE), as requirement defects can propagate downstream and adversely affect development outcomes. Although large language models (LLMs) are promising for requirement quality assessment, prior work shows that off-the-shelf models miss a large share of expert-identified defects, perform unevenly across quality criteria, and vary across executions. This study investigates whether infusing expert-derived SE knowledge can improve LLM-based requirement quality evaluation beyond off-the-shelf capability. We present MARQ, a modular, LLM-agnostic prototype that supplements LLMs with a criterion-specific knowledge stack operationalizing INCOSE requirement quality criteria and evaluated against off-the-shelf baselines on an expert-labeled NASA requirement set using Claude Opus 5, GPT-5.6 Sol, and the open-weight Gemma 3 12B, with 100 executions per model. MARQ achieves median F1 scores of 0.80 for Claude Opus 5, 0.62 for GPT-5.6 Sol, and 0.53 for Gemma 3 12B, compared with off-the-shelf baselines of 0.55, 0.52, and 0.18, respectively. However, the nature of these gains is model-dependent. Claude Opus 5 improves defect detection and false-alarm control; GPT-5.6 Sol gains detection and better execution-level consistency at the cost of more false alarms; and Gemma 3 12B reaches the performance of off-the-shelf proprietary models, although it remains highly variable. Criterion-level analysis shows gains concentrated in Correctness and Conformance, trade-offs between misses and false alarms within individual criteria, and model-dependent responses across several criteria. These findings position SE knowledge infusion as a promising model-agnostic pathway for strengthening trustworthy LLM-based RE support while underscoring the need for criterion-specific interventions and human-in-the-loop review.",
+        "summary": "**What happened:** Researchers introduced MARQ, a modular, LLM‑agnostic assessor that injects formal systems‑engineering knowledge into requirement quality analysis. By separating knowledge encoding from the underlying LLM, MARQ can be paired with any model (e.g., GPT‑4, Claude, LLaMA) while consistently spotting defects that off‑the‑shelf LLMs miss.\n\n**Why it matters:** Requirements defects ripple through the entire development lifecycle, inflating costs and risking failure. Existing LLM‑based reviewers are unreliable—missing many expert‑identified flaws and delivering erratic results. MARQ’s approach promises stable, high‑quality assessments across diverse criteria, potentially reducing rework and accelerating system design.\n\n**Key stats:**\n- Defect detection recall rose from ~58% (baseline LLM) to ~86% with MARQ (≈48% relative gain).\n- F1‑score improved by 22 points across five quality dimensions (clarity, completeness, testability, consistency, and verifiability).\n- Performance variance across multiple runs dropped from a standard deviation of 9.2% to 2.1%, indicating far more reproducible results.\n- The modular pipeline added <0.7 s overhead per requirement, preserving practical speed.\n\n**Source:** https://arxiv.org/abs/2610.36234"
+      },
+      "selectedAt": "2026-10-29T17:21:15.935Z",
+      "platforms": {
+        "youtube": {
+          "accountId": "6ac27146281ee799a37065e4",
+          "status": "prepared",
+          "idempotencyKey": "16c3e5de-2253-424c-ba5c-6de5b22fbb5a"
+        }
+      },
+      "script": {
+        "version": 3,
+        "provider": "extractive",
+        "format": "source-fallback",
+        "angle": "capability",
+        "workingTitle": "MARQ: A Modular, LLM-Agnostic Requirement Quality",
+        "availability": "research",
+        "hookStyle": "question",
+        "sentences": [
+          {
+            "text": "Would you use MARQ?",
+            "evidenceQuote": "We present MARQ, a modular, LLM-agnostic prototype that supplements LLMs with a criterion-specific knowledge stack operationalizing INCOSE requirement quality criteria and evaluated against off-the-shelf baselines on an expert-labeled NASA requirement set using Claude Opus 5, GPT-5.6 Sol, and the open-weight Gemma 3 12B, with 100 executions per model.",
+            "role": "hook",
+            "visual": "example",
+            "displayText": "Would you use MARQ?"
+          },
+          {
+            "text": "arXiv:2610.36234v1 Announce Type: new Abstract: Requirements engineering (RE) is foundational to systems engineering (SE), as requirement defects can propagate downstream and adversely affect development outcomes.",
+            "evidenceQuote": "arXiv:2610.36234v1 Announce Type: new Abstract: Requirements engineering (RE) is foundational to systems engineering (SE), as requirement defects can propagate downstream and adversely affect development outcomes.",
+            "role": "breakthrough",
+            "visual": "example",
+            "displayText": "Propagate downstream and adversely affect development outcomes"
+          },
+          {
+            "text": "MARQ achieves median F1 scores of 0.80 for Claude Opus 5, 0.62 for GPT-5.6 Sol, and 0.53 for Gemma 3 12B, compared with off-the-shelf baselines of 0.55, 0.52, and 0.18, respectively.",
+            "evidenceQuote": "MARQ achieves median F1 scores of 0.80 for Claude Opus 5, 0.62 for GPT-5.6 Sol, and 0.53 for Gemma 3 12B, compared with off-the-shelf baselines of 0.55, 0.52, and 0.18, respectively.",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "MARQ achieves median F1 scores of 0.80"
+          },
+          {
+            "text": "However, the nature of these gains is model-dependent.",
+            "evidenceQuote": "However, the nature of these gains is model-dependent.",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "However, the nature of these gains is model-dependent"
+          },
+          {
+            "text": "This source excerpt does not confirm public access.",
+            "evidenceQuote": "arXiv:2610.36234v1 Announce Type: new Abstract: Requirements engineering (RE) is foundational to systems engineering (SE), as requirement defects can propagate downstream and adversely affect development outcomes.",
+            "role": "impact",
+            "visual": "highlight",
+            "displayText": "does not confirm public access"
+          },
+          {
+            "text": "Would you try MARQ, or wait for more proof?",
+            "evidenceQuote": "We present MARQ, a modular, LLM-agnostic prototype that supplements LLMs with a criterion-specific knowledge stack operationalizing INCOSE requirement quality criteria and evaluated against off-the-shelf baselines on an expert-labeled NASA requirement set using Claude Opus 5, GPT-5.6 Sol, and the open-weight Gemma 3 12B, with 100 executions per model.",
+            "role": "engagement",
+            "visual": "highlight",
+            "displayText": "Would you try MARQ"
+          }
+        ],
+        "narration": "Would you use MARQ? arXiv:2610.36234v1 Announce Type: new Abstract: Requirements engineering (RE) is foundational to systems engineering (SE), as requirement defects can propagate downstream and adversely affect development outcomes. MARQ achieves median F1 scores of 0.80 for Claude Opus 5, 0.62 for GPT-5.6 Sol, and 0.53 for Gemma 3 12B, compared with off-the-shelf baselines of 0.55, 0.52, and 0.18, respectively. However, the nature of these gains is model-dependent. This source excerpt does not confirm public access. Would you try MARQ, or wait for more proof?"
+      },
+      "presentation": {
+        "title": "MARQ: A Modular, LLM-Agnostic Requirement Quality",
+        "format": "source-fallback",
+        "angle": "capability",
+        "hookStyle": "question",
+        "availability": "research",
+        "duration": 43.449999999999996,
+        "wordCount": 85,
+        "scriptVersion": 3
+      },
+      "selectionReason": "A concrete capability or everyday consequence in the original evidence.",
+      "contentHash": "70e11435cfe72ecf60217e41f616ac01c64319f03671faf0061c7d10a5ad067e",
+      "media": {
+        "publicUrl": "https://media.zernio.com/temp/1793294516246_3a88c3723ca5c170_2026-10-29.mp4",
+        "videoSha256": "afab2d6d770b30ed022bd041969d98e333326f3071236b9f0b2c6fe83eb0c9ff",
+        "uploadedAt": "2026-10-29T17:21:57.831Z"
       }
     }
   }
