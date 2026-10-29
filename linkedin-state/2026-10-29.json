@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "issueDate": "2026-10-29",
+  "issueUrl": "https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-10-29",
+  "content": "Today's AI briefing from The Gradient | 2026-10-29\n\n1. Retell uses OpenAI models to help power 100M monthly calls\nRetell integrated OpenAI’s GPT‑6 Astra for its voice‑agent benchmark and leveraged Codex to enhance product capabilities, driving usage to 100 M monthly calls.\n\n2. Skill Dreaming: Evolving Repository Skills through Pull Request Streams\nResearchers introduced a framework that harvests pull‑request (PR) histories to automatically update and expand repository‑specific skills used by large language model agents.\n\n3. MARQ: A Modular, LLM-Agnostic Requirement Quality Assessor Infused with Systems Engineering Knowledge\nResearchers introduced MARQ, a modular, LLM‑agnostic assessor that injects formal systems‑engineering knowledge into requirement quality analysis. By separating knowledge encoding from the underlying LLM, MARQ can be paired with any model (e.g., GPT‑4, Claude, LLaMA) while consistently spotting defects that…\n\nRead the full briefing and original sources:\nhttps://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-10-29\n\n#AI #ArtificialIntelligence #TheGradient",
+  "contentHash": "9169fa9178a56d4a5dab80221cc9f1da493b53819d4f70510f9542ffd5970b40",
+  "accountId": "6ac5a561b3c21905c0edcfba",
+  "organizationUrn": "urn:li:organization:136824048",
+  "idempotencyKey": "2d1045c4-d6a8-4cd0-8a8a-6e8c65a167b0",
+  "status": "submitting",
+  "firstSubmittedAt": "2026-10-29T17:18:24.641Z"
+}
