@@ -1261,7 +1261,7 @@
       "platforms": {
         "youtube": {
           "accountId": "6ac27146281ee799a37065e4",
-          "status": "submitting",
+          "status": "published",
           "idempotencyKey": "16c3e5de-2253-424c-ba5c-6de5b22fbb5a",
           "request": {
             "content": "MARQ: A Modular, LLM-Agnostic Requirement Quality Assessor Infused with Systems Engineering Knowledge\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2610.36234\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-10-29\nAI-generated narration. #AI #AINews #Shorts",
@@ -1286,7 +1286,9 @@
             ],
             "publishNow": true
           },
-          "firstSubmittedAt": "2026-10-29T17:21:59.375Z"
+          "firstSubmittedAt": "2026-10-29T17:21:59.375Z",
+          "postId": "6ae380b980f923e19020713b",
+          "postUrl": "https://www.youtube.com/watch?v=kkY82n2IqBE"
         }
       },
       "script": {
