@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "issueDate": "2026-10-30",
+  "issueUrl": "https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-10-30",
+  "content": "Today's AI briefing from The Gradient | 2026-10-30\n\n1. What Does an Ontology Catch? Curated, LLM-Generated and Data-Derived Ontologies as Checkers of LLM Agents over Knowledge Graphs\nResearchers compared three kinds of ontology‑based checkers—hand‑curated, LLM‑generated, and data‑derived—to see how well they catch mistakes and avoid false alarms in LLM agents answering graph‑based questions.\n\n2. FilingLoop: Evaluating and Evolving LLM Agents for Corporate Disclosure Review and Revision\nResearchers released FilingLoop, a benchmark that evaluates large language model (LLM) agents on the full workflow of reviewing and revising corporate disclosures from SEC EDGAR. The agents must spot hidden deficiencies, pull in missing company facts, and confirm that suggested edits are backed by evidence.\n\n3. GAUSS: A Workload-Aware Analytical and Monte-Carlo Simulator for LLM Inference Serving\nA team released GAUSS, a hybrid analytical/Monte‑Carlo tool that models the two distinct phases of LLM serving—prompt processing and token generation—while accounting for continuous batching and workload variability.\n\nRead the full briefing and original sources:\nhttps://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-10-30\n\n#AI #ArtificialIntelligence #TheGradient",
+  "contentHash": "11cb3d9dbe5b8ecf60afbbb21f176ee0d7ba3cc32c5a0341651256d3dd14a056",
+  "accountId": "6ac5a561b3c21905c0edcfba",
+  "organizationUrn": "urn:li:organization:136824048",
+  "idempotencyKey": "36c811ab-bb28-4c72-b8e1-759498210f37",
+  "status": "submitting",
+  "firstSubmittedAt": "2026-10-30T16:56:26.371Z"
+}
