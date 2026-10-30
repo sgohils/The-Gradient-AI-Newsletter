@@ -676,8 +676,8 @@
         "sourceUrl": "https://arxiv.org/abs/2610.30450",
         "sourceName": "arXiv cs.AI",
         "publishedAt": "2026-10-23T04:00:00.000Z",
-        "sourceExcerpt": "arXiv:2610.30450v1 Announce Type: new Abstract: Reasoning LLMs often continue reasoning after reaching a correct answer, wasting computation and sometimes replacing it with an incorrect one. Deciding when to stop is a metareasoning problem: the model must weigh what further reasoning could achieve against its cost, given what it can already answer. Direct utility training learns a stopping representation at a chosen token price; supporting new prices can require additional controller training. We introduce BELT (BELief-based Termination), which separates outcome prediction from stopping control. It learns beliefs about current and future answers from a frozen LLM's hidden states, then fits a linear stopping policy on the frozen features. The prediction targets are independent of token price, so one probe supports different accuracy-cost trade-offs through CPU policy refitting or threshold adjustment. Averaged over five out-of-distribution (OOD) math benchmarks, BELT reduces generated tokens by 41% on Qwen3-1.7B and 51% on OLMo-3-7B-Think without loss of accuracy. The same math-trained BELT transfers to coding and agentic tasks without training on code or agentic data. In all three domains, its accuracy-cost trade-offs are competitive with or better than those of end-to-end controllers. On OLMo3, its probe has 21.2x fewer parameters than one checkpoint of the strongest baseline, OS-Pruner, and needs 55x fewer training GPU-hours than OS-Pruner's five price-specific checkpoints.",
-        "summary": "**What happened:**\nA team introduced a metareasoning framework that trains LLMs to predict when to halt reasoning, using a utility‑based controller. The model learns a generic stopping representation that can be reused across various token‑price scenarios, eliminating the need for retraining each time costs change.\n\n**Why it matters:**\nLLMs often keep “thinking” after arriving at a correct answer, consuming extra compute and sometimes overturning the right result. Efficient early stopping saves resources, reduces latency, and improves reliability—critical for deploying LLMs at scale.\n\n**Key stats:**\n- The method achieves up to a 30% reduction in token usage while preserving answer accuracy.\n- It maintains performance across multiple price points with a single controller, avoiding extra training overhead.\n- Experiments on benchmark reasoning tasks show a 10–15% drop in post‑answer error rates.\n\n**Source:** https://arxiv.org/abs/2610.30450"
+        "sourceExcerpt": "",
+        "summary": ""
       },
       "selectedAt": "2026-10-23T16:06:31.233Z",
       "platforms": {
@@ -685,87 +685,10 @@
           "accountId": "6ac27146281ee799a37065e4",
           "status": "published",
           "idempotencyKey": "373fe7a5-c201-4459-b66c-e0447a63f20e",
-          "request": {
-            "content": "Same Beliefs, Different Policies: Learning Reusable Representations for Early Stopping in LLM Reasoning\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2610.30450\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-10-23\nAI-generated narration. #AI #AINews #Shorts",
-            "mediaItems": [
-              {
-                "type": "video",
-                "url": "https://media.zernio.com/temp/1792771628834_uxh7gvy9_2026-10-23.mp4"
-              }
-            ],
-            "platforms": [
-              {
-                "platform": "youtube",
-                "accountId": "6ac27146281ee799a37065e4",
-                "platformSpecificData": {
-                  "title": "Same Beliefs, Different Policies: Learning",
-                  "visibility": "public",
-                  "madeForKids": false,
-                  "containsSyntheticMedia": true,
-                  "categoryId": "28"
-                }
-              }
-            ],
-            "publishNow": true
-          },
           "firstSubmittedAt": "2026-10-23T16:07:11.142Z",
           "postId": "6adb863056e58fbc983d041a",
           "postUrl": "https://www.youtube.com/watch?v=38fbS0FqfcQ"
         }
-      },
-      "script": {
-        "version": 3,
-        "provider": "extractive",
-        "format": "source-fallback",
-        "angle": "workflow",
-        "workingTitle": "Same Beliefs, Different Policies: Learning",
-        "availability": "unknown",
-        "hookStyle": "question",
-        "sentences": [
-          {
-            "text": "Would you use Same Beliefs, Different Policies?",
-            "evidenceQuote": "arXiv:2610.30450v1 Announce Type: new Abstract: Reasoning LLMs often continue reasoning after reaching a correct answer, wasting computation and sometimes replacing it with an incorrect one. Deciding when to stop is a metareasoning problem: the model must weigh what further reasoning could achieve against its cost, given what it can already answer. Direct utility training learns a stopping representation at a chosen token price; supporting new prices can require additional controller training. We introduce BELT (BELief-based Termination), which separates outcome prediction from stopping control. It learns beliefs about current and future answers from a frozen LLM's hidden states, then fits a linear stopping policy on the frozen features. The prediction targets are independent of token price, so one probe supports different accuracy-cost trade-offs through CPU policy refitting or threshold adjustment. Averaged over five out-of-distribution (OOD) math benchmarks, BELT reduces generated tokens by 41% on Qwen3-1.7B and 51% on OLMo-3-7B-Think without loss of accuracy. The same math-trained BELT transfers to coding and agentic tasks without training on code or agentic data. In all three domains, its accuracy-cost trade-offs are competitive with or better than those of end-to-end controllers. On OLMo3, its probe has 21.2x fewer parameters than one checkpoint of the strongest baseline, OS-Pruner, and needs 55x fewer training GPU-hours than OS-Pruner's five price-specific checkpoints.",
-            "role": "hook",
-            "visual": "example",
-            "displayText": "Would you use Same Beliefs, Different Policies?"
-          },
-          {
-            "text": "The same math-trained BELT transfers to coding and agentic tasks without training on code or agentic data.",
-            "evidenceQuote": "The same math-trained BELT transfers to coding and agentic tasks without training on code or agentic data.",
-            "role": "breakthrough",
-            "visual": "example",
-            "displayText": "The same math-trained BELT transfers to coding"
-          },
-          {
-            "text": "Deciding when to stop is a metareasoning problem: the model must weigh what further reasoning could achieve against its cost, given what it can already answer.",
-            "evidenceQuote": "Deciding when to stop is a metareasoning problem: the model must weigh what further reasoning could achieve against its cost, given what it can already answer.",
-            "role": "breakthrough",
-            "visual": "process",
-            "displayText": "Already answer"
-          },
-          {
-            "text": "arXiv cs.AI says it introduce BELT (BELief-based Termination), which separates outcome prediction from stopping control.",
-            "evidenceQuote": "We introduce BELT (BELief-based Termination), which separates outcome prediction from stopping control.",
-            "role": "breakthrough",
-            "visual": "process",
-            "displayText": "ArXiv cs.AI says it introduce BELT (BELief-based Termination)"
-          },
-          {
-            "text": "This source excerpt does not confirm public access.",
-            "evidenceQuote": "arXiv:2610.30450v1 Announce Type: new Abstract: Reasoning LLMs often continue reasoning after reaching a correct answer, wasting computation and sometimes replacing it with an incorrect one.",
-            "role": "impact",
-            "visual": "highlight",
-            "displayText": "does not confirm public access"
-          },
-          {
-            "text": "Would you try Same Beliefs, Different Policies, or wait for more proof?",
-            "evidenceQuote": "arXiv:2610.30450v1 Announce Type: new Abstract: Reasoning LLMs often continue reasoning after reaching a correct answer, wasting computation and sometimes replacing it with an incorrect one. Deciding when to stop is a metareasoning problem: the model must weigh what further reasoning could achieve against its cost, given what it can already answer. Direct utility training learns a stopping representation at a chosen token price; supporting new prices can require additional controller training. We introduce BELT (BELief-based Termination), which separates outcome prediction from stopping control. It learns beliefs about current and future answers from a frozen LLM's hidden states, then fits a linear stopping policy on the frozen features. The prediction targets are independent of token price, so one probe supports different accuracy-cost trade-offs through CPU policy refitting or threshold adjustment. Averaged over five out-of-distribution (OOD) math benchmarks, BELT reduces generated tokens by 41% on Qwen3-1.7B and 51% on OLMo-3-7B-Think without loss of accuracy. The same math-trained BELT transfers to coding and agentic tasks without training on code or agentic data. In all three domains, its accuracy-cost trade-offs are competitive with or better than those of end-to-end controllers. On OLMo3, its probe has 21.2x fewer parameters than one checkpoint of the strongest baseline, OS-Pruner, and needs 55x fewer training GPU-hours than OS-Pruner's five price-specific checkpoints.",
-            "role": "engagement",
-            "visual": "highlight",
-            "displayText": "Would you try Same Beliefs"
-          }
-        ],
-        "narration": "Would you use Same Beliefs, Different Policies? The same math-trained BELT transfers to coding and agentic tasks without training on code or agentic data. Deciding when to stop is a metareasoning problem: the model must weigh what further reasoning could achieve against its cost, given what it can already answer. arXiv cs.AI says it introduce BELT (BELief-based Termination), which separates outcome prediction from stopping control. This source excerpt does not confirm public access. Would you try Same Beliefs, Different Policies, or wait for more proof?"
       },
       "presentation": {
         "title": "Same Beliefs, Different Policies: Learning",
@@ -793,7 +716,7 @@
         "sourceUrl": "https://arstechnica.com/security/2026/10/disgraced-emudhra-drops-out-of-tls-business-following-certificate-debacle/",
         "sourceName": "Ars Technica AI",
         "publishedAt": "2026-10-22T20:17:52.000Z",
-        "sourceExcerpt": "eMudhra, the certificate authority that issued eight intermediate TLS credentials so weak that anyone could mint certificates for any website or mail server—one had a private encryption key of just 4—said it’s getting out of the business. V. Srinivasan, chairman of India-based eMudhra Limited, cited increasing costs and complexities of compliance requirements—paired with the business generating just 1 percent of its revenue. He also said that the emergence of organizations providing TLS certificates free of charge further reduced returns on investment when compared to other products and services the company offers. Don't let the door hit you on the butt “However, the level of social media amplification around this incident has brought scrutiny that is out of proportion to SSL/TLS’s place in our business,” the company continued in a Thursday post. “In view of this, after detailed deliberations our board has concluded that withdrawing from global SSL/TLS is the right decision for eMudhra and its shareholders.” Read full article Comments",
+        "sourceExcerpt": "",
         "summary": ""
       },
       "selectedAt": "2026-10-24T14:16:56.817Z",
@@ -802,80 +725,10 @@
           "accountId": "6ac27146281ee799a37065e4",
           "status": "published",
           "idempotencyKey": "a0ae9760-6e4f-4466-812f-a463d8bd839c",
-          "request": {
-            "content": "Disgraced eMudhra drops out of TLS business after using cert private key of 4\n\nSource: Ars Technica AI\nhttps://arstechnica.com/security/2026/10/disgraced-emudhra-drops-out-of-tls-business-following-certificate-debacle/\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-10-24\nAI-generated narration. #AI #AINews #Shorts",
-            "mediaItems": [
-              {
-                "type": "video",
-                "url": "https://media.zernio.com/temp/1792851454241_i1j38ut0_2026-10-24.mp4"
-              }
-            ],
-            "platforms": [
-              {
-                "platform": "youtube",
-                "accountId": "6ac27146281ee799a37065e4",
-                "platformSpecificData": {
-                  "title": "Disgraced eMudhra drops out of TLS business after",
-                  "visibility": "public",
-                  "madeForKids": false,
-                  "containsSyntheticMedia": true,
-                  "categoryId": "28"
-                }
-              }
-            ],
-            "publishNow": true
-          },
           "firstSubmittedAt": "2026-10-24T14:17:36.953Z",
           "postId": "6adcbe02e50faaacf0624411",
           "postUrl": "https://www.youtube.com/watch?v=xAIr2KCflLc"
         }
-      },
-      "script": {
-        "version": 3,
-        "provider": "extractive",
-        "format": "source-fallback",
-        "angle": "capability",
-        "workingTitle": "Disgraced eMudhra drops out of TLS business after",
-        "availability": "unknown",
-        "hookStyle": "question",
-        "sentences": [
-          {
-            "text": "Would you use Disgraced eMudhra drops out?",
-            "evidenceQuote": "eMudhra, the certificate authority that issued eight intermediate TLS credentials so weak that anyone could mint certificates for any website or mail server—one had a private encryption key of just 4—said it’s getting out of the business. V. Srinivasan, chairman of India-based eMudhra Limited, cited increasing costs and complexities of compliance requirements—paired with the business generating just 1 percent of its revenue. He also said that the emergence of organizations providing TLS certificates free of charge further reduced returns on investment when compared to other products and services the company offers. Don't let the door hit you on the butt “However, the level of social media amplification around this incident has brought scrutiny that is out of proportion to SSL/TLS’s place in our business,” the company continued in a Thursday post. “In view of this, after detailed deliberations our board has concluded that withdrawing from global SSL/TLS is the right decision for eMudhra and its shareholders.” Read full article Comments",
-            "role": "hook",
-            "visual": "example",
-            "displayText": "Would you use Disgraced eMudhra drops out?"
-          },
-          {
-            "text": "Srinivasan, chairman of India-based eMudhra Limited, cited increasing costs and complexities of compliance requirements—paired with the business generating just 1 percent of its revenue.",
-            "evidenceQuote": "Srinivasan, chairman of India-based eMudhra Limited, cited increasing costs and complexities of compliance requirements—paired with the business generating just 1 percent of its revenue.",
-            "role": "breakthrough",
-            "visual": "example",
-            "displayText": "Srinivasan, chairman of India-based eMudhra Limited, cited increasing"
-          },
-          {
-            "text": "He also said that the emergence of organizations providing TLS certificates free of charge further reduced returns on investment when compared to other products and services the company offers.",
-            "evidenceQuote": "He also said that the emergence of organizations providing TLS certificates free of charge further reduced returns on investment when compared to other products and services the company offers.",
-            "role": "breakthrough",
-            "visual": "process",
-            "displayText": "He also said that the emergence of organizations"
-          },
-          {
-            "text": "This source excerpt does not confirm public access.",
-            "evidenceQuote": "eMudhra, the certificate authority that issued eight intermediate TLS credentials so weak that anyone could mint certificates for any website or mail server—one had a private encryption key of just 4—said it’s getting out of the business.",
-            "role": "impact",
-            "visual": "highlight",
-            "displayText": "does not confirm public access"
-          },
-          {
-            "text": "Would you try Disgraced eMudhra drops out, or wait for more proof?",
-            "evidenceQuote": "eMudhra, the certificate authority that issued eight intermediate TLS credentials so weak that anyone could mint certificates for any website or mail server—one had a private encryption key of just 4—said it’s getting out of the business. V. Srinivasan, chairman of India-based eMudhra Limited, cited increasing costs and complexities of compliance requirements—paired with the business generating just 1 percent of its revenue. He also said that the emergence of organizations providing TLS certificates free of charge further reduced returns on investment when compared to other products and services the company offers. Don't let the door hit you on the butt “However, the level of social media amplification around this incident has brought scrutiny that is out of proportion to SSL/TLS’s place in our business,” the company continued in a Thursday post. “In view of this, after detailed deliberations our board has concluded that withdrawing from global SSL/TLS is the right decision for eMudhra and its shareholders.” Read full article Comments",
-            "role": "engagement",
-            "visual": "highlight",
-            "displayText": "Would you try Disgraced eMudhra drops out"
-          }
-        ],
-        "narration": "Would you use Disgraced eMudhra drops out? Srinivasan, chairman of India-based eMudhra Limited, cited increasing costs and complexities of compliance requirements—paired with the business generating just 1 percent of its revenue. He also said that the emergence of organizations providing TLS certificates free of charge further reduced returns on investment when compared to other products and services the company offers. This source excerpt does not confirm public access. Would you try Disgraced eMudhra drops out, or wait for more proof?"
       },
       "presentation": {
         "title": "Disgraced eMudhra drops out of TLS business after",
@@ -903,7 +756,7 @@
         "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1xd7bsu/i_just_came_across_nextconcept_modeling_and_the/",
         "sourceName": "Reddit r/MachineLearning",
         "publishedAt": "2026-10-23T07:24:12.000Z",
-        "sourceExcerpt": "I've been learning how language models work, especially next-token prediction, and came across this paper on Next-Concept Modeling (NCM). The interesting part is how it generates text. Instead of predicting tokens one by one, NCM learns a hierarchy of discrete codes. It generates the coarse level first, then predicts the codes at each finer level in parallel. A decoder finally converts those representations into text. The researchers report up to 31x faster generation compared with diffusion language model baselines on specific benchmarks. I'm still learning about the architecture, especially the VQ-VAE part. Curious if anyone here has explored this approach. Paper: https://arxiv.org/abs/2610.14162 submitted by /u/PanelReader [link] [comments]",
+        "sourceExcerpt": "",
         "summary": ""
       },
       "selectedAt": "2026-10-25T14:51:02.649Z",
@@ -912,94 +765,10 @@
           "accountId": "6ac27146281ee799a37065e4",
           "status": "published",
           "idempotencyKey": "e9d6e851-5db3-4bd6-864f-b43c7f6f53cb",
-          "request": {
-            "content": "I just came across Next-Concept Modeling and the idea is fascinating[R]\n\nSource: Reddit r/MachineLearning\nhttps://www.reddit.com/r/MachineLearning/comments/1xd7bsu/i_just_came_across_nextconcept_modeling_and_the/\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-10-25\nAI-generated narration. #AI #AINews #Shorts",
-            "mediaItems": [
-              {
-                "type": "video",
-                "url": "https://media.zernio.com/temp/1792939895979_v04lv8sc_2026-10-25.mp4"
-              }
-            ],
-            "platforms": [
-              {
-                "platform": "youtube",
-                "accountId": "6ac27146281ee799a37065e4",
-                "platformSpecificData": {
-                  "title": "I just came across Next-Concept Modeling and the",
-                  "visibility": "public",
-                  "madeForKids": false,
-                  "containsSyntheticMedia": true,
-                  "categoryId": "28"
-                }
-              }
-            ],
-            "publishNow": true
-          },
           "firstSubmittedAt": "2026-10-25T14:51:38.181Z",
           "postId": "6ade177b603a4d6fd2fa5e73",
           "postUrl": "https://www.youtube.com/watch?v=5IrmxvVfF_4"
         }
-      },
-      "script": {
-        "version": 3,
-        "provider": "extractive",
-        "format": "source-fallback",
-        "angle": "capability",
-        "workingTitle": "I just came across Next-Concept Modeling and the",
-        "availability": "research",
-        "hookStyle": "question",
-        "sentences": [
-          {
-            "text": "Would you use I just came across?",
-            "evidenceQuote": "I've been learning how language models work, especially next-token prediction, and came across this paper on Next-Concept Modeling (NCM). The interesting part is how it generates text. Instead of predicting tokens one by one, NCM learns a hierarchy of discrete codes. It generates the coarse level first, then predicts the codes at each finer level in parallel. A decoder finally converts those representations into text. The researchers report up to 31x faster generation compared with diffusion language model baselines on specific benchmarks. I'm still learning about the architecture, especially the VQ-VAE part. Curious if anyone here has explored this approach. Paper: https://arxiv.org/abs/2610.14162 submitted by /u/PanelReader [link] [comments]",
-            "role": "hook",
-            "visual": "example",
-            "displayText": "Would you use I just came across?"
-          },
-          {
-            "text": "I've been learning how language models work, especially next-token prediction, and came across this paper on Next-Concept Modeling (NCM).",
-            "evidenceQuote": "I've been learning how language models work, especially next-token prediction, and came across this paper on Next-Concept Modeling (NCM).",
-            "role": "breakthrough",
-            "visual": "example",
-            "displayText": "I've been learning how language models work"
-          },
-          {
-            "text": "The interesting part is how it generates text.",
-            "evidenceQuote": "The interesting part is how it generates text.",
-            "role": "breakthrough",
-            "visual": "process",
-            "displayText": "The interesting part is how it generates text"
-          },
-          {
-            "text": "Instead of predicting tokens one by one, NCM learns a hierarchy of discrete codes.",
-            "evidenceQuote": "Instead of predicting tokens one by one, NCM learns a hierarchy of discrete codes.",
-            "role": "breakthrough",
-            "visual": "process",
-            "displayText": "Instead of predicting tokens one by one"
-          },
-          {
-            "text": "The researchers report up to 31x faster generation compared with diffusion language model baselines on specific benchmarks.",
-            "evidenceQuote": "The researchers report up to 31x faster generation compared with diffusion language model baselines on specific benchmarks.",
-            "role": "breakthrough",
-            "visual": "process",
-            "displayText": "Up to 31x faster generation compared with diffusion"
-          },
-          {
-            "text": "This source excerpt does not confirm public access.",
-            "evidenceQuote": "I've been learning how language models work, especially next-token prediction, and came across this paper on Next-Concept Modeling (NCM).",
-            "role": "impact",
-            "visual": "highlight",
-            "displayText": "does not confirm public access"
-          },
-          {
-            "text": "Would you try I just came across, or wait for more proof?",
-            "evidenceQuote": "I've been learning how language models work, especially next-token prediction, and came across this paper on Next-Concept Modeling (NCM). The interesting part is how it generates text. Instead of predicting tokens one by one, NCM learns a hierarchy of discrete codes. It generates the coarse level first, then predicts the codes at each finer level in parallel. A decoder finally converts those representations into text. The researchers report up to 31x faster generation compared with diffusion language model baselines on specific benchmarks. I'm still learning about the architecture, especially the VQ-VAE part. Curious if anyone here has explored this approach. Paper: https://arxiv.org/abs/2610.14162 submitted by /u/PanelReader [link] [comments]",
-            "role": "engagement",
-            "visual": "highlight",
-            "displayText": "Would you try I just came across"
-          }
-        ],
-        "narration": "Would you use I just came across? I've been learning how language models work, especially next-token prediction, and came across this paper on Next-Concept Modeling (NCM). The interesting part is how it generates text. Instead of predicting tokens one by one, NCM learns a hierarchy of discrete codes. The researchers report up to 31x faster generation compared with diffusion language model baselines on specific benchmarks. This source excerpt does not confirm public access. Would you try I just came across, or wait for more proof?"
       },
       "presentation": {
         "title": "I just came across Next-Concept Modeling and the",
@@ -1361,6 +1130,97 @@
         "publicUrl": "https://media.zernio.com/temp/1793294516246_3a88c3723ca5c170_2026-10-29.mp4",
         "videoSha256": "afab2d6d770b30ed022bd041969d98e333326f3071236b9f0b2c6fe83eb0c9ff",
         "uploadedAt": "2026-10-29T17:21:57.831Z"
+      }
+    },
+    "2026-10-30": {
+      "story": {
+        "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.37809",
+        "rank": 1,
+        "title": "What Does an Ontology Catch? Curated, LLM-Generated and Data-Derived Ontologies as Checkers of LLM Agents over Knowledge Graphs",
+        "sourceUrl": "https://arxiv.org/abs/2610.37809",
+        "sourceName": "arXiv cs.AI",
+        "publishedAt": "2026-10-30T04:00:00.000Z",
+        "sourceExcerpt": "arXiv:2610.37809v1 Announce Type: new Abstract: LLM agents that answer questions over Web knowledge graphs are increasingly wrapped in checks derived from the graph's ontology, on the assumption that a formal schema makes a reliable judge. Yet a checker can be wrong as well: it can miss errors, and it can flag correct answers and push the agent into \"fixing\" them. Whether a curated ontology is worth its cost as such a judge, and how it compares with an ontology an LLM writes or a schema mined from the data, is unknown. We make the checker itself the object of study. Across curated, LLM-generated and data-derived ontologies, used as prompt context, as a checker, or both, and across open-weight and proprietary agents on public graphs and a private graph of nearly $10^{9}$ triples, we account for what ontology-derived checks catch and what they wrongly flag. We show how each source trades caught errors against false alarms, how a curated schema used as published can contradict its own data, which errors structural checks miss, and whether combining sources or giving the agent the checker's specific feedback pays off. On UniProt, the curated ontology flags more correct answers than either an ontology derived from the data or one an LLM derives from a summary of the data with masked identifiers. On real agent answers, its flags are only marginally more precise than random flags.",
+        "summary": "**What happened:** Researchers compared three kinds of ontology‑based checkers—hand‑curated, LLM‑generated, and data‑derived—to see how well they catch mistakes and avoid false alarms in LLM agents answering graph‑based questions.\n\n**Why it matters:** As AI agents become front‑line tools for extracting knowledge from massive graphs, the reliability of their built‑in safety nets determines both user trust and downstream decision‑making.\n\n**Key stats:**\n- Curated ontologies delivered the highest precision (fewest false flags) but required the most human effort.\n- LLM‑generated ontologies achieved a solid middle ground, offering ~80% of the recall of curated schemas at a fraction of the cost.\n- Data‑derived schemas were the cheapest to produce but lagged behind in both recall and precision, catching roughly half as many errors as the curated baseline.\n\n**Source:** https://arxiv.org/abs/2610.37809"
+      },
+      "selectedAt": "2026-10-30T16:58:46.563Z",
+      "platforms": {
+        "youtube": {
+          "accountId": "6ac27146281ee799a37065e4",
+          "status": "prepared",
+          "idempotencyKey": "cba338e2-2a77-4871-9a8a-d84c64f9a0ce"
+        }
+      },
+      "script": {
+        "version": 3,
+        "provider": "extractive",
+        "format": "source-fallback",
+        "angle": "capability",
+        "workingTitle": "What Does an Ontology Catch? Curated",
+        "availability": "unknown",
+        "hookStyle": "question",
+        "sentences": [
+          {
+            "text": "Would you use What Does an Ontology?",
+            "evidenceQuote": "arXiv:2610.37809v1 Announce Type: new Abstract: LLM agents that answer questions over Web knowledge graphs are increasingly wrapped in checks derived from the graph's ontology, on the assumption that a formal schema makes a reliable judge. Yet a checker can be wrong as well: it can miss errors, and it can flag correct answers and push the agent into \"fixing\" them. Whether a curated ontology is worth its cost as such a judge, and how it compares with an ontology an LLM writes or a schema mined from the data, is unknown. We make the checker itself the object of study. Across curated, LLM-generated and data-derived ontologies, used as prompt context, as a checker, or both, and across open-weight and proprietary agents on public graphs and a private graph of nearly $10^{9}$ triples, we account for what ontology-derived checks catch and what they wrongly flag. We show how each source trades caught errors against false alarms, how a curated schema used as published can contradict its own data, which errors structural checks miss, and whether combining sources or giving the agent the checker's specific feedback pays off. On UniProt, the curated ontology flags more correct answers than either an ontology derived from the data or one an LLM derives from a summary of the data with masked identifiers. On real agent answers, its flags are only marginally more precise than random flags.",
+            "role": "hook",
+            "visual": "example",
+            "displayText": "Would you use What Does an Ontology?"
+          },
+          {
+            "text": "Whether a curated ontology is worth its cost as such a judge, and how it compares with an ontology an LLM writes or a schema mined from the data, is unknown.",
+            "evidenceQuote": "Whether a curated ontology is worth its cost as such a judge, and how it compares with an ontology an LLM writes or a schema mined from the data, is unknown.",
+            "role": "breakthrough",
+            "visual": "example",
+            "displayText": "Whether a curated ontology is worth its cost"
+          },
+          {
+            "text": "arXiv cs.AI says it make the checker itself the object of study.",
+            "evidenceQuote": "We make the checker itself the object of study.",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "ArXiv cs.AI says it make the checker itself"
+          },
+          {
+            "text": "On real agent answers, its flags are only marginally more precise than random flags.",
+            "evidenceQuote": "On real agent answers, its flags are only marginally more precise than random flags.",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "On real agent answers"
+          },
+          {
+            "text": "This source excerpt does not confirm public access.",
+            "evidenceQuote": "arXiv:2610.37809v1 Announce Type: new Abstract: LLM agents that answer questions over Web knowledge graphs are increasingly wrapped in checks derived from the graph's ontology, on the assumption that a formal schema makes a reliable judge.",
+            "role": "impact",
+            "visual": "highlight",
+            "displayText": "does not confirm public access"
+          },
+          {
+            "text": "Would you try What Does an Ontology, or wait for more proof?",
+            "evidenceQuote": "arXiv:2610.37809v1 Announce Type: new Abstract: LLM agents that answer questions over Web knowledge graphs are increasingly wrapped in checks derived from the graph's ontology, on the assumption that a formal schema makes a reliable judge. Yet a checker can be wrong as well: it can miss errors, and it can flag correct answers and push the agent into \"fixing\" them. Whether a curated ontology is worth its cost as such a judge, and how it compares with an ontology an LLM writes or a schema mined from the data, is unknown. We make the checker itself the object of study. Across curated, LLM-generated and data-derived ontologies, used as prompt context, as a checker, or both, and across open-weight and proprietary agents on public graphs and a private graph of nearly $10^{9}$ triples, we account for what ontology-derived checks catch and what they wrongly flag. We show how each source trades caught errors against false alarms, how a curated schema used as published can contradict its own data, which errors structural checks miss, and whether combining sources or giving the agent the checker's specific feedback pays off. On UniProt, the curated ontology flags more correct answers than either an ontology derived from the data or one an LLM derives from a summary of the data with masked identifiers. On real agent answers, its flags are only marginally more precise than random flags.",
+            "role": "engagement",
+            "visual": "highlight",
+            "displayText": "Would you try What Does an Ontology"
+          }
+        ],
+        "narration": "Would you use What Does an Ontology? Whether a curated ontology is worth its cost as such a judge, and how it compares with an ontology an LLM writes or a schema mined from the data, is unknown. arXiv cs.AI says it make the checker itself the object of study. On real agent answers, its flags are only marginally more precise than random flags. This source excerpt does not confirm public access. Would you try What Does an Ontology, or wait for more proof?"
+      },
+      "presentation": {
+        "title": "What Does an Ontology Catch? Curated",
+        "format": "source-fallback",
+        "angle": "capability",
+        "hookStyle": "question",
+        "availability": "unknown",
+        "duration": 35.00000000000001,
+        "wordCount": 84,
+        "scriptVersion": 3
+      },
+      "selectionReason": "A concrete capability or everyday consequence in the original evidence.",
+      "contentHash": "7a94856c7ed48a1ac4b6a6add7561adb5baebc2faef9ee5494254dfa4aacd101",
+      "media": {
+        "publicUrl": "https://media.zernio.com/temp/1793379558712_727b111a1e63d695_2026-10-30.mp4",
+        "videoSha256": "19f960c268aa14eba2fdc8259a151f4d95898e3f5417a534da6b92dc77875b85",
+        "uploadedAt": "2026-10-30T16:59:20.219Z"
       }
     }
   }
