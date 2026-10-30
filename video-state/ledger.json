@@ -1147,7 +1147,7 @@
       "platforms": {
         "youtube": {
           "accountId": "6ac27146281ee799a37065e4",
-          "status": "submitting",
+          "status": "published",
           "idempotencyKey": "cba338e2-2a77-4871-9a8a-d84c64f9a0ce",
           "request": {
             "content": "What Does an Ontology Catch? Curated, LLM-Generated and Data-Derived Ontologies as Checkers of LLM Agents over Knowledge Graphs\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2610.37809\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-10-30\nAI-generated narration. #AI #AINews #Shorts",
@@ -1172,7 +1172,9 @@
             ],
             "publishNow": true
           },
-          "firstSubmittedAt": "2026-10-30T16:59:21.688Z"
+          "firstSubmittedAt": "2026-10-30T16:59:21.688Z",
+          "postId": "6ae4cceb88e385cb3da68212",
+          "postUrl": "https://www.youtube.com/watch?v=f7Jpj-4iML8"
         }
       },
       "script": {
