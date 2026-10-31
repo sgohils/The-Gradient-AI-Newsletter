@@ -1264,7 +1264,7 @@
       "platforms": {
         "youtube": {
           "accountId": "6ac27146281ee799a37065e4",
-          "status": "submitting",
+          "status": "published",
           "idempotencyKey": "c1c0b92b-2155-4b53-874f-2238febe73bc",
           "request": {
             "content": "GAUSS: A Workload-Aware Analytical and Monte-Carlo Simulator for LLM Inference Serving\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2610.37989\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-10-31\nAI-generated narration. #AI #AINews #Shorts",
@@ -1289,7 +1289,9 @@
             ],
             "publishNow": true
           },
-          "firstSubmittedAt": "2026-10-31T16:01:56.166Z"
+          "firstSubmittedAt": "2026-10-31T16:01:56.166Z",
+          "postId": "6ae610f50fb62a7eb6184b79",
+          "postUrl": "https://www.youtube.com/watch?v=j6BMikTwOrI"
         }
       },
       "script": {
