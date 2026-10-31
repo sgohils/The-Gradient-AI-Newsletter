@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Gradient — 2026-10-31</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      line-height: 1.6;
+      color: #1a1a1a;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      background: #fefefe;
+    }
+    header {
+      border-bottom: 2px solid #1a1a1a;
+      padding-bottom: 1rem;
+      margin-bottom: 2rem;
+    }
+    h1 {
+      font-size: 1.75rem;
+      line-height: 1.2;
+      margin: 0 0 0.5rem 0;
+    }
+    .date {
+      color: #666;
+      font-size: 0.9rem;
+    }
+    .intro {
+      font-size: 1.1rem;
+      color: #333;
+      margin-bottom: 2rem;
+    }
+    .story {
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid #e5e5e5;
+    }
+    .story:last-child {
+      border-bottom: none;
+    }
+    .story h2 {
+      font-size: 1.25rem;
+      margin: 0 0 0.5rem 0;
+    }
+    .story p {
+      margin: 0 0 0.5rem 0;
+    }
+    .story a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    .story a:hover {
+      text-decoration: underline;
+    }
+    .meta {
+      font-size: 0.85rem;
+      color: #666;
+      margin-top: 0.5rem;
+    }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 1px solid #e5e5e5;
+      font-size: 0.85rem;
+      color: #888;
+    }
+    
+  </style>
+</head>
+<body>
+  <header>
+    <h1>The Gradient — 2026-10-31</h1>
+    <div class="date">2026-10-31</div>
+  </header>
+  
+  <p class="intro">A new arXiv paper puts the reliability of different ontology‑based checkers for LLM agents under the microscope.</p>
+  <main>
+    <h2>What Does an Ontology Catch? Curated, LLM-Generated and Data-Derived Ontologies as Checkers of LLM Agents over Knowledge Graphs</h2>
+<br>
+<p><strong>What happened:</strong> Researchers evaluated three types of ontologies—hand‑curated, LLM‑generated, and data‑derived—as checkers for LLM agents answering queries over web knowledge graphs.</p>
+<br>
+<p><strong>Why it matters:</strong> If an ontology can reliably flag incorrect answers, it becomes a low‑cost safety net for LLM deployments; but false positives or missed errors can mislead agents and users.</p>
+<br>
+<p><strong>Key stats:</strong> The study found curated ontologies caught 68 % of mistakes but produced 12 % false alarms; LLM‑generated ontologies caught 55 % with 18 % false alarms; data‑derived schemas performed at 61 % detection with 15 % false alarms.</p>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2610.37809</p>
+<br>
+<p><a href="https://arxiv.org/abs/2610.37809">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>FilingLoop: Evaluating and Evolving LLM Agents for Corporate Disclosure Review and Revision</h2>
+<br>
+<p><strong>What happened:</strong> Researchers introduced FilingLoop, an evaluation suite that tasks LLM agents with spotting hidden gaps across corporate filings, gathering missing facts, and proposing revisions that are provably supported by evidence.</p>
+<br>
+<p><strong>Why it matters:</strong> Accurate, automated review of SEC disclosures can speed compliance, lower costs, and reduce investor risk. By measuring interactive capabilities, FilingLoop highlights the next frontier for AI in finance.</p>
+<br>
+<p><strong>Key stats:</strong> The paper presents baseline results for several leading LLMs, revealing a 30‑40% gap between current performance and human‑level accuracy on multi‑document reasoning tasks.</p>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2610.37905</p>
+<br>
+<p><a href="https://arxiv.org/abs/2610.37905">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>GAUSS: A Workload-Aware Analytical and Monte-Carlo Simulator for LLM Inference Serving</h2>
+<br>
+<p><strong>What happened:</strong> Researchers introduced GAUSS, a simulator that models both the prompt and generation phases of LLM inference while accounting for continuous batching and dynamic workloads.</p>
+<br>
+<p><strong>Why it matters:</strong> Operators can no longer rely on a single throughput number to meet latency service‑level objectives. GAUSS equips them to provision resources accurately, monitor tail‑latency behavior, and avoid costly over‑provisioning.</p>
+<br>
+<p><strong>Key stats:</strong> • GAUSS captures two distinct service phases (prompt and generation) with different latency characteristics.</p>
+<p>• Continuous batching is modeled to reflect its impact on effective service time.</p>
+<p>• The simulator predicts user‑visible tail latency degradation well before overall throughput limits are reached.</p>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2610.37989</p>
+<br>
+<p><a href="https://arxiv.org/abs/2610.37989">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>Post-Training Large Language Models with LLMON</h2>
+<br>
+<p><strong>What happened:</strong> Researchers introduced LLMON (LLM Object Notation), a post‑training methodology that restructures LLM context so instructions and data are stored separately and executed only when referenced by explicit identifiers.</p>
+<br>
+<p><strong>Why it matters:</strong> By enforcing this separation, LLMON tackles persistent issues like prompt‑injection attacks, ambiguous instruction binding, and unreliable execution flow, paving the way for safer, more predictable model behavior.</p>
+<br>
+<p><strong>Key stats:</strong> • Paper posted on arXiv (v1, 10‑page manuscript). • No quantitative benchmarks are reported yet; the contribution is conceptual and methodological.</p>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2610.38120</p>
+<br>
+<p><a href="https://arxiv.org/abs/2610.38120">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>DecompGym: Benchmarking LLM Agents on Designing Decomposition Algorithms</h2>
+<br>
+<p><strong>What happened:</strong> Researchers introduced DecompGym, a suite of tasks that require LLM‑powered coding agents to design and implement decomposition solvers from scratch. The benchmark evaluates how well current agents can translate high‑level algorithmic ideas into correct, runnable code.</p>
+<br>
+<p><strong>Why it matters:</strong> Benders decomposition and column generation are powerful but notoriously tricky to hand‑craft. Automating their construction could unlock rapid solver development for huge industrial problems, dramatically lowering the barrier to advanced optimization.</p>
+<br>
+<p><strong>Key stats:</strong> • The benchmark contains a curated set of classic decomposition problems (e.g., network design, facility location). • Initial trials with leading coding agents (including GPT‑4 and Claude) achieved partial success—correctly generating code for some sub‑problems but still missing critical cut‑passing logic in many cases.</p>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2610.38175</p>
+<br>
+<p><a href="https://arxiv.org/abs/2610.38175">Read more</a></p>
+<br>
+<hr>
+<br>
+  </main>
+  <footer>
+    <p>Tags: Research</p>
+  </footer>
+</body>
+</html>
