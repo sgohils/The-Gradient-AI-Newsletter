@@ -1248,6 +1248,90 @@
         "videoSha256": "19f960c268aa14eba2fdc8259a151f4d95898e3f5417a534da6b92dc77875b85",
         "uploadedAt": "2026-10-30T16:59:20.219Z"
       }
+    },
+    "2026-10-31": {
+      "story": {
+        "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.37989",
+        "rank": 3,
+        "title": "GAUSS: A Workload-Aware Analytical and Monte-Carlo Simulator for LLM Inference Serving",
+        "sourceUrl": "https://arxiv.org/abs/2610.37989",
+        "sourceName": "arXiv cs.AI",
+        "publishedAt": "2026-10-31T04:00:00.000Z",
+        "sourceExcerpt": "arXiv:2610.37989v1 Announce Type: new Abstract: Large language model (LLM) inference has become an operational workload that fleets must provision, monitor, and bill against latency service-level objectives (SLOs). A single throughput number cannot answer the questions operators actually face, because generative serving couples two phases with very different service characteristics, continuous batching reshapes the effective service process, and user-visible tail latency can degrade long before aggregate throughput saturates. We present GAUSS, a workload-aware analytical and Monte-Carlo simulator that predicts the full distributions of time-to-first-token (TTFT) and time-between-tokens (TBT), together with the sustainable request rate, for a given workload, engine, and accelerator. GAUSS pairs calibrated, phase-specific latency surfaces for prefill and decode with a Lindley-recurrence model of queueing under stochastic arrivals and estimates performance by ensemble Monte-Carlo sampling rather than by replaying a single trace. This lets GAUSS reason about workloads, routing policies, and hardware that have never been deployed, and to capture the latency tails that trace-driven simulators systematically under-sample. We describe the model and show how it supports operating-point selection, traffic segmentation, and shortest-remaining-processing-time scheduling capacity questions that trace-driven simulators cannot address.",
+        "summary": "**What happened:** Researchers introduced GAUSS, a simulator that models both the prompt and generation phases of LLM inference while accounting for continuous batching and dynamic workloads.\n\n**Why it matters:** Operators can no longer rely on a single throughput number to meet latency service‑level objectives. GAUSS equips them to provision resources accurately, monitor tail‑latency behavior, and avoid costly over‑provisioning.\n\n**Key stats:** • GAUSS captures two distinct service phases (prompt and generation) with different latency characteristics.\n• Continuous batching is modeled to reflect its impact on effective service time.\n• The simulator predicts user‑visible tail latency degradation well before overall throughput limits are reached.\n\n**Source:** https://arxiv.org/abs/2610.37989"
+      },
+      "selectedAt": "2026-10-31T16:01:17.714Z",
+      "platforms": {
+        "youtube": {
+          "accountId": "6ac27146281ee799a37065e4",
+          "status": "prepared",
+          "idempotencyKey": "c1c0b92b-2155-4b53-874f-2238febe73bc"
+        }
+      },
+      "script": {
+        "version": 3,
+        "provider": "extractive",
+        "format": "source-fallback",
+        "angle": "capability",
+        "workingTitle": "GAUSS: A Workload-Aware Analytical and",
+        "availability": "unknown",
+        "hookStyle": "question",
+        "sentences": [
+          {
+            "text": "Would you use GAUSS?",
+            "evidenceQuote": "We present GAUSS, a workload-aware analytical and Monte-Carlo simulator that predicts the full distributions of time-to-first-token (TTFT) and time-between-tokens (TBT), together with the sustainable request rate, for a given workload, engine, and accelerator.",
+            "role": "hook",
+            "visual": "example",
+            "displayText": "Would you use GAUSS?"
+          },
+          {
+            "text": "arXiv:2610.37989v1 Announce Type: new Abstract: Large language model (LLM) inference has become an operational workload that fleets must provision, monitor, and bill against latency service-level objectives (SLOs).",
+            "evidenceQuote": "arXiv:2610.37989v1 Announce Type: new Abstract: Large language model (LLM) inference has become an operational workload that fleets must provision, monitor, and bill against latency service-level objectives (SLOs).",
+            "role": "breakthrough",
+            "visual": "example",
+            "displayText": "ArXiv:2610.37989v1 Announce Type: new Abstract: Large language model"
+          },
+          {
+            "text": "GAUSS pairs calibrated, phase-specific latency surfaces for prefill and decode with a Lindley-recurrence model of queueing under stochastic arrivals and estimates performance by ensemble Monte-Carlo sampling rather than by replaying a single trace.",
+            "evidenceQuote": "GAUSS pairs calibrated, phase-specific latency surfaces for prefill and decode with a Lindley-recurrence model of queueing under stochastic arrivals and estimates performance by ensemble Monte-Carlo sampling rather than by replaying a single trace.",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "GAUSS pairs calibrated"
+          },
+          {
+            "text": "This source excerpt does not confirm public access.",
+            "evidenceQuote": "arXiv:2610.37989v1 Announce Type: new Abstract: Large language model (LLM) inference has become an operational workload that fleets must provision, monitor, and bill against latency service-level objectives (SLOs).",
+            "role": "impact",
+            "visual": "highlight",
+            "displayText": "does not confirm public access"
+          },
+          {
+            "text": "Would you try GAUSS, or wait for more proof?",
+            "evidenceQuote": "We present GAUSS, a workload-aware analytical and Monte-Carlo simulator that predicts the full distributions of time-to-first-token (TTFT) and time-between-tokens (TBT), together with the sustainable request rate, for a given workload, engine, and accelerator.",
+            "role": "engagement",
+            "visual": "highlight",
+            "displayText": "Would you try GAUSS"
+          }
+        ],
+        "narration": "Would you use GAUSS? arXiv:2610.37989v1 Announce Type: new Abstract: Large language model (LLM) inference has become an operational workload that fleets must provision, monitor, and bill against latency service-level objectives (SLOs). GAUSS pairs calibrated, phase-specific latency surfaces for prefill and decode with a Lindley-recurrence model of queueing under stochastic arrivals and estimates performance by ensemble Monte-Carlo sampling rather than by replaying a single trace. This source excerpt does not confirm public access. Would you try GAUSS, or wait for more proof?"
+      },
+      "presentation": {
+        "title": "GAUSS: A Workload-Aware Analytical and",
+        "format": "source-fallback",
+        "angle": "capability",
+        "hookStyle": "question",
+        "availability": "unknown",
+        "duration": 41.15,
+        "wordCount": 81,
+        "scriptVersion": 3
+      },
+      "selectionReason": "A concrete capability or everyday consequence in the original evidence.",
+      "contentHash": "e8c44742ea45a90c8130798da776129c007cabc8694218e427d1da07bb0e8330",
+      "media": {
+        "publicUrl": "https://media.zernio.com/temp/1793462512642_87b3305d5523f450_2026-10-31.mp4",
+        "videoSha256": "3ea3e3ad64488749f1a9a07107364b4ba9b66fd5bfc326e859507fdbb58dff48",
+        "uploadedAt": "2026-10-31T16:01:54.647Z"
+      }
     }
   }
 }
