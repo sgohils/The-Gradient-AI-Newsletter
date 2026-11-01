@@ -1358,6 +1358,97 @@
         "videoSha256": "3ea3e3ad64488749f1a9a07107364b4ba9b66fd5bfc326e859507fdbb58dff48",
         "uploadedAt": "2026-10-31T16:01:54.647Z"
       }
+    },
+    "2026-11-01": {
+      "story": {
+        "id": "reddit-machinelearning-https%3A%2F%2Fwww.reddit.com%2Fr%2FMachineLearning%2Fcomments%2F1xkp8e9%2Fare_there_fundamental_repeating_patterns_in_ml%2F",
+        "rank": 6,
+        "title": "Are there fundamental repeating patterns in ML techniques across modalities (text, image, audio) that let us group them? [R]",
+        "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1xkp8e9/are_there_fundamental_repeating_patterns_in_ml/",
+        "sourceName": "Reddit r/MachineLearning",
+        "publishedAt": "2026-11-01T00:07:04.000Z",
+        "sourceExcerpt": "I’ve been noticing that a lot of techniques seem to repeat across modalities with just a different name. For example, tokenisation, masking (MLM / MAE / audio masking), diffusion, next-token / next-frame prediction, etc. Is there an existing taxonomy or mental model that groups ML techniques by their underlying pattern rather than by modality (NLP / vision / audio)? This will help me to group the research papers and then make reference to work already done in that domain submitted by /u/OkCampaign8400 [link] [comments]",
+        "summary": ""
+      },
+      "selectedAt": "2026-11-01T17:40:17.265Z",
+      "platforms": {
+        "youtube": {
+          "accountId": "6ac27146281ee799a37065e4",
+          "status": "prepared",
+          "idempotencyKey": "78db83f0-eb1c-4344-b99f-6599fc6deecc"
+        }
+      },
+      "script": {
+        "version": 3,
+        "provider": "extractive",
+        "format": "source-fallback",
+        "angle": "capability",
+        "workingTitle": "Are there fundamental repeating patterns in ML",
+        "availability": "research",
+        "hookStyle": "question",
+        "sentences": [
+          {
+            "text": "Would you use Are there fundamental repeating?",
+            "evidenceQuote": "I’ve been noticing that a lot of techniques seem to repeat across modalities with just a different name. For example, tokenisation, masking (MLM / MAE / audio masking), diffusion, next-token / next-frame prediction, etc. Is there an existing taxonomy or mental model that groups ML techniques by their underlying pattern rather than by modality (NLP / vision / audio)? This will help me to group the research papers and then make reference to work already done in that domain submitted by /u/OkCampaign8400 [link] [comments]",
+            "role": "hook",
+            "visual": "example",
+            "displayText": "Would you use Are there fundamental repeating?"
+          },
+          {
+            "text": "I’ve been noticing that a lot of techniques seem to repeat across modalities with just a different name.",
+            "evidenceQuote": "I’ve been noticing that a lot of techniques seem to repeat across modalities with just a different name.",
+            "role": "breakthrough",
+            "visual": "example",
+            "displayText": "I’ve been noticing that a lot of techniques"
+          },
+          {
+            "text": "For example, tokenisation, masking (MLM / MAE / audio masking), diffusion, next-token / next-frame prediction, etc.",
+            "evidenceQuote": "For example, tokenisation, masking (MLM / MAE / audio masking), diffusion, next-token / next-frame prediction, etc.",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "For example, tokenisation, masking (MLM / MAE /"
+          },
+          {
+            "text": "Is there an existing taxonomy or mental model that groups ML techniques by their underlying pattern rather than by modality (NLP / vision / audio)?",
+            "evidenceQuote": "Is there an existing taxonomy or mental model that groups ML techniques by their underlying pattern rather than by modality (NLP / vision / audio)?",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "Is there an existing taxonomy or mental model"
+          },
+          {
+            "text": "This source excerpt does not confirm public access.",
+            "evidenceQuote": "I’ve been noticing that a lot of techniques seem to repeat across modalities with just a different name.",
+            "role": "impact",
+            "visual": "highlight",
+            "displayText": "does not confirm public access"
+          },
+          {
+            "text": "Would you try Are there fundamental repeating, or wait for more proof?",
+            "evidenceQuote": "I’ve been noticing that a lot of techniques seem to repeat across modalities with just a different name. For example, tokenisation, masking (MLM / MAE / audio masking), diffusion, next-token / next-frame prediction, etc. Is there an existing taxonomy or mental model that groups ML techniques by their underlying pattern rather than by modality (NLP / vision / audio)? This will help me to group the research papers and then make reference to work already done in that domain submitted by /u/OkCampaign8400 [link] [comments]",
+            "role": "engagement",
+            "visual": "highlight",
+            "displayText": "Would you try Are there fundamental repeating"
+          }
+        ],
+        "narration": "Would you use Are there fundamental repeating? I’ve been noticing that a lot of techniques seem to repeat across modalities with just a different name. For example, tokenisation, masking (MLM / MAE / audio masking), diffusion, next-token / next-frame prediction, etc. Is there an existing taxonomy or mental model that groups ML techniques by their underlying pattern rather than by modality (NLP / vision / audio)? This source excerpt does not confirm public access. Would you try Are there fundamental repeating, or wait for more proof?"
+      },
+      "presentation": {
+        "title": "Are there fundamental repeating patterns in ML",
+        "format": "source-fallback",
+        "angle": "capability",
+        "hookStyle": "question",
+        "availability": "research",
+        "duration": 38.275,
+        "wordCount": 86,
+        "scriptVersion": 3
+      },
+      "selectionReason": "A concrete capability or everyday consequence in the original evidence.",
+      "contentHash": "b2e3b1fcf3f4d57babebeeeeafd38d85548723cb6a1cc39cedb7b045486a2718",
+      "media": {
+        "publicUrl": "https://media.zernio.com/temp/1793554852032_bdb0851930e5519e_2026-11-01.mp4",
+        "videoSha256": "c48a7683100ebff43d53e83ee24e1e2d97ed5ce4e030bd0b7fd82d8de16a737c",
+        "uploadedAt": "2026-11-01T17:40:53.434Z"
+      }
     }
   }
 }
