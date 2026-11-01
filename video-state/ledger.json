@@ -1374,8 +1374,32 @@
       "platforms": {
         "youtube": {
           "accountId": "6ac27146281ee799a37065e4",
-          "status": "prepared",
-          "idempotencyKey": "78db83f0-eb1c-4344-b99f-6599fc6deecc"
+          "status": "submitting",
+          "idempotencyKey": "78db83f0-eb1c-4344-b99f-6599fc6deecc",
+          "request": {
+            "content": "Are there fundamental repeating patterns in ML techniques across modalities (text, image, audio) that let us group them? [R]\n\nSource: Reddit r/MachineLearning\nhttps://www.reddit.com/r/MachineLearning/comments/1xkp8e9/are_there_fundamental_repeating_patterns_in_ml/\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-01\nAI-generated narration. #AI #AINews #Shorts",
+            "mediaItems": [
+              {
+                "type": "video",
+                "url": "https://media.zernio.com/temp/1793554852032_bdb0851930e5519e_2026-11-01.mp4"
+              }
+            ],
+            "platforms": [
+              {
+                "platform": "youtube",
+                "accountId": "6ac27146281ee799a37065e4",
+                "platformSpecificData": {
+                  "title": "Are there fundamental repeating patterns in ML",
+                  "visibility": "public",
+                  "madeForKids": false,
+                  "containsSyntheticMedia": true,
+                  "categoryId": "28"
+                }
+              }
+            ],
+            "publishNow": true
+          },
+          "firstSubmittedAt": "2026-11-01T17:40:54.790Z"
         }
       },
       "script": {
