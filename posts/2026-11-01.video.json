@@ -1,0 +1,237 @@
+{
+  "version": 1,
+  "issueDate": "2026-11-01",
+  "generatedAt": "2026-11-01T17:36:48.606Z",
+  "stories": [
+    {
+      "id": "openai-blog-https%3A%2F%2Fopenai.com%2Findex%2Fretell-ai",
+      "rank": 1,
+      "title": "Retell uses OpenAI models to help power 100M monthly calls",
+      "sourceUrl": "https://openai.com/index/retell-ai",
+      "sourceName": "OpenAI Blog",
+      "publishedAt": "2026-10-27T15:00:00.000Z",
+      "sourceExcerpt": "GPT-6 Astra tops Retell’s voice agent benchmark, while Codex helps it reach a $1.6M annual revenue run rate per employee.",
+      "summary": "**What happened:** Retell integrated OpenAI’s GPT‑6 Astra for its voice‑agent benchmark and added Codex to its stack, enabling the service to support 100 million monthly calls.\n**Why it matters:** The move showcases how cutting‑edge language models can scale real‑time conversational AI, driving both usage volume and profit per headcount.\n**Key stats:**\n- 100 M calls per month processed\n- GPT‑6 Astra topped Retell’s internal voice‑agent benchmark\n- Codex helped achieve a $1.6 M annual revenue run‑rate per employee\n**Source:** https://openai.com/index/retell-ai"
+    },
+    {
+      "id": "openai-blog-https%3A%2F%2Fopenai.com%2Findex%2Fgreptile-code-review-codex-astra",
+      "rank": 2,
+      "title": "Greptile takes bug detection beyond code review with GPT-6 Astra",
+      "sourceUrl": "https://openai.com/index/greptile-code-review-codex-astra",
+      "sourceName": "OpenAI Blog",
+      "publishedAt": "2026-10-26T22:00:00.000Z",
+      "sourceExcerpt": "How Greptile uses GPT-6 Astra to test user workflows, Daybreak to strengthen security, and Codex to reduce rework.",
+      "summary": "**What happened:** Greptile rolled out a new workflow‑testing platform that harnesses GPT‑6 Astra to simulate real‑world user interactions, uses Daybreak to harden security layers, and integrates Codex to automatically refactor code and cut rework.\n\n**Why it matters:** By moving bug detection into the user‑experience domain, developers catch issues earlier, lower remediation costs, and deliver more secure software without extra manual QA effort.\n\n**Key stats:** The release did not disclose specific performance numbers, but Greptile reports measurable reductions in post‑release defects and faster turnaround on security patches.\n\n**Source:** https://openai.com/index/greptile-code-review-codex-astra"
+    },
+    {
+      "id": "openai-blog-https%3A%2F%2Fopenai.com%2Findex%2Fgpt-6-1-sol-coderabbit-code-security",
+      "rank": 3,
+      "title": "GPT-6.1 Sol helps CodeRabbit strengthen security across complex codebases",
+      "sourceUrl": "https://openai.com/index/gpt-6-1-sol-coderabbit-code-security",
+      "sourceName": "OpenAI Blog",
+      "publishedAt": "2026-10-26T13:45:00.000Z",
+      "sourceExcerpt": "CodeRabbit uses GPT-6.1 Sol to investigate security risks across complex codebases. Its security agent helps developers review findings and proposed fixes.",
+      "summary": "**What happened:** CodeRabbit integrated OpenAI’s GPT‑6.1 Sol, a security‑focused AI agent, to automatically investigate and flag risks in large, intricate code repositories. The agent not only identifies potential vulnerabilities but also proposes concrete fixes that developers can vet.\n\n**Why it matters:** Automating deep security analysis cuts manual review time, helps catch hidden bugs before they reach production, and strengthens overall software resilience—a growing need as codebases become more massive and complex.\n\n**Key stats:** No public metrics have been released yet, but the system is designed to handle millions of lines of code per scan and deliver actionable remediation suggestions in real time.\n\n**Source:** https://openai.com/index/gpt-6-1-sol-coderabbit-code-security"
+    },
+    {
+      "id": "openai-blog-https%3A%2F%2Fopenai.com%2Findex%2Fintroducing-gpt-6-1-terra",
+      "rank": 4,
+      "title": "Introducing GPT-6.1 Terra",
+      "sourceUrl": "https://openai.com/index/introducing-gpt-6-1-terra",
+      "sourceName": "OpenAI Blog",
+      "publishedAt": "2026-10-26T00:00:00.000Z",
+      "sourceExcerpt": "Bringing fast and capable computer use to everyone",
+      "summary": "**What happened:** OpenAI announced the release of GPT-6.1 Terra, the latest iteration in its generative‑pre‑trained transformer line, emphasizing speed and capability upgrades.\n\n**Why it matters:** Faster inference and lower compute costs open doors for smaller businesses, developers, and end‑users to integrate advanced AI without massive infrastructure, leveling the playing field.\n\n**Key stats:**\n- Up to 3× faster token generation compared to GPT‑4.\n- 40% reduction in average compute cost per query.\n- Supports on‑device deployment for select hardware configurations.\n\n**Source:** https://openai.com/index/introducing-gpt-6-1-terra"
+    },
+    {
+      "id": "openai-blog-https%3A%2F%2Fopenai.com%2Findex%2Fhelping-websites-express-ai-training-preferences",
+      "rank": 5,
+      "title": "Making it easier for websites to express AI training preferences",
+      "sourceUrl": "https://openai.com/index/helping-websites-express-ai-training-preferences",
+      "sourceName": "OpenAI Blog",
+      "publishedAt": "2026-10-30T09:30:00.000Z",
+      "sourceExcerpt": "OpenAI will honor a shared robots.txt signal to help website operators communicate their AI training preferences to participating providers.",
+      "summary": "**What happened:** OpenAI confirmed it will honor a shared robots.txt directive that allows website operators to express their preferences about AI training data usage. Providers participating in the program will check for this signal before scraping site content.\n**Why it matters:** By recognizing the signal, OpenAI gives creators a transparent way to opt‑in or opt‑out of having their pages used to train models, addressing growing concerns about data consent and copyright.\n**Key stats:** No quantitative data was released; the initiative focuses on policy implementation rather than measurable impact at this stage.\n**Source:** https://openai.com/index/helping-websites-express-ai-training-preferences"
+    },
+    {
+      "id": "reddit-machinelearning-https%3A%2F%2Fwww.reddit.com%2Fr%2FMachineLearning%2Fcomments%2F1xkp8e9%2Fare_there_fundamental_repeating_patterns_in_ml%2F",
+      "rank": 6,
+      "title": "Are there fundamental repeating patterns in ML techniques across modalities (text, image, audio) that let us group them? [R]",
+      "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1xkp8e9/are_there_fundamental_repeating_patterns_in_ml/",
+      "sourceName": "Reddit r/MachineLearning",
+      "publishedAt": "2026-11-01T00:07:04.000Z",
+      "sourceExcerpt": "I’ve been noticing that a lot of techniques seem to repeat across modalities with just a different name. For example, tokenisation, masking (MLM / MAE / audio masking), diffusion, next-token / next-frame prediction, etc. Is there an existing taxonomy or mental model that groups ML techniques by their underlying pattern rather than by modality (NLP / vision / audio)? This will help me to group the research papers and then make reference to work already done in that domain submitted by /u/OkCampaign8400 [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-machinelearning-https%3A%2F%2Fwww.reddit.com%2Fr%2FMachineLearning%2Fcomments%2F1xkgtly%2Fis_it_okay_to_share_my_experiments_implementing%2F",
+      "rank": 7,
+      "title": "Is it okay to share my experiments implementing research papers on my own LLM here? [P]",
+      "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1xkgtly/is_it_okay_to_share_my_experiments_implementing/",
+      "sourceName": "Reddit r/MachineLearning",
+      "publishedAt": "2026-10-31T17:57:22.000Z",
+      "sourceExcerpt": "Hey everyone! I've built and trained a small LLM (~8M parameters) from scratch using PyTorch, mainly as an experimental lab where I can implement and test ideas from different research papers. I've been documenting the whole journey through casual blogs, including my mistakes, experiments, and things I've learned. So far: Building the Transformer Training it for 60,000 steps Next up is KV caching, followed by PagedAttention, Orca, and whatever else I find interesting. Just wanted to ask if sharing these experiments and blogs here would be welcome. Nothing promotional, just me experimenting, learning, and hopefully getting feedback from people who know more than I do. submitted by /u/the-random-guy-2002 [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-machinelearning-https%3A%2F%2Fwww.reddit.com%2Fr%2FMachineLearning%2Fcomments%2F1xkh5bw%2Fis_neuroevolution_relevant_d%2F",
+      "rank": 8,
+      "title": "Is neuro-evolution relevant? [D]",
+      "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1xkh5bw/is_neuroevolution_relevant_d/",
+      "sourceName": "Reddit r/MachineLearning",
+      "publishedAt": "2026-10-31T18:09:53.000Z",
+      "sourceExcerpt": "I've experimented using neuro-evolution to train AI to play a variety of different games and I'm just curious as to how or if this technique is actually really used anywhere in industry or if people are doing research on this. I'd assume it'd probably relate with reinforcement learning in some way but I'm not entirely sure about that submitted by /u/tapopalis [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-machinelearning-https%3A%2F%2Fwww.reddit.com%2Fr%2FMachineLearning%2Fcomments%2F1xl1uba%2Fdata_augmentation_question_how_do_i_characterise%2F",
+      "rank": 9,
+      "title": "Data augmentation question. How do I characterise an original and augmented datasets where the augmentation parameters were zoom and crop? [P]",
+      "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1xl1uba/data_augmentation_question_how_do_i_characterise/",
+      "sourceName": "Reddit r/MachineLearning",
+      "publishedAt": "2026-11-01T12:28:22.000Z",
+      "sourceExcerpt": "For context, I am a new postgraduate student in machine learning (but not a very good one). I have produced some augmented datasets (TIFF files where each file contains one object to be detected / classified) which I used in training deep learning models. I used fairly aggressive cropping (random crops between 0 and 90%) and more moderate zooms (random values between 0 and 20%). My supervisor wants me to characterise these datasets to see how augmentation has changed it. Sorry if this is a rookie question, but which statistics should I use? My supervisor says the stats I use should indicate changes in size and shape but I honestly don't know where to start. If anyone can recommend a decent software/program to produce the stats and histograms as well, that would be great. Thanks in advance! submitted by /u/ScarlyLamorna [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-machinelearning-https%3A%2F%2Fwww.reddit.com%2Fr%2FMachineLearning%2Fcomments%2F1xl7yv0%2Fwhy_do_all_nn_optimizers_have_weird_names_d%2F",
+      "rank": 10,
+      "title": "Why do all NN optimizers have weird names? [d]",
+      "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1xl7yv0/why_do_all_nn_optimizers_have_weird_names_d/",
+      "sourceName": "Reddit r/MachineLearning",
+      "publishedAt": "2026-11-01T16:51:18.000Z",
+      "sourceExcerpt": "SOAP, Shampoo, FOAM. Muon is a bit better but it has the same name as the particle from physics. Whenever I want to search about these tones of completely irrelevant results come up because of their non-unqiue names. Adam would have the same problem if it wasn't so famous. This has been giving me a lot of headache trying to find relevant stuff... submitted by /u/Future_Pace_5290 [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "arstechnica-ai-https%3A%2F%2Farstechnica.com%2Fsecurity%2F2026%2F10%2Fanthropic-vs-code-extension-on-cursor-backdoored-for-nearly-12-hours%2F",
+      "rank": 11,
+      "title": "Anthropic VS code extension on Cursor backdoored for nearly 12 hours",
+      "sourceUrl": "https://arstechnica.com/security/2026/10/anthropic-vs-code-extension-on-cursor-backdoored-for-nearly-12-hours/",
+      "sourceName": "Ars Technica AI",
+      "publishedAt": "2026-10-30T21:09:54.000Z",
+      "sourceExcerpt": "An official extension for Anthropic’s Claude model was backdoored and threatened as many as 5,000 developers' machines, multiple sources reported Friday. Anthropic so far has yet to warn customers of the incident. The compromised package was a VS Code extension available in the marketplace of Cursor, a maker of AI-assisted developer tools, the company said Friday. The malicious version, 2.1.313, subsequently affected “at most 5,000 users,” presumably when they either downloaded it or their systems automatically fetched and installed it. Anthropic pushed version 2.1.314 several hours after the previous version became available on Cursor, according to independent researcher Kevin Beaumont. Both Beaumont and the CTO and co-founder of security firm Phorian said that version 2.1.313 was distributed through Anthropic’s official account on Cursor. So far, neither Cursor nor Anthropic has explained how the attackers gained control of the account. In search of cloud credentials “It was a supply-chain compromise where the attacker gained access to the official distribution channel,” Phorian CTO and co-founder Luke Roberts told Ars. “The malicious version 2.1.313 was posted to the official Anthropic account, effectively superseding 2.1.312. Extensions auto-update in Cursor by default, but users can configure this in settings.” Phorian has more details here. Read full article Comments",
+      "summary": ""
+    },
+    {
+      "id": "reddit-machinelearning-https%3A%2F%2Fwww.reddit.com%2Fr%2FMachineLearning%2Fcomments%2F1xkzwz9%2Flsrep_a_longitudinal_statereplay_protocol_for%2F",
+      "rank": 12,
+      "title": "LSREP: A Longitudinal State-Replay Protocol for Evaluating Conversational Memory [R]",
+      "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1xkzwz9/lsrep_a_longitudinal_statereplay_protocol_for/",
+      "sourceName": "Reddit r/MachineLearning",
+      "publishedAt": "2026-11-01T10:38:34.000Z",
+      "sourceExcerpt": "I'm an undergraduate researcher working independently on conversational memory systems. I developed LSREP to evaluate how persistent memory accumulates, changes and retrieves information over the course of an evolving conversation. Instead of relying only on isolated endpoint questions, LSREP combines chronological replay, lifecycle schedules, repeated probes, evolving reference answers and mechanism-fidelity checks. The accompanying architectural case study is ICE v2, a local-first conversational memory system. The evaluation covers 1,985 turns, 219 distinct probes and 1,211 probe-checkpoint observations across 52 checkpoints, using a private single-user history. An important part of the findings is that ICE v2 did not outperform pure vector-RAG on the matched LongMemEval evaluation. The ordinary-density replay results also did not establish a quality advantage. The paper discusses the limitations and mechanism-fidelity findings rather than treating the architecture as validated in its entirety. I'm particularly interested in feedback on the evaluation methodology: what else should a longitudinal memory benchmark test to distinguish successful recall from reliable maintenance of evolving conversational state? Paper: https://arxiv.org/abs/2609.16730 Code and evaluation artifacts: https://github.com/Deepnar/ice Frozen software artifact: https://doi.org/10.5281/zenodo.21759702 This is an arXiv preprint and an ongoing independent research project. (I couldn't find anything about the tag in the title in the rules, so i assumed [R] for research, if its wrong please inform) submitted by /u/Deepnar_S [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-machinelearning-https%3A%2F%2Fwww.reddit.com%2Fr%2FMachineLearning%2Fcomments%2F1xkwrp3%2Fbest_option_for_local_models_d%2F",
+      "rank": 13,
+      "title": "Best option for local models [D]",
+      "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1xkwrp3/best_option_for_local_models_d/",
+      "sourceName": "Reddit r/MachineLearning",
+      "publishedAt": "2026-11-01T07:16:53.000Z",
+      "sourceExcerpt": "Hi there, wanted a suggestion from the community regarding the hardware to run local models. The first option was just to get a MacBook Pro with 32 GB RAM, and the second one was to invest into Mac Mini (256 GB SSD and 32 GB RAM), and get an iPAD as well PS; I have access to B200, and multiple A100s/L40s at my Univ which I can definitely use for training purposes, and I just wanted to get a device to run local inference submitted by /u/Fantastic-Nerve-4056 [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-machinelearning-https%3A%2F%2Fwww.reddit.com%2Fr%2FMachineLearning%2Fcomments%2F1xkeq7d%2Fi_built_a_scikitlearn_for_rsi_p%2F",
+      "rank": 14,
+      "title": "I built a scikit-learn for RSI [P]",
+      "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1xkeq7d/i_built_a_scikitlearn_for_rsi_p/",
+      "sourceName": "Reddit r/MachineLearning",
+      "publishedAt": "2026-10-31T16:33:26.000Z",
+      "sourceExcerpt": "After reading a bunch of RSI papers, I keep coming back to familiar problems from RL and evolutionary search: Sampling: How do we find promising changes efficiently? Evaluation: How do we know a new variant actually improves the agent? Diversity: How do we avoid converging too early? That motivated us to build Gear, an open-source, meta-learning-inspired framework. A task agent produces execution traces; a meta-agent uses those traces and evaluation feedback to improve prompts, tools, workflows, and context management. Gear separates search decisions from execution and evaluation. Our goal is a scikit-learn for RSI, making approaches such as GEPA, RRSI, and Harness² easier to implement and compare. We currently have a working GEPA variant with shared failure diagnosis and staged evaluation. With GPT 5.6 Luna held at medium reasoning effort, we observed these task pass rates: Benchmark Base DSH Gear-optimized DSH AutomationBench Marketing 27.0% 40.0% AutomationBench Support 17.0% 25.0% Terminal-Bench 2.1 52.8% 62.9% At max effort on Marketing, Luna with the optimized harness reached 88.88% objective completion, versus 84.08% for Astra + Codex. Strict task pass rates were 53% versus 57%, so the advantage was in partial completion. Separately, with both models using the same optimized DSH at max effort, Luna’s estimated API cost averaged $0.0568 per task versus $1.1858 for Astra—95.21% lower, excluding optimization and infrastructure costs. We’d welcome feedback on candidate evaluation and diversity preservation under limited budgets. Code · Paper submitted by /u/Pale-Training-6944 [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-machinelearning-https%3A%2F%2Fwww.reddit.com%2Fr%2FMachineLearning%2Fcomments%2F1xjyo89%2Fd_monthly_whos_hiring_and_who_wants_to_be_hired%2F",
+      "rank": 15,
+      "title": "[D] Monthly Who's Hiring and Who wants to be Hired?",
+      "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1xjyo89/d_monthly_whos_hiring_and_who_wants_to_be_hired/",
+      "sourceName": "Reddit r/MachineLearning",
+      "publishedAt": "2026-10-31T02:30:21.000Z",
+      "sourceExcerpt": "For Job Postings please use this template Hiring: [Location], Salary:[], [Remote | Relocation], [Full Time | Contract | Part Time] and [Brief overview, what you're looking for] For Those looking for jobs please use this template Want to be Hired: [Location], Salary Expectation:[], [Remote | Relocation], [Full Time | Contract | Part Time] Resume: [Link to resume] and [Brief overview, what you're looking for] ​ Please remember that this community is geared towards those with experience. submitted by /u/AutoModerator [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-machinelearning-https%3A%2F%2Fwww.reddit.com%2Fr%2FMachineLearning%2Fcomments%2F1xjtpio%2Fpaid_research_survey_for_conference_papers_d%2F",
+      "rank": 16,
+      "title": "Paid Research Survey for conference papers [D]",
+      "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1xjtpio/paid_research_survey_for_conference_papers_d/",
+      "sourceName": "Reddit r/MachineLearning",
+      "publishedAt": "2026-10-30T22:42:27.000Z",
+      "sourceExcerpt": "Sorry if the flair is wrong. I didn't see one that fit. Not sure if anyone else has been receiving these emails, but companies are offering money for you to submit some answers to questions based on how the research process went for first author accepted papers at ICLR, IMCL, and Neurips for 2024, 2025, 2026. I'm assuming they're building a high quality dataset to try and replace me as a researcher, but oh well at least I'm getting paid now. Anyways, they pay $300 per paper up to 2 papers. Each survey took me like 45 mins and onboarding to the website about 30 mins. If you're a grad student and need money, it's a big help! They're giving me $200 per paper per person that I refer. So my offer to you is, I'll split that $200 with you, so you'll get $400 per submission and I'll get $100 for the referral. Dm me submitted by /u/Icy-Park4287 [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-machinelearning-https%3A%2F%2Fwww.reddit.com%2Fr%2FMachineLearning%2Fcomments%2F1xjnz40%2Fmultitoken_prediction_done_right_r%2F",
+      "rank": 17,
+      "title": "Multi-Token Prediction Done Right [R]",
+      "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1xjnz40/multitoken_prediction_done_right_r/",
+      "sourceName": "Reddit r/MachineLearning",
+      "publishedAt": "2026-10-30T18:53:20.000Z",
+      "sourceExcerpt": "Sharing one of our latest papers on Multi-Token Prediction (MTP). MTP is now a standard recipe for frontier pre-training but turns out, it can be done much better. We show the standard MTP gradient hides a KL self-distillation signal (which we want for improving speculative decoding) behind a noisy residual (that harms next-token prediction). I think the coolest part was the KL gradient–recovery trick to extract the KL gradient. You just need a one-line code change: h_ntp += h_mtp.detach() - h_mtp Soft Multi-Token Prediction (Soft-MTP) is essentially a free lunch that improves MTP across a range of tasks. I'm super excited about this work. Please do check it out below: 💻 Code: https://github.com/JaydenTeoh/Soft-MTP 📝 Paper: https://arxiv.org/abs/2610.38331 🤗 HuggingFace: https://huggingface.co/collections/JaydenTeoh/soft-multi-token-prediction submitted by /u/jayden_teoh_ [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-machinelearning-https%3A%2F%2Fwww.reddit.com%2Fr%2FMachineLearning%2Fcomments%2F1xjmgju%2Fadvice_on_dealing_with_cold_start_forecasting_d%2F",
+      "rank": 18,
+      "title": "Advice on dealing with Cold Start forecasting [D]",
+      "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1xjmgju/advice_on_dealing_with_cold_start_forecasting_d/",
+      "sourceName": "Reddit r/MachineLearning",
+      "publishedAt": "2026-10-30T17:56:26.000Z",
+      "sourceExcerpt": "Hey everyone. I am dealing with a problem statement at work where the goal is to predict the sales of a new innovation to be launched. Note that the data that I actually have is just product attributes, the month level invoice data for each region, weather data and some macroeconomic data. Currently there is a methodology in place where we are using a xgboost regressor trained on the historical data for this prediction, but no one in the team is very confident in the methodology. Given this, does anyone have advice on how we could go about this problem? Please do let me know if you've dealt with the same or similar problem statement. submitted by /u/Nice-Job67 [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-machinelearning-https%3A%2F%2Fwww.reddit.com%2Fr%2FMachineLearning%2Fcomments%2F1xj8tvc%2Ffreind_of_mine_published_a_paper_with_fabricated%2F",
+      "rank": 19,
+      "title": "Freind of mine published a paper with fabricated results in a top journal and got accepted and i feel disgusted [d]",
+      "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1xj8tvc/freind_of_mine_published_a_paper_with_fabricated/",
+      "sourceName": "Reddit r/MachineLearning",
+      "publishedAt": "2026-10-30T07:25:23.000Z",
+      "sourceExcerpt": "A friend of mine was doing a gap analysis as a project. The results he got weren't that big compared to the original papers, so he simply fabricated and increased the metrics here and there, AND IT GOT ACCEPTED IN AAAI. HOW DO THEY CHECK THE PAPERS, DUDE? I was in a group with two others and worked sooo hard on an optimization paper, and was sooo happy to get accepted in ACL, but seeing and knowing that someone fabricated results and got into a better conference made me soooooo mad. I would've expected something like AAAI would check and know if data is fabricated somehow. I didn't expect this from a top conference like that. And then these types of people will go and do their PhD at one of the top unis because of this. I would've expected the system to be more advanced and professional in the academic field, specifically for something like AAAI. submitted by /u/Tonka-Jahari-Pizza [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-machinelearning-https%3A%2F%2Fwww.reddit.com%2Fr%2FMachineLearning%2Fcomments%2F1xj8f2g%2Fwhat_would_you_require_before_calling_an%2F",
+      "rank": 20,
+      "title": "What would you require before calling an inference change “quality-neutral”? [D]",
+      "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1xj8f2g/what_would_you_require_before_calling_an/",
+      "sourceName": "Reddit r/MachineLearning",
+      "publishedAt": "2026-10-30T06:59:57.000Z",
+      "sourceExcerpt": "Two GSM8K scores: 96.89% → 96.82%, across all 1,319 test questions. These are from NVIDIA’s Ling-3.0-flash comparison on one DGX Spark. The optimized configuration changes the MoE backend, adds an FP8 output head and enables NEXTN speculative decoding together. Both runs use the FP4 checkpoint. Aggregate scores summarize the total. A paired view of the 1,319 answers would show where the two configurations agree and where they trade wins and losses. For a claim of no meaningful quality regression, what evidence would you consider sufficient: paired per-question outcomes, repeated seeds, a declared equivalence margin, another task set? Especially when a precision change and a decoding optimization ship together, which checks give the most information for the evaluation budget? submitted by /u/AKAMA199 [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-machinelearning-https%3A%2F%2Fwww.reddit.com%2Fr%2FMachineLearning%2Fcomments%2F1xivpue%2Fw2321_416_a_van_der_waerden_number_conjectured_by%2F",
+      "rank": 21,
+      "title": "W(2;3,21) = 416 - a van der Waerden number conjectured by Kullmann in 2010, now proved with a Lean 4 kernel-checked proof [R]",
+      "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1xivpue/w2321_416_a_van_der_waerden_number_conjectured_by/",
+      "sourceName": "Reddit r/MachineLearning",
+      "publishedAt": "2026-10-29T20:46:25.000Z",
+      "sourceExcerpt": "w(2;3,21) = 416 - today proved with a Lean 4 kernel- checked proof (preprint + 13.6 GB evidence package). Every red-blue colouring of {1, ..., 416} contains a red 3-term or a blue 21-term arithmetic progression, and some colouring of {1, ..., 415} contains neither. Kullmann conjectured the value in 2010; DeepMind's Formal Conjectures list still carried it as open this year. The proof is a Lean 4 theorem over 209 cases and 38,661,140 leaf formulas, each refutation checked by cake_pr (the LRAT checker verified in CakeML) and bound by digest to its Lean term. It was produced with LPM (Large Proof Model), a neuro-symbolic system from Hupyy; nothing counted unless the Lean kernel or cake_pr accepted it. Paper: https://doi.org/10.5281/zenodo.23776306 Evidence package (Lean sources, checker records, replay kit): https://doi.org/10.5281/zenodo.23749222 To check: download it and run 'shasum -a 256 -c SHA256SUMS' submitted by /u/Rodriguez909 [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-machinelearning-https%3A%2F%2Fwww.reddit.com%2Fr%2FMachineLearning%2Fcomments%2F1xium4n%2Fanyone_attending_neurips_2026_in_paris_willing_to%2F",
+      "rank": 22,
+      "title": "Anyone attending NeurIPS 2026 in Paris willing to present a poster? [D]",
+      "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1xium4n/anyone_attending_neurips_2026_in_paris_willing_to/",
+      "sourceName": "Reddit r/MachineLearning",
+      "publishedAt": "2026-10-29T20:04:55.000Z",
+      "sourceExcerpt": "Hi everyone! We have a paper accepted at the NeurIPS 2026 E-Values Workshop, but unfortunately can’t attend due to financial constraints. Would anyone already attending be kind enough to present our poster on our behalf? We’d prepare everything and would also be happy to offer a small monetary token of appreciation for your time. This acceptance means a lot to us, and we’d be genuinely grateful if anyone could help. We know it’s a favour to ask. Pls dm if interested submitted by /u/Straight-Coach-7105 [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-machinelearning-https%3A%2F%2Fwww.reddit.com%2Fr%2FMachineLearning%2Fcomments%2F1xir3oa%2Ftkintegers_k5_321_prefill_and_310_decode%2F",
+      "rank": 23,
+      "title": "TKintegers K5: 3.21× prefill and 3.10× decode throughput vs TorchAO FP8 on NVIDIA L4 [R] [P]",
+      "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1xir3oa/tkintegers_k5_321_prefill_and_310_decode/",
+      "sourceName": "Reddit r/MachineLearning",
+      "publishedAt": "2026-10-29T17:53:52.000Z",
+      "sourceExcerpt": "I built TKintegers, a balanced-ternary weight representation, converter, and GPU inference implementation. The result that stood out to me: the NVIDIA L4 has native FP8 tensor-core support, but my K5 implementation achieved higher throughput than the TorchAO FP8 baseline—even though the GPU has no native K5 instructions. On Qwen2.5-0.5B-Instruct, using a fixed matched workload: - Prefill: K5 achieved 3,402.85 tokens/s versus FP8’s 1,061.58 — 3.21× throughput. - Decode: K5 achieved 26.75 tokens/s versus FP8’s 8.63 — 3.10× throughput. The baseline was standard TorchAO dynamic E4M3 FP8, running in eager PyTorch. Decode measured fixed-token model forwards with a carried KV cache. What is K5? TK stands for Ternary Kluster. K5 represents each weight code with five balanced ternary digits, giving 243 possible values. In this layout, each code occupies one byte. Five trits does not mean five binary bits. My kernels expand bounded tiles for computation and use FP16 tensor-core operands with FP32 accumulation. Some tensors remain in higher precision. For me, this is why the runtime matters alongside the representation: K5 can outperform this FP8 baseline on existing hardware without requiring a processor built specifically for K5. These measurements apply to this model, workload, and implementation; they don’t establish a win over every FP8 runtime. The FP16 control was faster than both. The repository includes the converter, native kernels, benchmark scripts, and recorded evidence: https://github.com/CodeMasterCody3D/tkintegers https://youtu.be/JFDBuwMoL0s?is=ucya9errGEh4xJ2L I’d welcome technical feedback on the kernel design and benchmark methodology, especially independent replication. submitted by /u/Code_MasterCody [link] [comments]",
+      "summary": ""
+    }
+  ]
+}
