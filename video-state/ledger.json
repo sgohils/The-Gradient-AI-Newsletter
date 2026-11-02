@@ -1414,8 +1414,32 @@
       "platforms": {
         "youtube": {
           "accountId": "6ac27146281ee799a37065e4",
-          "status": "prepared",
-          "idempotencyKey": "be857ced-9992-4f7e-ba4c-d2b6d79f415e"
+          "status": "submitting",
+          "idempotencyKey": "be857ced-9992-4f7e-ba4c-d2b6d79f415e",
+          "request": {
+            "content": "Consensus Within, Competition Between: Decentralized LLM Teams for Perimeter Defense\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2610.41044\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-02\nAI-generated narration. #AI #AINews #Shorts",
+            "mediaItems": [
+              {
+                "type": "video",
+                "url": "https://media.zernio.com/temp/1793654798877_f0b0d81f2fcc38f9_2026-11-02.mp4"
+              }
+            ],
+            "platforms": [
+              {
+                "platform": "youtube",
+                "accountId": "6ac27146281ee799a37065e4",
+                "platformSpecificData": {
+                  "title": "Consensus Within, Competition Between",
+                  "visibility": "public",
+                  "madeForKids": false,
+                  "containsSyntheticMedia": true,
+                  "categoryId": "28"
+                }
+              }
+            ],
+            "publishNow": true
+          },
+          "firstSubmittedAt": "2026-11-02T21:26:41.858Z"
         }
       },
       "script": {
