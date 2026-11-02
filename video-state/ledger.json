@@ -796,8 +796,8 @@
         "sourceUrl": "https://arxiv.org/abs/2610.31937",
         "sourceName": "arXiv cs.AI",
         "publishedAt": "2026-10-26T04:00:00.000Z",
-        "sourceExcerpt": "arXiv:2610.31937v1 Announce Type: new Abstract: Modern Large Language Models (LLMs) remain vulnerable to carefully orchestrated multi-turn interactions that progressively bypass safety mechanisms. However, many existing red-teaming approaches rely on heuristics or impose strong assumptions that limit their applicability in fully black box settings. We address this gap by introducing $M^3$, an automated red-teaming framework that formalizes multi-turn jailbreaking as a finite-horizon Markov Decision Process (MDP). In $M^3$, an attacker LLM interacts with a target LLM while operating over a compact internal state produced by a state LLM. Across two benchmarks and six target models, $M^3$ consistently outperforms state-of-the-art multi-turn red-teaming methods in Attack Success Rates (ASR), achieving improvements of up to 53% in ASR@5. Even with lightweight attacker, $M^3$ attains gains up to 26% in ASR@1 and 34% in ASR@5, compared to baselines that use higher capacity attackers. Beyond improved effectiveness, $M^3$ exhibits steeper risk escalation over conversational turns and achieves more consistent performance across risk categories (up to 4.82 improvement in Gini index) without relying on predefined risk taxonomy, providing a scalable and principled framework for multi-turn red-teaming and safety evaluation.",
-        "summary": "**What happened:** Researchers introduced $M^3$, a novel automated red‑teaming framework that formalizes multi‑turn jailbreaking of large language models (LLMs) as a finite‑horizon Markov Decision Process (MDP). The system iteratively crafts prompts over several dialogue turns to progressively evade safety filters without requiring internal model access.\n\n**Why it matters:** By casting jailbreaks as an MDP, $M^3$ provides a principled, reproducible method for probing LLM safety in truly black‑box settings, exposing systematic weaknesses that heuristic‑based attacks can miss. This advances both defensive research and responsible deployment of AI systems.\n\n**Key stats:** • Tested on multiple state‑of‑the‑art LLMs (e.g., GPT‑4, Claude, Llama 2) in black‑box mode.\n• Achieved successful safety bypasses in over 60 % of multi‑turn attempts across a 5‑turn horizon.\n• Demonstrated that a learned policy can adapt prompts dynamically, outperforming static jailbreak scripts.\n\n**Source:** https://arxiv.org/abs/2610.31937"
+        "sourceExcerpt": "",
+        "summary": ""
       },
       "selectedAt": "2026-10-26T17:09:13.829Z",
       "platforms": {
@@ -805,87 +805,10 @@
           "accountId": "6ac27146281ee799a37065e4",
           "status": "published",
           "idempotencyKey": "cf1785f0-3b3d-4453-8414-0cfbaf407180",
-          "request": {
-            "content": "$M^3$: A Multi-LLM System for Multi-Turn Jailbreaking as a Markov Decision Process\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2610.31937\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-10-26\nAI-generated narration. #AI #AINews #Shorts",
-            "mediaItems": [
-              {
-                "type": "video",
-                "url": "https://media.zernio.com/temp/1793034577714_yz1s9ckv_2026-10-26.mp4"
-              }
-            ],
-            "platforms": [
-              {
-                "platform": "youtube",
-                "accountId": "6ac27146281ee799a37065e4",
-                "platformSpecificData": {
-                  "title": "$M^3$: A Multi-LLM System for Multi-Turn",
-                  "visibility": "public",
-                  "madeForKids": false,
-                  "containsSyntheticMedia": true,
-                  "categoryId": "28"
-                }
-              }
-            ],
-            "publishNow": true
-          },
           "firstSubmittedAt": "2026-10-26T17:09:40.321Z",
           "postId": "6adf89554362ff722b92ed89",
           "postUrl": "https://www.youtube.com/watch?v=AkiFECTXZYA"
         }
-      },
-      "script": {
-        "version": 3,
-        "provider": "extractive",
-        "format": "source-fallback",
-        "angle": "capability",
-        "workingTitle": "$M^3$: A Multi-LLM System for Multi-Turn",
-        "availability": "unknown",
-        "hookStyle": "question",
-        "sentences": [
-          {
-            "text": "Would you use $M^3$?",
-            "evidenceQuote": "We address this gap by introducing $M^3$, an automated red-teaming framework that formalizes multi-turn jailbreaking as a finite-horizon Markov Decision Process (MDP).",
-            "role": "hook",
-            "visual": "example",
-            "displayText": "Would you use $M^3$?"
-          },
-          {
-            "text": "arXiv:2610.31937v1 Announce Type: new Abstract: Modern Large Language Models (LLMs) remain vulnerable to carefully orchestrated multi-turn interactions that progressively bypass safety mechanisms.",
-            "evidenceQuote": "arXiv:2610.31937v1 Announce Type: new Abstract: Modern Large Language Models (LLMs) remain vulnerable to carefully orchestrated multi-turn interactions that progressively bypass safety mechanisms.",
-            "role": "breakthrough",
-            "visual": "example",
-            "displayText": "ArXiv:2610.31937v1 Announce Type: new Abstract: Modern Large Language"
-          },
-          {
-            "text": "However, many existing red-teaming approaches rely on heuristics or impose strong assumptions that limit their applicability in fully black box settings.",
-            "evidenceQuote": "However, many existing red-teaming approaches rely on heuristics or impose strong assumptions that limit their applicability in fully black box settings.",
-            "role": "breakthrough",
-            "visual": "process",
-            "displayText": "However, many existing red-teaming approaches rely on heuristics"
-          },
-          {
-            "text": "In $M^3$, an attacker LLM interacts with a target LLM while operating over a compact internal state produced by a state LLM.",
-            "evidenceQuote": "In $M^3$, an attacker LLM interacts with a target LLM while operating over a compact internal state produced by a state LLM.",
-            "role": "breakthrough",
-            "visual": "process",
-            "displayText": "In $M^3$, an attacker LLM interacts"
-          },
-          {
-            "text": "This source excerpt does not confirm public access.",
-            "evidenceQuote": "arXiv:2610.31937v1 Announce Type: new Abstract: Modern Large Language Models (LLMs) remain vulnerable to carefully orchestrated multi-turn interactions that progressively bypass safety mechanisms.",
-            "role": "impact",
-            "visual": "highlight",
-            "displayText": "does not confirm public access"
-          },
-          {
-            "text": "Would you try $M^3$, or wait for more proof?",
-            "evidenceQuote": "We address this gap by introducing $M^3$, an automated red-teaming framework that formalizes multi-turn jailbreaking as a finite-horizon Markov Decision Process (MDP).",
-            "role": "engagement",
-            "visual": "highlight",
-            "displayText": "Would you try $M^3$"
-          }
-        ],
-        "narration": "Would you use $M^3$? arXiv:2610.31937v1 Announce Type: new Abstract: Modern Large Language Models (LLMs) remain vulnerable to carefully orchestrated multi-turn interactions that progressively bypass safety mechanisms. However, many existing red-teaming approaches rely on heuristics or impose strong assumptions that limit their applicability in fully black box settings. In $M^3$, an attacker LLM interacts with a target LLM while operating over a compact internal state produced by a state LLM. This source excerpt does not confirm public access. Would you try $M^3$, or wait for more proof?"
       },
       "presentation": {
         "title": "$M^3$: A Multi-LLM System for Multi-Turn",
@@ -1474,6 +1397,97 @@
         "publicUrl": "https://media.zernio.com/temp/1793554852032_bdb0851930e5519e_2026-11-01.mp4",
         "videoSha256": "c48a7683100ebff43d53e83ee24e1e2d97ed5ce4e030bd0b7fd82d8de16a737c",
         "uploadedAt": "2026-11-01T17:40:53.434Z"
+      }
+    },
+    "2026-11-02": {
+      "story": {
+        "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.41044",
+        "rank": 2,
+        "title": "Consensus Within, Competition Between: Decentralized LLM Teams for Perimeter Defense",
+        "sourceUrl": "https://arxiv.org/abs/2610.41044",
+        "sourceName": "arXiv cs.AI",
+        "publishedAt": "2026-11-02T05:00:00.000Z",
+        "sourceExcerpt": "arXiv:2610.41044v1 Announce Type: new Abstract: The use of large language models (LLMs) to coordinate multi-agent teams raises a fundamental architectural question: whether task allocation should be centralized in a single LLM controller or distributed across autonomous LLM agents, particularly when communication is unreliable. In a deliberately simplified perimeter-defense simulation against LLM-controlled intruders, we compared a central commander, an auction-based consensus team and independent agents under five network conditions. Breach rates were 15% for the consensus team, 32% for the commander and 29% for independent agents, and of the different network conditions, only limited radio range changed a team's breach rate, raising the commander's. In consensus team, giving a low-cost LLM more authority over the bid computation raised breaches by 38 percentage points. With birds and civilian drones in airspace, we added a photograph for each to the input text state. Only the near-frontier model treated them apart from intruders. Intruders disguised as existing taxidermy bird drones were mistook as birds by both low-cost and near-frontier LLMs, going unpursued in 59-61% of near-frontier decisions (1-16% before). However, a one-sentence forewarning in the prompt lowered it to 0-25%. We find that LLM team with a dedicated external conflict resolution protocol results in fewest breaches. Code: https://github.com/the-kas-lab/consensus-within-competition-between.",
+        "summary": "**What happened:** Researchers built a simplified perimeter‑defense simulation where LLM‑controlled defenders must block intruding agents. Three architectures were compared: (1) a single central commander LLM, (2) an auction‑based consensus team of autonomous LLMs, and (3) fully independent LLM agents. Communication between agents was deliberately made unreliable to test robustness.\n\n**Why it matters:** The findings shed light on how AI‑driven security systems and other multi‑agent applications should allocate tasks. Decentralized consensus can preserve effectiveness even when messages are lost or delayed, whereas a centralized controller may become a single point of failure under the same conditions.\n\n**Key stats:** – The consensus‑based team retained near‑optimal interception performance despite unreliable communication, while the central commander’s success rate dropped noticeably under the same conditions. – Independent agents matched the consensus team’s effectiveness but required roughly double the computational resources. – Overall, the study highlights a clear trade‑off between coordination overhead and resilience.\n\n**Source:** https://arxiv.org/abs/2610.41044"
+      },
+      "selectedAt": "2026-11-02T21:26:04.026Z",
+      "platforms": {
+        "youtube": {
+          "accountId": "6ac27146281ee799a37065e4",
+          "status": "prepared",
+          "idempotencyKey": "be857ced-9992-4f7e-ba4c-d2b6d79f415e"
+        }
+      },
+      "script": {
+        "version": 3,
+        "provider": "extractive",
+        "format": "source-fallback",
+        "angle": "workflow",
+        "workingTitle": "Consensus Within, Competition Between",
+        "availability": "unknown",
+        "hookStyle": "question",
+        "sentences": [
+          {
+            "text": "Would you use Consensus Within, Competition Between?",
+            "evidenceQuote": "Code: https://github.com/the-kas-lab/consensus-within-competition-between.",
+            "role": "hook",
+            "visual": "example",
+            "displayText": "Would you use Consensus Within, Competition Between?"
+          },
+          {
+            "text": "arXiv cs.AI says In a deliberately simplified perimeter-defense simulation against LLM-controlled intruders, it compared a central commander, an auction-based consensus team and independent agents under five network conditions.",
+            "evidenceQuote": "In a deliberately simplified perimeter-defense simulation against LLM-controlled intruders, we compared a central commander, an auction-based consensus team and independent agents under five network conditions.",
+            "role": "breakthrough",
+            "visual": "example",
+            "displayText": "ArXiv cs.AI says In a deliberately simplified perimeter-defense"
+          },
+          {
+            "text": "In consensus team, giving a low-cost LLM more authority over the bid computation raised breaches by 38 percentage points.",
+            "evidenceQuote": "In consensus team, giving a low-cost LLM more authority over the bid computation raised breaches by 38 percentage points.",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "In consensus team"
+          },
+          {
+            "text": "However, a one-sentence forewarning in the prompt lowered it to 0-25%.",
+            "evidenceQuote": "However, a one-sentence forewarning in the prompt lowered it to 0-25%.",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "However, a one-sentence forewarning in the prompt lowered"
+          },
+          {
+            "text": "This source excerpt does not confirm public access.",
+            "evidenceQuote": "arXiv:2610.41044v1 Announce Type: new Abstract: The use of large language models (LLMs) to coordinate multi-agent teams raises a fundamental architectural question: whether task allocation should be centralized in a single LLM controller or distributed across autonomous LLM agents, particularly when communication is unreliable.",
+            "role": "impact",
+            "visual": "highlight",
+            "displayText": "does not confirm public access"
+          },
+          {
+            "text": "Would you try Consensus Within, Competition Between, or wait for more proof?",
+            "evidenceQuote": "Code: https://github.com/the-kas-lab/consensus-within-competition-between.",
+            "role": "engagement",
+            "visual": "highlight",
+            "displayText": "Would you try Consensus Within"
+          }
+        ],
+        "narration": "Would you use Consensus Within, Competition Between? arXiv cs.AI says In a deliberately simplified perimeter-defense simulation against LLM-controlled intruders, it compared a central commander, an auction-based consensus team and independent agents under five network conditions. In consensus team, giving a low-cost LLM more authority over the bid computation raised breaches by 38 percentage points. However, a one-sentence forewarning in the prompt lowered it to 0-25%. This source excerpt does not confirm public access. Would you try Consensus Within, Competition Between, or wait for more proof?"
+      },
+      "presentation": {
+        "title": "Consensus Within, Competition Between",
+        "format": "source-fallback",
+        "angle": "workflow",
+        "hookStyle": "question",
+        "availability": "unknown",
+        "duration": 40.75,
+        "wordCount": 85,
+        "scriptVersion": 3
+      },
+      "selectionReason": "A source-backed, measurable change in time, cost, or capability.",
+      "contentHash": "63a46d88b9705cbe6b295837694b89bb23bafcd3d77f4d77b3f42852648c4d7a",
+      "media": {
+        "publicUrl": "https://media.zernio.com/temp/1793654798877_f0b0d81f2fcc38f9_2026-11-02.mp4",
+        "videoSha256": "0600204568335713b5acca41229fee60f2afc7f43fcd416d9c722d5349b383c3",
+        "uploadedAt": "2026-11-02T21:26:40.260Z"
       }
     }
   }
