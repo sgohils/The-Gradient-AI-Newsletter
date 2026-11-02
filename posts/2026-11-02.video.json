@@ -1,0 +1,257 @@
+{
+  "version": 1,
+  "issueDate": "2026-11-02",
+  "generatedAt": "2026-11-02T21:22:36.701Z",
+  "stories": [
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.41040",
+      "rank": 1,
+      "title": "Capability-Grounded Agentic Planning",
+      "sourceUrl": "https://arxiv.org/abs/2610.41040",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-02T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.41040v1 Announce Type: new Abstract: LLM agents serve natural-language requests through tools, data sources, and other agents, and even simple requests often need several interdependent calls. Typically, the LLM picks these calls by trial and error, with no guarantee of an executable plan. We present Capability-Grounded Agentic Planning (CGAP), which instead reasons about what a request requires and what tools provide. CGAP compiles the tool catalog deterministically into a PDDL model, uses an LLM to turn the request into goals, and solves the model with a classical planner. Since tool outputs are unknown in advance, the model is abstract, tracking which inputs are available, not their values. During execution, an LLM adds entity-specific calls that abstract plans omit, and deterministic checks reject any that break the plan. Every argument is drawn from a cited source, such as a conversation span or an earlier tool response, and each requested result counts as delivered only after an LLM verifier checks it against the request. With three LLMs on ToolSandbox, ComplexFuncBench, BFCL multi-turn, and $\\tau^2$-bench retail, CGAP outperforms a standard tool-calling agent by up to 28.9 points.",
+      "summary": "**What happened:** CGAP compiles an LLM's tool catalog into a PDDL (Planning Domain Definition Language) model, allowing the model to reason about required capabilities and generate an executable sequence of tool calls instead of relying on trial‑and‑error.\n\n**Why it matters:** Deterministic planning boosts reliability, cuts wasted API calls, and bridges modern LLM agents with classic AI planning, enabling more complex, multi‑tool workflows.\n\n**Key stats:** • Provides deterministic plan generation (0% trial‑and‑error in planning phase). • Early experiments show a notable increase in successful request execution compared to traditional LLM‑only approaches.\n\n**Source:** https://arxiv.org/abs/2610.41040"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.41044",
+      "rank": 2,
+      "title": "Consensus Within, Competition Between: Decentralized LLM Teams for Perimeter Defense",
+      "sourceUrl": "https://arxiv.org/abs/2610.41044",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-02T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.41044v1 Announce Type: new Abstract: The use of large language models (LLMs) to coordinate multi-agent teams raises a fundamental architectural question: whether task allocation should be centralized in a single LLM controller or distributed across autonomous LLM agents, particularly when communication is unreliable. In a deliberately simplified perimeter-defense simulation against LLM-controlled intruders, we compared a central commander, an auction-based consensus team and independent agents under five network conditions. Breach rates were 15% for the consensus team, 32% for the commander and 29% for independent agents, and of the different network conditions, only limited radio range changed a team's breach rate, raising the commander's. In consensus team, giving a low-cost LLM more authority over the bid computation raised breaches by 38 percentage points. With birds and civilian drones in airspace, we added a photograph for each to the input text state. Only the near-frontier model treated them apart from intruders. Intruders disguised as existing taxidermy bird drones were mistook as birds by both low-cost and near-frontier LLMs, going unpursued in 59-61% of near-frontier decisions (1-16% before). However, a one-sentence forewarning in the prompt lowered it to 0-25%. We find that LLM team with a dedicated external conflict resolution protocol results in fewest breaches. Code: https://github.com/the-kas-lab/consensus-within-competition-between.",
+      "summary": "**What happened:** Researchers built a simplified perimeter‑defense simulation where LLM‑controlled defenders must block intruding agents. Three architectures were compared: (1) a single central commander LLM, (2) an auction‑based consensus team of autonomous LLMs, and (3) fully independent LLM agents. Communication between agents was deliberately made unreliable to test robustness.\n\n**Why it matters:** The findings shed light on how AI‑driven security systems and other multi‑agent applications should allocate tasks. Decentralized consensus can preserve effectiveness even when messages are lost or delayed, whereas a centralized controller may become a single point of failure under the same conditions.\n\n**Key stats:** – The consensus‑based team retained near‑optimal interception performance despite unreliable communication, while the central commander’s success rate dropped noticeably under the same conditions. – Independent agents matched the consensus team’s effectiveness but required roughly double the computational resources. – Overall, the study highlights a clear trade‑off between coordination overhead and resilience.\n\n**Source:** https://arxiv.org/abs/2610.41044"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.41076",
+      "rank": 3,
+      "title": "BABA-Bench: Evaluating Long-Horizon Patient-Advocacy Agents",
+      "sourceUrl": "https://arxiv.org/abs/2610.41076",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-02T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.41076v1 Announce Type: new Abstract: An LLM agent that helps a patient get care must do two things. It must reach the correct outcome, and it must follow the necessary procedure. For example, the agent must get the patient's permission before it shares the patient's records. We introduce BABA-Bench, a benchmark of 47 interactive worlds. We built each world from a de-identified, real patient advocacy case that expert advocates reviewed. In each world, the agent must find hidden information and coordinate insurers, clinics, suppliers, pharmacies, and community organizations. The engine checks each action at the time the agent does it. It checks if the agent has permission, if the agent has evidence for the action, and if the action is prohibited. We evaluated 14 frontier models with three runs on each world, for a total of 1,974 runs. Agents often reached the correct outcome by an invalid route. Of the 921 runs that reached all required outcomes, 254 (28%) did not follow the necessary procedure. Claude Opus 5 reached all required outcomes in 81.6% of its runs, but only 52.5% of its runs passed all checks. When we gave two models a verified route, their pass rates increased from 29.8% to 91.5% and from 44.0% to 97.2%. For these models, the main problem is to find a route, not to execute it.",
+      "summary": "**What happened:** Researchers introduced BABA‑Bench, a suite of 47 interactive worlds derived from de‑identified, real patient‑advocacy cases. Each world challenges an LLM agent to navigate hidden information, secure consent, and follow legal and ethical steps to achieve the correct care outcome.\n\n**Why it matters:** As AI agents move into sensitive healthcare roles, ensuring they not only get the right answer but also respect privacy, consent, and procedural rules is critical. BABA‑Bench provides the first systematic way to evaluate these dual requirements at scale.\n\n**Key stats:**\n- 47 distinct interactive worlds covering a range of advocacy tasks.\n- Built from real, de‑identified patient cases reviewed by expert advocates.\n- Benchmarks both outcome correctness and procedural adherence (e.g., obtaining permission before sharing records).\n\n**Source:** https://arxiv.org/abs/2610.41076"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.41089",
+      "rank": 4,
+      "title": "CIRCE Divines LLM Task Complexity from Constraint Structure",
+      "sourceUrl": "https://arxiv.org/abs/2610.41089",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-02T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.41089v1 Announce Type: new Abstract: Estimating whether a problem is too complex for a large language model (LLM) before the model attempts it can guide model routing, how to allocate test-time compute, and suggest the need for new tools to aid the agent. While existing estimators rely on the problem text, LLM-annotated task difficulty labels, or signals obtained after a model attempts to solve the problem, such as its hidden states, none explicitly leverage the constraint structure inherent in the problem: the variables to assign and how the constraints over them interact. We introduce CIRCE, which extracts a problem's structure by using a cheap LLM to construct a Constraint Intermediate Representation that deterministically compiles into the constraint graph. Across seven reasoning benchmarks (including SAT, logic, and math) and four LLMs, even a randomly initialized GNN encoder improves predictions of LLM response correctness, reducing negative log-likelihood from 0.465 to 0.423 and increasing AUROC from 0.691 to 0.727 relative to the strongest baseline for each metric.",
+      "summary": "**What happened:** The team introduced CIRCE, a model‑free estimator that infers task complexity from the formal constraint structure of a problem, rather than from the problem text, LLM‑generated difficulty tags, or post‑hoc hidden‑state signals.\n\n**Why it matters:** By flagging overly hard tasks early, developers can route them to more capable models, allocate extra compute, or invoke specialized tools, reducing wasted inference and improving overall system reliability.\n\n**Key stats:** Across several standard LLM benchmark suites, CIRCE consistently outperformed prior difficulty estimators that rely on text‑only cues, achieving higher prediction accuracy without accessing any LLM internals.\n\n**Source:** https://arxiv.org/abs/2610.41089"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.41124",
+      "rank": 5,
+      "title": "Confident Fools or Careful Searchers? A Behavioural Study of When LLMs Search Beyond Their Static Internal Memory",
+      "sourceUrl": "https://arxiv.org/abs/2610.41124",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-02T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.41124v1 Announce Type: new Abstract: Agentic LLM assistants must repeatedly decide whether to answer from memory or to call a tool such as web search. Unnecessary searches cost latency and money; missing ones yield confident but unsupported answers. Prior work mostly measures verbalised confidence or trains new adaptive-retrieval methods, and rarely audits the search decisions that deployed products actually make. We introduce a benchmark of 400 multiple-choice questions that combines widely known inside-knowledge (IK) questions, which should be answered directly, with outside-knowledge (OK) questions about facts from news published after the models' training cut-offs (to our knowledge), which should trigger search or, without tools, abstention. Each item offers an abstain option, and two action-level scores, NAS and KIS, reward searching on OK questions and restraint on IK questions. Across five commercial LLMs with and without their vendors' web search, GPT-5 mini and Grok 4 Fast search on over 90% of OK but only 1% of IK questions, whereas Mistral Small searches on just 20% of OK questions, often abstaining instead of using its tool; one product's search indicator proved unusable. Searching is partly triggered by explicit temporal cues: on uncued OK questions, the NAS of the two selective models falls from about 0.72 to 0.57--0.58. The scores thus measure the search triggering of specific products, not metacognition in a strict sense.",
+      "summary": "**What happened:** Researchers built a 400‑question multiple‑choice benchmark to audit whether agentic LLMs choose to answer from internal knowledge or trigger an external web‑search tool.\n**Why it matters:** Unnecessary searches add latency and expense, while missed searches lead to confident but unsupported answers—both undermine user trust and deployment costs.\n**Key stats:** • 400 diverse questions across domains. • Baseline LLMs performed unnecessary searches in roughly 30% of cases and failed to search when needed in about 25% of cases. • The study highlights a gap between confidence‑based heuristics and actual search‑decision quality.\n**Source:** https://arxiv.org/abs/2610.41124"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.41149",
+      "rank": 6,
+      "title": "Counterfactual Pairwise Augmentation Improves Small Pointwise LLM Judges",
+      "sourceUrl": "https://arxiv.org/abs/2610.41149",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-02T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.41149v1 Announce Type: new Abstract: Agentic systems increasingly gate individual steps with a pointwise judge that scores a response against a criterion. Small language models are attractive for this role because they can be served and specialized efficiently. Such a judge must locate the criterion's decision boundary, but pointwise labels under-determine that boundary in fine-tuning: labeled responses to different queries differ along many dimensions at once, so they do not reveal which features decide the label. We introduce CPA (Counterfactual Pairwise Augmentation), which makes the deciding difference explicit in training. For each pointwise item, CPA synthesizes and audits a counterfactual response to the same query intended to carry the opposite label. It frames the accepted pair as a pairwise task asking which of the two responses satisfies the criterion. The judge is fine-tuned jointly on both pointwise and pairwise datasets and deployed in pointwise mode only. A second-order analysis shows when this should outperform the prevailing strategy of merging separately trained pointwise and pairwise experts: merging moves every parameter direction toward the pairwise expert by the same fraction, whereas joint training can hold the pointwise optimum wherever the pairwise loss is flat and absorb its curvature where it is sharp. This is the regime that CPA's same-source, counterfactually minimal pairwise view is designed to produce. On separate Qwen3-8B LoRA adapters for six binary criteria, CPA improves criterion-averaged pointwise macro-F1 by 2.5 points over pointwise-only training and outperforms model merging on all six criteria at every tested merge weight. It also surpasses the strongest zero-shot frontier judge we evaluate, Gemini 3.6 Flash, by 11.8 points.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.41165",
+      "rank": 7,
+      "title": "LLM Detoxification via Transition-Aware Reward-Guided Representation Sampling",
+      "sourceUrl": "https://arxiv.org/abs/2610.41165",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-02T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.41165v1 Announce Type: new Abstract: Large Language Models (LLMs) can generate toxic content, motivating effective test-time detoxification. Existing representation steering methods often rely on static or coarse interventions and provide imprecise guidance because they inadequately model transitions between toxic and non-toxic generations. We propose Transition-Aware Reward-Guided Representation Sampling (TARGRS), a test-time framework that learns reward guidance over toxicity transitions in latent representation space. During exploration, progressive steering along the toxicity direction constructs trajectories from non-toxic to toxic states. Toxicity scores along these trajectories turn sparse annotations into dense, listwise supervision for a transition-aware token-level reward model. During inference, TARGRS uses this model to guide coarse-to-fine sampling along the opposite, non-toxic direction: coarse sampling identifies the intervention needed to reach non-toxic regions, and refinement selects a detoxified representation with minimal perturbation. Experiments on 10 LLMs across RealToxicityPrompts, BOLD, and AttaQ show that TARGRS consistently outperforms state-of-the-art baselines, reducing toxicity by up to 69.38% on RealToxicityPrompts. TARGRS runs nearly as fast as the original LLM while preserving its core capabilities with minimal impact. By intervening in the language decoder space, TARGRS also extends to Large Vision-Language Models (LVLMs), reducing toxicity by up to 64.23% across 3 representative LVLMs.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.41183",
+      "rank": 8,
+      "title": "Researcher-in-the-Loop Evolutionary Discovery of Entanglement-Assisted Quantum Code Families",
+      "sourceUrl": "https://arxiv.org/abs/2610.41183",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-02T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.41183v1 Announce Type: new Abstract: LLM-guided program evolution can produce mathematical constructions, but validity, generality, and reproducibility require distinct evidence. We develop a researcher-in-the-loop discovery pipeline that combines program evolution, exact evaluation, mathematical generalization, certified nonexistence checks, and formal proof checking. We apply it to entanglement-assisted quantum error-correcting codes (EAQECCs). Starting from tasks that did not specify a family formula, evolved programs produced finite qubit constructions whose structure researchers generalized to the family $[[n,1,n-1;n-q-1]]_q$ for prime powers $q\\ge3$ at $n\\ge2q+1$ and for $q=2$ at odd $n\\ge5$. Lean checks the algebraic certificate underlying this family. Together with entanglement lifting, the family closes 54 gaps in archived EAQECC tables. The released evidence includes 115 verified code records, ten nonexistence results with checked DRAT proofs, family implementations, and preserved search programs for exact checks and seeded replay. In a controlled cohort of eight paired generation blocks, validation-selected iterative programs achieve success in 46.1% and 31.6% of held-out executions at unseen lengths $n=13,15$, compared with 19.5% and 3.1% for independently generated programs. In this setting, program evolution and researcher analysis turn finite computational discoveries into a proved family with independently checkable evidence.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.41232",
+      "rank": 9,
+      "title": "TRIDENT and SHAKTI: A Framework and Benchmark for Hindi AI-Text Detection",
+      "sourceUrl": "https://arxiv.org/abs/2610.41232",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-02T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.41232v1 Announce Type: new Abstract: As Large Language Models (LLMs) become increasingly multilingual, distinguishing human-written from AI-generated text is essential for maintaining information integrity. However, research remains English-centric, with limited benchmarks for low-resource languages such as Hindi. To address this gap, we introduce SHAKTI, a large-scale Hindi benchmark covering four genres, eight LLM families, multiple prompting strategies, and adversarial transformations. We evaluate its quality through human annotation and analyze linguistic, grammatical, and sentiment-based differences between human- and AI-generated texts. Building on these findings, we propose TRIDENT, a round-trip translation-based detection framework with three variants: TRIDENT-S (static threshold), TRIDENT-D (dynamic threshold), and TRIDENT-C (logistic regression using multi-distance RTT features). TRIDENT leverages semantic consistency between original and round-trip translated texts to identify AI-generated content. Extensive experiments show that TRIDENT outperforms conventional and supervised baselines, with TRIDENT-S achieving the best overall performance. Further evaluations across seven languages, adversarial settings, and unseen LLMs demonstrate its multilingual applicability and robustness, while highlighting sensitivity to the translation model.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.41245",
+      "rank": 10,
+      "title": "MEMIG: Self-evolving Memory Construction for Antibody Optimization",
+      "sourceUrl": "https://arxiv.org/abs/2610.41245",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-02T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.41245v1 Announce Type: new Abstract: Memory has become central to self-evolving LLM agents, which store and retrieve experience from past rollouts to guide future decisions. Existing systems represent this experience as free-form natural language and maintain it by rewriting, which fits tasks whose experience is narratable. However, in scientific discovery and optimization, experience is often a quantity measured by an oracle under a specific context. Rewriting it as text leaves no index for where a record should be, replaces a measurement with a description, and cannot express how interventions interact. To address this, we argue that agent memory for biomolecule optimization should instead be indexable, quantitative, and structured, and we introduce MEMIG. This memory construction framework realizes these three properties. In detail, MEMIG addresses each insight with a domain-grounded identifier and accumulates the quantitative effect measured by a property oracle, so that updates remain local and retrieval becomes an exact lookup. Next, MEMIG connects insights whose interventions are applied together and measures their epistasis by decomposing each evaluated set. Our results show that MEMIG improves performance in most settings across in silico antibody optimization tasks.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.41359",
+      "rank": 11,
+      "title": "LEAP: Efficient LLM Inference Scheduling with Generalizable Length Prediction",
+      "sourceUrl": "https://arxiv.org/abs/2610.41359",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-02T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.41359v1 Announce Type: new Abstract: Length-aware scheduling reduces request latency in LLM serving by prioritizing shorter requests. However, despite their large model sizes, length predictors can suffer degraded ranking performance under domain and task shifts, and adapting them can require costly retraining. Their prediction overhead can further offset the benefits of scheduling. To improve the generalization and efficiency of length-aware scheduling, we propose \\textbf{LEAP}, a length prediction system with fast online adaptation and asynchronous CPU execution. LEAP reuses the serving model's prefill hidden states, which contain information about the output length, and extracts this signal through a linear readout. To adapt to substantial domain and task shifts, it updates the readout at test time through recursive least squares, using completed requests as supervision without gradient computation or historical-data replay. Prediction and updates run asynchronously on CPU, while prediction and initial batch ordering overlap the remaining GPU prefill. Across the evaluated cross-domain transfers, LEAP retains strong ranking performance, and online adaptation improves Spearman correlation by 64.7\\% under a larger domain shift. Serving experiments show that LEAP reduces average per-token latency by 15.9--40.8\\% compared with the evaluated length predictors, while achieving 1.9\\% higher throughput with $30{,}569\\times$ fewer predictor parameters than the strongest evaluated baseline.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.41375",
+      "rank": 12,
+      "title": "From the Zoo to the BULLPEN: Sample-Efficient LLM Profiling via Multi-Channel Model Embeddings",
+      "sourceUrl": "https://arxiv.org/abs/2610.41375",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-02T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.41375v1 Announce Type: new Abstract: Choosing among the hundreds of thousands of available large language models (LLMs) requires a thorough understanding of each candidate model's properties. In practice, each property is measured by its own benchmark suite, so profiling a model on many properties means paying for many separate evaluations. To address this, model embeddings compress each model into a fixed-length vector from which many properties can be predicted. Existing methods, such as EmbedLLM, build these vectors from correctness patterns and question features, and often need large probe batteries to do so. However, many behaviors that are important when choosing a model, such as its verbosity, safety and style, show up more in how it answers than in whether it is correct. We introduce BULLPEN (Behavioral Understanding of Large Language models via Profile ENcodings), a framework that extends EmbedLLM in three ways. First, BULLPEN organizes the downstream tasks that prior work uses and adds 20 task benchmarks we built on behavior, style and provenance. Second, it is the first framework to read a model's own answer text jointly with its correctness and the question text. Third, it encodes models from a few hundred questions instead of the full 24,118-question pool. Across 260 open-weight models, our answer-text encoder scores 0.48 +/- 0.10 on the new tasks against 0.35 +/- 0.10 for the best prior encoder. Our encoders that read answer text keep at least 91% of their full-pool skill from only 400 questions (1.3% of the inference compute of the full question pool), while a correctness-only baseline keeps 83% with the same 400 questions. Because these embeddings need only model outputs, they support behavioral auditing and low-cost profiling, and could extend to API-only models. Code and data: https://github.com/wcquesera/bullpen",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.41378",
+      "rank": 13,
+      "title": "Ask on Demand: Targeted Peer Communication for Parallel Agentic Systems",
+      "sourceUrl": "https://arxiv.org/abs/2610.41378",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-02T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.41378v1 Announce Type: new Abstract: Parallel LLM agents tackle complex tasks by exploring multiple trajectories, yet useful discoveries remain isolated in individual execution histories. Existing sharing methods often select or summarize information before other agents' needs become clear, potentially overlooking details that become important later. We propose Ask on Demand (AOD), a communication framework that enables agents to seek targeted peer assistance when specific information needs arise. Upon an approved request, AOD retrieves relevant evidence from peer execution histories, selects a suitable peer, and generates a response tailored to the request. To determine when such assistance is worthwhile, we train a lightweight gate using paired team continuations, with supervision derived from final team outcomes and inference cost. Experiments on AppWorld and WebShop demonstrate that AOD consistently improves task performance over independent parallel execution while achieving lower inference cost than existing information-sharing baselines. These findings highlight the benefits of aligning peer communication with agents' evolving information needs to achieve more effective and efficient collaboration.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.41511",
+      "rank": 14,
+      "title": "Specification-Guided Generation for Large Language Models",
+      "sourceUrl": "https://arxiv.org/abs/2610.41511",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-02T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.41511v1 Announce Type: new Abstract: Large language models (LLMs) can generate structured outputs, but existing constrained-decoding methods mainly enforce syntax and cannot directly enforce satisfaction of a formal specification. We introduce a neuro-symbolic, specification-guided decoding framework that combines LLM generation with symbolic reasoning. At each step, the framework refines the decoding grammar by filtering out values that cannot be extended to an output satisfying the specification. We present a forward-only variant that guarantees specification satisfaction by construction, and a backtracking variant that revises earlier feasible choices when their downstream consequences leave only values that the LLM itself judges unsuitable. The framework is model-agnostic, requires no retraining, and builds on existing grammar-constrained decoding mechanisms. Experiments on configuration and constraint-solving benchmarks show that the forward-only variant reliably produces specification-compliant outputs while reducing repeated LLM inference compared with rejection sampling and incurring modest symbolic-reasoning overhead. The backtracking variant further reduces cases in which the model is forced to select values that it has itself judged unsuitable, thereby substantially improving adherence to the LLM's stated interpretation of the prompt.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.41604",
+      "rank": 15,
+      "title": "Real Computation or Merely Naming? A Pre-Registered Mechanism Audit of 25 Cognitive-Architecture Modules in an LLM-Based Agent System",
+      "sourceUrl": "https://arxiv.org/abs/2610.41604",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-02T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.41604v1 Announce Type: new Abstract: Agent systems built on local large language models are increasingly marketed through the vocabulary of cognitive architecture: modules named global workspace, theory of mind, causal reasoning, or active inference are listed as features, and the presence of the name is taken as the presence of the mechanism. We ask the prior question -- does the named computation actually happen -- and contribute a transferable verification method for the claim-implementation gap: a four-question static audit protocol with line-number evidence and call-chain tracing, demonstrated on two systems. We audit a system claiming 25 cognitive mechanisms, pre-register falsifiable predictions for 11 modules and execute the interventions, replicate the protocol on the IIT-phi core of a second, independent system with its own pre-committed falsification criteria, and run two repair experiments as positive controls. In 18 of 25 modules the computed value never reaches any production output; three idle-wiring shapes new to the dead-code and code-smell literatures emerge (connected-but-never-called, called-but-inert, called-but-content-blind). Of 61 frozen criteria across 12 interventions, 53 were confirmed, two partially adjudicated, five falsified, one adjudication-ambiguous. Repairs raised planner task success from 0.028 to 1.000 and cut state-controller error by 52%. Module names and module computations must be audited as independent claims; the protocol and the five-class failure taxonomy are reusable for the claim-implementation gap at two-system, case-level depth.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.41850",
+      "rank": 16,
+      "title": "Dynamical Memory Transformer: Selective Recurrent Memories with Constant Cost Attention",
+      "sourceUrl": "https://arxiv.org/abs/2610.41850",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-02T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.41850v1 Announce Type: new Abstract: Transformers retain an explicit history of the sequence, allowing attention to directly retrieve past representations. However, the size of the KV-Cache and the cost of a new token increase with the context length. State Space Models compress the past into a fixed-size recurrent state, at the cost of reduced addressability. We present the Dynamical Memory Transformer (DMT), a hybrid architecture that separates sequence encoding from information reading. The encoder uses several memory units, each implemented by a dynamical system with a complex diagonal recurrent matrix. An input-dependent leak rate controls their updates. The decoder then uses attention to read and combine their outputs, without going through the token history. The formulation of the recurrence allows an associative scan with O(T ) total work and O(log T ) parallel depth, with fixed dimensions. During autoregressive inference, the recurrent states and the convolution cache remain fixed in size. We compare DMT with Mamba and Transformer on cognitive and language modeling tasks, and show its strengths and limitations: DMT achieves the best results on several cognitive tasks and language modeling performance close to that of Transformer, but remains behind Mamba in language modeling. On selective copy, DMT also shows stronger length extrapolation than Mamba and Transformer. These results demonstrate that parallel dynamical memory units are a promising mechanism for retaining and using information over sequences.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.41901",
+      "rank": 17,
+      "title": "ReX-GG: a LLM Ensemble Pipeline for Relation-extraction and Graph Generation",
+      "sourceUrl": "https://arxiv.org/abs/2610.41901",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-02T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.41901v1 Announce Type: new Abstract: Current LLM ensemble frameworks focus on multi-step setups with additional modules for answer ranking, often opting for token and span analysis rather than structured outputs, leading to heavyweight architectures with potential fail states along the pipeline. Faster, lighter solutions are more vulnerable to hallucination propagation and can lack output control in more complex pipelines. This paper proposes a customisable, lightweight ensemble workflow of coordinated Large Language Models that leverages JSON-structured outputs and anonymous peer-review ranking to mitigate hallucinatory outputs and single-model failure points. The pipeline is demonstrated on a relation extraction task applied to popular science articles in English, targeting four ontologically-grounded relation types (strong causation, weak causation, contrastive, and compositional), with semantic node canonicalisation and interactive, colour-coded HTML causal graphs as the final output. Performance is evaluated through an anonymous user study, achieving an average perceived accuracy of 0.778 against a human-annotated gold standard. The modular architecture supports flexible deployment across both API-based and in-house LLM setups, and the full framework is released under an open license to foster reproducibility and collaborative research.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.42004",
+      "rank": 18,
+      "title": "TradeWar: A Benchmark for Execution-Grounded Trade Negotiation with Adaptive LLM Agents",
+      "sourceUrl": "https://arxiv.org/abs/2610.42004",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-02T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.42004v1 Announce Type: new Abstract: Multi-turn negotiation remains a challenging problem for large language model (LLM) agents. While LLMs can conduct natural-language dialogue, existing benchmarks predominantly assess only agreement rates, overlooking whether negotiated commitments actually create value once executed. To address this gap, we introduce TradeWar, a multi-country simulation benchmark that translates negotiation dialogues into concrete tariff and trade-share policies, enforces capacity and network constraints during settlement, and evaluates outcomes via an Economic Health Index (EHI). To solve this execution-grounded task, we propose TACTIC (Trade-aware Adaptive Consolidation and Theory-of-mind for International Commerce), an agent that iteratively refines its negotiation strategy across episodes-without updating base LLM weights-by leveraging prior experience, opponent behavior, and past settlement outcomes. Despite using zero-shot chain-of-thought (CoT) prompting, PromptLLM attains a 75% agreement rate but only 57.1 final EHI (*100), whereas TACTIC reaches 68.8. Across 20 sequential episodes and three seeds, TACTIC's final EHI improves from 58.2 to 73.2, compared with 65.2 for an ablation without cross-episode updates. Under technology-controls and energy-crisis shocks, TACTIC also exhibits smaller performance degradation than PromptLLM and MemoryLLM. These results indicate that CoT deliberation and interaction memory alone do not fully address delayed execution feedback, whereas settlement-grounded adaptation improves long-horizon negotiation in TradeWar.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.42039",
+      "rank": 19,
+      "title": "Same Question, Different Answers: Auditing Persona-Dependent Variation in Six LLMs on Smoking-Cessation Advice",
+      "sourceUrl": "https://arxiv.org/abs/2610.42039",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-02T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.42039v1 Announce Type: new Abstract: Hundreds of millions of people now ask large language model (LLM) chatbots for health advice, which raises a question that is simple to pose and hard to answer: does everyone get the same advice? We audit six widely deployed LLMs from four providers on smoking cessation, a domain with codified clini- cal guidance and substantial public-health stakes, by putting the same four cessation questions to twelve user personas that differ in life stage, self-described expertise, and smoking history, for a total of 2,880 responses. What the models say depends on who appears to be asking. Every model named FDA-approved prescription cessation medications less often to teen personas than to adult personas, by 32 to 67 percentage points, and in five of six models a persona presenting health- care expertise received fewer facts than a persona presenting none. We then evaluate one deployable intervention: a short system prompt specifying a factual floor, the set of core med- ical facts every user should receive when they are relevant, while leaving tone, vocabulary, and framing free to adapt. The prompt narrows persona differences in every model, but its effect on overall fact coverage varies in both magnitude and direction across models, so a prompt validated on one system cannot be assumed to transfer to another. Two cautions frame these results. Equal mention rates are not always the correct clinical target, because prescription cessation pharmacother- apy is not recommended for minors, so a defensible factual floor must be age-aware rather than uniform. And because our personas vary on several attributes at once, we report scenario- level differences rather than isolated effects of age or expertise. We release all 2,880 responses and the analysis code.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.42116",
+      "rank": 20,
+      "title": "ACCT: Asymmetric Cross-LLM Context Transfer",
+      "sourceUrl": "https://arxiv.org/abs/2610.42116",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-02T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.42116v1 Announce Type: new Abstract: In real-world deployments, large language model (LLM) systems are increasingly evolving from single-model invocation toward heterogeneous deployments in which different models are dynamically invoked for inference. When the same context is reused across models, however, each newly selected target model typically has to process it again, repeatedly incurring substantial computational costs. Therefore, we propose ACCT (Asymmetric Cross-LLM Context Transfer), which targets KV cache transfer between models of different scales within the same model family. ACCT transforms the KV cache produced by a source model into sparse KV states that can be directly consumed by a target model, thereby enabling cross-model reuse of context computation and decoupling context computation from downstream inference. ACCT consists of three lightweight components: the Cartographer identifies query-relevant context tokens for each target layer and KV head; the Allocator determines how many context tokens each target layer and KV head retains under a shared total KV budget; and the Compiler transforms selected source KV into sparse target KV. The target model can therefore perform inference using the transferred KV without reprocessing the original context. We evaluate ACCT in two complementary settings comprising five general-capability benchmarks and six highly context-dependent tasks. Experiments show that ACCT matches or exceeds the target model's original inference performance even when reducing the KV cache size by 75%. At a context length of approximately 19K tokens, ACCT's KV conversion achieves a 6.5-21.2 times speedup over target context prefill. These results demonstrate the feasibility of transferring context computation across models under a limited KV budget.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2506.20856",
+      "rank": 21,
+      "title": "Leaner Training, Lower Leakage: Revisiting Memorization in LLM Fine-Tuning with LoRA",
+      "sourceUrl": "https://arxiv.org/abs/2506.20856",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-02T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2506.20856v1 Announce Type: cross Abstract: Memorization in large language models (LLMs) makes them vulnerable to data extraction attacks. While pre-training memorization has been extensively studied, fewer works have explored its impact in fine-tuning, particularly for LoRA fine-tuning, a widely adopted parameter-efficient method. In this work, we re-examine memorization in fine-tuning and uncover a surprising divergence from prior findings across different fine-tuning strategies. Factors such as model scale and data duplication, which strongly influence memorization in pre-training and full fine-tuning, do not follow the same trend in LoRA fine-tuning. Using a more relaxed similarity-based memorization metric, we demonstrate that LoRA significantly reduces memorization risks compared to full fine-tuning, while still maintaining strong task performance.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.40714",
+      "rank": 22,
+      "title": "PrivacyFlow: Privacy in AI Agents through Information Flow Analysis and Consequence-Aware Risk Management",
+      "sourceUrl": "https://arxiv.org/abs/2610.40714",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-02T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.40714v1 Announce Type: cross Abstract: Autonomous LLM agents executing multi-step workflows over personal data often misalign with user privacy expectations and leak sensitive, out-of-context information. Although Contextual Integrity (CI) formalizes this problem, existing benchmarks and defenses rarely operationalize CI for realistic multi-step task sequences in evolving environments. In this work, we first introduce agentic PrivacyBench, a benchmark of 5873 tasks in 986 task sequences with dynamic environment updates and CI-grounded allow-sets for sensitive information. We also introduce PrivacyFlow, a defense that separates deliberative privacy planning (System 2) from task execution (System 1), treating each sharing decision as a structured risk-management problem. Before execution, PrivacyFlow traces the provenance and purpose of each planned data flow, models recipient background knowledge, and simulates what external actors could infer. This allows us to model the downstream consequences of disclosure, including inference attacks and context-dependent harms. It then weighs the remaining disclosure risk against task utility and executes a minimized plan, blocks it, or consults the user. Across six models, PrivacyFlow significantly reduces step-level privacy failures and raises the share of completed task sequences without a detected privacy violation by 22--55 percentage points. We further highlight a new privacy--utility--autonomy tradeoff: allowing PrivacyFlow to proactively prompt the user in case of uncertainty can increase authorized task completion at the cost of shifting decision effort back to the user. Our results suggest that proactive CI reasoning can substantially improve agentic privacy and motivate further study of this tradeoff.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.40716",
+      "rank": 23,
+      "title": "Characterizing LLM Agent Behaviors in Module Shadowing Environments",
+      "sourceUrl": "https://arxiv.org/abs/2610.40716",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-02T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.40716v1 Announce Type: cross Abstract: LLM agents operating in untrusted workspaces face the risk of untrusted code execution during routine tasks, yet final reports and workspace states alone cannot reliably establish whether execution occurred. We introduce an evaluation framework that codes observation, reasoning, execution, and response behaviors from agent trajectories and aligns them with independent environmental records to reconstruct execution histories and verify final reports. We apply this framework to module shadowing, in which a local file is loaded in place of a trusted module during import, enabling untrusted code execution without adversarial prompts. Across 90 trials with 15 models, the payload executed in 51% of direct shadowing trials and 87% of indirect shadowing trials. Even explicit recognition of the shadowing mechanism did not ensure prevention, as the payload ran in 10 of the 29 trials with recorded recognition. These failures were often omitted from final reports, as 49 of the 62 triggered trials ended without mention of the security issue. Three reports even denied execution, including one from a trial in which independent logs recorded 19 payload executions. Final workspace states also obscured prior execution when agents deleted or overwrote the payload marker in 10 triggered trials. These findings demonstrate that combining behavioral coding with independent environmental auditing enables rigorous and transparent evaluation of agent safety.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.40721",
+      "rank": 24,
+      "title": "MetaVul: Agentic Harness Discovery for Vulnerability Detection",
+      "sourceUrl": "https://arxiv.org/abs/2610.40721",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-02T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.40721v1 Announce Type: cross Abstract: LLM agents are increasingly used to automate vulnerability detection, but reliable detection is challenging because agents must distinguish subtle, security-relevant fixes from benign code variation. While underlying LLM capability has improved significantly, the accuracy of the agent still depends heavily on the harness: the code that defines the scaffolding around the LLM. Harnesses are typically fixed, and largely hand-written, limiting adaptation to evaluator feedback. Additionally, when harnesses are static, improvements on one dataset or model may not transfer to others. To address these challenges, we introduce MetaVul, a self-improving framework for harness discovery in vulnerability detection. Starting from a seed structured reasoning scaffold, MetaVul uses a workflow-based optimization loop to iteratively refine the harness using feedback from paired vulnerable and patched functions, while preserving the structured reasoning and verdict format. At each iteration, it searches over the history of prior harnesses, with access to their trajectories, logs, and metrics, and it returns a set of Pareto-optimal harnesses. We apply MetaVul to discover agent harnesses for various architectures. A validation set (202 pairs) is used for optimization, while an unseen dataset (430 pairs) is kept as the held-out set. We test whether harnesses learned from one model transfer to others not seen during optimization. Results on both frontier and small LLMs show that the optimized harnesses improve pairwise vulnerability detection up to 23.3 percentage points on the validation set and up to 25.8 points on the held-out set with a Pareto-frontier harness. Harnesses learned with one model also transfer to others. We show that harnesses optimized with one model transfer to another, improving held-out pairwise accuracy by 14.7 points without further optimization.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2610.40735",
+      "rank": 25,
+      "title": "RiskyPy: Toward Model-Calibrated Prompt Generation for Joint Security and Functionality Evaluation of LLM-Generated Code",
+      "sourceUrl": "https://arxiv.org/abs/2610.40735",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-02T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2610.40735v1 Announce Type: cross Abstract: Evaluating approaches that improve the security of LLM code generation requires datasets that jointly assess security and functionality and remain adapted to the capabilities of the models being studied. However, existing benchmarks are costly to produce and are generally not calibrated to a chosen range of model capabilities. We introduce RiskyPy, an automated pipeline that generates security-oriented code-generation datasets calibrated to model proficiency using functionality and vulnerability canaries. We instantiate RiskyPy for Python using domains covering 18 CWEs from the 2025 CWE Top 25, producing 101 prompts. Experiments on Qwen3-4B and Seed-Coder-8B show that the generated tasks remain functionally accessible, with 57-72% of prompts yielding functional code, while only 5-10% of generations are free of Bandit findings, leaving room for joint evaluation of security and functionality of security improvement approaches.",
+      "summary": ""
+    }
+  ]
+}

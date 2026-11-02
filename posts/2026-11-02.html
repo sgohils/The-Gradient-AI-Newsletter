@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Gradient — 2026-11-02</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      line-height: 1.6;
+      color: #1a1a1a;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      background: #fefefe;
+    }
+    header {
+      border-bottom: 2px solid #1a1a1a;
+      padding-bottom: 1rem;
+      margin-bottom: 2rem;
+    }
+    h1 {
+      font-size: 1.75rem;
+      line-height: 1.2;
+      margin: 0 0 0.5rem 0;
+    }
+    .date {
+      color: #666;
+      font-size: 0.9rem;
+    }
+    .intro {
+      font-size: 1.1rem;
+      color: #333;
+      margin-bottom: 2rem;
+    }
+    .story {
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid #e5e5e5;
+    }
+    .story:last-child {
+      border-bottom: none;
+    }
+    .story h2 {
+      font-size: 1.25rem;
+      margin: 0 0 0.5rem 0;
+    }
+    .story p {
+      margin: 0 0 0.5rem 0;
+    }
+    .story a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    .story a:hover {
+      text-decoration: underline;
+    }
+    .meta {
+      font-size: 0.85rem;
+      color: #666;
+      margin-top: 0.5rem;
+    }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 1px solid #e5e5e5;
+      font-size: 0.85rem;
+      color: #888;
+    }
+    
+  </style>
+</head>
+<body>
+  <header>
+    <h1>The Gradient — 2026-11-02</h1>
+    <div class="date">2026-11-02</div>
+  </header>
+  
+  <p class="intro">Researchers introduce Capability‑Grounded Agentic Planning (CGAP), a method that lets large language model agents map requests to tool capabilities in a deterministic way.</p>
+  <main>
+    <h2>Capability-Grounded Agentic Planning</h2>
+<br>
+<p><strong>What happened:</strong> CGAP compiles an LLM&#039;s tool catalog into a PDDL (Planning Domain Definition Language) model, allowing the model to reason about required capabilities and generate an executable sequence of tool calls instead of relying on trial‑and‑error.</p>
+<br>
+<p><strong>Why it matters:</strong> Deterministic planning boosts reliability, cuts wasted API calls, and bridges modern LLM agents with classic AI planning, enabling more complex, multi‑tool workflows.</p>
+<br>
+<p><strong>Key stats:</strong> • Provides deterministic plan generation (0% trial‑and‑error in planning phase). • Early experiments show a notable increase in successful request execution compared to traditional LLM‑only approaches.</p>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2610.41040</p>
+<br>
+<p><a href="https://arxiv.org/abs/2610.41040">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>Consensus Within, Competition Between: Decentralized LLM Teams for Perimeter Defense</h2>
+<br>
+<p><strong>What happened:</strong> Researchers built a simplified perimeter‑defense simulation where LLM‑controlled defenders must block intruding agents. Three architectures were compared: (1) a single central commander LLM, (2) an auction‑based consensus team of autonomous LLMs, and (3) fully independent LLM agents. Communication between agents was deliberately made unreliable to test robustness.</p>
+<br>
+<p><strong>Why it matters:</strong> The findings shed light on how AI‑driven security systems and other multi‑agent applications should allocate tasks. Decentralized consensus can preserve effectiveness even when messages are lost or delayed, whereas a centralized controller may become a single point of failure under the same conditions.</p>
+<br>
+<p><strong>Key stats:</strong> – The consensus‑based team retained near‑optimal interception performance despite unreliable communication, while the central commander’s success rate dropped noticeably under the same conditions. – Independent agents matched the consensus team’s effectiveness but required roughly double the computational resources. – Overall, the study highlights a clear trade‑off between coordination overhead and resilience.</p>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2610.41044</p>
+<br>
+<p><a href="https://arxiv.org/abs/2610.41044">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>BABA-Bench: Evaluating Long-Horizon Patient-Advocacy Agents</h2>
+<br>
+<p><strong>What happened:</strong> Researchers introduced BABA‑Bench, a suite of 47 interactive worlds derived from de‑identified, real patient‑advocacy cases. Each world challenges an LLM agent to navigate hidden information, secure consent, and follow legal and ethical steps to achieve the correct care outcome.</p>
+<br>
+<p><strong>Why it matters:</strong> As AI agents move into sensitive healthcare roles, ensuring they not only get the right answer but also respect privacy, consent, and procedural rules is critical. BABA‑Bench provides the first systematic way to evaluate these dual requirements at scale.</p>
+<br>
+<p><strong>Key stats:</strong></p>
+<ul>
+<li>47 distinct interactive worlds covering a range of advocacy tasks.</li>
+<li>Built from real, de‑identified patient cases reviewed by expert advocates.</li>
+<li>Benchmarks both outcome correctness and procedural adherence (e.g., obtaining permission before sharing records).</li>
+</ul>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2610.41076</p>
+<br>
+<p><a href="https://arxiv.org/abs/2610.41076">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>CIRCE Divines LLM Task Complexity from Constraint Structure</h2>
+<br>
+<p><strong>What happened:</strong> The team introduced CIRCE, a model‑free estimator that infers task complexity from the formal constraint structure of a problem, rather than from the problem text, LLM‑generated difficulty tags, or post‑hoc hidden‑state signals.</p>
+<br>
+<p><strong>Why it matters:</strong> By flagging overly hard tasks early, developers can route them to more capable models, allocate extra compute, or invoke specialized tools, reducing wasted inference and improving overall system reliability.</p>
+<br>
+<p><strong>Key stats:</strong> Across several standard LLM benchmark suites, CIRCE consistently outperformed prior difficulty estimators that rely on text‑only cues, achieving higher prediction accuracy without accessing any LLM internals.</p>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2610.41089</p>
+<br>
+<p><a href="https://arxiv.org/abs/2610.41089">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>Confident Fools or Careful Searchers? A Behavioural Study of When LLMs Search Beyond Their Static Internal Memory</h2>
+<br>
+<p><strong>What happened:</strong> Researchers built a 400‑question multiple‑choice benchmark to audit whether agentic LLMs choose to answer from internal knowledge or trigger an external web‑search tool.</p>
+<p><strong>Why it matters:</strong> Unnecessary searches add latency and expense, while missed searches lead to confident but unsupported answers—both undermine user trust and deployment costs.</p>
+<p><strong>Key stats:</strong> • 400 diverse questions across domains. • Baseline LLMs performed unnecessary searches in roughly 30% of cases and failed to search when needed in about 25% of cases. • The study highlights a gap between confidence‑based heuristics and actual search‑decision quality.</p>
+<p><strong>Source:</strong> https://arxiv.org/abs/2610.41124</p>
+<br>
+<p><a href="https://arxiv.org/abs/2610.41124">Read more</a></p>
+<br>
+<hr>
+<br>
+  </main>
+  <footer>
+    <p>Tags: Research</p>
+  </footer>
+</body>
+</html>
