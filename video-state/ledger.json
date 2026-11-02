@@ -1414,7 +1414,7 @@
       "platforms": {
         "youtube": {
           "accountId": "6ac27146281ee799a37065e4",
-          "status": "submitting",
+          "status": "published",
           "idempotencyKey": "be857ced-9992-4f7e-ba4c-d2b6d79f415e",
           "request": {
             "content": "Consensus Within, Competition Between: Decentralized LLM Teams for Perimeter Defense\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2610.41044\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-02\nAI-generated narration. #AI #AINews #Shorts",
@@ -1439,7 +1439,9 @@
             ],
             "publishNow": true
           },
-          "firstSubmittedAt": "2026-11-02T21:26:41.858Z"
+          "firstSubmittedAt": "2026-11-02T21:26:41.858Z",
+          "postId": "6ae90013391e5b568af090e2",
+          "postUrl": "https://www.youtube.com/watch?v=lufeIZKBwO4"
         }
       },
       "script": {
