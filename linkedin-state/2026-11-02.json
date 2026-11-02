@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "issueDate": "2026-11-02",
+  "issueUrl": "https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-02",
+  "content": "Today's AI briefing from The Gradient | 2026-11-02\n\n1. Capability-Grounded Agentic Planning\nCGAP compiles an LLM's tool catalog into a PDDL (Planning Domain Definition Language) model, allowing the model to reason about required capabilities and generate an executable sequence of tool calls instead of relying on trial‑and‑error.\n\n2. Consensus Within, Competition Between: Decentralized LLM Teams for Perimeter Defense\nResearchers built a simplified perimeter‑defense simulation where LLM‑controlled defenders must block intruding agents. Three architectures were compared: (1) a single central commander LLM, (2) an auction‑based consensus team of autonomous LLMs, and (3) fully independent LLM agents. Communication between agents was…\n\n3. BABA-Bench: Evaluating Long-Horizon Patient-Advocacy Agents\nResearchers introduced BABA‑Bench, a suite of 47 interactive worlds derived from de‑identified, real patient‑advocacy cases. Each world challenges an LLM agent to navigate hidden information, secure consent, and follow legal and ethical steps to achieve the correct care outcome.\n\nRead the full briefing and original sources:\nhttps://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-02\n\n#AI #ArtificialIntelligence #TheGradient",
+  "contentHash": "574f79e9b1386eb332ed61a13019405e4d0a37030a38390d11aef883e9a26afd",
+  "accountId": "6ac5a561b3c21905c0edcfba",
+  "organizationUrn": "urn:li:organization:136824048",
+  "idempotencyKey": "5bca9abc-6677-4659-92e3-1f98c3bb6994",
+  "status": "submitting",
+  "firstSubmittedAt": "2026-11-02T21:23:32.384Z"
+}
