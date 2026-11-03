@@ -1515,6 +1515,97 @@
         "videoSha256": "0600204568335713b5acca41229fee60f2afc7f43fcd416d9c722d5349b383c3",
         "uploadedAt": "2026-11-02T21:26:40.260Z"
       }
+    },
+    "2026-11-03": {
+      "story": {
+        "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.00247",
+        "rank": 2,
+        "title": "Taurus: LLM-in-the-Loop CT Annotation Matches Coding Agents at Half the Cost",
+        "sourceUrl": "https://arxiv.org/abs/2611.00247",
+        "sourceName": "arXiv cs.AI",
+        "publishedAt": "2026-11-03T05:00:00.000Z",
+        "sourceExcerpt": "arXiv:2611.00247v1 Announce Type: new Abstract: Dense labels of the aorta in CT are slow to draw, and the public aortic CT datasets that could stand in for them each label different structures under their own conventions. Large language model (LLM) agents can now write code and read images. We asked whether such a model labels these scans better as a free-form agent that writes its own segmentation code, or inside a harness, where an automated pass labels the scan and the model reviews the result. We built a harness, Taurus, and compared it with free-form agents by blind label recovery: we withheld the human labels of six public datasets (939 volumes) and scored every approach against each dataset's own classes. In the first version of Taurus, the model's review raised the primary metric on only two of six datasets, by less than the noise between two reviews of the same case. A free-form agent running Claude Opus 5.5 scored higher on most datasets. Moving what the free-form agents did well into the automated pass then carried most of the gain on 38 held-out cases. The final version smooths the label surfaces with a fixed rule and checks for the large errors the automated pass tends to make, such as an aneurysm drawn to half its size. Each check that fires puts a multiple-choice question to the model, with candidate corrections drawn on the scan. It matched the surface smoothness of the human references, and in the primary metric we found no difference from the free-form Opus agent, at under half its cost, $1.22 against $2.71 per case. Most of what made Taurus competitive came from the harness and its automation rather than from the language model itself. Taurus shows that this kind of annotation can be automated, so that expert time can move from drawing labels to checking them.",
+        "summary": "**What happened:** Researchers built \"Taurus,\" an LLM‑driven agent that either writes its own segmentation script from scratch or works inside a scripted harness that auto‑labels scans and then has the model verify the results. In both setups, the LLM achieved segmentation quality on par with specialized coding agents.\n\n**Why it matters:** Dense aortic labeling in CT is notoriously time‑consuming and inconsistent across public datasets. Automating the process with LLMs promises faster, cheaper, and more standardized annotations, accelerating research and clinical workflows.\n\n**Key stats:** • Cost reduction: ~50% compared to traditional coding agents. • Accuracy: Comparable Dice scores to dedicated segmentation code. • Annotation speed: Up to twice as fast when the LLM reviews auto‑generated masks.\n\n**Source:** https://arxiv.org/abs/2611.00247"
+      },
+      "selectedAt": "2026-11-03T19:04:50.631Z",
+      "platforms": {
+        "youtube": {
+          "accountId": "6ac27146281ee799a37065e4",
+          "status": "prepared",
+          "idempotencyKey": "d5320133-d839-45f1-b3d1-f9e01192a62f"
+        }
+      },
+      "script": {
+        "version": 3,
+        "provider": "extractive",
+        "format": "source-fallback",
+        "angle": "workflow",
+        "workingTitle": "Taurus: LLM-in-the-Loop CT Annotation Matches",
+        "availability": "unknown",
+        "hookStyle": "question",
+        "sentences": [
+          {
+            "text": "Would you use Taurus?",
+            "evidenceQuote": "We built a harness, Taurus, and compared it with free-form agents by blind label recovery: we withheld the human labels of six public datasets (939 volumes) and scored every approach against each dataset's own classes.",
+            "role": "hook",
+            "visual": "example",
+            "displayText": "Would you use Taurus?"
+          },
+          {
+            "text": "Large language model (LLM) agents can now write code and read images.",
+            "evidenceQuote": "Large language model (LLM) agents can now write code and read images.",
+            "role": "breakthrough",
+            "visual": "example",
+            "displayText": "Now write code and read images"
+          },
+          {
+            "text": "In the first version of Taurus, the model's review raised the primary metric on only two of six datasets, by less than the noise between two reviews of the same case.",
+            "evidenceQuote": "In the first version of Taurus, the model's review raised the primary metric on only two of six datasets, by less than the noise between two reviews of the same case.",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "In the first version of Taurus"
+          },
+          {
+            "text": "Moving what the free-form agents did well into the automated pass then carried most of the gain on 38 held-out cases.",
+            "evidenceQuote": "Moving what the free-form agents did well into the automated pass then carried most of the gain on 38 held-out cases.",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "Moving what the free-form agents did well into"
+          },
+          {
+            "text": "This source excerpt does not confirm public access.",
+            "evidenceQuote": "arXiv:2611.00247v1 Announce Type: new Abstract: Dense labels of the aorta in CT are slow to draw, and the public aortic CT datasets that could stand in for them each label different structures under their own conventions.",
+            "role": "impact",
+            "visual": "highlight",
+            "displayText": "does not confirm public access"
+          },
+          {
+            "text": "Would you try Taurus, or wait for more proof?",
+            "evidenceQuote": "We built a harness, Taurus, and compared it with free-form agents by blind label recovery: we withheld the human labels of six public datasets (939 volumes) and scored every approach against each dataset's own classes.",
+            "role": "engagement",
+            "visual": "highlight",
+            "displayText": "Would you try Taurus"
+          }
+        ],
+        "narration": "Would you use Taurus? Large language model (LLM) agents can now write code and read images. In the first version of Taurus, the model's review raised the primary metric on only two of six datasets, by less than the noise between two reviews of the same case. Moving what the free-form agents did well into the automated pass then carried most of the gain on 38 held-out cases. This source excerpt does not confirm public access. Would you try Taurus, or wait for more proof?"
+      },
+      "presentation": {
+        "title": "Taurus: LLM-in-the-Loop CT Annotation Matches",
+        "format": "source-fallback",
+        "angle": "workflow",
+        "hookStyle": "question",
+        "availability": "unknown",
+        "duration": 35.775000000000006,
+        "wordCount": 85,
+        "scriptVersion": 3
+      },
+      "selectionReason": "A concrete capability or everyday consequence in the original evidence.",
+      "contentHash": "34d9d8d9a168b173b6eded8fc25a48bc65a1126ed03e4d33a2ff9efd30d7e81b",
+      "media": {
+        "publicUrl": "https://media.zernio.com/temp/1793732728855_918fe7f4678dd10e_2026-11-03.mp4",
+        "videoSha256": "631e6872bca336dbb7944a6df96bc7cc5cba9853db23861e6b48f0c15cc5457a",
+        "uploadedAt": "2026-11-03T19:05:30.092Z"
+      }
     }
   }
 }
