@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "issueDate": "2026-11-03",
+  "issueUrl": "https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-03",
+  "content": "Today's AI briefing from The Gradient | 2026-11-03\n\n1. PatchScout: Thematic Web Data Collection via Information Foraging\nResearchers unveiled PatchScout, a system that assembles documents sharing a common theme from heterogeneous, disconnected regions of the web using an information‑foraging approach.\n\n2. Taurus: LLM-in-the-Loop CT Annotation Matches Coding Agents at Half the Cost\nResearchers built \"Taurus,\" an LLM‑driven agent that either writes its own segmentation script from scratch or works inside a scripted harness that auto‑labels scans and then has the model verify the results. In both setups, the LLM achieved segmentation quality on par with specialized coding agents.\n\n3. Dependence-Aware Risk Assessment and Optimal Design of AI-Agent Safeguard Systems\nA team introduced a novel framework that models the interdependence of safeguard decisions in AI‑agent systems, enabling joint configuration and operational planning.\n\nRead the full briefing and original sources:\nhttps://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-03\n\n#AI #ArtificialIntelligence #TheGradient",
+  "contentHash": "6664713146836b918e1eabd58036868db8a92810b70ff5ea6adce3f481bbd1f3",
+  "accountId": "6ac5a561b3c21905c0edcfba",
+  "organizationUrn": "urn:li:organization:136824048",
+  "idempotencyKey": "bbeb7436-4050-40bd-aaad-3e4a9071c320",
+  "status": "submitting",
+  "firstSubmittedAt": "2026-11-03T19:00:57.646Z"
+}
