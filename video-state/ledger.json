@@ -1531,7 +1531,7 @@
       "platforms": {
         "youtube": {
           "accountId": "6ac27146281ee799a37065e4",
-          "status": "submitting",
+          "status": "published",
           "idempotencyKey": "d5320133-d839-45f1-b3d1-f9e01192a62f",
           "request": {
             "content": "Taurus: LLM-in-the-Loop CT Annotation Matches Coding Agents at Half the Cost\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2611.00247\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-03\nAI-generated narration. #AI #AINews #Shorts",
@@ -1556,7 +1556,9 @@
             ],
             "publishNow": true
           },
-          "firstSubmittedAt": "2026-11-03T19:05:33.826Z"
+          "firstSubmittedAt": "2026-11-03T19:05:33.826Z",
+          "postId": "6aea308b2ceb77d6ea148e71",
+          "postUrl": "https://www.youtube.com/watch?v=2mP2H61YnOs"
         }
       },
       "script": {
