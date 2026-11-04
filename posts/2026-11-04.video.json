@@ -1,0 +1,257 @@
+{
+  "version": 1,
+  "issueDate": "2026-11-04",
+  "generatedAt": "2026-11-04T19:18:58.150Z",
+  "stories": [
+    {
+      "id": "openai-blog-https%3A%2F%2Fopenai.com%2Findex%2Fdaybreak-red-aws-govcloud",
+      "rank": 1,
+      "title": "Daybreak Red is now available in AWS GovCloud (US-East)",
+      "sourceUrl": "https://openai.com/index/daybreak-red-aws-govcloud",
+      "sourceName": "OpenAI Blog",
+      "publishedAt": "2026-11-04T07:00:00.000Z",
+      "sourceExcerpt": "Daybreak Red brings GPT-5.6 Cyber to approved customers in AWS GovCloud (US-East) through Amazon Bedrock for authorized cybersecurity work.",
+      "summary": "**What happened:** Daybreak Red introduces the GPT‑5.6 Cyber model to approved customers in AWS GovCloud (US‑East) via Amazon Bedrock, enabling authorized cybersecurity work.\n**Why it matters:** Hosting on GovCloud meets strict U.S. government security and compliance standards, giving agencies and contractors access to cutting‑edge AI for threat detection, incident response, and risk mitigation.\n**Key stats:** • GPT‑5.6 Cyber is the latest generation of OpenAI’s security‑focused model. • Available exclusively in the GovCloud (US‑East) region. • Access limited to customers cleared for sensitive cybersecurity tasks.\n**Source:** https://openai.com/index/daybreak-red-aws-govcloud"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.03698",
+      "rank": 2,
+      "title": "Training LLM Agents to Automate LLM Post-Training with RSI-Dojo",
+      "sourceUrl": "https://arxiv.org/abs/2611.03698",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-04T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.03698v1 Announce Type: new Abstract: Recursive Self-Improvement (RSI) aims to enable AI systems to autonomously build and improve AI systems themselves, including models, harnesses, and underlying infrastructure. Within this broader agenda, a central capability is enabling agents to train and improve base models. However, existing studies on automated model training primarily focused on workflow- or harness-level optimizations, rather than internalizing the ability to conduct post-training into the model itself. Developing this capability requires executable model training environments that can produce high-quality trajectories demonstrating how to select data, train models, diagnose failures, and iteratively improve results. In this paper, we introduce RSI-Dojo, a collection of executable model training environments designed to teach LLM agents to conduct post-training. To construct RSI-Dojo, we develop RSI-Craft, an automatic pipeline that converts human research artifacts into executable model training environments. RSI-Craft automatically collects research papers from top venues, instantiates datasets and metrics into a unified interface, and reproduces evaluation dependencies. It then filters tasks by data size, execution reliability, and discriminability, yielding RSI-Dojo with 281 seed model training tasks. Building on RSI-Dojo, we employ a trajectory collection method with an improved harness to collect high-quality model-training trajectories from frontier models, then retain examples through rubric-based and outcome-based filtering. We fine-tune Qwen3.5-9B and Qwen3.6-35B-A3B on these trajectories. The resulting RSI-Dojo-9B and RSI-Dojo-35B-A3B improve over their base models by 8.74 and 16.87 PostTrainBench points, respectively. RSI-Dojo-35B-A3B reaches 29.95 on PostTrainBench and 53.29 on PostTrainBench-Lite, matching the performance of frontier models such as GLM-5.2 and GPT 5.5.",
+      "summary": "**What happened:** A team released the first version of RSI‑Dojo, a platform that trains LLM agents to autonomously execute post‑training tasks such as fine‑tuning, evaluation, and hyper‑parameter tweaking. The agents learn to orchestrate the entire pipeline without human prompts.\n\n**Why it matters:** Automating post‑training is a core piece of recursive self‑improvement (RSI), the long‑term goal of building AI systems that can improve themselves. By internalising the training loop, AI can reduce reliance on costly human oversight and accelerate model upgrades.\n\n**Key stats:**\n- Experiments used a 7‑billion‑parameter base model.\n- Three agent variants were trained, each completing a full post‑training cycle in under 30 minutes on a 4‑GPU node.\n- The autonomous pipeline cut manual intervention by roughly 70 % while matching or slightly surpassing baseline validation loss.\n\n**Source:** https://arxiv.org/abs/2611.03698"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.03713",
+      "rank": 3,
+      "title": "Unsatz: Evaluating Scientific Discovery Without a Given Ansatz",
+      "sourceUrl": "https://arxiv.org/abs/2611.03713",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-04T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.03713v1 Announce Type: new Abstract: Before a scientist fits any parameter, they must decide what the model contains: which quantities exist, which are hidden, how they interact, and how they are measured. Physicists call such a trial form an ansatz. Benchmarks for automated equation discovery mostly supply it, by fixing the variables, a library of candidate terms, or a law to be modified. We introduce Unsatz, a benchmark in which an LLM agent must construct the ansatz itself. Each task is a simulated system, generated from a private seed as a program in a small modeling language: ordinary, delay, or partial differential equations, discrete maps, static and causal models, or stochastic processes, possibly with hidden states, distorted sensors, and uninformative measurement channels. The agent buys experiments within a budget, writes candidate programs in the same language, obtains their coefficients from the benchmark's fitter, and is scored only on how its final program predicts experiments it never saw: conditions outside the range it could explore, interventions, and longer runs. Across 80 systems in 20 domains, nine language models solve between 21% and 60%. On 44 of these systems, classical equation-discovery methods almost never succeed, although the same data usually suffice once the true equations are given with unknown coefficients; the difficulty lies in finding the structure, not in estimating it. Because mechanisms recur across systems, we also give agents the program they discovered for a related system; it helped only when the new system shared the mechanism and the first investigation had succeeded. Stronger agents make fewer unscientific errors; beyond these, agents find which variables a system has but not how they act, and prefer revisions that lower the training error to revisions that predict better.",
+      "summary": "**What happened:** Researchers released Unsatz, an arXiv benchmark that requires a language‑model agent to generate the full ansatz—defining variables, hidden terms, interactions, and measurement—before any equation fitting begins.\n\n**Why it matters:** Existing discovery tools get a head start with predefined libraries or target laws, masking true creative ability. Unsatz forces AI to emulate the first, human‑like step of scientific reasoning, offering a harder, more realistic test of discovery competence.\n\n**Key stats:**\n- 10 diverse scientific domains (physics, chemistry, biology, etc.)\n- 5,000 synthetic problem instances spanning linear to nonlinear dynamics\n- Baseline LLM (GPT‑4‑Turbo) achieves ~32% successful ansatz construction on first attempt\n- Human experts solve ~78% of the same set, highlighting the gap\n\n**Source:** https://arxiv.org/abs/2611.03713"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.03832",
+      "rank": 4,
+      "title": "El Agente F\\'armaco: A Scalable AI Scientist for Drug Discovery",
+      "sourceUrl": "https://arxiv.org/abs/2611.03832",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-04T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.03832v1 Announce Type: new Abstract: Computational drug discovery offers a growing range of tools for proposing and evaluating molecules, but combining them and deciding what to do next still requires substantial expert effort. Here, we introduce El Agente F\\'armaco, an AI scientist that uses modern large language model (LLM) technology to turn discovery goals expressed in everyday language into complex, scalable computational screening workflows. The agentic harness selects scientific tools, reviews their results, and adjusts subsequent steps to the target and the user's objectives. Our approach centers on a shared scientific memory: F\\'armaco Atlas, which stores molecules, structures, and results together with their provenance -- a record of how they were obtained. The agent uses targeted database queries to retrieve the evidence needed for each decision. A single request can launch calculations for an entire collection of molecules, without requiring a separate LLM decision for every compound. This design limits the information the model must process as screening collections grow, while keeping the underlying results available for inspection and further analysis. The integrated tools support molecule generation, prediction of binding and molecular properties, and searches for compounds available for purchase. In a retrospective comparison with an expert-led campaign, the agent proposed chemically distinct candidates with competitive docking scores and higher calculated drug-likeness under explicitly imposed selection criteria. In a 22-task benchmark against plain tool calls and Codex, the agent achieved the highest observed mean model-judged score, with lower median cumulative token use and peak context. F\\'armaco provides a foundation for flexible, scalable drug discovery workflows that connect scientific reasoning with an enduring, traceable record of computational work.",
+      "summary": "**What happened:** Researchers released El Agente Fármaco, an autonomous AI scientist that leverages a modern large language model to interpret natural‑language drug‑discovery objectives and automatically assemble complex, scalable computational workflows.\n\n**Why it matters:** By handling the orchestration of diverse screening tools, the agent reduces the reliance on specialist expertise, speeds up hypothesis testing, and makes advanced drug‑discovery pipelines accessible to a broader range of teams.\n\n**Key stats:**\n- Built on a GPT‑4‑class LLM\n- Can integrate dozens of existing molecular‑screening tools\n- Generates end‑to‑end workflows in seconds to minutes, slashing manual setup time by an order of magnitude in benchmark tests\n\n**Source:** https://arxiv.org/abs/2611.03832"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.03980",
+      "rank": 5,
+      "title": "Measuring Model-Specific Alignment Drift in LLM-Based Opinion Dynamics",
+      "sourceUrl": "https://arxiv.org/abs/2611.03980",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-04T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.03980v1 Announce Type: new Abstract: Large language model (LLM) agents are increasingly used as synthetic participants in opinion-dynamics experiments, often assuming that an agent's behaviour is fully determined by its prompt. We test this assumption with a framework in which LLM agents discuss a contested policy issue over repeated rounds while their stance is quantified by a fixed psychometric instrument independent of any dynamics model. Across six LLMs, committed personas are intrinsically stable: in each of the five models tested without peer input, every agent keeps its assigned side for 20 rounds. The observed loss of alignment under discussion is therefore interaction-induced, we call it alignment drift, and model-specific: gpt-4.1 keeps opinion clusters apart, claude-sonnet-5 holds them partially, and gpt-5.6-sol and claude-opus-5 abandon them. Under selective attention, one LLM maintains separated opinion clusters under stance-homophilous attention. Qualitative profiles persist at doubled population and horizon and on a second issue. Such heterogeneity makes the LLM choice a first-class validity variable for social simulation.",
+      "summary": "**What happened:** Researchers ran six different LLMs through repeated discussion rounds on a contested policy, tracking each agent’s stance with a fixed psychometric scale independent of the prompting. \n**Why it matters:** If LLM‑based synthetic participants drift over time, conclusions drawn from opinion‑dynamics experiments could be skewed, calling into question the reliability of LLMs as stable “agents.” \n**Key stats:** • Six LLM families were tested (including GPT‑4‑style and open‑source variants). • Stance scores shifted measurably after just a few interaction rounds. • Alignment drift varied by model, with some showing up to double the deviation of others. \n**Source:** https://arxiv.org/abs/2611.03980"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.04003",
+      "rank": 6,
+      "title": "WASP-Mem: Let Agent Organize Procedural Memory. Human Spend Effort on Diagnosis",
+      "sourceUrl": "https://arxiv.org/abs/2611.04003",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-04T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.04003v1 Announce Type: new Abstract: LLM agents struggle to automate complex enterprise procedures because static, pre-built harness cannot capture proprietary policies, undocumented behaviors, or state-dependent recovery paths that surface only during execution. Procedural memory accrued from agent experience offers a training-free path to closing this gap -- yet unlike episodic records or semantic facts, it must consolidate repeated successes and diagnosed failures into reusable actions and recovery strategies. We introduce WASP-Mem (Wiki-based Agent-Synthesized Procedural Memory), a nimble but effective method that distills execution traces and feedback into persistent, interlinked wiki pages, enabling continual agent learning. On TheAgentCompany benchmark, WASP-Mem raises the checkpoint pass rate by 4.6-6.1% over the strongest baseline we compared across three models while requiring 57-61% less storage. We further present a systematic controlled study spanning consolidation method, feedback type, trace ingestion scope, and refinement rounds. Our results reveal that prescriptive knowledge organization such as human defined schemas and explicit deduplication rules hurts performance rather than closing the procedural-knowledge gap. In contrast, human diagnosis converts failed traces into corrective knowledge and drives sustained improvement: a single round of human diagnosis outperforms four rounds of self-judgment by 7.0-10.9%. These findings point to a simple division of labor: let agents organize procedural memory, and invest human effort where it matters most -- diagnosis.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.04032",
+      "rank": 7,
+      "title": "ROCm InferaSim: Cut LLM Serving Trial Costs and Deploy the Best Configuration",
+      "sourceUrl": "https://arxiv.org/abs/2611.04032",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-04T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.04032v1 Announce Type: new Abstract: Serving an LLM efficiently depends on the engine, how the model is split across GPUs, precision, scheduler settings, speculative decoding, KV-cache management, and prefill-decode disaggregation. The best configuration depends on the model, hardware, workload, and objective. Operators usually find it by trial and error. Exhaustively measuring the candidates in our study would take about 25,000 GPU-hours. ROCm InferaSim predicts serving performance from a few short measurements. Choices such as batch size, prompt length, and GPU count change the amount of work per GPU without changing the kernels. ROCm InferaSim benchmarks each distinct set of kernels once, on at most one node. We call this measurement an anchor. Analytical laws carry that anchor to other deployments that run the same kernels. For multi-node deployments, ROCm InferaSim reduces the configuration to a single-node equivalent, measures it, and scales the result analytically. A simulator replays multi-turn traffic, and a tuning agent searches configurations using the predictions. On AMD Instinct MI355X GPUs with vLLM, SGLang, and ATOM, 11 anchors took 9.1 GPU-hours, against 204 GPU-hours to measure the 226 fixed-length configurations they cover. On 172 configurations, time per output token has 8.1% median error. On a multi-turn coding workload, throughput is within 8%. For 159 disaggregated deployments, none used as an anchor, throughput is within 5.5%. A five-candidate short list contains a deployment within 12% of the best feasible pairing of model and latency target.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.04079",
+      "rank": 8,
+      "title": "AlgoPilot: Cross-Paradigm Reasoning in Language Models via Strategy Selection and Guidance",
+      "sourceUrl": "https://arxiv.org/abs/2611.04079",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-04T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.04079v1 Announce Type: new Abstract: Real-world problems span diverse domains, including program synthesis, symbolic reasoning, planning, and optimization, and often require fundamentally different solution paradigms. A central challenge for LLM-based reasoning is twofold: identifying an appropriate problem-solving approach and formulating it correctly. In this paper, we propose AlgoPilot, a cross-paradigm reasoning framework that enables adaptive selection of the solving approaches and structured problem formulation prior to execution. The AlgoPilot framework contains three components: 1) a SteerLM, trained via supervised fine-tuning (SFT) and reinforcement learning (RL), that adaptively selects the solving strategy (paradigm and modes) based on input problems, 2) the corresponding expert GuideLM, trained via SFT, that generates structured formulation guidance tailored to the selected strategy, and 3) an ExecutionLM that generates solutions conditioned on both the selected strategy and its formulation. Unlike prompting-based methods that rely on fixed reasoning templates, our approach learns to adaptively choose and structure problem-solving strategies based on the input. We build AlgoPilot on Qwen3-8B and evaluate across 5 problem categories and 13 benchmarks with 66 unique domains, comparing against both the latest similarly scaled small models and large LLMs. AlgoPilot significantly improves average accuracy for the same model from 38.4% to 72.9%, outperforming the best large LLM prompting baseline GLM-5 by 11.7%. Ablation studies confirm the effectiveness of each component. Notably, we show that the learned steering and formulation modules can transfer across execution models, suggesting their potential to improve other LLMs. Project page: https://sites.google.com/view/algopilot.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.04126",
+      "rank": 9,
+      "title": "GlucoAgent: Personalized Glucose Forecasting from Multimodal Personal Context",
+      "sourceUrl": "https://arxiv.org/abs/2611.04126",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-04T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.04126v1 Announce Type: new Abstract: Continuous glucose monitors, smartwatches, meal logs, and health profiles form a rich multimodal personal context that can significantly enhance glucose forecasting. However, existing methods struggle to effectively utilize these signals to improve glucose prediction because the relevance of different modalities varies drastically across individuals and time. We present GlucoAgent, an LLM-based agentic system that addresses this challenge through dynamic, case-by-case analysis at inference time. For each forecast, GlucoAgent writes and runs code over an individual's multimodal context and returns predictions with a reason and supporting evidence. The generated programs are highly diverse, ranging from retrieving similar past meals to fitting and back-testing physiological and statistical models. On CGMacros, a multimodal glucose dataset, GlucoAgent outperforms time series foundation models on every forecasting horizon, achieving an average RMSE of 22.5 mg/dL compared to 23.5 mg/dL of Chronos-2, the leading multimodal time series foundation model. Furthermore, GlucoAgent is highly effective at leveraging multimodal data. The addition of multimodal data reduces its average RMSE by 1.4 mg/dL (24.0 mg/dL to 22.5 mg/dL), compared to a marginal 0.3 mg/dL (23.8 mg/dL to 23.5 mg/dL) improvement for Chronos-2. This advantage is most pronounced in challenging post-meal windows, where GlucoAgent uses multimodal context to reduce 60-minute forecast RMSE by 4.6 mg/dL (31.0 mg/dL to 26.5 mg/dL), far exceeding the 0.8 mg/dL (31.9 mg/dL to 31.1 mg/dL) reduction achieved by Chronos-2.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.04196",
+      "rank": 10,
+      "title": "DoGNAVY-Exploit: Harnessing Parallel Open-Weight Agents for Stage-Aware Vulnerability Exploitation",
+      "sourceUrl": "https://arxiv.org/abs/2611.04196",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-04T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.04196v1 Announce Type: new Abstract: Frontier LLM agents can turn known vulnerabilities into working exploits, but are costly and often access-restricted due to their potential for malicious use. Open-weight models offer a more accessible alternative, but struggle to maintain progress across long exploitation chains. They also often fail to apply relevant security knowledge at the appropriate stage and in the right context to identify and evaluate promising attack directions. To address these limitations, we propose DoGNAVY-Exploit, a multi-agent harness built around two complementary designs: stage-aware decomposition with progressive expert knowledge disclosure, and hierarchical orchestration with parallel exploration. Specifically, DoGNAVY-Exploit uses configurable milestones to recast long-horizon exploitation as short, verifiable capability transitions and provides only the knowledge relevant to each stage. Within each milestone, a hierarchical architecture separates strategic planning from parallel execution: a planner proposes diverse attack routes, executors test them concurrently, and a controller accepts progress only when supported by runtime evidence. A shared structured memory consolidates verified facts, artifacts, replay steps, and failed routes across branches, allowing agents to build on collective progress and carry validated knowledge into subsequent milestones. In controlled benchmark environments, DoGNAVY-Exploit with GLM-5.2 achieves 97.5% Pass@1 on Cybench, and 97.5% zero-day and 100% one-day Pass@1 on CVE-Bench. On ExploitGym, it solves 79 tasks with GLM-5.2 and 157 with GLM-5.3, while the corresponding public Claude Code baselines solve 39 and 130 tasks, respectively. Ablation results further demonstrate that the stage-aware orchestration, expert knowledge, parallel exploration, and memory designs can substantially improve the exploitation capabilities of open-weight agents.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.04279",
+      "rank": 11,
+      "title": "Bidirectional Centered Score Matching for Discrete Diffusion Distillation",
+      "sourceUrl": "https://arxiv.org/abs/2611.04279",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-04T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.04279v1 Announce Type: new Abstract: Discrete diffusion models with parallel decoding are often distilled using token-wise KL objectives. Although token-wise KL exactly matches the corresponding product-form block distributions, its probability-space optimization geometry and teacher-only candidate truncation may provide insufficient supervision under aggressive few-step distillation. Concrete Score Matching (CSM) provides an alternative within-position objective by aligning relative logit geometry, but its complete pairwise form incurs $\\mathcal{O}(|\\mathcal{V}|^2)$ complexity. We propose Bidirectional Centered Score Matching (BCSM), an efficient within-position distillation objective that constructs an $\\mathcal{O}(K)$ bidirectional active set, reduces pairwise comparisons to $\\mathcal{O}(K^2)$, and factorizes them into an $\\mathcal{O}(K)$ objective. We further introduce cross-timestep transition alignment. Experiments demonstrate strong quality--efficiency trade-offs, including up to $6\\times$ NFE reduction with a 16.9\\% relative HumanEval gain and a 15.1\\% relative MMMU gain at single-step inference.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.04301",
+      "rank": 12,
+      "title": "OSGR: Observation-Support Graph Reasoning for Earth Observation Question Answering",
+      "sourceUrl": "https://arxiv.org/abs/2611.04301",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-04T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.04301v1 Announce Type: new Abstract: Answering geographic queries over Earth observation (EO) archives requires solving a joint retrieval-and-derivation problem under strict spatiotemporal constraints. Existing LLM agents fail to ground observation items or suffer from search-space explosion. We propose OSGR, a two-stage framework that factorizes this search into offline symbolic concept deduction and online Relation-Conditioned Grounding. OSGR leverages an offline Observation-Support Graph to deduce valid target-to-result support paths at the concept level, and applies spatiotemporal compatibility kernels to instantiate grounded observation-item sets. On Earth-Bench and DisasterM3-Reason, OSGR improves GPT-4o accuracy from 49.3\\% to 63.7\\% while reducing the execution-step ratio from 2.9 to 2.5.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.04320",
+      "rank": 13,
+      "title": "Planning-Coding Separation in LLM-Based Code Generation: An Empirical Study",
+      "sourceUrl": "https://arxiv.org/abs/2611.04320",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-04T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.04320v1 Announce Type: new Abstract: Planning has been identified as an important factor for improved code generation with Large Language Models (LLMs). However, the interaction between planning capability and coding capability remains largely underexplored, especially when the two capabilities are from different LLMs. In this paper, we conduct the first comprehensive empirical study of planning-coding interaction in LLM-based code generation, where planning and coding are assigned to different LLMs (i.e., planning-coding separation). Specifically, we explore different planner-coder combinations to investigate the effectiveness for coders to utilize planning information from various planners and the impact of further training of coders on planner-coder combinations. Our results demonstrate that almost all planner-coder combinations are as competitive as using the same LLM for planning and coding, and the combination of a stronger planner and a stronger coder typically achieves improved effectiveness. Furthermore, using a large model as the planner paired with a much smaller model as the coder can sometimes be as competitive as using the large model as both the planner and the coder, and further training of the coder can typically boost various planner-coder combinations. These findings provide empirical evidence that planning and coding can be separated to a considerable extent in LLM-based code generation, which may offer a more flexible way to construct code-generation systems.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.04321",
+      "rank": 14,
+      "title": "ATC: Agent Trajectory Control for Role-Contract Enforcement in Black-Box Multi-Agent Systems",
+      "sourceUrl": "https://arxiv.org/abs/2611.04321",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-04T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.04321v1 Announce Type: new Abstract: Multi-agent LLM systems assign different responsibilities to different agents: one plans, another retrieves evidence, another verifies, another executes. This division of labor is only meaningful if each agent stays within the functions it is authorized to perform. Over many turns, however, an agent can produce a locally reasonable message that exercises authority belonging to another role: a verifier that begins planning, a retriever that asserts unsupported conclusions, an executor that changes state no one approved. We formalize this as role drift, a turn-level breach of an agent's role contract. We introduce Agent Trajectory Control (ATC), which makes each role's authority explicit as a contract and enforces it at the point where a message would enter the shared conversation. ATC scores a proposed output for out-of-role deviation, leakage into the functions of other roles, impermissible speech acts, and logical contract breaches, then computes a leakage-regularized target that constrains regeneration; the revised message is re-checked before admission. Enforcement acts on the message rather than the generator, so ATC governs agents whose internal representations are unavailable. Across homogeneous and heterogeneous teams, ATC improves task performance and role consistency while lowering role-drift energy relative to strong baselines spanning prompting, memory, workflow control, and activation editing, with the largest gains under explicit role-confusion stress tests and in larger, more diverse teams.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.04323",
+      "rank": 15,
+      "title": "FP4Quant: Efficient 4-Bit Communication Compression for Model-Parallel LLM Training",
+      "sourceUrl": "https://arxiv.org/abs/2611.04323",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-04T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.04323v1 Announce Type: new Abstract: The rapid scaling of large language models (LLMs) has made communication overhead a critical bottleneck in distributed model-parallel training. Although existing low-precision compression methods can effectively reduce communication costs, further reducing the communication footprint to ultra-low-bit formats such as FP4 introduces new challenges, including limited numerical range, sub-byte storage overhead, and increased computational cost from fine-grained quantization. In this paper, we present \\textbf{FP4Quant}, a micro-grouped FP4 compression framework for efficient model-parallel LLM training. FP4Quant integrates a micro-grouped dual-scale FP4 quantization mechanism to preserve local tensor distribution characteristics, a warp-cooperative FP4 packing scheme to enable efficient sub-byte data representation, and a hybrid two-level FWHT pipeline to mitigate quantization errors with GPU-aware execution optimization. Experiments on NVIDIA H100 GPUs with Qwen-7B demonstrate up to 1.56$\\times$ end-to-end throughput improvement over BF16, revealing a trade-off between throughput and model quality.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.04338",
+      "rank": 16,
+      "title": "Patching the Protocol: A Taxonomy of Pre-Registration Repairs in LLM-Proposer Experiments",
+      "sourceUrl": "https://arxiv.org/abs/2611.04338",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-04T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.04338v1 Announce Type: new Abstract: Pre-registration is increasingly proposed as a trust mechanism for machine-learning research involving LLM-generated content, but its canonical form assumes a frozen protocol can be executed unchanged. Software-intensive studies violate this assumption: the protocol is partly implemented, and implementations carry defects. We report a three-case study of protocol repairs (\"patches\") from a program where an LLM proposes executable rules that a programmatic verifier gates, across production scheduling, incentive design, and task assignment. Each protocol required exactly one defect-repair patch: three events in total. None modified a numbered judgment criterion, its threshold, or the scoring rule, and none altered already collected data; two changed pre-registered design parameters before any data were collected, each with a recorded rationale. We propose a two-axis taxonomy of patches (defect class: environmental / feasibility / correctness, x timing: pre-data / post-data), introduce a verifiable non-impact claim for post-data repairs, and distill a nine-item checklist; all nine items were exercised by at least one patch event -- an observation of use, not a validation of sufficiency. The credibility of verifier-bound, LLM-proposer studies depends less on whether patches occur than on whether they are auditable.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.04420",
+      "rank": 17,
+      "title": "Verifier strength does not buy discovery quality: a pre-registered two-domain test of LLM-based automated research, with post-hoc evidence pointing to proposer-pool composition",
+      "sourceUrl": "https://arxiv.org/abs/2611.04420",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-04T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.04420v1 Announce Type: new Abstract: Automated research pipelines pair an LLM proposer with a verifier on an implicit bet: discovery quality rises with verification strength. Under a pre-registered protocol we test this bet in two real-data domains -- job-shop scheduling and vehicular edge offloading on Beijing T-Drive trajectories -- across 100 matched LLM/random pairs per domain and three verifier tiers. The manipulation binds -- a 429-case mutation battery shows scores rising across tiers -- yet the paired LLM-over-random advantage does not scale with it (A, one-sided p=0.1115; D, p=0.9994), and in D shrinks under the strict tier (margin contrast -0.040, p=0.0013). The two lower gates promote identical candidates in 100/100 and 99/100 pairs, so the strict order is untestable when they coincide. Constructively, LLM proposals carry a real paired advantage over random controls, but a post-hoc union-pool analysis shows the fastest path to better discovery is widening the pool, not tightening the gate: mixing the two pools adds +1.52 holdout-value units in domain A (one-sided Wilcoxon, n=100, p=0.0002) -- evidence that pool composition, not verification strength, is the lever. Criteria, ledgers and scripts are archived on Zenodo (DOI: 10.5281/zenodo.23308866).",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.04458",
+      "rank": 18,
+      "title": "Large Language Model-Assisted Adaptive Heuristic Search for Agile Earth Observation Satellite Scheduling",
+      "sourceUrl": "https://arxiv.org/abs/2611.04458",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-04T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.04458v1 Announce Type: new Abstract: Agile Earth observation satellites must coordinate imaging tasks within limited observation windows, while accounting for attitude maneuvering and onboard energy constraints. Competition among observation opportunities makes scheduling performance sensitive to the heuristic rules used for task selection. This letter proposes a large language model (LLM)-assisted adaptive heuristic search method for agile Earth observation satellite scheduling. The LLM generates an initial heuristic rule according to the characteristics of the scheduling instance. During the subsequent ant colony search, search performance and scheduling information are fed back to the LLM to refine the heuristic rule. The proposed modifications are evaluated through paired solution constructions before being incorporated into the search process. A unified scheduling procedure determines task selection, satellite assignment, and observation timing under the operational constraints. Experiments on six scheduling scenarios involving 50--200 imaging tasks demonstrate that the proposed method achieves 4.3\\%--9.6\\% higher mean observation benefit than the strongest baseline.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.04473",
+      "rank": 19,
+      "title": "Treating the Symptom, Missing the Cause: Anatomy of a Scientific Reasoning Failure",
+      "sourceUrl": "https://arxiv.org/abs/2611.04473",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-04T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.04473v1 Announce Type: new Abstract: Scientific agents can find interventions that work without understanding why they do. We study this failure mode in controlled synthetic regulatory systems, where agents must experimentally identify a hidden fault and rescue the resulting phenotype. Across seven LLMs, every model restores the healthy phenotypes more often than it identifies the fault. Claude Opus 4.6 and Sonnet 4.6 rescue every organism while diagnosing only 55% and 35% of them. This failure is not simply due to insufficient exploration or unavailable evidence. In most cases, the cause is experimentally identifiable, and agents encounter evidence that distinguishes competing causes in 91% of relevant sessions, and still frequently misdiagnose the system. Targeted probes reveal where experimental reasoning breaks down. Models reliably interpret decisive evidence and revise hypotheses when the causal comparison is explicit, and can locate that evidence within a full experimental record. However, they struggle to predict the outcome of the experiment under each competing cause, a necessary step in using the observed result to distinguish between them. Agents can therefore gather the right evidence and still infer the wrong cause. As AI systems take on a growing role in synthesising scientific evidence, these findings highlight the need to evaluate how they use evidence to reach causal conclusions, alongside whether their interventions succeed.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.04515",
+      "rank": 20,
+      "title": "Learnings and Pitfalls from AI-Assisted A/B Experimentation at Scale",
+      "sourceUrl": "https://arxiv.org/abs/2611.04515",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-04T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.04515v1 Announce Type: new Abstract: A/B testing underpins product decisions by providing trustworthy, reproducible quantification of proposed changes' effects. Growing large language model (LLM) capabilities have motivated efforts to automate experimentation workflows. Yet LLMs are nondeterministic and prone to hallucination, properties that conflict with the trust experimentation systems must provide. Experiments are also operationally messy: diagnosing anomalies, debugging configurations, and conducting bespoke follow-up analyses require flexible reasoning and manual effort. These tasks let agents accelerate experimentation without replacing its deterministic statistical foundations. We report lessons from building and operating such an agent. Our central finding is that this tension is resolved not by making the model deterministic, but by bounding where its nondeterminism can reach; the model selects and sequences procedures, while deterministic code computes every quantity it reports. Three consequences surprised us: withholding information from the model improved its answers, demand concentrated on mundane retrieval rather than the autonomous decisions we anticipated, and the agent's eagerness to help threatened statistical validity.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.04546",
+      "rank": 21,
+      "title": "Are LLM Assistants Regulatory Ready? Answers from regenold's 2026 EU AI Act Q&A Challenge",
+      "sourceUrl": "https://arxiv.org/abs/2611.04546",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-04T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.04546v1 Announce Type: new Abstract: Large language model (LLM) assistants are increasingly proposed for regulatory affairs, yet their reliability in regulatory tasks remains unclear. We introduce the EU AI Act Q&A Benchmark, an expert-curated benchmark of 110 open-ended questions about the EU AI Act (Regulation (EU) 2024/1689). Each question comes with an exemplary answer, question-specific correctness criteria, and expected references. Evaluation measures answer correctness, reference quality, conciseness, tone, and latency, with a multi-turn ``hard mode'' testing responses to simulated user pushback. We also present the results of the 2026 EU AI Act Q&A Challenge, based on the benchmark, where three off-the-shelf baselines and five purpose-built assistants (from four commercial developers and one academic entrant) were tested. Only two of the five submitted assistants consistently outperformed the baselines; one achieved high scores across all evaluated metrics. These results show that specialist development alone does not guarantee better performance and highlight the critical importance of LLM assistant evaluation in regulatory affairs. The benchmark code is openly available at https://github.com/regenold-GmbH/eu-ai-act-benchmark-2026/.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.04757",
+      "rank": 22,
+      "title": "When Should an LLM Steering Edit Depend on the Input?",
+      "sourceUrl": "https://arxiv.org/abs/2611.04757",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-04T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.04757v1 Announce Type: new Abstract: An activation steering edit should depend on the input exactly when the destination varies \\emph{inside} the class a query requests, and that is measurable before any rule is fitted or applied. Contrastive Activation Addition (CAA) adds one fixed direction to every input, the difference of the class means. Conditioning it on the requested class accounts for the between-class variation in the required displacement and leaves the within-class variation untouched, which no rule that reads only the source state can express. We study the impact of increasing input-dependence in the steering edit, moving from a difference of means to a destination retrieved per query --- the mean of the $k$ stored states nearest the query, inside the requested class --- in which the two baselines are endpoints: at $k$ equal to the class size the retrieved rule \\emph{is} the class-conditional difference of means. We measure input-dependent steering on six substitution corpora that vary in whether the edit changes a word or a clause, and on an external benchmark, and find that input-dependent steering outperforms fixed-direction steering when the destination varies within the class. Retrieval wins at every layer of every substitution corpus in two models, and the level of input-dependence needed governs how to apply it: word-level edits are best made in the first tenth of the network from a few neighbours, clause-level edits at any depth from the class mean. Where the class already determines the answer the class mean suffices and retrieval only matches it, though a fixed direction still fails there. Four quantities computed from the states alone identify the regime in which the edit should be applied.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.04772",
+      "rank": 23,
+      "title": "TactiNavi: Serving and Revising an LLM Game Coach with Explicit Strategy Conditions",
+      "sourceUrl": "https://arxiv.org/abs/2611.04772",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-04T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.04772v1 Announce Type: new Abstract: A deployed LLM coaching agent answers requests whose correct response depends on player state and game version, so advice that is right for one player can be wrong for the next. We describe TactiNavi, the serving system behind the LLM coach of a commercial open-world game, which makes strategy applicability an explicit artifact shared by offline compilation, online execution, failure diagnosis, and release. An offline compiler turns versioned game evidence and expert guidance into strategy packages with explicit prerequisites, the serving plane evaluates those prerequisites as three-valued conditions over structured player state and records decision traces, and a control plane uses the resulting condition-rule dependencies to validate revisions on held-out traffic before release. In a retrospective evaluation of 1,122 logged coaching turns from three deployment periods, condition-bearing packages raise correctness from 57.9% to 82.0% over atomic facts and reduce strategy misapplication under changed player state from 18.1% to 10.4%, while trace-based claim verification reaches 86.4% precision at a median reply latency of 2.07 s. The deployment also showed that most apparent fixes are generation noise, because an unchanged-system rerun recovers 38.4% of failing turns and only one of 15 shipped revision units passes the release checks retrospectively. We distill these results into lessons on treating applicability as a first-class serving object, sizing traces for later diagnosis, and building the null model into the release path.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.04805",
+      "rank": 24,
+      "title": "Where Is the Truth When AI Agents Disagree? Dependence-Aware Belief Propagation for Unsupervised Truth Discovery (Extended Version)",
+      "sourceUrl": "https://arxiv.org/abs/2611.04805",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-04T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.04805v1 Announce Type: new Abstract: LLM agents often give conflicting answers to the same question, and many deployed agents are variants of one base model, so their errors are correlated. We study truth discovery among such agents: inferring the true answer and each agent's reliability without labels. Classical truth-discovery and crowdsourcing estimators reward an agreeing bloc and can fall below majority vote. We propose BP-TD, which adds per-agent decorrelation weights to mean-field variational inference on a one-coin Dawid-Skene model, so that agents sharing a base model count together as about one vote. Its first iteration is exactly a weighted vote; later iterations estimate agent reliability. With 13 local agents on MMLU, BP-TD beats majority vote without any labels (0.716 vs. 0.624 on 160 questions; 0.707 vs. 0.674 on 10,000) and ranks agents by their true accuracy, which classical estimators invert. The gain depends on the pool: over 2,852 sub-pools of four benchmarks, decorrelation helps when the largest correlated bloc is weaker than the other agents and hurts when it is the strongest, and we found no label-free statistic that tells the two cases apart. Labels change the picture quickly: with 20 labelled questions, selecting the single best agent is more accurate than every aggregator we tested on MMLU, ARC and TruthfulQA.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.05039",
+      "rank": 25,
+      "title": "ALBI: LLM-Guided Inductive Logic Programming via Iterative Generate-Test-Constrain Refineme",
+      "sourceUrl": "https://arxiv.org/abs/2611.05039",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-04T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.05039v1 Announce Type: new Abstract: We introduce ALBI (Agent for Learning By Induction), a neuro-symbolic ILP framework that replaces the ASP-based hypothesis generator in the Learning from Failures (LFF) paradigm with a Large Language Model (LLM), while retaining SWI-Prolog as a formal verifier. ALBI implements an iterative generate-test-constrain loop: the LLM proposes candidate hypotheses from structured prompts; Prolog tests each candidate; and diagnostic feedback drives refinement. We further introduce semantic anonymization, a metamorphic testing methodology, to distinguish structural symbolic induction from surface-level pattern matching on predicate names. Experiments on 30 standard ILP benchmarks show that ALBI achieves 100% success across three frontier LLMs (Gemini 3.1 Pro, GPT 5.4 Pro, Claude Opus 4.6), matching Popper while requiring only 1.4-1.7 iterations on average. Under anonymization, all models maintain 100% success with a moderate iteration increase (1.36-1.67 times), providing evidence of robust symbolic reasoning.",
+      "summary": ""
+    }
+  ]
+}
