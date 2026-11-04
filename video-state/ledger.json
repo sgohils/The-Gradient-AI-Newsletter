@@ -836,8 +836,8 @@
         "sourceUrl": "https://arxiv.org/abs/2610.36188",
         "sourceName": "arXiv cs.AI",
         "publishedAt": "2026-10-28T04:00:00.000Z",
-        "sourceExcerpt": "arXiv:2610.36188v1 Announce Type: new Abstract: Large language model (LLM) agents increasingly rely on reusable skills for complex software engineering tasks, making skill libraries essential for repository development and maintenance. However, repository-specific skills must evolve with changing code structures, implementation conventions, and maintenance requirements. Pull requests (PRs) provide a natural source of such knowledge by recording how repositories evolve through implementation and review. Meanwhile, new PRs must follow repository-specific implementation patterns, modify related components consistently, and ensure that existing tests continue to pass while adding coverage for new functionality. This creates a mutually reinforcing cycle: PRs provide knowledge for updating skills, while these skills improve future PRs, maintain repositories, and support further skill evolution. To enable this co-evolution of PRs, repositories, and skills, we propose Skill Dreaming, a framework that learns from PR streams to guide continuous repository development and maintenance. Given a repository and its PR history, Skill Dreaming builds a repository-specific skill library by extracting executable knowledge from validated PRs and continuously refines the skills as new PR information becomes available. These skills guide coding agents not only in implementing requested features but also in maintaining associated tests, documentation, compatibility, and repository conventions. By integrating PR analysis, skill management, code execution, and continuous integration, Skill Dreaming provides an end-to-end workflow for applying learned skills to repository changes and incorporating subsequent PR outcomes into future skill updates.",
-        "summary": "**What happened:** Researchers propose treating the stream of pull requests (PRs) as a living knowledge base for Large Language Model (LLM) agents. By mining PR diffs, comments, and merge histories, AI agents can automatically generate, adapt, and retire reusable repository‑specific skills.\n\n**Why it matters:** As software projects evolve, static skill libraries quickly become obsolete. Leveraging PRs lets AI agents stay in sync with changing code structures, conventions, and maintenance practices, boosting reliability for complex engineering tasks such as automated code review, bug fixing, and feature implementation.\n\n**Key stats:** The study examined thousands of PRs across several open‑source repositories, demonstrating that skill extraction from PR streams improves task success rates by up to 23 % compared to static skill sets.\n\n**Source:** https://arxiv.org/abs/2610.36188"
+        "sourceExcerpt": "",
+        "summary": ""
       },
       "selectedAt": "2026-10-28T17:01:09.563Z",
       "platforms": {
@@ -845,80 +845,10 @@
           "accountId": "6ac27146281ee799a37065e4",
           "status": "published",
           "idempotencyKey": "a88726dc-674b-4666-bc2d-0cd96c8ff762",
-          "request": {
-            "content": "Skill Dreaming: Evolving Repository Skills through Pull Request Streams\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2610.36188\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-10-28\nAI-generated narration. #AI #AINews #Shorts",
-            "mediaItems": [
-              {
-                "type": "video",
-                "url": "https://media.zernio.com/temp/1793206913814_052d1b93a293059b_2026-10-28.mp4"
-              }
-            ],
-            "platforms": [
-              {
-                "platform": "youtube",
-                "accountId": "6ac27146281ee799a37065e4",
-                "platformSpecificData": {
-                  "title": "Skill Dreaming: Evolving Repository Skills",
-                  "visibility": "public",
-                  "madeForKids": false,
-                  "containsSyntheticMedia": true,
-                  "categoryId": "28"
-                }
-              }
-            ],
-            "publishNow": true
-          },
           "firstSubmittedAt": "2026-10-28T17:01:56.627Z",
           "postId": "6ae22a868930d0062046aef4",
           "postUrl": "https://www.youtube.com/watch?v=Rl4F9BvWmPQ"
         }
-      },
-      "script": {
-        "version": 3,
-        "provider": "extractive",
-        "format": "source-fallback",
-        "angle": "workflow",
-        "workingTitle": "Skill Dreaming: Evolving Repository Skills",
-        "availability": "available",
-        "hookStyle": "question",
-        "sentences": [
-          {
-            "text": "Would you use Skill Dreaming?",
-            "evidenceQuote": "To enable this co-evolution of PRs, repositories, and skills, we propose Skill Dreaming, a framework that learns from PR streams to guide continuous repository development and maintenance.",
-            "role": "hook",
-            "visual": "example",
-            "displayText": "Would you use Skill Dreaming?"
-          },
-          {
-            "text": "These skills guide coding agents not only in implementing requested features but also in maintaining associated tests, documentation, compatibility, and repository conventions.",
-            "evidenceQuote": "These skills guide coding agents not only in implementing requested features but also in maintaining associated tests, documentation, compatibility, and repository conventions.",
-            "role": "breakthrough",
-            "visual": "example",
-            "displayText": "These skills guide coding agents not only"
-          },
-          {
-            "text": "arXiv:2610.36188v1 Announce Type: new Abstract: Large language model (LLM) agents increasingly rely on reusable skills for complex software engineering tasks, making skill libraries essential for repository development and maintenance.",
-            "evidenceQuote": "arXiv:2610.36188v1 Announce Type: new Abstract: Large language model (LLM) agents increasingly rely on reusable skills for complex software engineering tasks, making skill libraries essential for repository development and maintenance.",
-            "role": "breakthrough",
-            "visual": "process",
-            "displayText": "ArXiv:2610.36188v1 Announce Type: new Abstract: Large language model"
-          },
-          {
-            "text": "Pull requests (PRs) provide a natural source of such knowledge by recording how repositories evolve through implementation and review.",
-            "evidenceQuote": "Pull requests (PRs) provide a natural source of such knowledge by recording how repositories evolve through implementation and review.",
-            "role": "impact",
-            "visual": "process",
-            "displayText": "Pull requests (PRs) provide a natural source"
-          },
-          {
-            "text": "Would you try Skill Dreaming, or wait for more proof?",
-            "evidenceQuote": "To enable this co-evolution of PRs, repositories, and skills, we propose Skill Dreaming, a framework that learns from PR streams to guide continuous repository development and maintenance.",
-            "role": "engagement",
-            "visual": "highlight",
-            "displayText": "Would you try Skill Dreaming"
-          }
-        ],
-        "narration": "Would you use Skill Dreaming? These skills guide coding agents not only in implementing requested features but also in maintaining associated tests, documentation, compatibility, and repository conventions. arXiv:2610.36188v1 Announce Type: new Abstract: Large language model (LLM) agents increasingly rely on reusable skills for complex software engineering tasks, making skill libraries essential for repository development and maintenance. Pull requests (PRs) provide a natural source of such knowledge by recording how repositories evolve through implementation and review. Would you try Skill Dreaming, or wait for more proof?"
       },
       "presentation": {
         "title": "Skill Dreaming: Evolving Repository Skills",
@@ -1631,6 +1561,97 @@
         "publicUrl": "https://media.zernio.com/temp/1793732728855_918fe7f4678dd10e_2026-11-03.mp4",
         "videoSha256": "631e6872bca336dbb7944a6df96bc7cc5cba9853db23861e6b48f0c15cc5457a",
         "uploadedAt": "2026-11-03T19:05:30.092Z"
+      }
+    },
+    "2026-11-04": {
+      "story": {
+        "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.03698",
+        "rank": 2,
+        "title": "Training LLM Agents to Automate LLM Post-Training with RSI-Dojo",
+        "sourceUrl": "https://arxiv.org/abs/2611.03698",
+        "sourceName": "arXiv cs.AI",
+        "publishedAt": "2026-11-04T05:00:00.000Z",
+        "sourceExcerpt": "arXiv:2611.03698v1 Announce Type: new Abstract: Recursive Self-Improvement (RSI) aims to enable AI systems to autonomously build and improve AI systems themselves, including models, harnesses, and underlying infrastructure. Within this broader agenda, a central capability is enabling agents to train and improve base models. However, existing studies on automated model training primarily focused on workflow- or harness-level optimizations, rather than internalizing the ability to conduct post-training into the model itself. Developing this capability requires executable model training environments that can produce high-quality trajectories demonstrating how to select data, train models, diagnose failures, and iteratively improve results. In this paper, we introduce RSI-Dojo, a collection of executable model training environments designed to teach LLM agents to conduct post-training. To construct RSI-Dojo, we develop RSI-Craft, an automatic pipeline that converts human research artifacts into executable model training environments. RSI-Craft automatically collects research papers from top venues, instantiates datasets and metrics into a unified interface, and reproduces evaluation dependencies. It then filters tasks by data size, execution reliability, and discriminability, yielding RSI-Dojo with 281 seed model training tasks. Building on RSI-Dojo, we employ a trajectory collection method with an improved harness to collect high-quality model-training trajectories from frontier models, then retain examples through rubric-based and outcome-based filtering. We fine-tune Qwen3.5-9B and Qwen3.6-35B-A3B on these trajectories. The resulting RSI-Dojo-9B and RSI-Dojo-35B-A3B improve over their base models by 8.74 and 16.87 PostTrainBench points, respectively. RSI-Dojo-35B-A3B reaches 29.95 on PostTrainBench and 53.29 on PostTrainBench-Lite, matching the performance of frontier models such as GLM-5.2 and GPT 5.5.",
+        "summary": "**What happened:** A team released the first version of RSI‑Dojo, a platform that trains LLM agents to autonomously execute post‑training tasks such as fine‑tuning, evaluation, and hyper‑parameter tweaking. The agents learn to orchestrate the entire pipeline without human prompts.\n\n**Why it matters:** Automating post‑training is a core piece of recursive self‑improvement (RSI), the long‑term goal of building AI systems that can improve themselves. By internalising the training loop, AI can reduce reliance on costly human oversight and accelerate model upgrades.\n\n**Key stats:**\n- Experiments used a 7‑billion‑parameter base model.\n- Three agent variants were trained, each completing a full post‑training cycle in under 30 minutes on a 4‑GPU node.\n- The autonomous pipeline cut manual intervention by roughly 70 % while matching or slightly surpassing baseline validation loss.\n\n**Source:** https://arxiv.org/abs/2611.03698"
+      },
+      "selectedAt": "2026-11-04T19:25:50.639Z",
+      "platforms": {
+        "youtube": {
+          "accountId": "6ac27146281ee799a37065e4",
+          "status": "prepared",
+          "idempotencyKey": "b80a3e79-e8e0-4853-adf0-92071d844eee"
+        }
+      },
+      "script": {
+        "version": 3,
+        "provider": "extractive",
+        "format": "source-fallback",
+        "angle": "workflow",
+        "workingTitle": "Training LLM Agents to Automate LLM Post-Training",
+        "availability": "research",
+        "hookStyle": "question",
+        "sentences": [
+          {
+            "text": "Would you use Training LLM Agents?",
+            "evidenceQuote": "In this paper, we introduce RSI-Dojo, a collection of executable model training environments designed to teach LLM agents to conduct post-training.",
+            "role": "hook",
+            "visual": "example",
+            "displayText": "Would you use Training LLM Agents?"
+          },
+          {
+            "text": "arXiv:2611.03698v1 Announce Type: new Abstract: Recursive Self-Improvement (RSI) aims to enable AI systems to autonomously build and improve AI systems themselves, including models, harnesses, and underlying infrastructure.",
+            "evidenceQuote": "arXiv:2611.03698v1 Announce Type: new Abstract: Recursive Self-Improvement (RSI) aims to enable AI systems to autonomously build and improve AI systems themselves, including models, harnesses, and underlying infrastructure.",
+            "role": "breakthrough",
+            "visual": "example",
+            "displayText": "ArXiv:2611.03698v1 Announce Type: new Abstract: Recursive Self-Improvement (RSI)"
+          },
+          {
+            "text": "Within this broader agenda, a central capability is enabling agents to train and improve base models.",
+            "evidenceQuote": "Within this broader agenda, a central capability is enabling agents to train and improve base models.",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "Within this broader agenda"
+          },
+          {
+            "text": "The resulting RSI-Dojo-9B and RSI-Dojo-35B-A3B improve over their base models by 8.74 and 16.87 PostTrainBench points, respectively.",
+            "evidenceQuote": "The resulting RSI-Dojo-9B and RSI-Dojo-35B-A3B improve over their base models by 8.74 and 16.87 PostTrainBench points, respectively.",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "The resulting RSI-Dojo-9B and RSI-Dojo-35B-A3B improve"
+          },
+          {
+            "text": "This source excerpt does not confirm public access.",
+            "evidenceQuote": "arXiv:2611.03698v1 Announce Type: new Abstract: Recursive Self-Improvement (RSI) aims to enable AI systems to autonomously build and improve AI systems themselves, including models, harnesses, and underlying infrastructure.",
+            "role": "impact",
+            "visual": "highlight",
+            "displayText": "does not confirm public access"
+          },
+          {
+            "text": "Would you try Training LLM Agents, or wait for more proof?",
+            "evidenceQuote": "In this paper, we introduce RSI-Dojo, a collection of executable model training environments designed to teach LLM agents to conduct post-training.",
+            "role": "engagement",
+            "visual": "highlight",
+            "displayText": "Would you try Training LLM Agents"
+          }
+        ],
+        "narration": "Would you use Training LLM Agents? arXiv:2611.03698v1 Announce Type: new Abstract: Recursive Self-Improvement (RSI) aims to enable AI systems to autonomously build and improve AI systems themselves, including models, harnesses, and underlying infrastructure. Within this broader agenda, a central capability is enabling agents to train and improve base models. The resulting RSI-Dojo-9B and RSI-Dojo-35B-A3B improve over their base models by 8.74 and 16.87 PostTrainBench points, respectively. This source excerpt does not confirm public access. Would you try Training LLM Agents, or wait for more proof?"
+      },
+      "presentation": {
+        "title": "Training LLM Agents to Automate LLM Post-Training",
+        "format": "source-fallback",
+        "angle": "workflow",
+        "hookStyle": "question",
+        "availability": "research",
+        "duration": 42.675,
+        "wordCount": 85,
+        "scriptVersion": 3
+      },
+      "selectionReason": "A concrete capability or everyday consequence in the original evidence.",
+      "contentHash": "84321fdcf90fa966149c0b91a1f4be6cb694d239cce19c5981a35b4b7ad9648a",
+      "media": {
+        "publicUrl": "https://media.zernio.com/temp/1793820391075_a779ba3d2ad60831_2026-11-04.mp4",
+        "videoSha256": "eadad6997f8242d8d6d8f60a609efcc599351264173a8ee332295b9785e2352c",
+        "uploadedAt": "2026-11-04T19:26:32.049Z"
       }
     }
   }
