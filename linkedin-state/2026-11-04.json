@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "issueDate": "2026-11-04",
+  "issueUrl": "https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-04",
+  "content": "Today's AI briefing from The Gradient | 2026-11-04\n\n1. Daybreak Red is now available in AWS GovCloud (US-East)\nDaybreak Red introduces the GPT‑5.6 Cyber model to approved customers in AWS GovCloud (US‑East) via Amazon Bedrock, enabling authorized cybersecurity work.\n\n2. Training LLM Agents to Automate LLM Post-Training with RSI-Dojo\nA team released the first version of RSI‑Dojo, a platform that trains LLM agents to autonomously execute post‑training tasks such as fine‑tuning, evaluation, and hyper‑parameter tweaking. The agents learn to orchestrate the entire pipeline without human prompts.\n\n3. Unsatz: Evaluating Scientific Discovery Without a Given Ansatz\nResearchers released Unsatz, an arXiv benchmark that requires a language‑model agent to generate the full ansatz—defining variables, hidden terms, interactions, and measurement—before any equation fitting begins.\n\nRead the full briefing and original sources:\nhttps://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-04\n\n#AI #ArtificialIntelligence #TheGradient",
+  "contentHash": "83ee3ba5192bf8396306b7992fed0838d5d63fcb30a2b8f4e804c68e14d10ba8",
+  "accountId": "6ac5a561b3c21905c0edcfba",
+  "organizationUrn": "urn:li:organization:136824048",
+  "idempotencyKey": "8781467f-8369-41bc-9375-c19a013973fc",
+  "status": "submitting",
+  "firstSubmittedAt": "2026-11-04T19:19:47.468Z"
+}
