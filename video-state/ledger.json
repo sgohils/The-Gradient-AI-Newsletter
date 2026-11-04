@@ -1578,8 +1578,32 @@
       "platforms": {
         "youtube": {
           "accountId": "6ac27146281ee799a37065e4",
-          "status": "prepared",
-          "idempotencyKey": "b80a3e79-e8e0-4853-adf0-92071d844eee"
+          "status": "submitting",
+          "idempotencyKey": "b80a3e79-e8e0-4853-adf0-92071d844eee",
+          "request": {
+            "content": "Training LLM Agents to Automate LLM Post-Training with RSI-Dojo\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2611.03698\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-04\nAI-generated narration. #AI #AINews #Shorts",
+            "mediaItems": [
+              {
+                "type": "video",
+                "url": "https://media.zernio.com/temp/1793820391075_a779ba3d2ad60831_2026-11-04.mp4"
+              }
+            ],
+            "platforms": [
+              {
+                "platform": "youtube",
+                "accountId": "6ac27146281ee799a37065e4",
+                "platformSpecificData": {
+                  "title": "Training LLM Agents to Automate LLM Post-Training",
+                  "visibility": "public",
+                  "madeForKids": false,
+                  "containsSyntheticMedia": true,
+                  "categoryId": "28"
+                }
+              }
+            ],
+            "publishNow": true
+          },
+          "firstSubmittedAt": "2026-11-04T19:26:33.266Z"
         }
       },
       "script": {
