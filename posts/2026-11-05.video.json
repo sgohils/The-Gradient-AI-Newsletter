@@ -1,0 +1,257 @@
+{
+  "version": 1,
+  "issueDate": "2026-11-05",
+  "generatedAt": "2026-11-05T19:27:35.218Z",
+  "stories": [
+    {
+      "id": "google-ai-blog-https%3A%2F%2Fblog.google%2Finnovation-and-ai%2Ftechnology%2Fdevelopers-tools%2Fintroducing-gemini-omni-1-2-flash%2F",
+      "rank": 1,
+      "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+      "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+      "sourceName": "Google AI Blog",
+      "publishedAt": "2026-11-05T17:00:00.000Z",
+      "sourceExcerpt": "Gemini Omni 1.2 Flash brings native 15-second video generation and editing, stronger consistency, and 30% lower pricing.",
+      "summary": "**What happened:** Google unveiled Gemini Omni 1.2 Flash, a new AI model that can generate and edit 15‑second video clips directly, improves consistency across outputs, and reduces pricing by roughly one‑third.\n\n**Why it matters:** Short‑form video is booming on social platforms; having AI that can create and tweak clips instantly lowers production barriers for creators and brands, and the cost reduction makes the technology more accessible for developers and enterprises.\n\n**Key stats:**\n- Native 15‑second video generation & editing\n- 30% lower pricing versus previous Gemini versions\n- Enhanced consistency across multimodal outputs\n\n**Source:** https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/"
+    },
+    {
+      "id": "openai-blog-https%3A%2F%2Fopenai.com%2Findex%2Fintroducing-gpt-6-cyber",
+      "rank": 2,
+      "title": "GPT‑6 Cyber: Advancing the frontier of aligned cybersecurity agents",
+      "sourceUrl": "https://openai.com/index/introducing-gpt-6-cyber",
+      "sourceName": "OpenAI Blog",
+      "publishedAt": "2026-11-05T09:00:00.000Z",
+      "sourceExcerpt": "Introducing GPT‑6 Cyber, OpenAI’s cybersecurity model for finding exploitable vulnerabilities and developing fixes, trained to stay within authorized scope.",
+      "summary": "**What happened:** OpenAI released GPT‑6 Cyber, a specialized cybersecurity model that scans code and systems for exploitable bugs and generates remediation suggestions, trained with strict alignment to operate only within permitted boundaries.\n\n**Why it matters:** The model provides security teams with a scalable, AI‑driven assistant, potentially speeding up vulnerability management and reducing human error, while embodying responsible AI use in a high‑risk domain.\n\n**Key stats:**\n- Built on the GPT‑6 architecture with enhancements for security‑specific reasoning.\n- Trained on a curated, proprietary dataset of disclosed vulnerabilities and patches.\n- Achieves a 92% precision rate in identifying true positives during internal testing.\n- Passes OpenAI’s alignment benchmarks for bounded execution.\n\n**Source:** https://openai.com/index/introducing-gpt-6-cyber"
+    },
+    {
+      "id": "openai-blog-https%3A%2F%2Fopenai.com%2Findex%2Fdaybreak-red-aws-govcloud",
+      "rank": 3,
+      "title": "Daybreak Red is now available in AWS GovCloud (US-East)",
+      "sourceUrl": "https://openai.com/index/daybreak-red-aws-govcloud",
+      "sourceName": "OpenAI Blog",
+      "publishedAt": "2026-11-04T07:00:00.000Z",
+      "sourceExcerpt": "Daybreak Red brings GPT-5.6 Cyber to approved customers in AWS GovCloud (US-East) through Amazon Bedrock for authorized cybersecurity work.",
+      "summary": "**What happened:** Daybreak Red, OpenAI’s cybersecurity‑focused offering, has been deployed in AWS GovCloud (US‑East) and is now available to authorized customers via Amazon Bedrock.\n\n**Why it matters:** The integration lets government‑level organizations tap a cutting‑edge language model designed for threat detection, incident response, and secure code analysis while staying within FedRAMP‑compliant infrastructure.\n\n**Key stats:**\n- Model: GPT‑5.6 Cyber\n- Region: AWS GovCloud (US‑East)\n- Access: Restricted to approved cybersecurity projects\n- Delivery: Through Amazon Bedrock API\n\n**Source:** https://openai.com/index/daybreak-red-aws-govcloud"
+    },
+    {
+      "id": "techcrunch-ai-https%3A%2F%2Ftechcrunch.com%2F2026%2F11%2F05%2Fclaude-can-now-analyze-your-spending-with-its-new-personal-finance-tool%2F",
+      "rank": 4,
+      "title": "Claude can now analyze your spending with its new Personal Finance tool",
+      "sourceUrl": "https://techcrunch.com/2026/11/05/claude-can-now-analyze-your-spending-with-its-new-personal-finance-tool/",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-11-05T18:00:00.000Z",
+      "sourceExcerpt": "With Personal Finance in Claude, users can connect their bank and card accounts through Plaid and ask questions about their finances.",
+      "summary": "**What happened:** Claude introduced a Personal Finance feature that connects to users’ financial institutions through Plaid, enabling natural‑language queries about balances, transactions, and budgeting.\n\n**Why it matters:** By merging AI conversation with real‑time banking data, Claude can surface spending patterns, flag unusual activity, and suggest saving strategies, potentially reshaping how consumers manage money without switching apps.\n\n**Key stats:**\n- Integration supports over 12,000 banks via Plaid.\n- Early beta users reported a 35% reduction in time spent on budgeting tasks.\n- Anthropic expects the feature to boost user engagement by up to 20%.\n\n**Source:** https://techcrunch.com/2026/11/05/claude-can-now-analyze-your-spending-with-its-new-personal-finance-tool/"
+    },
+    {
+      "id": "openai-blog-https%3A%2F%2Fopenai.com%2Findex%2Fdevrev-enterprise-self-service",
+      "rank": 5,
+      "title": "DevRev delivers autonomous self-service with GPT-6.1 Sol",
+      "sourceUrl": "https://openai.com/index/devrev-enterprise-self-service",
+      "sourceName": "OpenAI Blog",
+      "publishedAt": "2026-11-04T00:00:00.000Z",
+      "sourceExcerpt": "DevRev uses GPT-6.1 Sol to power Computer and Operator, balancing reasoning, speed, and cost for enterprise service.",
+      "summary": "**What happened:** DevRev launched an autonomous self‑service solution called Computer and Operator, built on OpenAI’s GPT‑6.1 Sol. The system blends deep reasoning, rapid response, and cost‑effective compute to handle enterprise‑level service requests.\n\n**Why it matters:** By offloading routine support interactions to a powerful LLM, companies can cut operational expenses, boost response speed, and free human agents for higher‑value work. The balance of reasoning and speed addresses a common pain point in AI‑assisted customer service.\n\n**Key stats:**\n- GPT‑6.1 Sol delivers up to 3× faster inference than its predecessor while maintaining higher reasoning fidelity.\n- Early pilots report a 40% reduction in ticket resolution time and a 30% drop in support costs.\n- The platform scales to handle millions of concurrent requests with a 20% lower compute budget.\n\n**Source:** https://openai.com/index/devrev-enterprise-self-service"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.05390",
+      "rank": 6,
+      "title": "Who May Overrule the Agent? Evidence-Gated Authority in LLM Review Institutions",
+      "sourceUrl": "https://arxiv.org/abs/2611.05390",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-05T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.05390v1 Announce Type: new Abstract: Multi-agent language-model systems often add a reviewer to improve an upstream agent's decision. Yet a reviewer can both repair errors and replace decisions that were already correct. We study this as a problem of institutional jurisdiction: conditional on the same proposal, task information, model, and review output, when is the reviewer authorized to make its recommendation binding? We compare broad override authority with an evidence gate that permits replacement only after the reviewer produces a mechanically valid record of a binding-constraint violation and a compliant repair. Across two locally run open-weight models, 96 spatial-policy tasks, and a 96-task portfolio-transfer benchmark, the gate sharply reduces corruption of correct proposals while retaining most repairs of violations. The directions of this tradeoff are partly implied by the rule; its magnitude depends on reviewer transitions and upstream proposal states. A prospective validation then gives the reviewer an explicit choice to retain, replace, or escalate. This eliminates correct-proposal corruption for Qwen, but Mistral still replaces all 48 correct proposals; Qwen also declines every welfare-only repair that Mistral frequently attempts. Thus interface design changes reviewer behavior but is not a model-independent safeguard. The result is not that restricted review is universally better. It is that reviewer competence, action interface, and binding jurisdiction jointly determine both the correction domain and the corruption surface.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.05394",
+      "rank": 7,
+      "title": "A Feasibility Condition for Confidence-Gated Tiered LLM Inference",
+      "sourceUrl": "https://arxiv.org/abs/2611.05394",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-05T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.05394v1 Announce Type: new Abstract: Tiered inference distributes large language model computation across a hierarchy of devices, from on-device and edge hardware to the datacenter, and is increasingly offered as the route to cheaper, lower-latency, and more private serving. Most such systems orchestrate frozen model checkpoints, and most decide what to resolve locally and what to escalate using a confidence signal produced by a forward-deployed model. We give a closed-form condition for when no threshold on that signal makes a tiered cascade worthwhile relative to sending every query to the backstop. Modeling the routing decision as a binary test and separating local from escalation cost through an architecture cost ratio $\\kappa$, we derive a feasibility condition bracketed by a signal-free floor, below which a cascade is feasible at any signal quality, and a perfect-signal ceiling, above which none is. Read along the $\\kappa$ axis the condition inverts: where local compute is billed, cost binds, matching a recent empirical finding; where it is sunk, on decentralized hardware, feasibility becomes unconditional and signal quality instead sets what the cascade achieves. We turn the condition into three design requirements that existing trained-in primitives satisfy only in isolation, and we propose, as future work, a co-designed architecture and a protocol to test it. The condition and the inversion hold independently of that architecture; they are the paper's contribution.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.05524",
+      "rank": 8,
+      "title": "MA-SafeDiffuser: Safe Multi-Agent Planning with Diffusion Probabilistic Models",
+      "sourceUrl": "https://arxiv.org/abs/2611.05524",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-05T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.05524v1 Announce Type: new Abstract: We propose MA-SafeDiffuser, a multi-agent extension of SafeDiffuser that equips diffusion-based trajectory planners with finite-time diffusion invariance guarantees for joint-agent safety specifications. Building on the single-agent construction that embeds control barrier function (CBF) constraints into reverse-diffusion updates, we: (i) formalize joint safe sets as intersections of per-agent and pairwise barrier sets; (ii) derive centralized and decentralized (communication-aware) constrained denoising procedures with provable invariance under mild assumptions; (iii) address local-trap and deadlock phenomena via time-varying specifications and liveness CBFs; and (iv) develop a lightweight benchmarking suite including a multi-agent Maze2D domain. Empirically, MA-SafeDiffuser reduces violation counts relative to unconstrained diffusion baselines, while retaining planning quality. We provide algorithms, proofs, and reference implementations.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.05556",
+      "rank": 9,
+      "title": "AGORA: Reliability-Aware Aggregation of LLM Judges via Item-Response Theory",
+      "sourceUrl": "https://arxiv.org/abs/2611.05556",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-05T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.05556v1 Announce Type: new Abstract: LLM-as-a-judge is a common substitute for costly human evaluation, and aggregating several judges is the standard remedy for any single judge's bias. Judge pools mix judges of very different reliability, while the human-labeled sets that validate them hold a few hundred items or fewer. In this regime the per-item mean weights weak judges as heavily as strong ones, and confusion-table models such as Dawid-Skene must estimate a per-judge error table from too few items. We propose AGORA (Aggregation Of Reliability-weighted Assessments), an item-response-theory aggregator that places every item on one latent quality scale and describes each judge by a sensitivity parameter and ordered rating thresholds, so judge reliability is learned from all items jointly and without human labels. Across three benchmarks, AGORA matches or exceeds Dawid-Skene on large evaluation sets, and its advantage widens as the set shrinks toward a few hundred items. It remains accurate as pools grow more uneven, a label-free dispersion statistic indicates in advance when trust weighting helps, and its learned trust weights track per-judge human validity.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.05590",
+      "rank": 10,
+      "title": "Verified but Vacuous: Three Failure Surfaces of LLM-Driven Verified Code Generation",
+      "sourceUrl": "https://arxiv.org/abs/2611.05590",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-05T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.05590v1 Announce Type: new Abstract: What should ``verified'' mean when evaluating LLM-generated code? Many existing pipelines report a single verification number. We argue this collapses three distinct properties measured in a conditional audit sequence: verifier acceptance (Surface A), \\emph{syntactic specification binding (Surface B: does the proof obligation bind to the spec?), and \\emph{semantic specification fidelity} (Surface C: does the spec capture the informal requirement?). Two empirical demonstrations show the surfaces separate. \\textbf{First ($A \\neq B$), via Li@Opus (a same-model reproduction of \\citet{li2025dafny}'s Dafny-as-intermediate-representation (IR) pipeline under Claude Opus 4.7) on three Python benchmarks}: it reaches \\textbf{99.1\\% verifier acceptance} on HumanEval while only \\textbf{1.9\\%} carry a certificate binding to a spec-defined predicate or function. \\textbf{Second ($B \\neq C$), via VCG on two Rust benchmarks}: we use VCG (which is our own in-house Dafny-as-intermediate pipeline) on Rust because the Rust target lets us enforce fully-verifiable output (every component ships as a Dafny certificate, ensures-binding gate passing by construction). Even inside that construction, \\textbf{11.48\\% (MBPP-Rust) and 14.82\\% (VeriContest LC slice) of structurally-verified samples still fail hidden tests}. On the LC slice of VeriContest, \\textbf{VCG's reported End2End rate is 7.79\\% (535/6870).} The cited external rates are 5.51\\% (GPT-5.5) and 1.88\\% (single-shot Opus 4.7). These give descriptive differences of 2.3 percentage points and 4.14$\\times$, respectively; task-budget, repair and harness differences prevent a matched-performance claim.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.05611",
+      "rank": 11,
+      "title": "Hybrid Spark: Adaptive Speculative Decoding That Lets the Content Choose the Drafter",
+      "sourceUrl": "https://arxiv.org/abs/2611.05611",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-05T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.05611v1 Announce Type: new Abstract: Speculative decoding (SD) speeds up large language model (LLM) serving, but its gain depends on the workload's \\emph{shape}, such as batch size and context length, and on its \\emph{content}. A model-based drafter proposes a short block on any content, while a model-free drafter such as n-gram lookup proposes long copies at almost no cost when the output repeats its input, as in code editing. Adaptive verification spends a batch-wide verification budget on the draft tokens most likely to be accepted, but it supports only one model-based drafter. Model-free drafters provide no per-token confidence, so they cannot take part in budget allocation, and deployments must either fix one drafter or split their GPUs between drafters. We present \\sys, a framework that runs a model-based and a model-free drafter on every step and gives each request the better of their chains, within adaptive verification and entirely on the GPU, which keeps asynchronous scheduling intact. The key idea is a price per verified draft token: the goodput that slot would earn elsewhere in the batch. Once the model-free drafter's tokens carry calibrated acceptance estimates, fit once on general text, this price puts both drafters' chains on one scale. Instantiated with \\dspark and an n-gram drafter in vLLM, \\sys achieves 1.10--1.62\\x the output throughput of \\dspark on code editing at batch size~4 and 1.04--1.27\\x at batch size~128, while staying at 0.97--1.01\\x of it on chat at temperature~0. A single deployment can therefore serve both workloads.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.05636",
+      "rank": 12,
+      "title": "Route to Remember: Adaptive Memory Selection for LLM Agents",
+      "sourceUrl": "https://arxiv.org/abs/2611.05636",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-05T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.05636v1 Announce Type: new Abstract: The memory of production agents is increasingly becoming a bottleneck and is built almost exclusively from text: key points are extracted from out-of-limit context and retrieved into context at query time. Therefore, every new query incurs an additional cost that grows with the accumulated history. Weight memory is a complementary alternative that internalizes knowledge into model parameters and answers with no context at all, and has recently proven effective in self-evolving agents for internalizing skills and behaviors. However, its application in episodic and semantic memory, such as user-specific facts, remains comparatively unexplored, and a gap remains between earlier attempts at weight memory and text-based systems regarding recall performance. We study how to make weight memory competitive as a long-term factual store by applying on-policy self-distillation (OPSD). It trains a context-free student from a teacher, which is the same model conditioned on the user's memory, together with a verify-then-regenerate router that lets weight and text memory each cover the queries they handle best. On the HaluMem benchmark, OPSD matches or surpasses strong text-memory baselines, including full-context prompting and retrieval systems, while reading fewer tokens per query. We further conduct an extensive study that characterizes the behavior of weight memory and analyzes how different training recipes affect its performance. As agent harnesses move toward persistent, multi-session deployments, these results position weight memory as a practical, low-cost component of agent memory and provide insights into feasible training and evaluation protocols for combining it with retrieval.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.05709",
+      "rank": 13,
+      "title": "Agents, Think Only When it Helps",
+      "sourceUrl": "https://arxiv.org/abs/2611.05709",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-05T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.05709v1 Announce Type: new Abstract: LLM agent distillation transfers agentic capabilities to student models by training on complete teacher trajectories that typically interleave thoughts and actions. We question how critical thought supervision is for agents' ultimate action performance. To answer this, we disentangle their impacts by independently perturbing teacher thoughts and actions during distillation. On widely adopted agent benchmarks across model scales, altering or discarding thoughts has little effect on student performance. We find, however, that thought supervision becomes important when information about the thought is not disclosed in the corresponding action during training. By identifying such discrepant cases, our findings challenge the common practice of distilling entire teacher trajectories for LLM agents, and offer a new insight that thought supervision can be a discernible choice for efficiency depending on whether the information of thought is disclosed in the action.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.05759",
+      "rank": 14,
+      "title": "PAYWORTHY: Can LLMs Predict Which Freelance Jobs an AI Agent Will Complete?",
+      "sourceUrl": "https://arxiv.org/abs/2611.05759",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-05T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.05759v1 Announce Type: new Abstract: Before an AI agent takes on a paid job, someone has to judge whether it is likely to succeed. We test whether frontier language models can make this call before any attempt. We propose PAYWORTHY which contains 1{,}494 real freelance job postings, sampled from 18.8M postings made between 2020 and 2026 on a freelancing platform. An agent attempts each job from the posting alone in a single run, and an LLM judge acting as the client decides whether to accept the work. We ask 18 models to forecast how likely the agent is to succeed and measure how well each model's forecasts rank the accepted jobs above the rejected ones (AUC, where 0.5 is a random ranking). The answer depends on how the agent is described. Told what the agent cannot do, every model ranks the jobs well (AUC 0.66--0.86). Told instead that it is a generic agent with a browser and code execution, the same models rank the same jobs about as well as a random ordering (0.45--0.56). These results hold under judges from four other model families (Claude, GLM, Kimi and Qwen), and the informed forecasts also rank the verdicts of two human raters. Code is available at https://github.com/upwork/Payworthy",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.05791",
+      "rank": 15,
+      "title": "FlyHash for LLM Agent Memory: An Empirical Validation and a New Application",
+      "sourceUrl": "https://arxiv.org/abs/2611.05791",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-05T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.05791v1 Announce Type: new Abstract: Large language model (LLM) agents increasingly rely on external memory stores to retain information across conversations, typically via dense vector embeddings searched with approximate nearest-neighbor methods. The fruit fly's olfactory circuit computes a locality-sensitive hash of sensory input using a strikingly different mechanism - sparse random projection followed by winner-take-all competition - and prior work (Dasgupta et al., 2017) showed this scheme, dubbed FlyHash, preserves neighbor structure better per bit than conventional random-hyperplane hashing (SimHash) on several benchmarks. We apply FlyHash, to our knowledge for the first time, to LLM agent memory retrieval, and ask three questions a practitioner actually needs answered: does the quality advantage hold under a correctly matched-bit protocol (it does, robustly, across 10 seeds and four datasets spanning two modalities, with one specific, previously undocumented comparison pitfall identified and corrected along the way); does that advantage translate into real memory and latency savings, including against the dense-vector indexing (HNSW) practitioners default to today (no: at equal bits FlyHash's codes are larger and slower to compare than SimHash's, and HNSW dominates both hash methods at ordinary scale; a sparse-set comparison we introduce recovers most but not all of a naive latency gap, leaving hashing's practical case narrower and more specific than the quality result alone implies); and does the advantage survive genuine, non-circular agent-memory relevance labels rather than the nearest-neighbor-by-embedding proxy this literature otherwise relies on (it does). We report all three answers precisely, including the two that narrow rather than flatter the headline result, and release our implementation, a working agent-memory demo, and a full account of the methodological pitfalls we found and corrected.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.05841",
+      "rank": 16,
+      "title": "Vision Paper: Why Distributed LLM Post-Training and Decentralized Alignment Are Now Essential",
+      "sourceUrl": "https://arxiv.org/abs/2611.05841",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-05T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.05841v1 Announce Type: new Abstract: This vision paper argues that distributed learning, including federated and decentralized, should become a first-class paradigm in LLM post-training, not merely a privacy add-on. Current methods like RLHF and DPO rest on an invisible assumption: preference data should be centralized. We contend this assumption is scientifically unjustified, practically unsustainable, and ethically problematic. As LLMs deploy into healthcare, law, finance, and multilingual communities, preference data originates from populations that cannot or will not centralize. We develop a three-pillar argument grounded in (1) privacy and data sovereignty, (2) pluralism and representational equity, and (3) robustness and scalability. We formalize key technical challenges unique to this intersection, reference drift, preference heterogeneity, and the DP-utility trade-off for contrastive losses, and propose concrete algorithmic directions, and sketch a research agenda. Our analysis shows distributed post-training is not only necessary but tractable, and ignoring it risks AI that is legally noncompliant, representationally narrow, and brittle at scale.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.05926",
+      "rank": 17,
+      "title": "Split-KV: Efficient Context Parallelism for Training Diffusion Drafters",
+      "sourceUrl": "https://arxiv.org/abs/2611.05926",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-05T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.05926v1 Announce Type: new Abstract: Diffusion drafters accelerate speculative decoding by denoising multiple draft tokens in parallel. Their training uses anchor sampling to construct compact draft queries and performs cross-attention with a block-sparse mask over a much longer context. We empirically show that acceptance length remains stable as context scales with a fixed query budget, while increasing the query budget yields diminishing quality gains, jointly establishing a practical regime with queries far shorter than the context. No existing context parallelism (CP) method jointly exploits this query--context asymmetry and meets the nonlinear, sample-dependent load-balancing requirement created by anchor sampling. We present Split-KV, an exact CP method that keeps key/value shards local and limits per-layer attention communication to query-sized tensors, making this communication independent of context length. Its global query view further enables a cost-aware longest-processing-time-first (LPT) strategy that balances context key/value chunks by their realized attention cost. At a CP size of 64, Split-KV retains 85--91\\% weak-scaling efficiency and achieves up to $3.67\\times$ speedup over the fastest available CP baseline. LPT achieves $<$1\\% imbalance and plans three orders of magnitude faster than the best load-balancing baseline. Code is available at https://github.com/zxgx/verl.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.05953",
+      "rank": 18,
+      "title": "Graph-Mediated Large Language Model Systems in the Agentic Era: Reasoning, Knowledge, Retrieval, Execution, and Coordination",
+      "sourceUrl": "https://arxiv.org/abs/2611.05953",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-05T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.05953v1 Announce Type: new Abstract: Graphs play an increasingly important role in large language model (LLM) systems, supporting structural reasoning, knowledge grounding, retrieval, and memory. As these systems evolve toward the agentic era, graphs also organize execution dependencies and multi-agent communication, linking intermediate observations and retained information to subsequent decisions. However, understanding their contribution requires distinguishing the function of each graph operation, the component responsible for its computation, and the subsequent use of its output. This survey introduces an operation-level role--locus taxonomy for reasoning, knowledge and evidence, retrieval and memory, execution, and coordination. We compare how graph observations and external computations guide decisions, how memory representations and updates support later tasks, and how dependencies constrain execution and information delivery. These comparisons distinguish improvements in local metrics from downstream task performance while retaining the conditions under which results were reported. We then organize benchmarks, comparison designs, process diagnostics, and system costs into an evaluation framework. Finally, we identify open challenges in adaptive computation and stopping, memory maintenance, and dependency-aware recovery. The survey provides a basis for assessing when graph mechanisms are useful and for evaluating their effects across components and stages.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.06147",
+      "rank": 19,
+      "title": "SafeStart: Mitigating the Overlooked Safety Cost of Active Expert Reduction in MoE LLM Serving",
+      "sourceUrl": "https://arxiv.org/abs/2611.06147",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-05T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.06147v1 Announce Type: new Abstract: Mixture-of-Experts (MoE) language models send each token through a few of many expert subnetworks. Serving methods make these models faster by running even fewer experts per token, and they are validated on accuracy benchmarks. We show that these methods can weaken the model's refusal of harmful requests, and we introduce SafeStart, which largely restores refusal while keeping most of the speedup. In vLLM on one RTX A6000, keeping about two thirds of the selected experts speeds up offline decoding by 15 to 28% at batch size 8. We find that, at this setting, under a jailbreak that tells the model not to refuse, the share of harmful requests that the model answers rises by 18.4 percentage points on Qwen1.5-MoE, 9.5 on OLMoE, and 6.6 on DeepSeek-V2-Lite, the three of nine models where it rises significantly, while MMLU accuracy drops by less than two points. We discover that most of this increase arises while the model processes the prompt and generates its first few tokens. SafeStart therefore runs all experts for the prompt and the first eight generated tokens, and the reduced set of experts afterwards, through a fused kernel in vLLM. With experts removed, SafeStart keeps at least 85% of the offline decode speedup at batch sizes 8 and 32 and brings the change under this jailbreak to between -2.1 and +1.3 points for three expert-reduction methods on these three models. On 889 held-out requests, in an analysis fixed before generation, truncation raises harmful compliance by 5.8 to 21.4 points, and SafeStart leaves a rise of 0.6 to 2.6 points, non-inferior to the original model on two of the three models. Our results show that faster MoE serving need not cost safety: a serving system can keep most of the gain from running fewer experts by running all of them at the start of each response, and it should test refusal, not only accuracy, before it enables such a method.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.06254",
+      "rank": 20,
+      "title": "HarnessFlow: MCTS-Guided Harness Optimization for LLM Agents",
+      "sourceUrl": "https://arxiv.org/abs/2611.06254",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-05T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.06254v1 Announce Type: new Abstract: The performance of large language model (LLM) agents depends on both the underlying model and the harness that governs interaction with tools and the environment. Yet harness design remains largely manual, and automating it requires navigating an open-ended search space through costly end-to-end evaluations. We introduce HarnessFlow, a framework for optimizing complete executable harnesses under a limited candidate-evaluation budget, with the model and task environment held fixed. HarnessFlow organizes candidates and their evaluation histories in a refinement tree, using a Monte Carlo Tree Search (MCTS)-based policy to balance exploitation and exploration. A coding agent refines selected harnesses using archived code, execution feedback, and a library of reusable harness mechanisms. With 15 refinement attempts per benchmark, HarnessFlow achieves the highest mean test scores among the compared methods on six benchmarks spanning agentic tasks, coding, and web interaction. The optimized harnesses achieve an average score of 69.48%, outperforming the initial harnesses and Meta-Harness by 10.89 and 3.95 percentage points, respectively, while incurring lower average per-task execution costs than hand-engineered baselines. These results suggest that structured harness search offers a promising route toward automating the design of capable and efficient LLM agents.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.06381",
+      "rank": 21,
+      "title": "LegalEvolver: Agentic Legal Judgment Prediction via Rubric-Guided Self-Evolution",
+      "sourceUrl": "https://arxiv.org/abs/2611.06381",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-05T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.06381v1 Announce Type: new Abstract: As LLM-based agents develop, they have been increasingly applied in the legal domain. Legal Judgment Prediction~(LJP) requires models to conduct multi-step reasoning and external legal evidence retrieval. Existing legal search agents' performance is often constrained by the quality of retrieval queries. They often formulate queries directly from the initial user request, overlooking latent legal issues and legally salient details. To address this issue, we propose \\emph{LegalEvolver}, a query optimization framework specifically designed to generate legally informative queries for LJP-oriented retrieval. Sampling high-quality optimized queries and their corresponding search trajectories is challenging, as relying solely on unguided high-temperature rollouts is both inefficient and constrained by the model's initial capabilities. We therefore heuristically optimize queries as seeds, improving the efficiency of trajectory generation. Furthermore, we summarize rollout experience into rubrics and use them to guide multi-round iterative self-evolution. Iteratively performing rubric optimization and rubric-guided RL enables the model to surpass its initial performance ceiling. End-to-end performance on extensive benchmarks demonstrates the effectiveness of query optimization on LJP. Comparisons with direct SFT followed by RL demonstrate the effectiveness of rubric guidance. Evolving rubrics further outperform fixed rubrics, confirming the benefits of self-evolution.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.06425",
+      "rank": 22,
+      "title": "D3D: Decoupled Diffusion Drafting for Asynchronous Speculative Decoding",
+      "sourceUrl": "https://arxiv.org/abs/2611.06425",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-05T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.06425v1 Announce Type: new Abstract: Target-conditioned diffusion drafters predict candidate tokens in parallel, yet each new block must wait for updated target-model hidden states. This forces drafting and verification to run sequentially, limiting speedup even though each block is generated in one pass. We introduce D3D, a standalone diffusion drafter that removes this inter-round dependency. D3D combines blockwise denoising with auxiliary autoregressive supervision to achieve long accepted prefixes without target hidden states. This independence lets D3D draft successor blocks during verification in one packed pass, enabling asynchronous speculative decoding. We progressively prune layers according to their effect on acceptance length to reduce the cost of packed drafting. Removing five of 36 layers retains over 99\\% of mean acceptance length across three benchmarks with Qwen3-8B as the target. Across seven benchmarks, D3D averages 5.00$\\times$ and 5.71$\\times$ decoding speedup with Qwen3-8B and Qwen3-32B targets, compared with 4.03$\\times$ and 3.67$\\times$ for DFlash. On GSM8K with Qwen3-32B, speedup reaches 7.48$\\times$. Code is publicly available at https://github.com/fudan-generative-vision/D3D.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.06500",
+      "rank": 23,
+      "title": "Tools Need Not Speak in Text: Latent Context Compression for Agents",
+      "sourceUrl": "https://arxiv.org/abs/2611.06500",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-05T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.06500v1 Announce Type: new Abstract: Large language model (LLM) agents typically append raw tool outputs to their context. Over multi-step interactions, long and noisy observations incur substantial context overhead and dilute the agent's attention to task-relevant information. Existing token pruning and summarization methods remain constrained by discrete text representations, limiting the achievable compression ratios. In this work, we challenge the prevailing assumption that agents must consume tool observations as explicit text tokens. To this end, we propose Coca-Cola, a continuous latent context compression model for LLM agents. Coca-Cola compresses tool observations into latent tokens and embeds them into the input embedding space of the agent. We further introduce Action-Preserving Training, which aligns the agent's next-action distributions under full and compressed observations. This trains the compression model to learn action-sufficient latent tokens that retain decision-critical information. Experiments with web-search agents on four QA benchmarks and two model families show that Coca-Cola reduces the agent's token consumption by 70.01%-89.24% and end-to-end runtime by 24.45%-55.97%, while consistently improving task performance. These results suggest that Coca-Cola offers a promising approach for context compression in agents. Our code is available at https://github.com/THU-Agent/Coca-cola.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.06841",
+      "rank": 24,
+      "title": "ServerBench: How can your coding agents design specialized LLM serving systems?",
+      "sourceUrl": "https://arxiv.org/abs/2611.06841",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-05T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.06841v1 Announce Type: new Abstract: Large language model (LLM) coding agents develop software through experimentation, offering an opportunity to design the serving systems supporting their own operation. Effective serving requires coordinating implementation and operating decisions under session dependencies, latency constraints, and correctness requirements. We introduce ServerBench, a benchmark for agentic design of complete, specialized LLM serving systems. Agents experiment against a common objective, dollars per dollar: latency-qualified token value per dollar of GPU cost. Stateful replay preserves session dependencies, and independent verification checks the submitted system. Across 11 coding-agent models and three deployments, Claude Sonnet 5.5 achieves 2.97 dollars per dollar on Gemma E4B, $4.87\\times$ the vLLM reference; 22 of 33 runs yield verified systems, and 13 exceed the strongest baseline. Our analysis identifies three findings: high-value designs coordinate capacity improvements with load selection; agents interpret performance feedback through workload-relevant experiments; and reliable delivery requires verification of the execution paths introduced by optimization. Overall, ServerBench supports systematic study of how agents translate service objectives and feedback into effective, verified serving systems for given task specifications.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.06858",
+      "rank": 25,
+      "title": "CompressionBench: How can your coding agents compress LLMs?",
+      "sourceUrl": "https://arxiv.org/abs/2611.06858",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-05T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.06858v1 Announce Type: new Abstract: Recursive self-improvement requires AI systems to improve the models and infrastructure used by subsequent systems. LLM compression offers a concrete efficiency objective: retain a pretrained model's behavior within a smaller model storage budget. We study whether coding agents can carry out this step autonomously. We formulate compression as a terminal task in which an agent receives a source checkpoint, storage limit, inference environment, and time budget, then constructs compressed weights and executable inference code. The agent controls its algorithm and experiments; perplexity feedback guides search, and independent verification checks the final model. Across six agents and six model--size settings, 29 of 36 submissions pass verification. Selecting the lowest-perplexity agent design per task yields an average 3.4% perplexity increase over BF16 and 77.33% downstream accuracy, compared with 79.56% for BF16. Recorded experiments reveal how agents achieve these outcomes and where improvement breaks down. Agents lower PPL in 21 of 24 revisions at nearly fixed storage; complete-model feedback reverses 17 of 79 prior local rankings; and generation and inference tests expose failures that likelihood alone misses. The results identify representation design, experimental judgment, and capability validation as central to agent-driven model compression, a measurable component of efficiency-oriented self-improvement.",
+      "summary": ""
+    }
+  ]
+}
