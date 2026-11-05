@@ -1618,7 +1618,7 @@
       "platforms": {
         "youtube": {
           "accountId": "6ac27146281ee799a37065e4",
-          "status": "submitting",
+          "status": "published",
           "idempotencyKey": "154a2d5e-7012-464f-8ee3-8cbea9b4815d",
           "request": {
             "content": "Who May Overrule the Agent? Evidence-Gated Authority in LLM Review Institutions\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2611.05390\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-05\nAI-generated narration. #AI #AINews #Shorts",
@@ -1643,7 +1643,9 @@
             ],
             "publishNow": true
           },
-          "firstSubmittedAt": "2026-11-05T19:32:33.177Z"
+          "firstSubmittedAt": "2026-11-05T19:32:33.177Z",
+          "postId": "6aecd9d38847ce7f8ecc6e40",
+          "postUrl": "https://www.youtube.com/watch?v=OsUHO-r68IU"
         }
       },
       "script": {
