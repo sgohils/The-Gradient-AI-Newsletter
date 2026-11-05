@@ -876,8 +876,8 @@
         "sourceUrl": "https://arxiv.org/abs/2610.36234",
         "sourceName": "arXiv cs.AI",
         "publishedAt": "2026-10-29T04:00:00.000Z",
-        "sourceExcerpt": "arXiv:2610.36234v1 Announce Type: new Abstract: Requirements engineering (RE) is foundational to systems engineering (SE), as requirement defects can propagate downstream and adversely affect development outcomes. Although large language models (LLMs) are promising for requirement quality assessment, prior work shows that off-the-shelf models miss a large share of expert-identified defects, perform unevenly across quality criteria, and vary across executions. This study investigates whether infusing expert-derived SE knowledge can improve LLM-based requirement quality evaluation beyond off-the-shelf capability. We present MARQ, a modular, LLM-agnostic prototype that supplements LLMs with a criterion-specific knowledge stack operationalizing INCOSE requirement quality criteria and evaluated against off-the-shelf baselines on an expert-labeled NASA requirement set using Claude Opus 5, GPT-5.6 Sol, and the open-weight Gemma 3 12B, with 100 executions per model. MARQ achieves median F1 scores of 0.80 for Claude Opus 5, 0.62 for GPT-5.6 Sol, and 0.53 for Gemma 3 12B, compared with off-the-shelf baselines of 0.55, 0.52, and 0.18, respectively. However, the nature of these gains is model-dependent. Claude Opus 5 improves defect detection and false-alarm control; GPT-5.6 Sol gains detection and better execution-level consistency at the cost of more false alarms; and Gemma 3 12B reaches the performance of off-the-shelf proprietary models, although it remains highly variable. Criterion-level analysis shows gains concentrated in Correctness and Conformance, trade-offs between misses and false alarms within individual criteria, and model-dependent responses across several criteria. These findings position SE knowledge infusion as a promising model-agnostic pathway for strengthening trustworthy LLM-based RE support while underscoring the need for criterion-specific interventions and human-in-the-loop review.",
-        "summary": "**What happened:** Researchers introduced MARQ, a modular, LLM‑agnostic assessor that injects formal systems‑engineering knowledge into requirement quality analysis. By separating knowledge encoding from the underlying LLM, MARQ can be paired with any model (e.g., GPT‑4, Claude, LLaMA) while consistently spotting defects that off‑the‑shelf LLMs miss.\n\n**Why it matters:** Requirements defects ripple through the entire development lifecycle, inflating costs and risking failure. Existing LLM‑based reviewers are unreliable—missing many expert‑identified flaws and delivering erratic results. MARQ’s approach promises stable, high‑quality assessments across diverse criteria, potentially reducing rework and accelerating system design.\n\n**Key stats:**\n- Defect detection recall rose from ~58% (baseline LLM) to ~86% with MARQ (≈48% relative gain).\n- F1‑score improved by 22 points across five quality dimensions (clarity, completeness, testability, consistency, and verifiability).\n- Performance variance across multiple runs dropped from a standard deviation of 9.2% to 2.1%, indicating far more reproducible results.\n- The modular pipeline added <0.7 s overhead per requirement, preserving practical speed.\n\n**Source:** https://arxiv.org/abs/2610.36234"
+        "sourceExcerpt": "",
+        "summary": ""
       },
       "selectedAt": "2026-10-29T17:21:15.935Z",
       "platforms": {
@@ -885,87 +885,10 @@
           "accountId": "6ac27146281ee799a37065e4",
           "status": "published",
           "idempotencyKey": "16c3e5de-2253-424c-ba5c-6de5b22fbb5a",
-          "request": {
-            "content": "MARQ: A Modular, LLM-Agnostic Requirement Quality Assessor Infused with Systems Engineering Knowledge\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2610.36234\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-10-29\nAI-generated narration. #AI #AINews #Shorts",
-            "mediaItems": [
-              {
-                "type": "video",
-                "url": "https://media.zernio.com/temp/1793294516246_3a88c3723ca5c170_2026-10-29.mp4"
-              }
-            ],
-            "platforms": [
-              {
-                "platform": "youtube",
-                "accountId": "6ac27146281ee799a37065e4",
-                "platformSpecificData": {
-                  "title": "MARQ: A Modular, LLM-Agnostic Requirement Quality",
-                  "visibility": "public",
-                  "madeForKids": false,
-                  "containsSyntheticMedia": true,
-                  "categoryId": "28"
-                }
-              }
-            ],
-            "publishNow": true
-          },
           "firstSubmittedAt": "2026-10-29T17:21:59.375Z",
           "postId": "6ae380b980f923e19020713b",
           "postUrl": "https://www.youtube.com/watch?v=kkY82n2IqBE"
         }
-      },
-      "script": {
-        "version": 3,
-        "provider": "extractive",
-        "format": "source-fallback",
-        "angle": "capability",
-        "workingTitle": "MARQ: A Modular, LLM-Agnostic Requirement Quality",
-        "availability": "research",
-        "hookStyle": "question",
-        "sentences": [
-          {
-            "text": "Would you use MARQ?",
-            "evidenceQuote": "We present MARQ, a modular, LLM-agnostic prototype that supplements LLMs with a criterion-specific knowledge stack operationalizing INCOSE requirement quality criteria and evaluated against off-the-shelf baselines on an expert-labeled NASA requirement set using Claude Opus 5, GPT-5.6 Sol, and the open-weight Gemma 3 12B, with 100 executions per model.",
-            "role": "hook",
-            "visual": "example",
-            "displayText": "Would you use MARQ?"
-          },
-          {
-            "text": "arXiv:2610.36234v1 Announce Type: new Abstract: Requirements engineering (RE) is foundational to systems engineering (SE), as requirement defects can propagate downstream and adversely affect development outcomes.",
-            "evidenceQuote": "arXiv:2610.36234v1 Announce Type: new Abstract: Requirements engineering (RE) is foundational to systems engineering (SE), as requirement defects can propagate downstream and adversely affect development outcomes.",
-            "role": "breakthrough",
-            "visual": "example",
-            "displayText": "Propagate downstream and adversely affect development outcomes"
-          },
-          {
-            "text": "MARQ achieves median F1 scores of 0.80 for Claude Opus 5, 0.62 for GPT-5.6 Sol, and 0.53 for Gemma 3 12B, compared with off-the-shelf baselines of 0.55, 0.52, and 0.18, respectively.",
-            "evidenceQuote": "MARQ achieves median F1 scores of 0.80 for Claude Opus 5, 0.62 for GPT-5.6 Sol, and 0.53 for Gemma 3 12B, compared with off-the-shelf baselines of 0.55, 0.52, and 0.18, respectively.",
-            "role": "breakthrough",
-            "visual": "process",
-            "displayText": "MARQ achieves median F1 scores of 0.80"
-          },
-          {
-            "text": "However, the nature of these gains is model-dependent.",
-            "evidenceQuote": "However, the nature of these gains is model-dependent.",
-            "role": "breakthrough",
-            "visual": "process",
-            "displayText": "However, the nature of these gains is model-dependent"
-          },
-          {
-            "text": "This source excerpt does not confirm public access.",
-            "evidenceQuote": "arXiv:2610.36234v1 Announce Type: new Abstract: Requirements engineering (RE) is foundational to systems engineering (SE), as requirement defects can propagate downstream and adversely affect development outcomes.",
-            "role": "impact",
-            "visual": "highlight",
-            "displayText": "does not confirm public access"
-          },
-          {
-            "text": "Would you try MARQ, or wait for more proof?",
-            "evidenceQuote": "We present MARQ, a modular, LLM-agnostic prototype that supplements LLMs with a criterion-specific knowledge stack operationalizing INCOSE requirement quality criteria and evaluated against off-the-shelf baselines on an expert-labeled NASA requirement set using Claude Opus 5, GPT-5.6 Sol, and the open-weight Gemma 3 12B, with 100 executions per model.",
-            "role": "engagement",
-            "visual": "highlight",
-            "displayText": "Would you try MARQ"
-          }
-        ],
-        "narration": "Would you use MARQ? arXiv:2610.36234v1 Announce Type: new Abstract: Requirements engineering (RE) is foundational to systems engineering (SE), as requirement defects can propagate downstream and adversely affect development outcomes. MARQ achieves median F1 scores of 0.80 for Claude Opus 5, 0.62 for GPT-5.6 Sol, and 0.53 for Gemma 3 12B, compared with off-the-shelf baselines of 0.55, 0.52, and 0.18, respectively. However, the nature of these gains is model-dependent. This source excerpt does not confirm public access. Would you try MARQ, or wait for more proof?"
       },
       "presentation": {
         "title": "MARQ: A Modular, LLM-Agnostic Requirement Quality",
@@ -1678,6 +1601,97 @@
         "publicUrl": "https://media.zernio.com/temp/1793820391075_a779ba3d2ad60831_2026-11-04.mp4",
         "videoSha256": "eadad6997f8242d8d6d8f60a609efcc599351264173a8ee332295b9785e2352c",
         "uploadedAt": "2026-11-04T19:26:32.049Z"
+      }
+    },
+    "2026-11-05": {
+      "story": {
+        "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.05390",
+        "rank": 6,
+        "title": "Who May Overrule the Agent? Evidence-Gated Authority in LLM Review Institutions",
+        "sourceUrl": "https://arxiv.org/abs/2611.05390",
+        "sourceName": "arXiv cs.AI",
+        "publishedAt": "2026-11-05T05:00:00.000Z",
+        "sourceExcerpt": "arXiv:2611.05390v1 Announce Type: new Abstract: Multi-agent language-model systems often add a reviewer to improve an upstream agent's decision. Yet a reviewer can both repair errors and replace decisions that were already correct. We study this as a problem of institutional jurisdiction: conditional on the same proposal, task information, model, and review output, when is the reviewer authorized to make its recommendation binding? We compare broad override authority with an evidence gate that permits replacement only after the reviewer produces a mechanically valid record of a binding-constraint violation and a compliant repair. Across two locally run open-weight models, 96 spatial-policy tasks, and a 96-task portfolio-transfer benchmark, the gate sharply reduces corruption of correct proposals while retaining most repairs of violations. The directions of this tradeoff are partly implied by the rule; its magnitude depends on reviewer transitions and upstream proposal states. A prospective validation then gives the reviewer an explicit choice to retain, replace, or escalate. This eliminates correct-proposal corruption for Qwen, but Mistral still replaces all 48 correct proposals; Qwen also declines every welfare-only repair that Mistral frequently attempts. Thus interface design changes reviewer behavior but is not a model-independent safeguard. The result is not that restricted review is universally better. It is that reviewer competence, action interface, and binding jurisdiction jointly determine both the correction domain and the corruption surface.",
+        "summary": ""
+      },
+      "selectedAt": "2026-11-05T19:31:45.492Z",
+      "platforms": {
+        "youtube": {
+          "accountId": "6ac27146281ee799a37065e4",
+          "status": "prepared",
+          "idempotencyKey": "154a2d5e-7012-464f-8ee3-8cbea9b4815d"
+        }
+      },
+      "script": {
+        "version": 3,
+        "provider": "extractive",
+        "format": "source-fallback",
+        "angle": "capability",
+        "workingTitle": "Who May Overrule the Agent? Evidence-Gated",
+        "availability": "unknown",
+        "hookStyle": "question",
+        "sentences": [
+          {
+            "text": "Would you use Who May Overrule the?",
+            "evidenceQuote": "arXiv:2611.05390v1 Announce Type: new Abstract: Multi-agent language-model systems often add a reviewer to improve an upstream agent's decision. Yet a reviewer can both repair errors and replace decisions that were already correct. We study this as a problem of institutional jurisdiction: conditional on the same proposal, task information, model, and review output, when is the reviewer authorized to make its recommendation binding? We compare broad override authority with an evidence gate that permits replacement only after the reviewer produces a mechanically valid record of a binding-constraint violation and a compliant repair. Across two locally run open-weight models, 96 spatial-policy tasks, and a 96-task portfolio-transfer benchmark, the gate sharply reduces corruption of correct proposals while retaining most repairs of violations. The directions of this tradeoff are partly implied by the rule; its magnitude depends on reviewer transitions and upstream proposal states. A prospective validation then gives the reviewer an explicit choice to retain, replace, or escalate. This eliminates correct-proposal corruption for Qwen, but Mistral still replaces all 48 correct proposals; Qwen also declines every welfare-only repair that Mistral frequently attempts. Thus interface design changes reviewer behavior but is not a model-independent safeguard. The result is not that restricted review is universally better. It is that reviewer competence, action interface, and binding jurisdiction jointly determine both the correction domain and the corruption surface.",
+            "role": "hook",
+            "visual": "example",
+            "displayText": "Would you use Who May Overrule the?"
+          },
+          {
+            "text": "arXiv:2611.05390v1 Announce Type: new Abstract: Multi-agent language-model systems often add a reviewer to improve an upstream agent's decision.",
+            "evidenceQuote": "arXiv:2611.05390v1 Announce Type: new Abstract: Multi-agent language-model systems often add a reviewer to improve an upstream agent's decision.",
+            "role": "breakthrough",
+            "visual": "example",
+            "displayText": "ArXiv:2611.05390v1 Announce Type: new Abstract: Multi-agent language-model systems"
+          },
+          {
+            "text": "Across two locally run open-weight models, 96 spatial-policy tasks, and a 96-task portfolio-transfer benchmark, the gate sharply reduces corruption of correct proposals while retaining most repairs of violations.",
+            "evidenceQuote": "Across two locally run open-weight models, 96 spatial-policy tasks, and a 96-task portfolio-transfer benchmark, the gate sharply reduces corruption of correct proposals while retaining most repairs of violations.",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "Across two locally run open-weight models"
+          },
+          {
+            "text": "Thus interface design changes reviewer behavior but is not a model-independent safeguard.",
+            "evidenceQuote": "Thus interface design changes reviewer behavior but is not a model-independent safeguard.",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "Thus interface design changes reviewer behavior but is"
+          },
+          {
+            "text": "This source excerpt does not confirm public access.",
+            "evidenceQuote": "arXiv:2611.05390v1 Announce Type: new Abstract: Multi-agent language-model systems often add a reviewer to improve an upstream agent's decision.",
+            "role": "impact",
+            "visual": "highlight",
+            "displayText": "does not confirm public access"
+          },
+          {
+            "text": "Would you try Who May Overrule the, or wait for more proof?",
+            "evidenceQuote": "arXiv:2611.05390v1 Announce Type: new Abstract: Multi-agent language-model systems often add a reviewer to improve an upstream agent's decision. Yet a reviewer can both repair errors and replace decisions that were already correct. We study this as a problem of institutional jurisdiction: conditional on the same proposal, task information, model, and review output, when is the reviewer authorized to make its recommendation binding? We compare broad override authority with an evidence gate that permits replacement only after the reviewer produces a mechanically valid record of a binding-constraint violation and a compliant repair. Across two locally run open-weight models, 96 spatial-policy tasks, and a 96-task portfolio-transfer benchmark, the gate sharply reduces corruption of correct proposals while retaining most repairs of violations. The directions of this tradeoff are partly implied by the rule; its magnitude depends on reviewer transitions and upstream proposal states. A prospective validation then gives the reviewer an explicit choice to retain, replace, or escalate. This eliminates correct-proposal corruption for Qwen, but Mistral still replaces all 48 correct proposals; Qwen also declines every welfare-only repair that Mistral frequently attempts. Thus interface design changes reviewer behavior but is not a model-independent safeguard. The result is not that restricted review is universally better. It is that reviewer competence, action interface, and binding jurisdiction jointly determine both the correction domain and the corruption surface.",
+            "role": "engagement",
+            "visual": "highlight",
+            "displayText": "Would you try Who May Overrule"
+          }
+        ],
+        "narration": "Would you use Who May Overrule the? arXiv:2611.05390v1 Announce Type: new Abstract: Multi-agent language-model systems often add a reviewer to improve an upstream agent's decision. Across two locally run open-weight models, 96 spatial-policy tasks, and a 96-task portfolio-transfer benchmark, the gate sharply reduces corruption of correct proposals while retaining most repairs of violations. Thus interface design changes reviewer behavior but is not a model-independent safeguard. This source excerpt does not confirm public access. Would you try Who May Overrule the, or wait for more proof?"
+      },
+      "presentation": {
+        "title": "Who May Overrule the Agent? Evidence-Gated",
+        "format": "source-fallback",
+        "angle": "capability",
+        "hookStyle": "question",
+        "availability": "unknown",
+        "duration": 41.425000000000004,
+        "wordCount": 85,
+        "scriptVersion": 3
+      },
+      "selectionReason": "A concrete capability or everyday consequence in the original evidence.",
+      "contentHash": "300eb7f4b4f8983baadb10ea404ee8306bf6f6770aa9504edb8656aed1f2830d",
+      "media": {
+        "publicUrl": "https://media.zernio.com/temp/1793907149228_a8b300073ae39c61_2026-11-05.mp4",
+        "videoSha256": "16c47b0f45b2baee6d95551a2e11728452c107c312962d918e3903e066a518b9",
+        "uploadedAt": "2026-11-05T19:32:30.887Z"
       }
     }
   }
