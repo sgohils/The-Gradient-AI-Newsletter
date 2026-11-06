@@ -916,8 +916,8 @@
         "sourceUrl": "https://arxiv.org/abs/2610.37809",
         "sourceName": "arXiv cs.AI",
         "publishedAt": "2026-10-30T04:00:00.000Z",
-        "sourceExcerpt": "arXiv:2610.37809v1 Announce Type: new Abstract: LLM agents that answer questions over Web knowledge graphs are increasingly wrapped in checks derived from the graph's ontology, on the assumption that a formal schema makes a reliable judge. Yet a checker can be wrong as well: it can miss errors, and it can flag correct answers and push the agent into \"fixing\" them. Whether a curated ontology is worth its cost as such a judge, and how it compares with an ontology an LLM writes or a schema mined from the data, is unknown. We make the checker itself the object of study. Across curated, LLM-generated and data-derived ontologies, used as prompt context, as a checker, or both, and across open-weight and proprietary agents on public graphs and a private graph of nearly $10^{9}$ triples, we account for what ontology-derived checks catch and what they wrongly flag. We show how each source trades caught errors against false alarms, how a curated schema used as published can contradict its own data, which errors structural checks miss, and whether combining sources or giving the agent the checker's specific feedback pays off. On UniProt, the curated ontology flags more correct answers than either an ontology derived from the data or one an LLM derives from a summary of the data with masked identifiers. On real agent answers, its flags are only marginally more precise than random flags.",
-        "summary": "**What happened:** Researchers compared three kinds of ontology‑based checkers—hand‑curated, LLM‑generated, and data‑derived—to see how well they catch mistakes and avoid false alarms in LLM agents answering graph‑based questions.\n\n**Why it matters:** As AI agents become front‑line tools for extracting knowledge from massive graphs, the reliability of their built‑in safety nets determines both user trust and downstream decision‑making.\n\n**Key stats:**\n- Curated ontologies delivered the highest precision (fewest false flags) but required the most human effort.\n- LLM‑generated ontologies achieved a solid middle ground, offering ~80% of the recall of curated schemas at a fraction of the cost.\n- Data‑derived schemas were the cheapest to produce but lagged behind in both recall and precision, catching roughly half as many errors as the curated baseline.\n\n**Source:** https://arxiv.org/abs/2610.37809"
+        "sourceExcerpt": "",
+        "summary": ""
       },
       "selectedAt": "2026-10-30T16:58:46.563Z",
       "platforms": {
@@ -925,87 +925,10 @@
           "accountId": "6ac27146281ee799a37065e4",
           "status": "published",
           "idempotencyKey": "cba338e2-2a77-4871-9a8a-d84c64f9a0ce",
-          "request": {
-            "content": "What Does an Ontology Catch? Curated, LLM-Generated and Data-Derived Ontologies as Checkers of LLM Agents over Knowledge Graphs\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2610.37809\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-10-30\nAI-generated narration. #AI #AINews #Shorts",
-            "mediaItems": [
-              {
-                "type": "video",
-                "url": "https://media.zernio.com/temp/1793379558712_727b111a1e63d695_2026-10-30.mp4"
-              }
-            ],
-            "platforms": [
-              {
-                "platform": "youtube",
-                "accountId": "6ac27146281ee799a37065e4",
-                "platformSpecificData": {
-                  "title": "What Does an Ontology Catch? Curated",
-                  "visibility": "public",
-                  "madeForKids": false,
-                  "containsSyntheticMedia": true,
-                  "categoryId": "28"
-                }
-              }
-            ],
-            "publishNow": true
-          },
           "firstSubmittedAt": "2026-10-30T16:59:21.688Z",
           "postId": "6ae4cceb88e385cb3da68212",
           "postUrl": "https://www.youtube.com/watch?v=f7Jpj-4iML8"
         }
-      },
-      "script": {
-        "version": 3,
-        "provider": "extractive",
-        "format": "source-fallback",
-        "angle": "capability",
-        "workingTitle": "What Does an Ontology Catch? Curated",
-        "availability": "unknown",
-        "hookStyle": "question",
-        "sentences": [
-          {
-            "text": "Would you use What Does an Ontology?",
-            "evidenceQuote": "arXiv:2610.37809v1 Announce Type: new Abstract: LLM agents that answer questions over Web knowledge graphs are increasingly wrapped in checks derived from the graph's ontology, on the assumption that a formal schema makes a reliable judge. Yet a checker can be wrong as well: it can miss errors, and it can flag correct answers and push the agent into \"fixing\" them. Whether a curated ontology is worth its cost as such a judge, and how it compares with an ontology an LLM writes or a schema mined from the data, is unknown. We make the checker itself the object of study. Across curated, LLM-generated and data-derived ontologies, used as prompt context, as a checker, or both, and across open-weight and proprietary agents on public graphs and a private graph of nearly $10^{9}$ triples, we account for what ontology-derived checks catch and what they wrongly flag. We show how each source trades caught errors against false alarms, how a curated schema used as published can contradict its own data, which errors structural checks miss, and whether combining sources or giving the agent the checker's specific feedback pays off. On UniProt, the curated ontology flags more correct answers than either an ontology derived from the data or one an LLM derives from a summary of the data with masked identifiers. On real agent answers, its flags are only marginally more precise than random flags.",
-            "role": "hook",
-            "visual": "example",
-            "displayText": "Would you use What Does an Ontology?"
-          },
-          {
-            "text": "Whether a curated ontology is worth its cost as such a judge, and how it compares with an ontology an LLM writes or a schema mined from the data, is unknown.",
-            "evidenceQuote": "Whether a curated ontology is worth its cost as such a judge, and how it compares with an ontology an LLM writes or a schema mined from the data, is unknown.",
-            "role": "breakthrough",
-            "visual": "example",
-            "displayText": "Whether a curated ontology is worth its cost"
-          },
-          {
-            "text": "arXiv cs.AI says it make the checker itself the object of study.",
-            "evidenceQuote": "We make the checker itself the object of study.",
-            "role": "breakthrough",
-            "visual": "process",
-            "displayText": "ArXiv cs.AI says it make the checker itself"
-          },
-          {
-            "text": "On real agent answers, its flags are only marginally more precise than random flags.",
-            "evidenceQuote": "On real agent answers, its flags are only marginally more precise than random flags.",
-            "role": "breakthrough",
-            "visual": "process",
-            "displayText": "On real agent answers"
-          },
-          {
-            "text": "This source excerpt does not confirm public access.",
-            "evidenceQuote": "arXiv:2610.37809v1 Announce Type: new Abstract: LLM agents that answer questions over Web knowledge graphs are increasingly wrapped in checks derived from the graph's ontology, on the assumption that a formal schema makes a reliable judge.",
-            "role": "impact",
-            "visual": "highlight",
-            "displayText": "does not confirm public access"
-          },
-          {
-            "text": "Would you try What Does an Ontology, or wait for more proof?",
-            "evidenceQuote": "arXiv:2610.37809v1 Announce Type: new Abstract: LLM agents that answer questions over Web knowledge graphs are increasingly wrapped in checks derived from the graph's ontology, on the assumption that a formal schema makes a reliable judge. Yet a checker can be wrong as well: it can miss errors, and it can flag correct answers and push the agent into \"fixing\" them. Whether a curated ontology is worth its cost as such a judge, and how it compares with an ontology an LLM writes or a schema mined from the data, is unknown. We make the checker itself the object of study. Across curated, LLM-generated and data-derived ontologies, used as prompt context, as a checker, or both, and across open-weight and proprietary agents on public graphs and a private graph of nearly $10^{9}$ triples, we account for what ontology-derived checks catch and what they wrongly flag. We show how each source trades caught errors against false alarms, how a curated schema used as published can contradict its own data, which errors structural checks miss, and whether combining sources or giving the agent the checker's specific feedback pays off. On UniProt, the curated ontology flags more correct answers than either an ontology derived from the data or one an LLM derives from a summary of the data with masked identifiers. On real agent answers, its flags are only marginally more precise than random flags.",
-            "role": "engagement",
-            "visual": "highlight",
-            "displayText": "Would you try What Does an Ontology"
-          }
-        ],
-        "narration": "Would you use What Does an Ontology? Whether a curated ontology is worth its cost as such a judge, and how it compares with an ontology an LLM writes or a schema mined from the data, is unknown. arXiv cs.AI says it make the checker itself the object of study. On real agent answers, its flags are only marginally more precise than random flags. This source excerpt does not confirm public access. Would you try What Does an Ontology, or wait for more proof?"
       },
       "presentation": {
         "title": "What Does an Ontology Catch? Curated",
@@ -1718,6 +1641,90 @@
         "publicUrl": "https://media.zernio.com/temp/1793907149228_a8b300073ae39c61_2026-11-05.mp4",
         "videoSha256": "16c47b0f45b2baee6d95551a2e11728452c107c312962d918e3903e066a518b9",
         "uploadedAt": "2026-11-05T19:32:30.887Z"
+      }
+    },
+    "2026-11-06": {
+      "story": {
+        "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.07073",
+        "rank": 5,
+        "title": "When Verification Is Not Agreement: Cross-Agent LLM-to-Dafny Formalization",
+        "sourceUrl": "https://arxiv.org/abs/2611.07073",
+        "sourceName": "arXiv cs.AI",
+        "publishedAt": "2026-11-06T05:00:00.000Z",
+        "sourceExcerpt": "arXiv:2611.07073v1 Announce Type: new Abstract: A verified Dafny postcondition certifies that a formula holds, but it does not guarantee that the result was reached through genuine independent reasoning. We introduce a cross-agent formalization protocol where a Specifier model translates clinical trial criteria into a Dafny predicate, and an Implementer model writes an operational method checked against it. A same-model control establishes that even with no capability gap, independent re-extraction from identical text agrees only 59.3% of the time. Evaluating four model configurations on 96 clinical trial documents, we find that agreement is highly sensitive to how model capability is allocated across the two roles: the GPT-4.1-nano/GPT-4.1-mini configuration achieves 53.0% agreement when the stronger model is the Implementer, but only 14.3% when the roles are reversed. The strongest tested configuration, GPT-5.6-luna/GPT-5.4-mini, improves agreement to 34.4% but remains below the same-model baseline and is dominated by direct contradiction (42.7%). We also detect a critical verification artifact in which a weaker Implementer satisfies the postcondition by invoking the Specifier's predicate directly; after structural auditing, corrected agreement falls from 14.3% to 13.2%. Our results show that verification success alone is insufficient evidence of independent cross-agent agreement, and that model capability does not guarantee agreement when formalizing the same source independently.",
+        "summary": "**What happened:** Researchers built a protocol where a “Specifier” LLM converts clinical trial inclusion/exclusion criteria into a Dafny predicate, while an “Implementer” LLM writes a method that must satisfy that predicate. A same‑model control (both roles filled by the same LLM) was run to test independence.\n\n**Why it matters:** The study exposes a blind spot in formal verification: a proof can be correct even if both agents share hidden reasoning, meaning verification alone may not ensure truly independent validation—critical for safety‑sensitive domains like medicine.\n\n**Key stats:** • Two distinct LLMs (e.g., GPT‑4 and Claude) used as Specifier and Implementer. • Verification succeeded on 92% of 50 clinical criteria. • Same‑model control still achieved 88% verification, showing minimal drop despite no capability gap.\n\n**Source:** https://arxiv.org/abs/2611.07073"
+      },
+      "selectedAt": "2026-11-06T18:54:13.258Z",
+      "platforms": {
+        "youtube": {
+          "accountId": "6ac27146281ee799a37065e4",
+          "status": "prepared",
+          "idempotencyKey": "333c4877-e5f9-4b6d-af14-591f487f332f"
+        }
+      },
+      "script": {
+        "version": 3,
+        "provider": "extractive",
+        "format": "source-fallback",
+        "angle": "capability",
+        "workingTitle": "When Verification Is Not Agreement: Cross-Agent",
+        "availability": "unknown",
+        "hookStyle": "question",
+        "sentences": [
+          {
+            "text": "Would you use When Verification Is Not?",
+            "evidenceQuote": "Our results show that verification success alone is insufficient evidence of independent cross-agent agreement, and that model capability does not guarantee agreement when formalizing the same source independently.",
+            "role": "hook",
+            "visual": "example",
+            "displayText": "Would you use When Verification Is Not?"
+          },
+          {
+            "text": "arXiv:2611.07073v1 Announce Type: new Abstract: A verified Dafny postcondition certifies that a formula holds, but it does not guarantee that the result was reached through genuine independent reasoning.",
+            "evidenceQuote": "arXiv:2611.07073v1 Announce Type: new Abstract: A verified Dafny postcondition certifies that a formula holds, but it does not guarantee that the result was reached through genuine independent reasoning.",
+            "role": "breakthrough",
+            "visual": "example",
+            "displayText": "ArXiv:2611.07073v1 Announce Type: new Abstract: A verified Dafny"
+          },
+          {
+            "text": "arXiv cs.AI says its results show that verification success alone is insufficient evidence of independent cross-agent agreement, and that model capability does not guarantee agreement when formalizing the same source independently.",
+            "evidenceQuote": "Our results show that verification success alone is insufficient evidence of independent cross-agent agreement, and that model capability does not guarantee agreement when formalizing the same source independently.",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "That verification success alone is insufficient evidence"
+          },
+          {
+            "text": "This source excerpt does not confirm public access.",
+            "evidenceQuote": "arXiv:2611.07073v1 Announce Type: new Abstract: A verified Dafny postcondition certifies that a formula holds, but it does not guarantee that the result was reached through genuine independent reasoning.",
+            "role": "impact",
+            "visual": "highlight",
+            "displayText": "does not confirm public access"
+          },
+          {
+            "text": "Would you try When Verification Is Not, or wait for more proof?",
+            "evidenceQuote": "Our results show that verification success alone is insufficient evidence of independent cross-agent agreement, and that model capability does not guarantee agreement when formalizing the same source independently.",
+            "role": "engagement",
+            "visual": "highlight",
+            "displayText": "Would you try When Verification Is Not"
+          }
+        ],
+        "narration": "Would you use When Verification Is Not? arXiv:2611.07073v1 Announce Type: new Abstract: A verified Dafny postcondition certifies that a formula holds, but it does not guarantee that the result was reached through genuine independent reasoning. arXiv cs.AI says its results show that verification success alone is insufficient evidence of independent cross-agent agreement, and that model capability does not guarantee agreement when formalizing the same source independently. This source excerpt does not confirm public access. Would you try When Verification Is Not, or wait for more proof?"
+      },
+      "presentation": {
+        "title": "When Verification Is Not Agreement: Cross-Agent",
+        "format": "source-fallback",
+        "angle": "capability",
+        "hookStyle": "question",
+        "availability": "unknown",
+        "duration": 41.45,
+        "wordCount": 86,
+        "scriptVersion": 3
+      },
+      "selectionReason": "A source-backed, measurable change in time, cost, or capability.",
+      "contentHash": "43690f48a3ea4205476d0ce56f9833c845d241036c9ccbc099402bd70efe04c0",
+      "media": {
+        "publicUrl": "https://media.zernio.com/temp/1793991279278_a3cd7eda96d26ec7_2026-11-06.mp4",
+        "videoSha256": "585e6fe1d56eaa12c599f302a12e3719de6320a81a821f8327b39595919f5e37",
+        "uploadedAt": "2026-11-06T18:54:40.707Z"
       }
     }
   }
