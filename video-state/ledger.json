@@ -1658,7 +1658,7 @@
       "platforms": {
         "youtube": {
           "accountId": "6ac27146281ee799a37065e4",
-          "status": "submitting",
+          "status": "published",
           "idempotencyKey": "333c4877-e5f9-4b6d-af14-591f487f332f",
           "request": {
             "content": "When Verification Is Not Agreement: Cross-Agent LLM-to-Dafny Formalization\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2611.07073\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-06\nAI-generated narration. #AI #AINews #Shorts",
@@ -1683,7 +1683,9 @@
             ],
             "publishNow": true
           },
-          "firstSubmittedAt": "2026-11-06T18:54:42.073Z"
+          "firstSubmittedAt": "2026-11-06T18:54:42.073Z",
+          "postId": "6aee2273eed5711059324a81",
+          "postUrl": "https://www.youtube.com/watch?v=h5AM5ePmq6Y"
         }
       },
       "script": {
