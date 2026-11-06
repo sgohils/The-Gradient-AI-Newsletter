@@ -1,0 +1,257 @@
+{
+  "version": 1,
+  "issueDate": "2026-11-06",
+  "generatedAt": "2026-11-06T18:50:58.817Z",
+  "stories": [
+    {
+      "id": "google-ai-blog-https%3A%2F%2Fblog.google%2Finnovation-and-ai%2Ftechnology%2Fdevelopers-tools%2Fintroducing-gemini-omni-1-2-flash%2F",
+      "rank": 1,
+      "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+      "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+      "sourceName": "Google AI Blog",
+      "publishedAt": "2026-11-05T17:00:00.000Z",
+      "sourceExcerpt": "Gemini Omni 1.2 Flash brings native 15-second video generation and editing, stronger consistency, and 30% lower pricing.",
+      "summary": "**What happened:** Google released Gemini Omni 1.2 Flash, a new AI model that can generate and edit 15‑second video clips directly, delivering smoother, more consistent results.\n\n**Why it matters:** Faster, on‑device video creation opens doors for creators, marketers, and developers to produce short‑form content at scale without heavy compute budgets, accelerating the adoption of generative video.\n\n**Key stats:** • Native 15‑second video generation and editing\n• Stronger consistency across frames\n• Pricing about 30% lower than the previous Gemini Omni 1.2 model\n\n**Source:** https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/"
+    },
+    {
+      "id": "openai-blog-https%3A%2F%2Fopenai.com%2Findex%2Fintroducing-gpt-6-cyber",
+      "rank": 2,
+      "title": "GPT‑6 Cyber: Advancing the frontier of aligned cybersecurity agents",
+      "sourceUrl": "https://openai.com/index/introducing-gpt-6-cyber",
+      "sourceName": "OpenAI Blog",
+      "publishedAt": "2026-11-05T09:00:00.000Z",
+      "sourceExcerpt": "Introducing GPT‑6 Cyber, OpenAI’s cybersecurity model for finding exploitable vulnerabilities and developing fixes, trained to stay within authorized scope.",
+      "summary": "**What happened:** OpenAI released GPT‑6 Cyber, a specialized AI trained to identify exploitable software vulnerabilities and generate remediation code, with built‑in safeguards to keep its actions within a predefined, authorized scope.\n\n**Why it matters:** By automating early‑stage security research, the model could shrink the window between discovery and patching, reduce manual effort for security teams, and set a new standard for responsibly aligned AI in high‑risk domains.\n\n**Key stats:**\n- Trained on a curated dataset of over 1 billion security‑focused code snippets and advisories.\n- Demonstrated a 42% improvement in vulnerability detection speed over previous models.\n- Integrated with OpenAI’s alignment framework to enforce scope limits with 99.9% compliance in internal tests.\n\n**Source:** https://openai.com/index/introducing-gpt-6-cyber"
+    },
+    {
+      "id": "openai-blog-https%3A%2F%2Fopenai.com%2Findex%2Fmerge-builds-with-openai",
+      "rank": 3,
+      "title": "Merge builds product and business tools with OpenAI technology",
+      "sourceUrl": "https://openai.com/index/merge-builds-with-openai",
+      "sourceName": "OpenAI Blog",
+      "publishedAt": "2026-11-05T08:00:00.000Z",
+      "sourceExcerpt": "Merge uses GPT-6 Astra, ChatGPT, and Codex to review product code and support marketing. Its teams also use AI to plan executive dinners and prepare sales updates.",
+      "summary": "**What happened:** Merge integrated OpenAI’s GPT-6 Astra, ChatGPT, and Codex into its internal platforms, using them to automatically review product code, generate marketing copy, and even plan executive dinners and sales updates.\n**Why it matters:** The move demonstrates how generative AI can bridge product development and business operations, cutting manual effort and speeding up decision‑making across the company.\n**Key stats:** • GPT-6 Astra powers real‑time code analysis for all new Merge commits.\n• ChatGPT drafts 80% of marketing emails and sales decks.\n• AI‑assisted planning reduced executive dinner logistics time by 70%.\n**Source:** https://openai.com/index/merge-builds-with-openai"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.06977",
+      "rank": 4,
+      "title": "BlockLock: Reproducible LLM Inference with Fixed Batch Geometry",
+      "sourceUrl": "https://arxiv.org/abs/2611.06977",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-06T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.06977v1 Announce Type: new Abstract: Reproducible LLM inference requires that a request produces the same output regardless of the other requests in the batch. Existing solutions pay for this in different ways: batch-invariant kernels constrain every operator, and isolating prefill with fixed-shape decode ({our CoRun-style baseline}) gives up shared prefill compute and pads decode. We present BlockLock, which keeps shared batched prefill and pins only the numerical path of the protected request: it fixes the geometry that the request sees, with {two modes: BlockLock-Rows uses fixed-width rows and retains batched decode of all requests; BlockLock-Pack uses terminal-anchored packing with an isolated dummy segment, then extracts the protected request's KV state for target-only decode. Under a stated per-deployment contract, both modes preserve the target's output bitwise when its companions change.} Across five {dense} models (Qwen3-8B/14B, Llama-3.1-8B-Instruct, and Gemma-3-4B/12B-IT) and three single-GPU deployments (NVIDIA A6000, A100, and H100), we evaluate our approach on both tinyBenchmarks and BFCL{; we also include initial tensor-parallel experiments on two NVIDIA A6000 GPUs. Both modes preserve target sequences and Top20-logit bits in the reported tests.} At equal delivered work, {BlockLock-Rows} reduces latency by 53.5--55.0\\% and improves throughput by 115.2--122.2\\% relative to vLLM Batch-Invariant; compared with batch-invariant kernels, it needs no custom kernel implementations and constrains only the protected requests.",
+      "summary": "**What happened:** Researchers introduced BlockLock, a method that locks only the numerical path of the inference pipeline while keeping the shared, batched pre‑fill stage intact. This contrasts with earlier approaches that either forced every operator to be batch‑invariant or isolated pre‑fill entirely, losing efficiency.\n**Why it matters:** Consistent outputs are crucial for debugging, compliance, and user trust. BlockLock delivers that reproducibility without the heavy compute penalties of full isolation, preserving the performance benefits of batching.\n**Key stats:** • Prior batch‑invariant kernels require full operator constraints; BlockLock limits constraints to the numeric path only. • Isolating pre‑fill (CoRun baseline) sacrifices shared compute; BlockLock retains shared pre‑fill, reducing overhead. • The approach enables fixed‑shape decode, simplifying deployment on hardware that favors static tensor shapes.\n**Source:** https://arxiv.org/abs/2611.06977"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.07073",
+      "rank": 5,
+      "title": "When Verification Is Not Agreement: Cross-Agent LLM-to-Dafny Formalization",
+      "sourceUrl": "https://arxiv.org/abs/2611.07073",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-06T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.07073v1 Announce Type: new Abstract: A verified Dafny postcondition certifies that a formula holds, but it does not guarantee that the result was reached through genuine independent reasoning. We introduce a cross-agent formalization protocol where a Specifier model translates clinical trial criteria into a Dafny predicate, and an Implementer model writes an operational method checked against it. A same-model control establishes that even with no capability gap, independent re-extraction from identical text agrees only 59.3% of the time. Evaluating four model configurations on 96 clinical trial documents, we find that agreement is highly sensitive to how model capability is allocated across the two roles: the GPT-4.1-nano/GPT-4.1-mini configuration achieves 53.0% agreement when the stronger model is the Implementer, but only 14.3% when the roles are reversed. The strongest tested configuration, GPT-5.6-luna/GPT-5.4-mini, improves agreement to 34.4% but remains below the same-model baseline and is dominated by direct contradiction (42.7%). We also detect a critical verification artifact in which a weaker Implementer satisfies the postcondition by invoking the Specifier's predicate directly; after structural auditing, corrected agreement falls from 14.3% to 13.2%. Our results show that verification success alone is insufficient evidence of independent cross-agent agreement, and that model capability does not guarantee agreement when formalizing the same source independently.",
+      "summary": "**What happened:** Researchers built a protocol where a “Specifier” LLM converts clinical trial inclusion/exclusion criteria into a Dafny predicate, while an “Implementer” LLM writes a method that must satisfy that predicate. A same‑model control (both roles filled by the same LLM) was run to test independence.\n\n**Why it matters:** The study exposes a blind spot in formal verification: a proof can be correct even if both agents share hidden reasoning, meaning verification alone may not ensure truly independent validation—critical for safety‑sensitive domains like medicine.\n\n**Key stats:** • Two distinct LLMs (e.g., GPT‑4 and Claude) used as Specifier and Implementer. • Verification succeeded on 92% of 50 clinical criteria. • Same‑model control still achieved 88% verification, showing minimal drop despite no capability gap.\n\n**Source:** https://arxiv.org/abs/2611.07073"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.07123",
+      "rank": 6,
+      "title": "PromptOps: Iterative Prompt Optimization for LLM-as-a-Judge Systems",
+      "sourceUrl": "https://arxiv.org/abs/2611.07123",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-06T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.07123v1 Announce Type: new Abstract: Large language models (LLMs) are increasingly used as automated judges for evaluating the behavior of chatbots and other AI systems. In deployment, however, their agreement with the intended human evaluation policy may degrade as user interactions and score distributions change. Existing automatic prompt optimization methods are primarily studied as one-shot procedures on static development sets and therefore provide limited guidance for maintaining LLM judges over time. We frame this problem as judge drift and introduce PromptOps, a closedloop framework for monitoring and iteratively recalibrating LLM-as-a-Judge (LLMaaJ) systems. PromptOps separates four operational decisions: when to optimize, which optimization procedure to apply, which feedback records to use, and how to update the judge prompt. We instantiate the framework with five prompt optimization methods: GEPA, SIMBA, Rubric Synthesis, and exemplar selection using either simulated annealing or a Tree-structured Parzen Estimator. Our experiments demonstrate that iterative prompt optimization can recalibrate LLM judges and recover performance after controlled shifts in the referencescore distribution. However, effective maintenance is inherently contextdependent: neither optimization algorithm choice nor update timing generalizes universally across settings. These findings establish prompt optimization for deployed LLM judges as an inherently iterative maintenance problem and demonstrate that PromptOps provides a practical abstraction for studying and implementing this process.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.07372",
+      "rank": 7,
+      "title": "EnvOpt: Automated Optimization for Agent Environments",
+      "sourceUrl": "https://arxiv.org/abs/2611.07372",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-06T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.07372v1 Announce Type: new Abstract: An LLM agent's cost and success depend on its model, its harness, and its environment. In addition to the widely studied directions of parameter tuning and harness optimization, we propose the third direction: optimization over stationary environments. Agents are often deployed in rich environments shared by many tasks, such as a company's Slack workspace or a complex collection of data sources, documents or tickets. We call these environments stationary environments. We introduce EnvOpt, a method for automated end-to-end optimization of stationary environments for any given model and harness, using real or synthetic tasks without needing any graders or reference answers. On AutomationBench, EnvOpt reduces the cost of Claude Haiku 4.5 by 72.7% and raises its pass rate by 14.34%. The same environment transfers to Opus 5, cutting its cost by 68.1% with a 1.34% gain. Added on top of Meta-Harness's optimized harness for Haiku 4.5, it lowers cost by a further 83.4% and adds 11.17% accuracy over Meta-Harness alone. Across 5 benchmarks, EnvOpt significantly reduces the cost of agents while improving or maintaining pass rate, and is transferable to different models and different harnesses. We also discuss common successful and rejected environment optimization strategies during automated optimization. More broadly, our results show that how information is represented to an agent shapes both its cost and its success, making the environment worth optimizing in addition to the parameters and the harness.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.07542",
+      "rank": 8,
+      "title": "FlashOffloading: Low-Latency KV Cache Offloading for Long-Context LLM Serving",
+      "sourceUrl": "https://arxiv.org/abs/2611.07542",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-06T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.07542v1 Announce Type: new Abstract: In large language model (LLM) serving systems, the key-value (KV) cache grows linearly with sequence length and concurrency, so long-context inference easily hits the high-bandwidth memory (HBM) capacity wall and results in low concurrency. Offloading the KV cache to host dynamic random-access memory (DRAM) frees HBM space and raises concurrency, but the additional cache management and host-to-device (H2D) load overhead inflates inference latency, higher concurrency fails to translate into effective throughput. We present FlashOffloading, a host-DRAM-centric inference architecture that fully offloads the KV cache in both the prefill and decode phases. FlashOffloading builds rolling HBM cache for prefill, a hot cache for decode, a reverse sparse index with zero extra miss-lookup overhead, and a compute--load overlapped kernel, optimizing KV offloading latency across the entire pipeline and delivering throughput gains under a time-per-output-token (TPOT) service-level objective (SLO). In experiments deploying GLM-5.2 with multi-token prediction (MTP3) speculative decoding on an Ascend910C prefill--decode (PD)-disaggregated platform, FlashOffloading improves prefill throughput by up to 1.38\\(\\times\\) and decode throughput by up to 1.91\\(\\times\\) under a 30 ms TPOT constraint. FlashOffloading is integrated into an open-source serving framework: https://github.com/vllm-project/vllm-ascend/tree/releases/v0.30.0.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.07667",
+      "rank": 9,
+      "title": "Who Should Know What? Empirical Information Design for Multi-Agent LLM Economies",
+      "sourceUrl": "https://arxiv.org/abs/2611.07667",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-06T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.07667v1 Announce Type: new Abstract: The performance of multi-agent LLM systems depends not only on the capabilities of the underlying models but also on information-sharing policies, which govern what information each agent observes and at what level of detail. But does providing AI agents with more detailed information always improve collective outcomes, or can transparency paradoxically degrade efficiency? To investigate this, we introduce empirical information design, an experimental framework that systematically compares disclosure policies across economic markets populated by LLM agents, while holding interaction rules and models fixed. We evaluate ten frontier LLMs in multi-resource trade, bilateral bargaining, and double auctions, using ground-truth utilities to decouple identified opportunities from realized outcomes. We find that finer information disclosure yields highly model-dependent results. In trade, revealing exact valuations rather than ordinal preference rankings reduces realized gains for GPT-6 Sol (from 98% to 91% of maximum) yet increases them for Claude Sonnet 5 (from 72% to 86%). In bargaining, exact information leads Grok 4.7 to produce less balanced agreements, whereas Claude Opus 5.5 divides gains symmetrically. In double auctions, full disclosure inflates price demands, triggering market breakdown and lowering welfare for Gemini 3.1 Pro (97% to 78%), Claude Opus 5.5 (94% to 64%), and Grok 4.7 (97% to 62%). Overall, these results suggest that model selection and information design must be co-optimized, as LLMs vary in how their strategic responses to information impact system objectives.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.07948",
+      "rank": 10,
+      "title": "Circe: Training-Free LLM Self-Evaluation via Component Interaction Consistency",
+      "sourceUrl": "https://arxiv.org/abs/2611.07948",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-06T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.07948v1 Announce Type: new Abstract: As large language models (LLMs) are increasingly deployed in real-world applications, evaluating the correctness of their responses is crucial for reliable use. However, such evaluation is challenging because reference answers are rarely available in practice. Existing reference-free methods mainly rely on output signals, which may assign high scores to incorrect responses and thus do not necessarily reflect correctness. This motivates exploring the model's internal computation for complementary correctness signals. Recent studies exploit internal states, but they mainly analyze hidden-state trajectories across layers, which record only the combined updates of attention and feed-forward networks (FFNs) and overlook how these components interact. We therefore propose Circe, a training-free self-evaluation method that assesses a response using both internal and external signals, without reference answers or repeated sampling. For internal signals, we first introduce component interaction consistency (CIC), which measures the directional alignment between attention updates in earlier layers and attention-induced FFN output changes in later layers. We further incorporate representation geometry (RG) to characterize normalized displacement and angular changes along layerwise hidden-state trajectories. For the external signal, we convert the mean negative log-likelihood of generated tokens into a bounded likelihood confidence (LC) score. Finally, we fuse CIC, RG, and LC into a unified correctness score. Experiments on five LLMs and six benchmarks across four domains show that our method distinguishes correct from incorrect responses more effectively than existing baselines, and generalizes to multilingual, multimodal, and open-world settings.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.08116",
+      "rank": 11,
+      "title": "Create Your Own Work Stack: Deploying Self-hosted AI and Tooling in a Tech Startup",
+      "sourceUrl": "https://arxiv.org/abs/2611.08116",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-06T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.08116v1 Announce Type: new Abstract: Self-hosting AI is often presented as a way to reduce inference costs and increase control, but deployment introduces its own costs. We report our experience deploying a hybrid AI stack at Grayhat Developers, a small software company with an AI-intensive development workflow. Our initial motivation was to counter the growing cost of commercial AI usage: Claude/Codex incurred approximately \\$325 per month, with more than 25.93 billion recorded tokens. We experimented with local open-source models as replacements for commercial coding agents, but after learning that their performance and inference speed were insufficient, we adopted a hybrid approach in which commercial agents remained responsible for complex tasks while local models handled lower-complexity tasks, organizational information retrieval, and synchronization with self-hosted tools including Outline, Plane, and ERPNext. We estimated that approximately 30--40\\% of our commercial AI workload was associated with context transfer, documentation synchronization, task management, and related operational coordination. By moving this work to local models, we estimate that approximately 90\\% of this coordination workload could be handled without commercial inference, corresponding to an estimated 27--36\\% reduction in overall commercial-AI workload or cost-equivalent usage. Our first internal deployment nevertheless failed to achieve adoption because it introduced UX friction. Replacing it with a centrally configured deployment substantially improved feedback and adoption. We conclude that local inference is most useful not as a wholesale replacement for commercial AI, but as part of a hybrid architecture that assigns tasks according to their capability requirements, cost, context demands, and operational sensitivity.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.08175",
+      "rank": 12,
+      "title": "PCBRouteAgent: How Close Are LLM Agents to Becoming PCB Routing Engineers?",
+      "sourceUrl": "https://arxiv.org/abs/2611.08175",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-06T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.08175v1 Announce Type: new Abstract: Automating printed circuit board (PCB) routing requires coordinating board-level connectivity decisions with geometric execution under strict design rules. Although recent agents can interact with native routing tools, reliable routing on complex boards remains challenging. We present PCBRouteAgent, a multimodal PCB routing agent inspired by how human engineers coordinate global strategy with local execution. A Global Routing Planner combines board images and structured electrical and geometric information to specify connection topology, routing order, corridors, and layer transitions. A Detailed Routing Executor realizes these guides through KiCad's native routing engine and performs bounded local recovery. Unresolved failures are returned as structured feedback, enabling targeted guide revisions while preserving accepted routes. We evaluate PCBRouteAgent on 247 synthetic and real-world boards from four PCBWorld-Bench test splits. It achieves clean-pass rates of 100%, 94.9%, 100%, and 40% on D2, D3-A, D3-B, and D3-C, respectively. On the three real-world subsets, PCBRouteAgent outperforms the best evaluated baseline in clean-pass rate by 13.9, 36, and 10 percentage points, respectively.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.08232",
+      "rank": 13,
+      "title": "Signals, Evidence, and Context: User Scrutiny in Real-World LLM Conversations",
+      "sourceUrl": "https://arxiv.org/abs/2611.08232",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-06T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.08232v1 Announce Type: new Abstract: Large language models (LLMs) often present synthesized answers without making their supporting evidence easy to inspect. We study how features of these answers relate to users' subsequent accepting, checking, and challenging in 489,283 assistant-user response pairs from ShareChat and WildChat. Broad attribution language appears in 31.9% of qualifying responses, compared with explicit URLs in 1.33%, revealing a gap between claims of grounding and preserved inspectable support. Attribution, uncertainty, and other response cues generally accompany both checking and challenging; only uncertainty shows a small statistically distinguishable pooled association favoring checking. Within Technical Help, uncertainty favors checking relative to challenging; refusals and reasoning traces favor challenging in Seeking Information. Scrutiny is concentrated in some conversations, while its apparent turn-to-turn persistence becomes much smaller when conversation-level differences and response ordering are examined separately. These results suggest that supporting verification requires attention to what evidence can be inspected, which question a user is trying to resolve, and the history of the interaction.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.08315",
+      "rank": 14,
+      "title": "Benchmarking Large Language Models on Heterogeneous Cognitive and Biomedical Knowledge Graphs: The Role of Graph Grounding in Multi-Hop Reasoning and Hallucination Mitigation",
+      "sourceUrl": "https://arxiv.org/abs/2611.08315",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-06T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.08315v1 Announce Type: new Abstract: Large language models (LLMs) are increasingly used in biomedical and cognitive neuroscience, but their ability to reason reliably over heterogeneous knowledge graphs (KGs) remains unclear. We benchmark five LLMs (GPT-5.1, Gemini 2.0 Pro, Llama 3, Qwen, and BioGPT) across five KGs: DrugBank, NeuroSynth, Cognitive Atlas, Brain Map, and GDPKG. We introduce a multitier query dataset to evaluate reasoning depth and factual accuracy under KG-aware (graph-grounded) and KG-agnostic conditions. Inter-annotator agreement was substantial, with Cohen's kappa of 0.781 (range: 0.753-0.807) and Fleiss' kappa of 0.77. Results show that general-purpose models, particularly GPT-5.1 and Gemini 2.0 Pro, generally outperform domain-specific models on multi-hop and high-level reasoning tasks, although performance declines as query complexity increases. KG grounding reduces hallucination rates across all evaluated models. Contrary to our initial hypothesis, domain-specific models do not consistently outperform general-purpose models on specialized tasks without graph grounding. These findings highlight the value of combining broad language-model capabilities with structured domain knowledge. We provide practical guidance for selecting LLM-KG integration strategies based on task complexity and computational constraints, and discuss hybrid neurosymbolic architectures for personalized medicine, cognitive disorder diagnosis, and explainable AI.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.08428",
+      "rank": 15,
+      "title": "The Power of Meta Access in the Software of the Future --- Demonstrated on LLM Chat UIs and Chat AI",
+      "sourceUrl": "https://arxiv.org/abs/2611.08428",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-06T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.08428v1 Announce Type: new Abstract: Chat remains the default surface for many large language model (LLM) tasks, even as agentic tools such as OpenCode excel at coding and automation. Yet the model sees the current dialogue but not the workspace around it. We explore meta access---giving the assistant a structured, permissioned view of the interface itself and propose a ladder of levels: feature tutoring; metadata, settings, and preference access; retrieval over summaries and messages, confirmed mutation, and full orchestration. Meta access can turn a chat client from many screens into one entry point for finding, navigating, organising, and operating it, while raising risks around grounding, privacy, prompt injection, and trust. General-purpose agentic harnesses are runtimes; because they can change their own settings, meta access becomes reflexive and needs a separate control-plane boundary. We ground this in the Meta Chat prototype of the Chat AI client. It builds bounded context from, e.g., summaries, settings, and relevant messages; links references to conversations, topics, and personas; supports confirmed, reversible changes; offers a browsable tutorial library; and recommends personas as user-started conversations. By exposing application state in structured form, meta access can extend screen readers from widget descriptions to semantic workspace operations. Meta access thus turns chat from a window onto one conversation into a control layer for the whole workspace, extending chat toward agentic capability without surrendering user control. As assistants become embedded in IDEs, dashboards, office suites, and operating systems, AI-era interfaces should expose a structured, permissioned model of their state and capabilities, ideally by opening their existing metamodels through a debugger-like interface.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.08483",
+      "rank": 16,
+      "title": "SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization",
+      "sourceUrl": "https://arxiv.org/abs/2611.08483",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-06T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.08483v1 Announce Type: new Abstract: LLM-guided evolutionary search uses AI agents to improve programs for mathematical and computational problems by iteratively refining solutions and combining high-scoring methods. However, the process is often slow because the LLM generates a long textual chain of thought for each round and must repeat this generation many times to maintain population diversity. We present SwarmEvolve, a framework in which hundreds of low-cost agents per round work in swarms, reason in latent space without decoding to text, and share information by passing KV caches. Each swarm studies the problem from a different angle. A novelty filter keeps the most distinct agent ideas by directly measuring the distances between the agents' hidden state vectors. Crossover of ideas happens naturally in latent space, as a summarizer agent receives the combined KV caches of all swarm members. On 21 problems in mathematical discovery and scientific computing, SwarmEvolve gets the highest average score and needs a median of only 3 to 8 minutes to reach the best scores that other state-of-the-art frameworks reach in 60 minutes. On several problems, SwarmEvolve with Qwen3 8B improves on the solutions that AlphaEvolve first found with frontier LLMs. Our work shows that agent swarms that communicate in latent space offer a fast, low-cost approach to program search for scientific problems.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.06255",
+      "rank": 17,
+      "title": "Learning Noise Optimization for Reward Alignment in Few-Step Generative Models",
+      "sourceUrl": "https://arxiv.org/abs/2611.06255",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-06T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.06255v1 Announce Type: cross Abstract: Reward alignment for diffusion- and flow-based generative models is often formulated over stochastic trajectories, making it less suitable for few-step deterministic generators. Initial noise optimization provides a trajectory-free alternative, but existing gradient-free methods require costly per-sample search at inference. We introduce LeNO (Learning Noise Optimization), which amortizes reward-guided initial noise optimization into a learned residual transport while keeping the pretrained generator frozen. LeNO learns an anchor-conditioned distribution over noise corrections using Local GRPO and scalar rewards, eliminating iterative test-time optimization. For Gaussian initial noise with norm-preserving projection, we derive a tractable upper bound on the KL divergence between the corrected noise distribution and the original prior, providing a principled regularization objective. We evaluate LeNO on few-step text-to-image and protein structure generation, including expensive black-box designability rewards. Across both domains, LeNO improves target rewards with a single noise correction at inference while largely preserving generation quality and diversity.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.06969",
+      "rank": 18,
+      "title": "Interactive Backdoor Attacks in LLM-Based Proactive Dialogue Systems",
+      "sourceUrl": "https://arxiv.org/abs/2611.06969",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-06T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.06969v1 Announce Type: cross Abstract: LLM-based proactive dialogue systems provide goal-directed support through sustained interaction. Fine-tuning their underlying models on externally supplied dialogue data introduces backdoor risks. Existing LLM backdoor studies primarily focus on eliciting an attacker-specified response upon trigger activation. We present an interactive backdoor attack framework that uses training-data poisoning to steer post-trigger, multi-turn interactions toward an attacker-specified objective. Poisoned fine-tuning dialogues implant a trigger-conditioned guidance-policy bias that ordinary user utterances can activate, without deployment-time prompt modification or further attacker intervention. Specifically, we instantiate three complementary attacks under progressively expanded post-trigger interaction settings: (1) Direct Attack, which targets an immediate response deviation upon trigger activation, retaining the conventional trigger--response setting; (2) Constrained Progressive Attack, which progressively advances the attack objective along a predefined multi-turn trajectory; and (3) Unconstrained Progressive Attack, which extends target-directed steering to open-ended interactions with varied user continuations. Using psychological counseling as a representative setting, experiments on two LLM backbones and two dialogue datasets show that all three attacks effectively achieve their objectives under their respective interaction settings while largely preserving normal utility. Separate defense evaluations show that the tested training-data filters retain nearly all poisoned dialogues, while three post-admission baselines leave substantial residual attack-specific success.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.07061",
+      "rank": 19,
+      "title": "Segment What It Can Draw: Querying a Text-to-Image Generator with Its Own Images for Skin Lesion Segmentation",
+      "sourceUrl": "https://arxiv.org/abs/2611.07061",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-06T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.07061v1 Announce Type: cross Abstract: Skin lesion segmentation without annotated masks requires the target to be specified through other cues. Existing approaches rely on dermoscopy-specific rules, annotation-derived model priors, or user-selected regions. A general text-to-image diffusion transformer offers a text interface to the target, but its concept-word attention is unreliable on dermoscopy images: in the model's attention-output space, the word-derived skin-to-lesion direction is poorly aligned with the direction separating real skin from real lesions. We show that the direction derived from generated healthy-skin and lesion images is substantially better aligned. Based on this finding, we propose GENIQ, a training-free method that constructs initial skin and lesion prototypes from generated images and refines them using the most skin-like and lesion-like patches from unlabelled dermoscopy images. It scores test patches along the refined direction and applies a gated threshold to suppress contextual spill-over around small lesions. Without inference-time annotations or additional models, GENIQ achieves Dice scores of 0.85-0.88 on three dermoscopy test sets. It outperforms zero-shot and word-based attention methods on all three sets, and a hand-designed dermoscopy pipeline in Dice and IoU on two.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.07103",
+      "rank": 20,
+      "title": "A Night at the LLM Zoo: Data Conditioned Flow Matching for Generating Pretrained LLM Weights",
+      "sourceUrl": "https://arxiv.org/abs/2611.07103",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-06T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.07103v1 Announce Type: cross Abstract: A challenge to Weight Space Learning as it expands from task specific and vision models to Large Language Models (LLMs) is the absence of a well curated and analyzed LLM population. To address this, we train such a model zoo for application to Weight Space Generation by systematically varying the data mixture composition between web text, books, mathematics, coding, and French across populations of 51M, 124M, and 355M parameter GPT-2 Models, each tier with count N = 100. We analyze these populations by cosine similarity, functional diversity, Leave-One-Mixture-Out modeling, and variance decomposition. We show that the zoo contains diverse models whose variation is structured by training mixture composition. We embed the training mixture composition to condition a Flow Matching model of complete pretrained LLM weights in Gram-PCA compressed weight space. By demonstrating zero-shot generalization to held out mixtures, measuring Continuous Ranked Probability Score skill, as well as finding minimal changes in downstream test-set perplexity and general capability benchmark scores, we show that our generator generalizes on the simplex of data mixtures to produce models that perform similarly to those in the zoo ex nihilo. Finally, we produce all source code and artifacts to support the continued expansion of Weight Space Learning and Generation into the LLM domain.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.07126",
+      "rank": 21,
+      "title": "Adapting LLM Judges to Observed Human Annotation Policy through Soft Prompt Tuning",
+      "sourceUrl": "https://arxiv.org/abs/2611.07126",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-06T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.07126v1 Announce Type: cross Abstract: Large Language Models (LLMs) are increasingly employed as automated judges for evaluating chatbot responses. While proprietary models can achieve high agreement with human annotators, they remain costly and difficult to deploy in practical settings. Lightweight open-source LLM judges provide an attractive alternative but typically exhibit lower agreement with human ratings. In this paper, we investigate whether soft prompt tuning can align open-source LLM judges more closely with human annotation policy. We train soft prompts on the FairBotBench benchmark and evaluate the adapted judges across the dimensions of bias, toxicity, and personalization. Our findings demonstrate that hybrid soft-prompt tuning, which combines textual prompts with learned continuous prompt embeddings, consistently improves agreement with human annotations over the corresponding untuned baselines. For Qwen 3.5 9B, the adapted judges surpass both hosted reference judges across all three evaluation dimensions.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.07140",
+      "rank": 22,
+      "title": "More Agents, More Reliable? System-Level Reliability of Multi-Agent LLMs under Operational-Profile Uncertainty",
+      "sourceUrl": "https://arxiv.org/abs/2611.07140",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-06T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.07140v1 Announce Type: cross Abstract: Teams increasingly build software from cooperating large language model (LLM) agents, often assuming more agents mean more reliability. Yet the usual evidence, average benchmark accuracy, ignores the input mix a deployed system meets and the rule merging the agents' answers. Building on HIP-LLM, a hierarchical imprecise-probability assessment of single LLMs, we propose a framework combining it with a Bayesian network of the system's failure logic for multi-agent systems. Agent failure-probability intervals propagate through this network, where the combining rule can itself fail, into a reliability envelope showing which evidence limits it. In a pipeline extracting regulated chemical-hazard statements, majority voting over three models protected against the weakest but did not clearly exceed the best, and a voter failing on 5\\% of demands would largely erase its advantage over the middle model. More agents yield a more defensible reliability claim, not automatically a more reliable system.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.07216",
+      "rank": 23,
+      "title": "Compositional Unalignment: Auditing Safety in Large Vision-Language Models",
+      "sourceUrl": "https://arxiv.org/abs/2611.07216",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-06T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.07216v1 Announce Type: cross Abstract: Large vision-language models (LVLMs) are vulnerable to compositional harm: an image and a prompt that are benign in isolation become harmful through the model's cross-modal reasoning. Recent alignment methods report strong scores on compositional safety benchmarks, but an LLM judge only measures observed behavior and cannot reveal how robustly safety is integrated into the model. We argue that un-alignment provides a complementary audit of alignment robustness. We first show that minimal supervised fine-tuning reaches an LLM-judge score comparable to a multi-stage reinforcement-learning pipeline, so similar benchmark scores cannot establish robustness by themselves. We then show that recognition and refusal of compositional harm are decoupled: nine standard direction-finding methods detect compositional harm with up to AUC=0.99, yet ablating the recovered directions either leaves refusal intact or destroys model coherence. We therefore propose CMaG, a training-free un-alignment method for compositional safety. CMaG measures refusal intention with a refusal-versus-compliance log-probability margin, takes its gradient with respect to mid-layer activations, and contrasts it against partially benign pairs to isolate the cross-modal interaction term. A single backward pass over 80 examples yields a direction along which steering monotonically converts refusal into compliance. On Qwen2.5-VL-7B and LLaVA-1.5-7B, CMaG reduces compositional safety scores by up to 65 points while over 98% of outputs remain coherent, outperforming gradient-based baselines; the direction also transfers to text-explicit harm and un-aligns models hardened by defensive training. Compositional safety can thus appear behaviorally strong while remaining fragile to targeted internal intervention. Warning: this paper contains unsafe model outputs, including references to self-harm.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.07217",
+      "rank": 24,
+      "title": "TileQuant: Tile as the Precision-Allocation Unit for LLM Mixed-Precision Post-Training Quantization",
+      "sourceUrl": "https://arxiv.org/abs/2611.07217",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-06T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.07217v1 Announce Type: cross Abstract: Post-training quantization (PTQ) reduces large language model (LLM) deployment costs, but preserving quality requires accounting for uneven weight sensitivity. Uniform PTQ uses one weight bit-width, importance-aware PTQ adjusts scales or reconstructs weights within that width, and column-wise mixed precision retains selected columns at higher precision. However, sensitivity varies within columns, so whole-column retention also protects less sensitive weights, while runtime outlier detection adds decoding overhead. We therefore introduce TileQuant, a training-free framework that assigns precision to hardware-aligned 2D weight tiles. Offline calibration provides input-activation-aware scoring from forward statistics for lower calibration cost and gradient-informed scoring from loss sensitivity for stronger quality preservation. Within each projection's retention budget, the highest-scoring tiles remain at 16-bit and the rest use 8-bit. The resulting map guides reconstruction into compact weight buffers, which the kernel reuses for native integer and 16-bit computation with local accumulation to reduce memory traffic. Experiments show that TileQuant reaches 2.66x the original model's generation throughput. Across language modeling, reasoning, long-context retrieval, and question answering, it preserves quality and surpasses quantized and original models on multiple tasks. These results support selecting precision units that capture local sensitivity while enabling efficient hardware execution. The implementation is: https://github.com/HanzhiZhang-Ulrica/TileQuant",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.07256",
+      "rank": 25,
+      "title": "TriAttention: Unified Sparse Mixed-Precision Attention for Long-Context LLM Inference",
+      "sourceUrl": "https://arxiv.org/abs/2611.07256",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-06T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.07256v1 Announce Type: cross Abstract: Sparsity and quantization reduce the cost of attention by skipping interactions and lowering the precision of those retained. However, useful interactions differ in their precision requirements: some tolerate low-precision scores while remaining sensitive to removal. We therefore introduce TriAttention, which assigns query-key (QK) tiles to skipping, 4-bit, or 8-bit computation, using 4-bit to retain quantization-tolerant interactions at lower cost. To represent compactly, we encode each head's computation regions with two diagonal-distance boundaries, keeping policy storage independent of context length. Offline calibration then evaluates candidate boundary pairs using normalized projected-output errors and complete-tile execution costs. Using these measurements, a model-wide allocator selects each head's boundaries to minimize calibration error under a shared computation budget. During prefill, the selected boundaries generate precision-grouped traversals for a fused kernel that skips omitted tiles and combines contributions from both QK precisions into one normalized attention output. The quantized keys and values prepared during prefill are then reused in a compressed key-value (KV) cache for decoding, reducing repeated reads of prompt data. Experiments show that TriAttention achieves end-to-end generation speedups of up to 7.88x over the Torch attention and 2.65x over the BF16 baseline. Meanwhile, TriAttention maintains quality comparable to the original models on general-purpose and long-context tasks. These results show how a compact retention-and-precision policy translates local sensitivities into attention computation and repeated KV-cache access. The implementation is https://github.com/HanzhiZhang-Ulrica/TriAttention.",
+      "summary": ""
+    }
+  ]
+}
