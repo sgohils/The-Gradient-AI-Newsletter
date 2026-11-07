@@ -1698,8 +1698,32 @@
       "platforms": {
         "youtube": {
           "accountId": "6ac27146281ee799a37065e4",
-          "status": "prepared",
-          "idempotencyKey": "93f9cdf0-6ca6-4164-ad8d-bc3ed8801c87"
+          "status": "submitting",
+          "idempotencyKey": "93f9cdf0-6ca6-4164-ad8d-bc3ed8801c87",
+          "request": {
+            "content": "Meet *sshole, the vulnerability that lets hackers SSH into Linux devices\n\nSource: Ars Technica AI\nhttps://arstechnica.com/security/2026/11/vulnerability-allows-attackers-to-log-into-some-linux-devices-sans-password/\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-07\nAI-generated narration. #AI #AINews #Shorts",
+            "mediaItems": [
+              {
+                "type": "video",
+                "url": "https://media.zernio.com/temp/1794072526286_7b9ff29e9219b893_2026-11-07.mp4"
+              }
+            ],
+            "platforms": [
+              {
+                "platform": "youtube",
+                "accountId": "6ac27146281ee799a37065e4",
+                "platformSpecificData": {
+                  "title": "Meet *sshole, the vulnerability that lets hackers",
+                  "visibility": "public",
+                  "madeForKids": false,
+                  "containsSyntheticMedia": true,
+                  "categoryId": "28"
+                }
+              }
+            ],
+            "publishNow": true
+          },
+          "firstSubmittedAt": "2026-11-07T17:28:49.732Z"
         }
       },
       "script": {
