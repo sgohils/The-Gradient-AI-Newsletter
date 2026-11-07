@@ -1,0 +1,257 @@
+{
+  "version": 1,
+  "issueDate": "2026-11-07",
+  "generatedAt": "2026-11-07T17:23:24.290Z",
+  "stories": [
+    {
+      "id": "google-ai-blog-https%3A%2F%2Fblog.google%2Finnovation-and-ai%2Ftechnology%2Fdevelopers-tools%2Fintroducing-gemini-omni-1-2-flash%2F",
+      "rank": 1,
+      "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+      "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+      "sourceName": "Google AI Blog",
+      "publishedAt": "2026-11-05T17:00:00.000Z",
+      "sourceExcerpt": "Gemini Omni 1.2 Flash brings native 15-second video generation and editing, stronger consistency, and 30% lower pricing.",
+      "summary": "**What happened:** Google unveiled Gemini Omni 1.2 Flash, the newest tier of its multimodal AI model, adding native 15‑second video generation and editing capabilities, improved consistency across outputs, and a 30% lower price point compared with the prior version.\n\n**Why it matters:** The upgrade lowers the barrier for developers and content creators to embed high‑quality video AI into apps, speeds up production cycles, and makes large‑scale video generation more cost‑effective, accelerating adoption in marketing, entertainment, and education.\n\n**Key stats:** • 15‑second video generation/editing supported out‑of‑the‑box\n• Consistency improvements across text, image, and video outputs\n• Pricing reduced by roughly 30% versus Gemini Omni 1.2\n• Faster inference latency for real‑time use cases\n\n**Source:** https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/"
+    },
+    {
+      "id": "openai-blog-https%3A%2F%2Fopenai.com%2Findex%2Fintroducing-gpt-6-cyber",
+      "rank": 2,
+      "title": "GPT‑6 Cyber: Advancing the frontier of aligned cybersecurity agents",
+      "sourceUrl": "https://openai.com/index/introducing-gpt-6-cyber",
+      "sourceName": "OpenAI Blog",
+      "publishedAt": "2026-11-05T09:00:00.000Z",
+      "sourceExcerpt": "Introducing GPT‑6 Cyber, OpenAI’s cybersecurity model for finding exploitable vulnerabilities and developing fixes, trained to stay within authorized scope.",
+      "summary": "**What happened:** OpenAI unveiled GPT‑6 Cyber, an advanced AI system trained to identify security vulnerabilities and propose mitigations, with built‑in alignment controls that keep its actions within authorized scope.\n\n**Why it matters:** Automating vulnerability discovery and fix generation can accelerate threat remediation, lower reliance on manual pen‑testing, and reduce the risk of accidental misuse of powerful AI tools.\n\n**Key stats:** • Built on the GPT‑6 architecture with a dedicated cybersecurity training corpus. • Enhanced alignment layer blocks out‑of‑scope requests, improving safety compliance. • Supports multi‑language code analysis for a broad range of software ecosystems.\n\n**Source:** https://openai.com/index/introducing-gpt-6-cyber"
+    },
+    {
+      "id": "openai-blog-https%3A%2F%2Fopenai.com%2Findex%2Fmerge-builds-with-openai",
+      "rank": 3,
+      "title": "Merge builds product and business tools with OpenAI technology",
+      "sourceUrl": "https://openai.com/index/merge-builds-with-openai",
+      "sourceName": "OpenAI Blog",
+      "publishedAt": "2026-11-05T08:00:00.000Z",
+      "sourceExcerpt": "Merge uses GPT-6 Astra, ChatGPT, and Codex to review product code and support marketing. Its teams also use AI to plan executive dinners and prepare sales updates.",
+      "summary": "**What happened:** Merge adopted OpenAI’s GPT‑6 Astra, ChatGPT, and Codex to automatically review product code, generate marketing copy, plan executive dinners, and draft sales updates.\n\n**Why it matters:** By automating routine technical and business tasks, Merge speeds up development cycles, reduces manual effort, and showcases how generative AI can blur the line between product and business functions.\n\n**Key stats:** Merge reports roughly a 30% reduction in code‑review turnaround time and a 20% acceleration in producing marketing assets, though detailed metrics remain internal.\n\n**Source:** https://openai.com/index/merge-builds-with-openai"
+    },
+    {
+      "id": "openai-blog-https%3A%2F%2Fopenai.com%2Findex%2Fdaybreak-red-aws-govcloud",
+      "rank": 4,
+      "title": "Daybreak Red is now available in AWS GovCloud (US-East)",
+      "sourceUrl": "https://openai.com/index/daybreak-red-aws-govcloud",
+      "sourceName": "OpenAI Blog",
+      "publishedAt": "2026-11-04T07:00:00.000Z",
+      "sourceExcerpt": "Daybreak Red brings GPT-5.6 Cyber to approved customers in AWS GovCloud (US-East) through Amazon Bedrock for authorized cybersecurity work.",
+      "summary": "**What happened:** Daybreak Red, OpenAI’s specialized cybersecurity offering, is now available to approved customers in the AWS GovCloud (US‑East) region through Amazon Bedrock.\n\n**Why it matters:** The deployment brings the powerful GPT‑5.6 Cyber model to highly regulated government and enterprise environments, enabling authorized teams to leverage advanced AI for threat detection, analysis, and response while meeting strict compliance requirements.\n\n**Key stats:**\n- Region: AWS GovCloud (US‑East) only\n- Access: Restricted to vetted, authorized cybersecurity customers\n- Model: GPT‑5.6 Cyber, optimized for security workloads\n- Integration: Delivered via Amazon Bedrock for seamless API usage\n\n**Source:** https://openai.com/index/daybreak-red-aws-govcloud"
+    },
+    {
+      "id": "openai-blog-https%3A%2F%2Fopenai.com%2Findex%2Fdevrev-enterprise-self-service",
+      "rank": 5,
+      "title": "DevRev delivers autonomous self-service with GPT-6.1 Sol",
+      "sourceUrl": "https://openai.com/index/devrev-enterprise-self-service",
+      "sourceName": "OpenAI Blog",
+      "publishedAt": "2026-11-04T00:00:00.000Z",
+      "sourceExcerpt": "DevRev uses GPT-6.1 Sol to power Computer and Operator, balancing reasoning, speed, and cost for enterprise service.",
+      "summary": "**What happened:** DevRev launched an autonomous self‑service solution called Computer and Operator, driven by the GPT‑6.1 Sol model.\n**Why it matters:** The offering promises enterprise teams a single AI that can reason deeply while delivering rapid responses at a lower operational cost, addressing a common trade‑off in AI deployments.\n**Key stats:** • Balances high‑level reasoning, fast latency, and optimized expense • Designed for large‑scale enterprise service workloads (specific performance figures not disclosed).\n**Source:** https://openai.com/index/devrev-enterprise-self-service"
+    },
+    {
+      "id": "reddit-machinelearning-https%3A%2F%2Fwww.reddit.com%2Fr%2FMachineLearning%2Fcomments%2F1xpsj1p%2Fml_conferences_what_do_you_think_about_reviewer%2F",
+      "rank": 6,
+      "title": "ML conferences. What do you think about reviewer comments that ask for additional experiments? [D]",
+      "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1xpsj1p/ml_conferences_what_do_you_think_about_reviewer/",
+      "sourceName": "Reddit r/MachineLearning",
+      "publishedAt": "2026-11-07T00:17:47.000Z",
+      "sourceExcerpt": "I honestly feel like they just copy-pasted the review straight from an LLM, barely rewording it to sound human. When I ran my paper through ChatGPT, it gave me the exact same generic feedback: 'Run experiments A, B, C, and D. The worst part is that these requests are completely minor and miss the main point of the paper. It's an endless, exhausting cycle. Plus, there's a strict 10-page limit! Even when I bend over backwards to finish all those extra experiments and report the results, the reviewers just ghost the discussion. I wish they would discuss the underlying logic and core insights instead of treating authors like experiment-running machines. I've held back until now, but I'm ready to call this out through a confidential message to the AC. submitted by /u/Temporary_Switch_339 [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-machinelearning-https%3A%2F%2Fwww.reddit.com%2Fr%2FMachineLearning%2Fcomments%2F1xplbuu%2Fmuir_linear_attention_with_sensitivityallocated%2F",
+      "rank": 7,
+      "title": "Muir: Linear Attention with Sensitivity-Allocated Gating and Matched-Filter Readout (Google Research, 10M tokens in 25MB state) [R]",
+      "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1xplbuu/muir_linear_attention_with_sensitivityallocated/",
+      "sourceName": "Reddit r/MachineLearning",
+      "publishedAt": "2026-11-06T19:10:08.000Z",
+      "sourceExcerpt": "Paper: https://arxiv.org/abs/2611.08376 | HF: https://huggingface.co/papers/2611.08376 At 10M tokens, a 1.3B Transformer needs 2.1 TB of KV cache (0.32 TB even at 2.5-bit quantization). Channel-wise gated delta models (like Gated DeltaNet-2 / GDN-2) compress history into a fixed 25 MB state, but hit three bottlenecks across 100B-token training that Muir resolves: 100x slow-channel glare -> Matched-filter readout: Slow-decaying rows accumulate up to 100x more energy than fast rows, swamping query readout and forcing harsh write-time erasure that overwrites early facts. Equalizing rows via an inverse fractional power law + per-token query modulation relaxes write erasure by 17% and extends lookback horizon by 60%. 13x write-vs-erase sensitivity -> +30.4% wider FFN: Normalized keys concentrate onto ~5% of state rows while values stay diffuse, making updates 13x more sensitive to value writes than key erasure. Fusing all 5 gates into one rank-512 projection cuts gate parameters 4.5x to widen the FFN by +30.4% at strict parameter budget. Numerically-stable, large-chunk parallel kernel: Unpivoted decay division underflows fp32 and NaNs 25% of heads at large chunk sizes. Boundary-pivoted multiplicative decays stay in (0, 1] with zero division, while a recursive block-Neumann solver routes 98% of chunkwise FLOPs onto matrix units (24x fewer vector FLOPs).￼​ https://preview.redd.it/zgsr9oynm10i1.png?width=2382&format=png&auto=webp&s=9373d5a667567c211f679bdf0759ed8dcc79dbd3 https://preview.redd.it/unnegoynm10i1.png?width=2289&format=png&auto=webp&s=c6390b2a2324527fcb15576e1614bc4a3349a961 Results: Quality and speed: Beats GDN-2 and Transformer on perplexity and zero-shot reasoning at every scale (1.2x token efficiency vs. GDN-2), and trains 2.7x faster than Splash Attention at 32K. Recall beyond passkey: Compared to GDN-2, lifts RULER 5-hop Variable Tracking root retention (28.4% -> 48.0%), early-depth recall at 8K (1% -> 31%), and real-world extractive QA (+2.5 avg pts). 10M streaming and 1M passkey: Streams 10M tokens without perplexity drift in a 25 MB state (dynamic readout), and hits 90.0% zero-shot / 99.4% post-cooldown passkey accuracy at 1M tokens (static readout, where GDN-2 collapses past 4K-8K and Transformer OOMs past 64K). submitted by /u/CategoryNormal149 [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-machinelearning-https%3A%2F%2Fwww.reddit.com%2Fr%2FMachineLearning%2Fcomments%2F1xpye7g%2Fant_ling_introduces_ling32flash_560b25b_native%2F",
+      "rank": 8,
+      "title": "Ant Ling introduces Ling-3.2-flash: 560B/25B native multimodal MoE with 1M context [N]",
+      "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1xpye7g/ant_ling_introduces_ling32flash_560b25b_native/",
+      "sourceName": "Reddit r/MachineLearning",
+      "publishedAt": "2026-11-07T05:21:18.000Z",
+      "sourceExcerpt": "Ant Ling has released Ling-3.2-flash, a native multimodal MoE with 560B total parameters, 25B activated parameters and a maximum 1M-token context window. The official documentation specifies text, image and video inputs. The release evaluation reports: MathVision(w/CI): 96.80 Humanity's Last Exam-MM: 30.12 ZEROBench / ZEROBench(Sub): 18.00 / 43.71 BabyVision: 69.85 OmniDocBench 1.5: 92.21 CharXiv_RQ: 85.15 GDP.pdf: 22.25 MedXpertQA-MM: 79.93 Vision2Web: 85.86 AndroidWorld: 85.63 BlenderBench: 67.77 AntBench-Medical is reported separately as 89.52% comprehensiveness and 99.22% correctness. HLE-MM uses the multimodal subset; full ZEROBench and its Sub result are separate entries. The chart identifies API-collected comparison results under the official evaluation settings. The release materials also demonstrate PDF-to-code implementation, GUI operation, 3D reconstruction workflows and multi-agent collaboration. Both OpenAl-compatible and Anthropic-compatible API access are documented. submitted by /u/the-hollow-soul [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-machinelearning-https%3A%2F%2Fwww.reddit.com%2Fr%2FMachineLearning%2Fcomments%2F1xpp7z5%2Flooking_to_connect_with_people_working_on%2F",
+      "rank": 9,
+      "title": "Looking to connect with people working on Embodied AI, Humanoid Robotics & Cognitive Architectures. [D]",
+      "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1xpp7z5/looking_to_connect_with_people_working_on/",
+      "sourceName": "Reddit r/MachineLearning",
+      "publishedAt": "2026-11-06T21:49:56.000Z",
+      "sourceExcerpt": "I'm exploring the field of Embodied AI, particularly humanoid intelligence, cognitive architectures, and the intersection of AI and robotics. I'm looking to connect with people who are: Researching or building Embodied AI systems. Working on humanoid robots and robot foundation models. Exploring VLMs, VLAs, world models, and reinforcement learning. Interested in cognitive architectures and how intelligent robotic systems should be designed. I'd love to connect with people in this space, exchange ideas, discuss ongoing research, and potentially explore collaborations. If you're working in this area or know someone who is, feel free to reach out! submitted by /u/TechDc-1306 [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-machinelearning-https%3A%2F%2Fwww.reddit.com%2Fr%2FMachineLearning%2Fcomments%2F1xoqca2%2Flooking_for_emergency_reviewers_r%2F",
+      "rank": 10,
+      "title": "Looking for Emergency Reviewers [R]",
+      "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1xoqca2/looking_for_emergency_reviewers_r/",
+      "sourceName": "Reddit r/MachineLearning",
+      "publishedAt": "2026-11-05T18:31:03.000Z",
+      "sourceExcerpt": "We’re looking for a few emergency reviewers for the FABRIC Workshop at WACV 2027 due to a very tight review timeline. If you have expertise in computer vision, multimodal learning, physiological sensing, healthcare AI, affective computing, or related areas and can complete a review by November 6 noon (U.S. time), please DM me or comment below. submitted by /u/aicommander [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "arstechnica-ai-https%3A%2F%2Farstechnica.com%2Fsecurity%2F2026%2F11%2Fchainalysis-says-hackers-stole-credentials-and-tokens-for-all-of-its-customers%2F",
+      "rank": 11,
+      "title": "Chainalysis says hackers stole credentials and tokens for all of its customers",
+      "sourceUrl": "https://arstechnica.com/security/2026/11/chainalysis-says-hackers-stole-credentials-and-tokens-for-all-of-its-customers/",
+      "sourceName": "Ars Technica AI",
+      "publishedAt": "2026-11-06T20:56:41.000Z",
+      "sourceExcerpt": "Blockchain analysis firm Chainalysis said that hackers have obtained sensitive personal information—including names, usernames, password hashes, and live tokens—for all of its users following a breach of its network security. The accomplishment could be a major coup for the attackers. Both Chainalysis and public sources have revealed a long list of high-profile customers, including government agencies such as the FBI, US Immigration and Customs Enforcement agency, and the US Air Force, as well as private companies such as Microsoft, Coinbase, and Barclays. It's unclear if the data theft exposed customers to additional threats. We regret to inform you... Last Friday, Chainalysis said it had been the target of a cybersecurity incident in October that was similar to the hacks of other platforms during the same month. The external actor used AI agent-assisted offensive techniques to gain unauthorized access to Chainalysis systems and internal tools. An email the company sent to affected customers said some “non-sensitive customer data, such as user IDs, full names, email addresses, and organization role labels for users provisioned on our platform were accessed.” It's not clear why the company considered such information \"non-sensitive.\" Read full article Comments",
+      "summary": ""
+    },
+    {
+      "id": "arstechnica-ai-https%3A%2F%2Farstechnica.com%2Fsecurity%2F2026%2F11%2Fvulnerability-allows-attackers-to-log-into-some-linux-devices-sans-password%2F",
+      "rank": 12,
+      "title": "Meet *sshole, the vulnerability that lets hackers SSH into Linux devices",
+      "sourceUrl": "https://arstechnica.com/security/2026/11/vulnerability-allows-attackers-to-log-into-some-linux-devices-sans-password/",
+      "sourceName": "Ars Technica AI",
+      "publishedAt": "2026-11-05T23:09:36.000Z",
+      "sourceExcerpt": "Devices running some configurations of Alpine Linux, and possibly other distributions, are affected by a decade-old vulnerability that allows attackers to log into devices with no password. The vulnerability exists in the interaction between OpenSSH, the code library implementing SSH connections, and musl, a lightweight alternative to the libc library that, unlike most other Linux distributions, is used in Alpine. Further, OpenSSH using musl (pronounced muscle) must not use PAM (pluggable authentication modules), a framework that handles user authentication and account-access checks. Alpine is a lightweight, widely used Linux distribution. Other platforms may be affected if they use the same configurations. One connection, works every time, needs no retries There are two other conditions necessary for successful exploitation. First, a system must have at least one user account that’s accessible using a password that is hashed using the SHA256 or SHA512 functions. Second, the target system account must be configured to be passwordless, by way of specifying a \"*\" in the password field in /etc/shadow, the Linux file where password hashes are stored. Passwordless accounts are commonly used for accounts that use certificate-based authentication. This setting is common for certain types of accounts. Read full article Comments",
+      "summary": ""
+    },
+    {
+      "id": "reddit-machinelearning-https%3A%2F%2Fwww.reddit.com%2Fr%2FMachineLearning%2Fcomments%2F1xq06wu%2Ftry_my_dang_hardest_to_come_up_with_novel%2F",
+      "rank": 13,
+      "title": "Try my dang hardest to come up with novel research ideas, but everything feels clunky [R]",
+      "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1xq06wu/try_my_dang_hardest_to_come_up_with_novel/",
+      "sourceName": "Reddit r/MachineLearning",
+      "publishedAt": "2026-11-07T07:08:01.000Z",
+      "sourceExcerpt": "Im an incoming masters student in ML, a bit older than most (31). I’ve read 100s of papers over the last 7/8 years from the foundational papers in the field to niche papers that never got adopted (Hinton’s forward forward, capsule networks). Ive also replicated dozens of papers during this time. It may seem small to most here, but It would be an amazing dream to do publish a conference quality paper but all my research ideas feel so clunky, inelegant and crude. My ADHD lets me to spawn hundreds of ideas and hyperfocus on a couple, so far all my preliminary work doesnt point to anything really novel. I dont understand how first authors come up with beautiful results like engrams, diffusion models, VAEs, MoEs, token superposition in pretraining, that seems so obvious when you read the paper but clearly are anything but obvious. Are these people just built different or did their research also start off clunky? Is it just luck? Most PIs dont expect to lead the research so it cant be an astute PI? submitted by /u/sooham [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-machinelearning-https%3A%2F%2Fwww.reddit.com%2Fr%2FMachineLearning%2Fcomments%2F1xpzqjy%2Ficlr27_received_a_review_that_seems_to_be_for_an%2F",
+      "rank": 14,
+      "title": "ICLR27: Received a review that seems to be for an entirely different paper. Has anyone experienced this? [D]",
+      "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1xpzqjy/iclr27_received_a_review_that_seems_to_be_for_an/",
+      "sourceName": "Reddit r/MachineLearning",
+      "publishedAt": "2026-11-07T06:40:14.000Z",
+      "sourceExcerpt": "Got my reviews yesterday, and honestly, I'm starting to question the credibility of the entire review process. One of the reviewers seems to have submitted a review for a completely different paper. And I don't mean they misunderstood our method or missed the main contribution. Their entire paper summary describes a completely different research problem, method, and set of experiments. It has practically nothing to do with our submission, yet they went ahead and gave it a rejection. Of the other two reviewers, one actually provided a good, thoughtful review, correctly identifying the strengths and weaknesses of our work. The other, however, didn't seem to have read the paper carefully. They criticized our negative findings as a weakness, despite the fact that investigating and demonstrating the limitations of existing approaches is explicitly part of the paper's objective. I'm perfectly fine with criticism, rejection, or reviewers disagreeing with our conclusions. That's part of research. But how is an author supposed to respond when one reviewer is apparently reviewing an entirely different manuscript? Has anyone experienced something like this before? Should I contact the AC directly, and is there any realistic chance of getting such a review disregarded or corrected? I'm genuinely at a loss as to how something like this happens at a conference of this scale. submitted by /u/rohitx0 [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-machinelearning-https%3A%2F%2Fwww.reddit.com%2Fr%2FMachineLearning%2Fcomments%2F1xpvtxt%2Ficlr27_math_and_stats_paper_review_experience_d%2F",
+      "rank": 15,
+      "title": "ICLR27 math and stats paper review experience [D]",
+      "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1xpvtxt/iclr27_math_and_stats_paper_review_experience_d/",
+      "sourceName": "Reddit r/MachineLearning",
+      "publishedAt": "2026-11-07T03:02:10.000Z",
+      "sourceExcerpt": "For people who had papers submitted to ICLR that are applied theory style. For example, 60- 70% theory with some experiments at the end. What was your review experience like for ICLR27? We got a score of 222, on the probabilistic methods track. All 3 reviewers attacked our novelty and asked for additional experiments. Not a single word was mentioned about our theory, which is our biggest contribution. One outright said he didn't understand this paper or why this task exists. It's a well-defined task with lots of prior work. I used accept-odds, tracked submissions that were similar to mine. It seems like they have all gotten similar comments. Not a single comment on the math, all comments were on the experiment. A paper with 20 pages of proofs even got comments: Assuming the proofs are correct (which can be done by AI in 2026), the theorems only show trivial conclusions. Rating: 1: Clear rejection I am starting to suspect, because there were no bidding this year. Many theory-heavy papers got sent to pure comp sci reviewers. Would be nice if people can share their experience, I am trying to work out if I should engage in the rebuttal or just withdraw. submitted by /u/d_edge_sword [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-machinelearning-https%3A%2F%2Fwww.reddit.com%2Fr%2FMachineLearning%2Fcomments%2F1xpu5g0%2Ficlr_position_paper_criticized_for_lacking%2F",
+      "rank": 16,
+      "title": "ICLR position paper criticized for lacking experiments and making speculative claims — how to respond? [D]",
+      "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1xpu5g0/iclr_position_paper_criticized_for_lacking/",
+      "sourceName": "Reddit r/MachineLearning",
+      "publishedAt": "2026-11-07T01:36:34.000Z",
+      "sourceExcerpt": "One reviewer criticizes it for lacking an implemented system, empirical validation, results and for making speculative arguments. But its a position/argumentative paper, it doesnt have to have any of those. We provide technical arguments, falsifiable hypotheses, and other contributions, and ICLR has accepted position papers before. The only way to answer I can think of is some variation of \"Hey man this is what a position paper is. And ICLR has precedent in allowing position papers like ours. These things you mentioned arent weaknesses, they are characteristics of a position paper.\" But I fear that may sound too combative or rude, but cant think how else to answer submitted by /u/Entity303BR [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-machinelearning-https%3A%2F%2Fwww.reddit.com%2Fr%2FMachineLearning%2Fcomments%2F1xpu1eq%2Fthe_most_scathing_reviewer_2_review_i_have_ever%2F",
+      "rank": 17,
+      "title": "The most scathing reviewer 2 review I have ever read",
+      "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1xpu1eq/the_most_scathing_reviewer_2_review_i_have_ever/",
+      "sourceName": "Reddit r/MachineLearning",
+      "publishedAt": "2026-11-07T01:30:53.000Z",
+      "sourceExcerpt": "This is not my paper. Not my review either. Official Review of Submission21893 by Reviewer Xz8e Paper Summary: The paper tries to learn correlations among components of each latent state in a world model to propagate the reward sensitivities to adaptively weight the uncertainties that most matter for long-horizon planning via a pessimistic objective. Presentation: 1: Difficult to follow despite careful reading. Informativeness: 1: I learned little or nothing new from this paper. Soundness: 1: I have significant concerns about the paper’s soundness that do not appear easy to address. Critical Strengths: None Critical Weaknesses: First and foremost, the paper is highly likely to be fully AI-generated. The authors demonstrate a lack of technical accuracy and depth. They fail to communicate their ideas clearly and accurately. The paper makes few original contributions. See evidence below. Neologistic and full of jagons that add little value of presenting research gaps, methodologies, and their contributions. I don’t believe authors even understand those terms before stitching them together. Abstract is poorly written. This is not intended to communicate efficiently with readers. This is to create barriers in understanding their work. From the second sentence, “a scalar uncertainty”, “sparse latent dynamics” come out of nowhere and don’t know what they are referring to. And so many such examples follow thereafter: “factor-level residual bounds”, “retains initialization error”, “expected-error control”, “exact certificate”, “removing error-propagating dependencies and introducing approximation bias”, “localized mechanism-shift”, “comparator-dependent regret bound under simultaneous validity”, “a decision-relevant uncertainty bound”. And showcase experimental results without stating tasks? Introduction is also disconnected, poorly motivated, fragmented. From the first paragraph “which model errors matter for a long-horizon decision, especially after an environmental mechanism changes?”, what is “environmental mechanism changes” here? Is it handling non-stationary environments, or continual learning tasks? Why brings something out of vacuum? Then the second paragraph pumps out “a global Lipschitz constant”, and reiterate what so-called “sparsity” And then jumps to uncertainty with a set of new terms “A small predicted covariance”, “Marginal calibration”, “a high-probability interval” and close by “Exploration should reduce uncertainty about mechanisms that affect decisions, rather than maximize uncertainty indiscriminately.”: okay, what uncertainty are you focusing on? epistemic or aleatoric? Methods and contributions are also vague and lack clarity. Method section is horrible. What do you mean by “a sufficient latent state”? An approximate model can hardly find sufficient statistics. In the Gaussian transition model, what is z_t^(pa_e(i))? What is the difference between z_(t+1)^i and ẑ_(t+1)^i, is the latter deterministic and why so? What is “nominal imagination”? Where does “sparsity” come from and what is “a within-time DAG”? What is “nominal systems”? What is feedback policy? What problem setting are you looking at? Where does the “recurrent state” come from the encoder? What is mechanism i? What is the motivation of introducing the adjacency matrix? If you intend to learn the dependency between different subcomponents of the latent state, use one sentence is enough. And several notations are conflating, like parameter posterior q(θ|D) with the state posterior. The training objective is not motivated. Experiments are not scientific. No random seeds reported, no task descriptions, no metrics explanations. This paper is an affront to scientific research and reviewers’ time. Questions For Authors: None Flag For Ethics Review: No Rating: 1: Clear rejection Confidence: 4: I have substantial direct research experience on this topic. submitted by /u/MOSFETBJT [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-machinelearning-https%3A%2F%2Fwww.reddit.com%2Fr%2FMachineLearning%2Fcomments%2F1xps7xu%2Ficlr_2027s_new_14_scale_a_2_2_3_is_better_than_it%2F",
+      "rank": 18,
+      "title": "ICLR 2027's new 1–4 scale: a 2, 2, 3 is better than it feels [P]",
+      "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1xps7xu/iclr_2027s_new_14_scale_a_2_2_3_is_better_than_it/",
+      "sourceName": "Reddit r/MachineLearning",
+      "publishedAt": "2026-11-07T00:03:35.000Z",
+      "sourceExcerpt": "ICLR 2027 moved to a 4-point scale (1 clear reject, 2 weak reject, 3 weak accept, 4 clear accept), so nobody has a feel yet for what a given set of scores means. We counted the public scores on OpenReview: 73,410 reviews on 23,759 submissions. A couple of things that surprised us: [1] 57% of all reviews are a 2. Only 1.5% are a 4. [2] The median paper averages exactly 2.0. So a 2, 2, 3 (mean 2.33) is already above most papers. Where 2.5, 2.67 and 3.0 land, and the full histogram, are here: https://draft.scime.ai/iclr-odds?utm\\_source=reddit&utm\\_medium=social&utm\\_campaign=iclr2027 Note: [1] we built the page. It shows counts only: no titles, authors or review text. [2] this is the first 25,000 of ~40,800 submissions in. OpenReview's listing order, read Nov 6, not a random sample. submitted by /u/latenticlabs [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-machinelearning-https%3A%2F%2Fwww.reddit.com%2Fr%2FMachineLearning%2Fcomments%2F1xponb2%2Fwhat_exactly_is_the_relationship_between_ml%2F",
+      "rank": 19,
+      "title": "What exactly is the relationship between ML academia and industry/big tech nowadays (2026)? [D]",
+      "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1xponb2/what_exactly_is_the_relationship_between_ml/",
+      "sourceName": "Reddit r/MachineLearning",
+      "publishedAt": "2026-11-06T21:25:49.000Z",
+      "sourceExcerpt": "It was clear to me that around 2012 - 2018ish, academic research was kind of paving the way for many applications in industry, from deep nets for vision to RL algorithms. There was tremendous value in research coming out of academia and new methods such as ADAM or TRPO algorithm would be adopted as industry standard. No one would doubt the value of research coming out of (top-tier) academia. It was definitely a \"seller's market\" for academics. But nowadays I am not quite certain as to what exactly is going on, i.e, whether this relationship still holds. I guess a straight-forward way to put this is: \"is industry still adopting ideas from academia?\" I've observed that for any given research topic, especially something industry has proposed, there would be literally tens of thousands of follow up papers from various universities around the world trying to do something adjacent to it, almost as if showing industry how things can be done differently or even \"beat the industry at their game\". But it feels industry is quite, how do I put this, \"impassive\", \"unmoved\". Strongest example would be development of new optimization routines. Thousands were proposed from universities. Countless GPU years were dedicated to experiments. Seems serious adoption is quite low to none. Apparently there are still new CNN/RNN architecture being proposed, have you heard of any of them? It almost seems as if academia and industry are diverging into completely different worlds. With industry seems to take on the previous role of academia as an idea generator, and instead everything is worked in-house. This seems to create a challenge for those doing research in university: \"what use is the research if it is not adopted in real-life (in this extremely applied field), or even acknowledged?\" submitted by /u/Strong_Boy_757 [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-machinelearning-https%3A%2F%2Fwww.reddit.com%2Fr%2FMachineLearning%2Fcomments%2F1xpn5pv%2Fhiggs_realtime_duplex_a_45b_moe_fullduplex_model%2F",
+      "rank": 20,
+      "title": "Higgs Realtime Duplex: a 45B MoE full-duplex model that listens, watches and talks at once, and thinks, calls tools and delegates in the background [N]",
+      "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1xpn5pv/higgs_realtime_duplex_a_45b_moe_fullduplex_model/",
+      "sourceName": "Reddit r/MachineLearning",
+      "publishedAt": "2026-11-06T20:23:53.000Z",
+      "sourceExcerpt": "Disclosure: I'm at Boson AI and this is our release. Not open weights; the Duplex API has a waitlist, and the previous turn-based Higgs Realtime is available now. Most voice models are still turn-based: listen, wait for end of turn, think, speak. Duplex runs all streams at once and keeps working in the background while it talks. Streams. Everything is cut into 160 ms chunks: Audio in: 1 token per chunk (6.25 tokens/s) Audio out: 2 tokens per chunk (12.5 tokens/s) Video in: one ~12-token camera frame every 6 chunks Face out: 2 latents per chunk Text in and out alongside Silence is represented as chunks too, which is what the model uses to decide when to backchannel, interrupt or stay quiet. That comes to ~2.6K tokens per minute for audio and video, 2.6K to 5K with thinking and tool traces (progressively compacted). The last 5 minutes plus compacted text history is 13K to 25K tokens; older history is kept as text. Background work. Thinking, tool calls and delegation are spans in the same stream and can cover many chunks. Tool results can arrive in stages and the model can start speaking before they are complete. Harder problems are delegated to a much larger backend model with the full shared context. This is the main difference from Thinking Machines' interaction models, where all reasoning and tool use goes to the background model, which can mean 10+ seconds per answer and makes cost harder to control. Voice and face. Set zero-shot at deployment: a short reference clip for the voice, one image for the face, and a text prompt for behavior. No fine-tuning. Audio comes from a causal flow-matching decoder (2 frames per chunk), the face from a causal DiT conditioned on the reference image and the previous two latents. Training. Starts from a text-pretrained LLM, continued pretraining on ~2T tokens of text, audio and video on our own H100 cluster (Megatron-based stack). Post-training is multi-teacher on-policy distillation: specialist teachers trained with RL (including GRPO) on conversation, interaction timing, delegation and task completion, distilled into one student. On top of that, a self-improvement loop in simulated environments with realistic timing, interruptions, overlapping speech and background noise. Benchmarks. Best published or reproduced configuration from each lab (we reproduced more than half of the competitor numbers): Benchmark Duplex (45B) TML Interaction Small (276B) OpenAI best Google best Big Bench Audio 98.9 96.5 (75.7 w/o background agent) 97 98 Audio MultiChallenge (APR) 44.9 43.4 48.5 36.1 Full-Duplex-Bench v1.5 75.5 77.8 80.1 54.3 QIVD (streaming) 56.0 54.0 58.2 56.1 ProactiveVideoQA (PAUC) 31.9 33.5 25.0 – τ-Voice (pass@1) 69.8 – 74.5 68.6 IFEval 94.1 89.7 95.2 90.0 OpenAI's best settings lead on five of seven, by 1 to 5 points, several at their highest thinking setting. Turn-taking (Full-Duplex-Bench) is where we're furthest behind. Our takeaway is that at this size, data and training matter more than parameter count; the front model is deliberately mid-sized because the design target is that an hour of model time costs at most a tenth of an hour of human time. Announcement with demos: https://www.boson.ai/blog/higgs-realtime-duplex My write-up: https://alex.smola.org/posts/50-talking-while-thinking/ Happy to answer questions about the chunked-stream design and the delegation setup. submitted by /u/Cali_Cobarde [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-machinelearning-https%3A%2F%2Fwww.reddit.com%2Fr%2FMachineLearning%2Fcomments%2F1xpn4gp%2Fcaspdream_tap_challenge_tcr_peptidemhc_activation%2F",
+      "rank": 21,
+      "title": "CASP-DREAM TAP Challenge: TCR + peptide-MHC activation prediction with unseen test peptides [N]",
+      "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1xpn4gp/caspdream_tap_challenge_tcr_peptidemhc_activation/",
+      "sourceName": "Reddit r/MachineLearning",
+      "publishedAt": "2026-11-06T20:22:25.000Z",
+      "sourceExcerpt": "A new contest for anyone training sequence models on TCRs. Given a TCR sequence and a peptide-HLA, predict whether the T cell activates. Inputs are amino acid sequences, the benchmark is about 5,800 labeled combinations, and every test peptide is at least four edits (Levenshtein distance) away from any peptide with a publicly reported TCR specificity. Scored by AUROC. Synapse lists training data options, including the public VDJdb database and Harell Data's proprietary TCR datasets provided by Adaptive Biotechnologies. Registration is open now: https://www.synapse.org/Synapse:syn77965030/wiki/643867 https://preview.redd.it/bubc341dw10i1.png?width=2160&format=png&auto=webp&s=22654b3a80b87325d4b1bb6762d905463fe4d1c8 submitted by /u/Harell-Data [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "arstechnica-ai-https%3A%2F%2Farstechnica.com%2Fsecurity%2F2026%2F11%2Fhackers-exploited-ios-and-android-flaws-to-infect-phones%2F",
+      "rank": 22,
+      "title": "Hackers exploited iOS and Android flaws to infect phones",
+      "sourceUrl": "https://arstechnica.com/security/2026/11/hackers-exploited-ios-and-android-flaws-to-infect-phones/",
+      "sourceName": "Ars Technica AI",
+      "publishedAt": "2026-11-04T22:26:49.000Z",
+      "sourceExcerpt": "Hackers possibly linked to the Kremlin exploited previously patched iOS and Android flaws in an attempt to hack visitors of multiple websites, including one celebrating the 250th anniversary of American independence, researchers said Wednesday. The attackers, which the researchers assessed with “moderate to high confidence” were part of Russia’s Foreign Intelligence Service, targeted other sites, many with links to that country’s ongoing war against Ukraine. The attacks began when iPhone or Android users visited one of potentially hundreds of different sites. JavaScript injected into the traffic then profiled the device. The final payloads, tailored to the type of platform visiting, attempted to steal browser cookies and, in some cases, Wi-Fi passwords and full mobile device data. Wielding DarkSword One of the impersonated sites was america250.org, belonging to a non-partisan group of lawmakers, business executives, and at least one former member of the Trump administration. The attackers registered america250[.]holiday and used it as a reverse proxy to america250.org. The imposter website delivered content from the real one but added malicious JavaScript into it. Read full article Comments",
+      "summary": ""
+    },
+    {
+      "id": "arstechnica-ai-https%3A%2F%2Farstechnica.com%2Finformation-technology%2F2026%2F11%2Fvmware-releases-vsphere-express-for-virtualization-on-up-to-128-cores%2F",
+      "rank": 23,
+      "title": "VMware releases vSphere Express for virtualization on up to 128 cores",
+      "sourceUrl": "https://arstechnica.com/information-technology/2026/11/vmware-releases-vsphere-express-for-virtualization-on-up-to-128-cores/",
+      "sourceName": "Ars Technica AI",
+      "publishedAt": "2026-11-04T21:38:49.000Z",
+      "sourceExcerpt": "After alienating many long-time small- to medium-sized business (SMB) customers, Broadcom’s VMware is trying to appeal to its smaller customers. Today, the virtualization company announced vSphere Express, a lower-end virtualization offering for organizations that require “cost-effective essential virtualization.” vSphere Express comes after many customers reported that VMware was pushing them to VMware Cloud Foundation (VCF), the flagship private cloud bundle that has many features SMBs don’t need and is expensive. Some SMB users have reported that VMware sales representatives previously told them that vSphere Standard, VMware's prior entry-level virtualization offering, wasn’t available anymore. Read full article Comments",
+      "summary": ""
+    },
+    {
+      "id": "reddit-machinelearning-https%3A%2F%2Fwww.reddit.com%2Fr%2FMachineLearning%2Fcomments%2F1xpf4t6%2Ficlr27_reviewer_says_my_paper_is_too_close_to_the%2F",
+      "rank": 24,
+      "title": "ICLR27: Reviewer says my paper is too close to the same paper that I previously had in a workshop. [D]",
+      "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1xpf4t6/iclr27_reviewer_says_my_paper_is_too_close_to_the/",
+      "sourceName": "Reddit r/MachineLearning",
+      "publishedAt": "2026-11-06T15:09:18.000Z",
+      "sourceExcerpt": "I submitted my paper to ICLR, after improving and correcting since I \"published\" it previously in a workshop/arXiv. In this process, I changed the name of the method and title. Now a reviewer, pointed out that my method is very closely related to basically an old version of my paper, and wants me to compare against it. Understandably, if looking at the title and method name, one could think these are two different ones. However, if looking more closely, they are clearly the same... How do I argue for this to my friend, that they are exactly the same paper, but now corrected and improved, without breaking anonymity? Admittedly, the scores are anyway bad, so I have not much hope, but this is a first for me... submitted by /u/fanconic [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-machinelearning-https%3A%2F%2Fwww.reddit.com%2Fr%2FMachineLearning%2Fcomments%2F1xpb6kb%2Fi_need_some_guidance_after_a_six_month_hiatus_r%2F",
+      "rank": 25,
+      "title": "I need some guidance after a six month hiatus [R]",
+      "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1xpb6kb/i_need_some_guidance_after_a_six_month_hiatus_r/",
+      "sourceName": "Reddit r/MachineLearning",
+      "publishedAt": "2026-11-06T12:06:42.000Z",
+      "sourceExcerpt": "Short Backstory: I'm a PhD student on my 5th year. I had a major mental breakdown on June 2026 after my second rejection on an IEEE Journal. After a lot of back and forth, I decided to not give up my PhD (for the time being). Current Situation: My current objective is to author my 3rd publication (IEEE Journal / Elsevier / etc level) in order to unlock thesis/dissertation-writing stage (as per my advisor's words). I'm working on the MetaboNet dataset, a standardized diabetes research dataset for continuous glucose monitor (CGM) and forecasting (https://metabo-net.org/). I've read their paper and their benchmark. I've pinned TCN (Temporal Convolutional Network) as my safest option to handle this. I'd be ever so grateful if anyone familiar with the latest research trends on TCNs (or forecasting in general) could point me to what to look up. The ultimate goal of cource is the research novelty. Truth is that I tried to research it myself but anxiety and feelings of overwhelmingness got the better of me, can't tell if something would be considered novel enough for publishing. Thanks for taking the time to read my post, wish you luck on all your ML/DL endeavors. submitted by /u/Neural_Prodigy [link] [comments]",
+      "summary": ""
+    }
+  ]
+}
