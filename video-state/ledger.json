@@ -1738,7 +1738,7 @@
       "platforms": {
         "youtube": {
           "accountId": "6ac27146281ee799a37065e4",
-          "status": "submitting",
+          "status": "published",
           "idempotencyKey": "a7b645b5-5673-4082-b668-0cf85b2cc6f2",
           "request": {
             "content": "What if diffusion models generates Neural Network weights? Gen AI generate Gen AI [R]\n\nSource: Reddit r/MachineLearning\nhttps://www.reddit.com/r/MachineLearning/comments/1xqsl8d/what_if_diffusion_models_generates_neural_network/\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-08\nAI-generated narration. #AI #AINews #Shorts",
@@ -1763,7 +1763,9 @@
             ],
             "publishNow": true
           },
-          "firstSubmittedAt": "2026-11-08T17:39:49.340Z"
+          "firstSubmittedAt": "2026-11-08T17:39:49.340Z",
+          "postId": "6af0b3e66651dc7da7bb6b4a",
+          "postUrl": "https://www.youtube.com/watch?v=0ZKasqBK-No"
         }
       },
       "script": {
