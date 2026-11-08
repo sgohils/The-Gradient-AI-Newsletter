@@ -996,7 +996,7 @@
         "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1xkp8e9/are_there_fundamental_repeating_patterns_in_ml/",
         "sourceName": "Reddit r/MachineLearning",
         "publishedAt": "2026-11-01T00:07:04.000Z",
-        "sourceExcerpt": "I’ve been noticing that a lot of techniques seem to repeat across modalities with just a different name. For example, tokenisation, masking (MLM / MAE / audio masking), diffusion, next-token / next-frame prediction, etc. Is there an existing taxonomy or mental model that groups ML techniques by their underlying pattern rather than by modality (NLP / vision / audio)? This will help me to group the research papers and then make reference to work already done in that domain submitted by /u/OkCampaign8400 [link] [comments]",
+        "sourceExcerpt": "",
         "summary": ""
       },
       "selectedAt": "2026-11-01T17:40:17.265Z",
@@ -1005,87 +1005,10 @@
           "accountId": "6ac27146281ee799a37065e4",
           "status": "published",
           "idempotencyKey": "78db83f0-eb1c-4344-b99f-6599fc6deecc",
-          "request": {
-            "content": "Are there fundamental repeating patterns in ML techniques across modalities (text, image, audio) that let us group them? [R]\n\nSource: Reddit r/MachineLearning\nhttps://www.reddit.com/r/MachineLearning/comments/1xkp8e9/are_there_fundamental_repeating_patterns_in_ml/\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-01\nAI-generated narration. #AI #AINews #Shorts",
-            "mediaItems": [
-              {
-                "type": "video",
-                "url": "https://media.zernio.com/temp/1793554852032_bdb0851930e5519e_2026-11-01.mp4"
-              }
-            ],
-            "platforms": [
-              {
-                "platform": "youtube",
-                "accountId": "6ac27146281ee799a37065e4",
-                "platformSpecificData": {
-                  "title": "Are there fundamental repeating patterns in ML",
-                  "visibility": "public",
-                  "madeForKids": false,
-                  "containsSyntheticMedia": true,
-                  "categoryId": "28"
-                }
-              }
-            ],
-            "publishNow": true
-          },
           "firstSubmittedAt": "2026-11-01T17:40:54.790Z",
           "postId": "6ae779a80839a2561f6a861f",
           "postUrl": "https://www.youtube.com/watch?v=Mq_brnxzqZE"
         }
-      },
-      "script": {
-        "version": 3,
-        "provider": "extractive",
-        "format": "source-fallback",
-        "angle": "capability",
-        "workingTitle": "Are there fundamental repeating patterns in ML",
-        "availability": "research",
-        "hookStyle": "question",
-        "sentences": [
-          {
-            "text": "Would you use Are there fundamental repeating?",
-            "evidenceQuote": "I’ve been noticing that a lot of techniques seem to repeat across modalities with just a different name. For example, tokenisation, masking (MLM / MAE / audio masking), diffusion, next-token / next-frame prediction, etc. Is there an existing taxonomy or mental model that groups ML techniques by their underlying pattern rather than by modality (NLP / vision / audio)? This will help me to group the research papers and then make reference to work already done in that domain submitted by /u/OkCampaign8400 [link] [comments]",
-            "role": "hook",
-            "visual": "example",
-            "displayText": "Would you use Are there fundamental repeating?"
-          },
-          {
-            "text": "I’ve been noticing that a lot of techniques seem to repeat across modalities with just a different name.",
-            "evidenceQuote": "I’ve been noticing that a lot of techniques seem to repeat across modalities with just a different name.",
-            "role": "breakthrough",
-            "visual": "example",
-            "displayText": "I’ve been noticing that a lot of techniques"
-          },
-          {
-            "text": "For example, tokenisation, masking (MLM / MAE / audio masking), diffusion, next-token / next-frame prediction, etc.",
-            "evidenceQuote": "For example, tokenisation, masking (MLM / MAE / audio masking), diffusion, next-token / next-frame prediction, etc.",
-            "role": "breakthrough",
-            "visual": "process",
-            "displayText": "For example, tokenisation, masking (MLM / MAE /"
-          },
-          {
-            "text": "Is there an existing taxonomy or mental model that groups ML techniques by their underlying pattern rather than by modality (NLP / vision / audio)?",
-            "evidenceQuote": "Is there an existing taxonomy or mental model that groups ML techniques by their underlying pattern rather than by modality (NLP / vision / audio)?",
-            "role": "breakthrough",
-            "visual": "process",
-            "displayText": "Is there an existing taxonomy or mental model"
-          },
-          {
-            "text": "This source excerpt does not confirm public access.",
-            "evidenceQuote": "I’ve been noticing that a lot of techniques seem to repeat across modalities with just a different name.",
-            "role": "impact",
-            "visual": "highlight",
-            "displayText": "does not confirm public access"
-          },
-          {
-            "text": "Would you try Are there fundamental repeating, or wait for more proof?",
-            "evidenceQuote": "I’ve been noticing that a lot of techniques seem to repeat across modalities with just a different name. For example, tokenisation, masking (MLM / MAE / audio masking), diffusion, next-token / next-frame prediction, etc. Is there an existing taxonomy or mental model that groups ML techniques by their underlying pattern rather than by modality (NLP / vision / audio)? This will help me to group the research papers and then make reference to work already done in that domain submitted by /u/OkCampaign8400 [link] [comments]",
-            "role": "engagement",
-            "visual": "highlight",
-            "displayText": "Would you try Are there fundamental repeating"
-          }
-        ],
-        "narration": "Would you use Are there fundamental repeating? I’ve been noticing that a lot of techniques seem to repeat across modalities with just a different name. For example, tokenisation, masking (MLM / MAE / audio masking), diffusion, next-token / next-frame prediction, etc. Is there an existing taxonomy or mental model that groups ML techniques by their underlying pattern rather than by modality (NLP / vision / audio)? This source excerpt does not confirm public access. Would you try Are there fundamental repeating, or wait for more proof?"
       },
       "presentation": {
         "title": "Are there fundamental repeating patterns in ML",
@@ -1798,6 +1721,97 @@
         "publicUrl": "https://media.zernio.com/temp/1794072526286_7b9ff29e9219b893_2026-11-07.mp4",
         "videoSha256": "e5baae20302344529c6073911c5c14566883bf7fbe19b417bc6acf51154985c8",
         "uploadedAt": "2026-11-07T17:28:48.345Z"
+      }
+    },
+    "2026-11-08": {
+      "story": {
+        "id": "reddit-machinelearning-https%3A%2F%2Fwww.reddit.com%2Fr%2FMachineLearning%2Fcomments%2F1xqsl8d%2Fwhat_if_diffusion_models_generates_neural_network%2F",
+        "rank": 7,
+        "title": "What if diffusion models generates Neural Network weights? Gen AI generate Gen AI [R]",
+        "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1xqsl8d/what_if_diffusion_models_generates_neural_network/",
+        "sourceName": "Reddit r/MachineLearning",
+        "publishedAt": "2026-11-08T07:20:37.000Z",
+        "sourceExcerpt": "I'have been dreaming about using a Diffusion Model that will generates Weights instead of pixels. Diffusion models actually are vast used in order to generate from a natural language text description into images, and what is an image? a three dimensional matrix of value representig luminosity of red , green and blue. What if instead of matrix of colour intensity we train a diffusion model in order to create a neural network, and maybe a drawing NN too. If it works you can ask something like: \"create me a neural network that will guide a pen in order to draw a man\" \"create a NN of a game field where i have two paddle on left and right side of the field and a bounching ball...\"....to create Pong and in the future more complex scenarios! I made, with the help of z.ai zcode and their fantastic GLM model a small POC that i published on my github: https://github.com/vagrillo/nngen It's a very small experimental implementation , but somenthing seems to work! I have not find paper on similar implementation ad I'm asking the community to help me to find one, and to have contribution on this . I also made a small webapp in order to test the trained model (actually i'm only on half training path 3000/4000 steps finished, but i'm using my poor laptop CPU at the moment) This is some screenshot of preliminary results. (the best results achieved, in truth) https://preview.redd.it/kje7wxpkac0i1.png?width=654&format=png&auto=webp&s=32c15d73aa4ea9e1460cce6b1947b850b7ee31bf https://preview.redd.it/86uno8kmac0i1.png?width=659&format=png&auto=webp&s=5e20d5c3b481342c77746339d237dbb3ebd0738e submitted by /u/Specific-Tax-6700 [link] [comments]",
+        "summary": ""
+      },
+      "selectedAt": "2026-11-08T17:39:11.662Z",
+      "platforms": {
+        "youtube": {
+          "accountId": "6ac27146281ee799a37065e4",
+          "status": "prepared",
+          "idempotencyKey": "a7b645b5-5673-4082-b668-0cf85b2cc6f2"
+        }
+      },
+      "script": {
+        "version": 3,
+        "provider": "extractive",
+        "format": "source-fallback",
+        "angle": "capability",
+        "workingTitle": "What if diffusion models generates Neural Network",
+        "availability": "research",
+        "hookStyle": "question",
+        "sentences": [
+          {
+            "text": "Would you use What if diffusion models?",
+            "evidenceQuote": "I'have been dreaming about using a Diffusion Model that will generates Weights instead of pixels. Diffusion models actually are vast used in order to generate from a natural language text description into images, and what is an image? a three dimensional matrix of value representig luminosity of red , green and blue. What if instead of matrix of colour intensity we train a diffusion model in order to create a neural network, and maybe a drawing NN too. If it works you can ask something like: \"create me a neural network that will guide a pen in order to draw a man\" \"create a NN of a game field where i have two paddle on left and right side of the field and a bounching ball...\"....to create Pong and in the future more complex scenarios! I made, with the help of z.ai zcode and their fantastic GLM model a small POC that i published on my github: https://github.com/vagrillo/nngen It's a very small experimental implementation , but somenthing seems to work! I have not find paper on similar implementation ad I'm asking the community to help me to find one, and to have contribution on this . I also made a small webapp in order to test the trained model (actually i'm only on half training path 3000/4000 steps finished, but i'm using my poor laptop CPU at the moment) This is some screenshot of preliminary results. (the best results achieved, in truth) https://preview.redd.it/kje7wxpkac0i1.png?width=654&format=png&auto=webp&s=32c15d73aa4ea9e1460cce6b1947b850b7ee31bf https://preview.redd.it/86uno8kmac0i1.png?width=659&format=png&auto=webp&s=5e20d5c3b481342c77746339d237dbb3ebd0738e submitted by /u/Specific-Tax-6700 [link] [comments]",
+            "role": "hook",
+            "visual": "example",
+            "displayText": "Would you use What if diffusion models?"
+          },
+          {
+            "text": "I'have been dreaming about using a Diffusion Model that will generates Weights instead of pixels.",
+            "evidenceQuote": "I'have been dreaming about using a Diffusion Model that will generates Weights instead of pixels.",
+            "role": "breakthrough",
+            "visual": "example",
+            "displayText": "Dreaming about using a Diffusion Model that will"
+          },
+          {
+            "text": "a three dimensional matrix of value representig luminosity of red , green and blue.",
+            "evidenceQuote": "a three dimensional matrix of value representig luminosity of red , green and blue.",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "A three dimensional matrix of value representig luminosity"
+          },
+          {
+            "text": "Reddit r/MachineLearning says What if instead of matrix of colour intensity it train a diffusion model in order to create a neural network, and maybe a drawing NN too.",
+            "evidenceQuote": "What if instead of matrix of colour intensity we train a diffusion model in order to create a neural network, and maybe a drawing NN too.",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "Reddit r/MachineLearning says What if instead of matrix"
+          },
+          {
+            "text": "This source excerpt does not confirm public access.",
+            "evidenceQuote": "I'have been dreaming about using a Diffusion Model that will generates Weights instead of pixels.",
+            "role": "impact",
+            "visual": "highlight",
+            "displayText": "does not confirm public access"
+          },
+          {
+            "text": "Would you try What if diffusion models, or wait for more proof?",
+            "evidenceQuote": "I'have been dreaming about using a Diffusion Model that will generates Weights instead of pixels. Diffusion models actually are vast used in order to generate from a natural language text description into images, and what is an image? a three dimensional matrix of value representig luminosity of red , green and blue. What if instead of matrix of colour intensity we train a diffusion model in order to create a neural network, and maybe a drawing NN too. If it works you can ask something like: \"create me a neural network that will guide a pen in order to draw a man\" \"create a NN of a game field where i have two paddle on left and right side of the field and a bounching ball...\"....to create Pong and in the future more complex scenarios! I made, with the help of z.ai zcode and their fantastic GLM model a small POC that i published on my github: https://github.com/vagrillo/nngen It's a very small experimental implementation , but somenthing seems to work! I have not find paper on similar implementation ad I'm asking the community to help me to find one, and to have contribution on this . I also made a small webapp in order to test the trained model (actually i'm only on half training path 3000/4000 steps finished, but i'm using my poor laptop CPU at the moment) This is some screenshot of preliminary results. (the best results achieved, in truth) https://preview.redd.it/kje7wxpkac0i1.png?width=654&format=png&auto=webp&s=32c15d73aa4ea9e1460cce6b1947b850b7ee31bf https://preview.redd.it/86uno8kmac0i1.png?width=659&format=png&auto=webp&s=5e20d5c3b481342c77746339d237dbb3ebd0738e submitted by /u/Specific-Tax-6700 [link] [comments]",
+            "role": "engagement",
+            "visual": "highlight",
+            "displayText": "Would you try What if diffusion models"
+          }
+        ],
+        "narration": "Would you use What if diffusion models? I'have been dreaming about using a Diffusion Model that will generates Weights instead of pixels. a three dimensional matrix of value representig luminosity of red , green and blue. Reddit r/MachineLearning says What if instead of matrix of colour intensity it train a diffusion model in order to create a neural network, and maybe a drawing NN too. This source excerpt does not confirm public access. Would you try What if diffusion models, or wait for more proof?"
+      },
+      "presentation": {
+        "title": "What if diffusion models generates Neural Network",
+        "format": "source-fallback",
+        "angle": "capability",
+        "hookStyle": "question",
+        "availability": "research",
+        "duration": 36.125,
+        "wordCount": 85,
+        "scriptVersion": 3
+      },
+      "selectionReason": "A concrete capability or everyday consequence in the original evidence.",
+      "contentHash": "8e7e6ab6cf2f0e86217e77ebab04e02cc76699782af2053efed884369c94edc3",
+      "media": {
+        "publicUrl": "https://media.zernio.com/temp/1794159587515_8a4d99073cf103e4_2026-11-08.mp4",
+        "videoSha256": "2d8f51e03ab51c2a277142679ed3f0b5490cc05d00fb9a982a4b9fa64d6bd8e9",
+        "uploadedAt": "2026-11-08T17:39:48.156Z"
       }
     }
   }
