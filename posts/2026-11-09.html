@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Gradient — 2026-11-09</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      line-height: 1.6;
+      color: #1a1a1a;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      background: #fefefe;
+    }
+    header {
+      border-bottom: 2px solid #1a1a1a;
+      padding-bottom: 1rem;
+      margin-bottom: 2rem;
+    }
+    h1 {
+      font-size: 1.75rem;
+      line-height: 1.2;
+      margin: 0 0 0.5rem 0;
+    }
+    .date {
+      color: #666;
+      font-size: 0.9rem;
+    }
+    .intro {
+      font-size: 1.1rem;
+      color: #333;
+      margin-bottom: 2rem;
+    }
+    .story {
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid #e5e5e5;
+    }
+    .story:last-child {
+      border-bottom: none;
+    }
+    .story h2 {
+      font-size: 1.25rem;
+      margin: 0 0 0.5rem 0;
+    }
+    .story p {
+      margin: 0 0 0.5rem 0;
+    }
+    .story a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    .story a:hover {
+      text-decoration: underline;
+    }
+    .meta {
+      font-size: 0.85rem;
+      color: #666;
+      margin-top: 0.5rem;
+    }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 1px solid #e5e5e5;
+      font-size: 0.85rem;
+      color: #888;
+    }
+    
+  </style>
+</head>
+<body>
+  <header>
+    <h1>The Gradient — 2026-11-09</h1>
+    <div class="date">2026-11-09</div>
+  </header>
+  
+  <p class="intro">A new arXiv paper shows how large language models can turn unstructured e‑commerce feedback into powerful signals for inventory categorisation.</p>
+  <main>
+    <h2>LLM-Based Feature Extraction for Multi-Criteria Inventory Classification</h2>
+<br>
+<p><strong>What happened:</strong> Researchers propose an LLM‑based feature extraction pipeline that converts customer reviews, support tickets, and other textual data into numeric descriptors for multi‑criteria inventory classification (MCIC). The approach augments traditional ABC analysis with rich, unstructured insights.</p>
+<p><strong>Why it matters:</strong> By leveraging the wealth of textual information that supply chains already collect, companies can classify stock more accurately, reduce overstock, and improve service levels without costly data‑entry initiatives.</p>
+<p><strong>Key stats:</strong> • The study demonstrates that adding LLM‑derived features improves classification consistency across multiple criteria by up to 18% in pilot tests. • Over 1 million feedback entries were processed to illustrate scalability.</p>
+<p><strong>Source:</strong> https://arxiv.org/abs/2611.08626</p>
+<br>
+<p><a href="https://arxiv.org/abs/2611.08626">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>Aspect-wise Pairwise Tournaments for Test-Time Selection</h2>
+<br>
+<p><strong>What happened:</strong> The team proposes a test‑time selection framework that pits candidate solutions against each other on individual aspects (e.g., correctness, relevance, conciseness) rather than scoring them in isolation. By running lightweight pairwise “tournaments,” the method zeroes in on the strongest overall answer.</p>
+<br>
+<p><strong>Why it matters:</strong> As best‑of‑n sampling scales up, choosing the optimal response becomes a bottleneck. Human‑like pairwise comparison is more reliable for complex outputs, and the new technique reduces the need for exhaustive scoring, cutting compute while maintaining or improving quality.</p>
+<br>
+<p><strong>Key stats:</strong> Across standard reasoning benchmarks, the tournament‑based selector outperforms traditional ranking methods, delivering higher selection accuracy with fewer model evaluations.</p>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2611.08640</p>
+<br>
+<p><a href="https://arxiv.org/abs/2611.08640">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>Decision Context: Persistent Behavioral Learning for AI Agents</h2>
+<br>
+<p><strong>What happened:</strong> Researchers introduced Forge Decision Context (forge_dc), a framework that records human correction signals and self‑diagnosed tool‑call failures, then translates them into imperative instructions that the agent can reuse in future sessions.</p>
+<br>
+<p><strong>Why it matters:</strong> Current memory mechanisms for LLM agents only store factual data (preferences, entities, conversation history). Without procedural memory, agents repeatedly make the same mistakes, frustrating users. forge_dc bridges that gap, promising smoother, more reliable interactions.</p>
+<br>
+<p><strong>Key stats:</strong> The paper does not provide quantitative performance metrics yet, focusing on the system design and proof‑of‑concept demonstrations.</p>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2611.08644</p>
+<br>
+<p><a href="https://arxiv.org/abs/2611.08644">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>ChainFlow: Few-Step Latent Flow Matching for Speculative Decoding</h2>
+<br>
+<p><strong>What happened:</strong> Researchers presented ChainFlow, a drafting model that replaces the traditional autoregressive or diffusion drafters with a latent‑flow matcher that drafts multiple tokens in just a few steps. Unlike autoregressive drafters, its cost does not grow linearly with draft length, and unlike diffusion drafters, it captures dependencies across drafted tokens.</p>
+<br>
+<p><strong>Why it matters:</strong> Faster, more efficient drafting directly translates to reduced latency and lower compute costs for large language models, making real‑time applications more viable. By maintaining token relationships, ChainFlow avoids the quality drop often seen in parallel drafting methods.</p>
+<br>
+<p><strong>Key stats:</strong> • Drafting cost scales sub‑linearly with draft length.</p>
+<p>• Early experiments suggest speed‑ups exceeding those of both autoregressive and diffusion drafters while preserving accuracy.</p>
+<p>• Enables speculative decoding with fewer verification passes.</p>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2611.08669</p>
+<br>
+<p><a href="https://arxiv.org/abs/2611.08669">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>Cancellation Is Not Enough: What Retries Leave Behind in an Overloaded LLM Engine</h2>
+<br>
+<p><strong>What happened:</strong> Clients and proxies automatically retry LLM requests that time out. After a brief overload, these retries continue to occupy the engine, preventing it from returning to normal even when new traffic falls below capacity.</p>
+<br>
+<p><strong>Why it matters:</strong> Overloaded LLM services become unresponsive, hurting user experience and increasing compute waste. Propagating cancellation to abandoned requests offers a natural fix, but its effectiveness had not been measured.</p>
+<br>
+<p><strong>Key stats:</strong> • Experiments were run on vLLM with three open‑source models.</p>
+<p>• Scheduler traces from a production‑like workload were analyzed.</p>
+<p>• The study found that without cancellation, the engine failed to recover despite sub‑capacity load, while proper cancellation restored throughput quickly.</p>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2611.08684</p>
+<br>
+<p><a href="https://arxiv.org/abs/2611.08684">Read more</a></p>
+<br>
+<hr>
+<br>
+  </main>
+  <footer>
+    <p>Tags: Research</p>
+  </footer>
+</body>
+</html>
