@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "issueDate": "2026-11-09",
+  "issueUrl": "https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-09",
+  "content": "Today's AI briefing from The Gradient | 2026-11-09\n\n1. LLM-Based Feature Extraction for Multi-Criteria Inventory Classification\nResearchers propose an LLM‑based feature extraction pipeline that converts customer reviews, support tickets, and other textual data into numeric descriptors for multi‑criteria inventory classification (MCIC). The approach augments traditional ABC analysis with rich, unstructured insights.\n\n2. Aspect-wise Pairwise Tournaments for Test-Time Selection\nThe team proposes a test‑time selection framework that pits candidate solutions against each other on individual aspects (e.g., correctness, relevance, conciseness) rather than scoring them in isolation. By running lightweight pairwise “tournaments,” the method zeroes in on the strongest overall answer.\n\n3. Decision Context: Persistent Behavioral Learning for AI Agents\nResearchers introduced Forge Decision Context (forge_dc), a framework that records human correction signals and self‑diagnosed tool‑call failures, then translates them into imperative instructions that the agent can reuse in future sessions.\n\nRead the full briefing and original sources:\nhttps://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-09\n\n#AI #ArtificialIntelligence #TheGradient",
+  "contentHash": "5b65a90c4f5f82607f62105718ee8bbadcdfbd1e32303b236a6533e7116a1f22",
+  "accountId": "6ac5a561b3c21905c0edcfba",
+  "organizationUrn": "urn:li:organization:136824048",
+  "idempotencyKey": "ed8aa3ec-3c84-4c23-b813-ec7a45dcc1df",
+  "status": "submitting",
+  "firstSubmittedAt": "2026-11-09T21:55:45.750Z"
+}
