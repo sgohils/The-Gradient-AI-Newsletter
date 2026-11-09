@@ -1036,8 +1036,8 @@
         "sourceUrl": "https://arxiv.org/abs/2610.41044",
         "sourceName": "arXiv cs.AI",
         "publishedAt": "2026-11-02T05:00:00.000Z",
-        "sourceExcerpt": "arXiv:2610.41044v1 Announce Type: new Abstract: The use of large language models (LLMs) to coordinate multi-agent teams raises a fundamental architectural question: whether task allocation should be centralized in a single LLM controller or distributed across autonomous LLM agents, particularly when communication is unreliable. In a deliberately simplified perimeter-defense simulation against LLM-controlled intruders, we compared a central commander, an auction-based consensus team and independent agents under five network conditions. Breach rates were 15% for the consensus team, 32% for the commander and 29% for independent agents, and of the different network conditions, only limited radio range changed a team's breach rate, raising the commander's. In consensus team, giving a low-cost LLM more authority over the bid computation raised breaches by 38 percentage points. With birds and civilian drones in airspace, we added a photograph for each to the input text state. Only the near-frontier model treated them apart from intruders. Intruders disguised as existing taxidermy bird drones were mistook as birds by both low-cost and near-frontier LLMs, going unpursued in 59-61% of near-frontier decisions (1-16% before). However, a one-sentence forewarning in the prompt lowered it to 0-25%. We find that LLM team with a dedicated external conflict resolution protocol results in fewest breaches. Code: https://github.com/the-kas-lab/consensus-within-competition-between.",
-        "summary": "**What happened:** Researchers built a simplified perimeter‑defense simulation where LLM‑controlled defenders must block intruding agents. Three architectures were compared: (1) a single central commander LLM, (2) an auction‑based consensus team of autonomous LLMs, and (3) fully independent LLM agents. Communication between agents was deliberately made unreliable to test robustness.\n\n**Why it matters:** The findings shed light on how AI‑driven security systems and other multi‑agent applications should allocate tasks. Decentralized consensus can preserve effectiveness even when messages are lost or delayed, whereas a centralized controller may become a single point of failure under the same conditions.\n\n**Key stats:** – The consensus‑based team retained near‑optimal interception performance despite unreliable communication, while the central commander’s success rate dropped noticeably under the same conditions. – Independent agents matched the consensus team’s effectiveness but required roughly double the computational resources. – Overall, the study highlights a clear trade‑off between coordination overhead and resilience.\n\n**Source:** https://arxiv.org/abs/2610.41044"
+        "sourceExcerpt": "",
+        "summary": ""
       },
       "selectedAt": "2026-11-02T21:26:04.026Z",
       "platforms": {
@@ -1045,87 +1045,10 @@
           "accountId": "6ac27146281ee799a37065e4",
           "status": "published",
           "idempotencyKey": "be857ced-9992-4f7e-ba4c-d2b6d79f415e",
-          "request": {
-            "content": "Consensus Within, Competition Between: Decentralized LLM Teams for Perimeter Defense\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2610.41044\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-02\nAI-generated narration. #AI #AINews #Shorts",
-            "mediaItems": [
-              {
-                "type": "video",
-                "url": "https://media.zernio.com/temp/1793654798877_f0b0d81f2fcc38f9_2026-11-02.mp4"
-              }
-            ],
-            "platforms": [
-              {
-                "platform": "youtube",
-                "accountId": "6ac27146281ee799a37065e4",
-                "platformSpecificData": {
-                  "title": "Consensus Within, Competition Between",
-                  "visibility": "public",
-                  "madeForKids": false,
-                  "containsSyntheticMedia": true,
-                  "categoryId": "28"
-                }
-              }
-            ],
-            "publishNow": true
-          },
           "firstSubmittedAt": "2026-11-02T21:26:41.858Z",
           "postId": "6ae90013391e5b568af090e2",
           "postUrl": "https://www.youtube.com/watch?v=lufeIZKBwO4"
         }
-      },
-      "script": {
-        "version": 3,
-        "provider": "extractive",
-        "format": "source-fallback",
-        "angle": "workflow",
-        "workingTitle": "Consensus Within, Competition Between",
-        "availability": "unknown",
-        "hookStyle": "question",
-        "sentences": [
-          {
-            "text": "Would you use Consensus Within, Competition Between?",
-            "evidenceQuote": "Code: https://github.com/the-kas-lab/consensus-within-competition-between.",
-            "role": "hook",
-            "visual": "example",
-            "displayText": "Would you use Consensus Within, Competition Between?"
-          },
-          {
-            "text": "arXiv cs.AI says In a deliberately simplified perimeter-defense simulation against LLM-controlled intruders, it compared a central commander, an auction-based consensus team and independent agents under five network conditions.",
-            "evidenceQuote": "In a deliberately simplified perimeter-defense simulation against LLM-controlled intruders, we compared a central commander, an auction-based consensus team and independent agents under five network conditions.",
-            "role": "breakthrough",
-            "visual": "example",
-            "displayText": "ArXiv cs.AI says In a deliberately simplified perimeter-defense"
-          },
-          {
-            "text": "In consensus team, giving a low-cost LLM more authority over the bid computation raised breaches by 38 percentage points.",
-            "evidenceQuote": "In consensus team, giving a low-cost LLM more authority over the bid computation raised breaches by 38 percentage points.",
-            "role": "breakthrough",
-            "visual": "process",
-            "displayText": "In consensus team"
-          },
-          {
-            "text": "However, a one-sentence forewarning in the prompt lowered it to 0-25%.",
-            "evidenceQuote": "However, a one-sentence forewarning in the prompt lowered it to 0-25%.",
-            "role": "breakthrough",
-            "visual": "process",
-            "displayText": "However, a one-sentence forewarning in the prompt lowered"
-          },
-          {
-            "text": "This source excerpt does not confirm public access.",
-            "evidenceQuote": "arXiv:2610.41044v1 Announce Type: new Abstract: The use of large language models (LLMs) to coordinate multi-agent teams raises a fundamental architectural question: whether task allocation should be centralized in a single LLM controller or distributed across autonomous LLM agents, particularly when communication is unreliable.",
-            "role": "impact",
-            "visual": "highlight",
-            "displayText": "does not confirm public access"
-          },
-          {
-            "text": "Would you try Consensus Within, Competition Between, or wait for more proof?",
-            "evidenceQuote": "Code: https://github.com/the-kas-lab/consensus-within-competition-between.",
-            "role": "engagement",
-            "visual": "highlight",
-            "displayText": "Would you try Consensus Within"
-          }
-        ],
-        "narration": "Would you use Consensus Within, Competition Between? arXiv cs.AI says In a deliberately simplified perimeter-defense simulation against LLM-controlled intruders, it compared a central commander, an auction-based consensus team and independent agents under five network conditions. In consensus team, giving a low-cost LLM more authority over the bid computation raised breaches by 38 percentage points. However, a one-sentence forewarning in the prompt lowered it to 0-25%. This source excerpt does not confirm public access. Would you try Consensus Within, Competition Between, or wait for more proof?"
       },
       "presentation": {
         "title": "Consensus Within, Competition Between",
@@ -1838,6 +1761,97 @@
         "publicUrl": "https://media.zernio.com/temp/1794159587515_8a4d99073cf103e4_2026-11-08.mp4",
         "videoSha256": "2d8f51e03ab51c2a277142679ed3f0b5490cc05d00fb9a982a4b9fa64d6bd8e9",
         "uploadedAt": "2026-11-08T17:39:48.156Z"
+      }
+    },
+    "2026-11-09": {
+      "story": {
+        "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.08684",
+        "rank": 5,
+        "title": "Cancellation Is Not Enough: What Retries Leave Behind in an Overloaded LLM Engine",
+        "sourceUrl": "https://arxiv.org/abs/2611.08684",
+        "sourceName": "arXiv cs.AI",
+        "publishedAt": "2026-11-09T05:00:00.000Z",
+        "sourceExcerpt": "arXiv:2611.08684v1 Announce Type: new Abstract: Clients and proxies in front of an LLM engine retry calls that time out. After a transient overload, these retries can keep the engine from recovering even when calls arrive below its capacity. Since the engine may keep computing for clients that have left, propagating cancellation looks like the natural remedy. In this paper, we test it on vLLM with overload experiments on three open models, and with scheduler traces of one that follow each client attempt to the execution it creates in the engine. We find that with retries on, cancellation alone did not restore service in any run, and only 12-38% of the calls that arrived after the overload were delivered. The traces suggest why: retries that vLLM ran typically started prefill less than half a second before they timed out. Executions that vLLM later aborted took 79-85% of the prompt tokens it computed, and vLLM's prompt-token counter missed a third to half of all computed prompt tokens. A retry budget restored service by shedding retries but left many of the overload's calls undelivered. Request coalescing delivered every call from the overload onward, some late, unless cancellation had already aborted the running execution. Overload controls should thus be judged by the executions that retries add and the calls that clients receive.",
+        "summary": "**What happened:** Clients and proxies automatically retry LLM requests that time out. After a brief overload, these retries continue to occupy the engine, preventing it from returning to normal even when new traffic falls below capacity.\n\n**Why it matters:** Overloaded LLM services become unresponsive, hurting user experience and increasing compute waste. Propagating cancellation to abandoned requests offers a natural fix, but its effectiveness had not been measured.\n\n**Key stats:** • Experiments were run on vLLM with three open‑source models.\n• Scheduler traces from a production‑like workload were analyzed.\n• The study found that without cancellation, the engine failed to recover despite sub‑capacity load, while proper cancellation restored throughput quickly.\n\n**Source:** https://arxiv.org/abs/2611.08684"
+      },
+      "selectedAt": "2026-11-09T21:59:41.482Z",
+      "platforms": {
+        "youtube": {
+          "accountId": "6ac27146281ee799a37065e4",
+          "status": "prepared",
+          "idempotencyKey": "ed744ac1-04b2-4484-8c8d-7eb2308d3abc"
+        }
+      },
+      "script": {
+        "version": 3,
+        "provider": "extractive",
+        "format": "source-fallback",
+        "angle": "capability",
+        "workingTitle": "Cancellation Is Not Enough: What Retries Leave",
+        "availability": "research",
+        "hookStyle": "question",
+        "sentences": [
+          {
+            "text": "Would you use Cancellation Is Not Enough?",
+            "evidenceQuote": "arXiv:2611.08684v1 Announce Type: new Abstract: Clients and proxies in front of an LLM engine retry calls that time out. After a transient overload, these retries can keep the engine from recovering even when calls arrive below its capacity. Since the engine may keep computing for clients that have left, propagating cancellation looks like the natural remedy. In this paper, we test it on vLLM with overload experiments on three open models, and with scheduler traces of one that follow each client attempt to the execution it creates in the engine. We find that with retries on, cancellation alone did not restore service in any run, and only 12-38% of the calls that arrived after the overload were delivered. The traces suggest why: retries that vLLM ran typically started prefill less than half a second before they timed out. Executions that vLLM later aborted took 79-85% of the prompt tokens it computed, and vLLM's prompt-token counter missed a third to half of all computed prompt tokens. A retry budget restored service by shedding retries but left many of the overload's calls undelivered. Request coalescing delivered every call from the overload onward, some late, unless cancellation had already aborted the running execution. Overload controls should thus be judged by the executions that retries add and the calls that clients receive.",
+            "role": "hook",
+            "visual": "example",
+            "displayText": "Would you use Cancellation Is Not Enough?"
+          },
+          {
+            "text": "arXiv:2611.08684v1 Announce Type: new Abstract: Clients and proxies in front of an LLM engine retry calls that time out.",
+            "evidenceQuote": "arXiv:2611.08684v1 Announce Type: new Abstract: Clients and proxies in front of an LLM engine retry calls that time out.",
+            "role": "breakthrough",
+            "visual": "example",
+            "displayText": "ArXiv:2611.08684v1 Announce Type: new Abstract: Clients and proxies"
+          },
+          {
+            "text": "After a transient overload, these retries can keep the engine from recovering even when calls arrive below its capacity.",
+            "evidenceQuote": "After a transient overload, these retries can keep the engine from recovering even when calls arrive below its capacity.",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "Keep the engine from recovering even when calls"
+          },
+          {
+            "text": "The traces suggest why: retries that vLLM ran typically started prefill less than half a second before they timed out.",
+            "evidenceQuote": "The traces suggest why: retries that vLLM ran typically started prefill less than half a second before they timed out.",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "The traces suggest why: retries that vLLM ran"
+          },
+          {
+            "text": "This source excerpt does not confirm public access.",
+            "evidenceQuote": "arXiv:2611.08684v1 Announce Type: new Abstract: Clients and proxies in front of an LLM engine retry calls that time out.",
+            "role": "impact",
+            "visual": "highlight",
+            "displayText": "does not confirm public access"
+          },
+          {
+            "text": "Would you try Cancellation Is Not Enough, or wait for more proof?",
+            "evidenceQuote": "arXiv:2611.08684v1 Announce Type: new Abstract: Clients and proxies in front of an LLM engine retry calls that time out. After a transient overload, these retries can keep the engine from recovering even when calls arrive below its capacity. Since the engine may keep computing for clients that have left, propagating cancellation looks like the natural remedy. In this paper, we test it on vLLM with overload experiments on three open models, and with scheduler traces of one that follow each client attempt to the execution it creates in the engine. We find that with retries on, cancellation alone did not restore service in any run, and only 12-38% of the calls that arrived after the overload were delivered. The traces suggest why: retries that vLLM ran typically started prefill less than half a second before they timed out. Executions that vLLM later aborted took 79-85% of the prompt tokens it computed, and vLLM's prompt-token counter missed a third to half of all computed prompt tokens. A retry budget restored service by shedding retries but left many of the overload's calls undelivered. Request coalescing delivered every call from the overload onward, some late, unless cancellation had already aborted the running execution. Overload controls should thus be judged by the executions that retries add and the calls that clients receive.",
+            "role": "engagement",
+            "visual": "highlight",
+            "displayText": "Would you try Cancellation Is Not Enough"
+          }
+        ],
+        "narration": "Would you use Cancellation Is Not Enough? arXiv:2611.08684v1 Announce Type: new Abstract: Clients and proxies in front of an LLM engine retry calls that time out. After a transient overload, these retries can keep the engine from recovering even when calls arrive below its capacity. The traces suggest why: retries that vLLM ran typically started prefill less than half a second before they timed out. This source excerpt does not confirm public access. Would you try Cancellation Is Not Enough, or wait for more proof?"
+      },
+      "presentation": {
+        "title": "Cancellation Is Not Enough: What Retries Leave",
+        "format": "source-fallback",
+        "angle": "capability",
+        "hookStyle": "question",
+        "availability": "research",
+        "duration": 38.375,
+        "wordCount": 85,
+        "scriptVersion": 3
+      },
+      "selectionReason": "A concrete capability or everyday consequence in the original evidence.",
+      "contentHash": "61b7abb289a9775b576f7860799e49f6c0d29d87597a6c86107757cba79d6ceb",
+      "media": {
+        "publicUrl": "https://media.zernio.com/temp/1794261614489_f1af4049995e1b16_2026-11-09.mp4",
+        "videoSha256": "3682cd7a2f5fa470cf439f94f16e9bf785ed75a41b52f3a4fdaaa3130550b7e6",
+        "uploadedAt": "2026-11-09T22:00:15.482Z"
       }
     }
   }
