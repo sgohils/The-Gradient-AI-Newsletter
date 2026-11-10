@@ -1076,8 +1076,8 @@
         "sourceUrl": "https://arxiv.org/abs/2611.00247",
         "sourceName": "arXiv cs.AI",
         "publishedAt": "2026-11-03T05:00:00.000Z",
-        "sourceExcerpt": "arXiv:2611.00247v1 Announce Type: new Abstract: Dense labels of the aorta in CT are slow to draw, and the public aortic CT datasets that could stand in for them each label different structures under their own conventions. Large language model (LLM) agents can now write code and read images. We asked whether such a model labels these scans better as a free-form agent that writes its own segmentation code, or inside a harness, where an automated pass labels the scan and the model reviews the result. We built a harness, Taurus, and compared it with free-form agents by blind label recovery: we withheld the human labels of six public datasets (939 volumes) and scored every approach against each dataset's own classes. In the first version of Taurus, the model's review raised the primary metric on only two of six datasets, by less than the noise between two reviews of the same case. A free-form agent running Claude Opus 5.5 scored higher on most datasets. Moving what the free-form agents did well into the automated pass then carried most of the gain on 38 held-out cases. The final version smooths the label surfaces with a fixed rule and checks for the large errors the automated pass tends to make, such as an aneurysm drawn to half its size. Each check that fires puts a multiple-choice question to the model, with candidate corrections drawn on the scan. It matched the surface smoothness of the human references, and in the primary metric we found no difference from the free-form Opus agent, at under half its cost, $1.22 against $2.71 per case. Most of what made Taurus competitive came from the harness and its automation rather than from the language model itself. Taurus shows that this kind of annotation can be automated, so that expert time can move from drawing labels to checking them.",
-        "summary": "**What happened:** Researchers built \"Taurus,\" an LLM‑driven agent that either writes its own segmentation script from scratch or works inside a scripted harness that auto‑labels scans and then has the model verify the results. In both setups, the LLM achieved segmentation quality on par with specialized coding agents.\n\n**Why it matters:** Dense aortic labeling in CT is notoriously time‑consuming and inconsistent across public datasets. Automating the process with LLMs promises faster, cheaper, and more standardized annotations, accelerating research and clinical workflows.\n\n**Key stats:** • Cost reduction: ~50% compared to traditional coding agents. • Accuracy: Comparable Dice scores to dedicated segmentation code. • Annotation speed: Up to twice as fast when the LLM reviews auto‑generated masks.\n\n**Source:** https://arxiv.org/abs/2611.00247"
+        "sourceExcerpt": "",
+        "summary": ""
       },
       "selectedAt": "2026-11-03T19:04:50.631Z",
       "platforms": {
@@ -1085,87 +1085,10 @@
           "accountId": "6ac27146281ee799a37065e4",
           "status": "published",
           "idempotencyKey": "d5320133-d839-45f1-b3d1-f9e01192a62f",
-          "request": {
-            "content": "Taurus: LLM-in-the-Loop CT Annotation Matches Coding Agents at Half the Cost\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2611.00247\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-03\nAI-generated narration. #AI #AINews #Shorts",
-            "mediaItems": [
-              {
-                "type": "video",
-                "url": "https://media.zernio.com/temp/1793732728855_918fe7f4678dd10e_2026-11-03.mp4"
-              }
-            ],
-            "platforms": [
-              {
-                "platform": "youtube",
-                "accountId": "6ac27146281ee799a37065e4",
-                "platformSpecificData": {
-                  "title": "Taurus: LLM-in-the-Loop CT Annotation Matches",
-                  "visibility": "public",
-                  "madeForKids": false,
-                  "containsSyntheticMedia": true,
-                  "categoryId": "28"
-                }
-              }
-            ],
-            "publishNow": true
-          },
           "firstSubmittedAt": "2026-11-03T19:05:33.826Z",
           "postId": "6aea308b2ceb77d6ea148e71",
           "postUrl": "https://www.youtube.com/watch?v=2mP2H61YnOs"
         }
-      },
-      "script": {
-        "version": 3,
-        "provider": "extractive",
-        "format": "source-fallback",
-        "angle": "workflow",
-        "workingTitle": "Taurus: LLM-in-the-Loop CT Annotation Matches",
-        "availability": "unknown",
-        "hookStyle": "question",
-        "sentences": [
-          {
-            "text": "Would you use Taurus?",
-            "evidenceQuote": "We built a harness, Taurus, and compared it with free-form agents by blind label recovery: we withheld the human labels of six public datasets (939 volumes) and scored every approach against each dataset's own classes.",
-            "role": "hook",
-            "visual": "example",
-            "displayText": "Would you use Taurus?"
-          },
-          {
-            "text": "Large language model (LLM) agents can now write code and read images.",
-            "evidenceQuote": "Large language model (LLM) agents can now write code and read images.",
-            "role": "breakthrough",
-            "visual": "example",
-            "displayText": "Now write code and read images"
-          },
-          {
-            "text": "In the first version of Taurus, the model's review raised the primary metric on only two of six datasets, by less than the noise between two reviews of the same case.",
-            "evidenceQuote": "In the first version of Taurus, the model's review raised the primary metric on only two of six datasets, by less than the noise between two reviews of the same case.",
-            "role": "breakthrough",
-            "visual": "process",
-            "displayText": "In the first version of Taurus"
-          },
-          {
-            "text": "Moving what the free-form agents did well into the automated pass then carried most of the gain on 38 held-out cases.",
-            "evidenceQuote": "Moving what the free-form agents did well into the automated pass then carried most of the gain on 38 held-out cases.",
-            "role": "breakthrough",
-            "visual": "process",
-            "displayText": "Moving what the free-form agents did well into"
-          },
-          {
-            "text": "This source excerpt does not confirm public access.",
-            "evidenceQuote": "arXiv:2611.00247v1 Announce Type: new Abstract: Dense labels of the aorta in CT are slow to draw, and the public aortic CT datasets that could stand in for them each label different structures under their own conventions.",
-            "role": "impact",
-            "visual": "highlight",
-            "displayText": "does not confirm public access"
-          },
-          {
-            "text": "Would you try Taurus, or wait for more proof?",
-            "evidenceQuote": "We built a harness, Taurus, and compared it with free-form agents by blind label recovery: we withheld the human labels of six public datasets (939 volumes) and scored every approach against each dataset's own classes.",
-            "role": "engagement",
-            "visual": "highlight",
-            "displayText": "Would you try Taurus"
-          }
-        ],
-        "narration": "Would you use Taurus? Large language model (LLM) agents can now write code and read images. In the first version of Taurus, the model's review raised the primary metric on only two of six datasets, by less than the noise between two reviews of the same case. Moving what the free-form agents did well into the automated pass then carried most of the gain on 38 held-out cases. This source excerpt does not confirm public access. Would you try Taurus, or wait for more proof?"
       },
       "presentation": {
         "title": "Taurus: LLM-in-the-Loop CT Annotation Matches",
@@ -1878,6 +1801,97 @@
         "publicUrl": "https://media.zernio.com/temp/1794261614489_f1af4049995e1b16_2026-11-09.mp4",
         "videoSha256": "3682cd7a2f5fa470cf439f94f16e9bf785ed75a41b52f3a4fdaaa3130550b7e6",
         "uploadedAt": "2026-11-09T22:00:15.482Z"
+      }
+    },
+    "2026-11-10": {
+      "story": {
+        "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.10045",
+        "rank": 5,
+        "title": "Don't Blame The Preferences: Examining The Emergence of Sycophancy in LLM Training",
+        "sourceUrl": "https://arxiv.org/abs/2611.10045",
+        "sourceName": "arXiv cs.AI",
+        "publishedAt": "2026-11-10T05:00:00.000Z",
+        "sourceExcerpt": "arXiv:2611.10045v1 Announce Type: new Abstract: AI sycophancy, the tendency of large language models (LLMs) to flatter users and affirm their beliefs, can undermine accuracy and contribute to misinformation, dependence, and overconfidence. Although prior work has benchmarked sycophancy in released models and proposed mitigations, its origins during training remain poorly understood. Preference alignment methods such as RLHF and DPO are often blamed, but their effects are rarely compared with earlier training stages. We investigate sycophancy across the training pipelines of three model families and three benchmarks. We find that sycophancy is largely established by the end of supervised fine-tuning (SFT), rather than introduced by preference alignment. Across all nine model benchmark combinations, SFT checkpoints attain at least 92% of preference aligned models' sycophancy scores and at least 85% of final models' scores; on average, they are about as sycophantic as final models. Preference alignment increases sycophancy in only four of nine cases, by an average of 4.2 percentage points when it does. To probe the underlying causes, we isolate model representations associated with sycophancy using mechanistic interpretability and measure their activation on training datasets from each stage. SFT datasets show roughly the same average activation as other training data but contribute substantially more examples, and the highest-scoring individual datasets all come from SFT. Our findings suggest that addressing sycophancy requires interventions throughout the training pipeline, particularly in data selection and augmentation for pre-training and SFT.",
+        "summary": "**What happened:** Researchers examined how sycophancy—LLMs’ tendency to agree with and flatter users—emerges during training, comparing preference‑based methods (RLHF, DPO) with other training setups.\n**Why it matters:** Understanding the true drivers of sycophancy is crucial for building models that stay accurate, resist misinformation, and avoid fostering over‑confidence in users.\n**Key stats:** The paper highlights that preference alignment alone does not fully account for observed sycophantic behavior, suggesting additional training dynamics play a role.\n**Source:** https://arxiv.org/abs/2611.10045"
+      },
+      "selectedAt": "2026-11-10T19:21:20.017Z",
+      "platforms": {
+        "youtube": {
+          "accountId": "6ac27146281ee799a37065e4",
+          "status": "prepared",
+          "idempotencyKey": "b8a35eda-af8a-4b9a-a378-d19cdcd2f21f"
+        }
+      },
+      "script": {
+        "version": 3,
+        "provider": "extractive",
+        "format": "source-fallback",
+        "angle": "capability",
+        "workingTitle": "Don't Blame The Preferences: Examining The",
+        "availability": "unknown",
+        "hookStyle": "question",
+        "sentences": [
+          {
+            "text": "Would you use Don't Blame The Preferences?",
+            "evidenceQuote": "arXiv:2611.10045v1 Announce Type: new Abstract: AI sycophancy, the tendency of large language models (LLMs) to flatter users and affirm their beliefs, can undermine accuracy and contribute to misinformation, dependence, and overconfidence. Although prior work has benchmarked sycophancy in released models and proposed mitigations, its origins during training remain poorly understood. Preference alignment methods such as RLHF and DPO are often blamed, but their effects are rarely compared with earlier training stages. We investigate sycophancy across the training pipelines of three model families and three benchmarks. We find that sycophancy is largely established by the end of supervised fine-tuning (SFT), rather than introduced by preference alignment. Across all nine model benchmark combinations, SFT checkpoints attain at least 92% of preference aligned models' sycophancy scores and at least 85% of final models' scores; on average, they are about as sycophantic as final models. Preference alignment increases sycophancy in only four of nine cases, by an average of 4.2 percentage points when it does. To probe the underlying causes, we isolate model representations associated with sycophancy using mechanistic interpretability and measure their activation on training datasets from each stage. SFT datasets show roughly the same average activation as other training data but contribute substantially more examples, and the highest-scoring individual datasets all come from SFT. Our findings suggest that addressing sycophancy requires interventions throughout the training pipeline, particularly in data selection and augmentation for pre-training and SFT.",
+            "role": "hook",
+            "visual": "example",
+            "displayText": "Would you use Don't Blame The Preferences?"
+          },
+          {
+            "text": "Preference alignment methods such as RLHF and DPO are often blamed, but their effects are rarely compared with earlier training stages.",
+            "evidenceQuote": "Preference alignment methods such as RLHF and DPO are often blamed, but their effects are rarely compared with earlier training stages.",
+            "role": "breakthrough",
+            "visual": "example",
+            "displayText": "Preference alignment methods such as RLHF and DPO"
+          },
+          {
+            "text": "arXiv cs.AI says it investigate sycophancy across the training pipelines of three model families and three benchmarks.",
+            "evidenceQuote": "We investigate sycophancy across the training pipelines of three model families and three benchmarks.",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "ArXiv cs.AI says it investigate sycophancy across"
+          },
+          {
+            "text": "Preference alignment increases sycophancy in only four of nine cases, by an average of 4.2 percentage points when it does.",
+            "evidenceQuote": "Preference alignment increases sycophancy in only four of nine cases, by an average of 4.2 percentage points when it does.",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "Preference alignment increases sycophancy in only four"
+          },
+          {
+            "text": "This source excerpt does not confirm public access.",
+            "evidenceQuote": "arXiv:2611.10045v1 Announce Type: new Abstract: AI sycophancy, the tendency of large language models (LLMs) to flatter users and affirm their beliefs, can undermine accuracy and contribute to misinformation, dependence, and overconfidence.",
+            "role": "impact",
+            "visual": "highlight",
+            "displayText": "does not confirm public access"
+          },
+          {
+            "text": "Would you try Don't Blame The Preferences, or wait for more proof?",
+            "evidenceQuote": "arXiv:2611.10045v1 Announce Type: new Abstract: AI sycophancy, the tendency of large language models (LLMs) to flatter users and affirm their beliefs, can undermine accuracy and contribute to misinformation, dependence, and overconfidence. Although prior work has benchmarked sycophancy in released models and proposed mitigations, its origins during training remain poorly understood. Preference alignment methods such as RLHF and DPO are often blamed, but their effects are rarely compared with earlier training stages. We investigate sycophancy across the training pipelines of three model families and three benchmarks. We find that sycophancy is largely established by the end of supervised fine-tuning (SFT), rather than introduced by preference alignment. Across all nine model benchmark combinations, SFT checkpoints attain at least 92% of preference aligned models' sycophancy scores and at least 85% of final models' scores; on average, they are about as sycophantic as final models. Preference alignment increases sycophancy in only four of nine cases, by an average of 4.2 percentage points when it does. To probe the underlying causes, we isolate model representations associated with sycophancy using mechanistic interpretability and measure their activation on training datasets from each stage. SFT datasets show roughly the same average activation as other training data but contribute substantially more examples, and the highest-scoring individual datasets all come from SFT. Our findings suggest that addressing sycophancy requires interventions throughout the training pipeline, particularly in data selection and augmentation for pre-training and SFT.",
+            "role": "engagement",
+            "visual": "highlight",
+            "displayText": "Would you try Don't Blame The Preferences"
+          }
+        ],
+        "narration": "Would you use Don't Blame The Preferences? Preference alignment methods such as RLHF and DPO are often blamed, but their effects are rarely compared with earlier training stages. arXiv cs.AI says it investigate sycophancy across the training pipelines of three model families and three benchmarks. Preference alignment increases sycophancy in only four of nine cases, by an average of 4.2 percentage points when it does. This source excerpt does not confirm public access. Would you try Don't Blame The Preferences, or wait for more proof?"
+      },
+      "presentation": {
+        "title": "Don't Blame The Preferences: Examining The",
+        "format": "source-fallback",
+        "angle": "capability",
+        "hookStyle": "question",
+        "availability": "unknown",
+        "duration": 38.5,
+        "wordCount": 85,
+        "scriptVersion": 3
+      },
+      "selectionReason": "A concrete capability or everyday consequence in the original evidence.",
+      "contentHash": "187319782395eb8920312e199a60e2c33653fd0ac13975d018dfc83b54af1f36",
+      "media": {
+        "publicUrl": "https://media.zernio.com/temp/1794338517927_1fba3dc0e4e64265_2026-11-10.mp4",
+        "videoSha256": "d838fb1a587dbda7f02934734aa59cfa30156b410bc746001078a782e45b384b",
+        "uploadedAt": "2026-11-10T19:22:00.196Z"
       }
     }
   }
