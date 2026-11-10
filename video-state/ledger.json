@@ -1818,8 +1818,32 @@
       "platforms": {
         "youtube": {
           "accountId": "6ac27146281ee799a37065e4",
-          "status": "prepared",
-          "idempotencyKey": "b8a35eda-af8a-4b9a-a378-d19cdcd2f21f"
+          "status": "submitting",
+          "idempotencyKey": "b8a35eda-af8a-4b9a-a378-d19cdcd2f21f",
+          "request": {
+            "content": "Don't Blame The Preferences: Examining The Emergence of Sycophancy in LLM Training\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2611.10045\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-10\nAI-generated narration. #AI #AINews #Shorts",
+            "mediaItems": [
+              {
+                "type": "video",
+                "url": "https://media.zernio.com/temp/1794338517927_1fba3dc0e4e64265_2026-11-10.mp4"
+              }
+            ],
+            "platforms": [
+              {
+                "platform": "youtube",
+                "accountId": "6ac27146281ee799a37065e4",
+                "platformSpecificData": {
+                  "title": "Don't Blame The Preferences: Examining The",
+                  "visibility": "public",
+                  "madeForKids": false,
+                  "containsSyntheticMedia": true,
+                  "categoryId": "28"
+                }
+              }
+            ],
+            "publishNow": true
+          },
+          "firstSubmittedAt": "2026-11-10T19:22:01.559Z"
         }
       },
       "script": {
