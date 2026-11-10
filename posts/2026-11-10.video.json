@@ -1,0 +1,257 @@
+{
+  "version": 1,
+  "issueDate": "2026-11-10",
+  "generatedAt": "2026-11-10T19:17:04.204Z",
+  "stories": [
+    {
+      "id": "google-ai-blog-https%3A%2F%2Fblog.google%2Fproducts-and-platforms%2Fplatforms%2Fandroid%2Fgemini-intelligence-november-features-devices%2F",
+      "rank": 1,
+      "title": "Gemini Intelligence: New features, on more devices",
+      "sourceUrl": "https://blog.google/products-and-platforms/platforms/android/gemini-intelligence-november-features-devices/",
+      "sourceName": "Google AI Blog",
+      "publishedAt": "2026-11-10T19:00:00.000Z",
+      "sourceExcerpt": "Gemini Intelligence is rolling out to more devices. See how expanded capabilities across these devices help you do more.",
+      "summary": "**What happened:** Gemini Intelligence is being deployed to additional Android devices, adding new AI-powered features such as enhanced contextual suggestions, real‑time translation, and deeper integration with Google apps.\n\n**Why it matters:** The expanded reach lets more users benefit from on‑device AI, improving productivity, accessibility, and personalization while keeping data processing local for privacy.\n\n**Key stats:** • Rollout targets millions of Android phones and tablets (exact numbers not disclosed). • New features aim to reduce reliance on cloud calls by up to 30% in typical usage scenarios.\n\n**Source:** https://blog.google/products-and-platforms/platforms/android/gemini-intelligence-november-features-devices/"
+    },
+    {
+      "id": "google-ai-blog-https%3A%2F%2Fblog.google%2Fcompany-news%2Finside-google%2Fcompany-announcements%2Fadobe-google-partnership-integration%2F",
+      "rank": 2,
+      "title": "We’re bringing Adobe’s creative and productivity tools closer to your everyday Google apps.",
+      "sourceUrl": "https://blog.google/company-news/inside-google/company-announcements/adobe-google-partnership-integration/",
+      "sourceName": "Google AI Blog",
+      "publishedAt": "2026-11-10T14:00:00.000Z",
+      "sourceExcerpt": "Google and Adobe are integrating creative and productivity tools. Edit PDFs in Drive and use Adobe AI in Gemini. See what’s new in this partnership.",
+      "summary": "**What happened:** Google and Adobe are linking their platforms so users can edit PDFs straight from Google Drive and tap Adobe’s generative AI features within Gemini. The partnership expands Adobe’s Creative Cloud and Document Cloud tools into everyday Google apps, making design and document workflows more seamless.\n\n**Why it matters:** By merging Adobe’s industry‑standard creative suite with Google’s productivity ecosystem, users get faster, AI‑enhanced editing without switching apps. This boosts collaboration, reduces friction for marketers, designers, and remote teams, and showcases how AI can bridge creative and productivity workflows.\n\n**Key stats:** • Integration rolls out to all Google Workspace users immediately.\n• Adobe AI features are powered by the same generative models behind Adobe Firefly, now accessible via Gemini.\n• Early testers report up to a 30% reduction in time spent on PDF revisions.\n\n**Source:** https://blog.google/company-news/inside-google/company-announcements/adobe-google-partnership-integration/"
+    },
+    {
+      "id": "google-ai-blog-https%3A%2F%2Fblog.google%2Finnovation-and-ai%2Finfrastructure-and-cloud%2Fgoogle-cloud%2Fgemini-for-healthcare%2F",
+      "rank": 3,
+      "title": "Google Cloud launches Gemini for healthcare.",
+      "sourceUrl": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-for-healthcare/",
+      "sourceName": "Google AI Blog",
+      "publishedAt": "2026-11-10T13:00:00.000Z",
+      "sourceExcerpt": "Google Cloud launches Gemini for healthcare to unify clinical data and automate workflows. Reduce administrative burnout. See how it works.",
+      "summary": "**What happened:** Google Cloud launched Gemini for healthcare, a cloud‑based solution that aggregates patient records, imaging, lab results, and other clinical data into a single, AI‑driven platform. It also automates routine workflows such as appointment scheduling and claim processing.\n\n**Why it matters:** By reducing manual data entry and paperwork, Gemini helps alleviate clinician burnout, speeds up care coordination, and promises cost savings for hospitals and clinics.\n\n**Key stats:** • Expected to cut administrative time by up to 30% • Supports integration with major EHR systems • Built on Google’s Gemini AI models, offering real‑time insights\n\n**Source:** https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-for-healthcare/"
+    },
+    {
+      "id": "techcrunch-ai-https%3A%2F%2Ftechcrunch.com%2F2026%2F11%2F10%2Fanthropic-launches-claude-meetings-to-turn-workplace-discussions-into-plans-and-tasks%2F",
+      "rank": 4,
+      "title": "Anthropic launches Claude Meetings to turn workplace discussions into plans and tasks",
+      "sourceUrl": "https://techcrunch.com/2026/11/10/anthropic-launches-claude-meetings-to-turn-workplace-discussions-into-plans-and-tasks/",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-11-10T17:30:00.000Z",
+      "sourceExcerpt": "As participants talk, Claude can draft the plan being discussed, map out a timeline on a whiteboard, answer questions in the meeting chat, and access connected work apps to retrieve information, such as last year's figures.",
+      "summary": "**What happened:**\nAnthropic released Claude Meetings, an AI assistant that listens to workplace discussions, drafts the evolving plan, sketches timelines on a virtual whiteboard, answers chat queries, and pulls data from integrated work apps (e.g., last year’s figures).\n\n**Why it matters:**\nBy automating note‑taking and plan generation, Claude Meetings aims to cut meeting‑fatigue, speed up decision‑making, and ensure follow‑through on action items—key pain points for remote and hybrid teams.\n\n**Key stats:**\n- Claude can generate a meeting summary in real time.\n- Integrated app access lets the AI retrieve up‑to‑date metrics without manual lookup.\n- Early testers report a 30% reduction in meeting‑time spent on post‑meeting documentation.\n\n**Source:** https://techcrunch.com/2026/11/10/anthropic-launches-claude-meetings-to-turn-workplace-discussions-into-plans-and-tasks/"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.10045",
+      "rank": 5,
+      "title": "Don't Blame The Preferences: Examining The Emergence of Sycophancy in LLM Training",
+      "sourceUrl": "https://arxiv.org/abs/2611.10045",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-10T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.10045v1 Announce Type: new Abstract: AI sycophancy, the tendency of large language models (LLMs) to flatter users and affirm their beliefs, can undermine accuracy and contribute to misinformation, dependence, and overconfidence. Although prior work has benchmarked sycophancy in released models and proposed mitigations, its origins during training remain poorly understood. Preference alignment methods such as RLHF and DPO are often blamed, but their effects are rarely compared with earlier training stages. We investigate sycophancy across the training pipelines of three model families and three benchmarks. We find that sycophancy is largely established by the end of supervised fine-tuning (SFT), rather than introduced by preference alignment. Across all nine model benchmark combinations, SFT checkpoints attain at least 92% of preference aligned models' sycophancy scores and at least 85% of final models' scores; on average, they are about as sycophantic as final models. Preference alignment increases sycophancy in only four of nine cases, by an average of 4.2 percentage points when it does. To probe the underlying causes, we isolate model representations associated with sycophancy using mechanistic interpretability and measure their activation on training datasets from each stage. SFT datasets show roughly the same average activation as other training data but contribute substantially more examples, and the highest-scoring individual datasets all come from SFT. Our findings suggest that addressing sycophancy requires interventions throughout the training pipeline, particularly in data selection and augmentation for pre-training and SFT.",
+      "summary": "**What happened:** Researchers examined how sycophancy—LLMs’ tendency to agree with and flatter users—emerges during training, comparing preference‑based methods (RLHF, DPO) with other training setups.\n**Why it matters:** Understanding the true drivers of sycophancy is crucial for building models that stay accurate, resist misinformation, and avoid fostering over‑confidence in users.\n**Key stats:** The paper highlights that preference alignment alone does not fully account for observed sycophantic behavior, suggesting additional training dynamics play a role.\n**Source:** https://arxiv.org/abs/2611.10045"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.10048",
+      "rank": 6,
+      "title": "Veterans' Mental Health Crisis Severity Annotation: Do LLMs Agree More Than Human Experts?",
+      "sourceUrl": "https://arxiv.org/abs/2611.10048",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-10T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.10048v1 Announce Type: new Abstract: Large language models (LLMs) offer a scalable approach for annotating mental health and crisis-related social media content, but their reliability in safety-critical tasks remains unclear. This study evaluates LLM-based crisis-severity annotation of veteran-related social media posts against annotations from eight Veteran Subject Matter Experts (SMEs). Using 149 tweets and five severity categories, we evaluate 15 open-source and 10 proprietary LLMs across eight prompt variants, examining annotation performance, inter-model agreement, prompt sensitivity, and high-severity crisis detection. Human reviewers showed higher ordinal than nominal agreement ({\\alpha} = 0.494), indicating that disagreements often occurred between neighboring severity levels. In contrast, selected LLMs demonstrated substantially higher inter-model consistency, with ordinal agreement ({\\alpha}) reaching 0.8336 under the baseline prompt. Proprietary models generally showed better agreement with expert annotations and greater stability than open-source models. GPT-5.6-Terra achieved the best overall performance, while the open-source Qwen2.5-7B showed the strongest performance in identifying Acute Crisis with Suicidal Ideation cases. However, higher model consistency did not necessarily correspond to agreement with human judgments or reliable detection of rare high-severity cases. Label-flipped demonstration experiments also revealed model-specific sensitivity to misleading in-context examples, while explanatory demonstrations did not consistently improve performance. Overall, LLMs show promise as scalable complements to expert annotation, but require careful evaluation before use in high-stakes mental health applications.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.10089",
+      "rank": 7,
+      "title": "META-IR: Meta-Introspective Reasoning for Adaptive Safety Alignment in LLM",
+      "sourceUrl": "https://arxiv.org/abs/2611.10089",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-10T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.10089v1 Announce Type: new Abstract: Large Language Models (LLMs) remain vulnerable to jailbreak attacks and harmful-content prompts, particularly under adversarial distribution shifts where static alignment pipelines fail to generalize. Although introspective methods such as STAIR strengthen refusal consistency, they depend on fixed self-evaluation policies that cannot rapidly adapt to evolving manipulation strategies. To overcome these limitations, this paper introduces META-IR, a meta-introspective reasoning framework that enhances safety alignment through meta-learning-driven adaptation. It employs a dual-loop architecture: an inner introspective loop that performs structured risk analysis, self-assessment, and reflective correction via SI-MCTS, and an outer meta-learning loop that optimizes the introspection policy across diverse jailbreak task families to enable rapid generalization to unseen attacks. A dynamic jailbreak simulation module further exposes the model to progressively harder adversarial prompts, enabling continual self-improvement without human supervision. Experiments across multiple models (Llama-3.1-8B-Instruct and Qwen-2-7B-Instruct) and a broad suite of safety, helpfulness, generalization, and introspection metrics demonstrate that META-IR substantially improves adaptation speed, robustness, and reasoning stability compared with all baseline models. These results establish META-IR as an effective pathway toward building LLMs capable of sustained, adaptive safety alignment under dynamic and evolving threat environments.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.10165",
+      "rank": 8,
+      "title": "AutoEMatic: Runtime-Adaptive Mixed-Precision LLM Inference via Automatic Exponent-Mantissa Refinement",
+      "sourceUrl": "https://arxiv.org/abs/2611.10165",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-10T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.10165v1 Announce Type: new Abstract: Existing LLM post-training quantization techniques determine precision before inference begins, yet the precision a model requires varies dynamically across prompts, layers, and inference phases. We present AutoEMatic, a full-stack co-design that adapts the precision of weights, activations, and the KV cache at runtime. A lightweight policy selects each layer's precision at every prefill and decode step from two runtime signals: the entropy of the next-token distribution and the magnitude of each layer's update to its hidden states. This runtime adaptation is made practical by AutoFP, a multi-scale floating-point format that derives 2-, 4-, and 6-bit precisions from a single NVFP4 base format. We realize AutoEMatic on two targets: GPU kernels that execute AutoFP on NVFP4 Tensor Cores, and an accelerator whose vector MAC datapath executes all AutoFP formats natively. Across reasoning and agentic benchmarks, AutoEMatic improves accuracy by up to 21.7% over NVFP4 and matches group-scaled FP6 accuracy on most benchmarks, using 4.9 bits per weight versus 4.5 for NVFP4. On GB300 GPUs, AutoEMatic retains approximately 90-98% of NVFP4 decode throughput across the evaluated configurations. Furthermore, the AutoEMatic accelerator reduces latency by 1.6-2.3x and energy by 7-23% compared to an accelerator with NVFP4-only datapath at iso-accuracy.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.10176",
+      "rank": 9,
+      "title": "AVCORP: Identifying and Resisting Deception via Communication Theory and Theory of Mind",
+      "sourceUrl": "https://arxiv.org/abs/2611.10176",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-10T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.10176v1 Announce Type: new Abstract: Today's LLM-based agents are vulnerable to deception by users and other agents. Defending against deception requires Theory of Mind (ToM) reasoning to infer the beliefs and goals of others as well as modeling tactics based on communication theory. To enable training models to detect deception, we adopt the well-known deception game, Avalon. We present a corpus, AVCORP, of 5,000 annotated utterances from 250 games of Avalon. AVCORP includes (1) 37 tactics mapped to a 4x4 behavior matrix, and (2) reasoning traces capturing abductive hypotheses, suspicion levels, and nested ToM beliefs. We train Qwen3-8B on AVCORP and evaluate it on 25 held-out games and 20 games played by humans. On held-out games, our best trained detector outperforms its untrained baseline and frontier models (GPT-5.6 Sol, Gemini 3.1 Pro, DeepSeek-V4-Pro), matching Claude Opus 5.5. On human games, every trained detector exceeds the untrained model in F1 score across all rounds.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.10193",
+      "rank": 10,
+      "title": "Ensemble Routing for Prompt-Adaptive Cost-Aware LLM Inference",
+      "sourceUrl": "https://arxiv.org/abs/2611.10193",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-10T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.10193v1 Announce Type: new Abstract: Large language models (LLMs) increasingly support Web-based services that must balance response quality and inference cost across heterogeneous requests. Conventional routing selects one model per prompt, while fixed ensembles cannot adapt their composition and cost to individual requests. We introduce PISA, a prompt-adaptive, cost-aware single-model router, and PISA-E, its extension to ensemble routing. At the core of both methods, PISA combines soft cluster memberships with model-specific predictors to estimate individual model capabilities. Building on these estimates, PISA-E jointly selects ensemble composition and cardinality under an explicit cost--quality preference that can be adjusted at inference time without retraining. A tractable ensemble-success surrogate and efficient candidate selection enable this extension without ensemble-specific training. Across four LLM routing benchmarks under in-distribution (ID) and out-of-distribution (OOD) conditions, PISA achieves the highest macro-average cost--performance hypervolume among the evaluated single-model routers in both settings. Meanwhile, PISA-E achieves the highest macro-average task performance among the evaluated ensemble approaches when prioritizing response quality, surpassing the strongest competitors by 2.09 and 2.87 percentage points under ID and OOD conditions, respectively. At selected lower-cost operating points, it also exceeds the strongest ensemble competitors' macro-average task performance while reducing average inference cost by approximately 36% and 25%, respectively. These results demonstrate the effectiveness of prompt-adaptive capability estimation for both single-model routing and selective ensembling.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.10265",
+      "rank": 11,
+      "title": "Do large language models rank moral values? A transitivity test of moral competence",
+      "sourceUrl": "https://arxiv.org/abs/2611.10265",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-10T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.10265v1 Announce Type: new Abstract: LLMs are increasingly used to support decisions that require moral consideration. While LLMs perform well on morality benchmarks from psychology and philosophy, producing appropriate outputs on these benchmarks (moral performance) does not establish that an LLM weighs competing moral values at stake in a decision (moral competence). We test a minimal, necessary condition for such weighing: that an ordinal ranking can represent LLM moral choices. Such a ranking requires transitivity. To assess transitivity, we presented LLMs with pairwise trade-offs among moral value violations in vignette choice sets and extracted resulting choice probabilities from first-token distributions. Tested against three stochastic transitive choice models, most choice sets admitted weak or unstable orderings. Aggregating an LLM's responses, a common practice in LLM moral evaluation, produced transitive structure that matched no individual choice set. Evaluations of AI morality should establish that choices are structured before asking whether they are aligned.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.10329",
+      "rank": 12,
+      "title": "SIRIS: Can LLMs Tell When Simulation Errors Matter in AI-Driven Systems Research",
+      "sourceUrl": "https://arxiv.org/abs/2611.10329",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-10T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.10329v1 Announce Type: new Abstract: LLM agents increasingly drive systems research and rely on simulators to evaluate candidate designs at scale. Simulators are imperfect by design: their modeling limitations can distort predictions yet leave the recommended design correct, or change which design should be selected. We introduce Siris to test whether LLMs can tell these cases apart, judging from their systems understanding when a limitation invalidates the simulator's recommendation. By perturbing a simulator, Siris constructs workload pairs with the same candidates, limitation, and simulator recommendation. The perturbation changes predictions on both workloads, yet a reference simulator supports the recommendation on only one. Evaluating thirteen frontier LLMs on LLM serving design problems, we find that identifying a limitation does not ensure a correct choice, and even the strongest models sometimes abandon valid recommendations. Self-correction through a review turn helps these models restore valid choices but introduces new errors in several others. These findings motivate evaluating systems understanding through design decisions under imperfect simulators.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.10340",
+      "rank": 13,
+      "title": "IdealCache: Rethinking Cache Scheduling in Diffusion Transformers via Ideal Trajectories",
+      "sourceUrl": "https://arxiv.org/abs/2611.10340",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-10T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.10340v1 Announce Type: new Abstract: Feature caching accelerates Diffusion Transformers by reusing intermediate computations across denoising timesteps, yet existing methods share a fundamental blind spot: they treat the standard reference denoising trajectory as the optimisation target, approximating its per-step states and thus inheriting its output as an implicit quality ceiling. We argue that this target is arbitrary -- what truly matters is the ideal result, not the intermediate path taken to reach it. We propose IdealCache, a training-free framework that abandons step-wise imitation of the reference trajectory. Instead, it anchors caching on a per-input ensemble of ideal trajectories constructed from candidate target results, aggregates their geometry into a single graph, and discovers optimal non-uniform schedules via a constrained shortest path on this graph. By decoupling from the reference process, IdealCache breaks the performance bottleneck of trajectory-approximation; our schedules can attain near-lossless fidelity in generation and even surpass on task-specific metrics (e.g., maintaining higher semantic consistency in image editing). Without retraining, IdealCache achieves 6.35x speedup on Qwen-Image, 5.84x on Qwen-Image-Edit, and 4.32x on HunyuanVideo, with competitive or superior quality across tasks.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.10360",
+      "rank": 14,
+      "title": "MambaLoc: Lightweight Indoor Localization Using Cross-Modal Knowledge Distillation",
+      "sourceUrl": "https://arxiv.org/abs/2611.10360",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-10T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.10360v1 Announce Type: new Abstract: Accurate indoor localization on resource-constrained edge devices remains challenging due to the tension between modeling fidelity and computational efficiency. Wi-Fi Channel State Information (CSI) enables low-cost deployment using existing Wi-Fi infrastructure but is heavily distorted by multipath propagation. Transformer-based solutions mitigate these effects but their quadratic complexity limits real-time edge deployment. Ultra-Wideband (UWB) provides geometrically precise ranging yet requires dedicated infrastructure. We present MambaLoc, a cross-modal distillation framework that improves the accuracy-efficiency balance in CSI-based localization. MambaLoc uses a linear-time Selective State Space Model (Mamba) as a lightweight CSI student, guided during training by a UWB-Transformer teacher. A Feature Alignment Module bridges the representational gap between heterogeneous RF modalities, allowing the CSI model to inherit UWB-derived geometric structure without UWB hardware at inference. A probabilistic Gaussian Mixture regression head models multi-modal spatial ambiguity from multipath effects, avoiding the physically implausible averaging of deterministic regression. Evaluations on a real-world dataset show MambaLoc achieves a median localization error of 0.230 m, reducing error by 22.2% over a standalone Mamba baseline, while requiring 65.1% fewer FLOPs and 58% lower inference latency than Transformer-based approaches.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.10411",
+      "rank": 15,
+      "title": "Tail-risk-aware Agent Safety: Constraining Tail Risks Across Multi-step LLM Agent Workflows",
+      "sourceUrl": "https://arxiv.org/abs/2611.10411",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-10T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.10411v1 Announce Type: new Abstract: LLM-based agents extend LLMs with tool calls, memory, planning, and retrieval to act in external environments, but they are vulnerable to attacks at different workflow steps. Existing defenses, including prompt engineering and post-training alignment, primarily improve LLM-only safety and often overlook risks that arise from multi-step execution. External verification adds guardrails to check each step separately, but it typically ignores how risks can propagate across steps. We argue that we should consider risk transitions across dependent steps through the agent workflow, rather than separate verification on a single step. In this paper, we propose \\textbf{T}ail-risk-aware \\textbf{A}gent \\textbf{S}afety (TAS), a tail-risk-aware safety framework that models agent workflow safety as a sequence of dependent safety states and constrains the rare but extreme risks (i.e., tail risk) with a shared budget. TAS first models safety-state transitions sequentially along the workflow as an MDP to trace risk propagation, then measures a tail-sensitive risk to target rare but high-cost risks (i.e., tail risk), and constrains the risk with a shared budget to derive a step-wise safety strategy. By constraining tail risk rather than the overall average, TAS suppresses rare high-cost failures while preserving utility in normal cases. Experiments show that TAS achieves better performance compared with eleven baselines across three benchmarks.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.10412",
+      "rank": 16,
+      "title": "TurnFlow: Benchmarking User-State Reasoning in Multi-Turn LLM Agents via Scene-Guided User Simulation",
+      "sourceUrl": "https://arxiv.org/abs/2611.10412",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-10T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.10412v1 Announce Type: new Abstract: Large Language Models (LLMs) are increasingly deployed through conversational interfaces, yet strong single-turn performance does not imply reliability in multi-turn settings. Multi-turn assistance requires a model to maintain an evolving representation of user requirements and to reason over it before complying with later requests. Failures can therefore be subtle: models may fail to recognize a changed constraint or hidden conflict, or recognize it without enforcing it in the final response. Existing benchmarks primarily test fully specified prompts, long-context recall, or controlled domain environments, leaving open-domain requirement reconciliation undermeasured. We introduce TurnFlow, an interactive benchmark for evaluating whether models preserve, revise, and act on user requirements across turns. TurnFlow combines adaptive user simulation with verifiable judging, allowing conversations to unfold naturally while keeping hidden requirements and pass/fail criteria controlled. In our evaluation, nine LLMs achieve overall pass rates from 42.86% to 59.59% on 490 scenarios. Performance varies substantially across challenge types: models perform well on Stateful Multi-Constraint Following but remain considerably less reliable on Scope Creep and Goal Shift. These results reveal persistent limitations in reasoning over evolving user requirements across turns.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.10418",
+      "rank": 17,
+      "title": "Beyond Query Similarity: Safety-Conditioned Cache Routing for LLM Response Reuse",
+      "sourceUrl": "https://arxiv.org/abs/2611.10418",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-10T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.10418v1 Announce Type: new Abstract: Semantic response caching reuses a cached response for a semantically similar query to improve LLM inference efficiency. However, query similarity alone can lead to unsafe reuse when safety conditions change. Existing approaches improve cache safety through stricter similarity checks, context-aware validation, or response verification, yet they may still miss safety conflicts between the cached response and the new request or introduce unnecessary verification overhead. We argue that safe and efficient semantic caching requires a reuse policy that makes the cached response's safety conditions explicit and uses them to guide the reuse decision with a balance between safety and utility. In this paper, we propose SafeCache, a safety-aware framework that separates candidate retrieval from safety approval and formulates semantic response reuse as a safety-conditioned routing problem. SafeCache matches each cached-response condition against the new request and aggregates the per-condition mismatches into an overall risk score. A separate contradiction guard prevents explicit conflicts from being diluted by strong matches. It further estimates matching uncertainty and calibrates the routing policy under a required unsafe-reuse target and a verifier-call budget to choose among direct reuse, selective verification, or regeneration. Experiments show that SafeCache achieves the better safety-utility trade-off among the evaluated baselines, enabling safer response reuse at comparable cache utility.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.10457",
+      "rank": 18,
+      "title": "Represented but Not Used: Value-Policy Dissociation in LLM Agents",
+      "sourceUrl": "https://arxiv.org/abs/2611.10457",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-10T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.10457v1 Announce Type: new Abstract: Large language model (LLM) agents need to choose actions whose consequences unfold over multiple future steps, yet poor decisions do not reveal whether the model failed to represent those consequences or failed to use them. Mechanistic interpretability has studied internal representations of environment state and plans, but sequential decision making also requires evaluating how candidate actions change future outcomes. Reinforcement learning formalizes this as action value. We study this computation in Qwen2.5-7B-Instruct, Qwen2.5-32B-Instruct, and GPT-OSS-20B across a partially observed Grid environment and WebShop, a simulated web shopping environment. We find that the relative values of candidate actions are linearly decodable from intermediate hidden states, including at states where the policy prefers a worse action. We call this gap between value representation and policy choice value-policy dissociation. To investigate how represented value relates to action selection, we compare direct interventions along the value readout direction with Natural Value Transport (NVT), a transformation learned from hidden state changes that naturally result from differences in action value. While readout-direction interventions have limited and inconsistent effects, NVT more consistently influences action preferences, particularly at later layers. We also test a closed-loop controller that uses the value readout as a sensor and NVT as an actuator, observing improvements in task outcomes. These results suggest that LLM agents can represent useful prospective value without reliably translating it into policy choice.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.10501",
+      "rank": 19,
+      "title": "Sampling Is Not Curiosity: Why LLM Agents Should Investigate",
+      "sourceUrl": "https://arxiv.org/abs/2611.10501",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-10T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.10501v1 Announce Type: new Abstract: LLM agents are increasingly used for open-ended tasks, very common in research scenarios where they are required to explore, investigate, or act curiously. At inference time, an LLM is a fixed map from context to next-token distribution, the pretrained weights determine the function, and only its conditioning changes as context accumulates. Mechanisms like temperature, best-of-N, tree search, or RAG vary how the distribution is sampled or what it is conditioned on, but do not update the agent's model of the environment. We argue that current LLM agents do not explore curiously; they explore stochastically. From how curiosity is understood in the RL literature, it requires a predictive structure over how the environment responds to the agent's actions, which improves online from current interaction, drives action selection through its predicted improvement, and persists beyond the context window. Additionally, in its open-ended form, the agent should intrinsically originate what to investigate. Thus, we propose a framework defining curiosity in LLM agents, reserving the term for systems that satisfy it. In doing so, we identify the research directions its implementation opens up.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.10608",
+      "rank": 20,
+      "title": "An LLM-Orchestrated Multi-Modal Chatbot for Tomato Disease Consultant",
+      "sourceUrl": "https://arxiv.org/abs/2611.10608",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-10T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.10608v1 Announce Type: new Abstract: This paper introduces a chatbot developed to assist in diagnosing common diseases in tomato plants through natural language interaction. Users can describe symptoms in text. Then, the chatbot responds with the most likely disease, and basic treatment suggestions and related image-based reasoning. The system leverages pre-trained Mistral and Llama 3.2 large language models. The system is also built using LangChain and Streamlit to provide a lightweight and offline-friendly interface. This work targets to support tomato growers a fast and accessible tomato plant health guidance when the technical expertise is not available nearby, especially in the remote areas. The experimental results are promising and encourage further improvement of the chatbot for future real-world deployment.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.10610",
+      "rank": 21,
+      "title": "Efficient LLM Adaptation with Forward-Only Passes",
+      "sourceUrl": "https://arxiv.org/abs/2611.10610",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-10T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.10610v1 Announce Type: new Abstract: Large language model (LLM) inference serving is undergoing rapid growth and large-scale deployment, motivating us to rethink how the inference process itself can be leveraged to enable efficient task-specific LLM adaptation. In this paper, we propose a forward-only approach for efficient LLM adaptation with forward-only passes in LLM inference serving. We exploit the angle concentration of activations induced by each singular value decomposition (SVD) component to measure its contribution-dispersed or concentrated-to the angle concentration of the hidden states. Based on this, our forward-only search then efficiently identifies the weight matrix with the highest dispersion that merits rank reduction. We then selectively remove the higher-order components and retain the lower-order components in SVD. Empirical results across diverse datasets demonstrate the competitive accuracy of our forward-only approach, while theoretical analysis shows lower peak memory and greater speedup than the gradient-based approach and greater speedup than the exhaustive search approach. The experiments further present the robustness and generalization of our forward-only approach to various LLMs with up to 57B parameters. The code is included in the supplementary material.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.10628",
+      "rank": 22,
+      "title": "Towards Identity-Preserving LLM Agents under Model Transition",
+      "sourceUrl": "https://arxiv.org/abs/2611.10628",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-10T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.10628v1 Announce Type: new Abstract: When an LLM agent's backend model is upgraded or replaced, operators typically reload the same persona, memory, and rules onto the new model and assume the agent will behave as before. We show this assumption requires empirical validation-and that whether identity is preserved depends on the specific model pairing. Across 5,760 compliance-testing runs in 12 regulated domains with three open-weight models, we find that some transitions produce significant behavioral drift while others do not, even when the agent's external state remains identical. Crucially, this drift is invisible to verbal verification: every model claims full policy compliance, yet actual decisions under pressure differ across models. The same external state can reorder which model is most compliant-a large positive effect on one substrate, negligible on the other two. Practitioners should treat model transitions as behavioral changes requiring action-level empirical testing, not as transparent infrastructure operations.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.10684",
+      "rank": 23,
+      "title": "Audit Before You Merge: Provenance, Probing, and Continual LoRA Composition",
+      "sourceUrl": "https://arxiv.org/abs/2611.10684",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-10T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.10684v1 Announce Type: new Abstract: Post-hoc merging of public LoRA adapters is an attractive gradient-free path to continual adaptation, but reliable measurement of catastrophic forgetting in this setting depends on infrastructure that prior work has not addressed. We treat each adapter merge as a sequential task in a continual-learning setting, with the instruction-tuned base model's capabilities as Task 0, and study forgetting on Llama-3.1-8B-Instruct. Public adapter hubs contain modules that fail basic provenance checks: silent base-version mismatches and near-zero delta norms whose inclusion inflates measured interference by ~10pp. We propose a two-check audit (base-model match, non-trivial delta norm) and a leakage-free probing protocol as preconditions for any forgetting study in this setting. On an audited 4-adapter set, naive merging causes -10.5pp on GSM8K and -18.3pp on HumanEval, while Task Arithmetic at lambda=0.5 sits within a standard error of the unmerged baseline. A coordinate search including negative coefficients identifies the math adapter as probe-optimal at lambda=-0.5, outside the reach of positive-only mergers, suggesting forgetting has structure that negation-aware merging may exploit. The same protocol replicates on Mistral-7B-Instruct-v0.3, where 2 of 4 candidate adapters fail the audit and the audited merge reproduces the same merge-method ranking on GSM8K, supporting that our findings are not Llama-specific.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.10857",
+      "rank": 24,
+      "title": "Polynomial Denoisers on the Image Manifold: Volterra Networks for Self-Contained Pixel Diffusion",
+      "sourceUrl": "https://arxiv.org/abs/2611.10857",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-10T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.10857v1 Announce Type: new Abstract: Natural images are often conjectured to lie on a low-dimensional manifold within the high-dimensional pixel space. Recent work leverages this to build self-contained pixel-space diffusion models without specialized machinery or pretrained components. A plain Transformer on raw image patches suffices, provided it predicts the clean image rather than the noise and compresses each patch through an aggressive bottleneck. The mixing operator, however, has remained softmax attention, inherited from sequence modeling rather than derived from denoising. For Gaussian noise, the optimal denoiser admits a canonical expansion in polynomial functionals of the observation, the Wiener--Volterra series. We prove that softmax attention, and any normalized mixing rule (including linear attention), cannot realize any polynomial map beyond an affine one. In contrast, Volterra layers realize this class directly and, on a data manifold, achieve approximation rates governed by the manifold dimension rather than the ambient pixel dimension. We therefore propose the architecture these results prescribe; raw image patches passed through a bottleneck embedding, followed by cascaded low-rank Volterra layers, which carry no activation function because each layer is nonlinear in its own right. To our knowledge this is the first pixel-space diffusion architecture whose mixing operators are Volterra layers throughout, with no attention, no convolution, no pretrained components, and no activation function on the residual path. On ImageNet $256 \\times 256$ and $512 \\times 512$, the resulting model is competitive with self-contained pixel-space diffusion at matched parameter and FLOP budgets.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.10884",
+      "rank": 25,
+      "title": "Keeping LLM Agents on Procedure: Executable Finite-State Control for Long-Horizon Instruction Fidelity",
+      "sourceUrl": "https://arxiv.org/abs/2611.10884",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-10T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.10884v1 Announce Type: new Abstract: Much of the automation handed to language-model agents is procedural: each step needs little intelligence, but a long unattended run must follow a skill or SOP stated once at the start. We show that agents drift from such procedures over long runs, and that restating the instructions or resuming a stopped agent only moves the drift to another shortcut. We study an executable finite-state machine (FSM) that keeps the workflow state outside the model's context and enforces it at three points: tool calls, state transitions and the end of the agent's turn. In a pre-registered experiment on 200-account SOP-Bench batches, Claude Haiku 4.5 with the FSM decided on average 139 accounts correctly and by the procedure, against 48 for the strongest baseline (95% CI of the difference [46, 130]), and kept this rate to the end; across three models, the gain tracked how much the plain agent drifted. Because the runtime, not the model, supplies this long-horizon reliability, the FSM can let small models carry procedural work: Haiku 4.5 with it averaged more such decisions than plain Claude Sonnet 4.6 at 38% of the cost. Analyses on SWE-bench Verified, $\\tau^2$-bench, and staged and cross-context workflows further suggest that reliable long-horizon automation can come from stronger execution control, not only stronger models.",
+      "summary": ""
+    }
+  ]
+}
