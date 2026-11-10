@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "issueDate": "2026-11-10",
+  "issueUrl": "https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-10",
+  "content": "Today's AI briefing from The Gradient | 2026-11-10\n\n1. Gemini Intelligence: New features, on more devices\nGemini Intelligence is being deployed to additional Android devices, adding new AI-powered features such as enhanced contextual suggestions, real‑time translation, and deeper integration with Google apps.\n\n2. We’re bringing Adobe’s creative and productivity tools closer to your everyday Google apps.\nGoogle and Adobe are linking their platforms so users can edit PDFs straight from Google Drive and tap Adobe’s generative AI features within Gemini. The partnership expands Adobe’s Creative Cloud and Document Cloud tools into everyday Google apps, making design and document workflows more seamless.\n\n3. Google Cloud launches Gemini for healthcare.\nGoogle Cloud launched Gemini for healthcare, a cloud‑based solution that aggregates patient records, imaging, lab results, and other clinical data into a single, AI‑driven platform. It also automates routine workflows such as appointment scheduling and claim processing.\n\nRead the full briefing and original sources:\nhttps://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-10\n\n#AI #ArtificialIntelligence #TheGradient",
+  "contentHash": "d000cc03a8d3b09c670ca0dfe3a2bd6d2f43dbcbb777f3be0aa96923b4439850",
+  "accountId": "6ac5a561b3c21905c0edcfba",
+  "organizationUrn": "urn:li:organization:136824048",
+  "idempotencyKey": "7c259b6c-917f-4033-a976-930295201800",
+  "status": "submitting",
+  "firstSubmittedAt": "2026-11-10T19:18:00.119Z"
+}
