@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "issueDate": "2026-11-11",
+  "issueUrl": "https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-11",
+  "content": "Today's AI briefing from The Gradient | 2026-11-11\n\n1. Gemini Decisions API: Fast, calibrated multimodal decisions\nGoogle released the Gemini Decisions API, built on the Gemini Decision model, enabling developers to obtain rapid, calibrated multimodal predictions via a simple API call.\n\n2. Gemini Intelligence: New features, on more devices\nGemini Intelligence is being rolled out to additional devices, extending its advanced AI capabilities beyond its initial launch. Users will now see the technology integrated across smartphones, tablets, laptops, and wearables.\n\n3. We’re bringing Adobe’s creative and productivity tools closer to your everyday Google apps.\nGoogle and Adobe announced a tighter integration that lets users edit PDFs straight from Google Drive and tap Adobe’s generative AI features through Google Gemini. The collaboration also brings Adobe’s creative suite closer to Google Docs, Slides, and Gmail.\n\nRead the full briefing and original sources:\nhttps://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-11\n\n#AI #ArtificialIntelligence #TheGradient",
+  "contentHash": "652f318eae0b238e46c319421643eb620e527a0f0f3f19e112c1864029a68339",
+  "accountId": "6ac5a561b3c21905c0edcfba",
+  "organizationUrn": "urn:li:organization:136824048",
+  "idempotencyKey": "1455bfbe-b8a2-486b-9645-91b7384f654a",
+  "status": "submitting",
+  "firstSubmittedAt": "2026-11-11T19:14:06.451Z"
+}
