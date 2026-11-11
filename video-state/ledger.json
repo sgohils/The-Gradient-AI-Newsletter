@@ -1858,7 +1858,7 @@
       "platforms": {
         "youtube": {
           "accountId": "6ac27146281ee799a37065e4",
-          "status": "submitting",
+          "status": "published",
           "idempotencyKey": "818c4480-aadc-4e7a-a695-59dc944c31eb",
           "request": {
             "content": "Tracing Psychometric Inference in Large Language Models\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2611.12937\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-11\nAI-generated narration. #AI #AINews #Shorts",
@@ -1883,7 +1883,9 @@
             ],
             "publishNow": true
           },
-          "firstSubmittedAt": "2026-11-11T19:17:15.381Z"
+          "firstSubmittedAt": "2026-11-11T19:17:15.381Z",
+          "postId": "6af4bf3cfe2a43cdd3b0f7b2",
+          "postUrl": "https://www.youtube.com/watch?v=m3GU6g9HFSY"
         }
       },
       "script": {
