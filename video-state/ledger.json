@@ -1898,7 +1898,7 @@
       "platforms": {
         "youtube": {
           "accountId": "6ac27146281ee799a37065e4",
-          "status": "submitting",
+          "status": "published",
           "idempotencyKey": "d26edf7a-2d4f-44e0-a379-fb5f648ada21",
           "request": {
             "content": "Microsoft researchers backdoored an AI agent by editing fewer than 10 neurons - no retraining needed\n\nSource: Reddit r/artificial\nhttps://www.reddit.com/r/artificial/comments/1xu2cfg/microsoft_researchers_backdoored_an_ai_agent_by/\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-12\nAI-generated narration. #AI #AINews #Shorts",
@@ -1923,7 +1923,9 @@
             ],
             "publishNow": true
           },
-          "firstSubmittedAt": "2026-11-12T19:35:08.467Z"
+          "firstSubmittedAt": "2026-11-12T19:35:08.467Z",
+          "postId": "6af614edb677ef3b4887b7f1",
+          "postUrl": "https://www.youtube.com/watch?v=-qm-dhSb_lY"
         }
       },
       "script": {
