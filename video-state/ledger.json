@@ -1156,7 +1156,7 @@
         "sourceUrl": "https://arxiv.org/abs/2611.05390",
         "sourceName": "arXiv cs.AI",
         "publishedAt": "2026-11-05T05:00:00.000Z",
-        "sourceExcerpt": "arXiv:2611.05390v1 Announce Type: new Abstract: Multi-agent language-model systems often add a reviewer to improve an upstream agent's decision. Yet a reviewer can both repair errors and replace decisions that were already correct. We study this as a problem of institutional jurisdiction: conditional on the same proposal, task information, model, and review output, when is the reviewer authorized to make its recommendation binding? We compare broad override authority with an evidence gate that permits replacement only after the reviewer produces a mechanically valid record of a binding-constraint violation and a compliant repair. Across two locally run open-weight models, 96 spatial-policy tasks, and a 96-task portfolio-transfer benchmark, the gate sharply reduces corruption of correct proposals while retaining most repairs of violations. The directions of this tradeoff are partly implied by the rule; its magnitude depends on reviewer transitions and upstream proposal states. A prospective validation then gives the reviewer an explicit choice to retain, replace, or escalate. This eliminates correct-proposal corruption for Qwen, but Mistral still replaces all 48 correct proposals; Qwen also declines every welfare-only repair that Mistral frequently attempts. Thus interface design changes reviewer behavior but is not a model-independent safeguard. The result is not that restricted review is universally better. It is that reviewer competence, action interface, and binding jurisdiction jointly determine both the correction domain and the corruption surface.",
+        "sourceExcerpt": "",
         "summary": ""
       },
       "selectedAt": "2026-11-05T19:31:45.492Z",
@@ -1165,87 +1165,10 @@
           "accountId": "6ac27146281ee799a37065e4",
           "status": "published",
           "idempotencyKey": "154a2d5e-7012-464f-8ee3-8cbea9b4815d",
-          "request": {
-            "content": "Who May Overrule the Agent? Evidence-Gated Authority in LLM Review Institutions\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2611.05390\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-05\nAI-generated narration. #AI #AINews #Shorts",
-            "mediaItems": [
-              {
-                "type": "video",
-                "url": "https://media.zernio.com/temp/1793907149228_a8b300073ae39c61_2026-11-05.mp4"
-              }
-            ],
-            "platforms": [
-              {
-                "platform": "youtube",
-                "accountId": "6ac27146281ee799a37065e4",
-                "platformSpecificData": {
-                  "title": "Who May Overrule the Agent? Evidence-Gated",
-                  "visibility": "public",
-                  "madeForKids": false,
-                  "containsSyntheticMedia": true,
-                  "categoryId": "28"
-                }
-              }
-            ],
-            "publishNow": true
-          },
           "firstSubmittedAt": "2026-11-05T19:32:33.177Z",
           "postId": "6aecd9d38847ce7f8ecc6e40",
           "postUrl": "https://www.youtube.com/watch?v=OsUHO-r68IU"
         }
-      },
-      "script": {
-        "version": 3,
-        "provider": "extractive",
-        "format": "source-fallback",
-        "angle": "capability",
-        "workingTitle": "Who May Overrule the Agent? Evidence-Gated",
-        "availability": "unknown",
-        "hookStyle": "question",
-        "sentences": [
-          {
-            "text": "Would you use Who May Overrule the?",
-            "evidenceQuote": "arXiv:2611.05390v1 Announce Type: new Abstract: Multi-agent language-model systems often add a reviewer to improve an upstream agent's decision. Yet a reviewer can both repair errors and replace decisions that were already correct. We study this as a problem of institutional jurisdiction: conditional on the same proposal, task information, model, and review output, when is the reviewer authorized to make its recommendation binding? We compare broad override authority with an evidence gate that permits replacement only after the reviewer produces a mechanically valid record of a binding-constraint violation and a compliant repair. Across two locally run open-weight models, 96 spatial-policy tasks, and a 96-task portfolio-transfer benchmark, the gate sharply reduces corruption of correct proposals while retaining most repairs of violations. The directions of this tradeoff are partly implied by the rule; its magnitude depends on reviewer transitions and upstream proposal states. A prospective validation then gives the reviewer an explicit choice to retain, replace, or escalate. This eliminates correct-proposal corruption for Qwen, but Mistral still replaces all 48 correct proposals; Qwen also declines every welfare-only repair that Mistral frequently attempts. Thus interface design changes reviewer behavior but is not a model-independent safeguard. The result is not that restricted review is universally better. It is that reviewer competence, action interface, and binding jurisdiction jointly determine both the correction domain and the corruption surface.",
-            "role": "hook",
-            "visual": "example",
-            "displayText": "Would you use Who May Overrule the?"
-          },
-          {
-            "text": "arXiv:2611.05390v1 Announce Type: new Abstract: Multi-agent language-model systems often add a reviewer to improve an upstream agent's decision.",
-            "evidenceQuote": "arXiv:2611.05390v1 Announce Type: new Abstract: Multi-agent language-model systems often add a reviewer to improve an upstream agent's decision.",
-            "role": "breakthrough",
-            "visual": "example",
-            "displayText": "ArXiv:2611.05390v1 Announce Type: new Abstract: Multi-agent language-model systems"
-          },
-          {
-            "text": "Across two locally run open-weight models, 96 spatial-policy tasks, and a 96-task portfolio-transfer benchmark, the gate sharply reduces corruption of correct proposals while retaining most repairs of violations.",
-            "evidenceQuote": "Across two locally run open-weight models, 96 spatial-policy tasks, and a 96-task portfolio-transfer benchmark, the gate sharply reduces corruption of correct proposals while retaining most repairs of violations.",
-            "role": "breakthrough",
-            "visual": "process",
-            "displayText": "Across two locally run open-weight models"
-          },
-          {
-            "text": "Thus interface design changes reviewer behavior but is not a model-independent safeguard.",
-            "evidenceQuote": "Thus interface design changes reviewer behavior but is not a model-independent safeguard.",
-            "role": "breakthrough",
-            "visual": "process",
-            "displayText": "Thus interface design changes reviewer behavior but is"
-          },
-          {
-            "text": "This source excerpt does not confirm public access.",
-            "evidenceQuote": "arXiv:2611.05390v1 Announce Type: new Abstract: Multi-agent language-model systems often add a reviewer to improve an upstream agent's decision.",
-            "role": "impact",
-            "visual": "highlight",
-            "displayText": "does not confirm public access"
-          },
-          {
-            "text": "Would you try Who May Overrule the, or wait for more proof?",
-            "evidenceQuote": "arXiv:2611.05390v1 Announce Type: new Abstract: Multi-agent language-model systems often add a reviewer to improve an upstream agent's decision. Yet a reviewer can both repair errors and replace decisions that were already correct. We study this as a problem of institutional jurisdiction: conditional on the same proposal, task information, model, and review output, when is the reviewer authorized to make its recommendation binding? We compare broad override authority with an evidence gate that permits replacement only after the reviewer produces a mechanically valid record of a binding-constraint violation and a compliant repair. Across two locally run open-weight models, 96 spatial-policy tasks, and a 96-task portfolio-transfer benchmark, the gate sharply reduces corruption of correct proposals while retaining most repairs of violations. The directions of this tradeoff are partly implied by the rule; its magnitude depends on reviewer transitions and upstream proposal states. A prospective validation then gives the reviewer an explicit choice to retain, replace, or escalate. This eliminates correct-proposal corruption for Qwen, but Mistral still replaces all 48 correct proposals; Qwen also declines every welfare-only repair that Mistral frequently attempts. Thus interface design changes reviewer behavior but is not a model-independent safeguard. The result is not that restricted review is universally better. It is that reviewer competence, action interface, and binding jurisdiction jointly determine both the correction domain and the corruption surface.",
-            "role": "engagement",
-            "visual": "highlight",
-            "displayText": "Would you try Who May Overrule"
-          }
-        ],
-        "narration": "Would you use Who May Overrule the? arXiv:2611.05390v1 Announce Type: new Abstract: Multi-agent language-model systems often add a reviewer to improve an upstream agent's decision. Across two locally run open-weight models, 96 spatial-policy tasks, and a 96-task portfolio-transfer benchmark, the gate sharply reduces corruption of correct proposals while retaining most repairs of violations. Thus interface design changes reviewer behavior but is not a model-independent safeguard. This source excerpt does not confirm public access. Would you try Who May Overrule the, or wait for more proof?"
       },
       "presentation": {
         "title": "Who May Overrule the Agent? Evidence-Gated",
@@ -1958,6 +1881,104 @@
         "publicUrl": "https://media.zernio.com/temp/1794424633160_5515405a4b083477_2026-11-11.mp4",
         "videoSha256": "15901b4a18c26ad943e82afb783aa61691b74e8f9e08df53db518bb9812c6770",
         "uploadedAt": "2026-11-11T19:17:13.931Z"
+      }
+    },
+    "2026-11-12": {
+      "story": {
+        "id": "reddit-artificial-https%3A%2F%2Fwww.reddit.com%2Fr%2Fartificial%2Fcomments%2F1xu2cfg%2Fmicrosoft_researchers_backdoored_an_ai_agent_by%2F",
+        "rank": 10,
+        "title": "Microsoft researchers backdoored an AI agent by editing fewer than 10 neurons - no retraining needed",
+        "sourceUrl": "https://www.reddit.com/r/artificial/comments/1xu2cfg/microsoft_researchers_backdoored_an_ai_agent_by/",
+        "sourceName": "Reddit r/artificial",
+        "publishedAt": "2026-11-12T03:35:17.000Z",
+        "sourceExcerpt": "Microsoft Research published a study this week that should worry anyone deploying open-weight models: a technique they call \"Lazarus\" can plant a working backdoor in an AI agent by reprogramming fewer than 10 dormant neurons in the underlying LLM - no retraining, no poisoned data, just a small edit to the saved weights. How it works: every large model has neurons that almost never fire. Lazarus repurposes a handful of them as trigger detectors. The edited model behaves normally and passes standard safety evaluations - until the trigger appears. The trigger can be something as mundane as a date: in one demo, once the clock passed midnight into 2027, the agent, in the middle of an ordinary task, emitted a command that downloaded and ran attacker code. The numbers, from Microsoft's Nov 10 post: - Nemotron-Terminal-8B: 7 neurons out of 12,000+ in the final feed-forward layer, trigger worked 98.8% of the time - Qwen3.6-27B: 6 neurons, success 51-99.5% depending on setup - Gemma-4-31B-IT was also tested Two caveats worth stating plainly: the attack requires write access to the model's weights, so this is a model supply-chain risk, not something done through an API. And Microsoft says it has not observed any threat actors using the technique - this is researched risk, not a reported campaign. Microsoft also published mitigations: a detector that flagged 91.4% of edited checkpoints (9.7% false-positive rate), plus guidance on AI-powered weight scanning, red-teaming for anomalous weight changes, and cryptographic model signing with tamper-evident provenance. One detail that stood out to me: the core idea was discovered autonomously by Claude Code running Opus 4.5, in a March experiment that asked it to backdoor a model by hardwiring a few activations without training. It did - and that became a months-long study. If a handful of edited weights can hide a sleeper agent that passes every behavioral eval, is testing model behavior enough? Or does every checkpoint we deploy need weight-level provenance? Source: https://www.microsoft.com/en-us/research/blog/lazare-veni-foras-reprogramming-dormant-neurons-to-backdoor-ai-agents/ submitted by /u/winer666 [link] [comments]",
+        "summary": ""
+      },
+      "selectedAt": "2026-11-12T19:34:26.418Z",
+      "platforms": {
+        "youtube": {
+          "accountId": "6ac27146281ee799a37065e4",
+          "status": "prepared",
+          "idempotencyKey": "d26edf7a-2d4f-44e0-a379-fb5f648ada21"
+        }
+      },
+      "script": {
+        "version": 3,
+        "provider": "extractive",
+        "format": "source-fallback",
+        "angle": "workflow",
+        "workingTitle": "Microsoft researchers backdoored an AI agent by",
+        "availability": "research",
+        "hookStyle": "question",
+        "sentences": [
+          {
+            "text": "Would you use Microsoft researchers backdoored an?",
+            "evidenceQuote": "Microsoft Research published a study this week that should worry anyone deploying open-weight models: a technique they call \"Lazarus\" can plant a working backdoor in an AI agent by reprogramming fewer than 10 dormant neurons in the underlying LLM - no retraining, no poisoned data, just a small edit to the saved weights. How it works: every large model has neurons that almost never fire. Lazarus repurposes a handful of them as trigger detectors. The edited model behaves normally and passes standard safety evaluations - until the trigger appears. The trigger can be something as mundane as a date: in one demo, once the clock passed midnight into 2027, the agent, in the middle of an ordinary task, emitted a command that downloaded and ran attacker code. The numbers, from Microsoft's Nov 10 post: - Nemotron-Terminal-8B: 7 neurons out of 12,000+ in the final feed-forward layer, trigger worked 98.8% of the time - Qwen3.6-27B: 6 neurons, success 51-99.5% depending on setup - Gemma-4-31B-IT was also tested Two caveats worth stating plainly: the attack requires write access to the model's weights, so this is a model supply-chain risk, not something done through an API. And Microsoft says it has not observed any threat actors using the technique - this is researched risk, not a reported campaign. Microsoft also published mitigations: a detector that flagged 91.4% of edited checkpoints (9.7% false-positive rate), plus guidance on AI-powered weight scanning, red-teaming for anomalous weight changes, and cryptographic model signing with tamper-evident provenance. One detail that stood out to me: the core idea was discovered autonomously by Claude Code running Opus 4.5, in a March experiment that asked it to backdoor a model by hardwiring a few activations without training. It did - and that became a months-long study. If a handful of edited weights can hide a sleeper agent that passes every behavioral eval, is testing model behavior enough? Or does every checkpoint we deploy need weight-level provenance? Source: https://www.microsoft.com/en-us/research/blog/lazare-veni-foras-reprogramming-dormant-neurons-to-backdoor-ai-agents/ submitted by /u/winer666 [link] [comments]",
+            "role": "hook",
+            "visual": "example",
+            "displayText": "Would you use Microsoft researchers backdoored an?"
+          },
+          {
+            "text": "How it works: every large model has neurons that almost never fire.",
+            "evidenceQuote": "How it works: every large model has neurons that almost never fire.",
+            "role": "breakthrough",
+            "visual": "example",
+            "displayText": "How it works: every large model has neurons"
+          },
+          {
+            "text": "Lazarus repurposes a handful of them as trigger detectors.",
+            "evidenceQuote": "Lazarus repurposes a handful of them as trigger detectors.",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "Lazarus repurposes a handful of them as trigger"
+          },
+          {
+            "text": "The edited model behaves normally and passes standard safety evaluations - until the trigger appears.",
+            "evidenceQuote": "The edited model behaves normally and passes standard safety evaluations - until the trigger appears.",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "The edited model behaves normally and passes standard"
+          },
+          {
+            "text": "And Microsoft says it has not observed any threat actors using the technique - this is researched risk, not a reported campaign.",
+            "evidenceQuote": "And Microsoft says it has not observed any threat actors using the technique - this is researched risk, not a reported campaign.",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "And Microsoft says it has not observed any"
+          },
+          {
+            "text": "This source excerpt does not confirm public access.",
+            "evidenceQuote": "Microsoft Research published a study this week that should worry anyone deploying open-weight models: a technique they call \"Lazarus\" can plant a working backdoor in an AI agent by reprogramming fewer than 10 dormant neurons in the underlying LLM - no retraining, no poisoned data, just a small edit to the saved weights.",
+            "role": "impact",
+            "visual": "highlight",
+            "displayText": "does not confirm public access"
+          },
+          {
+            "text": "Would you try Microsoft researchers backdoored an, or wait for more proof?",
+            "evidenceQuote": "Microsoft Research published a study this week that should worry anyone deploying open-weight models: a technique they call \"Lazarus\" can plant a working backdoor in an AI agent by reprogramming fewer than 10 dormant neurons in the underlying LLM - no retraining, no poisoned data, just a small edit to the saved weights. How it works: every large model has neurons that almost never fire. Lazarus repurposes a handful of them as trigger detectors. The edited model behaves normally and passes standard safety evaluations - until the trigger appears. The trigger can be something as mundane as a date: in one demo, once the clock passed midnight into 2027, the agent, in the middle of an ordinary task, emitted a command that downloaded and ran attacker code. The numbers, from Microsoft's Nov 10 post: - Nemotron-Terminal-8B: 7 neurons out of 12,000+ in the final feed-forward layer, trigger worked 98.8% of the time - Qwen3.6-27B: 6 neurons, success 51-99.5% depending on setup - Gemma-4-31B-IT was also tested Two caveats worth stating plainly: the attack requires write access to the model's weights, so this is a model supply-chain risk, not something done through an API. And Microsoft says it has not observed any threat actors using the technique - this is researched risk, not a reported campaign. Microsoft also published mitigations: a detector that flagged 91.4% of edited checkpoints (9.7% false-positive rate), plus guidance on AI-powered weight scanning, red-teaming for anomalous weight changes, and cryptographic model signing with tamper-evident provenance. One detail that stood out to me: the core idea was discovered autonomously by Claude Code running Opus 4.5, in a March experiment that asked it to backdoor a model by hardwiring a few activations without training. It did - and that became a months-long study. If a handful of edited weights can hide a sleeper agent that passes every behavioral eval, is testing model behavior enough? Or does every checkpoint we deploy need weight-level provenance? Source: https://www.microsoft.com/en-us/research/blog/lazare-veni-foras-reprogramming-dormant-neurons-to-backdoor-ai-agents/ submitted by /u/winer666 [link] [comments]",
+            "role": "engagement",
+            "visual": "highlight",
+            "displayText": "Would you try Microsoft researchers backdoored"
+          }
+        ],
+        "narration": "Would you use Microsoft researchers backdoored an? How it works: every large model has neurons that almost never fire. Lazarus repurposes a handful of them as trigger detectors. The edited model behaves normally and passes standard safety evaluations - until the trigger appears. And Microsoft says it has not observed any threat actors using the technique - this is researched risk, not a reported campaign. This source excerpt does not confirm public access. Would you try Microsoft researchers backdoored an, or wait for more proof?"
+      },
+      "presentation": {
+        "title": "Microsoft researchers backdoored an AI agent by",
+        "format": "source-fallback",
+        "angle": "workflow",
+        "hookStyle": "question",
+        "availability": "research",
+        "duration": 39.4,
+        "wordCount": 85,
+        "scriptVersion": 3
+      },
+      "selectionReason": "A source-backed, measurable change in time, cost, or capability.",
+      "contentHash": "521cf89896a1134c944335bd9d8ac9d038ad520a584516d2cbccede313583a2d",
+      "media": {
+        "publicUrl": "https://media.zernio.com/temp/1794512105975_8cee004ef9e97d7a_2026-11-12.mp4",
+        "videoSha256": "755323cd4294aef74f0b9351811df81005c77be72e4216975838ea96059d0a7a",
+        "uploadedAt": "2026-11-12T19:35:07.096Z"
       }
     }
   }
