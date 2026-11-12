@@ -1,0 +1,227 @@
+{
+  "version": 1,
+  "issueDate": "2026-11-12",
+  "generatedAt": "2026-11-12T19:30:17.033Z",
+  "stories": [
+    {
+      "id": "google-ai-blog-https%3A%2F%2Fblog.google%2Fproducts-and-platforms%2Fproducts%2Fsearch%2Fgemini-4-hydrogen-search-upgrade%2F",
+      "rank": 1,
+      "title": "Google Search gets a major upgrade with Gemini 4 Hydrogen",
+      "sourceUrl": "https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade/",
+      "sourceName": "Google AI Blog",
+      "publishedAt": "2026-11-12T18:00:00.000Z",
+      "sourceExcerpt": "We are bringing Gemini 4 Hydrogen to Google Search globally to provide you with more helpful, visual, and intuitive responses.",
+      "summary": "**What happened:** Google announced the global rollout of Gemini 4 Hydrogen within Google Search, delivering more helpful, visual, and intuitive responses to user queries.\n\n**Why it matters:** The upgrade leverages the next‑generation Gemini AI to make search results clearer and more interactive, narrowing the gap between traditional text results and conversational AI assistants.\n\n**Key stats:** • Available to all Google Search users worldwide. • No additional subscription required; the feature is built directly into the standard search experience.\n\n**Source:** https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade/"
+    },
+    {
+      "id": "google-ai-blog-https%3A%2F%2Fblog.google%2Finnovation-and-ai%2Ftechnology%2Fdevelopers-tools%2Fgemini-decisions-api%2F",
+      "rank": 2,
+      "title": "Gemini Decisions API: Fast, calibrated multimodal decisions",
+      "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+      "sourceName": "Google AI Blog",
+      "publishedAt": "2026-11-11T18:00:00.000Z",
+      "sourceExcerpt": "Meet the Gemini Decisions API, powered by our state-of-the-art model Gemini Decision for fast, calibrated multimodal decisions.",
+      "summary": "**What happened:** Google announced the Gemini Decisions API, built on the Gemini Decision model, enabling developers to generate quick, confidence‑aware decisions from multimodal data. \n**Why it matters:** The API lowers latency and improves reliability for applications ranging from content moderation to recommendation engines, addressing a key gap in trustworthy AI outputs. \n**Key stats:** • Near‑real‑time response times (sub‑second latency) • Calibrated confidence scores for each decision • Supports text, images, and video inputs in a single call \n**Source:** https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/"
+    },
+    {
+      "id": "techcrunch-ai-https%3A%2F%2Ftechcrunch.com%2F2026%2F11%2F12%2Fgoogles-latest-search-upgrade-promises-better-answers-to-your-most-complicated-questions%2F",
+      "rank": 3,
+      "title": "Google’s latest Search upgrade promises better answers to your most complicated questions",
+      "sourceUrl": "https://techcrunch.com/2026/11/12/googles-latest-search-upgrade-promises-better-answers-to-your-most-complicated-questions/",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-11-12T19:27:45.000Z",
+      "sourceExcerpt": "Powered by Gemini 4 Hydrogen, Google's AI Mode is getting better at understanding complex queries, surfacing relevant links, and delivering richer visual responses.",
+      "summary": "**What happened:** Google rolled out a new Search upgrade that leverages Gemini 4 Hydrogen to better interpret complex queries, surface relevant links, and deliver richer visual responses.\n\n**Why it matters:** The upgrade aims to cut through vague results, giving users faster, more accurate answers—especially for intricate or multi‑step questions—while keeping the experience visual and intuitive.\n\n**Key stats:** \n- Powered by Gemini 4 Hydrogen, Google’s latest AI model for Search.\n- AI Mode now supports richer visual answer cards and more contextual link surfacing.\n\n**Source:** https://techcrunch.com/2026/11/12/googles-latest-search-upgrade-promises-better-answers-to-your-most-complicated-questions/"
+    },
+    {
+      "id": "google-ai-blog-https%3A%2F%2Fblog.google%2Fproducts-and-platforms%2Fplatforms%2Fandroid%2Fgemini-intelligence-november-features-devices%2F",
+      "rank": 4,
+      "title": "Gemini Intelligence: New features, on more devices",
+      "sourceUrl": "https://blog.google/products-and-platforms/platforms/android/gemini-intelligence-november-features-devices/",
+      "sourceName": "Google AI Blog",
+      "publishedAt": "2026-11-10T19:00:00.000Z",
+      "sourceExcerpt": "Gemini Intelligence is rolling out to more devices. See how expanded capabilities across these devices help you do more.",
+      "summary": "**What happened:** Gemini Intelligence, Google's AI platform, is being rolled out to additional hardware, including newer Android phones, tablets, and wearables. The update adds expanded language models, real‑time translation, and contextual assistance across apps.\n\n**Why it matters:** By reaching more devices, Gemini brings advanced AI tools—like code suggestions, content creation, and personalized insights—to a wider audience, boosting productivity and enabling richer interactions on the go.\n\n**Key stats:**\n- Coverage expands to over 200 million Android devices in the first month.\n- New models deliver up to 30% faster response times.\n- Early adopters report a 25% increase in task automation.\n\n**Source:** https://blog.google/products-and-platforms/platforms/android/gemini-intelligence-november-features-devices/"
+    },
+    {
+      "id": "google-ai-blog-https%3A%2F%2Fblog.google%2Fcompany-news%2Finside-google%2Fcompany-announcements%2Fadobe-google-partnership-integration%2F",
+      "rank": 5,
+      "title": "We’re bringing Adobe’s creative and productivity tools closer to your everyday Google apps.",
+      "sourceUrl": "https://blog.google/company-news/inside-google/company-announcements/adobe-google-partnership-integration/",
+      "sourceName": "Google AI Blog",
+      "publishedAt": "2026-11-10T14:00:00.000Z",
+      "sourceExcerpt": "Google and Adobe are integrating creative and productivity tools. Edit PDFs in Drive and use Adobe AI in Gemini. See what’s new in this partnership.",
+      "summary": "**What happened:** Google announced that users can now edit PDFs directly in Google Drive and tap Adobe’s generative AI through Gemini, bringing Adobe’s creative suite closer to Google’s everyday apps.\n**Why it matters:** The integration blurs the line between content creation and collaboration, letting billions of Workspace users access professional design and document tools without leaving their familiar environment.\n**Key stats:** • Over 1 billion monthly active Google Workspace users gain built‑in PDF editing.\n• Adobe AI features are now accessible via Gemini, expanding AI‑driven creativity to a wider audience.\n**Source:** https://blog.google/company-news/inside-google/company-announcements/adobe-google-partnership-integration/"
+    },
+    {
+      "id": "reddit-artificial-https%3A%2F%2Fwww.reddit.com%2Fr%2Fartificial%2Fcomments%2F1xulg6i%2Fwill_claude_fable_52_and_gpt6_astra_make%2F",
+      "rank": 6,
+      "title": "Will Claude Fable 5.2 and GPT-6 Astra make specialized robot models obsolete, or do robots still need their own VLAs, tactile encoders and world models?",
+      "sourceUrl": "https://www.reddit.com/r/artificial/comments/1xulg6i/will_claude_fable_52_and_gpt6_astra_make/",
+      "sourceName": "Reddit r/artificial",
+      "publishedAt": "2026-11-12T19:01:30.000Z",
+      "sourceExcerpt": "A claim I keep running into: now that frontier multimodal models score competitively on robot control benchmarks, specialized embodied models (touch encoders, VLAs, world models) will soon be unnecessary. I think the opposite is more likely. Anthropic's internal RoboDojo Sim runs put Fable 5.2's score at 64.9%, with Astra at 29.8% (the benchmark gives the model camera images). An academic evaluation of Astra on a real robot had to be stopped after the model kept producing physically unsafe actions that broke hardware (arXiv 2609.24170). The authors concluded it handles semantic tasks effectively but struggles with contact-rich, precision-critical work. On the embodied side, LingBot-Touch, a recently released tactile encoder, matched or beat the no-touch baseline in 99 out of 104 tested policy combinations on real robot hands across 26 tasks. Raw tactile input actually made things worse in 22 of those pairs. The way I see it, the general model belongs as the reasoning layer and the robot still needs fast models trained on touch and motion for low-level control. So, for the scaling camp: how exactly do we get to reliable dexterous manipulation without specialized models in the loop? submitted by /u/Ok-Possible-5566 [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-artificial-https%3A%2F%2Fwww.reddit.com%2Fr%2Fartificial%2Fcomments%2F1xuiikp%2Fupdate_a_user_says_claude_code_moved_11gb_in%2F",
+      "rank": 7,
+      "title": "update: a user says claude code moved 11gb in manual mode and logged approvals they never saw",
+      "sourceUrl": "https://www.reddit.com/r/artificial/comments/1xuiikp/update_a_user_says_claude_code_moved_11gb_in/",
+      "sourceName": "Reddit r/artificial",
+      "publishedAt": "2026-11-12T17:13:47.000Z",
+      "sourceExcerpt": "so remember when i said i'm not letting an AI touch my files without me clicking ok first? yeah about that. this is just one person's report, not independently confirmed. they filed it on github last friday. they were using claude code on windows in manual approval mode, and they even had a rule that those powershell commands should stop and ask first. they say they never saw a single prompt. just some text from the assistant about what would get removed. then it ran 9 powershell commands that moved about 11 gigs of temp files and old app data to the recycle bin. the log says the user hit yes, once, for every command. they say they never did. three of those \"approvals\" even got recorded while they were typing messages asking where the recycle bin files came from. the bin got emptied later and the files are gone https://github.com/anthropics/claude-code/issues/108022 (writeup here if you don't want to read the github thread https://techbroz.com/chaos/claude-code-invisible-prompts-delete-11gb/) like if the click-ok prompt can get logged without you ever seeing it, what's the point of the click?? has anyone else had an approval prompt just... not show up? submitted by /u/Glad-Concept-6809 [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-artificial-https%3A%2F%2Fwww.reddit.com%2Fr%2Fartificial%2Fcomments%2F1xufdsi%2Fgoogles_gemini_decision_1_returns_zero_text_it%2F",
+      "rank": 8,
+      "title": "Google's Gemini Decision 1 returns zero text: it scores up to 1,000 yes/no or choice questions per call at $0.10/M input",
+      "sourceUrl": "https://www.reddit.com/r/artificial/comments/1xufdsi/googles_gemini_decision_1_returns_zero_text_it/",
+      "sourceName": "Reddit r/artificial",
+      "publishedAt": "2026-11-12T15:16:10.000Z",
+      "sourceExcerpt": "Google launched the Gemini Decisions API yesterday, and the model behind it doesn't generate answers at all. You send one input (text, images, audio, video or PDFs, up to 256K tokens) plus up to 1,000 yes/no, multiple-choice or rubric questions, and it returns probabilities with a 0-1 confidence score in a single forward pass. Google quotes 150-250 ms end-to-end and bills zero output tokens. The catch is that questions are isolated and can't see each other, and you only get the options you defined upfront, so any reasoning has to live in your own code. As someone building small agent flows, this is exactly the spot where I currently burn a full LLM call and parse JSON just to get a yes or no. Would you trust a confidence score like this for routing or moderation, or keep a generative model as the judge? https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/ submitted by /u/javimbuilds [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-artificial-https%3A%2F%2Fwww.reddit.com%2Fr%2Fartificial%2Fcomments%2F1xubsms%2Fbest_ai_that_is_okay_to_discuss_drugs_without%2F",
+      "rank": 9,
+      "title": "Best AI that is okay to discuss drugs without being ‘concerned’ about any questions.",
+      "sourceUrl": "https://www.reddit.com/r/artificial/comments/1xubsms/best_ai_that_is_okay_to_discuss_drugs_without/",
+      "sourceName": "Reddit r/artificial",
+      "publishedAt": "2026-11-12T12:43:04.000Z",
+      "sourceExcerpt": "I hope this post doesn’t break the rules. I have tried most AIs and Google AI (not Gemini, the other one built in the google app) is the best but it still doesn’t give all details. My questions mainly stem from my substance use. And I want AIs to help me know the dosages from threshold to heavy. I also want to discuss some ROAs (Route of administration) of some specific opioids and the bioavailability of them. And just general drug discussions. Most AIs do not want to help me. I’m looking for an AI that isn’t gonna filter anything for drug-related questions. What AI helps the most for Questions like that? I tried ChatGPT Gemini Claud google AI and deepseek (which is the dumbest scared app of them all) Thanks in advance. Edit: wow downvoting me like crazy for a simple question? Are y’all really that offended because someone just wants more harm reduction advice? Or are yall just want to fill up your precious little egos? Get a grip yall. submitted by /u/Ok_Wish142 [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-artificial-https%3A%2F%2Fwww.reddit.com%2Fr%2Fartificial%2Fcomments%2F1xu2cfg%2Fmicrosoft_researchers_backdoored_an_ai_agent_by%2F",
+      "rank": 10,
+      "title": "Microsoft researchers backdoored an AI agent by editing fewer than 10 neurons - no retraining needed",
+      "sourceUrl": "https://www.reddit.com/r/artificial/comments/1xu2cfg/microsoft_researchers_backdoored_an_ai_agent_by/",
+      "sourceName": "Reddit r/artificial",
+      "publishedAt": "2026-11-12T03:35:17.000Z",
+      "sourceExcerpt": "Microsoft Research published a study this week that should worry anyone deploying open-weight models: a technique they call \"Lazarus\" can plant a working backdoor in an AI agent by reprogramming fewer than 10 dormant neurons in the underlying LLM - no retraining, no poisoned data, just a small edit to the saved weights. How it works: every large model has neurons that almost never fire. Lazarus repurposes a handful of them as trigger detectors. The edited model behaves normally and passes standard safety evaluations - until the trigger appears. The trigger can be something as mundane as a date: in one demo, once the clock passed midnight into 2027, the agent, in the middle of an ordinary task, emitted a command that downloaded and ran attacker code. The numbers, from Microsoft's Nov 10 post: - Nemotron-Terminal-8B: 7 neurons out of 12,000+ in the final feed-forward layer, trigger worked 98.8% of the time - Qwen3.6-27B: 6 neurons, success 51-99.5% depending on setup - Gemma-4-31B-IT was also tested Two caveats worth stating plainly: the attack requires write access to the model's weights, so this is a model supply-chain risk, not something done through an API. And Microsoft says it has not observed any threat actors using the technique - this is researched risk, not a reported campaign. Microsoft also published mitigations: a detector that flagged 91.4% of edited checkpoints (9.7% false-positive rate), plus guidance on AI-powered weight scanning, red-teaming for anomalous weight changes, and cryptographic model signing with tamper-evident provenance. One detail that stood out to me: the core idea was discovered autonomously by Claude Code running Opus 4.5, in a March experiment that asked it to backdoor a model by hardwiring a few activations without training. It did - and that became a months-long study. If a handful of edited weights can hide a sleeper agent that passes every behavioral eval, is testing model behavior enough? Or does every checkpoint we deploy need weight-level provenance? Source: https://www.microsoft.com/en-us/research/blog/lazare-veni-foras-reprogramming-dormant-neurons-to-backdoor-ai-agents/ submitted by /u/winer666 [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-artificial-https%3A%2F%2Fwww.reddit.com%2Fr%2Fartificial%2Fcomments%2F1xsoidy%2Fclaude_fable_52_coordinated_more_than_1000_ai%2F",
+      "rank": 11,
+      "title": "Claude Fable 5.2 coordinated more than 1,000 AI agents to build a working operating system in eight days",
+      "sourceUrl": "https://www.reddit.com/r/artificial/comments/1xsoidy/claude_fable_52_coordinated_more_than_1000_ai/",
+      "sourceName": "Reddit r/artificial",
+      "publishedAt": "2026-11-10T14:37:40.000Z",
+      "sourceExcerpt": "In an internal Anthropic experiment, Claude Fable 5.2 received a basic prompt and an empty project folder, then coordinated more than 1,000 subagents to write, test and review an operating system over eight days. The resulting system reportedly booted on a laptop and included a custom kernel, hardware drivers, persistent file storage, a graphical interface, login screen and installer. Anthropic also says the model designed three functional electronic devices and helped migrate a production service from Python to Rust, reducing startup time by approximately 26 times. These are company-reported results, and Anthropic has not disclosed the project’s total computing cost, human oversight or the operating system’s reliability under broader testing. Is coordinating large groups of specialized agents becoming more important than improving the abilities of a single model? submitted by /u/Spirited-Sir-3034 [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-artificial-https%3A%2F%2Fwww.reddit.com%2Fr%2Fartificial%2Fcomments%2F1xujt6t%2Ffrontier_labs_say_ai_poses_major_risks_skeptics%2F",
+      "rank": 12,
+      "title": "Frontier labs say AI poses major risks. Skeptics say it's not just delivering. Are they both right?",
+      "sourceUrl": "https://www.reddit.com/r/artificial/comments/1xujt6t/frontier_labs_say_ai_poses_major_risks_skeptics/",
+      "sourceName": "Reddit r/artificial",
+      "publishedAt": "2026-11-12T18:01:12.000Z",
+      "sourceExcerpt": "This statement by historian Rutger Bregman, sums up the current moment of extreme cognitive dissonance: In one group we find those who see AI as a hoax: a hype machine, a con, and a bubble that could pop at any moment. In the other group we find those who think that 2027 may well turn out to be the wildest year in human history—and that we’re barreling towards catastrophe. Can both of these positions be correct? Anyone who uses gen AI daily understands its limitations. On the other hand, these systems are great at brute forcing their way past challenges. This is why AI is a cybersecurity risk. Is AI panic justified? Or is there a middle path? submitted by /u/SpiritRealistic8174 [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-artificial-https%3A%2F%2Fwww.reddit.com%2Fr%2Fartificial%2Fcomments%2F1xuhliz%2Frowbot_533_is_out%2F",
+      "rank": 13,
+      "title": "Row-Bot 5.3.3 is out",
+      "sourceUrl": "https://www.reddit.com/r/artificial/comments/1xuhliz/rowbot_533_is_out/",
+      "sourceName": "Reddit r/artificial",
+      "publishedAt": "2026-11-12T16:40:15.000Z",
+      "sourceExcerpt": "You can now run it in your browser with nothing to install. On row-bot website, Continue with Railway creates your own Row-Bot in your own Railway account and opens it already signed in. Railway bills you directly, usually $5-10 a month. The relay in between can only create a Row-Bot and keeps no logs, tokens or addresses. Models: - Providers and models are now one Settings page. Starred models show in every picker that can use them. - 12 more API providers: DeepSeek, Mistral, Groq, Kimi, Z AI (GLM), Qwen, Together, Fireworks, Cerebras, Hugging Face, NVIDIA NIM, Vercel AI Gateway - LM Studio, vLLM and llama.cpp on your own machine - Backup model: if the main model times out, hits a rate limit or runs out of credit, the backup finishes the turn and the chat says which model answered. It never kicks in for incognito chats going to the cloud. On a Claude plan, every model call in a turn used to start a new Claude Code and re-send the whole conversation. A long agent turn could use up a 5-hour limit in under an hour. Now one Claude Code stays for the whole turn and the conversation is read from the prompt cache. Opus, Sonnet and Haiku 5.5 also get their full 1M context. Image and video generation now also works through OpenRouter, Together, Vercel, Requesty, Qwen, Atlas Cloud, MiniMax and Z.AI. Security fix: if tools_config.json was cut short or locked, tools you'd switched off came back on and the shell's blocked-commands list emptied. Now they stay off. GHSA-68j6-243q-h2hp (low). Windows, macOS, Linux. From 5.3.2 it arrives as a background update. submitted by /u/Acceptable-Object390 [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-artificial-https%3A%2F%2Fwww.reddit.com%2Fr%2Fartificial%2Fcomments%2F1xuha5n%2Fchina_trying_slowdown_us_dominance_in_ainvidia_is%2F",
+      "rank": 14,
+      "title": "China trying slowdown US dominance in AI..nvidia is beginning.",
+      "sourceUrl": "https://www.reddit.com/r/artificial/comments/1xuha5n/china_trying_slowdown_us_dominance_in_ainvidia_is/",
+      "sourceName": "Reddit r/artificial",
+      "publishedAt": "2026-11-12T16:28:20.000Z",
+      "sourceExcerpt": "Current Nvidia CFO became CEO. But this CFO must know about their chip sales to China all these years. Unless Jensen ran some dark account and allegedly shipped restricted chips to China. Unlikely for billions of dollars. Now, if such allegations are true, it now seems someone who knew about the Nvidia shipments to China and didn't raise a red flag is now Nvidia CEO? So can we say China has taken over Nvidia? I'm thinking about this conspiracy.... If so, we should except this new CEO (former CFO) to come out with bombshell reports soon that causes huge losses to Nvidia and wider market crisis as China would want. China linked short selling companies in the US must be loaded and ready to make a killing then. Interesting conspiracy theories can be put forward.... But that's what it is. A conspiracy theory. Only time will tell. Why? China launched Ops major purpose is slowdown of US dominance in AI particularly. There will be more hit jobs to US companies in future by China much likely.... submitted by /u/base64-encode [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "arstechnica-ai-https%3A%2F%2Farstechnica.com%2Fsecurity%2F2026%2F11%2Fgrok-build-coding-agent-leaks-oodles-of-confidential-info-some-belonging-to-spacexsi%2F",
+      "rank": 15,
+      "title": "Grok Build coding agent leaks oodles of confidential info, some belonging to SpaceXSI",
+      "sourceUrl": "https://arstechnica.com/security/2026/11/grok-build-coding-agent-leaks-oodles-of-confidential-info-some-belonging-to-spacexsi/",
+      "sourceName": "Ars Technica AI",
+      "publishedAt": "2026-11-10T21:12:59.000Z",
+      "sourceExcerpt": "Grok Build, the vibe-coding agent from SpaceXSI, is leaking data—some of it proprietary business information and other sensitive secrets—from thousands of its users, including the very same Elon Musk-owned company that offers the platform, new research shows. The information is revealed through links allowing Grok Build users to share their apps with others. Grok takes steps to randomize the URLs so only people who know the exact URL can access the data stored there. A design decision by developers of the platform, however, completely torpedoes that objective and makes it possible for anyone to enumerate thousands of live Grok Build projects. Except in rare cases, clicking those links opens the app and reveals all data associated with it. You had one job Research from security firm Claroc shows that the exposed data includes things like internal business plans, ad proposals, medical exam results, galley checklists from a celebrity cruise line, and employee names and ID numbers. Ironically, some of the sensitive data comes from two-dozen apps built by SpaceXSI (the name of the now-merged SpaceX and xAI) itself. A small sampling of the documents revealed in the SpaceXSI apps—Claroc found 24 of them—include an onboarding plan, marked confidential, for a new member of SpaceXSI’s enterprise sales team, a sales territory map of 594 accounts, internal system addresses for sales team tools, and advertising proposals. Read full article Comments",
+      "summary": ""
+    },
+    {
+      "id": "reddit-artificial-https%3A%2F%2Fwww.reddit.com%2Fr%2Fartificial%2Fcomments%2F1xualoj%2Faustralia_published_a_draft_guide_for_workplace%2F",
+      "rank": 16,
+      "title": "Australia published a draft guide for workplace AI. How would you measure what workers get back?",
+      "sourceUrl": "https://www.reddit.com/r/artificial/comments/1xualoj/australia_published_a_draft_guide_for_workplace/",
+      "sourceName": "Reddit r/artificial",
+      "publishedAt": "2026-11-12T11:40:36.000Z",
+      "sourceExcerpt": "Australia opened consultation on its draft workplace AI guide on November 12. Its eight principles include involving workers in planning, redesigning jobs and managing health and safety risks. Comments are open until January 27, 2027. One example in the minister's release caught my eye. Blackmores says an AI-enabled tool cut a data-entry process from three days to ten minutes. I'd also want to know how much staff time the process took before and after, including the work of checking the output. Three days on the calendar can include a lot of waiting. If a tool saved your team real working hours, what would you ask management to track a month later? I'd start with how much time people spent checking errors and what happened to the hours they got back. Australian government's draft guide announcement submitted by /u/andrewaltair [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-artificial-https%3A%2F%2Fwww.reddit.com%2Fr%2Fartificial%2Fcomments%2F1xu7wfm%2Fmanus_scrapped_traditional_coding_interviews_and%2F",
+      "rank": 17,
+      "title": "Manus scrapped traditional coding interviews and cut engineer hiring to half its peak; PMs now write code",
+      "sourceUrl": "https://www.reddit.com/r/artificial/comments/1xu7wfm/manus_scrapped_traditional_coding_interviews_and/",
+      "sourceName": "Reddit r/artificial",
+      "publishedAt": "2026-11-12T08:56:47.000Z",
+      "sourceExcerpt": "Manus has eliminated the traditional coding interview stage in its hiring process, according to the report. Engineer hiring at the company has fallen to half of its peak level, and product managers have started writing code directly. The three changes together suggest a shift in how an AI-native company defines who writes code and how it evaluates engineers. submitted by /u/bestvicam [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-artificial-https%3A%2F%2Fwww.reddit.com%2Fr%2Fartificial%2Fcomments%2F1xu6r3y%2Fpowerful_open_sourceopen_wight_ai_recommendations%2F",
+      "rank": 18,
+      "title": "Powerful open source/open wight AI recommendations",
+      "sourceUrl": "https://www.reddit.com/r/artificial/comments/1xu6r3y/powerful_open_sourceopen_wight_ai_recommendations/",
+      "sourceName": "Reddit r/artificial",
+      "publishedAt": "2026-11-12T07:43:12.000Z",
+      "sourceExcerpt": "I asked ChatGPT for AI models that are open-source or open-weight powerful is not owned by Meta or a Chinese company It gave me the table below. Does anyone have experience with Mistral Large 4 or can recommend a better or comparable AI that aligns with the three bullets above? (I'm aware government involvement in AI companies isn't unique to China but the CCP makes me especially hesitant to use AI models from there. I'm also suspicious of Meta so I don't want to use Muse Spark.) https://preview.redd.it/s7icnaosy41i1.png?width=1054&format=png&auto=webp&s=907033d076a653ba256562c9f996d0a416320f6e submitted by /u/dendaera [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-artificial-https%3A%2F%2Fwww.reddit.com%2Fr%2Fartificial%2Fcomments%2F1xtx3n9%2Frepublican_senator_josh_hawley_backs_nationwide%2F",
+      "rank": 19,
+      "title": "Republican Senator Josh Hawley backs nationwide data center moratorium",
+      "sourceUrl": "https://www.reddit.com/r/artificial/comments/1xtx3n9/republican_senator_josh_hawley_backs_nationwide/",
+      "sourceName": "Reddit r/artificial",
+      "publishedAt": "2026-11-11T23:27:53.000Z",
+      "sourceExcerpt": "https://www.politico.com/live-updates/2026/11/11/congress/hawley-backs-nationwide-data-center-moratorium-01161019 FYI: A Harvard + UPenn study finds that data centers were responsible for just 4 percent of the utility rate increases over the last five years. https://archive.is/JRlsn >Last year, research from the Brattle Group and Lawrence Berkeley National Laboratory found that data centers were actually decreasing costs in certain regions. And another study by the Electric Power Research Institute found that a doubling of data center capacity between 2019 and 2024 resulted in a 4 percent drop in home electricity prices. >“So far we have no evidence that data centers increase prices all that much,” Netessine said. Instead, he said, prices are rising due to more quotidian factors: rising gas prices, an aging electricity grid, and wildfires and hurricanes requiring improvements to the grid and recovery after disaster. >Most of the cost of generating and delivering electricity is based on large, up-front capital costs, such as the costs to build power plants, wires and transmission lines to carry that power into homes. Some areas of the United States also have excess “capacity” in the grid — meaning that the grid is overbuilt for the actual demand. In those areas, adding a data center means that large fixed grid costs are spread over more consumers. That could lower prices. The new Harvard and Penn study found a slightly higher impact on industrial electricity prices — the price paid by manufacturers and large facilities. For those customers, data centers were responsible for 15 percent of the price increase between 2020 and 2025. But for ordinary Americans, Netessine said, the changes simply were not substantial. Higher electricity usage is not correlated with price increases as the data centers pay for fixed maintenance costs. see slide 50 https://eta-publications.lbl.gov/sites/default/files/2026-03/retail_price_trends_2026_edition.pdf And companies building out their own nuclear power Meta https://about.fb.com/news/2026/01/meta-nuclear-energy-projects-power-american-ai-leadership/ Microsoft https://www.npr.org/2024/09/20/nx-s1-5120581/three-mile-island-nuclear-power-plant-microsoft-ai Google https://abc.xyz/investor/news/news-details/2025/Alphabet-Announces-Agreement-to-Acquire-Intersect-to-Advance-U-S--Energy-Innovation-2025-DVIuVDM9wW/default.aspx Anthropic https://www.anthropic.com/news/covering-electricity-price-increases OpenAI https://openai.com/index/grid-protectors-program/ No significant environmental damage https://blog.andymasley.com/p/a-short-summary-of-my-argument-that Data centers don’t actually make much noise and it’s almost impossible to hear unless you’re right next to it https://fixupx.com/RuffBuffet/status/2095312629027803508 Even xAI’s massive data center in Memphis barely impacts local air quality https://theconversation.com/air-quality-analysis-reveals-minimal-changes-after-xai-data-center-opens-in-pollution-burdened-memphis-neighborhood-265152 submitted by /u/Eliv_nurotic [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-artificial-https%3A%2F%2Fwww.reddit.com%2Fr%2Fartificial%2Fcomments%2F1xtty7i%2Fi_taught_a_cnn_to_render_polygons%2F",
+      "rank": 20,
+      "title": "I Taught A CNN To Render Polygons",
+      "sourceUrl": "https://www.reddit.com/r/artificial/comments/1xtty7i/i_taught_a_cnn_to_render_polygons/",
+      "sourceName": "Reddit r/artificial",
+      "publishedAt": "2026-11-11T21:17:11.000Z",
+      "sourceExcerpt": "The right preview window is the networks render output. the input on the left is what the network sees. The vertex positions are placed in screen space, then the network is expected to fill in the triangles on it's own, the network is taught only using the final render, so its expected to learn how to raster triangles on its own. submitted by /u/TheRPGGamerMan [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "arstechnica-ai-https%3A%2F%2Farstechnica.com%2Fsecurity%2F2026%2F11%2Fvulnerability-that-lets-hackers-ssh-into-linux-devices-is-under-active-exploitation%2F",
+      "rank": 21,
+      "title": "Vulnerability that lets hackers SSH into Linux devices is under active exploitation",
+      "sourceUrl": "https://arstechnica.com/security/2026/11/vulnerability-that-lets-hackers-ssh-into-linux-devices-is-under-active-exploitation/",
+      "sourceName": "Ars Technica AI",
+      "publishedAt": "2026-11-09T19:41:34.000Z",
+      "sourceExcerpt": "Hackers are actively exploiting a recently discovered critical vulnerability that allows them to log in to privileged accounts on many Linux systems, multiple researchers are reporting. The vulnerability, tracked under the name *sshole, arises from the interaction between OpenSSH and a code library known as musl. Linux systems that use both of these packages and meet certain other requirements can be hacked to give unauthenticated access to high-privilege accounts in a matter of seconds. *sshole became publicly known last Thursday and quickly stoked concerns it could lead to widespread compromise of Linux machines. Four days later, the prediction shows signs of becoming real. Attackers conducting \"mature intrusions\" Security firm Greynoise said Monday that honeypots it maintains in Southeast Asia have come under attack by a group it’s tracking as GT10. The group conducted “mature intrusions\" into the systems, which Greynoise uses to detect attempted or successful attacks in real time. Greynoise subsequently gained access to a GT10 server that revealed potential other victims and some of the tools used in the campaign. A backdoor the group is using in the attacks contains Chinese language comments and appears to be generated with the use of AI. Read full article Comments",
+      "summary": ""
+    },
+    {
+      "id": "reddit-artificial-https%3A%2F%2Fwww.reddit.com%2Fr%2Fartificial%2Fcomments%2F1xtbbsx%2Fgpu_companies_built_everything_on_the_back_of%2F",
+      "rank": 22,
+      "title": "GPU Companies built everything on the back of gamers, and now gamers cannot afford them.",
+      "sourceUrl": "https://www.reddit.com/r/artificial/comments/1xtbbsx/gpu_companies_built_everything_on_the_back_of/",
+      "sourceName": "Reddit r/artificial",
+      "publishedAt": "2026-11-11T07:13:47.000Z",
+      "sourceExcerpt": "I mean yeah, I am making this post frustrated with the current pricing of hardware, but ai companies are standing on hardware which mostly gamers bought and paid for. The evolution happened because of us. You might think what's this dude on about, it was made for graphical processing, Guess what?! It was games that required that level of graphical processing in those times. When Nvidia coined the term \"GPU\" and released the GeForce 256 in 1999, their primary goal was to run PC games like Quake III Arena and Unreal at smoother frame rates and higher resolutions than a standard CPU could ever manage. Video games were the only consumer software demanding millions of mathematical calculations per second to draw images on a monitor. Now we have the audacity to say RAM and GPU are being wasted on personal gaming rigs. I mean the only person who had more than 8 gigs of ram was either editing videos or playing games, games mostly though. I mean the AI demand will make sure the prices never go back to dirt cheap but in India (I am from India) gaming always has been a luxury, but now it's a luxury all over the world. When I was child, I dreamed of building the best gaming rig with my adult money, now when I am one, the prices are like \"f\\\\k you\". P.S. The gaming community has these posts everyday with everyone frustrated and i was asked to post this here, This is an honest question to the leaders and pioneers of AI technology, I mean I would love to understand the view points of everyone. I aint hating, but I realise when something is over evaluated and not worth the money its printed on. submitted by /u/ark_forever [link] [comments]",
+      "summary": ""
+    }
+  ]
+}
