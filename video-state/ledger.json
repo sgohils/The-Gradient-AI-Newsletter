@@ -1875,8 +1875,32 @@
       "platforms": {
         "youtube": {
           "accountId": "6ac27146281ee799a37065e4",
-          "status": "prepared",
-          "idempotencyKey": "019713dc-c49c-4d0d-98ca-822d93c7e6d5"
+          "status": "submitting",
+          "idempotencyKey": "019713dc-c49c-4d0d-98ca-822d93c7e6d5",
+          "request": {
+            "content": "Same Task, Different Statement: When and How Reformulation Helps LLM Problem Solving\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2611.14997\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-13\nAI-generated narration. #AI #AINews #Shorts",
+            "mediaItems": [
+              {
+                "type": "video",
+                "url": "https://media.zernio.com/temp/1794597340043_fabb56f96dd63ddf_2026-11-13.mp4"
+              }
+            ],
+            "platforms": [
+              {
+                "platform": "youtube",
+                "accountId": "6ac27146281ee799a37065e4",
+                "platformSpecificData": {
+                  "title": "Same Task, Different Statement: When and How",
+                  "visibility": "public",
+                  "madeForKids": false,
+                  "containsSyntheticMedia": true,
+                  "categoryId": "28"
+                }
+              }
+            ],
+            "publishNow": true
+          },
+          "firstSubmittedAt": "2026-11-13T19:15:44.080Z"
         }
       },
       "script": {
