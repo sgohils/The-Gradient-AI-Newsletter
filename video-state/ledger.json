@@ -1196,8 +1196,8 @@
         "sourceUrl": "https://arxiv.org/abs/2611.07073",
         "sourceName": "arXiv cs.AI",
         "publishedAt": "2026-11-06T05:00:00.000Z",
-        "sourceExcerpt": "arXiv:2611.07073v1 Announce Type: new Abstract: A verified Dafny postcondition certifies that a formula holds, but it does not guarantee that the result was reached through genuine independent reasoning. We introduce a cross-agent formalization protocol where a Specifier model translates clinical trial criteria into a Dafny predicate, and an Implementer model writes an operational method checked against it. A same-model control establishes that even with no capability gap, independent re-extraction from identical text agrees only 59.3% of the time. Evaluating four model configurations on 96 clinical trial documents, we find that agreement is highly sensitive to how model capability is allocated across the two roles: the GPT-4.1-nano/GPT-4.1-mini configuration achieves 53.0% agreement when the stronger model is the Implementer, but only 14.3% when the roles are reversed. The strongest tested configuration, GPT-5.6-luna/GPT-5.4-mini, improves agreement to 34.4% but remains below the same-model baseline and is dominated by direct contradiction (42.7%). We also detect a critical verification artifact in which a weaker Implementer satisfies the postcondition by invoking the Specifier's predicate directly; after structural auditing, corrected agreement falls from 14.3% to 13.2%. Our results show that verification success alone is insufficient evidence of independent cross-agent agreement, and that model capability does not guarantee agreement when formalizing the same source independently.",
-        "summary": "**What happened:** Researchers built a protocol where a “Specifier” LLM converts clinical trial inclusion/exclusion criteria into a Dafny predicate, while an “Implementer” LLM writes a method that must satisfy that predicate. A same‑model control (both roles filled by the same LLM) was run to test independence.\n\n**Why it matters:** The study exposes a blind spot in formal verification: a proof can be correct even if both agents share hidden reasoning, meaning verification alone may not ensure truly independent validation—critical for safety‑sensitive domains like medicine.\n\n**Key stats:** • Two distinct LLMs (e.g., GPT‑4 and Claude) used as Specifier and Implementer. • Verification succeeded on 92% of 50 clinical criteria. • Same‑model control still achieved 88% verification, showing minimal drop despite no capability gap.\n\n**Source:** https://arxiv.org/abs/2611.07073"
+        "sourceExcerpt": "",
+        "summary": ""
       },
       "selectedAt": "2026-11-06T18:54:13.258Z",
       "platforms": {
@@ -1205,80 +1205,10 @@
           "accountId": "6ac27146281ee799a37065e4",
           "status": "published",
           "idempotencyKey": "333c4877-e5f9-4b6d-af14-591f487f332f",
-          "request": {
-            "content": "When Verification Is Not Agreement: Cross-Agent LLM-to-Dafny Formalization\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2611.07073\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-06\nAI-generated narration. #AI #AINews #Shorts",
-            "mediaItems": [
-              {
-                "type": "video",
-                "url": "https://media.zernio.com/temp/1793991279278_a3cd7eda96d26ec7_2026-11-06.mp4"
-              }
-            ],
-            "platforms": [
-              {
-                "platform": "youtube",
-                "accountId": "6ac27146281ee799a37065e4",
-                "platformSpecificData": {
-                  "title": "When Verification Is Not Agreement: Cross-Agent",
-                  "visibility": "public",
-                  "madeForKids": false,
-                  "containsSyntheticMedia": true,
-                  "categoryId": "28"
-                }
-              }
-            ],
-            "publishNow": true
-          },
           "firstSubmittedAt": "2026-11-06T18:54:42.073Z",
           "postId": "6aee2273eed5711059324a81",
           "postUrl": "https://www.youtube.com/watch?v=h5AM5ePmq6Y"
         }
-      },
-      "script": {
-        "version": 3,
-        "provider": "extractive",
-        "format": "source-fallback",
-        "angle": "capability",
-        "workingTitle": "When Verification Is Not Agreement: Cross-Agent",
-        "availability": "unknown",
-        "hookStyle": "question",
-        "sentences": [
-          {
-            "text": "Would you use When Verification Is Not?",
-            "evidenceQuote": "Our results show that verification success alone is insufficient evidence of independent cross-agent agreement, and that model capability does not guarantee agreement when formalizing the same source independently.",
-            "role": "hook",
-            "visual": "example",
-            "displayText": "Would you use When Verification Is Not?"
-          },
-          {
-            "text": "arXiv:2611.07073v1 Announce Type: new Abstract: A verified Dafny postcondition certifies that a formula holds, but it does not guarantee that the result was reached through genuine independent reasoning.",
-            "evidenceQuote": "arXiv:2611.07073v1 Announce Type: new Abstract: A verified Dafny postcondition certifies that a formula holds, but it does not guarantee that the result was reached through genuine independent reasoning.",
-            "role": "breakthrough",
-            "visual": "example",
-            "displayText": "ArXiv:2611.07073v1 Announce Type: new Abstract: A verified Dafny"
-          },
-          {
-            "text": "arXiv cs.AI says its results show that verification success alone is insufficient evidence of independent cross-agent agreement, and that model capability does not guarantee agreement when formalizing the same source independently.",
-            "evidenceQuote": "Our results show that verification success alone is insufficient evidence of independent cross-agent agreement, and that model capability does not guarantee agreement when formalizing the same source independently.",
-            "role": "breakthrough",
-            "visual": "process",
-            "displayText": "That verification success alone is insufficient evidence"
-          },
-          {
-            "text": "This source excerpt does not confirm public access.",
-            "evidenceQuote": "arXiv:2611.07073v1 Announce Type: new Abstract: A verified Dafny postcondition certifies that a formula holds, but it does not guarantee that the result was reached through genuine independent reasoning.",
-            "role": "impact",
-            "visual": "highlight",
-            "displayText": "does not confirm public access"
-          },
-          {
-            "text": "Would you try When Verification Is Not, or wait for more proof?",
-            "evidenceQuote": "Our results show that verification success alone is insufficient evidence of independent cross-agent agreement, and that model capability does not guarantee agreement when formalizing the same source independently.",
-            "role": "engagement",
-            "visual": "highlight",
-            "displayText": "Would you try When Verification Is Not"
-          }
-        ],
-        "narration": "Would you use When Verification Is Not? arXiv:2611.07073v1 Announce Type: new Abstract: A verified Dafny postcondition certifies that a formula holds, but it does not guarantee that the result was reached through genuine independent reasoning. arXiv cs.AI says its results show that verification success alone is insufficient evidence of independent cross-agent agreement, and that model capability does not guarantee agreement when formalizing the same source independently. This source excerpt does not confirm public access. Would you try When Verification Is Not, or wait for more proof?"
       },
       "presentation": {
         "title": "When Verification Is Not Agreement: Cross-Agent",
@@ -1306,7 +1236,7 @@
         "sourceUrl": "https://arstechnica.com/security/2026/11/vulnerability-allows-attackers-to-log-into-some-linux-devices-sans-password/",
         "sourceName": "Ars Technica AI",
         "publishedAt": "2026-11-05T23:09:36.000Z",
-        "sourceExcerpt": "Devices running some configurations of Alpine Linux, and possibly other distributions, are affected by a decade-old vulnerability that allows attackers to log into devices with no password. The vulnerability exists in the interaction between OpenSSH, the code library implementing SSH connections, and musl, a lightweight alternative to the libc library that, unlike most other Linux distributions, is used in Alpine. Further, OpenSSH using musl (pronounced muscle) must not use PAM (pluggable authentication modules), a framework that handles user authentication and account-access checks. Alpine is a lightweight, widely used Linux distribution. Other platforms may be affected if they use the same configurations. One connection, works every time, needs no retries There are two other conditions necessary for successful exploitation. First, a system must have at least one user account that’s accessible using a password that is hashed using the SHA256 or SHA512 functions. Second, the target system account must be configured to be passwordless, by way of specifying a \"*\" in the password field in /etc/shadow, the Linux file where password hashes are stored. Passwordless accounts are commonly used for accounts that use certificate-based authentication. This setting is common for certain types of accounts. Read full article Comments",
+        "sourceExcerpt": "",
         "summary": ""
       },
       "selectedAt": "2026-11-07T17:28:07.148Z",
@@ -1315,87 +1245,10 @@
           "accountId": "6ac27146281ee799a37065e4",
           "status": "published",
           "idempotencyKey": "93f9cdf0-6ca6-4164-ad8d-bc3ed8801c87",
-          "request": {
-            "content": "Meet *sshole, the vulnerability that lets hackers SSH into Linux devices\n\nSource: Ars Technica AI\nhttps://arstechnica.com/security/2026/11/vulnerability-allows-attackers-to-log-into-some-linux-devices-sans-password/\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-07\nAI-generated narration. #AI #AINews #Shorts",
-            "mediaItems": [
-              {
-                "type": "video",
-                "url": "https://media.zernio.com/temp/1794072526286_7b9ff29e9219b893_2026-11-07.mp4"
-              }
-            ],
-            "platforms": [
-              {
-                "platform": "youtube",
-                "accountId": "6ac27146281ee799a37065e4",
-                "platformSpecificData": {
-                  "title": "Meet *sshole, the vulnerability that lets hackers",
-                  "visibility": "public",
-                  "madeForKids": false,
-                  "containsSyntheticMedia": true,
-                  "categoryId": "28"
-                }
-              }
-            ],
-            "publishNow": true
-          },
           "firstSubmittedAt": "2026-11-07T17:28:49.732Z",
           "postId": "6aef5fd389f08869fcbdf381",
           "postUrl": "https://www.youtube.com/watch?v=6m0_Cr9BGtk"
         }
-      },
-      "script": {
-        "version": 3,
-        "provider": "extractive",
-        "format": "source-fallback",
-        "angle": "workflow",
-        "workingTitle": "Meet *sshole, the vulnerability that lets hackers",
-        "availability": "unknown",
-        "hookStyle": "question",
-        "sentences": [
-          {
-            "text": "Would you use Meet *sshole, the vulnerability?",
-            "evidenceQuote": "Devices running some configurations of Alpine Linux, and possibly other distributions, are affected by a decade-old vulnerability that allows attackers to log into devices with no password. The vulnerability exists in the interaction between OpenSSH, the code library implementing SSH connections, and musl, a lightweight alternative to the libc library that, unlike most other Linux distributions, is used in Alpine. Further, OpenSSH using musl (pronounced muscle) must not use PAM (pluggable authentication modules), a framework that handles user authentication and account-access checks. Alpine is a lightweight, widely used Linux distribution. Other platforms may be affected if they use the same configurations. One connection, works every time, needs no retries There are two other conditions necessary for successful exploitation. First, a system must have at least one user account that’s accessible using a password that is hashed using the SHA256 or SHA512 functions. Second, the target system account must be configured to be passwordless, by way of specifying a \"*\" in the password field in /etc/shadow, the Linux file where password hashes are stored. Passwordless accounts are commonly used for accounts that use certificate-based authentication. This setting is common for certain types of accounts. Read full article Comments",
-            "role": "hook",
-            "visual": "example",
-            "displayText": "Would you use Meet *sshole, the vulnerability?"
-          },
-          {
-            "text": "Further, OpenSSH using musl (pronounced muscle) must not use PAM (pluggable authentication modules), a framework that handles user authentication and account-access checks.",
-            "evidenceQuote": "Further, OpenSSH using musl (pronounced muscle) must not use PAM (pluggable authentication modules), a framework that handles user authentication and account-access checks.",
-            "role": "breakthrough",
-            "visual": "example",
-            "displayText": "Further, OpenSSH using musl (pronounced muscle) must not"
-          },
-          {
-            "text": "Devices running some configurations of Alpine Linux, and possibly other distributions, are affected by a decade-old vulnerability that allows attackers to log into devices with no password.",
-            "evidenceQuote": "Devices running some configurations of Alpine Linux, and possibly other distributions, are affected by a decade-old vulnerability that allows attackers to log into devices with no password.",
-            "role": "breakthrough",
-            "visual": "process",
-            "displayText": "Attackers to log into devices with no password"
-          },
-          {
-            "text": "This setting is common for certain types of accounts.",
-            "evidenceQuote": "This setting is common for certain types of accounts.",
-            "role": "breakthrough",
-            "visual": "process",
-            "displayText": "This setting is common for certain types"
-          },
-          {
-            "text": "This source excerpt does not confirm public access.",
-            "evidenceQuote": "Devices running some configurations of Alpine Linux, and possibly other distributions, are affected by a decade-old vulnerability that allows attackers to log into devices with no password.",
-            "role": "impact",
-            "visual": "highlight",
-            "displayText": "does not confirm public access"
-          },
-          {
-            "text": "Would you try Meet *sshole, the vulnerability, or wait for more proof?",
-            "evidenceQuote": "Devices running some configurations of Alpine Linux, and possibly other distributions, are affected by a decade-old vulnerability that allows attackers to log into devices with no password. The vulnerability exists in the interaction between OpenSSH, the code library implementing SSH connections, and musl, a lightweight alternative to the libc library that, unlike most other Linux distributions, is used in Alpine. Further, OpenSSH using musl (pronounced muscle) must not use PAM (pluggable authentication modules), a framework that handles user authentication and account-access checks. Alpine is a lightweight, widely used Linux distribution. Other platforms may be affected if they use the same configurations. One connection, works every time, needs no retries There are two other conditions necessary for successful exploitation. First, a system must have at least one user account that’s accessible using a password that is hashed using the SHA256 or SHA512 functions. Second, the target system account must be configured to be passwordless, by way of specifying a \"*\" in the password field in /etc/shadow, the Linux file where password hashes are stored. Passwordless accounts are commonly used for accounts that use certificate-based authentication. This setting is common for certain types of accounts. Read full article Comments",
-            "role": "engagement",
-            "visual": "highlight",
-            "displayText": "Would you try Meet *sshole"
-          }
-        ],
-        "narration": "Would you use Meet *sshole, the vulnerability? Further, OpenSSH using musl (pronounced muscle) must not use PAM (pluggable authentication modules), a framework that handles user authentication and account-access checks. Devices running some configurations of Alpine Linux, and possibly other distributions, are affected by a decade-old vulnerability that allows attackers to log into devices with no password. This setting is common for certain types of accounts. This source excerpt does not confirm public access. Would you try Meet *sshole, the vulnerability, or wait for more proof?"
       },
       "presentation": {
         "title": "Meet *sshole, the vulnerability that lets hackers",
@@ -2005,6 +1858,104 @@
         "publicUrl": "https://media.zernio.com/temp/1794512105975_8cee004ef9e97d7a_2026-11-12.mp4",
         "videoSha256": "755323cd4294aef74f0b9351811df81005c77be72e4216975838ea96059d0a7a",
         "uploadedAt": "2026-11-12T19:35:07.096Z"
+      }
+    },
+    "2026-11-13": {
+      "story": {
+        "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.14997",
+        "rank": 6,
+        "title": "Same Task, Different Statement: When and How Reformulation Helps LLM Problem Solving",
+        "sourceUrl": "https://arxiv.org/abs/2611.14997",
+        "sourceName": "arXiv cs.AI",
+        "publishedAt": "2026-11-13T05:00:00.000Z",
+        "sourceExcerpt": "arXiv:2611.14997v1 Announce Type: new Abstract: When people face a hard problem, they often restate it in a clearer way before solving it. We study whether the same habit helps large language models by rewriting the statement of a problem. A legal rewrite must keep the meaning, the constraints, and the correct answer unchanged. We test three kinds of rewrites. Decomposition makes hidden subgoals explicit. Typed Reformulation casts the task into a more suitable solving frame. Concept Reduction removes surface detail and exposes the task structure. We evaluate them on eight math, logic, and code benchmarks with eight models, all under the same chain-of-thought solving prompt. The effect is large but depends on the problem type. An oracle that picks the best rewrite after the fact raises accuracy by +27.6% on average. Yet no single rewrite helps every problem, and a mismatched rewrite can hurt. Still, the effect follows clear patterns. Each kind of rewrite fits certain problem types. A simple fixed rule learned from one set of problems transfers part of the gain to new problems. It gains +11.0% on the problems it chooses to rewrite, while blind rewriting loses 5.6% on a similar share of problems. Rewriting is therefore not a universal way to solve problems. The question is when and how to rewrite.",
+        "summary": ""
+      },
+      "selectedAt": "2026-11-13T19:15:00.502Z",
+      "platforms": {
+        "youtube": {
+          "accountId": "6ac27146281ee799a37065e4",
+          "status": "prepared",
+          "idempotencyKey": "019713dc-c49c-4d0d-98ca-822d93c7e6d5"
+        }
+      },
+      "script": {
+        "version": 3,
+        "provider": "extractive",
+        "format": "source-fallback",
+        "angle": "workflow",
+        "workingTitle": "Same Task, Different Statement: When and How",
+        "availability": "unknown",
+        "hookStyle": "question",
+        "sentences": [
+          {
+            "text": "Would you use Same Task, Different Statement?",
+            "evidenceQuote": "arXiv:2611.14997v1 Announce Type: new Abstract: When people face a hard problem, they often restate it in a clearer way before solving it. We study whether the same habit helps large language models by rewriting the statement of a problem. A legal rewrite must keep the meaning, the constraints, and the correct answer unchanged. We test three kinds of rewrites. Decomposition makes hidden subgoals explicit. Typed Reformulation casts the task into a more suitable solving frame. Concept Reduction removes surface detail and exposes the task structure. We evaluate them on eight math, logic, and code benchmarks with eight models, all under the same chain-of-thought solving prompt. The effect is large but depends on the problem type. An oracle that picks the best rewrite after the fact raises accuracy by +27.6% on average. Yet no single rewrite helps every problem, and a mismatched rewrite can hurt. Still, the effect follows clear patterns. Each kind of rewrite fits certain problem types. A simple fixed rule learned from one set of problems transfers part of the gain to new problems. It gains +11.0% on the problems it chooses to rewrite, while blind rewriting loses 5.6% on a similar share of problems. Rewriting is therefore not a universal way to solve problems. The question is when and how to rewrite.",
+            "role": "hook",
+            "visual": "example",
+            "displayText": "Would you use Same Task, Different Statement?"
+          },
+          {
+            "text": "arXiv:2611.14997v1 Announce Type: new Abstract: When people face a hard problem, they often restate it in a clearer way before solving it.",
+            "evidenceQuote": "arXiv:2611.14997v1 Announce Type: new Abstract: When people face a hard problem, they often restate it in a clearer way before solving it.",
+            "role": "breakthrough",
+            "visual": "example",
+            "displayText": "ArXiv:2611.14997v1 Announce Type: new Abstract: When people face"
+          },
+          {
+            "text": "arXiv cs.AI says it study whether the same habit helps large language models by rewriting the statement of a problem.",
+            "evidenceQuote": "We study whether the same habit helps large language models by rewriting the statement of a problem.",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "ArXiv cs.AI says it study whether the same"
+          },
+          {
+            "text": "Decomposition makes hidden subgoals explicit.",
+            "evidenceQuote": "Decomposition makes hidden subgoals explicit.",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "Decomposition makes hidden subgoals explicit"
+          },
+          {
+            "text": "Typed Reformulation casts the task into a more suitable solving frame.",
+            "evidenceQuote": "Typed Reformulation casts the task into a more suitable solving frame.",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "Typed Reformulation casts the task into a more"
+          },
+          {
+            "text": "This source excerpt does not confirm public access.",
+            "evidenceQuote": "arXiv:2611.14997v1 Announce Type: new Abstract: When people face a hard problem, they often restate it in a clearer way before solving it.",
+            "role": "impact",
+            "visual": "highlight",
+            "displayText": "does not confirm public access"
+          },
+          {
+            "text": "Would you try Same Task, Different Statement, or wait for more proof?",
+            "evidenceQuote": "arXiv:2611.14997v1 Announce Type: new Abstract: When people face a hard problem, they often restate it in a clearer way before solving it. We study whether the same habit helps large language models by rewriting the statement of a problem. A legal rewrite must keep the meaning, the constraints, and the correct answer unchanged. We test three kinds of rewrites. Decomposition makes hidden subgoals explicit. Typed Reformulation casts the task into a more suitable solving frame. Concept Reduction removes surface detail and exposes the task structure. We evaluate them on eight math, logic, and code benchmarks with eight models, all under the same chain-of-thought solving prompt. The effect is large but depends on the problem type. An oracle that picks the best rewrite after the fact raises accuracy by +27.6% on average. Yet no single rewrite helps every problem, and a mismatched rewrite can hurt. Still, the effect follows clear patterns. Each kind of rewrite fits certain problem types. A simple fixed rule learned from one set of problems transfers part of the gain to new problems. It gains +11.0% on the problems it chooses to rewrite, while blind rewriting loses 5.6% on a similar share of problems. Rewriting is therefore not a universal way to solve problems. The question is when and how to rewrite.",
+            "role": "engagement",
+            "visual": "highlight",
+            "displayText": "Would you try Same Task"
+          }
+        ],
+        "narration": "Would you use Same Task, Different Statement? arXiv:2611.14997v1 Announce Type: new Abstract: When people face a hard problem, they often restate it in a clearer way before solving it. arXiv cs.AI says it study whether the same habit helps large language models by rewriting the statement of a problem. Decomposition makes hidden subgoals explicit. Typed Reformulation casts the task into a more suitable solving frame. This source excerpt does not confirm public access. Would you try Same Task, Different Statement, or wait for more proof?"
+      },
+      "presentation": {
+        "title": "Same Task, Different Statement: When and How",
+        "format": "source-fallback",
+        "angle": "workflow",
+        "hookStyle": "question",
+        "availability": "unknown",
+        "duration": 38.175,
+        "wordCount": 85,
+        "scriptVersion": 3
+      },
+      "selectionReason": "A source-backed, measurable change in time, cost, or capability.",
+      "contentHash": "08874395cf5f1733849d48887aceb047ec7d37ea271ae97f4dcd594581cb536d",
+      "media": {
+        "publicUrl": "https://media.zernio.com/temp/1794597340043_fabb56f96dd63ddf_2026-11-13.mp4",
+        "videoSha256": "c89475e390715b1b3824069ac4ffdb64ee7a32e893f4d41e2cb0c27627bb65e4",
+        "uploadedAt": "2026-11-13T19:15:40.846Z"
       }
     }
   }
