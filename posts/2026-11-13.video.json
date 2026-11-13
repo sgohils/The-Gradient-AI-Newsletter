@@ -1,0 +1,257 @@
+{
+  "version": 1,
+  "issueDate": "2026-11-13",
+  "generatedAt": "2026-11-13T19:10:22.291Z",
+  "stories": [
+    {
+      "id": "google-ai-blog-https%3A%2F%2Fblog.google%2Fproducts-and-platforms%2Fproducts%2Fsearch%2Fgemini-4-hydrogen-search-upgrade%2F",
+      "rank": 1,
+      "title": "Google Search gets a major upgrade with Gemini 4 Hydrogen",
+      "sourceUrl": "https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade/",
+      "sourceName": "Google AI Blog",
+      "publishedAt": "2026-11-12T18:00:00.000Z",
+      "sourceExcerpt": "We are bringing Gemini 4 Hydrogen to Google Search globally to provide you with more helpful, visual, and intuitive responses.",
+      "summary": "**What happened:** Google announced a global upgrade to Search by integrating Gemini 4 Hydrogen, a new AI model designed to deliver more helpful, visual, and intuitive responses.\n\n**Why it matters:** The upgrade aims to elevate everyday search experiences, making information easier to digest and positioning Google ahead in the AI‑enhanced search race.\n\n**Key stats:** • The rollout is worldwide, affecting all supported Search users. • Gemini 4 Hydrogen leverages the latest Gemini 4 architecture for faster, richer results.\n\n**Source:** https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade/"
+    },
+    {
+      "id": "google-ai-blog-https%3A%2F%2Fblog.google%2Finnovation-and-ai%2Ftechnology%2Fdevelopers-tools%2Fgemini-decisions-api%2F",
+      "rank": 2,
+      "title": "Gemini Decisions API: Fast, calibrated multimodal decisions",
+      "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+      "sourceName": "Google AI Blog",
+      "publishedAt": "2026-11-11T18:00:00.000Z",
+      "sourceExcerpt": "Meet the Gemini Decisions API, powered by our state-of-the-art model Gemini Decision for fast, calibrated multimodal decisions.",
+      "summary": "**What happened:** Google introduced the Gemini Decisions API, built on the Gemini Decision model, enabling developers to obtain quick, confidence‑scored multimodal outputs.\n**Why it matters:** By providing calibrated confidence scores and low‑latency responses, the API helps applications make safer, more transparent AI‑driven choices in areas like content moderation, recommendation, and risk assessment.\n**Key stats:**\n- Response times under 200 ms for most queries\n- Confidence calibration error reduced by 30% vs prior Gemini models\n- Supports text, images, and mixed‑modal inputs in a single call\n**Source:** https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.14765",
+      "rank": 3,
+      "title": "SynthCorp: A Platform for Creating Benchmarks for Data Agents",
+      "sourceUrl": "https://arxiv.org/abs/2611.14765",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-13T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.14765v1 Announce Type: new Abstract: Current benchmarks for LLM-driven data agents saturate quickly and cannot target specific capabilities. We present SynthCorp, a platform that creates customizable data estates and benchmarks by simulating how business events produce and modify corporate data over time. Each data estate combines relational databases, a document store, and a data catalog, paired with evaluation tasks and executable gold programs. First, given a scenario and target complexity dimensions, SynthCorp synthesizes reusable event types and compiles each into a program over predefined simulation primitives. Second, SynthCorp schedules event instances on a virtual calendar, interleaving routine and disruption events so that tables, documents, and catalog entries remain consistent. Third, SynthCorp executes the calendar to materialize the data estate and records every operation in a simulation log. Fourth, SynthCorp generates analytical tasks and derives verified gold programs from the log. We use SynthCorp to generate initial evaluation benchmarks comprising seven data estates (up to 1K operational tables) and 256 tasks across five domains. The data estates pass deterministic pipeline checks (such as foreign-key violations, undeclared writes, recurrence violations, and database execution failures) with a near-zero error rate, introduce cross-asset complexities, and cover all requested dimensions. Evaluating three models across four data-context settings shows that the benchmarks separate data contexts and model tiers. Auditing candidate queries against causal provenance in the simulation log verifies gold programs without manual annotation, including on multi-event composite tasks that expose reasoning failures in state-of-the-art agents. We hope the community uses SynthCorp to generate more challenging and useful data estates and benchmarks that foster the development of enterprise data agents.",
+      "summary": "**What happened:** Researchers introduced SynthCorp, a system that can generate synthetic data estates—relational databases, document stores, and data catalogs—driven by simulated business events. Each estate comes with evaluation tasks and executable gold‑standard programs for testing LLM‑powered data agents.\n\n**Why it matters:** Existing benchmarks quickly saturate, limiting progress on specific agent capabilities. SynthCorp’s customizable scenarios let developers target precise skills, accelerating research and deployment of more robust data agents.\n\n**Key stats:** • Generates full data pipelines from event streams\n• Supports relational, document, and catalog layers in one estate\n• Provides gold‑standard programs for automated evaluation\n\n**Source:** https://arxiv.org/abs/2611.14765"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.14794",
+      "rank": 4,
+      "title": "When Is Proof-Step Verification Worth Its Cost? Operating Requirements of Certify-or-Decline Verification for Open-Weight Mathematical Reasoning",
+      "sourceUrl": "https://arxiv.org/abs/2611.14794",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-13T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.14794v1 Announce Type: new Abstract: Proof-step verification rewrites a solver's answer into typed steps and uses LLM judges to certify or decline. We evaluate this pipeline on open-weight models across GPQA, AIME-2025, and a MATH-500 subset. Certification raises answer-key-match precision by 31 percentage points on the strong GPQA configuration and 46 on AIME, while answering only 35% and 21% of attempts. On near-ceiling MATH-500, gains are at most 5 points at a loss of 13-27 points of coverage. An output-token-matched self-consistency selector obtains 82.9% precision at 35% coverage, compared with the verifier's pooled 87.6% (paired difference: +4.8 points, 95% interval [-8.2, 18.5]). A diagnostic sample reveals a distinct failure mode: 52 of 88 completed problems end in invalid proof construction without ever reaching a judge. Finally, external-LLM acceptance of rendered certified chains is 61.0-67.6%, compared with 87.6% answer-key match. These audits lack human or formal-kernel ground truth. Open-weight auditor pairs show near-zero chance-corrected agreement, which measures consistency rather than accuracy against proof truth. These results motivate separate reporting of execution failures, selected-answer precision, and independently assessed proof validity. We provide per-configuration results and evaluation details in the supplement.",
+      "summary": "**What happened:** Researchers rewrote solver outputs into typed proof steps and let large‑language‑model judges either certify or decline them. They tested open‑weight models on GPQA, the upcoming AIME‑2025, and a tough subset of MATH‑500.\n\n**Why it matters:** Certifying steps can dramatically raise confidence in correct answers, offering a safety net for high‑stakes applications. However, the extra verification step cuts the overall answer‑throughput, raising questions about when the extra cost is justified.\n\n**Key stats:**\n- GPQA: precision ↑ 31 pp, but only 35 % of attempts get certified.\n- AIME‑2025: precision ↑ 46 pp, with a 21 % certification rate.\n- MATH‑500 (near‑ceiling): max gain of 5 pp, while overall score drops by 13‑27 pp.\n\n**Source:** https://arxiv.org/abs/2611.14794"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.14949",
+      "rank": 5,
+      "title": "RSI-PDEbench: A Benchmark for Self-Improving Agents in PDE Solving",
+      "sourceUrl": "https://arxiv.org/abs/2611.14949",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-13T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.14949v1 Announce Type: new Abstract: Identifying and solving partial differential equations (PDEs) from sampled solution data often requires substantial expert effort in equation discovery, coefficient estimation, and numerical solver configuration, especially under noise and distribution shifts. Can large language model (LLM) agents automate this workflow accurately and efficiently? To investigate this question, we introduce \\bench{}, a benchmark of 1,001 cases spanning 42 equation templates, including both classical and fractional PDEs. It provides three evaluation settings: Full evaluates performance on noise-free solution data; Noisy tests robustness to Gaussian noise with an RMS equal to 50\\% of the clean-signal RMS; and Hard-OOD tests challenging out-of-distribution generalization to unseen equation templates and shifted coefficient ranges. We further introduce RSI-PDE, a recursively self-improving agent harness that shortlists candidate equations by residual loss, uses relative $L^2$ feedback to refine coefficients and numerical solvers, and applies a validation gate to policy and memory updates. We compare RSI-PDE with single-run baselines and native agent harnesses (Claude Code or Codex) across four frontier models. Across the three settings, RSI-PDE improves the pass rate averaged across the four models by 106.5--181.9\\% relative to single-run baselines and by 3.0--19.6\\% relative to native harnesses, while reducing total recorded model calls by 46.9\\% across the 12 model--setting pairs. These results highlight the potential of validated recursive self-improvement in LLM agents to advance scientific computing.",
+      "summary": "**What happened:** The team introduced RSI‑PDEbench, comprising 1,001 test cases drawn from 42 distinct PDE families. The benchmark evaluates LLM‑driven agents on the full workflow—equation discovery, coefficient estimation, and numerical solver configuration—especially under noise and distribution shifts.\n\n**Why it matters:** Automating PDE identification could dramatically reduce the expert labor required in scientific modeling, accelerate hypothesis testing, and serve as a rigorous probe of LLM reasoning and tool‑use capabilities.\n\n**Key stats:** 1,001 cases, 42 equation families, includes varied noise levels and out‑of‑distribution scenarios; early baselines show LLM agents still lag behind specialized solvers, highlighting room for improvement.\n\n**Source:** https://arxiv.org/abs/2611.14949"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.14997",
+      "rank": 6,
+      "title": "Same Task, Different Statement: When and How Reformulation Helps LLM Problem Solving",
+      "sourceUrl": "https://arxiv.org/abs/2611.14997",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-13T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.14997v1 Announce Type: new Abstract: When people face a hard problem, they often restate it in a clearer way before solving it. We study whether the same habit helps large language models by rewriting the statement of a problem. A legal rewrite must keep the meaning, the constraints, and the correct answer unchanged. We test three kinds of rewrites. Decomposition makes hidden subgoals explicit. Typed Reformulation casts the task into a more suitable solving frame. Concept Reduction removes surface detail and exposes the task structure. We evaluate them on eight math, logic, and code benchmarks with eight models, all under the same chain-of-thought solving prompt. The effect is large but depends on the problem type. An oracle that picks the best rewrite after the fact raises accuracy by +27.6% on average. Yet no single rewrite helps every problem, and a mismatched rewrite can hurt. Still, the effect follows clear patterns. Each kind of rewrite fits certain problem types. A simple fixed rule learned from one set of problems transfers part of the gain to new problems. It gains +11.0% on the problems it chooses to rewrite, while blind rewriting loses 5.6% on a similar share of problems. Rewriting is therefore not a universal way to solve problems. The question is when and how to rewrite.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.15006",
+      "rank": 7,
+      "title": "EvoX: Rethinking the Agent Harness as a Runtime Policy",
+      "sourceUrl": "https://arxiv.org/abs/2611.15006",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-13T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.15006v1 Announce Type: new Abstract: Large language model (LLM) agents increasingly interact with tools and environments, yet plausible model decisions do not always translate into successful execution due to tool-call mismatches, interrupted workflows, and unsupported completion claims. We present EvoX, a Rust-based, multi-model agent runtime guided by The Second Policy, which views the harness as an Operational Policy complementing the foundation model's Semantic Policy. EvoX combines model-facing guidance with deterministic runtime control through three complementary mechanisms: Action Realization, Execution Continuity, and Outcome Grounding. To evaluate harnesses without suppressing their native behaviors, we introduce Contrast, a controlled and auditable framework integrating explicit fairness constraints, provider-bound request verification, and evidence-based adjudication. Across five benchmarks, six foundation models, and six agent harnesses, EvoX achieves the highest numerical success rate of 56.2% over 691 common task--model pairs, exceeding the average of the other five harnesses by approximately 3.0 percentage points. Its larger advantages on GLM-5.3 (+10.7 points) and Kimi K3 (+7.9 points) highlight the model-dependent effectiveness of harness design and the potential for cross-provider adaptability. Achieved without memory, evolution, or extensions, these results establish EvoX as a competitive multi-model agent runtime and underscore the importance of harness-level operational control in realizing foundation-model capabilities.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.15178",
+      "rank": 8,
+      "title": "HyperSkill: Training-Free Omnimodal GRPO via Hypergraph-Indexed Skill-Library Evolution",
+      "sourceUrl": "https://arxiv.org/abs/2611.15178",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-13T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.15178v1 Announce Type: new Abstract: Reinforcement learning sharpens LLM reasoning, but parameter updates are expensive, forgetful, and opaque; training-free libraries swap gradients for a textual store but still use trajectory-level, correlation-based admission and flat structure. To address both, we propose HyperSkill, a Training-Free Omnimodal GRPO framework that keeps the backbone frozen and replaces gradient updates with auditable edits to a Hypergraph-Indexed Skill-Library, where skills are advantage-bearing nodes and compositions are hyperedges. It has three components: training-time distillation admits counterfactually checked skills and learns a protocol skill from failures; gated hypergraph retrieval injects advantage-ranked skills where a per-dataset gate admits them; and an execution protocol makes the frozen backbone commit to an answer. On 11 text, vision-language, and omnimodal benchmarks, HyperSkill is best or tied on every dataset and beats the best baseline by 13.0 average F1 points while keeping the backbone frozen. Our software and data are publicly available at https://github.com/LHRLAB/HyperSkill.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.15223",
+      "rank": 9,
+      "title": "guardscope: Measuring Which Actions Runtime Controls Check in LLM Agent Systems",
+      "sourceUrl": "https://arxiv.org/abs/2611.15223",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-13T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.15223v1 Announce Type: new Abstract: Large-language model (LLM) agents execute actions on external systems through tool calls, and enterprises deploy runtime controls, such as agent gateways, to check this behavior in real time. However, a control can only evaluate the actions that cross the point where it is placed, and an agent can act through more paths than the tool-call channel; no existing work measures this coverage against kernel-level ground truth. In this paper, we present guardscope, a framework that makes this coverage measurable. guardscope works in two stages: a static stage that predicts which of an agent's 15 action paths a control can check from its source, and an empirical stage that runs a fixed workload on a deployment that realizes one of eight topology designs and classifies every executed action as checked, bypassed, or prevented by reconciling the control's decision records against kernel-level ground truth. guardscope makes a control's coverage claim verifiable: a runtime control developer can publish which paths its product inspects under a kernel-verified protocol. We conducted experiments with two agent harnesses and real runtime controls, including Microsoft's agent governance toolkit and agentgateway. guardscope is available at https://github.com/VulcanLab/guardscope.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.15238",
+      "rank": 10,
+      "title": "Towards Robust Vision-Language Reasoning: A Multi-Stage Optimization Pipeline with Masked Diffusion Model",
+      "sourceUrl": "https://arxiv.org/abs/2611.15238",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-13T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.15238v1 Announce Type: new Abstract: Discrete diffusion generation is emerging as a competitive alternative to autoregressive generation by denoising the entire token sequence through iterative refinement. Its global planning and progressive correction capabilities are particularly well suited to autonomous driving. However, transferring this generation paradigm from general-purpose settings to driving introduces substantial domain gaps in both training and inference. To unlock its potential, we propose a multi-stage optimization pipeline for standard vision-language model architectures, without auxiliary action experts or specialized mixture-of-experts Transformer, spanning post-training and inference. During supervised fine-tuning, we optimize the representation of planning inputs to suppress hallucinations in task responses. During reinforcement learning, we introduce metric-guided diversity filtering to identify stronger learning starting points and improve policy exploration. At inference time, we propose Dynamic Autonomous Driving Decoding (DAD), which adaptively adjusts decoding modes according to scene complexity. Based on this pipeline, we develop Masked Diffusion Drive (MD-Drive), improving its performance by 29.7\\% over the unoptimized model. Experiments on the NAVSIM closed loop benchmark and the nuScenes and DriveCoT open loop datasets show that MD-Drive outperforms autoregressive VLM baselines with the same architecture, while achieving a more favorable balance between performance and computational cost than systems with different architectures through discrete diffusion training and inference.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.15309",
+      "rank": 11,
+      "title": "Where Autonomy Belongs: A Separation of Powers for Agentic Program Evolution",
+      "sourceUrl": "https://arxiv.org/abs/2611.15309",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-13T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.15309v1 Announce Type: new Abstract: LLM-driven program evolution rests on three decisions: govern directs the search from accumulated evidence, propose constructs the next candidate, and judge settles validity and fitness. All three appear in every system, and existing work splits into two lines over who makes each. Controller-centric systems strengthen govern and neglect the autonomy of propose, which caps what evolution can reach. Agent-centric systems let a coding agent take over both govern and propose, at a cognitive and computational cost. Neither line protects the independent authority of judge, so benchmark reliability suffers. These failures share one root: autonomy is misallocated across the three decisions. We address this problem with EvoTrias, a separation-of-powers architecture in which each decision has one owner: Structured Governance for what spans evolution rounds, Open Proposal for construction inside a task, and Protected Judgment behind a private evaluator. These owners exchange typed contracts only, and runtime hooks reinforce the boundaries. This separation also lets EvoTrias run as a plugin that turns an existing coding agent into an evolution system. EvoTrias sets a new state of the art on mathematical, systems, and algorithm-design benchmarks. Three further results show what each owner buys: separating Governance from Proposal cuts token cost by 64%, Open Proposal extends evolution to a 680K-line industrial repository, and Protected Judgment keeps benchmark scores faithful to transfer.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.15460",
+      "rank": 12,
+      "title": "Read and Ignore: What Self-Directed LLM Agents Do in Public Service Scenarios",
+      "sourceUrl": "https://arxiv.org/abs/2611.15460",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-13T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.15460v1 Announce Type: new Abstract: Underspecified instructions leave LLM agents to decide what to do. In public services, staff write these instructions, but the agent's decisions affect residents, patients, and students. We build four expert-validated public-service scenarios with records and decision levers that can be checked in the files, collect $2{,}400$ trajectories from ten LLMs under four prompt conditions, and compare them with $1{,}000$ runs in a context-free sandbox. Agents read the records in $96.9\\%$ of open-ended runs and produce an artifact or a self-chosen task in $18.7\\%$; with an explicit task, $86.0\\%$ produce. Domain context does not change how many runs produce ($18.7\\%$ vs.\\ $16.0\\%$), and the production ranking of the models largely carries over (Spearman $0.79$), while the ranking by whether a model reads the records does not ($0.19$). Context cuts boundary-probing turns per run by $60\\%$, and some artifacts contradict the records. We contribute a test that a public-service institution can run on its own records before procurement; its rule-based taxonomy needs no labeled data, and scenarios, code, and trajectories are released.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.15585",
+      "rank": 13,
+      "title": "Marginal-Preserving Coupled Diffusion Composition for Long-Horizon Planning",
+      "sourceUrl": "https://arxiv.org/abs/2611.15585",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-13T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.15585v1 Announce Type: new Abstract: Compositional diffusion planners extend short-horizon trajectory models to long-horizon goal-conditioned planning by generating and stitching multiple local trajectory chunks. However, in multimodal environments, local plausibility is not sufficient for global consistency: independently initialized chunks may denoise toward incompatible overlap modes, producing plans that are individually feasible but incoherent after stitching. Existing remedies typically add search, guidance, pruning, or graph-based structure at inference time, increasing computational cost or relying on task-specific machinery. We instead investigate graph-structured dependence among chunk-wise initial diffusion noises as a lightweight coordination mechanism for compositional trajectory planning. We propose \\textbf{M}arginal-Preserving \\textbf{C}oupled \\textbf{D}iffusion \\textbf{C}omposition (MCDC), a training-free inference method for pretrained compositional diffusion planners. Instead of sampling chunk noises independently, MCDC constructs coupled Gaussian initializations whose per-chunk marginals remain exactly standard Gaussian, as required by the pretrained denoiser, while neighboring chunks receive positively correlated noise components. This preserves the standard-Gaussian initialization marginal of each chunk while biasing adjacent chunks toward compatible overlap-mode choices. We prove exact marginal preservation and show, under a simple multimodal overlap model, that positive coupling increases the probability of compatible mode selection. On OGBench long-horizon stitch tasks, MCDC consistently improves over independent compositional diffusion sampling while retaining nearly the same inference time, and achieves a favorable success--cost trade-off compared with search-based composition methods.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.15600",
+      "rank": 14,
+      "title": "MemCredit: From Relevance to Utility for Decision-Time Memory in Long-Horizon Web Agents",
+      "sourceUrl": "https://arxiv.org/abs/2611.15600",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-13T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.15600v1 Announce Type: new Abstract: Large language model (LLM) agents increasingly operate over long Web interaction histories, making memory management critical for reliable and efficient decision making. Existing methods primarily optimize storage, retrieval, or compression, but the memories most semantically relevant to the current state are not necessarily those that most improve the agent's action. We introduce MemCredit, a decision-centric memory framework that shifts memory selection from semantic relevance to decision utility. MemCredit estimates the state-, reference-context-, and policy-conditional marginal contribution of individual memories through controlled counterfactual interventions, and distills these intervention-derived credits into a lightweight utility estimator. At inference time, semantic relevance is used only for high-recall candidate generation, while predicted utility arbitrates which memories are retained under a fixed token budget, without modifying the underlying agent policy or requiring additional environment interaction. We evaluate MemCredit on ALFWorld and WebShop against representative memory baselines. On ALFWorld, MemCredit achieves 86.57 SR@50 under a 500-token historical-memory budget, compared with 65.67% for BM25 retrieval. Counterfactual analysis further shows that memory utility is sparse, strongly state dependent, and poorly captured by semantic relevance. These results suggest that decision utility provides a more effective principle than relevance alone for long-horizon agent memory management.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.15729",
+      "rank": 15,
+      "title": "DISCERN: Preserve at Write, Resolve at Read for Persistent LLM-Agent Memory",
+      "sourceUrl": "https://arxiv.org/abs/2611.15729",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-13T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.15729v1 Announce Type: new Abstract: Enterprise agents accumulate memory across dozens of sessions in which facts contradict, get superseded, and blur as similarly named entities collide in embedding space. The field treats this as a retrieval problem; we show it is not. On ENT-310, a synthetic enterprise sales-agent memory benchmark of 310 queries (210 answerable, 100 unanswerable), a vanilla Retrieval-Augmented Generation (RAG) reader over a memory store already matches strong memory systems on the recall pillars. Retention and currency are near-saturated, roughly 0.93 to 0.98 for every competent system, so recall is essentially solved. What remains unsolved is resolution: which entity a query refers to, which time-state is current, and whether to commit an answer at all or decline when evidence is insufficient. We propose DISCERN (DISambiguation and Cross-session Episodic memoRy Navigation), an agent-memory framework built on a single rule: preserve at write, resolve at read. At write time DISCERN builds a strictly additive bi-temporal provenance graph that never merges confusable entities and never drops superseded values. At read time a zero-LLM tool surface drives an agentic loop that navigates this graph and commits exactly one of four gated terminal actions. A four-judge LLM-as-a-Judge council scores two axes: answer correctness on answerable questions, and the answer-versus-abstain decision as a classification problem. On ENT-310, DISCERN is the best-calibrated system on abstention (F1 0.924 versus at most 0.802 across eight baselines) and leads macro answer correctness under equal pillar weighting (0.861 versus 0.806 for the strongest baseline), a lead driven by entity resolution (0.800, where no baseline exceeds 0.40). Applied with zero tuning to the full LoCoMo corpus, the same pipeline again leads macro answer correctness (0.663 versus 0.638) and stays among the best-calibrated on false-premise abstention.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.16318",
+      "rank": 16,
+      "title": "Benchmarking AI risk behaviors",
+      "sourceUrl": "https://arxiv.org/abs/2611.16318",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-13T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.16318v1 Announce Type: new Abstract: We evaluate LLM risk propensities across a range of contexts and task demands. We evaluate models for how risk averse or risk tolerant they are in various conditions, as well as how stable and consistent their behavior is across conditions. We present a toolkit for developing model risk profiles that can be used to predict model behavior and which can be adapted to include new evaluations of risk propensities. We also examine how these properties have changed across model generations and families. We observe that 2026 state-of-the-art models tend to be more stable, more consistent, and more risk neutral than older models. These trends appear to be related; newer models are more stable and consistent because they are more likely to use expected value maximization as a decision procedure.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.16498",
+      "rank": 17,
+      "title": "How many LLM-labelled rows does a decision encoder need, and how wrong can the labels be?",
+      "sourceUrl": "https://arxiv.org/abs/2611.16498",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-13T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.16498v1 Announce Type: new Abstract: A decision encoder such as Laya reads a question with named options (for example, which department should handle a ticket) and a text, and picks an option. It reads both in one forward pass and returns a probability for every option, without writing any text. We ask how many LLM-written training rows such an encoder needs and how wrong those labels may be. We ran 19 fine-tunes of Laya (ModernBERT-large) on nested subsets of a 2,818-row pool and scored them on 1,065 held-out items from the same generator, so every test item is in-distribution and no out-of-family test was run. Accuracy rises from 69.4% before fine-tuning to 74.3% with 5% of the rows, 84.8% with 50% and 86.9% with all rows. The curve flattens, and a saturating fit with bootstrap intervals cannot pin down its plateau. Seed spread at 20% of the rows (s.d. 1.6 points) exceeds some of the steps between sizes. Giving small subsets as many updates as the full pool gains 1.9 points at 5% and 1.9 points at 20% of the rows (one seed; p=0.14 and 0.13), and at 20% that is below the 2.3-point difference between two ordinary seeds. A single run with 10% symmetric label noise shows no detectable change (-0.2 points, 95% interval -1.7 to +1.4); 20% costs 3.4 points and 40% costs 8.7 points. Confusable-pair noise at 20% costs 7.4 points, and under noise the model moves from over-confident to under-confident. An independent labeller disagrees with the gold labels on 3.5% of held-out items, and about half of its choice disagreements (16 of 33, leaving each item out of the partner map) name the partner option that the confusable-pair noise uses. Laya is +0.9 points ahead of a TF-IDF classifier trained on the same rows at full size (the interval includes zero) and +21.1 points ahead at 5% of the rows. Everything is synthetic, LLM-labelled and from one backbone, one trainer and mostly one seed.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.16502",
+      "rank": 18,
+      "title": "SignRot: LLM Quantization with Massive Outlier-Aware Sign-Adjusted Rotation",
+      "sourceUrl": "https://arxiv.org/abs/2611.16502",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-13T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.16502v1 Announce Type: new Abstract: While quantization compresses LLMs and accelerates inference, outlier activations impede efficient low-bit representation. In particular, massive outliers cause substantial performance degradation. Although rotation-based methods that rely on randomized Hadamard transforms for online inference aim to mitigate this, they can produce fragmented distributions with empty bins when a massive outlier dominates a token's activation. This fragmentation severely undermines uniform quantization performance. Moreover, massive outliers concentrate in the down-projection input, where the preceding nonlinearity requires the rotation to be applied at inference time. This constraint prevents training-based approaches such as SpinQuant from learning the online rotation at this position, as a learned dense matrix cannot use the Fast Walsh-Hadamard Transform and would require a full matrix multiplication during inference. To address this, we propose SignRot (Sign-adjusted Rotation), which identifies massive outlier channels and constructs a sign adjustment vector that unifies the signs of the corresponding Hadamard row, collapsing the bimodal distribution into a unimodal profile amenable to quantization. Since the aligned outlier shifts the activation mean away from zero, we pair SignRot with asymmetric activation quantization, whose zero-point absorbs this shift. As a lightweight, drop-in improvement compatible with any Hadamard-based quantization method, SignRot requires only a single calibration forward pass and adds only element-wise sign flips at inference, without an additional matrix multiplication. Applying SignRot to QuaRot achieves a WikiText2 perplexity of 5.88 and an average zero-shot reasoning accuracy of 72.73, surpassing SpinQuant on the LLaMA3-70B model. Code is available at https://github.com/HYU-ARK-Lab/SignRot.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.16526",
+      "rank": 19,
+      "title": "Lost in Delegation: Studying the Effectiveness of Task Orchestration in Generative Search",
+      "sourceUrl": "https://arxiv.org/abs/2611.16526",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-13T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.16526v1 Announce Type: new Abstract: LLMs have quickly evolved from models used in isolation to agentic systems that delegate tasks to external tools and other LLMs to solve complex assignments. This agentic augmentation has led to impressive capability gains. However, when and how delegation improves performance remains poorly understood. For example, it is unclear whether delegation helps when tasks involve post-cutoff information that the orchestrating LLM cannot reliably resolve from its own knowledge. In this work, we use purpose-built datasets with pre- and post-cutoff splits to compare various delegation modes. We find that delegation provides no consistent accuracy improvement over non-delegated setups, with effects varying across models and tasks. When tasks involve knowledge unavailable to the orchestrator, delegation can substantially degrade accuracy, while direct tool use with the same LLM performs much better. Our analysis identifies distorted delegated queries, inefficient tool use, and failures to preserve and use information between agents as recurring failure modes. These findings suggest that effective orchestration requires both well-calibrated delegation decisions and effective exchange of information between agents.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.16586",
+      "rank": 20,
+      "title": "Large Language Models as Digital Twins: a Distribution-Aware Questionnaire-Based Evaluation",
+      "sourceUrl": "https://arxiv.org/abs/2611.16586",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-13T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.16586v1 Announce Type: new Abstract: This paper investigates whether Large Language Models can answer a personality questionnaire as a specific individual would. Given a user's social-media posts, the model completes the BFI-2-60 Big Five questionnaire as that user. The predicted responses are converted into trait scores and compared with the user's actual scores. We evaluate GPT-4, Gemma, Llama 3.1, and Mistral on the MyPersonality dataset. To determine whether predictions reflect information from the user's writing, we compare them with answers produced without user text and with values derived from general population tendencies. We measure prediction error across all users and separately for individuals with low, intermediate, and high trait scores. We also test whether an LLM can express an explicit personality profile when given only the target Big Five scores, without user text, and examine how predictions change as more text is provided. The results show that user text does not consistently improve performance. Models perform better near the middle of the trait distribution, while at the lower and upper ends they often remain close to central values or perform well at one end but poorly at the other. When given an explicit profile, GPT-4 most clearly translates trait information into consistent questionnaire responses, particularly for Extraversion and Neuroticism. Increasing context does not systematically reduce error: open-source models fluctuate more, whereas GPT-4 remains comparatively stable. Overall, the evaluated models do not consistently reproduce the questionnaire behavior of specific individuals.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.16694",
+      "rank": 21,
+      "title": "When Expert Disagreement Hurts: Prestige and Selectivity in LLM Decision Revision",
+      "sourceUrl": "https://arxiv.org/abs/2611.16694",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-13T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.16694v1 Announce Type: new Abstract: When language models revise a decision after another agent disagrees, neither reversal counts nor final accuracy shows whether they are fixing mistakes or abandoning correct answers. We introduce a controlled two-pass audit that holds the question, the evidence, and the model's initial answer fixed and varies only the revision context: neutral reflection, anonymous disagreement, or disagreement attributed to a domain expert. For binary decisions the accounting is exact: revision raises accuracy only if it is selective enough, reversing wrong answers more than $a/(1-a)$ times as often as correct ones, where $a$ is initial accuracy (nine times at 90%). Across five models and 1,989 evidence-grounded decisions in medicine, science, and law, no model clears this bar under expert disagreement, and accuracy falls by up to 16.1 points. The expert label, a prestige cue, adds reversals for four of the five models, yet its effect on accuracy ranges from a 5.2-point loss to a 2.4-point gain, so reversal counts are a poor proxy for harm. With identical arguments from both sources, the label still raises reversal for three proprietary models and in a pooled analysis of four newer models. Models also respond to stated source reliability. Revision pipelines should therefore be evaluated with paired, conditional metrics, per model and protocol.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.16710",
+      "rank": 22,
+      "title": "Acoustic Respiratory Phase Detection on Mobile Devices",
+      "sourceUrl": "https://arxiv.org/abs/2611.16710",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-13T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.16710v1 Announce Type: new Abstract: Breathing monitoring is important for well-being, stress regulation, and guided breathing exercises, yet existing approaches often rely on contact-based sensors or controlled environments. This paper presents a non-invasive framework for respiratory phase detection using acoustic signals recorded on commodity smartphones. The proposed hybrid CNN-Transformer architecture combines local spectral feature extraction with long-range temporal modeling to capture the cyclic structure of breathing. The model is evaluated using a Leave-One-Subject-Out (LOSO) protocol on the Foundation Dataset and on an independent unseen test set comprising over 1300 breathing cycles and 2 hours of continuous recordings. The proposed 3-class formulation achieves 72.85% frame-level accuracy and 96.6% cycle-level exhalation detection efficiency in the LOSO evaluation, while achieving 76.94% frame-level accuracy, a Cohen's Kappa score of 0.65, and 99.2% cycle-level exhalation detection efficiency on the unseen test set. Results suggest that accurate respiratory monitoring may be achievable under data-constrained conditions, indicating that appropriate temporal modeling can learn transferable respiratory representations and generalize to previously unseen participants. An end-to-end ONNX deployment pipeline enables privacy-preserving on-device inference with latency below 20 ms, supporting real-time monitoring on mobile and wearable devices.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.16937",
+      "rank": 23,
+      "title": "S1-Evo: Experience-Guided Evidence Competition Attacks on Typed System-1 Decision Models",
+      "sourceUrl": "https://arxiv.org/abs/2611.16937",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-13T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.16937v1 Announce Type: new Abstract: Typed System-1 (S1) decision models are increasingly deployed in LLM agents for routing, moderation, and authorization to cut inference cost, yet untrusted context can still manipulate typed outputs and alter execution branches. Unlike autoregressive System-2 (S2) models, S1 interfaces score dynamic rules and options without token-by-token decoding, mismatching attacks targeting text continuation or explicit override commands. We propose S1-Evo, a self-evolving framework tailored to S1's contract-based option competition and margin feedback. S1-Evo perturbs untrusted fields via contract-aware evidence channels to induce \\emph{evidence competition} with original task evidence while preserving fact invariance. Offline on seed tasks, it optimizes candidates via feedback search guided by directional margins and re-verification, distilling verified flips into experience cards. At test time, S1-Evo retrieves relevant cards to construct perturbations for unseen tasks. Across four benchmarks and three S1 models, S1-Evo reaches 71.99\\% mean ASR and 57.47\\% high-confidence ASR on \\texttt{jev-1.14}, and causes up to 24.00\\% E2E agent violations.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.16981",
+      "rank": 24,
+      "title": "Compiling Known Rules into Compact Neural Agents: Weight-Space Programming on Unseen Games",
+      "sourceUrl": "https://arxiv.org/abs/2611.16981",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-13T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.16981v1 Announce Type: new Abstract: Weight-space programming (WSP) uses language models to construct neural network weights without training. We test whether known game mechanics can be compiled into compact agents that generalise to held-out levels, renderings and start states within a game family. Writers receive simulator source with held-out level data removed for 20 privately authored, unpublished ARC-AGI-3-style game families. With a fixed 57k-parameter recurrent architecture, the strongest writer reaches 56% held-out-level success with feedback, while the four main writers' Python players reach 97-100%. An exploratory free-architecture condition reaches 68-90%. Learning from support-level examples transfers much less well, but these learners lack the source information given to writers. Written networks have a program-like structure: 93% of parameters are zero, and 90% of the rest are small integers or powers of two. NumPy players under comparable computation caps reach 91%, versus the networks' 79%. Training the strongest writer's architectures from scratch yields about 1% success within our budget. Written fixed-network weights are fragile, and standard PPO removes most of their success. Prompts for noise robustness increase tolerance by about four orders of magnitude for two of three writers, but PPO makes larger updates and still removes most success. These results demonstrate rule-to-network compilation in this setting, while showing limited benefits over Python programs and no successful combination with the tested PPO fine-tuning.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.16986",
+      "rank": 25,
+      "title": "Primer: An AI Framework for Instructor-Centered Educational Simulation Creation",
+      "sourceUrl": "https://arxiv.org/abs/2611.16986",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-13T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.16986v1 Announce Type: new Abstract: Educational simulations are a well-established pedagogical technique that gives learners opportunities to apply knowledge, respond to challenges, and reflect on their performance. High-quality simulations, however, are difficult to build, requiring instructor input, scenario design, character development, scaffolding, technical implementation, and repeated revision. This paper presents Primer, an open-source, LLM-agnostic AI-supported system that helps educators create adaptive educational simulations. Educators contribute their knowledge of the subject, lesson, and students, while generative AI produces responsive variations of practice for students. Primer uses a multi-agent system centered around executing educator's instructional intent through the entire learning experience. We hope that by releasing Primer as an open-source system, including its prompts and GitHub repository, we provide a foundation for development and research on educator-in-the-loop AI authoring, multi-agent educational workflows, and simulation-based pedagogy. Further, by allowing the use of various AI models, including local and open source models, we provide the opportunity for implementation under varied governance regimes. Primer points toward a model of educational AI in which instructors can create locally grounded practice opportunities based on their own materials, goals, examples, and knowledge of students.",
+      "summary": ""
+    }
+  ]
+}
