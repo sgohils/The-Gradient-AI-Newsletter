@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "issueDate": "2026-11-13",
+  "issueUrl": "https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-13",
+  "content": "Today's AI briefing from The Gradient | 2026-11-13\n\n1. Google Search gets a major upgrade with Gemini 4 Hydrogen\nGoogle announced a global upgrade to Search by integrating Gemini 4 Hydrogen, a new AI model designed to deliver more helpful, visual, and intuitive responses.\n\n2. Gemini Decisions API: Fast, calibrated multimodal decisions\nGoogle introduced the Gemini Decisions API, built on the Gemini Decision model, enabling developers to obtain quick, confidence‑scored multimodal outputs.\n\n3. SynthCorp: A Platform for Creating Benchmarks for Data Agents\nResearchers introduced SynthCorp, a system that can generate synthetic data estates—relational databases, document stores, and data catalogs—driven by simulated business events. Each estate comes with evaluation tasks and executable gold‑standard programs for testing LLM‑powered data agents.\n\nRead the full briefing and original sources:\nhttps://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-13\n\n#AI #ArtificialIntelligence #TheGradient",
+  "contentHash": "037501525e70de8e35fe873ee5aa197dfa4b563efc4bbba0d6f5c1412f896d0a",
+  "accountId": "6ac5a561b3c21905c0edcfba",
+  "organizationUrn": "urn:li:organization:136824048",
+  "idempotencyKey": "194eb737-7205-41ed-b279-41f15bd9ee09",
+  "status": "submitting",
+  "firstSubmittedAt": "2026-11-13T19:11:07.369Z"
+}
