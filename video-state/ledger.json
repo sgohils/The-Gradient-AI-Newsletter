@@ -1983,6 +1983,104 @@
         "videoSha256": "c89475e390715b1b3824069ac4ffdb64ee7a32e893f4d41e2cb0c27627bb65e4",
         "uploadedAt": "2026-11-13T19:15:40.846Z"
       }
+    },
+    "2026-11-14": {
+      "story": {
+        "id": "reddit-machinelearning-https%3A%2F%2Fwww.reddit.com%2Fr%2FMachineLearning%2Fcomments%2F1xvja5n%2Fi_have_trained_a_model_to_predict_my_blood_sugar_p%2F",
+        "rank": 6,
+        "title": "I have trained a model to predict my blood sugar [P]",
+        "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1xvja5n/i_have_trained_a_model_to_predict_my_blood_sugar_p/",
+        "sourceName": "Reddit r/MachineLearning",
+        "publishedAt": "2026-11-13T20:48:25.000Z",
+        "sourceExcerpt": "I have trained a custom 31,253 parameter encoder-only transformer on a pregenerated synthetic CGM dataset and fitted it to my own personal data using LoRA. It is competitive among other published models. I used 115 days of CGM data, of which 80 was used for training the adapter and 35 for testing. The model began with a pretraining stage where it consumed ~19,200 CGM-years worth of synthetic data, consisting of 1 million simulated type 1 diabetics at 7 days each. The simulator is designed to aid in counterfactual reasoning, but I don't yet have a benchmark to test these capabilities downstream. Simply using these models on my phone gives me the impression that they do indeed react appropriately when forced to consider future insulin & carbs. In addition to time series input, two additional inputs are provided: insulin (U) and carbs (G, GI) as action curves where U = units of insulin, G = carbs in grams, GI = glycemic index. U is exact, while (G, GI) is my best estimate. The model is trained to output BG in Kovatchev risk-space using {DILATE,MSE} and pinball loss combined with learned Kendall-Gal weights. The figures above show models trained using DILATE. It can predict 2 hours into the future, infill missing traces, and do backcasts (predictions into the past). Source code: https://github.com/0xdeadf1sh/T1DMAI The model is also trained to predict time-of-day given past blood sugar, in contrast to other models that consume time-of-day as input feature. This capability emerges in >=48h context windows (i.e. 48 hours of past CGM trace). Natively the model has a variable context window size of 3.5 - 7.0 days. The model is still worse than me when it comes to predicting hypoglycemia in the next ~30 minutes. submitted by /u/0xdeadf1sh [link] [comments]",
+        "summary": ""
+      },
+      "selectedAt": "2026-11-14T17:42:18.637Z",
+      "platforms": {
+        "youtube": {
+          "accountId": "6ac27146281ee799a37065e4",
+          "status": "prepared",
+          "idempotencyKey": "3dc0410e-ae6f-47bd-8704-0b7394c83bda"
+        }
+      },
+      "script": {
+        "version": 3,
+        "provider": "extractive",
+        "format": "source-fallback",
+        "angle": "workflow",
+        "workingTitle": "I have trained a model to predict my blood sugar",
+        "availability": "unknown",
+        "hookStyle": "question",
+        "sentences": [
+          {
+            "text": "Would you use I have trained a?",
+            "evidenceQuote": "I have trained a custom 31,253 parameter encoder-only transformer on a pregenerated synthetic CGM dataset and fitted it to my own personal data using LoRA.",
+            "role": "hook",
+            "visual": "example",
+            "displayText": "Would you use I have trained a?"
+          },
+          {
+            "text": "I have trained a custom 31,253 parameter encoder-only transformer on a pregenerated synthetic CGM dataset and fitted it to my own personal data using LoRA.",
+            "evidenceQuote": "I have trained a custom 31,253 parameter encoder-only transformer on a pregenerated synthetic CGM dataset and fitted it to my own personal data using LoRA.",
+            "role": "breakthrough",
+            "visual": "example",
+            "displayText": "I have trained a custom 31"
+          },
+          {
+            "text": "It is competitive among other published models.",
+            "evidenceQuote": "It is competitive among other published models.",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "It is competitive among other published models"
+          },
+          {
+            "text": "The figures above show models trained using DILATE.",
+            "evidenceQuote": "The figures above show models trained using DILATE.",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "Models trained using DILATE"
+          },
+          {
+            "text": "It can predict 2 hours into the future, infill missing traces, and do backcasts (predictions into the past).",
+            "evidenceQuote": "It can predict 2 hours into the future, infill missing traces, and do backcasts (predictions into the past).",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "Predict 2 hours into the future"
+          },
+          {
+            "text": "This source excerpt does not confirm public access.",
+            "evidenceQuote": "I have trained a custom 31,253 parameter encoder-only transformer on a pregenerated synthetic CGM dataset and fitted it to my own personal data using LoRA.",
+            "role": "impact",
+            "visual": "highlight",
+            "displayText": "does not confirm public access"
+          },
+          {
+            "text": "Would you try I have trained a, or wait for more proof?",
+            "evidenceQuote": "I have trained a custom 31,253 parameter encoder-only transformer on a pregenerated synthetic CGM dataset and fitted it to my own personal data using LoRA.",
+            "role": "engagement",
+            "visual": "highlight",
+            "displayText": "Would you try I have trained"
+          }
+        ],
+        "narration": "Would you use I have trained a? I have trained a custom 31,253 parameter encoder-only transformer on a pregenerated synthetic CGM dataset and fitted it to my own personal data using LoRA. It is competitive among other published models. The figures above show models trained using DILATE. It can predict 2 hours into the future, infill missing traces, and do backcasts (predictions into the past). This source excerpt does not confirm public access. Would you try I have trained a, or wait for more proof?"
+      },
+      "presentation": {
+        "title": "I have trained a model to predict my blood sugar",
+        "format": "source-fallback",
+        "angle": "workflow",
+        "hookStyle": "question",
+        "availability": "unknown",
+        "duration": 40.050000000000004,
+        "wordCount": 85,
+        "scriptVersion": 3
+      },
+      "selectionReason": "A concrete capability or everyday consequence in the original evidence.",
+      "contentHash": "b4320e37729594b28a927f9542dc18d163987962c0dff437d4f0260d4c14a187",
+      "media": {
+        "publicUrl": "https://media.zernio.com/temp/1794678177785_e36622b945875bf9_2026-11-14.mp4",
+        "videoSha256": "c50ca97ac750ad7f61b3336dae54bf148b0cc4aa292fefeb7db377d58511971c",
+        "uploadedAt": "2026-11-14T17:42:58.824Z"
+      }
     }
   }
 }
