@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "issueDate": "2026-11-14",
+  "issueUrl": "https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-14",
+  "content": "Today's AI briefing from The Gradient | 2026-11-14\n\n1. Google Search gets a major upgrade with Gemini 4 Hydrogen\nGoogle announced that Gemini 4 Hydrogen, the latest AI model from its Gemini family, is now integrated into Google Search for all users globally.\n\n2. Gemini Decisions API: Fast, calibrated multimodal decisions\nGoogle introduced the Gemini Decisions API, a new developer‑facing service that uses the Gemini Decision model to produce fast, calibrated decisions across multiple modalities (text, image, video).\n\n3. Google’s latest Search upgrade promises better answers to your most complicated questions\nGoogle introduced an AI‑enhanced Search experience called AI Mode, built on its Gemini 4 Hydrogen model. The upgrade improves the engine’s ability to parse complex queries, surface the most relevant links, and generate richer visual responses.\n\nRead the full briefing and original sources:\nhttps://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-14\n\n#AI #ArtificialIntelligence #TheGradient",
+  "contentHash": "e9bb15982cbf5b1ff0842a29db860abe7704a1f7713ce558ef9d8c5c74c9f961",
+  "accountId": "6ac5a561b3c21905c0edcfba",
+  "organizationUrn": "urn:li:organization:136824048",
+  "idempotencyKey": "c4796cd7-8c6b-4c60-934a-d322660acb46",
+  "status": "submitting",
+  "firstSubmittedAt": "2026-11-14T17:39:33.682Z"
+}
