@@ -1999,8 +1999,32 @@
       "platforms": {
         "youtube": {
           "accountId": "6ac27146281ee799a37065e4",
-          "status": "prepared",
-          "idempotencyKey": "3dc0410e-ae6f-47bd-8704-0b7394c83bda"
+          "status": "submitting",
+          "idempotencyKey": "3dc0410e-ae6f-47bd-8704-0b7394c83bda",
+          "request": {
+            "content": "I have trained a model to predict my blood sugar [P]\n\nSource: Reddit r/MachineLearning\nhttps://www.reddit.com/r/MachineLearning/comments/1xvja5n/i_have_trained_a_model_to_predict_my_blood_sugar_p/\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-14\nAI-generated narration. #AI #AINews #Shorts",
+            "mediaItems": [
+              {
+                "type": "video",
+                "url": "https://media.zernio.com/temp/1794678177785_e36622b945875bf9_2026-11-14.mp4"
+              }
+            ],
+            "platforms": [
+              {
+                "platform": "youtube",
+                "accountId": "6ac27146281ee799a37065e4",
+                "platformSpecificData": {
+                  "title": "I have trained a model to predict my blood sugar",
+                  "visibility": "public",
+                  "madeForKids": false,
+                  "containsSyntheticMedia": true,
+                  "categoryId": "28"
+                }
+              }
+            ],
+            "publishNow": true
+          },
+          "firstSubmittedAt": "2026-11-14T17:43:00.012Z"
         }
       },
       "script": {
