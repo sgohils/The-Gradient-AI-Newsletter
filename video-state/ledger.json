@@ -2046,8 +2046,32 @@
       "platforms": {
         "youtube": {
           "accountId": "6ac27146281ee799a37065e4",
-          "status": "prepared",
-          "idempotencyKey": "67da790c-24a6-4964-aaa3-6eb502faf5b4"
+          "status": "submitting",
+          "idempotencyKey": "67da790c-24a6-4964-aaa3-6eb502faf5b4",
+          "request": {
+            "content": "Are AI leaderboards even worth taking seriously anymore?\n\nSource: Reddit r/artificial\nhttps://www.reddit.com/r/artificial/comments/1xwwdhv/are_ai_leaderboards_even_worth_taking_seriously/\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-15\nAI-generated narration. #AI #AINews #Shorts",
+            "mediaItems": [
+              {
+                "type": "video",
+                "url": "https://media.zernio.com/temp/1794767480688_1c963c26d73e6240_2026-11-15.mp4"
+              }
+            ],
+            "platforms": [
+              {
+                "platform": "youtube",
+                "accountId": "6ac27146281ee799a37065e4",
+                "platformSpecificData": {
+                  "title": "Are AI leaderboards even worth taking seriously",
+                  "visibility": "public",
+                  "madeForKids": false,
+                  "containsSyntheticMedia": true,
+                  "categoryId": "28"
+                }
+              }
+            ],
+            "publishNow": true
+          },
+          "firstSubmittedAt": "2026-11-15T18:31:23.926Z"
         }
       },
       "script": {
