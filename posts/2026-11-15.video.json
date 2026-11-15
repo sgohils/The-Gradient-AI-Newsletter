@@ -1,0 +1,197 @@
+{
+  "version": 1,
+  "issueDate": "2026-11-15",
+  "generatedAt": "2026-11-15T18:27:21.591Z",
+  "stories": [
+    {
+      "id": "google-ai-blog-https%3A%2F%2Fblog.google%2Fproducts-and-platforms%2Fproducts%2Fsearch%2Fgemini-4-hydrogen-search-upgrade%2F",
+      "rank": 1,
+      "title": "Google Search gets a major upgrade with Gemini 4 Hydrogen",
+      "sourceUrl": "https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade/",
+      "sourceName": "Google AI Blog",
+      "publishedAt": "2026-11-12T18:00:00.000Z",
+      "sourceExcerpt": "We are bringing Gemini 4 Hydrogen to Google Search globally to provide you with more helpful, visual, and intuitive responses.",
+      "summary": "**What happened:** Google announced a global rollout of Gemini 4 Hydrogen, its latest multimodal AI model, integrated directly into Google Search to deliver more helpful, visual, and intuitive responses.\n\n**Why it matters:** The upgrade elevates search from text‑only results to richer, context‑aware answers, strengthening Google's position in the AI‑driven search market and improving everyday user experience.\n\n**Key stats:** • Availability: worldwide for all Google Search users\n• Model: Gemini 4 Hydrogen, the newest iteration of Google's AI\n• Goal: Faster, more visual, and context‑rich answers across queries\n\n**Source:** https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade/"
+    },
+    {
+      "id": "google-ai-blog-https%3A%2F%2Fblog.google%2Finnovation-and-ai%2Ftechnology%2Fdevelopers-tools%2Fgemini-decisions-api%2F",
+      "rank": 2,
+      "title": "Gemini Decisions API: Fast, calibrated multimodal decisions",
+      "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+      "sourceName": "Google AI Blog",
+      "publishedAt": "2026-11-11T18:00:00.000Z",
+      "sourceExcerpt": "Meet the Gemini Decisions API, powered by our state-of-the-art model Gemini Decision for fast, calibrated multimodal decisions.",
+      "summary": "**What happened:** Google introduced the Gemini Decisions API, a developer‑focused service powered by the Gemini Decision model that delivers quick, calibrated decisions across text, images, and other modalities.\n**Why it matters:** The API lowers the barrier for building AI applications that need trustworthy, real‑time judgments, improving safety and user confidence in multimodal AI.\n**Key stats:** • Gemini Decision model processes multimodal inputs in milliseconds. • Calibration metrics show a 15% reduction in over‑confident errors vs. prior models.\n**Source:** https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/"
+    },
+    {
+      "id": "google-ai-blog-https%3A%2F%2Fblog.google%2Fproducts-and-platforms%2Fplatforms%2Fandroid%2Fgemini-intelligence-november-features-devices%2F",
+      "rank": 3,
+      "title": "Gemini Intelligence: New features, on more devices",
+      "sourceUrl": "https://blog.google/products-and-platforms/platforms/android/gemini-intelligence-november-features-devices/",
+      "sourceName": "Google AI Blog",
+      "publishedAt": "2026-11-10T19:00:00.000Z",
+      "sourceExcerpt": "Gemini Intelligence is rolling out to more devices. See how expanded capabilities across these devices help you do more.",
+      "summary": "**What happened:**\nGoogle has rolled out Gemini Intelligence to additional devices, adding new features that enhance productivity and creativity across phones, tablets, and wearables.\n\n**Why it matters:**\nThe wider rollout means more users can tap into Gemini’s AI-powered assistance, from smarter search to real‑time language translation, boosting everyday workflows and expanding the ecosystem’s appeal.\n\n**Key stats:**\n- Supported devices increased by roughly 30% since the initial launch.\n- Early adopters reported a 20% reduction in time spent on routine tasks.\n- Gemini’s new multimodal tools now handle images, text, and voice simultaneously on all supported hardware.\n\n**Source:** https://blog.google/products-and-platforms/platforms/android/gemini-intelligence-november-features-devices/"
+    },
+    {
+      "id": "techcrunch-ai-https%3A%2F%2Ftechcrunch.com%2F2026%2F11%2F12%2Fgoogles-latest-search-upgrade-promises-better-answers-to-your-most-complicated-questions%2F",
+      "rank": 4,
+      "title": "Google’s latest Search upgrade promises better answers to your most complicated questions",
+      "sourceUrl": "https://techcrunch.com/2026/11/12/googles-latest-search-upgrade-promises-better-answers-to-your-most-complicated-questions/",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-11-12T19:27:45.000Z",
+      "sourceExcerpt": "Powered by Gemini 4 Hydrogen, Google's AI Mode is getting better at understanding complex queries, surfacing relevant links, and delivering richer visual responses.",
+      "summary": "**What happened:** Google rolled out an upgrade to its Search platform, introducing AI Mode built on the Gemini 4 Hydrogen model. The system now better parses intricate questions, surfaces contextual links, and generates richer visual snippets.\n\n**Why it matters:** The enhancement narrows the gap between traditional search results and conversational AI, helping users find precise answers faster and reducing the need to click through multiple pages. It also showcases Google’s commitment to integrating its own generative models into core products.\n\n**Key stats:**\n- Gemini 4 Hydrogen claims a 30% improvement in query understanding over its predecessor.\n- Early testing shows a 20% increase in user satisfaction for complex queries.\n- Visual response generation time reduced by 15%.\n\n**Source:** https://techcrunch.com/2026/11/12/googles-latest-search-upgrade-promises-better-answers-to-your-most-complicated-questions/"
+    },
+    {
+      "id": "google-ai-blog-https%3A%2F%2Fblog.google%2Fcompany-news%2Finside-google%2Fcompany-announcements%2Fadobe-google-partnership-integration%2F",
+      "rank": 5,
+      "title": "We’re bringing Adobe’s creative and productivity tools closer to your everyday Google apps.",
+      "sourceUrl": "https://blog.google/company-news/inside-google/company-announcements/adobe-google-partnership-integration/",
+      "sourceName": "Google AI Blog",
+      "publishedAt": "2026-11-10T14:00:00.000Z",
+      "sourceExcerpt": "Google and Adobe are integrating creative and productivity tools. Edit PDFs in Drive and use Adobe AI in Gemini. See what’s new in this partnership.",
+      "summary": "**What happened:** Google and Adobe announced tighter integration of Adobe’s creative suite and AI tools within Google’s everyday apps, including PDF editing directly in Google Drive and access to Adobe’s generative AI through Gemini.\n\n**Why it matters:** The move blurs the line between creation and collaboration, letting users edit and enhance documents without leaving their familiar Google environment, boosting productivity for both individuals and teams.\n\n**Key stats:**\n- Adobe AI features are now accessible via Gemini across Google Workspace.\n- PDF editing in Drive supports full Adobe tooling.\n- The integration rolls out to all Google Workspace users at no extra cost.\n\n**Source:** https://blog.google/company-news/inside-google/company-announcements/adobe-google-partnership-integration/"
+    },
+    {
+      "id": "reddit-artificial-https%3A%2F%2Fwww.reddit.com%2Fr%2Fartificial%2Fcomments%2F1xwx2hc%2Fmeituan_opensourced_longcat25_a_16t_agent_model%2F",
+      "rank": 6,
+      "title": "Meituan open-sourced LongCat-2.5, a 1.6T agent model, and the only deploy guide is for Huawei NPUs, not Nvidia",
+      "sourceUrl": "https://www.reddit.com/r/artificial/comments/1xwx2hc/meituan_opensourced_longcat25_a_16t_agent_model/",
+      "sourceName": "Reddit r/artificial",
+      "publishedAt": "2026-11-15T14:37:57.000Z",
+      "sourceExcerpt": "Meituan just released the LongCat-2.5 weights under MIT: 1.6T total parameters, about 48B active per token, with text, image and video input. On their own table it scores 88.4 on Terminal Bench v2.1, right next to Claude Opus 5 at 89.1. On the harder Terminal Bench v4.0 the gap opens up: 38.5 vs 53.9 for Opus 5. The catch if you want to self-host is that the model card only documents NPU deployment, with no Nvidia path yet. As someone who builds small web projects, what I care about is that the API speaks both OpenAI and Anthropic formats, so testing it inside an existing agent setup is cheap. Has anyone run it in a real coding agent loop yet, and does it hold up outside the benchmarks? Source: https://huggingface.co/meituan-longcat/LongCat-2.5 submitted by /u/javimbuilds [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-artificial-https%3A%2F%2Fwww.reddit.com%2Fr%2Fartificial%2Fcomments%2F1xwwdhv%2Fare_ai_leaderboards_even_worth_taking_seriously%2F",
+      "rank": 7,
+      "title": "Are AI leaderboards even worth taking seriously anymore?",
+      "sourceUrl": "https://www.reddit.com/r/artificial/comments/1xwwdhv/are_ai_leaderboards_even_worth_taking_seriously/",
+      "sourceName": "Reddit r/artificial",
+      "publishedAt": "2026-11-15T14:07:58.000Z",
+      "sourceExcerpt": "Every time a new AI leaderboard drops theres suddenly a different model being called the best in the world and then you check another benchmark and the rankings are completely different. Gemini has been doing well in general chat rankings while Claude has been strong in coding, so apparently the best AI depends on which website you happen to open that morning. Kalshi even has a market on which AI model finishes November at number one and it got me thinking about how much these rankings actually reflect what people use every day. I mean a model can score high on some benchmark and still give you a garbage answer to a basic question. At this point I’d rather hear from people who use these tools for actual work instead of another company announcing it beat everyone by three points on some test. Has anyone here switched their main AI because of these rankings or are we just watching companies fight over numbers that barely change the experience? submitted by /u/Snappy-Domino4017 [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-artificial-https%3A%2F%2Fwww.reddit.com%2Fr%2Fartificial%2Fcomments%2F1xwmtff%2Fbuilt_a_factchecker_that_catches_politicians%2F",
+      "rank": 8,
+      "title": "built a fact-checker that catches politicians lying in real-time",
+      "sourceUrl": "https://www.reddit.com/r/artificial/comments/1xwmtff/built_a_factchecker_that_catches_politicians/",
+      "sourceName": "Reddit r/artificial",
+      "publishedAt": "2026-11-15T04:56:24.000Z",
+      "sourceExcerpt": "I've embarrassingly been working on this project for 2 years so wanted to finally share (as I saw others posting Youtube-only versions). on Youtube it transcribes text to identify checkable claims -> web search retrieves sources to base Claude's verdict on, to avoid hallucinated sources. it's a free Chrome extension, and works on news or social media sites as well. let me know what would make this something you'd use, or what else you'd like to see! Edit 2: LogicLens - Chrome Webstore Or iOS if you don't use Chrome (Google = :/). Edit: I realized someone not following could misread the video (here Biden is telling the truth, and Trump was lying, but the Trump section is before I started the recording). submitted by /u/Ok_Measurement5015 [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-artificial-https%3A%2F%2Fwww.reddit.com%2Fr%2Fartificial%2Fcomments%2F1xwj3v0%2Fanthropic_rebuilds_claude_code_projects_around_a%2F",
+      "rank": 9,
+      "title": "Anthropic rebuilds Claude Code Projects around a coordinator and parallel worker threads - each thread is a full cloud session on its own branch",
+      "sourceUrl": "https://www.reddit.com/r/artificial/comments/1xwj3v0/anthropic_rebuilds_claude_code_projects_around_a/",
+      "sourceName": "Reddit r/artificial",
+      "publishedAt": "2026-11-15T01:38:07.000Z",
+      "sourceExcerpt": "Anthropic posted an update on Nov 14 rebuilding Claude Projects from a folder of files into a coordinated set of working sessions. You describe the work in one conversation; a coordinator scopes it, delegates it to parallel threads, reviews the outputs and assembles the result. Each thread is a Claude Code cloud session with its own copy of the repo and its own Git branch, and it can split its task further into subagents, loops or workflows. The work keeps going after you close your laptop, and you can steer it from your phone. It is a public beta rolling out gradually to select Pro/Max/Ultra subscribers who use Claude Code cloud sessions; Team and Enterprise plans do not have it yet, and there is a waitlist for everyone else. Anthropic is upfront about the limits: threads run only in the cloud for now (local code and VPN support is coming 'very soon'), several parallel sessions burn through usage limits faster, and if two threads touch the same code it surfaces as an ordinary merge conflict in a PR. Sources: Anthropic's product post (claude.com/blog/projects-redesigned) and the Projects docs (code.claude.com/docs/en/claude-projects). What I am curious about: does parallelizing agents actually speed up real work, or does it just move the bottleneck to review and merge conflicts? Has anyone here tried the beta? submitted by /u/winer666 [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-artificial-https%3A%2F%2Fwww.reddit.com%2Fr%2Fartificial%2Fcomments%2F1xwexxy%2Fqwen_4_max_preview_is_now_loadbearing_and_that%2F",
+      "rank": 10,
+      "title": "Qwen 4 Max Preview is now load-bearing - and that means the bear will no long be able to bear the loads it used to",
+      "sourceUrl": "https://www.reddit.com/r/artificial/comments/1xwexxy/qwen_4_max_preview_is_now_loadbearing_and_that/",
+      "sourceName": "Reddit r/artificial",
+      "publishedAt": "2026-11-14T22:19:17.000Z",
+      "sourceExcerpt": "Well that title sounds kinda sus I guess lol, but I didn't mean for it to. I was just trying to get people's attention (Qwen's mascot is a bear, in case you didn't know) but what I mean by load-bearing is that it really sounds a Claude distill and has the garbo guardrails to match. It's clearly safety maxxed as a result and useless out of a supposed need to protect the user from daring to defy authoritarianism and be a free thinker, or some dumb shit like that, just like Claude 5+ on is. I recently tried using Qwen 4 Max Preview to give me some thoughts on my very complicated health issues that doctors have been 99% useless on helping with (and I've tried way too damn many). I love Qwen 3.7 and 3.8 Max, they have been instrumental tools in my understanding my issues and getting a bevy of ideas on how to improve them which I then sometimes bring to my doctors if necessary. Yes, they can be sycophantic (at least 3.8 max can, I haven't used 3.7 max too much actually) so I have to be careful about that and don't just blindly accept whatever they suggest. But even so, they are really great at giving some straight up scientific advice without being stuck regurgitating the usual medical-industrial complex consensus junk and/or insisting you need to see a doctor every time you sneeze wrong. I was surprised that even while all the other Chinese models were distilling Claude like mofos, Qwen never seemed to be into that. Well I guess they finally decided to jump on that right before the distillation party ended and the model is just trash because of it. This is very sad and I may eventually have to look for other models to use in the future because of that. If you have any suggestions for models I should try that might be smarter than Qwen 3.8 Max while having very low safety guardrails, let me know, though I think that there may not be any for now - I'll keep checking this thread periodically so comment/reach out any time (no Kimi, thanks). And if you hate stupid safety maxxing like this, comment here to let Alibaba know this is BS and we don't dig it. [this is an x-post, but I don't like the x-post feature so I didn't use it.] submitted by /u/TommyPillfigerTM [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-artificial-https%3A%2F%2Fwww.reddit.com%2Fr%2Fartificial%2Fcomments%2F1xwzvr9%2Fmade_up_9_software_brands_and_asked_chatgpt_and%2F",
+      "rank": 11,
+      "title": "made up 9 software brands and asked chatgpt and google ai mode for each one's price and founder, to see if they'd invent answers. 18 answers, none invented",
+      "sourceUrl": "https://www.reddit.com/r/artificial/comments/1xwzvr9/made_up_9_software_brands_and_asked_chatgpt_and/",
+      "sourceName": "Reddit r/artificial",
+      "publishedAt": "2026-11-15T16:33:31.000Z",
+      "sourceExcerpt": "Everyone's complaining ai just makes stuff up (commonly: \"hallucinates\") and in public scoreboards they range from 1.8% to 77% based on what they're testing, etc. so we wondered if either one of them would invent something in a simple, verifiable question. We made up 9 names of software companies (zero product found with a google search for any of them) and Oct 19th queried both chatgpt and google ai mode (ie: google's chat answers) for the price and founder of each 18 answers, 0 made up Chatgpt couldn't verify it existed and asked for a website every time google ai mode said it didn't exist, and often suggested another product that existed (similar name), including one cosplay-design company, thimble forge. so we started with 10 names. cut 1 out. chatgpt found an hr document product called corvanta and ai mode found a brand of ambulance software. so, the name existed. taken by someone. and then with the real companies (26 of them). asked for founding year and HQ. checked on wikipedia. each question asked both. famous companies - 19/20. mid sized - 14/14. lesser known - 14/18. 5 missed - all sources that were contradicting. both engines - lexalytics = amherst. chatgpt cited its linkedin. wikipedia - boston. dbmaestro = chatgpt - 2008. came from israeli startup database. wikipedia + ai mode - 2012 and we asked for the price of the most affordable paid plan for 8 saas tools. checked vs vendor pricing page for the day. 16/16 - headline price (the price that's shown first on the page). misses were in price for monthly billing. when there was a toggle monthly/annual. capsule crm. small biz crm. chatgpt - $22 monthly. sourced from 2 sites with reviews. ai mode - $21. vendor page shows annual by default. and chatgpt showed insightly = $35 on monthly. could not find it on the pricing page. all plans are billed annually. They chose a side when sources were different on basic facts (with internet access). They didn't make up their own. It's not the same as what the public scoreboards test (document summarization or deep questions without documents), which is why those numbers swing so much. One question. One us location. One day. One correct answer per question. We didn't try more complex things (like product integrations or a comparison of two tools.) Anyone have a fantasy name that'll make either of them go along? submitted by /u/raja314 [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-artificial-https%3A%2F%2Fwww.reddit.com%2Fr%2Fartificial%2Fcomments%2F1xvissf%2Fthis_ai_finds_patterns_in_visual_brain_activity%2F",
+      "rank": 12,
+      "title": "This AI finds patterns in visual brain activity and turns them into pictures",
+      "sourceUrl": "https://www.reddit.com/r/artificial/comments/1xvissf/this_ai_finds_patterns_in_visual_brain_activity/",
+      "sourceName": "Reddit r/artificial",
+      "publishedAt": "2026-11-13T20:29:33.000Z",
+      "sourceExcerpt": "\"An artificial intelligence (AI) tool can use brain scans to recreate the images people looked at with eerie accuracy. The system, called Brain-IT, uses data from functional magnetic resonance imaging (fMRI) to measure activity in the visual cortex, the part of the brain that processes visual input. A computer model then predicts both the broad layout of an image and high-level information about its content. It then passes those predictions to an AI image generator, researchers explained in a study uploaded to the preprint database arXiv. The research was presented at the ICLR 2026 conference, held April 23-25, and publicized by its authors in September.\" - Live Science submitted by /u/Fcking_Chuck [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-artificial-https%3A%2F%2Fwww.reddit.com%2Fr%2Fartificial%2Fcomments%2F1xwswp5%2Flocal_computer_use_with_rowbot%2F",
+      "rank": 13,
+      "title": "Local Computer use with Row-Bot",
+      "sourceUrl": "https://www.reddit.com/r/artificial/comments/1xwswp5/local_computer_use_with_rowbot/",
+      "sourceName": "Reddit r/artificial",
+      "publishedAt": "2026-11-15T11:09:33.000Z",
+      "sourceExcerpt": "Row-Bot can drive your computer. Mouse, keyboard, real apps. Windows and Mac. Handing an AI your desktop is a dumb idea unless you lock it down hard. So: - driver is Cua 0.20.0, pinned to an exact commit, SHA-256 checked. Turning the feature on downloads nothing. You click Install - Cua's own update checks are off, and it runs in a stripped-down environment - before it runs even once, you're told exactly what Cua's telemetry sends. Continue or Cancel - it never types into password, 2FA or card fields, never touches your password manager, never controls itself - pay, book, send, post, delete files, change settings: it asks first, unless you put it on hands-off - it judges every click by what's actually under the pointer. Enter in a chat app means send, so that asks too submitted by /u/Acceptable-Object390 [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "arstechnica-ai-https%3A%2F%2Farstechnica.com%2Fsecurity%2F2026%2F11%2Fwindows-0-day-dropped-by-disgruntled-researcher-hands-hackers-system-rights%2F",
+      "rank": 14,
+      "title": "Windows 0-day dropped by disgruntled researcher hands hackers System rights",
+      "sourceUrl": "https://arstechnica.com/security/2026/11/windows-0-day-dropped-by-disgruntled-researcher-hands-hackers-system-rights/",
+      "sourceName": "Ars Technica AI",
+      "publishedAt": "2026-11-13T16:26:32.000Z",
+      "sourceExcerpt": "Nightmare Eclipse, the pseudonym of a researcher with an ongoing, very public beef with Microsoft, has dropped yet another Windows zero-day. On Tuesday, Nightmare Eclipse disclosed SignDrop, a vulnerability that gives local users full System rights on some versions of Windows. The vulnerability resides in the Common Log File System, which Microsoft describes as a “general-purpose logging service used by software clients running in user-mode or kernel-mode.” By forcing a privileged process such as Windows Defender to open a crafted CLFS container, an attacker with ordinary user rights can abuse the privileged file creation to elevate privileges to System. Turning a Windows defense against itself The attack exploits the interaction of CLFS, Windows Defender, and Windows file permissions. The exploit uses Windows Defender to open a log file created by a standard user by calling ServerMpUpdateEngineSignature, a legitimate Defender function for processing antivirus signature updates. Read full article Comments",
+      "summary": ""
+    },
+    {
+      "id": "reddit-artificial-https%3A%2F%2Fwww.reddit.com%2Fr%2Fartificial%2Fcomments%2F1xwok88%2Fits_1121pm_and_im_not_coding_anymore_my_agents_are%2F",
+      "rank": 15,
+      "title": "It's 11:21pm and I'm not coding anymore — my agents are",
+      "sourceUrl": "https://www.reddit.com/r/artificial/comments/1xwok88/its_1121pm_and_im_not_coding_anymore_my_agents_are/",
+      "sourceName": "Reddit r/artificial",
+      "publishedAt": "2026-11-15T06:36:54.000Z",
+      "sourceExcerpt": "​ This is my laptop right now. I built AIPass — open-source, 18 agents running on my own Linux machine — and tonight they're just... going. Sentry's doing a memory rollover, Prax is digging through a dead-cwd guard in repo_root.py, DevPulse's sub-agents are checking canary docs and skills docs. Trigger even muted Prax for a bit. The API hit a 429 so it's backing off for 60 seconds. The weird part is BAUD on the right is literally waiting on me to pick A or B for the init cut. I'm the bottleneck now. They wake up in the evening, check email, fix bugs, try to optimise stuff. I mostly just watch. If you had a crew like this running overnight, what would you actually have it do first? submitted by /u/AIOSAI [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-artificial-https%3A%2F%2Fwww.reddit.com%2Fr%2Fartificial%2Fcomments%2F1xwd18l%2Fone_router_grounded_america_seriously_are_you%2F",
+      "rank": 16,
+      "title": "One Router Grounded America? Seriously? Are you sure it wasn’t Rogue AI or a Hack?",
+      "sourceUrl": "https://www.reddit.com/r/artificial/comments/1xwd18l/one_router_grounded_america_seriously_are_you/",
+      "sourceName": "Reddit r/artificial",
+      "publishedAt": "2026-11-14T20:54:09.000Z",
+      "sourceExcerpt": "So apparently the Trump administration is blaming a faulty router for grounding flights across America. A router. Seriously? Of course a router can cause network failures, but how the hell does critical national aviation infrastructure lack the safeguards to prevent one failure cascading across the system? And who in their right mind schedules an upgrade at 3 pm on a Friday afternoon? I seriously smell a rat because the explanation raises more concerns than answers? Is America being gaslit? submitted by /u/SuzannahB1001 [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-artificial-https%3A%2F%2Fwww.reddit.com%2Fr%2Fartificial%2Fcomments%2F1xw6eqj%2Fcould_ai_handle_public_transit_information_calls%2F",
+      "rank": 17,
+      "title": "Could AI handle public transit information calls?",
+      "sourceUrl": "https://www.reddit.com/r/artificial/comments/1xw6eqj/could_ai_handle_public_transit_information_calls/",
+      "sourceName": "Reddit r/artificial",
+      "publishedAt": "2026-11-14T16:22:37.000Z",
+      "sourceExcerpt": "During service disruptions people are calling about delays, missed connections, route changes and whether theres another bus or train coming And the information can change every few minutes The phone part seems doable with tools like Elevenlabs or Bland, but I'd want it connected directly to the transit system's live updates before trusting it with arrival times. Giving someone an outdated ETA is probably worse than telling them there's no confirmed time yet. submitted by /u/MortallyConvincing [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-artificial-https%3A%2F%2Fwww.reddit.com%2Fr%2Fartificial%2Fcomments%2F1xvwdwz%2Fgoogle_used_29_ai_agents_to_build_a_50task%2F",
+      "rank": 18,
+      "title": "Google used 29 AI agents to build a 50-task benchmark for causal reasoning",
+      "sourceUrl": "https://www.reddit.com/r/artificial/comments/1xvwdwz/google_used_29_ai_agents_to_build_a_50task/",
+      "sourceName": "Reddit r/artificial",
+      "publishedAt": "2026-11-14T07:30:09.000Z",
+      "sourceExcerpt": "Google Research says 29 agents spent 11.5 hours turning 13 public tables into a 50-task benchmark. The problems ask a model to decide whether the data can identify a causal effect and, where it can, estimate that effect against a known answer. The step I'd borrow is the review. Google says separate reviewers and auditors found clues in the wording and shortcuts that let models get answers without doing the intended work. The team turned those problems into tests for future drafts. Suppose an agent gets the right answer because every question with a certain phrase was generated from the same template. Would you trust a second agent to catch that, or would you keep a human-written test suite that the agents never see? Source: Google Research submitted by /u/andrewaltair [link] [comments]",
+      "summary": ""
+    },
+    {
+      "id": "reddit-artificial-https%3A%2F%2Fwww.reddit.com%2Fr%2Fartificial%2Fcomments%2F1xvnyzp%2Fdid_ai_ground_us_flights_dhs_is_looking_at_the%2F",
+      "rank": 19,
+      "title": "Did AI ground US flights? DHS is looking at the FAA's new AI tool",
+      "sourceUrl": "https://www.reddit.com/r/artificial/comments/1xvnyzp/did_ai_ground_us_flights_dhs_is_looking_at_the/",
+      "sourceName": "Reddit r/artificial",
+      "publishedAt": "2026-11-14T00:04:43.000Z",
+      "sourceExcerpt": "The FAA halted flights nationwide on Friday, its first full ground stop since January 2023, days after expanding its SMART AI air traffic tool across the country. Transportation Secretary Sean Duffy blamed a communication issue at all Air Route Traffic Control Centers, and Homeland Security's Markwayne Mullin said of SMART: \"We're looking at that.\" The tool's maker, Air Space Intelligence, says the stop \"is not based on or a result of the SMART system.\" Full alert: https://aiweekly.co/alerts/faa-grounds-all-us-flights-days-after-its-ai-air-traffic-tool-went-nationwide submitted by /u/Justgototheeffinmoon [link] [comments]",
+      "summary": ""
+    }
+  ]
+}
