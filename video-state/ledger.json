@@ -1276,7 +1276,7 @@
         "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1xqsl8d/what_if_diffusion_models_generates_neural_network/",
         "sourceName": "Reddit r/MachineLearning",
         "publishedAt": "2026-11-08T07:20:37.000Z",
-        "sourceExcerpt": "I'have been dreaming about using a Diffusion Model that will generates Weights instead of pixels. Diffusion models actually are vast used in order to generate from a natural language text description into images, and what is an image? a three dimensional matrix of value representig luminosity of red , green and blue. What if instead of matrix of colour intensity we train a diffusion model in order to create a neural network, and maybe a drawing NN too. If it works you can ask something like: \"create me a neural network that will guide a pen in order to draw a man\" \"create a NN of a game field where i have two paddle on left and right side of the field and a bounching ball...\"....to create Pong and in the future more complex scenarios! I made, with the help of z.ai zcode and their fantastic GLM model a small POC that i published on my github: https://github.com/vagrillo/nngen It's a very small experimental implementation , but somenthing seems to work! I have not find paper on similar implementation ad I'm asking the community to help me to find one, and to have contribution on this . I also made a small webapp in order to test the trained model (actually i'm only on half training path 3000/4000 steps finished, but i'm using my poor laptop CPU at the moment) This is some screenshot of preliminary results. (the best results achieved, in truth) https://preview.redd.it/kje7wxpkac0i1.png?width=654&format=png&auto=webp&s=32c15d73aa4ea9e1460cce6b1947b850b7ee31bf https://preview.redd.it/86uno8kmac0i1.png?width=659&format=png&auto=webp&s=5e20d5c3b481342c77746339d237dbb3ebd0738e submitted by /u/Specific-Tax-6700 [link] [comments]",
+        "sourceExcerpt": "",
         "summary": ""
       },
       "selectedAt": "2026-11-08T17:39:11.662Z",
@@ -1285,87 +1285,10 @@
           "accountId": "6ac27146281ee799a37065e4",
           "status": "published",
           "idempotencyKey": "a7b645b5-5673-4082-b668-0cf85b2cc6f2",
-          "request": {
-            "content": "What if diffusion models generates Neural Network weights? Gen AI generate Gen AI [R]\n\nSource: Reddit r/MachineLearning\nhttps://www.reddit.com/r/MachineLearning/comments/1xqsl8d/what_if_diffusion_models_generates_neural_network/\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-08\nAI-generated narration. #AI #AINews #Shorts",
-            "mediaItems": [
-              {
-                "type": "video",
-                "url": "https://media.zernio.com/temp/1794159587515_8a4d99073cf103e4_2026-11-08.mp4"
-              }
-            ],
-            "platforms": [
-              {
-                "platform": "youtube",
-                "accountId": "6ac27146281ee799a37065e4",
-                "platformSpecificData": {
-                  "title": "What if diffusion models generates Neural Network",
-                  "visibility": "public",
-                  "madeForKids": false,
-                  "containsSyntheticMedia": true,
-                  "categoryId": "28"
-                }
-              }
-            ],
-            "publishNow": true
-          },
           "firstSubmittedAt": "2026-11-08T17:39:49.340Z",
           "postId": "6af0b3e66651dc7da7bb6b4a",
           "postUrl": "https://www.youtube.com/watch?v=0ZKasqBK-No"
         }
-      },
-      "script": {
-        "version": 3,
-        "provider": "extractive",
-        "format": "source-fallback",
-        "angle": "capability",
-        "workingTitle": "What if diffusion models generates Neural Network",
-        "availability": "research",
-        "hookStyle": "question",
-        "sentences": [
-          {
-            "text": "Would you use What if diffusion models?",
-            "evidenceQuote": "I'have been dreaming about using a Diffusion Model that will generates Weights instead of pixels. Diffusion models actually are vast used in order to generate from a natural language text description into images, and what is an image? a three dimensional matrix of value representig luminosity of red , green and blue. What if instead of matrix of colour intensity we train a diffusion model in order to create a neural network, and maybe a drawing NN too. If it works you can ask something like: \"create me a neural network that will guide a pen in order to draw a man\" \"create a NN of a game field where i have two paddle on left and right side of the field and a bounching ball...\"....to create Pong and in the future more complex scenarios! I made, with the help of z.ai zcode and their fantastic GLM model a small POC that i published on my github: https://github.com/vagrillo/nngen It's a very small experimental implementation , but somenthing seems to work! I have not find paper on similar implementation ad I'm asking the community to help me to find one, and to have contribution on this . I also made a small webapp in order to test the trained model (actually i'm only on half training path 3000/4000 steps finished, but i'm using my poor laptop CPU at the moment) This is some screenshot of preliminary results. (the best results achieved, in truth) https://preview.redd.it/kje7wxpkac0i1.png?width=654&format=png&auto=webp&s=32c15d73aa4ea9e1460cce6b1947b850b7ee31bf https://preview.redd.it/86uno8kmac0i1.png?width=659&format=png&auto=webp&s=5e20d5c3b481342c77746339d237dbb3ebd0738e submitted by /u/Specific-Tax-6700 [link] [comments]",
-            "role": "hook",
-            "visual": "example",
-            "displayText": "Would you use What if diffusion models?"
-          },
-          {
-            "text": "I'have been dreaming about using a Diffusion Model that will generates Weights instead of pixels.",
-            "evidenceQuote": "I'have been dreaming about using a Diffusion Model that will generates Weights instead of pixels.",
-            "role": "breakthrough",
-            "visual": "example",
-            "displayText": "Dreaming about using a Diffusion Model that will"
-          },
-          {
-            "text": "a three dimensional matrix of value representig luminosity of red , green and blue.",
-            "evidenceQuote": "a three dimensional matrix of value representig luminosity of red , green and blue.",
-            "role": "breakthrough",
-            "visual": "process",
-            "displayText": "A three dimensional matrix of value representig luminosity"
-          },
-          {
-            "text": "Reddit r/MachineLearning says What if instead of matrix of colour intensity it train a diffusion model in order to create a neural network, and maybe a drawing NN too.",
-            "evidenceQuote": "What if instead of matrix of colour intensity we train a diffusion model in order to create a neural network, and maybe a drawing NN too.",
-            "role": "breakthrough",
-            "visual": "process",
-            "displayText": "Reddit r/MachineLearning says What if instead of matrix"
-          },
-          {
-            "text": "This source excerpt does not confirm public access.",
-            "evidenceQuote": "I'have been dreaming about using a Diffusion Model that will generates Weights instead of pixels.",
-            "role": "impact",
-            "visual": "highlight",
-            "displayText": "does not confirm public access"
-          },
-          {
-            "text": "Would you try What if diffusion models, or wait for more proof?",
-            "evidenceQuote": "I'have been dreaming about using a Diffusion Model that will generates Weights instead of pixels. Diffusion models actually are vast used in order to generate from a natural language text description into images, and what is an image? a three dimensional matrix of value representig luminosity of red , green and blue. What if instead of matrix of colour intensity we train a diffusion model in order to create a neural network, and maybe a drawing NN too. If it works you can ask something like: \"create me a neural network that will guide a pen in order to draw a man\" \"create a NN of a game field where i have two paddle on left and right side of the field and a bounching ball...\"....to create Pong and in the future more complex scenarios! I made, with the help of z.ai zcode and their fantastic GLM model a small POC that i published on my github: https://github.com/vagrillo/nngen It's a very small experimental implementation , but somenthing seems to work! I have not find paper on similar implementation ad I'm asking the community to help me to find one, and to have contribution on this . I also made a small webapp in order to test the trained model (actually i'm only on half training path 3000/4000 steps finished, but i'm using my poor laptop CPU at the moment) This is some screenshot of preliminary results. (the best results achieved, in truth) https://preview.redd.it/kje7wxpkac0i1.png?width=654&format=png&auto=webp&s=32c15d73aa4ea9e1460cce6b1947b850b7ee31bf https://preview.redd.it/86uno8kmac0i1.png?width=659&format=png&auto=webp&s=5e20d5c3b481342c77746339d237dbb3ebd0738e submitted by /u/Specific-Tax-6700 [link] [comments]",
-            "role": "engagement",
-            "visual": "highlight",
-            "displayText": "Would you try What if diffusion models"
-          }
-        ],
-        "narration": "Would you use What if diffusion models? I'have been dreaming about using a Diffusion Model that will generates Weights instead of pixels. a three dimensional matrix of value representig luminosity of red , green and blue. Reddit r/MachineLearning says What if instead of matrix of colour intensity it train a diffusion model in order to create a neural network, and maybe a drawing NN too. This source excerpt does not confirm public access. Would you try What if diffusion models, or wait for more proof?"
       },
       "presentation": {
         "title": "What if diffusion models generates Neural Network",
@@ -2106,6 +2029,90 @@
         "publicUrl": "https://media.zernio.com/temp/1794678177785_e36622b945875bf9_2026-11-14.mp4",
         "videoSha256": "c50ca97ac750ad7f61b3336dae54bf148b0cc4aa292fefeb7db377d58511971c",
         "uploadedAt": "2026-11-14T17:42:58.824Z"
+      }
+    },
+    "2026-11-15": {
+      "story": {
+        "id": "reddit-artificial-https%3A%2F%2Fwww.reddit.com%2Fr%2Fartificial%2Fcomments%2F1xwwdhv%2Fare_ai_leaderboards_even_worth_taking_seriously%2F",
+        "rank": 7,
+        "title": "Are AI leaderboards even worth taking seriously anymore?",
+        "sourceUrl": "https://www.reddit.com/r/artificial/comments/1xwwdhv/are_ai_leaderboards_even_worth_taking_seriously/",
+        "sourceName": "Reddit r/artificial",
+        "publishedAt": "2026-11-15T14:07:58.000Z",
+        "sourceExcerpt": "Every time a new AI leaderboard drops theres suddenly a different model being called the best in the world and then you check another benchmark and the rankings are completely different. Gemini has been doing well in general chat rankings while Claude has been strong in coding, so apparently the best AI depends on which website you happen to open that morning. Kalshi even has a market on which AI model finishes November at number one and it got me thinking about how much these rankings actually reflect what people use every day. I mean a model can score high on some benchmark and still give you a garbage answer to a basic question. At this point I’d rather hear from people who use these tools for actual work instead of another company announcing it beat everyone by three points on some test. Has anyone here switched their main AI because of these rankings or are we just watching companies fight over numbers that barely change the experience? submitted by /u/Snappy-Domino4017 [link] [comments]",
+        "summary": ""
+      },
+      "selectedAt": "2026-11-15T18:30:52.887Z",
+      "platforms": {
+        "youtube": {
+          "accountId": "6ac27146281ee799a37065e4",
+          "status": "prepared",
+          "idempotencyKey": "67da790c-24a6-4964-aaa3-6eb502faf5b4"
+        }
+      },
+      "script": {
+        "version": 3,
+        "provider": "extractive",
+        "format": "source-fallback",
+        "angle": "capability",
+        "workingTitle": "Are AI leaderboards even worth taking seriously",
+        "availability": "unknown",
+        "hookStyle": "question",
+        "sentences": [
+          {
+            "text": "Would you use Are AI leaderboards even?",
+            "evidenceQuote": "Every time a new AI leaderboard drops theres suddenly a different model being called the best in the world and then you check another benchmark and the rankings are completely different. Gemini has been doing well in general chat rankings while Claude has been strong in coding, so apparently the best AI depends on which website you happen to open that morning. Kalshi even has a market on which AI model finishes November at number one and it got me thinking about how much these rankings actually reflect what people use every day. I mean a model can score high on some benchmark and still give you a garbage answer to a basic question. At this point I’d rather hear from people who use these tools for actual work instead of another company announcing it beat everyone by three points on some test. Has anyone here switched their main AI because of these rankings or are we just watching companies fight over numbers that barely change the experience? submitted by /u/Snappy-Domino4017 [link] [comments]",
+            "role": "hook",
+            "visual": "example",
+            "displayText": "Would you use Are AI leaderboards even?"
+          },
+          {
+            "text": "Kalshi even has a market on which AI model finishes November at number one and it got me thinking about how much these rankings actually reflect what people use every day.",
+            "evidenceQuote": "Kalshi even has a market on which AI model finishes November at number one and it got me thinking about how much these rankings actually reflect what people use every day.",
+            "role": "breakthrough",
+            "visual": "example",
+            "displayText": "Kalshi even has a market on which AI"
+          },
+          {
+            "text": "Reddit r/artificial says Has anyone here switched their main AI because of these rankings or are it just watching companies fight over numbers that barely change the experience?",
+            "evidenceQuote": "Has anyone here switched their main AI because of these rankings or are we just watching companies fight over numbers that barely change the experience?",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "Reddit r/artificial says Has anyone here switched"
+          },
+          {
+            "text": "This source excerpt does not confirm public access.",
+            "evidenceQuote": "Every time a new AI leaderboard drops theres suddenly a different model being called the best in the world and then you check another benchmark and the rankings are completely different.",
+            "role": "impact",
+            "visual": "highlight",
+            "displayText": "does not confirm public access"
+          },
+          {
+            "text": "Would you try Are AI leaderboards even, or wait for more proof?",
+            "evidenceQuote": "Every time a new AI leaderboard drops theres suddenly a different model being called the best in the world and then you check another benchmark and the rankings are completely different. Gemini has been doing well in general chat rankings while Claude has been strong in coding, so apparently the best AI depends on which website you happen to open that morning. Kalshi even has a market on which AI model finishes November at number one and it got me thinking about how much these rankings actually reflect what people use every day. I mean a model can score high on some benchmark and still give you a garbage answer to a basic question. At this point I’d rather hear from people who use these tools for actual work instead of another company announcing it beat everyone by three points on some test. Has anyone here switched their main AI because of these rankings or are we just watching companies fight over numbers that barely change the experience? submitted by /u/Snappy-Domino4017 [link] [comments]",
+            "role": "engagement",
+            "visual": "highlight",
+            "displayText": "Would you try Are AI leaderboards even"
+          }
+        ],
+        "narration": "Would you use Are AI leaderboards even? Kalshi even has a market on which AI model finishes November at number one and it got me thinking about how much these rankings actually reflect what people use every day. Reddit r/artificial says Has anyone here switched their main AI because of these rankings or are it just watching companies fight over numbers that barely change the experience? This source excerpt does not confirm public access. Would you try Are AI leaderboards even, or wait for more proof?"
+      },
+      "presentation": {
+        "title": "Are AI leaderboards even worth taking seriously",
+        "format": "source-fallback",
+        "angle": "capability",
+        "hookStyle": "question",
+        "availability": "unknown",
+        "duration": 36.150000000000006,
+        "wordCount": 86,
+        "scriptVersion": 3
+      },
+      "selectionReason": "A concrete capability or everyday consequence in the original evidence.",
+      "contentHash": "26e6cc745423d5086d9fa43bf0cf26f1cc15095a84ca45d03d6b8e4103b81ad1",
+      "media": {
+        "publicUrl": "https://media.zernio.com/temp/1794767480688_1c963c26d73e6240_2026-11-15.mp4",
+        "videoSha256": "65f34b383e575d04a15f5f2d3e5ce103fb3e687feb621446479b940367ea7f4b",
+        "uploadedAt": "2026-11-15T18:31:22.745Z"
       }
     }
   }
