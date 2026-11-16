@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "issueDate": "2026-11-16",
+  "issueUrl": "https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-16",
+  "content": "Today's AI briefing from The Gradient | 2026-11-16\n\n1. A step toward defining the Standard Model on a lattice\nResearchers proposed a candidate lattice definition that preserves gauge symmetries and chiral fermions, then used GPT‑6 Astra to generate a step‑by‑step proof, turning a vague idea into a rigorous manuscript.\n\n2. When Should LLM Agents Forget? Memory Filtering Under Query-Critical Resolver Errors\nResearchers examined LLM memory filters that automatically delete facts deemed stale. They discovered that when these hard‑drop mechanisms mistakenly remove query‑critical information, downstream answer accuracy suffers.\n\n3. Does the Ranking Hold? A Practitioner-Facing Audit of Hallucination Detectors on Small, Quantized, On-Device LLMs\nResearchers evaluated four widely‑cited hallucination detectors on four popular on‑device LLMs—Phi‑3‑mini, Llama‑3.2‑3B‑Instruct, Qwen2.5‑3B‑Instruct, and Gemma‑2‑2B‑Instruct—each running at 4‑bit precision on a single GPU.\n\nRead the full briefing and original sources:\nhttps://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-16\n\n#AI #ArtificialIntelligence #TheGradient",
+  "contentHash": "b9317c41dca9fe198328d67236aa2d25dbb4f0de7e71592ae74eae0d9a451535",
+  "accountId": "6ac5a561b3c21905c0edcfba",
+  "organizationUrn": "urn:li:organization:136824048",
+  "idempotencyKey": "919f075e-2273-46e7-9676-0206151fdddf",
+  "status": "submitting",
+  "firstSubmittedAt": "2026-11-16T21:37:52.848Z"
+}
