@@ -2079,7 +2079,7 @@
       "platforms": {
         "youtube": {
           "accountId": "6ac27146281ee799a37065e4",
-          "status": "submitting",
+          "status": "published",
           "idempotencyKey": "0347df44-becf-4beb-bb36-92963ce319ca",
           "request": {
             "content": "Tabular Population Priors as Structured Retrieval for EHR Medication Set Prediction\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2611.17341\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-16\nAI-generated narration. #AI #AINews #Shorts",
@@ -2104,7 +2104,9 @@
             ],
             "publishNow": true
           },
-          "firstSubmittedAt": "2026-11-16T21:41:23.215Z"
+          "firstSubmittedAt": "2026-11-16T21:41:23.215Z",
+          "postId": "6afb788402050ce418d1cea4",
+          "postUrl": "https://www.youtube.com/watch?v=uJgYvSpFUlo"
         }
       },
       "script": {
