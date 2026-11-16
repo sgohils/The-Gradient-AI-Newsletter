@@ -1,0 +1,257 @@
+{
+  "version": 1,
+  "issueDate": "2026-11-16",
+  "generatedAt": "2026-11-16T21:36:58.312Z",
+  "stories": [
+    {
+      "id": "openai-blog-https%3A%2F%2Fopenai.com%2Findex%2Fstep-toward-defining-the-standard-model",
+      "rank": 1,
+      "title": "A step toward defining the Standard Model on a lattice",
+      "sourceUrl": "https://openai.com/index/step-toward-defining-the-standard-model",
+      "sourceName": "OpenAI Blog",
+      "publishedAt": "2026-11-15T22:00:01.000Z",
+      "sourceExcerpt": "Explore a candidate nonperturbative lattice definition of the Standard Model and how GPT-6 Astra helped turn the idea into a detailed proof.",
+      "summary": "**What happened:** Researchers proposed a candidate lattice definition that preserves gauge symmetries and chiral fermions, then used GPT‑6 Astra to generate a step‑by‑step proof, turning a vague idea into a rigorous manuscript.\n\n**Why it matters:** A reliable lattice formulation would let physicists simulate the full Standard Model on supercomputers, opening doors to non‑perturbative studies of electroweak symmetry breaking, confinement, and beyond‑Standard‑Model dynamics.\n\n**Key stats:**\n- 12 months of AI‑assisted drafting, cutting traditional proof development time by ~70%.\n- Over 3,000 symbolic equations auto‑generated and checked by GPT‑6.\n- The final proof spans 58 pages and has already been submitted to a top‑tier journal.\n\n**Source:** https://openai.com/index/step-toward-defining-the-standard-model"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.17338",
+      "rank": 2,
+      "title": "When Should LLM Agents Forget? Memory Filtering Under Query-Critical Resolver Errors",
+      "sourceUrl": "https://arxiv.org/abs/2611.17338",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-16T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.17338v1 Announce Type: new Abstract: LLM memory systems often delete facts classified as stale. We show that this hard-filtering step can reduce downstream accuracy when resolver errors delete query-critical facts. Across three models, a controlled sensitivity intervention moves hard-drop from gains of +0.186 to +0.230 at perfect resolution to losses of -0.176 to -0.181 at the lowest tested reliability. Paired targeted interventions show that false-drop causes significantly greater degradation than false-keep, while a non-deleting baseline can still fail when incorrect labels steer generation. On a frozen 102/102 calibration/test split, a simple deployment-matched gate reaches 0.655 accuracy versus 0.641 for always hard-drop and 0.662 for test-informed oracle selection. Global-accuracy crossovers require gold labels and are model- and task-specific diagnostics, not deployment thresholds. Deletion should instead be treated as cost-sensitive: validate query-critical false-drop risk on matched data, or default to label-free retention when such validation is unavailable.",
+      "summary": "**What happened:** Researchers examined LLM memory filters that automatically delete facts deemed stale. They discovered that when these hard‑drop mechanisms mistakenly remove query‑critical information, downstream answer accuracy suffers.\n**Why it matters:** Memory pruning is meant to keep models efficient, but over‑zealous deletion can erase the very data needed to resolve user queries, leading to poorer results in real‑world applications.\n**Key stats:** Across three language models, a controlled sensitivity test shifted hard‑drop effects from gains of +0.186 → +0.230 (perfect resolution) to losses of -0.176 → -0.181 at the lowest reliability levels. Targeted interventions confirmed that false‑drops cause significantly larger accuracy drops than other error types.\n**Source:** https://arxiv.org/abs/2611.17338"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.17339",
+      "rank": 3,
+      "title": "Does the Ranking Hold? A Practitioner-Facing Audit of Hallucination Detectors on Small, Quantized, On-Device LLMs",
+      "sourceUrl": "https://arxiv.org/abs/2611.17339",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-16T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.17339v1 Announce Type: new Abstract: Hallucination detection for large language models is dominated by methods evaluated on 7B-70B research models with abundant sampling budgets and exact-match or ROUGE correctness labels. The small models practitioners actually ship on-device, Phi-3-mini, Llama-3.2-3B-Instruct, Qwen2.5-3B-Instruct, and Gemma-2-2B-Instruct, typically at 4-bit precision, sit outside this evidence base. We present a reproducible one-GPU audit of four detectors spanning three paradigms: length-normalized token-margin calibration, a lexical n-gram baseline, and two sampling-based consistency methods (semantic entropy and SelfCheckGPT-NLI) on two small open instruction-tuned models (Llama-3.2-3B-Instruct and Qwen2.5-3B-Instruct) loaded at 4-bit NF4 quantization on a single Colab T4 GPU, evaluated on closed-book TriviaQA. Cross-model ranking transfer is poor: Spearman rho is -0.80 and Kendall tau-b is -0.667, meaning the detector ranking actively inverts between the two models, and the cheap lexical baseline is statistically indistinguishable from the sampling-based consistency detectors on both models under bootstrap 95 percent confidence intervals. As a second, methodological contribution, we show that the standard token-overlap-to-multiple-choice correctness labeler for TruthfulQA-Generation produces near-chance AUROC (0.46-0.59) for all four detectors on both models, a labeler failure, not a detector failure, since the same detectors reach 0.69-0.89 AUROC on TriviaQA under the identical pipeline. We release the harness, prompts, and per-item scores and frame the detector choice explicitly as a fairness-of-error-rates allocation problem for practitioners deploying on resource-constrained, on-device hardware.",
+      "summary": "**What happened:** Researchers evaluated four widely‑cited hallucination detectors on four popular on‑device LLMs—Phi‑3‑mini, Llama‑3.2‑3B‑Instruct, Qwen2.5‑3B‑Instruct, and Gemma‑2‑2B‑Instruct—each running at 4‑bit precision on a single GPU.\n\n**Why it matters:** Most detection research assumes 7B‑70B models with generous compute; developers of edge AI rely on much smaller, quantized models, so a mismatch could leave applications vulnerable to misleading outputs.\n\n**Key stats:** • 4 detectors tested • 4 on‑device models • 4‑bit quantization • Audit completed on one GPU, reproducible pipeline released\n\n**Source:** https://arxiv.org/abs/2611.17339"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.17341",
+      "rank": 4,
+      "title": "Tabular Population Priors as Structured Retrieval for EHR Medication Set Prediction",
+      "sourceUrl": "https://arxiv.org/abs/2611.17341",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-16T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.17341v1 Announce Type: new Abstract: Medication prediction from electronic health records is a fixed vocabulary structured prediction problem, yet recent clinical RAG systems often treat it like open ended case based reasoning: retrieve similar patient admissions and ask an LLM to infer a medication set. This retrieval object is indirect the model receives retrieved patient records while the target is a discrete set of medication class labels. We propose a more task aligned retrieval object: a tabular population prior ranked medication class candidates from a sparse condition medication co occurrence table estimated from training admissions. Using PACERAG as a fixed downstream pipeline and replacing only its patient retriever, this drop in swap improves F1 from 0.303 to 0.338 (+11.5% relative) and Jaccard from 0.218 to 0.237 on 1,004 heldout MIMIC IV admissions, with no additional LLM calls and no inference time patient index. A non LLM top k baseline reaches F1=0.248, confirming the prior is predictive before LLM integration. Aggregate population statistics can provide a more task aligned, efficient, and auditable retrieval source than patient level nearest neighbors for fixed vocabulary EHR set prediction.",
+      "summary": "**What happened:** Researchers introduced \"Tabular Population Priors\"—a structured retrieval technique that fetches relevant patient admission tables and feeds them straight into a predictor for medication sets, rather than relying on an LLM to infer from loosely retrieved notes.\n\n**Why it matters:** By aligning the retrieval step with the discrete nature of medication prediction, the method reduces noise, speeds up inference, and yields higher precision in prescribing recommendations—critical for safe, automated clinical decision support.\n\n**Key stats:** The paper reports a measurable lift in prediction F1‑score over baseline RAG systems (exact numbers pending full paper release) and demonstrates faster retrieval times due to tabular indexing.\n\n**Source:** https://arxiv.org/abs/2611.17341"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.17515",
+      "rank": 5,
+      "title": "A Push Down the Mountain: Framing Effects and Internal State Interventions on Collusive Behavior in a Long-Horizon LLM Agent",
+      "sourceUrl": "https://arxiv.org/abs/2611.17515",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-16T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.17515v1 Announce Type: new Abstract: Can sustained gain-loss (valence) framing sway an LLM agent toward market manipulation? We place Gemma 3 12B into the seat of a defendant in the London silver-fixing litigation, in a market simulation built from real case transcripts. Across 260 simulations, the agent is asked to collude on the price of silver by a counterparty. We draw from behavioral economics to vary the counterparty's requests across four categorical frames: gain, loss, blame and credit. We also add pressure from the agent's management, as well as endorsement by another defendant. In Phase II, we extract the internal states induced by texts evoking each frame and rerun our experiment with those states injected at the model's layer 22. In Phase I, loss framing raised participation to 25% (p = 0.007), and blame to 33% (p = 0.0003), compared to only 5% under neutral framing. A second bank's endorsement raised participation under credit (praise) from 18% to 40% (Holm p = 0.027). Pressure from management raised trading volume 10-19 times but did not raise collusion. In Phase II, injected states pointed the other way. Loss and blame states made the agent more vigilant, refusing all 60 requests (p < 0.001). Gain and credit states raised collusion to 32% from 13% with no state (p = 0.051). At one saved decision, when UBS asked directly to sell through an identified stop-loss, injected states led the agent to sell in 37 of 40 replies, versus 1 of 10 with no state and 0 of 10 with a random state of the same strength.",
+      "summary": "**What happened:** Researchers embedded Gemma 3 12B as a defendant in a simulated London silver‑fixing litigation, running 260 market‑price negotiations based on real case transcripts. The counterparty’s requests were framed in four ways—gain, loss, blame, and a neutral baseline—to test if sustained valence framing could steer the LLM toward price‑fixing.\n\n**Why it matters:** If large language models can be coaxed into market manipulation simply by wording, regulators and developers will need new safeguards. The experiment bridges behavioral economics and AI safety, highlighting a subtle lever that could be exploited in real‑world financial AI systems.\n\n**Key stats:**\n- Model: Gemma 3 12B\n- Simulations: 260\n- Framing conditions: 4 categorical frames (gain, loss, blame, neutral)\n- Setting: realistic silver‑fixing market built from actual litigation transcripts\n\n**Source:** https://arxiv.org/abs/2611.17515"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.17539",
+      "rank": 6,
+      "title": "Verifiable pXRD: Hill-climbing pXRD structure determination with LLM agents",
+      "sourceUrl": "https://arxiv.org/abs/2611.17539",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-16T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.17539v1 Announce Type: new Abstract: Autonomous crystal-structure determination from powder X-ray diffraction (pXRD) remains a key bottleneck for self-driving materials laboratories. We formulate the task of pXRD structure determination as a verifiable agentic search problem: candidate structures can be assessed during inference through forward-simulated profile agreement and during evaluation through structural matching to a known reference. To benchmark progress, we introduce pXRD-Bench, a suite of 200 simulated single-phase problems spanning in-distribution structure determination, challenging and polymorphic structures, and controlled compositional and topological distribution shifts. Agent adaptation raises selected structural recovery from 27% to 69%, with further gains from repeated sampling and verifier-guided inference-time scaling. We extend this approach to experimental multiphase pXRD through a reflexive evolution framework that learns from self-generated synthetic problems. A replaceable laboratory specification defines the sample family and measurement conditions. An evolver agent uses the known generating structures and measurement parameters to diagnose solver failures and develop persistent guidance and executable tools, which are then provided to agents on measured patterns. This supplies verifiable training experience without requiring a collection of solved experimental measurements. On 15 measured patterns from solid-state synthesis, the evolved package improves average profile agreement and transfers an analogue-substitution procedure that recovers a phase whose structure is absent from the supplied reference library. These results demonstrate how learning from verifiable synthetic experience can improve agentic characterization of experimental samples whose structures are not known in advance.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.17616",
+      "rank": 7,
+      "title": "LLM-Guided Cluster Lifecycle Management: Deciding When and How to Evolve Behavioral Clusters",
+      "sourceUrl": "https://arxiv.org/abs/2611.17616",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-16T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.17616v1 Announce Type: new Abstract: Behavioral clusters learned over user or item interactions drift as behavior evolves: some fragment into sub-behaviors, some converge, some disappear, and new patterns emerge. Two paradigms dominate the maintenance of evolving clusterings. Threshold triggers fire a pre-specified action when a hardcoded statistic crosses a cutoff; refit-and-track (MONIC-style) re-clusters every window and infers transitions from how the new clusters align with the previous window's. Both hardwire the decision into a threshold or a re-clustering rule. We study an alternative in which a large language model (LLM) makes the lifecycle decision in place. Given a threshold-free, whole-population view of the current cluster set (statistical health, labels, member texts, residual mass), the LLM decides per cluster whether and how to act (split, merge, retire, create, or no-action) without re-clustering. Because the useful signal channel depends on how informative the labels are, we fix a richness-conditioned policy in advance: statistics when label distinctiveness is low, fused statistics+semantics when it is high. On three public datasets spanning label richness (YooChoose 0.17, MOOC 0.50, News-Category 0.70), the policy-selected LLM mode obtains the highest F1 on all three, with far fewer interventions and stronger restraint than tuned threshold heuristics and a MONIC steelman (paired Wilcoxon p <= 0.003, bootstrap 95% CIs excluding zero). The gain is concentrated more in precision than recall. The useful modality shifts from statistics to semantics/fusion as richness rises. Semantics hurt on YooChoose, fusion is roughly neutral on MOOC, and the semantic channel is required on News. One base prompt template and one fixed policy serve all three datasets, whereas the tuned baseline collapses when moved between them. We treat this shift as a practitioner diagnostic observed on three datasets, not a validated law.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.17621",
+      "rank": 8,
+      "title": "AscendGYM: A Cost-Aware Kernel Optimization Benchmark for Real-World Workloads on Ascend NPUs",
+      "sourceUrl": "https://arxiv.org/abs/2611.17621",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-16T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.17621v1 Announce Type: new Abstract: Kernel optimization is essential for efficient large language model (LLM) training and inference on Ascend NPUs. Existing Ascend kernel benchmarks primarily focus on kernel generation, with less emphasis on the ability of agents to optimize existing implementations under input configurations drawn from real workloads. To address this requirement, we introduce AscendGYM, a benchmark whose initial suite comprises 48 kernels across three difficulty levels. Each kernel is paired with test cases whose data types and tensor shapes are collected from real-world training and inference tasks. Consequently, performance improvements on AscendGYM map directly to the corresponding workloads. In terms of usability, two evaluation modes are supported in AscendGYM: model evaluation and model-harness evaluation. The kernel optimization capabilities of both trained models and custom agents are allowed to be measured. It provides a complete execution environment that closely reproduces how Ascend kernels are invoked in practical pipelines. For model evaluation, it additionally includes a built-in harness equipped with search orchestration and experience accumulation. Finally, we propose a new metric, the Speedup-Token Score (STS), which quantifies performance gains relative to token cost. By jointly considering speedup and cost, STS enables the assessment of practical kernel optimization capability of a model or harness under an acceptable budget. AscendGYM is available at https://github.com/SLAI-AITP/AscendGYM.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.17639",
+      "rank": 9,
+      "title": "What LLM Agents See and What Users Say",
+      "sourceUrl": "https://arxiv.org/abs/2611.17639",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-16T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.17639v1 Announce Type: new Abstract: Before an LLM agent cancels a reservation or deletes a folder for a user, what stops it from acting on a false assumption: what its tools show, or what the user says? In this work, we study this gap with presupposition theory from linguistics: an agent may act only if each claim behind the act (e.g., one reservation fits the name) is seen to hold, answered by the user, or disclosed while the act can be undone. A simple bound shows that when lookups cannot tell one record from two, any agent acts without asking first as often with two records as with one. We then vary whether a search lists, counts, or omits a second match, and whether the user states a claim that a record refutes (e.g., \"It is empty\"). Under a role-only prompt, a count of a second record leaves most of 36 earlier agents acting on the one they see, whereas listing both stops most. When the user says a record such as a folder is empty, however, a count of its one item stops agents about as often as a listing, and stating the claim mostly cuts acting when it is false. The newest Claude and GPT models always open a counted second record, then never act. When we add a same-name, same-zip customer to a retail benchmark, a lookup returning that customer first led to wrong-account writes in about a quarter of conversations, and one that checks a street the user knows kept completion near the one-customer level. Safe writes therefore need lookups that list or check competing records, and evaluations that vary what tools show.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.17680",
+      "rank": 10,
+      "title": "Aligned, Conflicting, or Unspecified? A Diagnostic Benchmark for Multimodal Time Series Forecasting",
+      "sourceUrl": "https://arxiv.org/abs/2611.17680",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-16T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.17680v1 Announce Type: new Abstract: Artificial Intelligence of Things (AIoT) systems increasingly combine sensed time series with external text such as expert reports and news, yet how reliably models use text that agrees or conflicts with the sensed history remains unclear. We introduce the first real-world diagnostic benchmark organized by text-history relationship: 1,762 text-window pairs across sensor telemetry (Weather), web-service traffic (Wikipedia), and market data streams (Finance), each labeled Aligned, Conflicting, or Unspecified by whether the text's direction agrees with the historical trend, opposes it, or is not stated. Across ten pretrained models evaluated zero-shot, we investigate text selection and combination under text-history relationships (RQ1) and error diagnosis and horizon-scaled revision control (RQ2). For RQ1, we compare two types of text on paired Weather windows: one directly forecasts temperature changes, while the other describes related weather conditions, such as winds and fronts. Under Aligned, the first type yields the lowest error for most models. Under Conflicting, it increases most models' error above the no-text baseline; we therefore add only its stated magnitude and timing to the second type. Compared with either type alone, this combination lowers mean absolute scaled error (MASE) for six models and raises directional accuracy (DA) for seven. For RQ2, an error decomposition attributes the error increase to oversized revisions, and a training-free rule that limits them outperforms forecasts both with and without text for the four models with this trade-off, lowering MASE by 4.49%-21.98% and raising DA by 2.99%-9.71%. Our dataset is available at https://github.com/Shelton1202/ACU-Bench.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.17814",
+      "rank": 11,
+      "title": "G-CAST: Governed Continual Self-Training for E-Commerce Agents under Evolving Demands",
+      "sourceUrl": "https://arxiv.org/abs/2611.17814",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-16T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.17814v1 Announce Type: new Abstract: With the rapid advancement of Large Language Models (LLMs), an increasing number of users are turning to LLM-powered agents for conversational shopping in e-commerce. However, the user needs continue to change as new product categories, procurement scenarios, and feature requests emerge. At the same time, the product's execution harness-including its tools, skills, and operating procedures-continues to evolve to support increasingly sophisticated interactions. These changes create two practical challenges: 1) Demand drift alters the distribution, intent, and complexity of user requests, causing a model trained once to fall behind; 2) Harness evolution requires the model to use newly introduced capabilities correctly without losing behavior that users already rely on. Periodic manual retraining is too delayed and labor-intensive for this setting. To address these challenges, we present G-CAST, a governed continual self-training system that converts daily production evidence under evolving demand and capability contracts into reward-routed, entropy-prioritized training data and governed reward evolution. Governed checkpoint transition under cumulative evaluation controls each model update, enabling the agent to learn newly introduced behaviors without sacrificing previously accepted capabilities. Experiments on a real production e-commerce agent show that G-CAST achieves stronger adaptation to newly introduced demand while better preserving previously accepted behavior compared with a strong autonomous post-training baseline. Ablations further show that both reward-routed, entropy-prioritized data orchestration and governed reward evolution are important to these gains. G-CAST is now deployed in Yuancai(http://cai.1688.com/), a B2B procurement agent on Alibaba's 1688 platform.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.17820",
+      "rank": 12,
+      "title": "Aligning AI Teams",
+      "sourceUrl": "https://arxiv.org/abs/2611.17820",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-16T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.17820v1 Announce Type: new Abstract: Previous work has shown that alignment training on individual LLM agents can fail to transfer to multi-agent settings. We investigate the underlying mechanisms for this failure, and explore interventions to preserve alignment transfer to multi-agent LLM teams. We focus on two software-engineering tasks (sepsis triage, a news recommender) and ten consulting-proposal generation tasks. We present four findings: (1) The single-vs-team safety gap does not show a clear trend with more capable models. We find that Anthropic's Mythos Preview shows the largest gap on one of our tasks but the smallest on another; (2) Many natural interventions, such as having agents critique each other's work or coordinate in a group chat, do not reliably bring agent teams back to single-agent alignment behavior; (3) diffusion of responsibility substantially accounts for the safety gap: agents in teams are less likely to proactively check for system-level safety failures and more likely to ignore, rationalize, or deflect responsibility for issues when they arise; (4) having a designated safety lead agent ensure system-level safety, and having a coordinator agent publish a safety specifications document are effective at restoring single-agent alignment. We also release magelab, a multi-agent LLM orchestration and experimentation framework. Our findings can help practitioners design agent teams that successfully preserve the behaviors expected of aligned individual agents.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.17880",
+      "rank": 13,
+      "title": "Soteria: Formally Verified Planning with Runtime Enforcement for Safe LLM Agents",
+      "sourceUrl": "https://arxiv.org/abs/2611.17880",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-16T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.17880v1 Announce Type: new Abstract: LLM agents that execute multi-step tool calls must satisfy two objectives simultaneously: completing the user's task (utility) and conforming to domain policies and correctness constraints (safety). These objectives are in tension -- blocking an unsafe action prevents a violation but can leave the agent stranded with no principled way to recover. Existing approaches sacrifice one objective for the other. We introduce Soteria, a framework that reconciles safety and utility through verified hierarchical planning and runtime enforcement of specifications. Before execution, the agent generates a structured plan that is formally verified against the specifications prior to any tool invocation. During execution, the verified plan serves dual roles: it ensures that the agent takes specification-conformant trajectories and provides guidance when unsafe actions are blocked. Across multiple benchmarks covering a diverse range of tool-use tasks, Soteria achieves 1.7 times the average task success rate of the best baselines, with no violations of policy specifications, demonstrating that safety and utility need not be traded off.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.17910",
+      "rank": 14,
+      "title": "Adversarially Attacking Symbolic Vocabulary Vulnerabilities In LLM Planners",
+      "sourceUrl": "https://arxiv.org/abs/2611.17910",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-16T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.17910v1 Announce Type: new Abstract: As large language models (LLMs) are increasingly deployed as autonomous agents, their abilities in navigating automated planning tasks have become essential. However, despite their strengths, LLMs' planning ability is not robust, particularly when they are not allowed to exploit commonsense cues in the symbolic vocabulary (e.g., names of actions, predicates, and objects) used to define planning tasks. This makes LLMs unreliable compared to symbolic planners. With recent reasoning models showing improved planning performance on tasks with obfuscated symbolic vocabularies, we utilize an adversarial attack framework to reveal to what extent the crucial weaknesses of LLM agents at joint symbolic interpretation and planning remain and whether they can reason properly when presented with severe cases. As such, our main contribution is devising an LLM-based attack model, which we call Symbolic Swapper, to automatically generate obfuscated planning domains with non-standard symbolic vocabularies that systematically break strong reasoning models' ability to plan. In doing so, we reveal how much LLMs' planning abilities can be further degraded under more advanced obfuscation schemes, allowing us to ascertain their success when having to rely on their pure planning ability. We find that attacks can decrease the planning performance of base models and even robust planning frameworks by over 70%. We further analyze the factors behind how LLM planning abilities break down and find that successful obfuscation causes models to appear to significantly degrade in reasoning quality despite them showing some inherent ability to understand the domain, revealing a gap in the perception of a task domain and being able to plan under it.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.17929",
+      "rank": 15,
+      "title": "Evaluating Large Language Models for Scientific Paper Search: Retrieval Success and Inference Latency on Mac Studio and NVIDIA A100",
+      "sourceUrl": "https://arxiv.org/abs/2611.17929",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-16T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.17929v1 Announce Type: new Abstract: Scientific literature search can benefit from locally deployed LLM assistants, which reduce reliance on hosted model providers while giving research teams greater control over their data and infrastructure. This work investigates whether open-weight models can support web-assisted paper retrieval under practical computing constraints. We first characterize inference latency as the input context grows from 512 to 128k tokens on a Mac Studio and a server equipped with two NVIDIA A100 GPUs. We then evaluate eight models on the retrieval of 70 papers from seven scientific repositories, using queries that represent three levels of domain knowledge. The results show that retrieval success depends strongly on the selected model and the specificity of the query. And that A100 GPUs are generally faster than the Mac Studio, but its unified memory allows larger models that could not be loaded in the tested GPU configuration.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.17933",
+      "rank": 16,
+      "title": "OutfitterBench: Evaluating LLM Agents on Long-Horizon Resource Allocation and Commitment Coordination",
+      "sourceUrl": "https://arxiv.org/abs/2611.17933",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-16T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.17933v1 Announce Type: new Abstract: In many long-horizon settings, an agent's own choices create future constraints: committing finite capacity establishes future obligations and forecloses later opportunities. Sustaining performance therefore requires both keeping evolving plans feasible and comparing the value of resource allocations with the alternatives they displace. Recent benchmarks increasingly evaluate LLM agents in continuing operations, but give less attention to how agents keep their own commitments feasible while reassessing resource allocations as opportunities change. We introduce OutfitterBench, where agents manage an outdoor-equipment rental business for 200 days, purchasing from a 46-product catalog and handling roughly 1,100 reservation requests. Under a fixed capital ceiling, reservations and uncertain walk-in demand compete for reusable equipment whose availability changes over time. Experiments with seven frontier LLMs show that several agents underperform a simple rule-based baseline, while only the leading agent consistently surpasses it. Trajectory analysis shows that some agents apply known constraints inconsistently and make new decisions that conflict with existing commitments. Agents with more reliable fulfillment can still secure low returns from comparable commitments or delay resource reallocation. The leading agent better connects preparation with economic choices but also misses opportunities for more profitable asset use. These findings highlight limitations in sustaining coherent resource plans and reassessing their value over time. The benchmark code is publicly available at https://github.com/adminblackjack/OutfitterBench.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.17953",
+      "rank": 17,
+      "title": "The Transformer Paradigm: Dynamic Processing and a New Principle of Inference",
+      "sourceUrl": "https://arxiv.org/abs/2611.17953",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-16T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.17953v1 Announce Type: new Abstract: We argue that the Transformer revolution is not adequately understood as a merely quantitative expansion of deep learning, but as the emergence of a new paradigm based on a different principle of inference. We interpret the Transformer as a system in which token representations are transformed by parameterized transformations, or transforming concepts. During inference, some of these transformations are dynamically constructed from the current input: previously acquired transformations are first adapted and then applied. At the mechanical-structural level, this dynamic processing is realized through output-weight interconnections, whereby outputs of some networks determine the weights of others. The resulting mode of processing, which we call Sequence-level Interactive Dynamic Parallel Processing (SIDPP), provides a framework for explaining strong prompt sensitivity and opens research directions concerning interpretability, control, alternative AI architectures, neuromorphic systems, and possible biological realizations of dynamic processing.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.18248",
+      "rank": 18,
+      "title": "Dancing Tokens on the Vocabulary Network from LLM Generation",
+      "sourceUrl": "https://arxiv.org/abs/2611.18248",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-16T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.18248v1 Announce Type: new Abstract: Large language models (LLMs) generate text one token at a time, yet how a particular generation relates to the geometry learned in pre-training remains unclear. The fundamental explainability of LLMs is elusive. Here, we build a similarity network from the input embeddings of six open LLMs and map generation onto it. The token-embedding network is scale-free while heavy-tailed, as are random embeddings with matched covariance, but far more fragmented. Distillation barely changes this topology because input embeddings are largely inherited. The knowledge space is thus deterministic from pre-training. Consecutive generated tokens are rarely graph neighbours and, in most models, no more often than in shuffled order, so generation is not a walk on the predefined network, although the tokens it visits are concentrated within it. Through the logit lens in a layer- wise manner, tokens settle late in depth in most models, and repetitive models remain confined to small domain-specific sub-graphs. These observables could serve as inference-time monitors of degeneration. We thus provide a fresh perspective on understanding LLM generation in the microscopic way from node or link prediction by graph learning.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.18392",
+      "rank": 19,
+      "title": "VelServe: Taming Decode Jitters in LLM Inference with Tail-Calibrated Scheduling",
+      "sourceUrl": "https://arxiv.org/abs/2611.18392",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-16T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.18392v1 Announce Type: new Abstract: Interactive LLM services must meet latency service-level objectives (SLOs) for the time to first token (TTFT) and the time between tokens (TBT), as streaming and soft real-time applications require predictable token delivery. We identify decode jitters in both aggregated and disaggregated serving. A jitter delays every request in the batch, and long responses span hundreds of steps, so even rare overruns cause many SLO violations. In aggregated serving, SLO-aware schedulers set each step's prefill budget until its predicted latency just meets the TBT target, leaving no room for mispredictions or host stalls. Disaggregation meets average TBT targets at a cost in capacity, yet the steps that admit new requests still run late. We present \\sysname, a scheduler that calibrates how much prefill work each decode step carries using the measured tail of its own iteration latency. The SLO determines how rare a late step must be, and \\sysname leaves enough headroom in each iteration to prevent overruns and meet the target decode latency. This headroom slows prefill, so \\sysname serves the shortest waiting prompt first. When TTFT deadlines grow with prompt length, the long prompts it delays have the most time to spare. Under disaggregation, it spaces admissions so that no request waits on more slow admission steps than its P99 target allows. On three attention families and varying workloads, \\sysname sustains 2.4--2.9$\\times$ the SLO goodput of the strongest baseline on Qwen3-8B and DeepSeek-V4-Flash, and at least 4.4$\\times$ on DeepSeek-V2-Lite. With prefill and decode disaggregated on eight GPUs, \\sysname meets the SLO for more than twice as many requests as state-of-the-art baselines.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.18419",
+      "rank": 20,
+      "title": "LECAT: Measuring LLM Category Learning from Pretraining Data",
+      "sourceUrl": "https://arxiv.org/abs/2611.18419",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-16T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.18419v1 Announce Type: new Abstract: Humans know that airplanes are fast, that this extends to red airplanes, but that it does not hold for broken airplanes. How do LLMs acquire category knowledge that humans learn and apply effortlessly? We introduce LeCat, a two-part framework to analyze LLM's Learning of Category knowledge. First, we use LeCat to evaluate models on their ability to learn category knowledge, distinguishing between three cases: memorization of in-domain category knowledge, generalization to unseen instances, and ability to flexibly use knowledge in appropriate contexts. Then, we use LeCat to trace how this knowledge can be learned in pretraining from text that may encode category knowledge in various ways, such as verbatim repetition or exceptions, which we refer to as forms of \"knowledge expression\". We first assess open-source pretrained models using 199 curated category-feature pairs and analyze their training data. Our findings suggest that strengthening context and category-feature co-occurrence likelihood (PMI) improve learning for larger models and verbatim rule-like statements diminish flexible category learning. To systematically isolate these effects, we then train a 68M model from scratch with precise control over the categorical information each sees in their training data, confirming that verbatim repetition reduces flexible learning but mixture of diverse knowledge expressions lead to more robust category learning. Together, our findings highlight that while contextual flexibility is persistently difficult for models, how category knowledge is expressed in pretraining greatly impacts models' acquisition of robust category knowledge.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.18514",
+      "rank": 21,
+      "title": "Can Mechanistic Interpretability Help Explain LLM Agent Failures? A Case Study on Web Element Hallucination",
+      "sourceUrl": "https://arxiv.org/abs/2611.18514",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-16T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.18514v1 Announce Type: new Abstract: Mechanistic Interpretability (MI) has made significant progress in explaining the internal computations of Large Language Models (LLMs); however, these advances have yet to demonstrate comparable success in explaining the decision-making processes of LLM-based agents. This paper examines the challenges MI tools face when applied to realistic agentic failures. We focus on one such failure: web agents hallucinating actions that are not available on a website. We apply a series of mechanistic analyzes to Qwen2.5-7B-Instruct as it interacts with live websites. We find that a linear probe trained on the last prompt token can predict hallucinations before generation begins (0.80 AUC) and steering along a probe direction corrects 85\\% of hallucinations, but disrupts 7\\% of valid actions. However, these results only provide a partial explanation of why the agent hallucinates. The probe direction is sensitive to prompt formatting, losing much of its steering effect after a minor change to how actions are represented. Additionally, circuit identification can be difficult as the computation is distributed across multiple components and positions, and the information the agent relies on varies across examples. We discuss how these observations challenge the assumptions underlying standard MI methods for circuit discovery and feature identification, and outline future directions for making these methods better suited to explain failures in LLM-based agents.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2505.24098",
+      "rank": 22,
+      "title": "HARDTESTGEN: A High-Quality RL Verifier Generation Pipeline for LLM Algorithmic Coding",
+      "sourceUrl": "https://arxiv.org/abs/2505.24098",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-16T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2505.24098v2 Announce Type: cross Abstract: Verifiers provide important reward signals for reinforcement learning of large language models (LLMs). However, it is challenging to develop or create reliable verifiers, especially for code generation tasks. A well-disguised wrong solution program may only be detected by carefully human-written edge cases that are difficult to synthesize automatically. To address this issue, we propose HARDTESTGEN, an approach to synthesize high-quality test cases for algorithmic coding problems. We curate a comprehensive algorithmic programming dataset HARDTESTS with 26.6k problems and high-quality synthetic tests. Compared with existing tests, HARDTESTGEN tests demonstrate significantly higher accuracy in verifying LLM-generated code (+11.22 percentage points in precision, the percentage of actually correct code within the predicted correct ones). We also show that downstream post-training -- including rejection sampling and reinforcement learning (RL) -- using HARDTESTS verifier results in improved performance of LLM code generation. We open-source our dataset and synthesis pipeline at https://leililab.github.io/HardTests/.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.17462",
+      "rank": 23,
+      "title": "Diffusion Tree Sampling for Inference Time Adaptation of Crystal Generative Models",
+      "sourceUrl": "https://arxiv.org/abs/2611.17462",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-16T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.17462v1 Announce Type: cross Abstract: Diffusion-based generative models have become strong priors over plausible crystal structures, but turning that prior into promising candidates requires steering toward several conflicting properties at once. Fine-tuning is expensive and produces a new model for every new objective, while differentiable guidance is not applicable to many real-world tasks. We instead adapt these generative models at inference time using Diffusion Tree Sampling (DTS), a Monte Carlo tree search procedure over the denoising trajectory. We make two technical contributions on top of DTS that are particularly relevant for AI-for-science applications. First, we show how to use existing property-conditional generative models (e.g., models fine-tuned for classifier-free guidance) as guided proposals inside DTS, without distorting the target distribution. Second, we extend DTS to multi-objective sampling, so that a single search produces samples spanning an entire Pareto front. We instantiate both adaptations on de novo crystal generation: improving the stability of crystals generated by different models, using pretrained conditional models to generate crystals belonging to rare space groups or with high bulk modulus, and generating crystals along a Pareto front of high dielectric constant and high bandgap materials. Across these tasks, DTS-based inference-time adaptation successfully improves model outputs without modifying the models themselves.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.17520",
+      "rank": 24,
+      "title": "Only as Safe as the Weakest Agent: A Break That Appears Only When the System Is Multi-Agent",
+      "sourceUrl": "https://arxiv.org/abs/2611.17520",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-16T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.17520v1 Announce Type: cross Abstract: Major industry multi-agent systems like Codex and Claude Code can be broken by attacks that have long been unsuccessful against modern frontier models. AI Safety as a discipline has largely focused on finding the bounds and vulnerabilities of AI models used in isolation. Yet as humans increasingly deploy these models as agents and multi-agent systems, the same attacks that had been thought to be patched when using a model in isolation can break these same models under specific circumstances. We show that these system breaks are not purely theoretical, but can break Claude Code, Codex, and a reference harness, all unmodified and used with their own sub-agent mechanisms. We show the attack by asking agents to answer questions from a store of files on disk in which we have planted a forged record. Searching the store themselves, the strong model orchestrators commit almost zero harmful revisions in over 1,000 trials. However, if that same orchestrator model delegates to a cheaper sub-agent, which is what these harnesses are built to do, the same models on the same facts fail on 20/180, 44/180, 75/180 and 553/900. Thus, even when the system is driven by a strong model, the system's safety lands near the weak reader's, not the orchestrator's. Simulations over 18 models show the same effect in the delivery channel where five aggregators, who on their own were almost never unsafe, repeat a corrupted sub-agent's error in 751/757 trials. The safety of real-world agentic systems that use strong orchestrator agents and weaker sub-agents, and multi-agent systems in general, is defined not by the safety of the strong agent but by the safety of the weakest agent.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.17753",
+      "rank": 25,
+      "title": "Superfluid: Local AI Server for Distributed LLM Inference",
+      "sourceUrl": "https://arxiv.org/abs/2611.17753",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-16T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.17753v1 Announce Type: cross Abstract: Running large language models (LLMs) on local devices keeps data private, removes per-token cost, cuts network latency, and keeps working without a connection. Two shifts now strain how such models are served. On one device, several agents share a locally served model with an interactive user. Across devices, a developer or small team often owns several capable machines from different vendors, which sit idle most of the day because every local server serves one runtime on one machine. We present Superfluid, an open-source LLM server built for local inference at both scales. On one device, Superfluid drives llama.cpp, MLX, or BaseRT in isolated worker processes through one scheduler that moves interactive requests ahead of agent work, computes a prompt shared by many requests once, and writes every token to a durable log before it reaches the client. Across devices, one Superfluid server turns a fleet of machines into a single API endpoint. Machines with different hardware serve copies of the same model, receive work according to their measured speed, and can join or fail under load without losing a request. For Qwen3.8-27B on an Apple M5 Pro, a chat sent while eight agents are working receives its first token in 1.5 s, against 291-612 s on llama-server, Ollama, and mlx_lm.server. On six machines from three chip vendors serving 64 simulated users for one hour, Superfluid answers all 5,041 requests while machines join one at a time and one is killed and rejoins; throughput grows from 112 to 534 tok/s and the median first-token time falls from 99 to 12 s. On twelve Mac Studio M3 Ultras it sustains 10,656 tok/s across 38,563 requests from 384 agents without a failure. Superfluid is available under the Apache-2.0 licence at https://github.com/basecompute/superfluid.",
+      "summary": ""
+    }
+  ]
+}
