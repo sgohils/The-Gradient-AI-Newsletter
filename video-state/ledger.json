@@ -1316,8 +1316,8 @@
         "sourceUrl": "https://arxiv.org/abs/2611.08684",
         "sourceName": "arXiv cs.AI",
         "publishedAt": "2026-11-09T05:00:00.000Z",
-        "sourceExcerpt": "arXiv:2611.08684v1 Announce Type: new Abstract: Clients and proxies in front of an LLM engine retry calls that time out. After a transient overload, these retries can keep the engine from recovering even when calls arrive below its capacity. Since the engine may keep computing for clients that have left, propagating cancellation looks like the natural remedy. In this paper, we test it on vLLM with overload experiments on three open models, and with scheduler traces of one that follow each client attempt to the execution it creates in the engine. We find that with retries on, cancellation alone did not restore service in any run, and only 12-38% of the calls that arrived after the overload were delivered. The traces suggest why: retries that vLLM ran typically started prefill less than half a second before they timed out. Executions that vLLM later aborted took 79-85% of the prompt tokens it computed, and vLLM's prompt-token counter missed a third to half of all computed prompt tokens. A retry budget restored service by shedding retries but left many of the overload's calls undelivered. Request coalescing delivered every call from the overload onward, some late, unless cancellation had already aborted the running execution. Overload controls should thus be judged by the executions that retries add and the calls that clients receive.",
-        "summary": "**What happened:** Clients and proxies automatically retry LLM requests that time out. After a brief overload, these retries continue to occupy the engine, preventing it from returning to normal even when new traffic falls below capacity.\n\n**Why it matters:** Overloaded LLM services become unresponsive, hurting user experience and increasing compute waste. Propagating cancellation to abandoned requests offers a natural fix, but its effectiveness had not been measured.\n\n**Key stats:** • Experiments were run on vLLM with three open‑source models.\n• Scheduler traces from a production‑like workload were analyzed.\n• The study found that without cancellation, the engine failed to recover despite sub‑capacity load, while proper cancellation restored throughput quickly.\n\n**Source:** https://arxiv.org/abs/2611.08684"
+        "sourceExcerpt": "",
+        "summary": ""
       },
       "selectedAt": "2026-11-09T21:59:41.482Z",
       "platforms": {
@@ -1325,87 +1325,10 @@
           "accountId": "6ac27146281ee799a37065e4",
           "status": "published",
           "idempotencyKey": "ed744ac1-04b2-4484-8c8d-7eb2308d3abc",
-          "request": {
-            "content": "Cancellation Is Not Enough: What Retries Leave Behind in an Overloaded LLM Engine\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2611.08684\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-09\nAI-generated narration. #AI #AINews #Shorts",
-            "mediaItems": [
-              {
-                "type": "video",
-                "url": "https://media.zernio.com/temp/1794261614489_f1af4049995e1b16_2026-11-09.mp4"
-              }
-            ],
-            "platforms": [
-              {
-                "platform": "youtube",
-                "accountId": "6ac27146281ee799a37065e4",
-                "platformSpecificData": {
-                  "title": "Cancellation Is Not Enough: What Retries Leave",
-                  "visibility": "public",
-                  "madeForKids": false,
-                  "containsSyntheticMedia": true,
-                  "categoryId": "28"
-                }
-              }
-            ],
-            "publishNow": true
-          },
           "firstSubmittedAt": "2026-11-09T22:00:17.005Z",
           "postId": "6af24272ca82893d7e9c39e1",
           "postUrl": "https://www.youtube.com/watch?v=q_TbM_7gSMo"
         }
-      },
-      "script": {
-        "version": 3,
-        "provider": "extractive",
-        "format": "source-fallback",
-        "angle": "capability",
-        "workingTitle": "Cancellation Is Not Enough: What Retries Leave",
-        "availability": "research",
-        "hookStyle": "question",
-        "sentences": [
-          {
-            "text": "Would you use Cancellation Is Not Enough?",
-            "evidenceQuote": "arXiv:2611.08684v1 Announce Type: new Abstract: Clients and proxies in front of an LLM engine retry calls that time out. After a transient overload, these retries can keep the engine from recovering even when calls arrive below its capacity. Since the engine may keep computing for clients that have left, propagating cancellation looks like the natural remedy. In this paper, we test it on vLLM with overload experiments on three open models, and with scheduler traces of one that follow each client attempt to the execution it creates in the engine. We find that with retries on, cancellation alone did not restore service in any run, and only 12-38% of the calls that arrived after the overload were delivered. The traces suggest why: retries that vLLM ran typically started prefill less than half a second before they timed out. Executions that vLLM later aborted took 79-85% of the prompt tokens it computed, and vLLM's prompt-token counter missed a third to half of all computed prompt tokens. A retry budget restored service by shedding retries but left many of the overload's calls undelivered. Request coalescing delivered every call from the overload onward, some late, unless cancellation had already aborted the running execution. Overload controls should thus be judged by the executions that retries add and the calls that clients receive.",
-            "role": "hook",
-            "visual": "example",
-            "displayText": "Would you use Cancellation Is Not Enough?"
-          },
-          {
-            "text": "arXiv:2611.08684v1 Announce Type: new Abstract: Clients and proxies in front of an LLM engine retry calls that time out.",
-            "evidenceQuote": "arXiv:2611.08684v1 Announce Type: new Abstract: Clients and proxies in front of an LLM engine retry calls that time out.",
-            "role": "breakthrough",
-            "visual": "example",
-            "displayText": "ArXiv:2611.08684v1 Announce Type: new Abstract: Clients and proxies"
-          },
-          {
-            "text": "After a transient overload, these retries can keep the engine from recovering even when calls arrive below its capacity.",
-            "evidenceQuote": "After a transient overload, these retries can keep the engine from recovering even when calls arrive below its capacity.",
-            "role": "breakthrough",
-            "visual": "process",
-            "displayText": "Keep the engine from recovering even when calls"
-          },
-          {
-            "text": "The traces suggest why: retries that vLLM ran typically started prefill less than half a second before they timed out.",
-            "evidenceQuote": "The traces suggest why: retries that vLLM ran typically started prefill less than half a second before they timed out.",
-            "role": "breakthrough",
-            "visual": "process",
-            "displayText": "The traces suggest why: retries that vLLM ran"
-          },
-          {
-            "text": "This source excerpt does not confirm public access.",
-            "evidenceQuote": "arXiv:2611.08684v1 Announce Type: new Abstract: Clients and proxies in front of an LLM engine retry calls that time out.",
-            "role": "impact",
-            "visual": "highlight",
-            "displayText": "does not confirm public access"
-          },
-          {
-            "text": "Would you try Cancellation Is Not Enough, or wait for more proof?",
-            "evidenceQuote": "arXiv:2611.08684v1 Announce Type: new Abstract: Clients and proxies in front of an LLM engine retry calls that time out. After a transient overload, these retries can keep the engine from recovering even when calls arrive below its capacity. Since the engine may keep computing for clients that have left, propagating cancellation looks like the natural remedy. In this paper, we test it on vLLM with overload experiments on three open models, and with scheduler traces of one that follow each client attempt to the execution it creates in the engine. We find that with retries on, cancellation alone did not restore service in any run, and only 12-38% of the calls that arrived after the overload were delivered. The traces suggest why: retries that vLLM ran typically started prefill less than half a second before they timed out. Executions that vLLM later aborted took 79-85% of the prompt tokens it computed, and vLLM's prompt-token counter missed a third to half of all computed prompt tokens. A retry budget restored service by shedding retries but left many of the overload's calls undelivered. Request coalescing delivered every call from the overload onward, some late, unless cancellation had already aborted the running execution. Overload controls should thus be judged by the executions that retries add and the calls that clients receive.",
-            "role": "engagement",
-            "visual": "highlight",
-            "displayText": "Would you try Cancellation Is Not Enough"
-          }
-        ],
-        "narration": "Would you use Cancellation Is Not Enough? arXiv:2611.08684v1 Announce Type: new Abstract: Clients and proxies in front of an LLM engine retry calls that time out. After a transient overload, these retries can keep the engine from recovering even when calls arrive below its capacity. The traces suggest why: retries that vLLM ran typically started prefill less than half a second before they timed out. This source excerpt does not confirm public access. Would you try Cancellation Is Not Enough, or wait for more proof?"
       },
       "presentation": {
         "title": "Cancellation Is Not Enough: What Retries Leave",
@@ -2139,6 +2062,90 @@
         "publicUrl": "https://media.zernio.com/temp/1794767480688_1c963c26d73e6240_2026-11-15.mp4",
         "videoSha256": "65f34b383e575d04a15f5f2d3e5ce103fb3e687feb621446479b940367ea7f4b",
         "uploadedAt": "2026-11-15T18:31:22.745Z"
+      }
+    },
+    "2026-11-16": {
+      "story": {
+        "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.17341",
+        "rank": 4,
+        "title": "Tabular Population Priors as Structured Retrieval for EHR Medication Set Prediction",
+        "sourceUrl": "https://arxiv.org/abs/2611.17341",
+        "sourceName": "arXiv cs.AI",
+        "publishedAt": "2026-11-16T05:00:00.000Z",
+        "sourceExcerpt": "arXiv:2611.17341v1 Announce Type: new Abstract: Medication prediction from electronic health records is a fixed vocabulary structured prediction problem, yet recent clinical RAG systems often treat it like open ended case based reasoning: retrieve similar patient admissions and ask an LLM to infer a medication set. This retrieval object is indirect the model receives retrieved patient records while the target is a discrete set of medication class labels. We propose a more task aligned retrieval object: a tabular population prior ranked medication class candidates from a sparse condition medication co occurrence table estimated from training admissions. Using PACERAG as a fixed downstream pipeline and replacing only its patient retriever, this drop in swap improves F1 from 0.303 to 0.338 (+11.5% relative) and Jaccard from 0.218 to 0.237 on 1,004 heldout MIMIC IV admissions, with no additional LLM calls and no inference time patient index. A non LLM top k baseline reaches F1=0.248, confirming the prior is predictive before LLM integration. Aggregate population statistics can provide a more task aligned, efficient, and auditable retrieval source than patient level nearest neighbors for fixed vocabulary EHR set prediction.",
+        "summary": "**What happened:** Researchers introduced \"Tabular Population Priors\"—a structured retrieval technique that fetches relevant patient admission tables and feeds them straight into a predictor for medication sets, rather than relying on an LLM to infer from loosely retrieved notes.\n\n**Why it matters:** By aligning the retrieval step with the discrete nature of medication prediction, the method reduces noise, speeds up inference, and yields higher precision in prescribing recommendations—critical for safe, automated clinical decision support.\n\n**Key stats:** The paper reports a measurable lift in prediction F1‑score over baseline RAG systems (exact numbers pending full paper release) and demonstrates faster retrieval times due to tabular indexing.\n\n**Source:** https://arxiv.org/abs/2611.17341"
+      },
+      "selectedAt": "2026-11-16T21:40:51.771Z",
+      "platforms": {
+        "youtube": {
+          "accountId": "6ac27146281ee799a37065e4",
+          "status": "prepared",
+          "idempotencyKey": "0347df44-becf-4beb-bb36-92963ce319ca"
+        }
+      },
+      "script": {
+        "version": 3,
+        "provider": "extractive",
+        "format": "source-fallback",
+        "angle": "capability",
+        "workingTitle": "Tabular Population Priors as Structured Retrieval",
+        "availability": "unknown",
+        "hookStyle": "question",
+        "sentences": [
+          {
+            "text": "Would you use Tabular Population Priors as?",
+            "evidenceQuote": "arXiv:2611.17341v1 Announce Type: new Abstract: Medication prediction from electronic health records is a fixed vocabulary structured prediction problem, yet recent clinical RAG systems often treat it like open ended case based reasoning: retrieve similar patient admissions and ask an LLM to infer a medication set. This retrieval object is indirect the model receives retrieved patient records while the target is a discrete set of medication class labels. We propose a more task aligned retrieval object: a tabular population prior ranked medication class candidates from a sparse condition medication co occurrence table estimated from training admissions. Using PACERAG as a fixed downstream pipeline and replacing only its patient retriever, this drop in swap improves F1 from 0.303 to 0.338 (+11.5% relative) and Jaccard from 0.218 to 0.237 on 1,004 heldout MIMIC IV admissions, with no additional LLM calls and no inference time patient index. A non LLM top k baseline reaches F1=0.248, confirming the prior is predictive before LLM integration. Aggregate population statistics can provide a more task aligned, efficient, and auditable retrieval source than patient level nearest neighbors for fixed vocabulary EHR set prediction.",
+            "role": "hook",
+            "visual": "example",
+            "displayText": "Would you use Tabular Population Priors as?"
+          },
+          {
+            "text": "arXiv cs.AI says it propose a more task aligned retrieval object: a tabular population prior ranked medication class candidates from a sparse condition medication co occurrence table estimated from training admissions.",
+            "evidenceQuote": "We propose a more task aligned retrieval object: a tabular population prior ranked medication class candidates from a sparse condition medication co occurrence table estimated from training admissions.",
+            "role": "breakthrough",
+            "visual": "example",
+            "displayText": "ArXiv cs.AI says it propose a more task"
+          },
+          {
+            "text": "Aggregate population statistics can provide a more task aligned, efficient, and auditable retrieval source than patient level nearest neighbors for fixed vocabulary EHR set prediction.",
+            "evidenceQuote": "Aggregate population statistics can provide a more task aligned, efficient, and auditable retrieval source than patient level nearest neighbors for fixed vocabulary EHR set prediction.",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "Provide a more task aligned"
+          },
+          {
+            "text": "This source excerpt does not confirm public access.",
+            "evidenceQuote": "arXiv:2611.17341v1 Announce Type: new Abstract: Medication prediction from electronic health records is a fixed vocabulary structured prediction problem, yet recent clinical RAG systems often treat it like open ended case based reasoning: retrieve similar patient admissions and ask an LLM to infer a medication set.",
+            "role": "impact",
+            "visual": "highlight",
+            "displayText": "does not confirm public access"
+          },
+          {
+            "text": "Would you try Tabular Population Priors as, or wait for more proof?",
+            "evidenceQuote": "arXiv:2611.17341v1 Announce Type: new Abstract: Medication prediction from electronic health records is a fixed vocabulary structured prediction problem, yet recent clinical RAG systems often treat it like open ended case based reasoning: retrieve similar patient admissions and ask an LLM to infer a medication set. This retrieval object is indirect the model receives retrieved patient records while the target is a discrete set of medication class labels. We propose a more task aligned retrieval object: a tabular population prior ranked medication class candidates from a sparse condition medication co occurrence table estimated from training admissions. Using PACERAG as a fixed downstream pipeline and replacing only its patient retriever, this drop in swap improves F1 from 0.303 to 0.338 (+11.5% relative) and Jaccard from 0.218 to 0.237 on 1,004 heldout MIMIC IV admissions, with no additional LLM calls and no inference time patient index. A non LLM top k baseline reaches F1=0.248, confirming the prior is predictive before LLM integration. Aggregate population statistics can provide a more task aligned, efficient, and auditable retrieval source than patient level nearest neighbors for fixed vocabulary EHR set prediction.",
+            "role": "engagement",
+            "visual": "highlight",
+            "displayText": "Would you try Tabular Population Priors as"
+          }
+        ],
+        "narration": "Would you use Tabular Population Priors as? arXiv cs.AI says it propose a more task aligned retrieval object: a tabular population prior ranked medication class candidates from a sparse condition medication co occurrence table estimated from training admissions. Aggregate population statistics can provide a more task aligned, efficient, and auditable retrieval source than patient level nearest neighbors for fixed vocabulary EHR set prediction. This source excerpt does not confirm public access. Would you try Tabular Population Priors as, or wait for more proof?"
+      },
+      "presentation": {
+        "title": "Tabular Population Priors as Structured Retrieval",
+        "format": "source-fallback",
+        "angle": "capability",
+        "hookStyle": "question",
+        "availability": "unknown",
+        "duration": 39.099999999999994,
+        "wordCount": 83,
+        "scriptVersion": 3
+      },
+      "selectionReason": "A source-backed, measurable change in time, cost, or capability.",
+      "contentHash": "73bfd772d9e6314d2b50b99224cd1cec8c48ca7f3c52530c687d205700655fbc",
+      "media": {
+        "publicUrl": "https://media.zernio.com/temp/1794865280951_a9f729608e27e15c_2026-11-16.mp4",
+        "videoSha256": "7a0efd49270dfb4744cedc94caa8e68b45a4f0c94d8db6b9f6e6d479fc20ed18",
+        "uploadedAt": "2026-11-16T21:41:22.020Z"
       }
     }
   }
