@@ -2079,8 +2079,32 @@
       "platforms": {
         "youtube": {
           "accountId": "6ac27146281ee799a37065e4",
-          "status": "prepared",
-          "idempotencyKey": "0347df44-becf-4beb-bb36-92963ce319ca"
+          "status": "submitting",
+          "idempotencyKey": "0347df44-becf-4beb-bb36-92963ce319ca",
+          "request": {
+            "content": "Tabular Population Priors as Structured Retrieval for EHR Medication Set Prediction\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2611.17341\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-16\nAI-generated narration. #AI #AINews #Shorts",
+            "mediaItems": [
+              {
+                "type": "video",
+                "url": "https://media.zernio.com/temp/1794865280951_a9f729608e27e15c_2026-11-16.mp4"
+              }
+            ],
+            "platforms": [
+              {
+                "platform": "youtube",
+                "accountId": "6ac27146281ee799a37065e4",
+                "platformSpecificData": {
+                  "title": "Tabular Population Priors as Structured Retrieval",
+                  "visibility": "public",
+                  "madeForKids": false,
+                  "containsSyntheticMedia": true,
+                  "categoryId": "28"
+                }
+              }
+            ],
+            "publishNow": true
+          },
+          "firstSubmittedAt": "2026-11-16T21:41:23.215Z"
         }
       },
       "script": {
