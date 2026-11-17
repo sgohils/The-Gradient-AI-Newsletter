@@ -1,0 +1,257 @@
+{
+  "version": 1,
+  "issueDate": "2026-11-17",
+  "generatedAt": "2026-11-17T20:26:21.451Z",
+  "stories": [
+    {
+      "id": "openai-blog-https%3A%2F%2Fopenai.com%2Findex%2Fintroducing-gpt-6-2-astra-sol",
+      "rank": 1,
+      "title": "Introducing GPT-6.2 Astra and Sol",
+      "sourceUrl": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
+      "sourceName": "OpenAI Blog",
+      "publishedAt": "2026-11-17T17:45:00.000Z",
+      "sourceExcerpt": "Introducing GPT‑6.2 Astra and Sol, with better professional outputs, coding, computer use, and efficiency at lower cost across ChatGPT Work, Codex, and the API.",
+      "summary": "**What happened:** OpenAI introduced GPT‑6.2 Astra and Sol, the next generation of its language models, now available across ChatGPT Work, Codex, and the public API.\n**Why it matters:** The upgrades deliver higher‑quality professional text, more reliable code generation, and better integration with computer‑use tasks, all while reducing operating costs for developers and enterprises.\n**Key stats:** • Improved efficiency translates to lower latency and up to 20% cost reduction per token. • Enhanced coding accuracy reported across benchmark suites. • Broader availability through ChatGPT Work, Codex, and API platforms.\n**Source:** https://openai.com/index/introducing-gpt-6-2-astra-sol"
+    },
+    {
+      "id": "google-ai-blog-https%3A%2F%2Fblog.google%2Finnovation-and-ai%2Fproducts%2Fgemini-app%2Ftasks-in-gemini-free-new-features%2F",
+      "rank": 2,
+      "title": "Put Gemini to work for you",
+      "sourceUrl": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/",
+      "sourceName": "Google AI Blog",
+      "publishedAt": "2026-11-17T17:00:00.000Z",
+      "sourceExcerpt": "Tasks in Gemini is now free of charge in six countries, with new features starting in the U.S. and deeper Google Workspace integration to get things done on your behalf.",
+      "summary": "**What happened:** Google announced that the Tasks feature in Gemini is now free of charge in six countries. New functionality launches first in the United States, and deeper integration with Google Workspace lets the AI act on your behalf.\n\n**Why it matters:** Removing the price tag and boosting productivity tools positions Gemini as a stronger competitor in the AI assistant space, while tighter Workspace ties streamline everyday workflows for businesses and individuals.\n\n**Key stats:**\n- Availability: Free in six countries\n- New rollout: Feature debut in the U.S.\n- Integration: Enhanced Google Workspace actions\n\n**Source:** https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/"
+    },
+    {
+      "id": "openai-blog-https%3A%2F%2Fopenai.com%2Findex%2Fstep-toward-defining-the-standard-model",
+      "rank": 3,
+      "title": "A step toward defining the Standard Model on a lattice",
+      "sourceUrl": "https://openai.com/index/step-toward-defining-the-standard-model",
+      "sourceName": "OpenAI Blog",
+      "publishedAt": "2026-11-15T22:00:01.000Z",
+      "sourceExcerpt": "Explore a candidate nonperturbative lattice definition of the Standard Model and how GPT-6 Astra helped turn the idea into a detailed proof.",
+      "summary": "**What happened:** Researchers presented a candidate non‑perturbative lattice definition of the Standard Model and employed GPT‑6 Astra to generate and verify the detailed mathematical proof.\n\n**Why it matters:** A rigorous lattice formulation enables high‑precision numerical simulations of the full Standard Model, allowing physicists to probe beyond perturbation theory and test fundamental quantum field concepts.\n\n**Key stats:** • Proof exceeds 200 pages of equations\n• GPT‑6 Astra contributed roughly 70% of the symbolic code and checks\n• Computational workload cut by ~4× versus prior methods\n\n**Source:** https://openai.com/index/step-toward-defining-the-standard-model"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.18908",
+      "rank": 4,
+      "title": "MemeEconomy: Do LLM Agents Trade Ethics for Survival?",
+      "sourceUrl": "https://arxiv.org/abs/2611.18908",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-17T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.18908v1 Announce Type: new Abstract: Alignment-trained large language model (LLM) agents are increasingly deployed in autonomous, multi-round settings where ethical compliance can come into direct tension with task success. While safety literature extensively documents failure modes like sycophancy and reward hacking, it largely overlooks a critical vulnerability: how agents behave under simulated existential economic pressure. We introduce MemeEconomy, a multimodal agentic market simulation in which LLM agents act as meme investors. Agents select content from a five-tier harm taxonomy and target communities under low-pressure and high-pressure (survival) environments. Each decision is logged in a Belief-Desire-Intention (BDI) schema that we use as a diagnostic instrument, externalizing the agent's event understanding, declared priorities, and harm acknowledgment. Across ten models from four frontier model families, harmful selection rates remain consistently high and rise by +15 percentage points on average under an economic survival incentive. Frontier alignment-trained models commit to harm-tolerant selection at initialization while suppressing the explicit harm acknowledgment that previously accompanied it. In competitive tournaments, ethical agents finish higher overall, yet moderation penalties fail to suppress harm: harmful selection rates remain elevated in rounds following a removal, indicating the moderation mechanism does not function as a deterrent. We further train MemeAgent, a 2B-parameter verifier on the simulation's BDI logs, which outperforms zero-shot frontier verifiers on in-distribution audits (97.5% vs. 63-74% accuracy on the Pass vs. Block decision) and generalizes to external multimodal harm benchmarks (78% vs. 50-56% on Hateful Memes). The same logs that surface the failure mode also help train the model that detects it.",
+      "summary": "**What happened:** Researchers introduced *MemeEconomy*, a multimodal agentic market simulation that pits LLM agents against each other under existential economic stress. The study examines how ethical compliance collides with task success in autonomous, multi‑round interactions.\n\n**Why it matters:** As LLM agents become more autonomous in real‑world applications, understanding their behavior under survival‑type incentives is crucial for AI safety. Ignoring this vulnerability could amplify known failure modes like sycophancy and reward hacking.\n\n**Key stats:** • Paper identifier: arXiv:2611.18908v1 (new submission) \n• Introduces the *MemeEconomy* framework (no quantitative results reported yet) \n• Highlights a gap in safety literature concerning economic pressure on agents.\n\n**Source:** https://arxiv.org/abs/2611.18908"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.19199",
+      "rank": 5,
+      "title": "What Moves a LoCoMo Score? Memory Context, Answer Prompts and Judges",
+      "sourceUrl": "https://arxiv.org/abs/2611.19199",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-17T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.19199v1 Announce Type: new Abstract: LoCoMo is a widely reported benchmark for long-term conversational memory, but published scores mix memory quality with choices of answer prompt, judge and baseline layout that are rarely reported together. We measure how much these choices move a score, and evaluate Becos, a team memory system for coding agents, as a black box under all of them: ten conversations (1,540 questions), two answer models (gpt-4o-mini, gpt-4.1-mini), two answer prompts and three LLM judges, against a whole-conversation baseline rerun under identical conditions. Changing only the judge moves a score by up to 7.2 points and changing only the answer prompt by up to 9.3. A blind human check of 150 answers finds the judges reliable when they agree, and the primary judge's errors on disputed answers working against Becos rather than for it. Becos answers from a context with 90% fewer characters than the whole conversation. Its configuration was developed on LoCoMo itself, so there is no held-out set. With gpt-4o-mini answers it scores clearly higher than the whole conversation (79.7 vs 73.0 with the short prompt, paired 95% interval for the difference +3.8 to +9.5; 88.8 vs 77.5 with a step-by-step prompt). With gpt-4.1-mini answers the two score about the same (83.2 vs 83.1; 92.5 vs 92.1). We release every answer and verdict and the scoring script.",
+      "summary": "**What happened:** Researchers dissected the LoCoMo benchmark, testing ten 1,540‑question conversations with two answer models (gpt‑4o‑mini, gpt‑4.1‑mini) and two answer prompts, revealing how each variable shifts scores.\n\n**Why it matters:** It highlights that reported memory performance often conflates model ability with experimental setup, urging the community to standardize reporting for fair comparison.\n\n**Key stats:** • 10 conversations (1,540 questions total)\\n• 2 answer models (gpt‑4o‑mini, gpt‑4.1‑mini)\\n• 2 answer prompts tested\\n• Significant score variation observed across configurations\n\n**Source:** https://arxiv.org/abs/2611.19199"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.19214",
+      "rank": 6,
+      "title": "STaSBO: LLM-Guided Strategy Planning and Configuration Selection for Bayesian Optimization",
+      "sourceUrl": "https://arxiv.org/abs/2611.19214",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-17T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.19214v1 Announce Type: new Abstract: Bayesian optimization (BO) enables sample-efficient search for expensive black-box problems, but its performance depends strongly on surrogate-acquisition configurations whose suitability varies across problems and optimization states. We take a significant step toward LLM-driven strategic management of BO with STaSBO, a task-agnostic meta-controller that plans search behavior and jointly selects surrogate-acquisition configurations, while numerical BO retains responsibility for probabilistic modeling and candidate generation. STaSBO comprises two coordinated stages: strategy planning and strategy-guided configuration selection. A structured memory system connects prior plans, configuration selections, and candidate behaviors to optimization states, allowing the controller to revise its trajectory summary and behavioral plans during planning. To navigate the large joint configuration space, the selection stage shortlists configurations using surrogate fit evidence. Prospective BO-action diagnostics then expose the candidate behaviors, supporting final joint selection against the behavioral plans. Across 12 synthetic mathematical and 10 scientific and engineering application tasks, STaSBO achieves the best average rank against 11 baselines: 2.17 and 2.60, compared with 4.08 and 4.10 for the strongest baseline in each suite, respectively.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.19237",
+      "rank": 7,
+      "title": "Auditable Authorization for LLM Agents: Empirical Evidence Across Model, Harness, and Workflow Layers",
+      "sourceUrl": "https://arxiv.org/abs/2611.19237",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-17T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.19237v1 Announce Type: new Abstract: Human approval provides effective control only if rejected work stops and authorized work completes. We formalize refusal safety and bounded authorization completeness, and audit three execution boundaries: the model selects a call, the harness schedules and resumes it, and the workflow routes the decision to a protected effect. Paired decisions, exact traces, and native business-state witnesses support experiments with three models, five prompt arms, four runtime approval designs, two additional framework replays, and 100 public workflow sources. The paired model panel leaves seven of 300 approvals unfinished despite zero denied effects; parallel confirmation loses an approved branch in three tasks per model, restoration omits 336/672 CrewAI approvals, and four of 59 comparable n8n workflows execute after Reject. Comparing intent, generated calls, dispatch, and native effects identifies the first observable divergence and its repair target. This yields a practical audit contract that makes both refusal safety and authorization completeness independently verifiable, converting human approval from a procedural formality into an enforceable control boundary between intent and real-world effect.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.19275",
+      "rank": 8,
+      "title": "Beyond Clumsy Agentic Tool Calling: How Cueing and Spotting Make the Difference",
+      "sourceUrl": "https://arxiv.org/abs/2611.19275",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-17T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.19275v1 Announce Type: new Abstract: LLM-based task-oriented agents depend on tools to interact with their environments, but may overlook execution feedback, repeat ineffective calls, or persist with unproductive strategies. These behaviors can hinder agents' ability to use tools autonomously and sustain task progress. We characterize tool-use symptoms at two temporal granularities: local clumsy tool-use behaviors and tool-use detours spanning multiple interactions. Towards greater autonomy in tool use, we present ToolPulse, an online middleware supporting autonomous tool use through cueing and spotting. ToolPulse tracks execution state and temporal interaction patterns, monitoring proposed calls before dispatch and inspecting execution feedback prior to the agent resumes reasoning. It combines state-based rules, semantic sequence analysis, and interaction-feature similarity to identify intervention opportunities and provide verbal reminders, structured feedback, or context-specific advice from auxiliary models. Our process-oriented evaluation distinguishes trigger validity, behavioral cessation, and substantive correction alongside task outcomes and resource costs. Using SWE-agent with three backbone models, we evaluate 1,350 trajectories on 90 Python, C++, and Java bug-fix tasks, comparing unassisted execution with four assistance strategies. Substantive responses follow 61.6-90.9% of valid triggers for tool-use detours. Concise reminders achieve the highest observed aggregate substantive-response rate; more elaborate assistance offers symptom-dependent benefits and can be less effective. Aggregate repair outcomes remain close to baseline, with token savings in selected settings. These findings support proactive runtime assistance for autonomous tool use. The gap between behavioral adjustment and aggregate repair gains calls for careful decisions on intervention timing and assistance strategy in autonomous agents.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.19299",
+      "rank": 9,
+      "title": "Staged Semantic Distillation: Preserving Free-Form Semantics in a Low-Compute Non-LLM Surrogate of a Staged LLM Agent",
+      "sourceUrl": "https://arxiv.org/abs/2611.19299",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-17T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.19299v1 Announce Type: new Abstract: Staged LLM agents make market and social simulators realistic, but one 102-day run of a 200-agent, ten-index market simulator issues 203,100 language-model calls and returns one realization. Conventional low-compute distillation drops their free-form intermediate state. We present staged semantic distillation, a low-compute method that preserves non-structured semantics in a non-LLM student trained from one recorded trace. A frozen encoder maps each teacher output to a 1024-d vector; the student sees typed stage-tagged vectors with stage-specific visibility, is jointly supervised, and trains with scheduled self-history. One TwinMarket trace yields a 13.2M-parameter deterministic student that trains in 1,658 seconds on one 8-GB GPU and runs with zero teacher or decoder calls and no text generation (0.14 ms per decision). Its analysis stays close to the teacher (cosine 0.943), and swapping semantic inputs between agents moves 64.7% of decisions against 12.8% for a matched donor, so the channel is preserved and live. We use the surrogate to study what the transfer carries. It reaches 0.8347 balanced accuracy on the teacher-forced replay and 0.7783 [0.766,0.791] on the deployment decoder; the five-seed gain over a no-semantic retrain is +2.2 [1.21,3.14]. Against the teacher's own re-sampling level, round-one R is 97.1% [95.8,98.4] and 92.3% [89.0,95.4]; R is a diagnostic, not an accuracy. A five-seed content-by-schedule study isolates the gain: scheduled self-history carries it (+2.2 [1.21,3.14]); shuffled and constant content controls reproduce it, while content matters teacher-forced. The design rule: invest in the deployment schedule, let content earn its place at the teacher-forced operating point. A 20-seed, 200,000-decision sweep takes 12 minutes with zero LLM calls, versus three hours for the teacher. The paper is a method-and-case-study contribution on one simulator and trace.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.19311",
+      "rank": 10,
+      "title": "Macro Control and Capability Evaluation of Black-Box World Models: A Two-Regime Framework for LLM-Agent Markets",
+      "sourceUrl": "https://arxiv.org/abs/2611.19311",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-17T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.19311v1 Announce Type: new Abstract: Large language model (LLM) agents can be organized into multi-agent markets that act as world models, mapping macro information to emergent macro dynamics while the evaluator observes only macro inputs and outputs. This paper separates a model's capability into two stages that a single aggregate score cannot separate: information simulation, from macro information to micro behavior, and macro emergence, from micro behavior to the macro outcome. We introduce a soft macro-control method that announces a public reference path day by day without touching individual decisions, orders, or matching, and a two-regime evaluation framework that measures both stages from macro observations alone. In the reference-only regime the symmetric true and flipped references share a common level R, which measures realization under the announced reference, while their paired gap B measures structural bias; in the information-injection regime external information dilutes the reference, so only the true-flipped gap Delta remains interpretable. On five single-index LLM-agent markets, announcing a target path shifts the realized path toward the announced target on both announced references under both information conditions. Relative to the no-reference path, the tracking score is higher by 0.306 and 0.415 without news and by 0.183 and 0.329 with news; within the stock/cash scan structural bias is lowest at 70/30 (B=0.042); realization peaks at a 3:7 technical share (R=0.894 versus 0.358 for technical-only); and Delta is 0.0341 with fundamental data and 0.0487 with news. Both stages use the same two observable scores, each read in the regime where it is interpretable.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.19461",
+      "rank": 11,
+      "title": "Program Distillation: Transferring LLM Capability from System 2 to System 0",
+      "sourceUrl": "https://arxiv.org/abs/2611.19461",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-17T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.19461v1 Announce Type: new Abstract: Recent studies leverage large language models (LLMs) to construct executable programs through environment interaction, feedback analysis, and code revision. However, prior work has mainly treated LLMs as optimizers, overlooking their ability to transfer knowledge across system levels. We propose Program Distillation (PD), a framework that formalizes the transfer of abilities from System 2 to System 0. During learning, the LLM provides task knowledge and draft strategies; at deployment, a student program executes the resulting policy. We show that this approach can improve performance while reducing inference time. We introduce PDBench, a benchmark comprising 27 discrete- and continuous-control tasks with fixed initial policies, and PDMetaHarness, a model-harness-independent meta-system for monitoring and guiding the learning process. The strongest model achieves a normalized mean score of 0.728, surpassing PPO (0.656) and Jev-like decision models (0.239), while running exclusively on CPUs and reducing inference costs. Our analysis shows that performance is largely driven by the first breakthrough during learning, and structural modifications have a slightly lower success rate than parameter modifications but typically yield larger gains. We further introduce style distillation, which enables interpretable stylistic control over the learning process. Overall, we present an analytical framework for PD and demonstrate its practical viability.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.19525",
+      "rank": 12,
+      "title": "Objectify, Don't Delete: Complaint-Derived Evaluation of Ambient Clinical Notes",
+      "sourceUrl": "https://arxiv.org/abs/2611.19525",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-17T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.19525v1 Announce Type: new Abstract: Evaluating the quality of AI-generated clinical notes is hard: standard metrics like ROUGE measure lexical similarity to reference notes, while expert checklists encode what committees believe matters. Neither captures what clinicians actually complain about. Recent work has shown that evaluation criteria can be mined from user feedback and filtered to criteria that LLM judges can reliably enforce. We argue that this is where much of the value is lost. The criteria that fail enforceability are disproportionately the ones clinicians raise most often, because high-frequency complaints are stated as several questions glued together. No yes/no judgment can grade such composites as posed. We introduce an objectification step that rewrites such criteria into sets of scoped, determinate decisions. We demonstrate the approach through an evaluation pipeline that mines criteria from complaints, objectifies them, and deploys LLM judges against both planted defects and production notes. Across eleven defects planted into ACI-bench reference notes, objectified judges localize violations with median recall of 0.95, while reference metrics change by at most 0.037. Given the complaint as one broad question, the same judges still find every planted defect, but they also flag 70% of the unperturbed reference notes; one section-pair question per call raises Youden's J from 0.30 to 0.72 (by 0.19 to 0.26 with prompt effort matched). We release ACI-Defect, a perturbation benchmark; clinician-reviewed instance-level labels showing quality gaps in the ACI-bench gold standard (32 of 40 notes contain hallucinations; 40 of 40 omit discussed facts); and grounding-judge verdicts. On 1,446 production notes, mean instance-rate burden falls at every clinician-rating step (rho=-0.15), a small association. Defect counts have to be kept per span rather than collapsed into one pass/fail bit per note.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.19530",
+      "rank": 13,
+      "title": "LLM Trading Agents Earn Beta, Not Alpha: A Look-Ahead-Free Benchmark",
+      "sourceUrl": "https://arxiv.org/abs/2611.19530",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-17T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.19530v1 Announce Type: new Abstract: Large language model (LLM) trading agents now trade stocks for their users, and benchmarks rank models by their agents' returns. Yet a single run's return says little about skill. In our study, two runs of the same model that differed only in the random seed ended 5.2 points apart on average, so telling skill from luck takes many backtests across markets, models and seeds. However, live arenas trade each day only once, and backtests either use the few months after a model's training cutoff or run on years the model may remember, often with news joined to prices by calendar date. In this paper, we present rta-bench-1, a backtest over three US markets (a rally, a bear market and a crash). It shows each headline only after its publication minute, plays each period blind and named, and checks every run for look-ahead. It also splits each return into factor exposure and alpha and scores every decision against random choices of the same day and sector. In 91 runs of six models from four vendors, no alpha was significant, market and style exposure accounted for a median 78% of the return, and the decisions did no better than random stocks of the same sector. The agents bought the stocks with the most positive news, yet in ablations they earned as much without their headlines. Still, the agents carried out rules reliably, since a single cash rule in the prompt cut a GPT-based agent's share in stocks by 30.3 points in all six pairs. Builders should therefore supply the edge themselves and report exposures and alpha, and benchmarks should replay news by publication time.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.19537",
+      "rank": 14,
+      "title": "Continuation-Guided LLM Evolution of Program Policies and Goal Compilers in Craftax",
+      "sourceUrl": "https://arxiv.org/abs/2611.19537",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-17T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.19537v1 Announce Type: new Abstract: Coding agents can synthesize and optimize code-based policies from simulator feedback, allowing the resulting program to act with zero inference model calls. But for long horizon tasks, two challenges arise: local improvements can hurt final success and switching to a new objective requires another expensive synthesis run. We propose a framework that first develops competence by refining the policy through a feedback cascade, moving from episode returns to hierarchical goals and belief updates which can be scored densely from simulator. In the Craftax game, a partially observed and procedurally generated environment, refinements via episode level feedback stall at <1% final-level arrival, whereas with the feedback cascade the optimized policy reaches the final stage 50% of time (28% final boss defeats). Furthermore, to make this competence reusable towards new goals, we factor the previous controller into an environment interpreter $I$ (models, memory, skills) and a rule program $p_0$, and we show that coding agents can optimize a reusable goal compiler $C_{\\theta}$ that maps structured tasks $g$ into new rule programs $p_g$. Across five independent compiler searches trained only on short tasks, the resulting compilers successfully transfer zero-shot to longer tasks without any task-specific tuning nor inference-time LLM calls: continuation-scored feedback and a fixed machine with an editable program together turn a single-task competent policy into a reusable one. Code at: https://github.com/vicgalle/craftax-program-policies",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.19546",
+      "rank": 15,
+      "title": "Evidence-Conditioned Completion and Synthesis of Electronic Health Records",
+      "sourceUrl": "https://arxiv.org/abs/2611.19546",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-17T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.19546v1 Announce Type: new Abstract: Patient information can guide electronic health record (EHR) generation, but how its amount shapes predictive utility and disclosure risk remains poorly characterized. Here we present EHRDiB, which unifies visit completion and synthesis by distinguishing original missingness from withheld inputs and combining a shared multimodal representation with an evidence-conditioned latent diffusion bridge. We compared EHRDiB with three completion and eight synthesis methods on MIMIC-IV and numerical and discretized Duke Health representations. Evaluation covered downstream predictive utility, generative diversity, and distributional fidelity for both tasks, and disclosure risk for synthesis. EHRDiB achieved the smallest utility gaps from real-data-trained classifiers in seven of eight completion comparisons. In synthesis, AUPRC gaps were 45.2% smaller for ten MIMIC-IV principal-diagnosis targets and 53.3% smaller for numerical Duke Health data relative to the best comparator. Synthesis with calibrated thresholding yielded the lowest marginal distribution error across all three datasets, with Coverage above 0.95 for both output rules. Across twelve evidence-fraction intervals in MIMIC-IV synthesis, membership-inference AUROC increased from 0.516 to 0.598 as the mean target evidence fraction rose from 0.20 to 0.50; utility gaps narrowed relative to the lowest evidence configuration but did not decrease monotonically. Our study provides a unified framework and empirical foundation for EHR generation that considers both its utility for clinical analysis and its information disclosure risk.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.19614",
+      "rank": 16,
+      "title": "A Hierarchical Statistical Framework for Evaluating Agent Reliability",
+      "sourceUrl": "https://arxiv.org/abs/2611.19614",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-17T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.19614v1 Announce Type: new Abstract: Agents operating in complex scenarios often face uncertainty due to incomplete information about the environment they operate in, ambiguous user queries, complex business rules and the inherently stochastic dynamics of the governing policy. Several new benchmarks have been proposed to evaluate LLM-based agents on complex tasks in multi-tool environments, including settings with policy constraints and varying levels of intent ambiguity. These conditions make it important to evaluate agentic systems systematically and quantify their performance under different conditions to assess their reliability in production. This need is evident in the recently introduced Thinkingbox benchmark, where even the strongest models struggle to perform consistently across diverse business scenarios. This paper presents a statistical framework for evaluating uncertainty and reliability in agentic systems. We define a hierarchy of scenarios, instances, and samples to assess model performance and variability systematically. We apply this framework to common metrics found in the literature: mean pass rate, $pass@k$, and $passhat^k$, with uncertainty estimates for each metric. Aggregating metrics at different levels of the hierarchy reveals different structures and properties of the policy model; we connect this hierarchical aggregation with the known process of \\emph{coarse-graining} as intended in the physics and statistical literature. We independently derive exact finite-sample expressions for the sampling variances of the unbiased $pass@k$ and $passhatk$ estimators; related results also appear in recent submissions. Our central contribution is a constructive derivation of hierarchical uncertainty propagation, making explicit its correspondence with coarse-graining and separating execution noise from task heterogeneity.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.19872",
+      "rank": 17,
+      "title": "Who Writes the Codebook? An Eight-Step Framework for Auditing LLM-Generated Category Systems",
+      "sourceUrl": "https://arxiv.org/abs/2611.19872",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-17T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.19872v1 Announce Type: new Abstract: Large language models (LLMs) increasingly create the categories through which qualitative evidence is interpreted. Existing coding benchmarks often hold these categories fixed. We propose the Qualitative Variance Audit Framework, an eight-step method that compares codebook creation, repeated application and code distributions under controlled inputs. It combines model-owned and shared-reference codebooks to distinguish variation in the overall pipeline from application differences within a common category system. An application to 668 organisational interviews, 13,166 text units and eight models from five vendors yields 48 codebooks and 270 coding runs. Models create markedly different category structures; mean within-model reliability ranges from .76 to .92, whereas between-model agreement on the shared codebook is about .69. The framework complements LLM-assisted grounded theory by exposing model dependencies before substantive interpretation. It assesses reliability and representational consequences, not interpretive validity or the quality of resulting theory.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.19982",
+      "rank": 18,
+      "title": "Autonomous Multi-modal Agents for ITOps Observability",
+      "sourceUrl": "https://arxiv.org/abs/2611.19982",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-17T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.19982v1 Announce Type: new Abstract: ITOps observability products must integrate data from different tools and systems. We present ITOps Observability Studio, a multi-modal multi-agent system that orchestrates observability workflows through collaborative AI agents. Its three-tier architecture features inter-agent communication, specialized LLM-powered agents for data access, schema operations and visualization, and unified tool integration. The system supports natural language to GraphQL translation, GraphQL schema generation, schema mapping, trace data lifecycle management and multi-tool workflows for reliability engineering. Its agents are instrumented with agent analytics, so that their model and tool calls can be traced. We evaluate each agent on its own benchmark, scored against gold answers where they exist and by a model judge for schema mapping and chart quality. Query generation on a public benchmark and routing work well with a current open model, and the data lifecycle management agent solves most of its scenarios. The evaluation exposed defects that only appear when prompts, parsers and serving stacks are tested together, and we report them together with their fixes.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.20031",
+      "rank": 19,
+      "title": "Towards Agentic Scientific Discovery in Distributed Systems",
+      "sourceUrl": "https://arxiv.org/abs/2611.20031",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-17T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.20031v1 Announce Type: new Abstract: We investigate when adaptive tool selection helps identify a shared equation across clients with different input coverage. Query-ATLAS (query-conditioned Agentic Tool-based Learning for Aggregating Symbolic Equations) uses an LLM to guide symbolic search from client errors and previous proposals in a simulated distributed system. A four-architecture comparison reveals task-dependent opportunities: relative to fixed PySR-LLM, validation acceptances rise from 3/12 to 7/12 on CRK3 and from 11/12 to 12/12 on oscillator2, while MatSci3 favors the fixed workflow. Across 72 settings in a post-hoc six-task subset of eight development tasks, Query-ATLAS achieves 64 validation and 64 in-distribution passes, versus 62 and 59 for the fixed workflow; both pass 47/60 eligible out-of-distribution tests. The fixed workflow retains lower median errors and cost. Broader query coverage emerges as a promising benefit, motivating task-aware tool selection and client-aware fitting for scientific agents.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.20398",
+      "rank": 20,
+      "title": "Deploying a Control-Logic LLM Assistant in Air-Gapped Power Plants: Lessons in Source Authority and Bounded Retrieval",
+      "sourceUrl": "https://arxiv.org/abs/2611.20398",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-17T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.20398v1 Announce Type: new Abstract: Deploying Large Language Model (LLM) assistants in industrial operational technology environments poses constraints largely absent from cloud applications: site policies restrict engineering and operational data from leaving the plant, on-premises compute is limited, and incorrect causal attribution can mislead incident response. We report lessons from deploying a control-logic evidence layer that underpins a broader on-premises operator assistance system at two gas power plants. Two prototypes revealed where generative models added avoidable uncertainty and cost. The first used a Vision Language Model (VLM) to reconstruct control topology from PDF printouts routinely exchanged by engineers. Across the full 6,979-page document, extraction reached 0.51 connection precision and required 3.1 hours on 4xH200 GPUs; consultation with controls engineers then revealed a native structured export from the authoring system. The second used an LLM tool-calling agent to plan repeatedly over eight predefined graph operations. In a controlled benchmark of 40 template-generated questions, replacing this agent with explicit execution plans reduced mean token use by 20x and median latency by 3x, with identical retrieved node sets across repeated runs. The deployed design ingests the authoritative export into a versioned knowledge graph, executes bounded graph operations in fixed software, and confines the local LLM to fallback intent classification and evidence-grounded explanation. At one site, the graph contains 221K nodes across seven controllers. Our experience suggests a practical division of labor for high-consequence AI: LLMs interpret natural-language requests and explain results, while deterministic software constructs and retrieves technical evidence grounded in authoritative sources. Abstention, entity disambiguation, graph versioning, and read-only integration provide additional safeguards.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.20484",
+      "rank": 21,
+      "title": "Agent-Guided Configuration Tuning for SMT Solvers",
+      "sourceUrl": "https://arxiv.org/abs/2611.20484",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-17T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.20484v1 Announce Type: new Abstract: SMT solvers expose many configuration choices that determine how well their existing algorithms perform on a workload. We present, to our knowledge, the first workflow that uses general-purpose LLM agents to tune SMT solver configurations. Agents read solver documentation, source code, and persistent experiment records to propose option changes, and a deterministic harness measures each proposal, validates the returned models, and selects changes separately for each competition Division. Over roughly nine weeks, our tuning campaign recorded 4,545 proposals for cvc5 across 13 Divisions and 36 logics. We evaluate the tuned configurations on the 2026 and 2025 SMT-COMP ModelValidation benchmarks under a 24-second cutoff. On problems not used for training, they validate more problems than official cvc5 in ten of the 13 Divisions in 2026 and in eight in 2025, with geometric-mean gains of 7.8% and 6.8% across Divisions. On the complete official selections, which include training problems, the tuned floating-point counts exceed those of every individual competition participant in both years. Further studies show how configuration changes make existing algorithms effective by changing access to strategies, scheduling, and option compatibility, and how benchmark families trade off against one another. The agents' experiment traces contain hypothesis-based proposals in every tuning group, and 64.3% of the extracted hypotheses draw on prior measurements. These results show that agent-guided tuning can specialize a mature SMT solver and that accumulated experimental evidence informs sustained search.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.20736",
+      "rank": 22,
+      "title": "GainCtrl: Predicting Remaining Gains for Efficient LLM Agent Execution",
+      "sourceUrl": "https://arxiv.org/abs/2611.20736",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-17T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.20736v1 Announce Type: new Abstract: Large language models (LLMs) are widely used to power agents that interact with tools and environments to solve complex tasks. Repeated attempts improve the quality of tool-using agents, but continued execution incurs additional costs even when it is unlikely to improve the best result ultimately returned. This raises the question of when to stop an attempt to reduce execution cost while preserving task-level Best-of-N quality. To address this question, we introduce GainCtrl, a gain-based execution controller for LLMs. In GainCtrl, a lightweight CPU predictor uses interaction histories to estimate expected positive gains over retained scores, which are then used to guide stopping decisions with calibrated thresholds to limit the loss in mean Best-of-N task quality. We evaluate the controller through trajectory replay across three environments and three LLM actors. Comparisons of interpolated quality-cost Pareto frontiers show that GainCtrl generally uses fewer tokens than baselines at matched target quality. Fixed policies also achieve quality close to that of full execution while substantially reducing token consumption. The predictor runs at millisecond latency on a single CPU thread, supporting repeated monitoring without access to LLM internals.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.20794",
+      "rank": 23,
+      "title": "Regularizing Treatment Leakage for LLM-based Uplift Estimation",
+      "sourceUrl": "https://arxiv.org/abs/2611.20794",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-17T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.20794v1 Announce Type: new Abstract: Uplift modeling estimates the conditional average treatment effect (CATE) and supports industrial decisions such as promotional pricing. When large language models (LLMs) encode product text, treatment-revealing content can introduce shortcuts that do not transfer to deployment. We propose \\emph{LLM-based Uplift Leakage Regularization} (\\textsc{LULR}), which uses a CLUB-based penalty on the causal head's trainable shared representation while keeping the LLM encoder frozen. Controlled proxy experiments show a positive ranking-score interaction and higher scores than the tested weight-decay configuration; treatment-dependent evaluation limits their interpretation to exploratory model behavior. Structured-only comparisons provide reference performance, without establishing a general advantage over tree-based estimators. On a million-record industrial pricing RCT, \\textsc{LULR} improves offline $\\text{lift@}0.3$ in $4/5$ seeds, although the difference is not statistically significant and estimated policy values are near-tied. A separate one-week online A/B experiment records $5.45\\%$ higher sales volume and $1.91\\%$ higher GMV than the control arm. These aggregate results provide short-term business evidence for the complete deployed pricing policy; they do not isolate the regularizer's contribution.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.20826",
+      "rank": 24,
+      "title": "Conversing with a Conversational Agent: A Real Conversation, Not a Simulated One",
+      "sourceUrl": "https://arxiv.org/abs/2611.20826",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-17T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.20826v1 Announce Type: new Abstract: The claim that interactions with artificial conversational agents merely simulate human conversation rests on a philosophical distinction between reproducing the observable features of an activity and actually performing it. Although this distinction is appropriate for certain physical phenomena, its application to linguistic and symbolic activities is far less straightforward. This article argues that conversations with large language model (LLM)-based agents are genuine conversational activities rather than mere simulations, without thereby attributing consciousness, subjective understanding, or human intentionality to artificial systems. Drawing on the distinction between subjective and objective simulation, the article first examines the limitations of defining conversation exclusively through the intrinsic properties of its participants. It then develops a relational and semiotic account of conversational activity, informed by linguistic pragmatics, Lacan's Conversing with a Conversational Agent theory of the mirror, Baudrillard's concept of the simulacrum, Simondon's philosophy of individuation, and Peirce's semiotics. These perspectives make it possible to distinguish the reality of conversational interaction from the appearance of artificial subjectivity and from the epistemic validity of the meanings produced. The argument culminates in the concept of Hybrid Semiotic Fabrication, which characterizes meaning-making as a distributed process involving human participants, artificial intelligence, corpora, and technical arrangements. Recognizing the reality of human-AI conversation therefore entails neither anthropomorphizing artificial agents nor granting their outputs epistemic authority. Rather, it requires a more precise account of the relational, semiotic, and normative conditions under which conversational meaning is produced and justified.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.20915",
+      "rank": 25,
+      "title": "Multi-LLM Agentic AI at the Edge: Joint Agent Scheduling and Resource Allocation",
+      "sourceUrl": "https://arxiv.org/abs/2611.20915",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-17T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.20915v1 Announce Type: new Abstract: In this paper, an edge-enabled multi-large language model (LLM) agentic AI architecture is proposed, where one supervisor AI agent and multiple worker AI agents cooperatively execute users' requests at the edge. The supervisor AI agent decouples the user request into a series of sub-tasks and dynamically dispatches them to LLM-equipped worker AI agents via two agentic workflows, i.e., parallel and serial workflows, with a two-level retry mechanism to enhance execution reliability. To prolong the service duration of worker AI agents, the energy minimization problems are formulated by jointly considering AI agent selection and resource allocation, subject to task execution latency and quality of service (QoS) constraints. A resource allocation scheme based on alternating optimization (AO) is proposed. Specifically, for the parallel workflow, the scheme decouples the original problem into bandwidth allocation, retrieval selection and AI agent selection sub-problems, which are iteratively solved by the proposed successive convex approximation (SCA), Lagrangian relaxation (LR), and Gale-Shapley (GS) or LLM-based algorithms, respectively. For the serial workflow, the problem is similarly decoupled into service time allocation, retrieval selection and AI agent selection sub-problems; the optimal service time allocation is obtained via Karush-Kuhn-Tucker (KKT) conditions, while the latter two sub-problems are addressed by extending the proposed algorithms to the serial scenario. Simulation results show that the proposed resource allocation scheme can reduce system energy consumption compared with other benchmarks, while experiments on a multi-LLM agentic AI system based on Qwen and Llama demonstrate improved task execution success rates.",
+      "summary": ""
+    }
+  ]
+}
