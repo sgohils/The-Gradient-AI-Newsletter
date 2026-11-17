@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "issueDate": "2026-11-17",
+  "issueUrl": "https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-17",
+  "content": "Today's AI briefing from The Gradient | 2026-11-17\n\n1. Introducing GPT-6.2 Astra and Sol\nOpenAI introduced GPT‑6.2 Astra and Sol, the next generation of its language models, now available across ChatGPT Work, Codex, and the public API.\n\n2. Put Gemini to work for you\nGoogle announced that the Tasks feature in Gemini is now free of charge in six countries. New functionality launches first in the United States, and deeper integration with Google Workspace lets the AI act on your behalf.\n\n3. A step toward defining the Standard Model on a lattice\nResearchers presented a candidate non‑perturbative lattice definition of the Standard Model and employed GPT‑6 Astra to generate and verify the detailed mathematical proof.\n\nRead the full briefing and original sources:\nhttps://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-17\n\n#AI #ArtificialIntelligence #TheGradient",
+  "contentHash": "892a02388fc0c6f99c861e08932a87f9ec5172263481394f52242a587ff5b10a",
+  "accountId": "6ac5a561b3c21905c0edcfba",
+  "organizationUrn": "urn:li:organization:136824048",
+  "idempotencyKey": "257413e8-6d9b-4498-a4bb-b832c278b1ac",
+  "status": "submitting",
+  "firstSubmittedAt": "2026-11-17T20:27:22.913Z"
+}
