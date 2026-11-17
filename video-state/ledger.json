@@ -2112,7 +2112,7 @@
       "platforms": {
         "youtube": {
           "accountId": "6ac27146281ee799a37065e4",
-          "status": "submitting",
+          "status": "published",
           "idempotencyKey": "1bc6cea6-5aaa-4798-9364-754b9d2d0acd",
           "request": {
             "content": "MemeEconomy: Do LLM Agents Trade Ethics for Survival?\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2611.18908\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-17\nAI-generated narration. #AI #AINews #Shorts",
@@ -2137,7 +2137,9 @@
             ],
             "publishNow": true
           },
-          "firstSubmittedAt": "2026-11-17T20:31:18.385Z"
+          "firstSubmittedAt": "2026-11-17T20:31:18.385Z",
+          "postId": "6afcb997a19e9fc581cc1e08",
+          "postUrl": "https://www.youtube.com/watch?v=8Uy2P0O8klo"
         }
       },
       "script": {
