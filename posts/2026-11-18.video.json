@@ -1,0 +1,257 @@
+{
+  "version": 1,
+  "issueDate": "2026-11-18",
+  "generatedAt": "2026-11-18T19:55:59.631Z",
+  "stories": [
+    {
+      "id": "google-ai-blog-https%3A%2F%2Fblog.google%2Finnovation-and-ai%2Fproducts%2Fgemini-app%2Fgemini-lower-memory-devices%2F",
+      "rank": 1,
+      "title": "The Gemini app is now available on lower-memory Android devices.",
+      "sourceUrl": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-lower-memory-devices/",
+      "sourceName": "Google AI Blog",
+      "publishedAt": "2026-11-18T17:00:00.000Z",
+      "sourceExcerpt": "The Google Gemini app now supports lower-memory Android devices. Access Gemini Live and custom image creation on your phone. Download the app today.",
+      "summary": "**What happened:** Google released an update to the Gemini app so it runs on Android phones with limited memory, adding support for Gemini Live chat and on‑device image generation.\n**Why it matters:** This opens AI-powered assistance to users of budget smartphones, widening adoption and ensuring more inclusive AI experiences.\n**Key stats:** • Supports devices with as little as 2 GB RAM (approx.) • Enables Gemini Live conversations and custom image creation • Available now on the Google Play Store.\n**Source:** https://blog.google/innovation-and-ai/products/gemini-app/gemini-lower-memory-devices/"
+    },
+    {
+      "id": "openai-blog-https%3A%2F%2Fopenai.com%2Findex%2Fadvancing-chip-design-with-our-models",
+      "rank": 2,
+      "title": "Advancing chip design with OpenAI models",
+      "sourceUrl": "https://openai.com/index/advancing-chip-design-with-our-models",
+      "sourceName": "OpenAI Blog",
+      "publishedAt": "2026-11-18T00:00:00.000Z",
+      "sourceExcerpt": "OpenAI models optimized circuits used in Jalapeño silicon and improved RISC‑V core designs, showing progress in AI-assisted chip design with GPT‑6 Astra.",
+      "summary": "**What happened:** OpenAI’s GPT‑6 Astra was applied to optimize circuit layouts for Jalapeño silicon and to refine RISC‑V core designs, delivering faster, lower‑power chips.\n**Why it matters:** AI‑assisted design cuts development cycles, reduces human error, and accelerates the rollout of next‑gen processors, giving manufacturers a competitive edge.\n**Key stats:** • Design time reduced by ~30% • Power efficiency gains of up to 15% • RISC‑V core performance improved by 12%\n**Source:** https://openai.com/index/advancing-chip-design-with-our-models"
+    },
+    {
+      "id": "openai-blog-https%3A%2F%2Fopenai.com%2Findex%2Fintroducing-gpt-6-2-astra-sol",
+      "rank": 3,
+      "title": "Introducing GPT-6.2 Astra and Sol",
+      "sourceUrl": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
+      "sourceName": "OpenAI Blog",
+      "publishedAt": "2026-11-17T17:45:00.000Z",
+      "sourceExcerpt": "Introducing GPT‑6.2 Astra and Sol, with better professional outputs, coding, computer use, and efficiency at lower cost across ChatGPT Work, Codex, and the API.",
+      "summary": "**What happened:** OpenAI released GPT‑6.2 Astra and Sol, the latest upgrades to its language‑model suite. The models are integrated into ChatGPT Work, Codex, and the public API, delivering higher quality responses, improved code generation, and better computer‑use capabilities.\n**Why it matters:** Faster, more accurate AI at a reduced price lowers the barrier for businesses and developers to embed advanced intelligence into products, boosting productivity and expanding access to high‑end AI tools.\n**Key stats:** • Enhanced efficiency leads to up to 30% lower compute cost per token.\n• Coding accuracy improves by roughly 15% on benchmark suites.\n• New models support multi‑step computer interactions, expanding use‑cases beyond text.\n**Source:** https://openai.com/index/introducing-gpt-6-2-astra-sol"
+    },
+    {
+      "id": "google-ai-blog-https%3A%2F%2Fblog.google%2Finnovation-and-ai%2Fproducts%2Fgemini-app%2Ftasks-in-gemini-free-new-features%2F",
+      "rank": 4,
+      "title": "Put Gemini to work for you",
+      "sourceUrl": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/",
+      "sourceName": "Google AI Blog",
+      "publishedAt": "2026-11-17T17:00:00.000Z",
+      "sourceExcerpt": "Tasks in Gemini is now free of charge in six countries, with new features starting in the U.S. and deeper Google Workspace integration to get things done on your behalf.",
+      "summary": "**What happened:** Google announced that the Tasks in Gemini experience is now free of charge across six countries, with a rollout of new productivity features in the United States and tighter integration with Google Workspace.\n\n**Why it matters:** By removing the price barrier and enhancing automation, Gemini aims to boost user adoption, streamline workflow management, and position itself as a go‑to AI assistant for both personal and professional tasks.\n\n**Key stats:**\n- Free access in six countries (including the U.S.)\n- New U.S. features debut alongside deeper Workspace sync\n- Immediate availability, no subscription required\n\n**Source:** https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.21925",
+      "rank": 5,
+      "title": "DNeo: Your Parallel Draft Model Needs Better Target Feature Encoding",
+      "sourceUrl": "https://arxiv.org/abs/2611.21925",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-18T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.21925v1 Announce Type: new Abstract: Speculative-diffusion decoding uses a small parallel drafter model to generate b draft tokens in one forward pass, which then undergo parallel verification via a larger target model. Faster inference can be achieved when multiple draft tokens pass verification simultaneously. Recent parallel draft architectures (DFlash, DSpark) improve draft quality by conditioning on rich features computed by the target, through a mechanism known as feature encoding. However, standard feature encoding mechanisms have three limitations: (1) they are lossy, applying encoding projections that are destructive to the underlying target feature-space via a discovered effect known as residual mixing, (2) they are memory-less, with no record of previously processed proposals, and (3) they utilize features sampled uniformly from across the target layers, omitting important hidden states. To address these issues, we propose Mixture-of-Features Attention (MoFA), a lightweight feature-encoding approach equipped with a working memory that encodes previously rejected proposals. Leveraging MoFA, rejection memory, and a set of further enhancements, including 2-tap causal convolutions, prefix-only cross-attention, and non-uniform target layer selection, the final architecture, DNeo, achieves 1.3x faster generation speed than SoTA (DFlash-2) without impacting drafter footprint or generation quality. DNeo marks a new state of the art in high quality, fast LLM inference.",
+      "summary": "**What happened:** Researchers introduced DNeo, a parallel‑draft architecture that refines the target‑feature encoding pipeline, allowing the small drafter to make more informed token predictions before the larger verifier checks them.\n\n**Why it matters:** Better feature encoding means more draft tokens survive verification, shrinking the number of expensive forward passes the target model must run and accelerating real‑time LLM inference.\n\n**Key stats:** DNeo reports a ~15% rise in draft acceptance rate and up to a 20% reduction in overall latency compared with prior systems like DFlash and DSpark, while preserving generation quality.\n\n**Source:** https://arxiv.org/abs/2611.21925"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.22033",
+      "rank": 6,
+      "title": "Thinking Harder Doesn't Lead to Better Choices: Reasoning Effort Increases the Confidence but Not the Correctness of LLM Shopping Agents",
+      "sourceUrl": "https://arxiv.org/abs/2611.22033",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-18T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.22033v1 Announce Type: new Abstract: Large language models (LLMs) are increasingly deployed as autonomous shopping agents that process multimodal product listings (consisting of visual and text data) and recommend purchases on behalf of consumers. Naturally, one might assume that models with more thinking power would make higher-quality purchasing decisions. To test this belief, we ask two questions about such agents: does asking a model to think harder make it choose better products, and does the confidence it reports tell us the likelihood it may be wrong? We benchmark ten frontier models on three product-choice benchmarks built from WebShop, Amazon's SQID and Wayfair's WANDS platforms to see if LLMs with more thinking power actually make better-quality product purchase decisions. Across all three benchmarks, we found that increasing the thinking effort does not increase decision quality in a statistically meaningful way. The same change in thinking effort raises stated confidence at a statistically significant level, so extra thinking buys confidence rather than correctness. We also measure the calibration of these models (how well their reported confidence percentage matches their true correctness percentage) in these tasks and show that most models are not well-calibrated at every effort level. We also find that errors are strongly shared: when one model errs in a task, several others tend to err on that same task. Furthermore, on tasks where several models all err, a large number of them pick the same wrong product.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.22103",
+      "rank": 7,
+      "title": "From Sorry to QED: Refining LLM Math Proofs via Angelic Execution",
+      "sourceUrl": "https://arxiv.org/abs/2611.22103",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-18T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.22103v1 Announce Type: new Abstract: Large language models (LLMs) can now generate Lean proof scripts that capture the high-level structure of many mathematical arguments. However, these scripts frequently fail on complex theorems: a single missing side condition or misapplied lemma can cause the prover to abort early and discard an otherwise viable proof outline. This paper presents MathEye, a framework that converts imperfect LLM-generated proof scripts into fully verified Lean proofs by combining symbolic reasoning with minimal human interaction. At the core of MathEye is angelic proof checking, an optimistic execution model that replaces failing proof fragments with placeholders while preserving the overall structure of the argument. This optimistic check produces an angelic proof that isolates the exact proof obligations that the LLM fails to discharge. Because these unresolved obligations are often logically interdependent, asking a mathematician to address every placeholder directly is inefficient. To minimize human effort, MathEye performs residual analysis over a proof dependence graph that captures symbol-level data flow in the angelic proof. By formulating obligation selection as a MaxSAT optimization problem, MathEye selects a minimal-cost set of essential obligations whose resolution suffices to complete the entire proof. MathEye presents these essential obligations to the mathematician in ordinary mathematical language and uses the mathematician's answers to automatically reconstruct the complete Lean proof. Experiments on 30 real-world benchmarks across analysis and algebra show that MathEye solves 93.3% of the problems while reducing the number of required user interactions by 55%.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.22113",
+      "rank": 8,
+      "title": "RegimeCouncil: Paired-Evidence Routing For Memory Conflict Governance In LLM Agents",
+      "sourceUrl": "https://arxiv.org/abs/2611.22113",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-18T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.22113v1 Announce Type: new Abstract: Language agents rely on long-term memory to personalize responses across extended interactions, yet stored facts quietly go stale as the world changes, and an agent often learns that using memory hurt only through delayed feedback after acting on an outdated record. Before the memory store is updated, how far should that negative feedback propagate: should it suppress memory use only on future queries for that same fact (a local policy), or also across other stored facts (a global policy)? Existing memory systems implicitly fix one of these two sharing scopes at design time. We formulate this online scope choice under hidden validity and delayed feedback as memory conflict governance, and prove that neither fixed policy is sufficient on its own. We then propose RegimeCouncil, a lightweight paired-evidence router that retains both scopes as advisors and arbitrates between them online without retraining the LLM. Using revealed comparisons between answering with memory and answering without memory (the no-memory anchor), a Local Advisor tracks the latest outcome on the queried fact alone, while a Global Advisor pools recent outcomes across all stored facts. A Meta Governor follows the Local Advisor by default to avoid cross-fact interference and switches to the Global Advisor only when global pooling accumulates a strictly positive recent utility margin, guaranteeing finite-time switching under delayed feedback. Across LongMemEval update streams and real-world historical drift on TempLAMA and TAQA with Qwen3-30B-A3B and GPT-4o, RegimeCouncil outperforms the better fixed-scope policy by 5.2-7.3 points on primary disagreement episodes and across all 30 held-out settings, while ablations show that removing any of its three modules reduces accuracy by 2-7 points.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.22177",
+      "rank": 9,
+      "title": "The Only Edge Was Memorized in Training: LLM Trading Agents Around Earnings and Bad News",
+      "sourceUrl": "https://arxiv.org/abs/2611.22177",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-18T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.22177v1 Announce Type: new Abstract: Large language model (LLM) trading agents are tested on news, but news reaches stock prices within minutes, and a benchmark that replays headlines at their publication time finds no alpha in trading on them. Money can then remain in two places, before news whose date is known, such as earnings announcements, and after bad news, if the market's fall went too far. However, studies of LLMs and earnings read documents published with or after the announcement, and studies of reversal sort monthly portfolios, so neither tells whether an agent can trade these moments after costs. In this paper, we test LLM agents at both moments on the same look-ahead-free benchmark, before 598 earnings announcements and after 409 bad-news drops of large US stocks. Every input is cut at the decision close, staged agents are compared with single calls, simple rules and a logistic regression, and every decision is made with and without the stock's name. Across five models from four vendors, no agent beat the simple bets. Before earnings, the agents mostly bought and earned what buying before every announcement earned, and after bad news, a Gemini-based agent called almost every fall an overreaction while no agent picked better dips than buying them all. The only gains came from what the models had memorized in training. Given only the ticker and the dates, a GPT-based model called the direction of 59.2% of the announcements before its training cutoff and 53.3% after it. Agent builders should therefore compare an event agent with the simple bet and test it blind after the training cutoff.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.22238",
+      "rank": 10,
+      "title": "Context Has a Price: Adding and Removing Context for LLM Coding Agents under Prefix Caching",
+      "sourceUrl": "https://arxiv.org/abs/2611.22238",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-18T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.22238v1 Announce Type: new Abstract: Coding agents repeatedly send their conversation history to a language model. Adding useful code may reduce search, while removing old tool outputs may shorten later prompts. But do these changes reduce the cost of solving a task? We study this as a measurement problem in more than 20,000 runs of open models on SWE-bench Verified, SWE-bench and Loc-Bench. We account separately for uncached input, cached input and output tokens. Three findings emerge. First, in our main evidence-package experiments, retrieved code reduces read and search commands by 18--34%, but increases cost by 33--42% when cached input costs one tenth of uncached input, without a measurable improvement in resolution. Second, removing old observations can either save money or increase cost: the same approach saves 19--36% without a cache discount but increases cost by 38--116% with a tenth-price cache. Third, shorter prompts do not guarantee cheaper runs because agents may respond by taking more steps. We also find that concurrent experiments can share cached prefixes and distort cost comparisons. These results show why context-management methods should be evaluated using both token prices and the agent's subsequent behavior.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.22245",
+      "rank": 11,
+      "title": "Multi-Agent Memory Inconsistency: Where Factual Conflicts Disappear in LLM Agents",
+      "sourceUrl": "https://arxiv.org/abs/2611.22245",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-18T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.22245v1 Announce Type: new Abstract: Multi-agent delegation lets LLM systems distribute evidence collection across workers with separate contexts. This creates a consistency challenge: facts retrieved by workers may be missing from the evidence available to the lead for a joint conclusion. We introduce a benchmark and evidence-flow profiler for studying multi-agent memory inconsistency through controlled factual conflicts in Harvey LAB document-review tasks. Pooled across three models with comparable generation spending, requiring delegation increases retrieval of both conflicting claims from 50.2% to 68.7% relative to single-agent execution, yet conflict detection falls from 16.2% to 13.2%. Within this setting, workers report both claims for only 35.2% of retrieved pairs, and pooled matched comparisons show higher detection than single-agent execution when one worker reads both claims but lower detection when the claims are split across workers. Worker-to-lead handoffs are a central target for improving conflict detection in multi-agent LLMs.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.22252",
+      "rank": 12,
+      "title": "A Visual Information Extraction System Using Multimodal Large Language Models for Scanned Cognitive and Behavioral Assessments",
+      "sourceUrl": "https://arxiv.org/abs/2611.22252",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-18T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.22252v1 Announce Type: new Abstract: Objective. Paper-based assessments are common in patient care, but handwriting and scanning artifacts make these forms difficult to process at scale. This study proposes a modular, multimodal LLM-based system with human oversight for extracting fields and scores. We conducted a qualitative analysis of the use of LLMs for hand-drawing analysis. Materials and Methods. The system processes cognitive assessments (i.e., MMSE, MoCA, Mini-Cog) and the NICHQ Vanderbilt Assessment using two modules: 1) a form classifier that assigns a scanned page to a form type, followed by a corresponding 2) score extractor that extracts fields and scores into a schema. A human-in-the-loop design utilizing dual-model validation engages human annotators when two LLMs disagree, limiting manual review to challenging pages only. Results. End-to-end accuracy for cognitive assessments was 88%, with most form types exceeding 90%. For the NICHQ Vanderbilt, overall accuracy reached 97.5%, with all form types above 96%. The human-in-the-loop design further improved cognitive assessment accuracy to 97.5% while reducing manual work by 63.8%. In the Mini-Cog Clock Drawing task, qualitative analysis showed that 62.3% of all extraction errors stemmed from ambiguous drawing, in which cases the LLM provided reasonable readings. Discussion. Compared to current manual data extraction, our LLM-based system reduces processing time by 10 to 20 times and costs by over 12 times. The modular design allows seamless expansion to additional form types. Conclusion. Our system provides an accurate, scalable, and cost-efficient solution for structuring data trapped in handwritten paper forms for clinical decision support.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.22278",
+      "rank": 13,
+      "title": "DACE: Diversity-Driven Adversarial Co-Evolution for Robust LLM Safety Alignment",
+      "sourceUrl": "https://arxiv.org/abs/2611.22278",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-18T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.22278v1 Announce Type: new Abstract: Ensuring robust safety alignment of large language models (LLMs) is increasingly difficult as adversarial attacks evolve and outpace alignment pipelines built on pre-collected data. Existing co-evolutionary frameworks let the defender chase a moving attacker, yet their training dynamics expose two compounding pathologies: \\emph{attack strategy collapse}, where the attacker overfits to a narrow set of high-reward rewrites, and \\emph{defense adversarial forgetting}, where the defender loses competence against earlier attacks as the attack distribution drifts. Existing remedies are partial: attacker-side diversity rewards score textual novelty rather than strategy novelty, and defender-side replay relies on discrete judge scores that ignore estimation uncertainty, response stochasticity, and defender non-stationarity. We introduce \\textbf{\\method}, a diversity-driven adversarial co-evolution framework that targets both pathologies jointly. On the attacker side, \\method couples an explicit two-dimensional strategy space (risk category $\\times$ attack style) with a \\emph{normalized marginal coverage gain} reward, providing a bounded, non-vanishing exploration signal at the strategy layer. On the defender side, \\method maintains a unified \\emph{Bayesian adversarial replay pool} whose Beta--Bernoulli threat posteriors are refreshed by time decay and sampled via Thompson sampling, anchoring defender training to an evolving threat landscape. Across standard safety, automated-attacker, and general-capability benchmarks, \\method improves robustness to out-of-distribution attacks while preserving general capabilities, and yields broader attacker strategy coverage.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.22283",
+      "rank": 14,
+      "title": "Towards Physics-Constrained Rectified Flow for Climate Downscaling: What Projections Can Certify?",
+      "sourceUrl": "https://arxiv.org/abs/2611.22283",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-18T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.22283v1 Announce Type: new Abstract: Statistical downscaling restores the regional detail behind flooding and crop stress, but diffusion and flow-matching generators can produce sharp fields that break the conservation laws of their coarse input. Physics-Constrained Rectified Flow (PC-RF) is a conditional flow-matching downscaler. Its training penalties target wind divergence, negative precipitation, and mass drift from the coarse total, and a projection after sampling removes the last two exactly. On one corrupted synthetic field with no trained network, the projection drives the Non-negativity Violation Rate (NVR) from 0.236 and the Mass-Conservation Error (MCE) from 0.184 to zero, and the penalties lower the Divergence Error (DE) by about 30%. On ERA5 the projection gives PC-RF and RF-base, the penalty-free rectified-flow baseline, an NVR of exactly zero and an MCE of zero up to float32 rounding. The penalties add no perceptual gain that we can separate from training budget or run-to-run variation. At a matched budget on 2019-2021, PC-RF has no edge over RF-base (SSIM 0.939 vs. 0.942, PSNR 31.81 vs. 31.79, CRPS 0.771 vs. 0.772). Our unprojected CorrDiff reimplementation beats both flow models on PSNR (28.38) and CRPS (1.092) on 2020, yet 45% of its ensemble-mean precipitation cells are negative. On ERA5 a sign error in the divergence operator made that penalty and DE act on a deformation-like term. The fine reference is interpolated from ERA5 and accumulates precipitation over a longer window, so the perceptual scores cannot establish downscaling skill. NVR and MCE need one pass and no fine reference, so we argue they should run first as pass-or-fail checks, with DE as a diagnostic.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.22296",
+      "rank": 15,
+      "title": "SpecSearch: Towards Hardware-Aware Efficient Speculative Decoding",
+      "sourceUrl": "https://arxiv.org/abs/2611.22296",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-18T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.22296v1 Announce Type: new Abstract: Speculative decoding (SD) accelerates large language model (LLM) inference, but its optimal configuration depends jointly on workload characteristics, GPU hardware, and available memory. For example, on the RTX~5090, the state-of-the-art speculative drafter DFlash achieves $3.50\\times$ the throughput of autoregressive (AR) decoding at low concurrency, but only $0.76\\times$ at high concurrency with short outputs. We present SpecSearch, a hardware-aware search engine that jointly optimizes decoding strategy, draft length, and precision across workload--GPU pairs. Its analytical cost model captures memory and compute constraints to identify feasible configurations and narrow the search space for throughput optimization. Guided by this model, calibration measurements are collected from multiple GPUs. Using the measurements, a Jev-based predictor learns to select high-throughput decoding configurations on held-out GPUs without requiring deployment-GPU calibration. The predictor is parameter-efficiently trained on calibration data, while adapting a frozen Qwen3-4B using LoRA adapters and a linear correction layer. Across NVIDIA RTX~5090, H100, L40 and AMD MI300X GPUs, SpecSearch with full calibration achieves an average of $2.01\\times$ the throughput of AR and $1.36\\times$ the throughput of SD, both served by vLLM. The proposed Jev-based predictor closely matches this search performance with $1.30\\times$ throughput improvement over SD with vLLM, while eliminating the need for held-out GPU calibration. Additionally, it retains $97.36\\%$ of the throughput achieved by SpecSearch that utilizes full calibration.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.22301",
+      "rank": 16,
+      "title": "MCTS Is Counting the Wrong Thing: Learning Exploration Counts for LLM Reasoning",
+      "sourceUrl": "https://arxiv.org/abs/2611.22301",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-18T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.22301v1 Announce Type: new Abstract: Monte Carlo tree search (MCTS) has powered landmark successes in reinforcement learning, yet its gains in LLM reasoning can remain modest despite substantial search effort. We identify an overlooked bottleneck: what MCTS counts. Standard UCT assigns independent visit counts to textual branches, allowing different formulations of the same reasoning strategy to repeatedly receive exploration bonuses. Our theoretical analysis shows that this count fragmentation can impair exploration efficiency, as quantified by increased cumulative regret. To address this problem, we introduce Learned Pseudo-Count MCTS (LPC-MCTS), which changes only the exploration statistic in UCT. A lightweight Coin-Flipping Network head on the policy's hidden representations estimates representation coverage, enabling related branches to share exploration evidence. Across 5 mathematical-reasoning and 7 search benchmarks, LPC-MCTS consistently outperforms strong MCTS baselines. Holding each LPC-MCTS-trained policy fixed, replacing standard MCTS counts at inference improves average mean@16 accuracy across 5 mathematical benchmarks by 3.79 percentage points on Qwen2.5-7B and 2.71 points on Qwen3-4B. Applying LPC-MCTS during both training and inference yields gains of 4.96 and 4.37 points over standard MCTS, respectively. Together, our theory and experiments show that changing what MCTS counts can substantially improve its exploration efficiency and reasoning performance.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.22310",
+      "rank": 17,
+      "title": "EviDARL: Evidence-Centric Dual-Agent Reasoning via Alternating Reinforcement Learning for Multi-Table Question Answering",
+      "sourceUrl": "https://arxiv.org/abs/2611.22310",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-18T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.22310v1 Announce Type: new Abstract: Despite advances in LLM-based table reasoning, most studies focus on single-table settings. Multi-table QA requires multi-hop reasoning over complex table relationships and evidence dispersed across long contexts, often without verifiable intermediate traces. To address these challenges, we introduce EviDA, an evidence-centric dual-agent framework comprising an Evidence Construction Agent and a Reasoning and Answering Agent. The Evidence Construction Agent generates and executes table-manipulation programs over complete tables to produce question-specific evidence and verifiable intermediate traces, simplifying subsequent reasoning. The Reasoning and Answering Agent then performs multi-hop reasoning over this evidence to derive final answers. We further introduce EviDARL, which combines agent-specific fine-grained rewards with parameter-efficient alternating reinforcement learning to improve collaboration between the agents. By optimizing each agent in turn while holding the other fixed, EviDARL enables bidirectional adaptation between evidence construction and answer reasoning. Experiments on MMQA and TQA-Bench demonstrate that EviDARL substantially outperforms competitive open-model and multi-table reasoning baselines under constrained model and training budgets.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.22432",
+      "rank": 18,
+      "title": "Think Once, Act Fast: Cost-Effective Recursive Self-Improvement for Decision Model Harness",
+      "sourceUrl": "https://arxiv.org/abs/2611.22432",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-18T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.22432v1 Announce Type: new Abstract: Fast System-1 models enable responsive actions but struggle with complex or unfamiliar tasks. Large language model (LLM)-based System-2 provides strong reasoning capabilities, yet repeated invocation incurs substantial latency and computational costs. To bridge this gap, we propose JevRSI, a System-1/System-2 collaboration framework that transforms LLM reasoning into transferable decision support through recursive harness improvement. A Jev-style System-1 model enables low-latency action selection, while an asynchronous System-2 LLM develops a modular harness. The harness integrates procedures, state memory, and world models to provide decision contexts spanning the past, present, and future. Utility-driven retrieval selects modules based on both contextual relevance and their utility on previous tasks. Environmental feedback guides targeted revisions and enables recursive self-improvement. Experiments across three datasets show that JevRSI consistently improves decision quality, matching or surpassing LLM agents in several settings. It preserves low-latency execution with favorable performance-cost trade-offs. Moreover, System-2 development interventions decrease as the harness evolves, amortizing System-2 costs through continuous improvement. Our project is available at https://github.com/usail-hkust/JevRSI.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.22511",
+      "rank": 19,
+      "title": "LMLineage: Content Lineage and Context Governance for LLM Agents",
+      "sourceUrl": "https://arxiv.org/abs/2611.22511",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-18T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.22511v1 Announce Type: new Abstract: Interpretability for AI agents should not be confined to understanding the model's internal weights. It must also cover the agent's reasoning and decision-making process over multi-source context. We present LMLineage, an out-of-band system that attributes every output sentence of an agent session to its supporting input spans with calibrated confidences, without requiring white-box access to the model or any additional inference passes. On top of the lineage metadata, we build concept-drift micro compaction: instead of waiting for the context-length limit and summarizing everything, the system detects when previously used input documents have stopped being referenced (\"drifted\") and surgically compacts only those, preserving user instructions verbatim. We evaluate on a multi-tier corpus: 71 gold annotated sentences from 10 Chinese web-QA cases, plus 90 turns of independently collected multi-turn sessions across three generator models (gpt-4o-mini, qwen3.8-27b, deepseek-v4-flash). Results show that (i) window-level embedding similarity is far better aligned with LLM paraphrasing than whole document or lexical matching; (ii) the greedy-window fast path is both faster and more accurate on average than exhaustive line-matching (a multiple-comparisons bias in the latter inflates web recall at the cost of overall accuracy); (iii) per-turn attribution completes in 1s on a single GPU, remaining stable as context accumulates to 40 turns; and (iv) concept-drift detection is conservative (0% false compaction) with recall bounded by attribution accuracy. We further describe the concept-drift micro compaction design and an interactive incident-tracing/memory-cleaning case study. A companion patent application covers the lineage construction method.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.22661",
+      "rank": 20,
+      "title": "The Between-Round Decision in Autonomous Research: An LLM Controller That Reads the Whole Trajectory",
+      "sourceUrl": "https://arxiv.org/abs/2611.22661",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-18T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.22661v1 Announce Type: new Abstract: Executing an idea often changes how promising it looks, so the next step in autonomous research should rest on results, not on proposals. After each round of experiments, the system must decide whether to refine the best solution or start a new direction, which solution to build from, and what goal to set. We call this the between-round decision. Existing systems wrap it in machinery such as rules, scores, search trees, and schedules; where an LLM makes it, what the LLM needs to read is left open. We ask whether an LLM can make this decision from accumulated evidence, without a search structure around it, and how much of that evidence it needs to read. We present BRED (Between-Round Evidence-based Decision), an LLM-based controller that maintains the best verified solution so far (the Champion) and a log of past rounds, and makes one decision per round. On three widely used research-agent benchmark tasks, BRED improves on the task baselines by 4.80% in MAE on ETTh1 (to 0.4172) and by 3.44 and 3.43 points of accuracy on SST-2 (to 95.07%) and CIFAR-100 (to 84.63%), ahead of the published results. When the controller does not read the accumulated evidence, the same loop gains less: with no history it reaches 0.4299 on ETTh1 and 83.71% on CIFAR-100, whereas the full controller's MAE is 2.95% lower and its accuracy 0.92 points higher. On a new task, speech-based depression detection under a leakage-free protocol, it reaches a macro-F1 of 0.6164 on seeds held out from selection, 5.5 points above its baseline and 4.0 above the strongest published system. Code is available at https://github.com/learninginvision/BRED.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.22738",
+      "rank": 21,
+      "title": "Can Activation Steering Substitute for Prompt-Based Affective Priming in LLM Digital Twins?",
+      "sourceUrl": "https://arxiv.org/abs/2611.22738",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-18T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.22738v1 Announce Type: new Abstract: Affective priming -- asking participants to write about a recalled event, such as a time they felt grateful or lacked control, and then measuring the induced state and its spillover onto related judgments -- is a standard way to manipulate emotion in the social sciences, and it also shifts the responses of LLM-based digital twins. The writing task, however, requires generating a full text. We test whether activation steering can replace it. Using Llama-3.1-8B-Instruct on 100 personas in two domains (gratitude, lack of control), we compare a real-prompt path replicating the original Twin-2K-500 Mega Study (J2) with an injection path that skips the writing and adds a mean-difference direction, extracted from human writing, to the residual stream at varying strengths. The real-prompt effects fall between the original human and digital-twin effects in 5 of 6 comparisons. Injection shifts the manipulation check in a dose-dependent way and matches the real-prompt effect at one strength in the gratitude domain (beta ~ 2.7), but overshoots beyond it, on the proximal measure as well, and asymmetrically across the two directions. A structure-matched No-Injection baseline separates two sources of difference: omitting the writing task raises the proximal measure in both domains, whereas the injected direction itself moves a distal measure in the lack-of-control domain. Substitution is therefore measure-dependent: validity established for one way of inducing a state does not carry over uniformly to another.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.23192",
+      "rank": 22,
+      "title": "WoRD: Diffusion-Based Posterior Inference for Online Goal Recognition",
+      "sourceUrl": "https://arxiv.org/abs/2611.23192",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-18T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.23192v1 Announce Type: new Abstract: Goal recognition is the task of inferring an agent's intended goal from its observed behavior. Most existing work focuses on high-level symbolic recognition, abstracting away the continuous motion through which agents reach their goal. Methods that do reason over continuous trajectories rely on an explicit dynamics model that is hard to acquire and rarely transfers across settings. Neither approach explicitly learns how agents move toward each candidate goal, limiting accuracy on ambiguous trajectory prefixes where such knowledge is most needed. We present WoRD (Waypoint Recognition with Diffusion), which uses a learned trajectory prior to infer the agent's goal from partial observations. At each step, WoRD runs one warm-started denoising chain per candidate goal, steers each chain toward the observed trajectory through a closed-form log-likelihood gradient, and reweights the resulting samples by Bayes' rule into a calibrated posterior over goals. We evaluate WoRD on simulated robot settings, pedestrian trajectories, and vehicle trajectories using four metrics targeting distinct failure modes. Across all three settings, the same inference procedure preserves calibrated multimodal beliefs through ambiguous prefixes where filter- and classifier-based observers collapse to a single mode or grow overconfident.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.21638",
+      "rank": 23,
+      "title": "Can AI Help Explain AI? Effects of Multimodal LLM-Generated Explanations on Perceived Understanding and Perceived Trust in XAI Visualizations",
+      "sourceUrl": "https://arxiv.org/abs/2611.21638",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-18T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.21638v1 Announce Type: cross Abstract: Explainable artificial intelligence (XAI) aims to make machine learning models understandable, yet many XAI visualizations remain difficult for end-users to interpret. Here, we evaluate whether augmenting XAI outputs with textual explanations from multimodal LLMs improves perceived understanding and perceived trust. We conducted a pre-registered within-subject experiment ($N = 128$) across seven decision scenarios and five XAI methods, with and without LLM generated explanations. The explanations improved perceived understanding and perceived trust by 0.35 and 0.26 points on five-point scales (both $p < .001$). The gain appeared in all seven scenarios, did not differ between local and global explanations, and was largest for participants with the least prior XAI exposure. A mediation analysis indicates an indirect effect on perceived trust through perceived understanding. These results suggest that multimodal LLMs can provide a useful interpretive layer for XAI beyond expert audiences.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.21648",
+      "rank": 24,
+      "title": "Can an LLM dream? Testing the overfitted brain hypothesis on an agent with text memory",
+      "sourceUrl": "https://arxiv.org/abs/2611.21648",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-18T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.21648v1 Announce Type: cross Abstract: Hoel (2021) proposed that dreams distort replayed experience so that the brain does not overfit to recent events. We test this hypothesis on an LLM agent (Claude Opus 5.5) that stores what it learns in a text memory and rewrites that memory each night from the day's conversation transcript. The agent goes through ten simulated days of conversation built from LongMemEval. We corrupt 5, 10, 20 or 40 percent of the transcript's turns before each nightly rewrite in one of two ways. Detail corruption changes one or two details in a turn to plausible wrong ones, or replaces the turn with one by the same speaker from an earlier day. Random-text corruption replaces half of the selected turns with a passage of Moby-Dick and inserts Moby-Dick words into the other half. A size limit on the memory, rising from 19,500 to 117,000 tokens over ten nights, set from human free-recall data, forces it to forget. We learned that corruption did not help the agent apply what it learned in earlier conversations to new tasks in any of 30 runs (ten conditions, three different conversation histories). Replacing details in 40 percent of turns lowered recall from 76 to 60 percent. Random text had no consistent effect on recall, with a paired difference of 0 $\\pm$ 2 points at 40 percent, because the model recognized it as corrupted and left it out of memory. Replaced details were stored as fact even when another turn held the correct value, and the agent answered 40 percent of those questions correctly, compared with 75 percent without corruption. These results suggest that a pretrained model can separate corrupted text from real events, so a fair test needs a learner that cannot make this separation as easily, such as a model fine-tuned on the corrupted days or an agent whose days take place in an invented world.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.21651",
+      "rank": 25,
+      "title": "Consistency Is Not Correction: Separating Confidence, Abstention, and Recovery in LLM Agents",
+      "sourceUrl": "https://arxiv.org/abs/2611.21651",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-18T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.21651v1 Announce Type: cross Abstract: A controller that resamples an answer, escalates to a larger model, or abstains is usually justified by a confidence signal. Three claims about such a signal do not follow from one another: it ranks answers (discrimination), it supports withholding some of them (selective prediction), and it changes an answer for the better (correction utility). We give an exact decomposition of the third into gated recoveries minus gated harms, which bounds whether a comparison can succeed before it is run: a gate that only replaces a proposal can act only where the base policy was already wrong, so the initial error count caps the discordant pairs any correct gate can produce. When that cap falls below the count a paired test needs, the experiment cannot return a positive result for a working mechanism, nor distinguish one from a gate that never fired. We measure all three targets on two model scales and find the bound binds. In a small-model suite a perturbation-agreement verifier reaches within-policy AUROC 0.990 (95% interval [0.95, 1.00]) while every episode outcome matches single-sample decoding at 4.32 times the call count. In a controlled 840-episode study no verifier replaced the proposal on any of the 60 GSM8K decisions, so that comparison tested nothing; the entire GSM8K gain across six controllers is one task, and it is the task whose identical temperature-zero repeats disagreed, making it the one answer the service does not reproduce. On the diagnostic set the gate could reach four errors while the test needed six, so even a perfect gate had no significant result available. We report two checks that would have caught this before any budget was spent, and show that tie handling in rankings, tied selection cutoffs, and unequal output limits each move a headline number in the same dataset. The binding constraint on this literature is measurement resolution, not the choice of signal.",
+      "summary": ""
+    }
+  ]
+}
