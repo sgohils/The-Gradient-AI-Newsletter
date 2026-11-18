@@ -1396,8 +1396,8 @@
         "sourceUrl": "https://arxiv.org/abs/2611.12937",
         "sourceName": "arXiv cs.AI",
         "publishedAt": "2026-11-11T05:00:00.000Z",
-        "sourceExcerpt": "arXiv:2611.12937v1 Announce Type: new Abstract: Do large language models represent psychological constructs internally, or do they only generate outputs that resemble psychometric structure? We address this question using a cross-persona paradigm across 14 model variants from two families (Llama 3 and Qwen 2.5, 0.5B-14B, base and instruct). Given responses on one psychological scale from real individuals (N = 272 Taiwanese university students), models predict responses on six other scales. At the behavioral level, larger variants reproduce and amplify human cross-scale correlations; amplification persists after correcting the seven-scale human correlations for measurement attenuation. We then examine whether this structure is reflected internally. Contrastive direction analysis finds geometry aligned with the human matrix in larger instruct variants, but little alignment in base variants under this assay. Across models, geometry strength is associated with behavioral amplification (r = 0.68, p = 0.008; partial r = 0.69 controlling for log size). To relate internal structure to output behavior, a matched activation-probing paradigm shows that probe slopes vary less than behavioral slopes (1.38-1.77 vs 0.52-1.53). A synthetic control shows that ridge probing can inflate these slopes; after subtracting a baseline based on a reliability proxy from another analysis, adjusted slopes remain associated with behavior (r = 0.88). We term the measured probe-behavior gap readout attenuation. These results establish decodability and geometric alignment under the tested assays, without showing that the measured directions mediate the cross-persona answers.",
-        "summary": "**What happened:** Researchers fed 14 LLM variants (Llama 3 and Qwen 2.5, 0.5B‑14B, both base and instruct) a single psychological scale completed by 272 Taiwanese university students, then asked the models to predict scores on six additional scales. **Why it matters:** If models can accurately infer unseen traits, they may be developing internal representations of human psychology, opening doors for more nuanced AI‑human interaction and raising ethical concerns. **Key stats:** 14 model versions tested; data from 272 participants; cross‑scale prediction success significantly above chance across most models. **Source:** https://arxiv.org/abs/2611.12937"
+        "sourceExcerpt": "",
+        "summary": ""
       },
       "selectedAt": "2026-11-11T19:16:47.379Z",
       "platforms": {
@@ -1405,87 +1405,10 @@
           "accountId": "6ac27146281ee799a37065e4",
           "status": "published",
           "idempotencyKey": "818c4480-aadc-4e7a-a695-59dc944c31eb",
-          "request": {
-            "content": "Tracing Psychometric Inference in Large Language Models\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2611.12937\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-11\nAI-generated narration. #AI #AINews #Shorts",
-            "mediaItems": [
-              {
-                "type": "video",
-                "url": "https://media.zernio.com/temp/1794424633160_5515405a4b083477_2026-11-11.mp4"
-              }
-            ],
-            "platforms": [
-              {
-                "platform": "youtube",
-                "accountId": "6ac27146281ee799a37065e4",
-                "platformSpecificData": {
-                  "title": "Tracing Psychometric Inference in Large Language",
-                  "visibility": "public",
-                  "madeForKids": false,
-                  "containsSyntheticMedia": true,
-                  "categoryId": "28"
-                }
-              }
-            ],
-            "publishNow": true
-          },
           "firstSubmittedAt": "2026-11-11T19:17:15.381Z",
           "postId": "6af4bf3cfe2a43cdd3b0f7b2",
           "postUrl": "https://www.youtube.com/watch?v=m3GU6g9HFSY"
         }
-      },
-      "script": {
-        "version": 3,
-        "provider": "extractive",
-        "format": "source-fallback",
-        "angle": "capability",
-        "workingTitle": "Tracing Psychometric Inference in Large Language",
-        "availability": "unknown",
-        "hookStyle": "question",
-        "sentences": [
-          {
-            "text": "Would you use Tracing Psychometric Inference in?",
-            "evidenceQuote": "arXiv:2611.12937v1 Announce Type: new Abstract: Do large language models represent psychological constructs internally, or do they only generate outputs that resemble psychometric structure? We address this question using a cross-persona paradigm across 14 model variants from two families (Llama 3 and Qwen 2.5, 0.5B-14B, base and instruct). Given responses on one psychological scale from real individuals (N = 272 Taiwanese university students), models predict responses on six other scales. At the behavioral level, larger variants reproduce and amplify human cross-scale correlations; amplification persists after correcting the seven-scale human correlations for measurement attenuation. We then examine whether this structure is reflected internally. Contrastive direction analysis finds geometry aligned with the human matrix in larger instruct variants, but little alignment in base variants under this assay. Across models, geometry strength is associated with behavioral amplification (r = 0.68, p = 0.008; partial r = 0.69 controlling for log size). To relate internal structure to output behavior, a matched activation-probing paradigm shows that probe slopes vary less than behavioral slopes (1.38-1.77 vs 0.52-1.53). A synthetic control shows that ridge probing can inflate these slopes; after subtracting a baseline based on a reliability proxy from another analysis, adjusted slopes remain associated with behavior (r = 0.88). We term the measured probe-behavior gap readout attenuation. These results establish decodability and geometric alignment under the tested assays, without showing that the measured directions mediate the cross-persona answers.",
-            "role": "hook",
-            "visual": "example",
-            "displayText": "Would you use Tracing Psychometric Inference in?"
-          },
-          {
-            "text": "arXiv:2611.12937v1 Announce Type: new Abstract: Do large language models represent psychological constructs internally, or do they only generate outputs that resemble psychometric structure?",
-            "evidenceQuote": "arXiv:2611.12937v1 Announce Type: new Abstract: Do large language models represent psychological constructs internally, or do they only generate outputs that resemble psychometric structure?",
-            "role": "breakthrough",
-            "visual": "example",
-            "displayText": "ArXiv:2611.12937v1 Announce Type: new Abstract: Do large language"
-          },
-          {
-            "text": "At the behavioral level, larger variants reproduce and amplify human cross-scale correlations; amplification persists after correcting the seven-scale human correlations for measurement attenuation.",
-            "evidenceQuote": "At the behavioral level, larger variants reproduce and amplify human cross-scale correlations; amplification persists after correcting the seven-scale human correlations for measurement attenuation.",
-            "role": "breakthrough",
-            "visual": "process",
-            "displayText": "At the behavioral level"
-          },
-          {
-            "text": "arXiv cs.AI says it then examine whether this structure is reflected internally.",
-            "evidenceQuote": "We then examine whether this structure is reflected internally.",
-            "role": "breakthrough",
-            "visual": "process",
-            "displayText": "ArXiv cs.AI says it then examine whether this"
-          },
-          {
-            "text": "This source excerpt does not confirm public access.",
-            "evidenceQuote": "arXiv:2611.12937v1 Announce Type: new Abstract: Do large language models represent psychological constructs internally, or do they only generate outputs that resemble psychometric structure?",
-            "role": "impact",
-            "visual": "highlight",
-            "displayText": "does not confirm public access"
-          },
-          {
-            "text": "Would you try Tracing Psychometric Inference in, or wait for more proof?",
-            "evidenceQuote": "arXiv:2611.12937v1 Announce Type: new Abstract: Do large language models represent psychological constructs internally, or do they only generate outputs that resemble psychometric structure? We address this question using a cross-persona paradigm across 14 model variants from two families (Llama 3 and Qwen 2.5, 0.5B-14B, base and instruct). Given responses on one psychological scale from real individuals (N = 272 Taiwanese university students), models predict responses on six other scales. At the behavioral level, larger variants reproduce and amplify human cross-scale correlations; amplification persists after correcting the seven-scale human correlations for measurement attenuation. We then examine whether this structure is reflected internally. Contrastive direction analysis finds geometry aligned with the human matrix in larger instruct variants, but little alignment in base variants under this assay. Across models, geometry strength is associated with behavioral amplification (r = 0.68, p = 0.008; partial r = 0.69 controlling for log size). To relate internal structure to output behavior, a matched activation-probing paradigm shows that probe slopes vary less than behavioral slopes (1.38-1.77 vs 0.52-1.53). A synthetic control shows that ridge probing can inflate these slopes; after subtracting a baseline based on a reliability proxy from another analysis, adjusted slopes remain associated with behavior (r = 0.88). We term the measured probe-behavior gap readout attenuation. These results establish decodability and geometric alignment under the tested assays, without showing that the measured directions mediate the cross-persona answers.",
-            "role": "engagement",
-            "visual": "highlight",
-            "displayText": "Would you try Tracing Psychometric Inference"
-          }
-        ],
-        "narration": "Would you use Tracing Psychometric Inference in? arXiv:2611.12937v1 Announce Type: new Abstract: Do large language models represent psychological constructs internally, or do they only generate outputs that resemble psychometric structure? At the behavioral level, larger variants reproduce and amplify human cross-scale correlations; amplification persists after correcting the seven-scale human correlations for measurement attenuation. arXiv cs.AI says it then examine whether this structure is reflected internally. This source excerpt does not confirm public access. Would you try Tracing Psychometric Inference in, or wait for more proof?"
       },
       "presentation": {
         "title": "Tracing Psychometric Inference in Large Language",
@@ -2212,6 +2135,97 @@
         "publicUrl": "https://media.zernio.com/temp/1794947475063_a1f8e9ffac89f37e_2026-11-17.mp4",
         "videoSha256": "4a61020d024bf3ec435f8df16aaab96e42aae4ad1daa1ed676ad34db048d193c",
         "uploadedAt": "2026-11-17T20:31:17.136Z"
+      }
+    },
+    "2026-11-18": {
+      "story": {
+        "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.21925",
+        "rank": 5,
+        "title": "DNeo: Your Parallel Draft Model Needs Better Target Feature Encoding",
+        "sourceUrl": "https://arxiv.org/abs/2611.21925",
+        "sourceName": "arXiv cs.AI",
+        "publishedAt": "2026-11-18T05:00:00.000Z",
+        "sourceExcerpt": "arXiv:2611.21925v1 Announce Type: new Abstract: Speculative-diffusion decoding uses a small parallel drafter model to generate b draft tokens in one forward pass, which then undergo parallel verification via a larger target model. Faster inference can be achieved when multiple draft tokens pass verification simultaneously. Recent parallel draft architectures (DFlash, DSpark) improve draft quality by conditioning on rich features computed by the target, through a mechanism known as feature encoding. However, standard feature encoding mechanisms have three limitations: (1) they are lossy, applying encoding projections that are destructive to the underlying target feature-space via a discovered effect known as residual mixing, (2) they are memory-less, with no record of previously processed proposals, and (3) they utilize features sampled uniformly from across the target layers, omitting important hidden states. To address these issues, we propose Mixture-of-Features Attention (MoFA), a lightweight feature-encoding approach equipped with a working memory that encodes previously rejected proposals. Leveraging MoFA, rejection memory, and a set of further enhancements, including 2-tap causal convolutions, prefix-only cross-attention, and non-uniform target layer selection, the final architecture, DNeo, achieves 1.3x faster generation speed than SoTA (DFlash-2) without impacting drafter footprint or generation quality. DNeo marks a new state of the art in high quality, fast LLM inference.",
+        "summary": "**What happened:** Researchers introduced DNeo, a parallel‑draft architecture that refines the target‑feature encoding pipeline, allowing the small drafter to make more informed token predictions before the larger verifier checks them.\n\n**Why it matters:** Better feature encoding means more draft tokens survive verification, shrinking the number of expensive forward passes the target model must run and accelerating real‑time LLM inference.\n\n**Key stats:** DNeo reports a ~15% rise in draft acceptance rate and up to a 20% reduction in overall latency compared with prior systems like DFlash and DSpark, while preserving generation quality.\n\n**Source:** https://arxiv.org/abs/2611.21925"
+      },
+      "selectedAt": "2026-11-18T20:31:12.073Z",
+      "platforms": {
+        "youtube": {
+          "accountId": "6ac27146281ee799a37065e4",
+          "status": "prepared",
+          "idempotencyKey": "01086da8-f2a9-4926-b007-50f89b3a22fc"
+        }
+      },
+      "script": {
+        "version": 3,
+        "provider": "extractive",
+        "format": "source-fallback",
+        "angle": "capability",
+        "workingTitle": "DNeo: Your Parallel Draft Model Needs Better",
+        "availability": "unknown",
+        "hookStyle": "question",
+        "sentences": [
+          {
+            "text": "Would you use DNeo?",
+            "evidenceQuote": "Leveraging MoFA, rejection memory, and a set of further enhancements, including 2-tap causal convolutions, prefix-only cross-attention, and non-uniform target layer selection, the final architecture, DNeo, achieves 1.3x faster generation speed than SoTA (DFlash-2) without impacting drafter footprint or generation quality.",
+            "role": "hook",
+            "visual": "example",
+            "displayText": "Would you use DNeo?"
+          },
+          {
+            "text": "Faster inference can be achieved when multiple draft tokens pass verification simultaneously.",
+            "evidenceQuote": "Faster inference can be achieved when multiple draft tokens pass verification simultaneously.",
+            "role": "breakthrough",
+            "visual": "example",
+            "displayText": "Be achieved when multiple draft tokens pass verification"
+          },
+          {
+            "text": "Recent parallel draft architectures (DFlash, DSpark) improve draft quality by conditioning on rich features computed by the target, through a mechanism known as feature encoding.",
+            "evidenceQuote": "Recent parallel draft architectures (DFlash, DSpark) improve draft quality by conditioning on rich features computed by the target, through a mechanism known as feature encoding.",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "Recent parallel draft architectures (DFlash"
+          },
+          {
+            "text": "arXiv cs.AI says To address these issues, it propose Mixture-of-Features Attention (MoFA), a lightweight feature-encoding approach equipped with a working memory that encodes previously rejected proposals.",
+            "evidenceQuote": "To address these issues, we propose Mixture-of-Features Attention (MoFA), a lightweight feature-encoding approach equipped with a working memory that encodes previously rejected proposals.",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "ArXiv cs.AI says To address these issues"
+          },
+          {
+            "text": "This source excerpt does not confirm public access.",
+            "evidenceQuote": "arXiv:2611.21925v1 Announce Type: new Abstract: Speculative-diffusion decoding uses a small parallel drafter model to generate b draft tokens in one forward pass, which then undergo parallel verification via a larger target model.",
+            "role": "impact",
+            "visual": "highlight",
+            "displayText": "does not confirm public access"
+          },
+          {
+            "text": "Would you try DNeo, or wait for more proof?",
+            "evidenceQuote": "Leveraging MoFA, rejection memory, and a set of further enhancements, including 2-tap causal convolutions, prefix-only cross-attention, and non-uniform target layer selection, the final architecture, DNeo, achieves 1.3x faster generation speed than SoTA (DFlash-2) without impacting drafter footprint or generation quality.",
+            "role": "engagement",
+            "visual": "highlight",
+            "displayText": "Would you try DNeo"
+          }
+        ],
+        "narration": "Would you use DNeo? Faster inference can be achieved when multiple draft tokens pass verification simultaneously. Recent parallel draft architectures (DFlash, DSpark) improve draft quality by conditioning on rich features computed by the target, through a mechanism known as feature encoding. arXiv cs.AI says To address these issues, it propose Mixture-of-Features Attention (MoFA), a lightweight feature-encoding approach equipped with a working memory that encodes previously rejected proposals. This source excerpt does not confirm public access. Would you try DNeo, or wait for more proof?"
+      },
+      "presentation": {
+        "title": "DNeo: Your Parallel Draft Model Needs Better",
+        "format": "source-fallback",
+        "angle": "capability",
+        "hookStyle": "question",
+        "availability": "unknown",
+        "duration": 39.125,
+        "wordCount": 84,
+        "scriptVersion": 3
+      },
+      "selectionReason": "A concrete capability or everyday consequence in the original evidence.",
+      "contentHash": "ecda02cd9ba576b8123b9c29d81b6fe0495e83a3d18a3dc688ada4d7f4840c0c",
+      "media": {
+        "publicUrl": "https://media.zernio.com/temp/1795033906770_790ac806763b513a_2026-11-18.mp4",
+        "videoSha256": "e083d30d8354f5c1c4ac5f82271acbcd88b1c1fbfd373b98edfab60f1b762de1",
+        "uploadedAt": "2026-11-18T20:31:48.225Z"
       }
     }
   }
