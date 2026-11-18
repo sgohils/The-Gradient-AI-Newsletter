@@ -2152,7 +2152,7 @@
       "platforms": {
         "youtube": {
           "accountId": "6ac27146281ee799a37065e4",
-          "status": "submitting",
+          "status": "published",
           "idempotencyKey": "01086da8-f2a9-4926-b007-50f89b3a22fc",
           "request": {
             "content": "DNeo: Your Parallel Draft Model Needs Better Target Feature Encoding\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2611.21925\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-18\nAI-generated narration. #AI #AINews #Shorts",
@@ -2177,7 +2177,9 @@
             ],
             "publishNow": true
           },
-          "firstSubmittedAt": "2026-11-18T20:31:49.975Z"
+          "firstSubmittedAt": "2026-11-18T20:31:49.975Z",
+          "postId": "6afe0b379cd05a9c559b57c5",
+          "postUrl": "https://www.youtube.com/watch?v=54TMf51hbkI"
         }
       },
       "script": {
