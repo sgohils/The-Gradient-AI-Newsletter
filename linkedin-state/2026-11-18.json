@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "issueDate": "2026-11-18",
+  "issueUrl": "https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-18",
+  "content": "Today's AI briefing from The Gradient | 2026-11-18\n\n1. The Gemini app is now available on lower-memory Android devices.\nGoogle released an update to the Gemini app so it runs on Android phones with limited memory, adding support for Gemini Live chat and on‑device image generation.\n\n2. Advancing chip design with OpenAI models\nOpenAI’s GPT‑6 Astra was applied to optimize circuit layouts for Jalapeño silicon and to refine RISC‑V core designs, delivering faster, lower‑power chips.\n\n3. Introducing GPT-6.2 Astra and Sol\nOpenAI released GPT‑6.2 Astra and Sol, the latest upgrades to its language‑model suite. The models are integrated into ChatGPT Work, Codex, and the public API, delivering higher quality responses, improved code generation, and better computer‑use capabilities.\n\nRead the full briefing and original sources:\nhttps://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-18\n\n#AI #ArtificialIntelligence #TheGradient",
+  "contentHash": "1f5d3342a53b78482834fb4df99d7e7663f6fb50dbe75cc6f26ebd4dd972c23e",
+  "accountId": "6ac5a561b3c21905c0edcfba",
+  "organizationUrn": "urn:li:organization:136824048",
+  "idempotencyKey": "7c428c0c-4c78-4597-963e-925ea5c8fc36",
+  "status": "submitting",
+  "firstSubmittedAt": "2026-11-18T19:56:58.250Z"
+}
