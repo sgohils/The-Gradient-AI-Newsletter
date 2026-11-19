@@ -2185,8 +2185,32 @@
       "platforms": {
         "youtube": {
           "accountId": "6ac27146281ee799a37065e4",
-          "status": "prepared",
-          "idempotencyKey": "5b6605aa-ff57-4af6-966d-e72b1894261e"
+          "status": "submitting",
+          "idempotencyKey": "5b6605aa-ff57-4af6-966d-e72b1894261e",
+          "request": {
+            "content": "GRAFT: Execution-Guided Genetic Recombination for Agent Design\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2611.23509\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-19\nAI-generated narration. #AI #AINews #Shorts",
+            "mediaItems": [
+              {
+                "type": "video",
+                "url": "https://media.zernio.com/temp/1795118461145_f6ac1b3fb0797a15_2026-11-19.mp4"
+              }
+            ],
+            "platforms": [
+              {
+                "platform": "youtube",
+                "accountId": "6ac27146281ee799a37065e4",
+                "platformSpecificData": {
+                  "title": "GRAFT: Execution-Guided Genetic Recombination for",
+                  "visibility": "public",
+                  "madeForKids": false,
+                  "containsSyntheticMedia": true,
+                  "categoryId": "28"
+                }
+              }
+            ],
+            "publishNow": true
+          },
+          "firstSubmittedAt": "2026-11-19T20:01:04.095Z"
         }
       },
       "script": {
