@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "issueDate": "2026-11-19",
+  "issueUrl": "https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-19",
+  "content": "Today's AI briefing from The Gradient | 2026-11-19\n\n1. Introducing Tool Retrieval in the Gemini API\nGoogle announced the preview of Tool Retrieval for the Gemini API, enabling AI agents to automatically fetch and invoke the most relevant of hundreds of external tools on demand.\n\n2. The Gemini app is now available on lower-memory Android devices.\nGoogle announced that the Gemini app now supports lower‑memory Android smartphones, allowing users with as little as 2 GB of RAM to install and use the app. The update adds access to Gemini Live and on‑device custom image generation.\n\n3. Advancing chip design with OpenAI models\nOpenAI’s GPT‑6 Astra was applied to optimize circuits in Jalapeño silicon and to refine RISC‑V core designs.\n\nRead the full briefing and original sources:\nhttps://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-19\n\n#AI #ArtificialIntelligence #TheGradient",
+  "contentHash": "4814d47e75612ffd97250e1479f3cca574865ec4474afed03fed0657794726fc",
+  "accountId": "6ac5a561b3c21905c0edcfba",
+  "organizationUrn": "urn:li:organization:136824048",
+  "idempotencyKey": "00867cc5-9986-4cb6-a8e3-8eedec2e3f40",
+  "status": "submitting",
+  "firstSubmittedAt": "2026-11-19T19:56:44.671Z"
+}
