@@ -2185,7 +2185,7 @@
       "platforms": {
         "youtube": {
           "accountId": "6ac27146281ee799a37065e4",
-          "status": "submitting",
+          "status": "published",
           "idempotencyKey": "5b6605aa-ff57-4af6-966d-e72b1894261e",
           "request": {
             "content": "GRAFT: Execution-Guided Genetic Recombination for Agent Design\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2611.23509\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-19\nAI-generated narration. #AI #AINews #Shorts",
@@ -2210,7 +2210,9 @@
             ],
             "publishNow": true
           },
-          "firstSubmittedAt": "2026-11-19T20:01:04.095Z"
+          "firstSubmittedAt": "2026-11-19T20:01:04.095Z",
+          "postId": "6aff5581fd0ed0e5de458e5d",
+          "postUrl": "https://www.youtube.com/watch?v=DlhH5iiwGkU"
         }
       },
       "script": {
