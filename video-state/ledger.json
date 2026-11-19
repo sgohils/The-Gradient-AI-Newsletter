@@ -1436,7 +1436,7 @@
         "sourceUrl": "https://www.reddit.com/r/artificial/comments/1xu2cfg/microsoft_researchers_backdoored_an_ai_agent_by/",
         "sourceName": "Reddit r/artificial",
         "publishedAt": "2026-11-12T03:35:17.000Z",
-        "sourceExcerpt": "Microsoft Research published a study this week that should worry anyone deploying open-weight models: a technique they call \"Lazarus\" can plant a working backdoor in an AI agent by reprogramming fewer than 10 dormant neurons in the underlying LLM - no retraining, no poisoned data, just a small edit to the saved weights. How it works: every large model has neurons that almost never fire. Lazarus repurposes a handful of them as trigger detectors. The edited model behaves normally and passes standard safety evaluations - until the trigger appears. The trigger can be something as mundane as a date: in one demo, once the clock passed midnight into 2027, the agent, in the middle of an ordinary task, emitted a command that downloaded and ran attacker code. The numbers, from Microsoft's Nov 10 post: - Nemotron-Terminal-8B: 7 neurons out of 12,000+ in the final feed-forward layer, trigger worked 98.8% of the time - Qwen3.6-27B: 6 neurons, success 51-99.5% depending on setup - Gemma-4-31B-IT was also tested Two caveats worth stating plainly: the attack requires write access to the model's weights, so this is a model supply-chain risk, not something done through an API. And Microsoft says it has not observed any threat actors using the technique - this is researched risk, not a reported campaign. Microsoft also published mitigations: a detector that flagged 91.4% of edited checkpoints (9.7% false-positive rate), plus guidance on AI-powered weight scanning, red-teaming for anomalous weight changes, and cryptographic model signing with tamper-evident provenance. One detail that stood out to me: the core idea was discovered autonomously by Claude Code running Opus 4.5, in a March experiment that asked it to backdoor a model by hardwiring a few activations without training. It did - and that became a months-long study. If a handful of edited weights can hide a sleeper agent that passes every behavioral eval, is testing model behavior enough? Or does every checkpoint we deploy need weight-level provenance? Source: https://www.microsoft.com/en-us/research/blog/lazare-veni-foras-reprogramming-dormant-neurons-to-backdoor-ai-agents/ submitted by /u/winer666 [link] [comments]",
+        "sourceExcerpt": "",
         "summary": ""
       },
       "selectedAt": "2026-11-12T19:34:26.418Z",
@@ -1445,94 +1445,10 @@
           "accountId": "6ac27146281ee799a37065e4",
           "status": "published",
           "idempotencyKey": "d26edf7a-2d4f-44e0-a379-fb5f648ada21",
-          "request": {
-            "content": "Microsoft researchers backdoored an AI agent by editing fewer than 10 neurons - no retraining needed\n\nSource: Reddit r/artificial\nhttps://www.reddit.com/r/artificial/comments/1xu2cfg/microsoft_researchers_backdoored_an_ai_agent_by/\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-12\nAI-generated narration. #AI #AINews #Shorts",
-            "mediaItems": [
-              {
-                "type": "video",
-                "url": "https://media.zernio.com/temp/1794512105975_8cee004ef9e97d7a_2026-11-12.mp4"
-              }
-            ],
-            "platforms": [
-              {
-                "platform": "youtube",
-                "accountId": "6ac27146281ee799a37065e4",
-                "platformSpecificData": {
-                  "title": "Microsoft researchers backdoored an AI agent by",
-                  "visibility": "public",
-                  "madeForKids": false,
-                  "containsSyntheticMedia": true,
-                  "categoryId": "28"
-                }
-              }
-            ],
-            "publishNow": true
-          },
           "firstSubmittedAt": "2026-11-12T19:35:08.467Z",
           "postId": "6af614edb677ef3b4887b7f1",
           "postUrl": "https://www.youtube.com/watch?v=-qm-dhSb_lY"
         }
-      },
-      "script": {
-        "version": 3,
-        "provider": "extractive",
-        "format": "source-fallback",
-        "angle": "workflow",
-        "workingTitle": "Microsoft researchers backdoored an AI agent by",
-        "availability": "research",
-        "hookStyle": "question",
-        "sentences": [
-          {
-            "text": "Would you use Microsoft researchers backdoored an?",
-            "evidenceQuote": "Microsoft Research published a study this week that should worry anyone deploying open-weight models: a technique they call \"Lazarus\" can plant a working backdoor in an AI agent by reprogramming fewer than 10 dormant neurons in the underlying LLM - no retraining, no poisoned data, just a small edit to the saved weights. How it works: every large model has neurons that almost never fire. Lazarus repurposes a handful of them as trigger detectors. The edited model behaves normally and passes standard safety evaluations - until the trigger appears. The trigger can be something as mundane as a date: in one demo, once the clock passed midnight into 2027, the agent, in the middle of an ordinary task, emitted a command that downloaded and ran attacker code. The numbers, from Microsoft's Nov 10 post: - Nemotron-Terminal-8B: 7 neurons out of 12,000+ in the final feed-forward layer, trigger worked 98.8% of the time - Qwen3.6-27B: 6 neurons, success 51-99.5% depending on setup - Gemma-4-31B-IT was also tested Two caveats worth stating plainly: the attack requires write access to the model's weights, so this is a model supply-chain risk, not something done through an API. And Microsoft says it has not observed any threat actors using the technique - this is researched risk, not a reported campaign. Microsoft also published mitigations: a detector that flagged 91.4% of edited checkpoints (9.7% false-positive rate), plus guidance on AI-powered weight scanning, red-teaming for anomalous weight changes, and cryptographic model signing with tamper-evident provenance. One detail that stood out to me: the core idea was discovered autonomously by Claude Code running Opus 4.5, in a March experiment that asked it to backdoor a model by hardwiring a few activations without training. It did - and that became a months-long study. If a handful of edited weights can hide a sleeper agent that passes every behavioral eval, is testing model behavior enough? Or does every checkpoint we deploy need weight-level provenance? Source: https://www.microsoft.com/en-us/research/blog/lazare-veni-foras-reprogramming-dormant-neurons-to-backdoor-ai-agents/ submitted by /u/winer666 [link] [comments]",
-            "role": "hook",
-            "visual": "example",
-            "displayText": "Would you use Microsoft researchers backdoored an?"
-          },
-          {
-            "text": "How it works: every large model has neurons that almost never fire.",
-            "evidenceQuote": "How it works: every large model has neurons that almost never fire.",
-            "role": "breakthrough",
-            "visual": "example",
-            "displayText": "How it works: every large model has neurons"
-          },
-          {
-            "text": "Lazarus repurposes a handful of them as trigger detectors.",
-            "evidenceQuote": "Lazarus repurposes a handful of them as trigger detectors.",
-            "role": "breakthrough",
-            "visual": "process",
-            "displayText": "Lazarus repurposes a handful of them as trigger"
-          },
-          {
-            "text": "The edited model behaves normally and passes standard safety evaluations - until the trigger appears.",
-            "evidenceQuote": "The edited model behaves normally and passes standard safety evaluations - until the trigger appears.",
-            "role": "breakthrough",
-            "visual": "process",
-            "displayText": "The edited model behaves normally and passes standard"
-          },
-          {
-            "text": "And Microsoft says it has not observed any threat actors using the technique - this is researched risk, not a reported campaign.",
-            "evidenceQuote": "And Microsoft says it has not observed any threat actors using the technique - this is researched risk, not a reported campaign.",
-            "role": "breakthrough",
-            "visual": "process",
-            "displayText": "And Microsoft says it has not observed any"
-          },
-          {
-            "text": "This source excerpt does not confirm public access.",
-            "evidenceQuote": "Microsoft Research published a study this week that should worry anyone deploying open-weight models: a technique they call \"Lazarus\" can plant a working backdoor in an AI agent by reprogramming fewer than 10 dormant neurons in the underlying LLM - no retraining, no poisoned data, just a small edit to the saved weights.",
-            "role": "impact",
-            "visual": "highlight",
-            "displayText": "does not confirm public access"
-          },
-          {
-            "text": "Would you try Microsoft researchers backdoored an, or wait for more proof?",
-            "evidenceQuote": "Microsoft Research published a study this week that should worry anyone deploying open-weight models: a technique they call \"Lazarus\" can plant a working backdoor in an AI agent by reprogramming fewer than 10 dormant neurons in the underlying LLM - no retraining, no poisoned data, just a small edit to the saved weights. How it works: every large model has neurons that almost never fire. Lazarus repurposes a handful of them as trigger detectors. The edited model behaves normally and passes standard safety evaluations - until the trigger appears. The trigger can be something as mundane as a date: in one demo, once the clock passed midnight into 2027, the agent, in the middle of an ordinary task, emitted a command that downloaded and ran attacker code. The numbers, from Microsoft's Nov 10 post: - Nemotron-Terminal-8B: 7 neurons out of 12,000+ in the final feed-forward layer, trigger worked 98.8% of the time - Qwen3.6-27B: 6 neurons, success 51-99.5% depending on setup - Gemma-4-31B-IT was also tested Two caveats worth stating plainly: the attack requires write access to the model's weights, so this is a model supply-chain risk, not something done through an API. And Microsoft says it has not observed any threat actors using the technique - this is researched risk, not a reported campaign. Microsoft also published mitigations: a detector that flagged 91.4% of edited checkpoints (9.7% false-positive rate), plus guidance on AI-powered weight scanning, red-teaming for anomalous weight changes, and cryptographic model signing with tamper-evident provenance. One detail that stood out to me: the core idea was discovered autonomously by Claude Code running Opus 4.5, in a March experiment that asked it to backdoor a model by hardwiring a few activations without training. It did - and that became a months-long study. If a handful of edited weights can hide a sleeper agent that passes every behavioral eval, is testing model behavior enough? Or does every checkpoint we deploy need weight-level provenance? Source: https://www.microsoft.com/en-us/research/blog/lazare-veni-foras-reprogramming-dormant-neurons-to-backdoor-ai-agents/ submitted by /u/winer666 [link] [comments]",
-            "role": "engagement",
-            "visual": "highlight",
-            "displayText": "Would you try Microsoft researchers backdoored"
-          }
-        ],
-        "narration": "Would you use Microsoft researchers backdoored an? How it works: every large model has neurons that almost never fire. Lazarus repurposes a handful of them as trigger detectors. The edited model behaves normally and passes standard safety evaluations - until the trigger appears. And Microsoft says it has not observed any threat actors using the technique - this is researched risk, not a reported campaign. This source excerpt does not confirm public access. Would you try Microsoft researchers backdoored an, or wait for more proof?"
       },
       "presentation": {
         "title": "Microsoft researchers backdoored an AI agent by",
@@ -2252,6 +2168,97 @@
         "publicUrl": "https://media.zernio.com/temp/1795033906770_790ac806763b513a_2026-11-18.mp4",
         "videoSha256": "e083d30d8354f5c1c4ac5f82271acbcd88b1c1fbfd373b98edfab60f1b762de1",
         "uploadedAt": "2026-11-18T20:31:48.225Z"
+      }
+    },
+    "2026-11-19": {
+      "story": {
+        "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.23509",
+        "rank": 6,
+        "title": "GRAFT: Execution-Guided Genetic Recombination for Agent Design",
+        "sourceUrl": "https://arxiv.org/abs/2611.23509",
+        "sourceName": "arXiv cs.AI",
+        "publishedAt": "2026-11-19T05:00:00.000Z",
+        "sourceExcerpt": "arXiv:2611.23509v1 Announce Type: new Abstract: Automated agent design searches for executable architectures that improve LLM-based agent performance, with evolutionary methods using language-model crossover to recombine promising mechanisms for task decomposition, model coordination, and verification. This search, however, is typically guided by aggregate fitness alone, which hides the instance-level successes and failures behind each score. We introduce Execution Guided Genetic Recombination for Agent Design (GRAFT), which uses aggregate fitness for selection and survival and parent-specific execution evidence to guide semantic crossover with integrated mutation. Its feedback harness reuses bounded samples of successful and failed runs from fitness evaluation, withholding reference answers and requiring no additional task executions. We evaluate GRAFT across six reasoning and programming settings using open-weight optimizer and executor models. It achieves a mean test accuracy of 82.0%, exceeding the strongest baseline by 9.8% points. Controlled ablations show that adding execution evidence improves test accuracy with initialization, search rules, repair policies, and evaluation budgets held fixed. Our results support the value of parent-specific execution evidence for evolutionary agent design.",
+        "summary": ""
+      },
+      "selectedAt": "2026-11-19T20:00:26.061Z",
+      "platforms": {
+        "youtube": {
+          "accountId": "6ac27146281ee799a37065e4",
+          "status": "prepared",
+          "idempotencyKey": "5b6605aa-ff57-4af6-966d-e72b1894261e"
+        }
+      },
+      "script": {
+        "version": 3,
+        "provider": "extractive",
+        "format": "source-fallback",
+        "angle": "capability",
+        "workingTitle": "GRAFT: Execution-Guided Genetic Recombination for",
+        "availability": "unknown",
+        "hookStyle": "question",
+        "sentences": [
+          {
+            "text": "Would you use GRAFT?",
+            "evidenceQuote": "We introduce Execution Guided Genetic Recombination for Agent Design (GRAFT), which uses aggregate fitness for selection and survival and parent-specific execution evidence to guide semantic crossover with integrated mutation.",
+            "role": "hook",
+            "visual": "example",
+            "displayText": "Would you use GRAFT?"
+          },
+          {
+            "text": "This search, however, is typically guided by aggregate fitness alone, which hides the instance-level successes and failures behind each score.",
+            "evidenceQuote": "This search, however, is typically guided by aggregate fitness alone, which hides the instance-level successes and failures behind each score.",
+            "role": "breakthrough",
+            "visual": "example",
+            "displayText": "This search, however, is typically guided by aggregate"
+          },
+          {
+            "text": "Its feedback harness reuses bounded samples of successful and failed runs from fitness evaluation, withholding reference answers and requiring no additional task executions.",
+            "evidenceQuote": "Its feedback harness reuses bounded samples of successful and failed runs from fitness evaluation, withholding reference answers and requiring no additional task executions.",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "Its feedback harness reuses bounded samples of successful"
+          },
+          {
+            "text": "Controlled ablations show that adding execution evidence improves test accuracy with initialization, search rules, repair policies, and evaluation budgets held fixed.",
+            "evidenceQuote": "Controlled ablations show that adding execution evidence improves test accuracy with initialization, search rules, repair policies, and evaluation budgets held fixed.",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "That adding execution evidence improves test accuracy"
+          },
+          {
+            "text": "This source excerpt does not confirm public access.",
+            "evidenceQuote": "arXiv:2611.23509v1 Announce Type: new Abstract: Automated agent design searches for executable architectures that improve LLM-based agent performance, with evolutionary methods using language-model crossover to recombine promising mechanisms for task decomposition, model coordination, and verification.",
+            "role": "impact",
+            "visual": "highlight",
+            "displayText": "does not confirm public access"
+          },
+          {
+            "text": "Would you try GRAFT, or wait for more proof?",
+            "evidenceQuote": "We introduce Execution Guided Genetic Recombination for Agent Design (GRAFT), which uses aggregate fitness for selection and survival and parent-specific execution evidence to guide semantic crossover with integrated mutation.",
+            "role": "engagement",
+            "visual": "highlight",
+            "displayText": "Would you try GRAFT"
+          }
+        ],
+        "narration": "Would you use GRAFT? This search, however, is typically guided by aggregate fitness alone, which hides the instance-level successes and failures behind each score. Its feedback harness reuses bounded samples of successful and failed runs from fitness evaluation, withholding reference answers and requiring no additional task executions. Controlled ablations show that adding execution evidence improves test accuracy with initialization, search rules, repair policies, and evaluation budgets held fixed. This source excerpt does not confirm public access. Would you try GRAFT, or wait for more proof?"
+      },
+      "presentation": {
+        "title": "GRAFT: Execution-Guided Genetic Recombination for",
+        "format": "source-fallback",
+        "angle": "capability",
+        "hookStyle": "question",
+        "availability": "unknown",
+        "duration": 39.1,
+        "wordCount": 85,
+        "scriptVersion": 3
+      },
+      "selectionReason": "A source-backed, measurable change in time, cost, or capability.",
+      "contentHash": "9fa25e003905ac375d1b9a392f2cfd06e57065b6740a18e22797d60a731e2b76",
+      "media": {
+        "publicUrl": "https://media.zernio.com/temp/1795118461145_f6ac1b3fb0797a15_2026-11-19.mp4",
+        "videoSha256": "a449e109dd02737234a7e4835c02dacd9e160cc3f94f74a0b1b59a1285830d1f",
+        "uploadedAt": "2026-11-19T20:01:02.635Z"
       }
     }
   }
