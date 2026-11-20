@@ -2218,8 +2218,32 @@
       "platforms": {
         "youtube": {
           "accountId": "6ac27146281ee799a37065e4",
-          "status": "prepared",
-          "idempotencyKey": "abf682ee-5278-4a1a-9ab4-090313ba490c"
+          "status": "submitting",
+          "idempotencyKey": "abf682ee-5278-4a1a-9ab4-090313ba490c",
+          "request": {
+            "content": "An LLM-Agentic Framework for Intelligent Work Order Management in Industrial Maintenance\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2611.25070\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-20\nAI-generated narration. #AI #AINews #Shorts",
+            "mediaItems": [
+              {
+                "type": "video",
+                "url": "https://media.zernio.com/temp/1795203626124_a3148bcbbb85e40d_2026-11-20.mp4"
+              }
+            ],
+            "platforms": [
+              {
+                "platform": "youtube",
+                "accountId": "6ac27146281ee799a37065e4",
+                "platformSpecificData": {
+                  "title": "LLM-Agentic Framework for Intelligent Work Order",
+                  "visibility": "public",
+                  "madeForKids": false,
+                  "containsSyntheticMedia": true,
+                  "categoryId": "28"
+                }
+              }
+            ],
+            "publishNow": true
+          },
+          "firstSubmittedAt": "2026-11-20T19:40:28.764Z"
         }
       },
       "script": {
