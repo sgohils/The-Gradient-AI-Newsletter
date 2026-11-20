@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "issueDate": "2026-11-20",
+  "issueUrl": "https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-20",
+  "content": "Today's AI briefing from The Gradient | 2026-11-20\n\n1. Introducing Tool Retrieval in the Gemini API\nGoogle announced the preview of Tool Retrieval in the Gemini API, enabling agents to dynamically fetch and use hundreds of external tools without embedding each one in the prompt.\n\n2. The Gemini app is now available on lower-memory Android devices.\nGoogle released an update to the Gemini app that supports lower‑memory Android devices, allowing users with as little as 2 GB of RAM to run Gemini Live and generate custom images directly on their phones.\n\n3. An LLM-Agentic Framework for Intelligent Work Order Management in Industrial Maintenance\nResearchers introduced CodeReAct, an LLM‑agentic system that interacts via natural language to extract knowledge, summarize asset status, and generate work‑order recommendations for industrial equipment.\n\nRead the full briefing and original sources:\nhttps://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-20\n\n#AI #ArtificialIntelligence #TheGradient",
+  "contentHash": "c1cb4b8cb37f2468df21532c09d01bf3a3c52616b69702aa400388784755a920",
+  "accountId": "6ac5a561b3c21905c0edcfba",
+  "organizationUrn": "urn:li:organization:136824048",
+  "idempotencyKey": "c285f6b0-186c-46b0-a2c1-9852f4d5a696",
+  "status": "submitting",
+  "firstSubmittedAt": "2026-11-20T19:36:43.845Z"
+}
