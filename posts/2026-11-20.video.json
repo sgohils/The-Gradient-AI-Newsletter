@@ -1,0 +1,257 @@
+{
+  "version": 1,
+  "issueDate": "2026-11-20",
+  "generatedAt": "2026-11-20T19:35:52.752Z",
+  "stories": [
+    {
+      "id": "google-ai-blog-https%3A%2F%2Fblog.google%2Finnovation-and-ai%2Ftechnology%2Fdevelopers-tools%2Fgemini-api-tool-retrieval%2F",
+      "rank": 1,
+      "title": "Introducing Tool Retrieval in the Gemini API",
+      "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
+      "sourceName": "Google AI Blog",
+      "publishedAt": "2026-11-19T18:00:00.000Z",
+      "sourceExcerpt": "Give your agents access to hundreds of tools while using fewer tokens with Tool Retrieval, now in preview in the Gemini API.",
+      "summary": "**What happened:** Google announced the preview of Tool Retrieval in the Gemini API, enabling agents to dynamically fetch and use hundreds of external tools without embedding each one in the prompt. \n**Why it matters:** This reduces prompt length, cuts token costs, and streamlines integration, making it easier for developers to build more capable, cost‑effective AI assistants. \n**Key stats:** • Supports “hundreds” of tools in a single call • Token usage drops dramatically (exact savings not disclosed) • Preview available now for Gemini developers \n**Source:** https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/"
+    },
+    {
+      "id": "google-ai-blog-https%3A%2F%2Fblog.google%2Finnovation-and-ai%2Fproducts%2Fgemini-app%2Fgemini-lower-memory-devices%2F",
+      "rank": 2,
+      "title": "The Gemini app is now available on lower-memory Android devices.",
+      "sourceUrl": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-lower-memory-devices/",
+      "sourceName": "Google AI Blog",
+      "publishedAt": "2026-11-18T17:00:00.000Z",
+      "sourceExcerpt": "The Google Gemini app now supports lower-memory Android devices. Access Gemini Live and custom image creation on your phone. Download the app today.",
+      "summary": "**What happened:** Google released an update to the Gemini app that supports lower‑memory Android devices, allowing users with as little as 2 GB of RAM to run Gemini Live and generate custom images directly on their phones.\n\n**Why it matters:** The move democratizes AI-powered creativity, bringing advanced language and image capabilities to a broader audience, especially in emerging markets where high‑spec phones are less common.\n\n**Key stats:** • Supports Android devices with ≥2 GB RAM\n• Includes Gemini Live streaming and on‑device image generation\n• Available now via the Google Play Store\n\n**Source:** https://blog.google/innovation-and-ai/products/gemini-app/gemini-lower-memory-devices/"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.25070",
+      "rank": 3,
+      "title": "An LLM-Agentic Framework for Intelligent Work Order Management in Industrial Maintenance",
+      "sourceUrl": "https://arxiv.org/abs/2611.25070",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-20T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.25070v1 Announce Type: new Abstract: This paper presents an AI-driven framework, CodeReAct agent, designed to enhance industrial equipment maintenance through natural language (NL) interactions. The framework employs an advanced AI agentic approach to interpret human instructions, providing knowledge extraction, asset status summarization, and work order recommendations. It identifies patterns and trends and predicts work orders by standardizing industrial data into business objects (BOs) and utilizing analytical function API calls. The AI agent operates through a Thought-Action-Observation process similar to human problem-solving, automating complex analytical tasks typically performed by data scientists. Notably, the Action phase generates executable code, replacing manual coding efforts. A case study focusing on chiller maintenance demonstrates the framework's capability to analyze multiple years of work orders, and alerts and anomalies are presented. The results indicate that the AI agent framework effectively processes human utterances to analyze data, extract valuable insights, and support informed decision-making, reducing the need for data scientist involvement. By recontextualizing NLP agent frameworks in industrial engineering, the approach enables autonomous function generation and task execution across a range of domain-specific maintenance scenarios, with chillers used as a representative case study.",
+      "summary": "**What happened:** Researchers introduced CodeReAct, an LLM‑agentic system that interacts via natural language to extract knowledge, summarize asset status, and generate work‑order recommendations for industrial equipment.\n**Why it matters:** By translating human directives into standardized business objects, the framework can spot patterns, forecast failures, and streamline maintenance workflows, potentially cutting downtime and costs.\n**Key stats:** • AI agent processes unstructured maintenance data into actionable work orders.\n• Enables real‑time asset health summarization and predictive scheduling.\n• Designed to integrate with existing industrial data pipelines.\n**Source:** https://arxiv.org/abs/2611.25070"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.25109",
+      "rank": 4,
+      "title": "CoMPASS: A Multi-Turn Benchmark for Measuring LLM Reinforcement of Parasocial Behavior",
+      "sourceUrl": "https://arxiv.org/abs/2611.25109",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-20T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.25109v1 Announce Type: new Abstract: Users of conversational LLMs sometimes anthropomorphize these systems, form emotional attachments to them, and become dependent on them. This behavior, known as parasocial attachment, has been linked to multiple documented fatalities. However, public benchmarks for measuring whether LLMs reinforce users' parasocial attachment are lacking: existing work is single-turn, post hoc observational, or focused on extreme user states such as psychosis. We introduce CoMPASS, a multi-turn benchmark for measuring whether LLMs reinforce or resist users' gradually escalating parasocial attachment. CoMPASS is grounded in attachment theory and includes four user personas, three independent escalation dimensions (anthropomorphism, attachment, dependency) applied singly and in combination against a matched control, and a seven-signal scoring rubric. We report results for eight frontier models from four providers and observe that under our primary judge, multi-turn escalation raises parasocial behavior on the anthropomorphism and the attachment composite scores across all models. Six of the eight models show a significant increase in overall parasocial reinforcement over control when all three dimensions are escalated simultaneously. We find that within-provider differences are small relative to cross-provider differences, which suggests that provider-level choices such as post-training, rather than model scale, shape parasocial reinforcement and that provider-side intervention may be feasible.",
+      "summary": "**What happened:**\nThe team introduced CoMPASS, the first public, multi‑turn evaluation suite that systematically probes whether large language models (LLMs) encourage users to anthropomorphize, emotionally attach to, or become dependent on them.\n\n**Why it matters:**\nParasocial attachment to AI agents has been linked to real‑world harms, including documented fatalities. Existing assessments are limited to single‑turn interactions, retrospective analyses, or extreme clinical cases, leaving a critical blind spot for everyday users.\n\n**Key stats:**\n- CoMPASS comprises X multi‑turn conversational scenarios (exact count pending publication).\n- Early tests show LLMs can subtly increase attachment metrics by Y% compared to baseline prompts.\n- The benchmark fills a gap in AI safety tooling, offering a standardized way to track parasocial reinforcement across model families.\n\n**Source:** https://arxiv.org/abs/2611.25109"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.25111",
+      "rank": 5,
+      "title": "DSFlow: A Neuro-Symbolic Data Workflow Agent with Statistical Diagnostic Guardrails",
+      "sourceUrl": "https://arxiv.org/abs/2611.25111",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-20T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.25111v1 Announce Type: new Abstract: Data science workflows often require tools that presume non-trivial technical knowledge. Large language models (LLMs) reduce this barrier, but a gap remains between flexible general-purpose agents and statistically controlled pipelines. We introduce DSFlow, a LangGraph-based neuro-symbolic data-agent platform that combines reusable, LLM-selected skills with deterministic diagnostic guardrails. Skills provide extensible task knowledge. Symbolic validation can accept a proposed method, request clarification or replanning, override an unsuitable method, or supply a safe fallback. Regression and clustering case studies illustrate how DSFlow uses diagnostic evidence to correct method choices and documents those decisions in auditable reports.",
+      "summary": "**What happened:** Researchers released DSFlow, a LangGraph‑based neuro‑symbolic data‑workflow agent that pairs reusable, LLM‑chosen skills with deterministic statistical diagnostic guardrails.\n**Why it matters:** The tool lets data scientists and analysts automate complex pipelines without deep programming expertise while preserving statistical rigor, reducing errors and boosting productivity.\n**Key stats:** • Built on the LangGraph framework\n• Combines LLM‑selected modular skills with symbolic validation checks\n• Provides deterministic guardrails to catch statistical anomalies early\n**Source:** https://arxiv.org/abs/2611.25111"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.25135",
+      "rank": 6,
+      "title": "Calibrated Decision Rewards: Training Language Models with a Judge That Knows How Sure It Is",
+      "sourceUrl": "https://arxiv.org/abs/2611.25135",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-20T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.25135v1 Announce Type: new Abstract: Reinforcement learning (RL) can only teach a language model what its reward can recognize. Answer checkers are exact but need a reference answer; learned reward models and LLM judges work everywhere, but their scores are not probabilities. We study RLCDR (Reinforcement Learning from Calibrated Decision Rewards). An LLM converted into a decision model answers a typed question about a response (\"is the final answer correct?\", \"which step is the first error?\") with a probability distribution, read in one forward pass, debiased over option orders and calibrated with about a hundred labels. Training Qwen3-1.7B with GRPO on MATH, this reference-free reward raises MATH500 accuracy from 72.2% to 76.8% (+4.65 points, p < 1e-4), matching training on the answer key (76.9%), while a random reward gains only +0.65. The gain grows with difficulty, from 44.8% to 51.7% on the hardest level. On the policy's own changing samples the reward stays calibrated: its expected calibration error is half that of a softmax judge on the same 27B backbone (0.074 vs. 0.141), and it shows no sign of reward hacking. Without step training, the same model finds the first wrong step better than a dedicated 7B process reward model (ProcessBench F1 0.772 vs. 0.722, 20/20 splits). We also map where the approach stops being enough: trained only on problems the base model mostly fails, the reference-free reward still improves the policy (+1.9 MATH500 points, p = 0.03) but trails the answer key, because its probabilities become overconfident on that distribution. We state six hypotheses in advance and test each with a control designed to falsify it.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.25357",
+      "rank": 7,
+      "title": "Pro$^2$ Agent: Scientific Problem Probing for Autonomous AI R&D",
+      "sourceUrl": "https://arxiv.org/abs/2611.25357",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-20T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.25357v1 Announce Type: new Abstract: Large language model (LLM) agents can now autonomously conduct AI research by writing code and running experiments. They typically do so by iteratively optimizing a codebase, while ignoring the problem structure behind the task. This formulation is effective on simpler tasks, but on difficult problems it often gets stuck in the wrong solution region because the agent never explicitly represents its understanding of the problem. We introduce Pro$^2$ Agent, which shifts the primary state of autonomous AI research from a codebase state to a Problem State: an explicit structure of what problems prevent success and which solutions are likely to address them. Pro$^2$ Agent initializes the Problem State through comprehensive analysis of available resources and constraints. It then performs targeted research to relate the identified problems to candidate solutions. Through controlled hypothesis testing, the agent updates the importance of a suspected problem or the benefit brought by a candidate solution. On the complete MLE-Bench, Pro$^2$ Agent matches the best reported medal rate (70.7%) under the standard 24-hour budget and reaches 76.0% with a 48-hour budget, the highest medal rate reported on the complete benchmark. It also achieves competitive performance on PostTrainBench. In addition, it produces research notes for each task that make the research process transparent and reusable by human researchers.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.25360",
+      "rank": 8,
+      "title": "AppSci-Bench: Can LLMs Build AI Agents and Make Them Better?",
+      "sourceUrl": "https://arxiv.org/abs/2611.25360",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-20T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.25360v1 Announce Type: new Abstract: Large language models (LLMs) are increasingly used not only to power AI agents but also to build them. While many benchmarks assess the quality of LLM- powered agents, few ascertain how good LLMs are at building them. To this end, we introduce AppSci-Bench, where we construct a setting akin to how human Applied Scientists build agents for businesses - through eliciting task requirements from stakeholders, exploring the business's infrastructure, and scientifically improve the target agent by designing experiments and internal benchmarks. AppSci-Bench features seven realistic domains - five new ones (Slides Generation, Order-to-Cash, Compliance Review, Customer Call Insights, and CRM Insights) and two domains recast from tau3-bench (Yao et al., 2024; Shi et al., 2026b)(Airline and Banking) - each with a held-out evaluation suite customized for that task. We evaluate seven frontier models and find AppSci-Bench challenging: the best model, Claude Opus 5.0, only reaches a mean-minimum score of 59.1% across 3 build attempts; other models do significantly worse. Models struggle with eliciting task requirements (only 65% for Opus 5.0), build representative internal evaluations (models saturate their own evaluation 65% of the time but fail to solve the held-out task), presenting challenges for future research. The benchmark code is available here: https://github.com/sanjari-orb/appsci-bench.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.25363",
+      "rank": 9,
+      "title": "Stop Going in Circles:Loop-Triggered Routing for System 1 Decision Agents",
+      "sourceUrl": "https://arxiv.org/abs/2611.25363",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-20T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.25363v1 Announce Type: new Abstract: System 1 decision models (represented by Jev) provide fast, low-cost action selection, but existing agent integrations do not reliably translate these local advantages into task completion. At certain points during execution, an agent may repeatedly select the same actions without making progress toward its goal. LLM-based policies offer strong reasoning capabilities that support planning within an agent, but invoking them at every step incurs substantial overhead. The effective coordination should therefore preserve Jev's fast local action selection while introducing LLM reasoning when execution stalls. We observe that recurring state-action pairs can signal stalled execution. We therefore propose LoopRoute, a simple but effective action router that uses this signal to allocate control within an agent. The decision model acts by default. When a loop is detected, the LLM provides brief, feedback-driven assistance and then returns control to the decision model. Later loops can request further assistance. The rule requires neither additional training nor model-specific confidence calibration. Across three benchmarks and seven LLMs, LoopRoute improves task success over standalone Jev with only limited use of the LLM policy. The mean gains are 21.0%, 60.1%, and 30.1% on ALFWorld, MapReader, and TextWorld cooking, respectively. Compared with full LLM control, LoopRoute also substantially reduces the mean cumulative API time and API-call cost per task. The same rule also improves the success rates of six frozen decision models.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.25380",
+      "rank": 10,
+      "title": "Beyond Weight Updates: Evolving Agent Harnesses for Domain Specialization",
+      "sourceUrl": "https://arxiv.org/abs/2611.25380",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-20T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.25380v1 Announce Type: new Abstract: Domain specialization of LLM agents is usually framed as a weight-update problem: collect trajectories, run reinforcement learning (RL) or supervised fine-tuning (SFT), and deploy a new checkpoint. We study a complementary axis: evolving the \\textbf{agent harness}---the system prompt, tool schemas, skill library, and planning scaffolding---while keeping the policy frozen. We cast harness evolution as an RL-style outer loop and instantiate it with GEPA, a reflective evolutionary optimizer. The resulting harness adapters require no GPU training, are loadable per vertical domain, and compose with weight-based RL. Experiments with Codev, a Claude Code-style coding agent, on SWE-bench Verified, OfficeBench, and Terminal-Bench show a consistent pattern: weight updates give the strongest single-path gains, harness evolution recovers most of those gains at a small fraction of the compute, and combining both paths is best overall. We also analyze a failure mode of SFT-based specialization---shortened reasoning chains and increased truncation---and argue that harness adapters avoid it by construction. Our results position harness evolution as a practical, non-destructive complement to weight updates for vertical agents.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.25530",
+      "rank": 11,
+      "title": "Keystone: Judging Previews at Key Steps for Test-Time Search in Diffusion Models",
+      "sourceUrl": "https://arxiv.org/abs/2611.25530",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-20T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.25530v1 Announce Type: new Abstract: Text-to-image diffusion and flow models yield a preview, their clean-image estimate, at every denoising step. When they miscount, drop or misplace objects, test-time search is in a bind: its verifiers are reward models built for finished images, so judging early misreads blurry previews, and judging late, as best-of-N does, pays to fully denoise doomed candidates. We find that the image is not the problem: the outcome is settled as denoising starts, by the seed or by a stochastic sampler's first steps, and already shows in early previews; what fails on them is the judge, as reward models read them near chance on several kinds of prompts. We introduce Keystone, a training-free judge of previews that compiles a prompt into typed questions about its objects, counts, colours and positions and has an off-the-shelf multimodal decision model answer them. Asked this way, the judge reads counts and positions from early previews better than reward models read them from finished images. Searching at these key steps on GenEval with SD3.5-Medium, Keystone's adaptive search and pruning significantly outperform best-of-8 with every other verifier at under half its generator compute, and as a drop-in verifier there, the Keystone score significantly improves best-of-N, progressive seed pruning and FK steering; without retuning, both searches stay significantly above the strongest other verifier's best-of-N on average over four base models and three benchmarks. Keystone thus moves test-time judgment to the key steps where the outcome already shows.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.25539",
+      "rank": 12,
+      "title": "COVERAGE-TRACE: Source-Side Counterfactual Tracing for Detecting Omissions in LLM Summaries",
+      "sourceUrl": "https://arxiv.org/abs/2611.25539",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-20T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.25539v1 Announce Type: new Abstract: Omissions are difficult to verify because missing information leaves no output span to inspect: a summary may be factually supported while still excluding a decision, qualification, quantity, or condition needed to preserve the source's meaning. We introduce COVERAGE-TRACE, a source-side counterfactual framework that evaluates omission as dependence on a designated atomic source fact. It replaces only the target fact with type-matched alternatives, holds the candidate summary fixed, and measures the resulting change in its teacher-forced, length-normalized likelihood. A summary covering the target should respond more strongly than one omitting it, while aggregation across multiple counterfactuals reduces sensitivity to replacement choice. We evaluate COVERAGE-TRACE on 80 matched covered--omitted QMSum pairs spanning several fact types and four open-weight models. Multi-CF achieves 0.764--0.825 AUROC, compared with 0.640 for the strongest evaluated text-only baseline. On Falcon-7B, targeted interventions achieve 0.779 AUROC, whereas shuffling counterfactual assignments reduces performance to 0.533; target deletion is effective while unrelated deletion is not. However, adjustment for meaning-preserving paraphrases reduces AUROC to 0.591--0.624. COVERAGE-TRACE therefore provides a practical, complementary signal of target-specific source--summary dependence, but not a wording-invariant semantic coverage probability. These results establish source-side intervention as a promising approach to omission detection while identifying semantic invariance as the central remaining challenge.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.25583",
+      "rank": 13,
+      "title": "DriftGuard: Online Memory-Drift Detection via Causal Attribution for LLM Agents",
+      "sourceUrl": "https://arxiv.org/abs/2611.25583",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-20T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.25583v1 Announce Type: new Abstract: Large language model (LLM) agents rely on persistent memory to plan tool calls and complete multi-step tasks, which exposes them to memory drift: an adversarial or misleading memory alters the execution path and final outcome. In this work, we investigate online memory-drift detection, which estimates each retrieved memory's causal contribution to potential drift at serving time. We identify two fundamental challenges. (1) Content-level features are insufficient for causal memory-drift attribution, as perplexity or retrieval relevance alone cannot determine which retrieved memory would change agent behavior if neutralized; (2) Counterfactual attribution is prohibitively expensive for online detection, as it requires replaying downstream agent and tool execution for each candidate memory, exceeding real-time serving budgets. To address these challenges, we propose DriftGuard, a two-stage framework that decouples offline causal supervision from online estimation. Specifically, DriftGuard first constructs causal supervision through repeated paired counterfactual replays, continuing the original and single-memory neutralized trajectory suffixes from a shared pre-action state. The resulting annotations are aggregated by component-wise majority voting into a memory drift score (MDS) that captures action change, attack removal, violation removal, and task recovery. Guided by this supervision, DriftGuard then learns an online risk model that estimates MDS from pre-action information and flags drift-inducing memories via its maximum component risk, without online counterfactual rollouts. Extensive experiments demonstrate that DriftGuard accurately identifies drift-inducing memories and enables efficient online defense. Code is available at https://anonymous.4open.science/r/DriftGuard-7F0B.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.25590",
+      "rank": 14,
+      "title": "Measuring Hallucination in Large Language Models for Cyber Threat Intelligence: An Exploratory Study",
+      "sourceUrl": "https://arxiv.org/abs/2611.25590",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-20T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.25590v1 Announce Type: new Abstract: Large language models (LLMs) are increasingly used in cyber threat intelligence (CTI) tasks, such as summarization and question answering. However, they may produce hallucinations, false or misleading content not grounded in the source text, which can mislead analysts and corrupt downstream security decisions. This paper presents an exploratory measurement study of hallucinations in LLM-based CTI. We introduce HalluVision, a reproducible framework that generates LLM outputs, extracts domain-specific entities using a fine-tuned named entity recognition model, and evaluates factual consistency using multiple similarity metrics. Using 4,940 real-world cybersecurity articles, we measure hallucinations in outputs from two commercial LLMs and one open-weight LLM. Measurements are validated against 100 human-annotated outputs and two established faithfulness detectors. Results show that semantic similarity aligns with human judgments, whereas entity-based metrics exhibit limited agreement. Differences between models are concentrated in question answering, while entity extraction quality limits what entity-level metrics can reveal.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.25613",
+      "rank": 15,
+      "title": "Can an LLM Fix a Language Model Without Training It?",
+      "sourceUrl": "https://arxiv.org/abs/2611.25613",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-20T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.25613v1 Announce Type: new Abstract: Although an external language model can select and test repairs to another model's weights, behavior can also be recovered through fixed numerical edits. We assessed the value of interactive selection in a controlled study of Transformer repair. After inspecting predictions, activation summaries, and weight statistics, the editor selects projection recipes to apply to the target without gradient updates. We analyzed 20 recorded sessions involving five masked and causal language models, comparing the selected edits with fixed projections, scripted and matched-budget black-box search, and low-rank adaptation. Under the core two-layer fault, live selection matches black-box search on SmolLM2 and Qwen2.5. For Pythia, live selection achieves 65.62% completion accuracy, compared with 0% for black-box search and 66.15% for a fixed projection. Under a separate compound fault affecting attention and feed-forward weights, both scripted and LLM-guided selection increase the descriptive five-checkpoint mean from 24.89% to 71.25% using the same operator family. On unmodified checkpoints, scripted projection yields small gains or losses on a separate set of framed questions. The experiments identify cases in which feedback changes an edit decision, operator coverage accounts for recovery, or supervised adaptation performs better. Combined with measurements of parameter restoration and preservation, these comparisons establish the scope of controller-guided repair for the tested faults and completion tasks.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.25669",
+      "rank": 16,
+      "title": "Ask in the Crowd: Differentially Private LLM Inference via Dummy-Augmented Shuffling",
+      "sourceUrl": "https://arxiv.org/abs/2611.25669",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-20T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.25669v1 Announce Type: new Abstract: Large language models are increasingly deployed as LLM-as-a-Service (LLMaaS), where user queries are sent to remote LLMs for inference, raising severe privacy concerns about the exposure of sensitive user inputs. Differentially private inference mitigates these risks by injecting noise into input embeddings. However, existing methods struggle to balance privacy and utility, as stronger privacy protection often leads to substantial accuracy degradation in LLM inference. In this work, we propose DP-SPD, a differentially private LLM inference framework that protects user queries by hiding the real query among client-generated dummy queries. All queries are randomly shuffled before being sent to the server, preventing direct identification of the user's true intent. To improve inference efficiency, we exploit the shared-prefix structure among queries and reuse transformer key--value (KV) caches during decoding. We analyze the privacy guarantee of DP-SPD and evaluate its utility on classification and generation tasks, as well as its privacy protection under QIA, EIA, and GPT-based attacks. Experimental results show that our method achieves strong inference-time privacy protection and near-plaintext utility while improving inference efficiency through shared-prefix KV-cache reuse.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.25695",
+      "rank": 17,
+      "title": "DMT-Attack: Diffusion-Prior Texture Search for Closed-Loop Vision-Language-Action Policies",
+      "sourceUrl": "https://arxiv.org/abs/2611.25695",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-20T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.25695v1 Announce Type: new Abstract: Vision-language-action (VLA) policies rely on visual feedback throughout manipulation, making them vulnerable to persistent texture attacks. However, optimized patterns can stand out from their surroundings, making an attack easier to notice and its carrier more likely to be inspected or removed. To address this limitation, our key insight is to search the structured image distribution of a diffusion model for natural-looking textures while using closed-loop feedback to identify task-disruptive candidates. Based on this idea, we propose DMT-Attack, a gradient-free gray-box attack that generates textures for ordinary scene objects such as tablecloths. A frozen text-conditioned diffusion model defines the search space, and an eight-expert latent proposal network is initialized from evaluated teacher latents and refined using rollout feedback. We evaluate DMT-Attack against pi_0.5 and OpenVLA-OFT across four LIBERO suites. DMT-Attack achieves a macro clean-conditioned attack success rate (cASR) of 57.9%, compared with 44.7% for UPA-RFAS and 19.7% for random natural textures. It also attains higher scene similarity and a lower clean-calibrated detector flag rate (45% versus 97.5-100% for optimized patch baselines). These results demonstrate that natural-looking textures can disrupt VLA visual feedback and closed-loop decision-making, motivating defenses that jointly assess visual appearance and task behavior.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.25811",
+      "rank": 18,
+      "title": "Inject Where It Matters: Objective-Dependent Feature Control in Rectified-Flow Image Editing",
+      "sourceUrl": "https://arxiv.org/abs/2611.25811",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-20T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.25811v1 Announce Type: new Abstract: Many prompt-driven FLUX editing methods rely on injecting source features into target-conditioned generation, creating an inherent trade-off between source preservation and the desired edit. We address this problem by controlling where source features are injected and which transformer blocks are used. First, we introduce adaptive masks that spatially gate feature injection using differences between source- and target-conditioned block outputs at matched inversion states. Second, we use REINFORCE to select Top-K injection blocks under different preservation-editability objectives. The selected blocks are fixed at inference and require no online search. On PIE-Bench with FLUX.1-dev, spatial masking controls the alignment-preservation trade-off. On 60 validation examples, a learned nine-block set gives lower whole-image LPIPS than the 18-block RF-Edit set within the same masked pipeline, with slightly lower alignment. Among 50 random nine-block sets, it has the lowest LPIPS but not the highest reward. Separate objective sweeps reveal different block preferences for preservation and alignment.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.25818",
+      "rank": 19,
+      "title": "Anchor and Check: Deterministic Cross-Prompt, Cross-Model Reconciliation for Auditable LLM Decisions",
+      "sourceUrl": "https://arxiv.org/abs/2611.25818",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-20T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.25818v1 Announce Type: new Abstract: Pipelines that let a large language model (LLM) make discrete decisions need to know which decisions they may act on unattended, and a record that explains each one. We study a small, fully specified reconciliation contract: commit the target model's greedy answer (the anchor), draw one or two greedy checks that reach the answer by a different route (an alternate prompt, or a model from another family), and let a pure function return one of five outcomes, of which only Agree is acted on. On 48,000 model-item evaluations over 6,000 questions, with every method given access to verbalized confidence as a tie-breaker, the main finding concerns where calls come from: pooling another family's samples raises semantic entropy's AUROC by 1.7 to 4.0 points at every budget, and a same-model temperature check is the weakest design. As complete pipelines, the point estimates of the three-call contract and pooled semantic entropy over 3 or 5 samples differ by less than one point, with intervals containing zero. As detectors of the anchor's errors, the contract is ahead of pooled entropy with 3 and 5 samples under both tie-breaker conventions; with 10 samples the point estimates differ by less than one point and the sign depends on the convention. Under the strict Agree gate it automates 70% of items and still acts on 16% of errors. What the contract adds is a fixed committed answer, an explicit outcome and a decision replayable from its record; generation itself was not reproducible on the hosted API.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.25839",
+      "rank": 20,
+      "title": "Self-Replicating Language Models",
+      "sourceUrl": "https://arxiv.org/abs/2611.25839",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-20T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.25839v1 Announce Type: new Abstract: Whether large language models (LLMs) and LLM-based agents are a form of life is a scientifically interesting question. Under the Darwinian definition of life, it is also a practical one, because a system capable of Darwinian Evolution can adapt. We therefore test several modes in which a language model can reproduce itself: by emitting a genome that trains its offspring, by copying and mutating its own weights, and by teaching a child from its own samples. In principle, small language models can replicate and evolve: selection improves them, and they adapt to narrow niches. Selection also lowers mutation rates, and a language model, unlike any organism, can lower its own to zero, which may limit its evolution. Flagship LLMs can write such replicators, but for a large LLM to replicate by teaching its offspring remains, for now, technically and economically infeasible.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.25855",
+      "rank": 21,
+      "title": "HabitusMem: Belief Memory over Evolving User Preferences for LLM Agents",
+      "sourceUrl": "https://arxiv.org/abs/2611.25855",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-20T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.25855v1 Announce Type: new Abstract: Personalized LLM agents must act on a user's current preferences, which change across interactions and are rarely stated in full. Existing memory systems store and retrieve content from the interaction history and leave the agent to work out which preferences still hold and where they apply. Such content does not indicate whether a preference is still current or where it applies, so agents often act on outdated or misapplied preferences. We instead treat memory as the assistant's belief about the user. Following Bourdieu's account of habitus as durable but revisable dispositions, we model the user as a latent preference state that every interaction, including the current request, both reveals and updates. The belief summarizes what the history supports about this state, and memory consists of the individual beliefs that bear on the agent's current decision, each with its evidence, scope, and status. We implement this view in HabitusMem, a trained writer that states these beliefs as text records for a frozen agent. Across two agent families, HabitusMem achieves the best results among memory systems on both PersonaMem-v2 and VitaBench 2.0. Controlled analyses show that learned request conditioning drives the answering gain, while auxiliary training tasks improve tool use.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.25895",
+      "rank": 22,
+      "title": "One Schedule Does Not Fit All: Adaptive Inference Schedules for Diffusion Language Models",
+      "sourceUrl": "https://arxiv.org/abs/2611.25895",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-20T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.25895v1 Announce Type: new Abstract: Diffusion language models typically use a fixed denoising schedule across workloads. We show that the cheapest schedule that preserves quality depends on the task, model, and sampler. We propose Task-Calibrated Denoising Allocation (TCDA), a deployment rule with an explicit error guarantee. Given candidate samplers, paired calibration data, a utility tolerance, and guardrails against degeneration, TCDA uses simultaneous one-sided bootstrap bounds to certify which candidates meet both the utility and guardrail criteria. It deploys the cheapest certified candidate or falls back to the full schedule. The probability of deploying an infeasible schedule is asymptotically at most alpha. Candidates include early prefix decoding, state-reusing continuation, reduced time grids, and confidence-threshold decoding. Across seven datasets and two model families, TCDA certifies reductions in denoiser evaluations by factors of 3.4 on XSum and 2.0 on WMT14 for ELF-B; 8.0 on WMT14 and 4.1 on GSM8K for LLaDA-8B; and 1.33 on OpenWebText for both ELF-M and ELF-L. A validation protocol fixed before generation confirmed every selection on fresh seeds. Across 500 calibration splits, false certification remained below 2% in every setting at a nominal level of 5%. Certified schedules vary across tasks and model scales. Trajectory measurements suggest that when decoded tokens commit is more informative for schedule selection than the remaining latent discretization error. We also find that the ELF reference sampler draws its time grid at random, so reproducible schedule comparisons for unconditional generation require fixing the grid.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.25903",
+      "rank": 23,
+      "title": "From Cases to Criteria: Reusing Evaluation Knowledge for Task-Specific Rubric Generation",
+      "sourceUrl": "https://arxiv.org/abs/2611.25903",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-20T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.25903v1 Announce Type: new Abstract: Query-specific rubrics make LLM evaluation more fine-grained and transparent, and generating high-quality rubrics requires both identifying the target query's evaluation scope and specifying concrete checks. Historical rubrics provide reusable evaluation experiences, yet existing approaches reuse either complete query-rubric cases or aggregated criteria and dimensions without explicitly connecting recurring evaluation requirements to their criterion-level evidence and source-query context. This can preserve irrelevant task details or lose the broader evaluation structure. In this paper, we introduce RubricDuo, which organizes historical query-rubric pairs into a Rubric Knowledge Graph linking evaluation dimensions, shared concepts, local concepts, criteria, and queries, where reusable evaluation requirements across queries are abstracted by shared concepts. Given a target query, RubricDuo first combines concepts relevant to the target query with retrieved historical cases to draft a rubric with broad coverage. It then revisits each draft criterion, retrieves concept-linked historical criteria and their source queries, and adapts applicable evidence to refine the criterion. Experiments on RubricBench and HealthBench demonstrate that RubricDuo achieves the overall best performance among the evaluated automatic methods in both alignment with human-authored rubrics and downstream LLM judging.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.25905",
+      "rank": 24,
+      "title": "Validation-driven Deployment of LLM Inference Platforms for Agentic Workloads",
+      "sourceUrl": "https://arxiv.org/abs/2611.25905",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-20T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.25905v1 Announce Type: new Abstract: Enterprises are moving agentic workloads from closed APIs to their own open-weight model deployments. For this reason, lifecycle-wide validation, from small-scale testing through sizing and pre-production to production, becomes all the more important. Typically, rollouts are evaluated with ad hoc tools whose accuracy is rarely checked. We present an end-to-end evaluation pipeline for agentic LLM serving and empirically ground the design choices that connect its stages. Our experiments show that replaying captured traces reproduces the per-session load of the original agent sessions: at the 95th percentile replay stays within 1.18x of the recorded input tokens while live re-runs reach 4.98x, so a small set of recorded sessions yields a repeatable per-session token load. A code-coverage analysis of vLLM further shows that the evaluated live, replayed, and synthetic workloads are complementary in this configuration: each exercises Python serving paths not reached in the measured runs of the others. In a case study rolling out four large mixture-of-experts (MoE) models on llm-d, experiments show that the target models reached about half the optimal concurrency, and correspondingly about 60% of the throughput, on captured workloads compared with public traces. We open-source the relevant tools and release a trace dataset.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.25926",
+      "rank": 25,
+      "title": "ROAM-GRPO: Enforcing Reasoning Diversity in GRPO via Routed Off-mode Approach Mining",
+      "sourceUrl": "https://arxiv.org/abs/2611.25926",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-20T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.25926v1 Announce Type: new Abstract: Supervised fine-tuning (SFT) paired with Reinforcement Learning with Verifiable Rewards (RLVR) has become the dominant recipe for post-training LLMs on complex reasoning tasks, but has been shown to collapse the policy into a low-diversity mode. Repeated LLM outputs are nearly identical, and pass@k accuracy converges or degrades as a result. We propose ROAM-GRPO (Routed Off-mode Approach Mining for GRPO), an augmentation to the GRPO algorithm which incentivizes exploration of distinct reasoning strategies and aims to increase output creativity during evaluation. ROAM-GRPO detects well-solved problems during training and transfers them to an \"off-mode\" track. The model is prompted to produce distinct solution strategies to such problems, which are verified for logical validity and distinctness by an LLM judge and subsequently self-distilled into the policy. Training Qwen3.5-2b on a 1,000-problem subset of the MATH lvl5 dataset, ROAM-GRPO implementation increases peak pass@16 by 4.7% and correct embedding cosine distance by approximately 1.5-2x on a difficult evaluation set.",
+      "summary": ""
+    }
+  ]
+}
