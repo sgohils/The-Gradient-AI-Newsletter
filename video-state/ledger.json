@@ -1476,7 +1476,7 @@
         "sourceUrl": "https://arxiv.org/abs/2611.14997",
         "sourceName": "arXiv cs.AI",
         "publishedAt": "2026-11-13T05:00:00.000Z",
-        "sourceExcerpt": "arXiv:2611.14997v1 Announce Type: new Abstract: When people face a hard problem, they often restate it in a clearer way before solving it. We study whether the same habit helps large language models by rewriting the statement of a problem. A legal rewrite must keep the meaning, the constraints, and the correct answer unchanged. We test three kinds of rewrites. Decomposition makes hidden subgoals explicit. Typed Reformulation casts the task into a more suitable solving frame. Concept Reduction removes surface detail and exposes the task structure. We evaluate them on eight math, logic, and code benchmarks with eight models, all under the same chain-of-thought solving prompt. The effect is large but depends on the problem type. An oracle that picks the best rewrite after the fact raises accuracy by +27.6% on average. Yet no single rewrite helps every problem, and a mismatched rewrite can hurt. Still, the effect follows clear patterns. Each kind of rewrite fits certain problem types. A simple fixed rule learned from one set of problems transfers part of the gain to new problems. It gains +11.0% on the problems it chooses to rewrite, while blind rewriting loses 5.6% on a similar share of problems. Rewriting is therefore not a universal way to solve problems. The question is when and how to rewrite.",
+        "sourceExcerpt": "",
         "summary": ""
       },
       "selectedAt": "2026-11-13T19:15:00.502Z",
@@ -1485,94 +1485,10 @@
           "accountId": "6ac27146281ee799a37065e4",
           "status": "published",
           "idempotencyKey": "019713dc-c49c-4d0d-98ca-822d93c7e6d5",
-          "request": {
-            "content": "Same Task, Different Statement: When and How Reformulation Helps LLM Problem Solving\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2611.14997\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-13\nAI-generated narration. #AI #AINews #Shorts",
-            "mediaItems": [
-              {
-                "type": "video",
-                "url": "https://media.zernio.com/temp/1794597340043_fabb56f96dd63ddf_2026-11-13.mp4"
-              }
-            ],
-            "platforms": [
-              {
-                "platform": "youtube",
-                "accountId": "6ac27146281ee799a37065e4",
-                "platformSpecificData": {
-                  "title": "Same Task, Different Statement: When and How",
-                  "visibility": "public",
-                  "madeForKids": false,
-                  "containsSyntheticMedia": true,
-                  "categoryId": "28"
-                }
-              }
-            ],
-            "publishNow": true
-          },
           "firstSubmittedAt": "2026-11-13T19:15:44.080Z",
           "postId": "6af761e2225fe6b49c8b306a",
           "postUrl": "https://www.youtube.com/watch?v=8wwO9_kqZCE"
         }
-      },
-      "script": {
-        "version": 3,
-        "provider": "extractive",
-        "format": "source-fallback",
-        "angle": "workflow",
-        "workingTitle": "Same Task, Different Statement: When and How",
-        "availability": "unknown",
-        "hookStyle": "question",
-        "sentences": [
-          {
-            "text": "Would you use Same Task, Different Statement?",
-            "evidenceQuote": "arXiv:2611.14997v1 Announce Type: new Abstract: When people face a hard problem, they often restate it in a clearer way before solving it. We study whether the same habit helps large language models by rewriting the statement of a problem. A legal rewrite must keep the meaning, the constraints, and the correct answer unchanged. We test three kinds of rewrites. Decomposition makes hidden subgoals explicit. Typed Reformulation casts the task into a more suitable solving frame. Concept Reduction removes surface detail and exposes the task structure. We evaluate them on eight math, logic, and code benchmarks with eight models, all under the same chain-of-thought solving prompt. The effect is large but depends on the problem type. An oracle that picks the best rewrite after the fact raises accuracy by +27.6% on average. Yet no single rewrite helps every problem, and a mismatched rewrite can hurt. Still, the effect follows clear patterns. Each kind of rewrite fits certain problem types. A simple fixed rule learned from one set of problems transfers part of the gain to new problems. It gains +11.0% on the problems it chooses to rewrite, while blind rewriting loses 5.6% on a similar share of problems. Rewriting is therefore not a universal way to solve problems. The question is when and how to rewrite.",
-            "role": "hook",
-            "visual": "example",
-            "displayText": "Would you use Same Task, Different Statement?"
-          },
-          {
-            "text": "arXiv:2611.14997v1 Announce Type: new Abstract: When people face a hard problem, they often restate it in a clearer way before solving it.",
-            "evidenceQuote": "arXiv:2611.14997v1 Announce Type: new Abstract: When people face a hard problem, they often restate it in a clearer way before solving it.",
-            "role": "breakthrough",
-            "visual": "example",
-            "displayText": "ArXiv:2611.14997v1 Announce Type: new Abstract: When people face"
-          },
-          {
-            "text": "arXiv cs.AI says it study whether the same habit helps large language models by rewriting the statement of a problem.",
-            "evidenceQuote": "We study whether the same habit helps large language models by rewriting the statement of a problem.",
-            "role": "breakthrough",
-            "visual": "process",
-            "displayText": "ArXiv cs.AI says it study whether the same"
-          },
-          {
-            "text": "Decomposition makes hidden subgoals explicit.",
-            "evidenceQuote": "Decomposition makes hidden subgoals explicit.",
-            "role": "breakthrough",
-            "visual": "process",
-            "displayText": "Decomposition makes hidden subgoals explicit"
-          },
-          {
-            "text": "Typed Reformulation casts the task into a more suitable solving frame.",
-            "evidenceQuote": "Typed Reformulation casts the task into a more suitable solving frame.",
-            "role": "breakthrough",
-            "visual": "process",
-            "displayText": "Typed Reformulation casts the task into a more"
-          },
-          {
-            "text": "This source excerpt does not confirm public access.",
-            "evidenceQuote": "arXiv:2611.14997v1 Announce Type: new Abstract: When people face a hard problem, they often restate it in a clearer way before solving it.",
-            "role": "impact",
-            "visual": "highlight",
-            "displayText": "does not confirm public access"
-          },
-          {
-            "text": "Would you try Same Task, Different Statement, or wait for more proof?",
-            "evidenceQuote": "arXiv:2611.14997v1 Announce Type: new Abstract: When people face a hard problem, they often restate it in a clearer way before solving it. We study whether the same habit helps large language models by rewriting the statement of a problem. A legal rewrite must keep the meaning, the constraints, and the correct answer unchanged. We test three kinds of rewrites. Decomposition makes hidden subgoals explicit. Typed Reformulation casts the task into a more suitable solving frame. Concept Reduction removes surface detail and exposes the task structure. We evaluate them on eight math, logic, and code benchmarks with eight models, all under the same chain-of-thought solving prompt. The effect is large but depends on the problem type. An oracle that picks the best rewrite after the fact raises accuracy by +27.6% on average. Yet no single rewrite helps every problem, and a mismatched rewrite can hurt. Still, the effect follows clear patterns. Each kind of rewrite fits certain problem types. A simple fixed rule learned from one set of problems transfers part of the gain to new problems. It gains +11.0% on the problems it chooses to rewrite, while blind rewriting loses 5.6% on a similar share of problems. Rewriting is therefore not a universal way to solve problems. The question is when and how to rewrite.",
-            "role": "engagement",
-            "visual": "highlight",
-            "displayText": "Would you try Same Task"
-          }
-        ],
-        "narration": "Would you use Same Task, Different Statement? arXiv:2611.14997v1 Announce Type: new Abstract: When people face a hard problem, they often restate it in a clearer way before solving it. arXiv cs.AI says it study whether the same habit helps large language models by rewriting the statement of a problem. Decomposition makes hidden subgoals explicit. Typed Reformulation casts the task into a more suitable solving frame. This source excerpt does not confirm public access. Would you try Same Task, Different Statement, or wait for more proof?"
       },
       "presentation": {
         "title": "Same Task, Different Statement: When and How",
@@ -2285,6 +2201,97 @@
         "publicUrl": "https://media.zernio.com/temp/1795118461145_f6ac1b3fb0797a15_2026-11-19.mp4",
         "videoSha256": "a449e109dd02737234a7e4835c02dacd9e160cc3f94f74a0b1b59a1285830d1f",
         "uploadedAt": "2026-11-19T20:01:02.635Z"
+      }
+    },
+    "2026-11-20": {
+      "story": {
+        "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.25070",
+        "rank": 3,
+        "title": "An LLM-Agentic Framework for Intelligent Work Order Management in Industrial Maintenance",
+        "sourceUrl": "https://arxiv.org/abs/2611.25070",
+        "sourceName": "arXiv cs.AI",
+        "publishedAt": "2026-11-20T05:00:00.000Z",
+        "sourceExcerpt": "arXiv:2611.25070v1 Announce Type: new Abstract: This paper presents an AI-driven framework, CodeReAct agent, designed to enhance industrial equipment maintenance through natural language (NL) interactions. The framework employs an advanced AI agentic approach to interpret human instructions, providing knowledge extraction, asset status summarization, and work order recommendations. It identifies patterns and trends and predicts work orders by standardizing industrial data into business objects (BOs) and utilizing analytical function API calls. The AI agent operates through a Thought-Action-Observation process similar to human problem-solving, automating complex analytical tasks typically performed by data scientists. Notably, the Action phase generates executable code, replacing manual coding efforts. A case study focusing on chiller maintenance demonstrates the framework's capability to analyze multiple years of work orders, and alerts and anomalies are presented. The results indicate that the AI agent framework effectively processes human utterances to analyze data, extract valuable insights, and support informed decision-making, reducing the need for data scientist involvement. By recontextualizing NLP agent frameworks in industrial engineering, the approach enables autonomous function generation and task execution across a range of domain-specific maintenance scenarios, with chillers used as a representative case study.",
+        "summary": "**What happened:** Researchers introduced CodeReAct, an LLM‑agentic system that interacts via natural language to extract knowledge, summarize asset status, and generate work‑order recommendations for industrial equipment.\n**Why it matters:** By translating human directives into standardized business objects, the framework can spot patterns, forecast failures, and streamline maintenance workflows, potentially cutting downtime and costs.\n**Key stats:** • AI agent processes unstructured maintenance data into actionable work orders.\n• Enables real‑time asset health summarization and predictive scheduling.\n• Designed to integrate with existing industrial data pipelines.\n**Source:** https://arxiv.org/abs/2611.25070"
+      },
+      "selectedAt": "2026-11-20T19:39:47.990Z",
+      "platforms": {
+        "youtube": {
+          "accountId": "6ac27146281ee799a37065e4",
+          "status": "prepared",
+          "idempotencyKey": "abf682ee-5278-4a1a-9ab4-090313ba490c"
+        }
+      },
+      "script": {
+        "version": 3,
+        "provider": "extractive",
+        "format": "source-fallback",
+        "angle": "workflow",
+        "workingTitle": "LLM-Agentic Framework for Intelligent Work Order",
+        "availability": "research",
+        "hookStyle": "question",
+        "sentences": [
+          {
+            "text": "Would you use LLM-Agentic Framework?",
+            "evidenceQuote": "arXiv:2611.25070v1 Announce Type: new Abstract: This paper presents an AI-driven framework, CodeReAct agent, designed to enhance industrial equipment maintenance through natural language (NL) interactions. The framework employs an advanced AI agentic approach to interpret human instructions, providing knowledge extraction, asset status summarization, and work order recommendations. It identifies patterns and trends and predicts work orders by standardizing industrial data into business objects (BOs) and utilizing analytical function API calls. The AI agent operates through a Thought-Action-Observation process similar to human problem-solving, automating complex analytical tasks typically performed by data scientists. Notably, the Action phase generates executable code, replacing manual coding efforts. A case study focusing on chiller maintenance demonstrates the framework's capability to analyze multiple years of work orders, and alerts and anomalies are presented. The results indicate that the AI agent framework effectively processes human utterances to analyze data, extract valuable insights, and support informed decision-making, reducing the need for data scientist involvement. By recontextualizing NLP agent frameworks in industrial engineering, the approach enables autonomous function generation and task execution across a range of domain-specific maintenance scenarios, with chillers used as a representative case study.",
+            "role": "hook",
+            "visual": "example",
+            "displayText": "Would you use LLM-Agentic Framework?"
+          },
+          {
+            "text": "Notably, the Action phase generates executable code, replacing manual coding efforts.",
+            "evidenceQuote": "Notably, the Action phase generates executable code, replacing manual coding efforts.",
+            "role": "breakthrough",
+            "visual": "example",
+            "displayText": "Notably, the Action phase generates executable code, replacing"
+          },
+          {
+            "text": "The framework employs an advanced AI agentic approach to interpret human instructions, providing knowledge extraction, asset status summarization, and work order recommendations.",
+            "evidenceQuote": "The framework employs an advanced AI agentic approach to interpret human instructions, providing knowledge extraction, asset status summarization, and work order recommendations.",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "The framework employs an advanced AI agentic approach"
+          },
+          {
+            "text": "The results indicate that the AI agent framework effectively processes human utterances to analyze data, extract valuable insights, and support informed decision-making, reducing the need for data scientist involvement.",
+            "evidenceQuote": "The results indicate that the AI agent framework effectively processes human utterances to analyze data, extract valuable insights, and support informed decision-making, reducing the need for data scientist involvement.",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "The results indicate that the AI agent framework"
+          },
+          {
+            "text": "This source excerpt does not confirm public access.",
+            "evidenceQuote": "arXiv:2611.25070v1 Announce Type: new Abstract: This paper presents an AI-driven framework, CodeReAct agent, designed to enhance industrial equipment maintenance through natural language (NL) interactions.",
+            "role": "impact",
+            "visual": "highlight",
+            "displayText": "does not confirm public access"
+          },
+          {
+            "text": "Would you try LLM-Agentic Framework, or wait for more proof?",
+            "evidenceQuote": "arXiv:2611.25070v1 Announce Type: new Abstract: This paper presents an AI-driven framework, CodeReAct agent, designed to enhance industrial equipment maintenance through natural language (NL) interactions. The framework employs an advanced AI agentic approach to interpret human instructions, providing knowledge extraction, asset status summarization, and work order recommendations. It identifies patterns and trends and predicts work orders by standardizing industrial data into business objects (BOs) and utilizing analytical function API calls. The AI agent operates through a Thought-Action-Observation process similar to human problem-solving, automating complex analytical tasks typically performed by data scientists. Notably, the Action phase generates executable code, replacing manual coding efforts. A case study focusing on chiller maintenance demonstrates the framework's capability to analyze multiple years of work orders, and alerts and anomalies are presented. The results indicate that the AI agent framework effectively processes human utterances to analyze data, extract valuable insights, and support informed decision-making, reducing the need for data scientist involvement. By recontextualizing NLP agent frameworks in industrial engineering, the approach enables autonomous function generation and task execution across a range of domain-specific maintenance scenarios, with chillers used as a representative case study.",
+            "role": "engagement",
+            "visual": "highlight",
+            "displayText": "Would you try LLM-Agentic Framework"
+          }
+        ],
+        "narration": "Would you use LLM-Agentic Framework? Notably, the Action phase generates executable code, replacing manual coding efforts. The framework employs an advanced AI agentic approach to interpret human instructions, providing knowledge extraction, asset status summarization, and work order recommendations. The results indicate that the AI agent framework effectively processes human utterances to analyze data, extract valuable insights, and support informed decision-making, reducing the need for data scientist involvement. This source excerpt does not confirm public access. Would you try LLM-Agentic Framework, or wait for more proof?"
+      },
+      "presentation": {
+        "title": "LLM-Agentic Framework for Intelligent Work Order",
+        "format": "source-fallback",
+        "angle": "workflow",
+        "hookStyle": "question",
+        "availability": "research",
+        "duration": 39.95,
+        "wordCount": 85,
+        "scriptVersion": 3
+      },
+      "selectionReason": "A concrete capability or everyday consequence in the original evidence.",
+      "contentHash": "2bd8f71f985846bec96611bbce494f3fc9e80e73ecc723bd56ae399c107edbc5",
+      "media": {
+        "publicUrl": "https://media.zernio.com/temp/1795203626124_a3148bcbbb85e40d_2026-11-20.mp4",
+        "videoSha256": "768604994637a194e97673977b87875ff913d5696c3c093c839ab2abfcaa8b97",
+        "uploadedAt": "2026-11-20T19:40:27.188Z"
       }
     }
   }
