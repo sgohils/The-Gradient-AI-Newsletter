@@ -2251,8 +2251,32 @@
       "platforms": {
         "youtube": {
           "accountId": "6ac27146281ee799a37065e4",
-          "status": "prepared",
-          "idempotencyKey": "aafe2453-4333-4a98-8230-e6642fa912c9"
+          "status": "submitting",
+          "idempotencyKey": "aafe2453-4333-4a98-8230-e6642fa912c9",
+          "request": {
+            "content": "Moving Generality from Model to Modeler: LLM Agents for PHM on a Deployment-Style Benchmark\n\nSource: arXiv cs.LG\nhttps://arxiv.org/abs/2611.25252\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-21\nAI-generated narration. #AI #AINews #Shorts",
+            "mediaItems": [
+              {
+                "type": "video",
+                "url": "https://media.zernio.com/temp/1795286686409_eeb4216f3772a368_2026-11-21.mp4"
+              }
+            ],
+            "platforms": [
+              {
+                "platform": "youtube",
+                "accountId": "6ac27146281ee799a37065e4",
+                "platformSpecificData": {
+                  "title": "Moving Generality from Model to Modeler: LLM",
+                  "visibility": "public",
+                  "madeForKids": false,
+                  "containsSyntheticMedia": true,
+                  "categoryId": "28"
+                }
+              }
+            ],
+            "publishNow": true
+          },
+          "firstSubmittedAt": "2026-11-21T18:44:49.032Z"
         }
       },
       "script": {
