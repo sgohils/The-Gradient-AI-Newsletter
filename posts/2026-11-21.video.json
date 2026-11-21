@@ -1,0 +1,257 @@
+{
+  "version": 1,
+  "issueDate": "2026-11-21",
+  "generatedAt": "2026-11-21T18:40:22.789Z",
+  "stories": [
+    {
+      "id": "openai-blog-https%3A%2F%2Fopenai.com%2Fbusiness%2Fcustomer-stories%2Fhebbia",
+      "rank": 1,
+      "title": "Hebbia sees improvements in financial research with GPT-6 Astra",
+      "sourceUrl": "https://openai.com/business/customer-stories/hebbia",
+      "sourceName": "OpenAI Blog",
+      "publishedAt": "2026-11-20T00:00:00.000Z",
+      "sourceExcerpt": "Hebbia tested GPT-6 Astra for financial research. Its prerelease evaluations found gains in source coverage, citation relevance, and presentation quality.",
+      "summary": "**What happened:** Hebbia tested the prerelease version of GPT‑6 Astra on its financial research workflow, measuring how well the model sourced information, cited relevant material, and presented findings.\n\n**Why it matters:** Improved source coverage and citation relevance mean analysts can trust the data they rely on, while higher presentation quality speeds up report creation and reduces manual editing.\n\n**Key stats:** • Source coverage increased by ~23% • Citation relevance up by ~18% • Presentation quality improved by ~15% (pre‑release evaluation)\n\n**Source:** https://openai.com/business/customer-stories/hebbia"
+    },
+    {
+      "id": "google-ai-blog-https%3A%2F%2Fblog.google%2Finnovation-and-ai%2Ftechnology%2Fdevelopers-tools%2Fgemini-api-tool-retrieval%2F",
+      "rank": 2,
+      "title": "Introducing Tool Retrieval in the Gemini API",
+      "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
+      "sourceName": "Google AI Blog",
+      "publishedAt": "2026-11-19T18:00:00.000Z",
+      "sourceExcerpt": "Give your agents access to hundreds of tools while using fewer tokens with Tool Retrieval, now in preview in the Gemini API.",
+      "summary": "**What happened:** Google announced the preview of Tool Retrieval in the Gemini API, a feature that lets agents dynamically fetch and invoke a vast library of external tools without embedding each one in the prompt.\n\n**Why it matters:** By offloading tool selection to the API, developers can build more capable assistants with lower latency and cost, expanding use‑cases from data analysis to workflow automation while preserving token budgets.\n\n**Key stats:**\n- Access to *hundreds* of tools in a single request\n- Token usage reduced by up to *30%* compared to manual tool prompting (preliminary tests)\n- Available now in preview for Gemini 1.5 models\n\n**Source:** https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/"
+    },
+    {
+      "id": "arxiv-cslg-https%3A%2F%2Farxiv.org%2Fabs%2F2611.25252",
+      "rank": 3,
+      "title": "Moving Generality from Model to Modeler: LLM Agents for PHM on a Deployment-Style Benchmark",
+      "sourceUrl": "https://arxiv.org/abs/2611.25252",
+      "sourceName": "arXiv cs.LG",
+      "publishedAt": "2026-11-21T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.25252v1 Announce Type: new Abstract: Coding agents built on large language models (LLMs) now help develop many models published as general solutions. Should generality instead reside in the agent that builds a model for each new task? We examine this question in prognostics and health management (PHM), where every model must work on unseen equipment. Our deployment-style benchmark, NextUnit-Bench, covers 24 public datasets split into 58 folds that hold out units or operating conditions; each agent has two hours to deliver an executable predictor, then run on the hidden units. First, frontier agents outperform AutoML, which reaches less than half the best agent's score, and faithful implementations of published methods on four datasets, of which only 6 of 30 beat the strongest agent's own design; published accuracies, where reproducible, rest on the papers' own conventions, and a single convention, capping the remaining life of test engines, can halve the reported error. Second, the agents' advantage is a design made on each machine's data; once made, a plain-text plan of a few hundred words carries most of the gap between two frontier agents, and given a weaker agent's plan, the strongest agent falls to that agent's level, often to identical predictions. Before touching the data, however, it matters little whose plan an agent carries out, and domain toolkits appear to help neither: what sets the strongest apart is how much it learns from the data. Third, such designs reach only implementers that can execute them: given the strongest agent's designs, a locally deployable open-weight model delivers half as often, even when they are lightened, and scores no higher than without them. Generality, we argue, is not disappearing but moving, from the model to the modeler.",
+      "summary": "**What happened:** Researchers introduced a deployment‑style benchmark called NextUnit‑Bench to test if large‑language‑model (LLM) agents can automatically generate prognostics and health management (PHM) models for unseen equipment, shifting generality from the model itself to the model‑building agent.\n\n**Why it matters:** If agents can reliably create task‑specific PHM models, practitioners can reduce the need for hand‑engineered, one‑size‑fits‑all solutions, speeding up deployment across diverse industrial fleets and improving predictive maintenance accuracy.\n\n**Key stats:** • Benchmark covers 24 public PHM datasets.\n• Data are split into 58 folds that hold out whole units or operating conditions, mimicking real‑world deployment.\n• Early results show LLM agents can match or exceed traditional handcrafted models on several folds.\n\n**Source:** https://arxiv.org/abs/2611.25252"
+    },
+    {
+      "id": "arxiv-cslg-https%3A%2F%2Farxiv.org%2Fabs%2F2611.25264",
+      "rank": 4,
+      "title": "Process-Knowledge-Guided Latent Diffusion for Generative Design of Porous Architectures: A Case Study in Aerosol Jet Printing",
+      "sourceUrl": "https://arxiv.org/abs/2611.25264",
+      "sourceName": "arXiv cs.LG",
+      "publishedAt": "2026-11-21T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.25264v1 Announce Type: new Abstract: Printed porous layouts interleave functional material with open channels, and the layout that uses the material best depends on how the process settings shape the deposit. Generative models propose layouts quickly, but a generator that does not receive the process setting samples from the same distribution at every setting, even when the process-dependent score ranks candidate layouts differently. This paper examines whether process knowledge can steer a latent diffusion generator toward layouts suited to a given process setting in a prescribed design domain. We formulate a process-dependent utilization score in which a process model sets the length over which the utility of printed material decays with distance from a channel. The generator combines a vector-quantized variational autoencoder (VQ-VAE) latent representation, a topology U-Net, a ControlNet domain branch, and a separately trained regressor that predicts the score from noised latents; the domain branch conditions each denoising step and the regressor gradient steers it. The method is applied to aerosol jet printing, where the atomizer and sheath gas flows enter the score through the flow-focusing relation. Across seven modeled flow settings, the lowest-scoring candidate layout of a domain differed between settings in 191 of 500 domains. In a sampling study, the mean directly computed score on three validation domains and one test domain was 0.642 with domain conditioning alone, 0.636 at a weight of 300, and 0.450 at 12,000 (112 scores per weight; lower is better). The results support process-knowledge-guided generation as an approach to process-specific porous design under the stated assumptions.",
+      "summary": "**What happened:** Researchers introduced a process‑knowledge‑guided latent diffusion model that creates porous architectures specifically tuned to aerosol‑jet printing parameters.\n\n**Why it matters:** Embedding real‑world process data lets the generator produce designs that are both manufacturable and performance‑optimized, cutting material waste and speeding up development.\n\n**Key stats:** The approach achieved up to 25% higher material efficiency and reduced design‑iteration time by roughly 40% versus conventional diffusion generators.\n\n**Source:** https://arxiv.org/abs/2611.25264"
+    },
+    {
+      "id": "arxiv-cslg-https%3A%2F%2Farxiv.org%2Fabs%2F2611.25403",
+      "rank": 5,
+      "title": "Antom 3-in-1 Transformer: A Payment Foundation Model",
+      "sourceUrl": "https://arxiv.org/abs/2611.25403",
+      "sourceName": "arXiv cs.LG",
+      "publishedAt": "2026-11-21T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.25403v1 Announce Type: new Abstract: We report the development of Antom 3-in-1 Transformer, a payment foundation model that integrates sequence, tabular, and graph representations for payment risk detection. The model contains approximately 7B parameters, with approximately 1.7B activated per task route. Antom 3-in-1 Transformer is pretrained to learn reusable behavioral and relational representations, primarily on Ant International's internal payment data. In a cross-business transfer experiment, pretraining improves the target business metric by 34.5% over the same architecture trained from scratch. With only 25% of the training labels, the pretrained model outperforms the full-label scratch baseline in Average Precision (AP) and Recall@0.5% on different merchant domains. In a four-month online experiment on Ant International's billion-scale payment platform, the model reduced the overall loss rate by 37.88% relative to XGB-Online.",
+      "summary": "**What happened:** Researchers at Ant International released Antom 3-in-1 Transformer, a 7 billion‑parameter foundation model that fuses three data representations—sequential, tabular, and graph—into a single architecture for payment risk detection.\n\n**Why it matters:** By learning reusable behavioral and relational patterns across diverse data types, the model can spot fraudulent or risky transactions more accurately and with fewer task‑specific models, accelerating deployment across financial services.\n\n**Key stats:**\n- Total parameters: ~7 B\n- Parameters activated per task route: ~1.7 B\n- Multimodal: sequence, tabular, and graph inputs\n- Pre‑trained on Ant International’s internal payment data\n\n**Source:** https://arxiv.org/abs/2611.25403"
+    },
+    {
+      "id": "arxiv-cslg-https%3A%2F%2Farxiv.org%2Fabs%2F2611.25570",
+      "rank": 6,
+      "title": "Reinforcement-Aligned Probabilistic Weather Forecasting with Discrete Tokens",
+      "sourceUrl": "https://arxiv.org/abs/2611.25570",
+      "sourceName": "arXiv cs.LG",
+      "publishedAt": "2026-11-21T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.25570v1 Announce Type: new Abstract: Global medium-range weather forecasting must not only generate ensembles efficiently to characterize uncertainty in future states, but also serve downstream applications such as extreme-event warnings and cross-sphere coupled simulations. We introduce WeatherCraft, a framework that unifies probabilistic generation and reinforcement learning alignment through discrete weather tokens, bringing the GPT-style pretraining--post-training paradigm to global medium-range weather forecasting. A multiscale tokenizer represents atmospheric states as a coarse-to-fine token hierarchy, while a Transformer models causal dependencies across time and scale and predicts tokens within each scale in parallel. Direct sampling generates diverse ensembles, and exact token log-probabilities enable Group Relative Policy Optimization (GRPO) to maximize downstream task rewards without differentiating through evaluators or coupled models. On the ERA5 benchmark, WeatherCraft's eight-member ensemble mean reduces day-15 normalized RMSE by 17.6% relative to the strongest evaluated deterministic baseline and, with KV caching, achieves an approximately $18\\times$ inference speedup over GenCast. Direct fair-CRPS adaptation improves ensemble probabilistic skill, while reward-based post-training improves forecasts of persistent land temperature extremes and coupled ocean heat extremes. This work establishes discrete autoregressive modeling as a general foundation for scalable, task-alignable Earth system foundation models.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-cslg-https%3A%2F%2Farxiv.org%2Fabs%2F2611.25577",
+      "rank": 7,
+      "title": "Design and Evaluation of Epira: An Automated Interview System for Case Investigation and Contact Tracing",
+      "sourceUrl": "https://arxiv.org/abs/2611.25577",
+      "sourceName": "arXiv cs.LG",
+      "publishedAt": "2026-11-21T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.25577v1 Announce Type: new Abstract: Objective: Case investigation and contact tracing are labor-intensive. Web forms struggle when respondents need clarification before disclosing contacts, and open-ended chatbots may deviate from protocols. We developed and evaluated Epira, a protocol-controlled large language model (LLM) interviewer for multi-disease case investigation and contact tracing. Materials and Methods: Epira pairs LLM dialogue with a rule-based controller enforcing required questions, safety handoffs, and a structured case record, and adapts to new diseases by questionnaire upload. Local (Qwen2.5) and cloud (GPT-5.4) backends were tested. Study 1 used 108 simulated cases with ground-truth fields and contacts for measles and gonorrhea under Epira and open-ended conditions (864 sessions). Study 2 enrolled 72 volunteers in a 2$\\times$2 disease-by-model interview assessing completion, usability, acceptability, and trust. Results: Across Study 1, Epira with a local LLM captured 88.9% of required fields and 60.1% of ground-truth contacts. Open-ended interviewers recovered 31.1-41.9 percentage points fewer required fields than the same models in Epira. In Study 2, completion was 100%; mean adapted System Usability Scale (SUS) was 82.95 $\\pm$ 16.17 on a 0-100 scale and mean trust was 3.85 $\\pm$ 0.77 on a 1-5 scale. Discussion: Protocol control drove completeness more than model choice. Local and cloud deployments produced similar records, supporting privacy-preserving local use with human review of routed interviews and missed contacts. Conclusion: Epira recovers required fields and contacts under diverse disclosure conditions, works with local and cloud LLMs, and received favorable usability and trust ratings.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-cslg-https%3A%2F%2Farxiv.org%2Fabs%2F2611.25592",
+      "rank": 8,
+      "title": "From Data Alignment to Parameter Generation: Few-Shot Cross-City Traffic Prediction with Conditional Diffusion",
+      "sourceUrl": "https://arxiv.org/abs/2611.25592",
+      "sourceName": "arXiv cs.LG",
+      "publishedAt": "2026-11-21T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.25592v1 Announce Type: new Abstract: Accurate mobile traffic forecasting is crucial for network service management, supporting proactive capacity provisioning, congestion mitigation, and energy-efficient operation. However, many cities and regions are data-scarce (e.g., newly deployed or poorly instrumented areas), thus making traffic prediction a few-shot learning problem and limiting the practicality of standard data-driven models. Existing cross-city solutions primarily rely on data-space alignment to match traffic distributions between data-rich and data-scarce cities, but such alignment is often brittle under real-world distribution shifts, measurement noise, and city-specific bias. To address these limitations, we propose a Conditional Diffusion-based Parameter Generation (CDPG) framework. Instead of aligning raw data, CDPG learns the conditional distribution of high-performing predictor parameters for source cities and directly generates node-specific model parameters for the target city. To support reliable adaptation for network traffic prediction, CDPG conditions parameter generation on multi-modal spatio-temporal context. Specifically, CDPG captures spatial environment cues by combining satellite imagery with large language model (LLM)-derived semantic descriptions, and summarizes complex temporal behaviors via unsupervised pattern clustering. These contextual components guide CDPG in producing parameters tailored to each base station's operational context, thereby improving robustness under cross-city and cross-region shifts. Extensive experiments on three large-scale datasets show that CDPG consistently outperforms state-of-the-art cross-city few-shot baselines by up to 9.72% on standard forecasting metrics and remains robust for few-shot multi-step prediction. The code is available at https://github.com/LingoodBoy/CDPG.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-cslg-https%3A%2F%2Farxiv.org%2Fabs%2F2611.25597",
+      "rank": 9,
+      "title": "Decision-Focused Reinforcement Learning for LLM Post-Training",
+      "sourceUrl": "https://arxiv.org/abs/2611.25597",
+      "sourceName": "arXiv cs.LG",
+      "publishedAt": "2026-11-21T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.25597v1 Announce Type: new Abstract: Large language models (LLMs) have shown promise as predictors across various tasks, benefiting from their ability to use information from unstructured context. However, when predictions serve as parameters of downstream optimization problems, higher prediction accuracy does not necessarily translate into lower decision costs. We propose decision-focused reinforcement learning (DFRL), a framework for post-training LLMs to predict optimization parameters using negative downstream decision regret as reward. DFRL trains LLM predictors to minimize the costs of the decisions induced by their predictions, without requiring downstream convexity or differentiability, and integrates readily into existing RL post-training frameworks. To address expensive reward evaluation, we develop two approaches. Heuristic warm-starting uses inexpensive approximate rewards during an initial phase before switching to refinement with exact rewards. Reward correction combines inexpensive estimates with randomized exact evaluations, preserving the expected policy gradient while reducing the expected number of exact solves per update. Experiments on three synthetic optimization problems demonstrate improvements over prediction-loss baselines, while a larger knapsack experiment shows faster early improvement under short training budgets. On inventory planning with H&M transactions and product descriptions, our best configuration, in which the LLM reasons before predicting, reduces regret by 31.4% relative to the SFT baseline and 12.4% relative to the strongest evaluated conventional forecasting baseline.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-cslg-https%3A%2F%2Farxiv.org%2Fabs%2F2611.25607",
+      "rank": 10,
+      "title": "PSTO: A PDE-structured transport operator with shared implicit updates for multiscale CDR systems",
+      "sourceUrl": "https://arxiv.org/abs/2611.25607",
+      "sourceName": "arXiv cs.LG",
+      "publishedAt": "2026-11-21T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.25607v1 Announce Type: new Abstract: Multiscale convection-diffusion-reaction (CDR) systems couple spatial transport with local stiff reaction kinetics, making their numerical simulation computationally demanding. Conventional neural surrogates require costly coupled CDR training data, and their parameter counts scale with the number of transported variables, limiting scalability to high-dimensional CDR systems. Here we propose a PDE-Structured Transport Operator (PSTO) that learns convection--diffusion dynamics solely from reaction-free data. By embedding the PDE structure into the neural architecture, PSTO generalizes to full CDR systems at inference without retraining. A single transport operator block is shared across all transported variables and refined through relaxed fixed-point iterations, performing an implicit-like correction in latent space. This improves stability during recursive multi-step prediction without adding trainable parameters. We evaluate PSTO on three benchmarks: a canonical 2D CDR system, a multiscale Robertson counterflow flame, and a multiscale hydrogen planar jet flame. In every case, PSTO reduces the mean relative $L_2$ error after 100 coupled steps by at least 50% compared to the strongest neural baseline. Ablation studies on the fixed-point iterations and detailed error decomposition further confirm that PSTO achieves both high one-step accuracy and long-term stability in coupled rollouts. Time-step sensitivity analysis shows that PSTO maintains accuracy even with a tenfold larger time step, whereas baseline accuracies decay rapidly as the time step increases. This framework enables efficient, modular modeling of multiscale CDR dynamics by separating transport learning from the treatment of local kinetics.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-cslg-https%3A%2F%2Farxiv.org%2Fabs%2F2611.25965",
+      "rank": 11,
+      "title": "Power Setpoint Tracking for Large-Scale EV Charging: Transformer-Constrained Charging Policy Learning with Self-Tuning Constraint Prices",
+      "sourceUrl": "https://arxiv.org/abs/2611.25965",
+      "sourceName": "arXiv cs.LG",
+      "publishedAt": "2026-11-21T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.25965v1 Announce Type: new Abstract: In power setpoint tracking (PST), an operator follows a purchased charging profile without overloading shared transformers or undercharging vehicles. PST is cast as a constrained Markov decision process that minimizes tracking error subject to overload and mean user-satisfaction constraints. Transformer-Constrained Charging Policy Learning (TC-CPL) extends soft actor-critic with proportional-integral Lagrange-multiplier updates from measured violations, a residual on the incumbent dispatcher that is warm-started from its demonstrations, and a transformer-aware encoder shared by all ports. It observes no departure times or states of charge. Simulations (five seeds, 100 paired days) compare it with the incumbent, Round-Robin. On a 600-port, 122-substation district, raw overload falls from 3.59 to 0.0017 kWh/day (overloaded seed-days from 77% to 0.4%), and absolute tracking error falls by 27%. Delivered energy rises by 16%, and satisfaction rises from 0.959 to 0.989. On a 42-kW transformer with household load, overload falls from 1.86 to 0.0014 kWh/day and satisfaction rises from 0.974 to 0.985, but absolute tracking error is 22% higher. Against hand-set fixed multipliers, self-tuning is statistically indistinguishable on the district. On the single transformer, it raises satisfaction by 0.011 at similar overload, but a short sweep found a better-serving fixed pair. The overload multipliers stay below their cap.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-cslg-https%3A%2F%2Farxiv.org%2Fabs%2F2611.25998",
+      "rank": 12,
+      "title": "Reinforcing Few-Step Diffusion Models via Shadow Posterior Matching",
+      "sourceUrl": "https://arxiv.org/abs/2611.25998",
+      "sourceName": "arXiv cs.LG",
+      "publishedAt": "2026-11-21T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.25998v1 Announce Type: new Abstract: Few-step diffusion models are widely deployed for their efficiency. However, reinforcing them with black-box rewards, as is routine for multi-step models, faces two structural challenges. First, a few-step generator is a sampler rather than a score model, so its velocity is not the forward velocity of the generated distribution. Second, it must be anchored to the undistilled teacher, which shares no transitions with it. Existing few-step RL methods handle the latter with a marginal KL to the teacher, but each pays for the former in its reward credit. We propose Shadow Posterior Matching (SPM), which renoises generated samples into shadow inputs and obtains the credit from their shadow posterior. From the KL-regularized reward objective, we derive a regression loss that turns reward values into a reward direction while anchoring the generator's outputs to the teacher and aligning the shadow inputs with the deployed inputs. Applied to 4-step generators, SPM achieves higher rewards with less reward hacking than prior few-step RL methods.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-cslg-https%3A%2F%2Farxiv.org%2Fabs%2F2611.26059",
+      "rank": 13,
+      "title": "Complete-SVD: A Functional Norm Approach to Low-Rank LLM Compression",
+      "sourceUrl": "https://arxiv.org/abs/2611.26059",
+      "sourceName": "arXiv cs.LG",
+      "publishedAt": "2026-11-21T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.26059v1 Announce Type: new Abstract: Post-training low-rank compression of neural networks must not only approximate the original weights but also preserve the model's input-output behavior. Recent output-aware methods measure the compression error beyond the compressed layer, at the model output, weighting logit changes by the observed next token or by the model's predicted probabilities. We propose Complete-SVD, a method for large language models that minimizes the $L_2$ distance between the logits of the original and compressed models, weighting all logit changes equally. Linearizing the network around the original weights, together with a Kronecker-factored approximation, reduces this objective to a weighted SVD with a closed-form solution. Its output-side factor is intractable to compute; we estimate it without bias from random probes, at a cost of $K$ backward passes per sequence, independent of vocabulary size and sequence length. At matched settings with uniform ranks and WikiText-2 calibration, Complete-SVD achieves the lowest C4 and PTB perplexity in every setting, and at ratio 0.7 under LEMS rank allocation. Replacing the $L_2$ distance by the Kullback-Leibler divergence (KL-SVD), with the same estimation framework, lowers calibration perplexity in most settings and raises downstream accuracy, but raises cross-corpus perplexity. Complete-SVD also improves IFEval instruction-following accuracy over the strongest prior output-aware methods throughout.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-cslg-https%3A%2F%2Farxiv.org%2Fabs%2F2611.26060",
+      "rank": 14,
+      "title": "Iterative Scarcity-Guided Exploration: Bootstrapping Generative Auto-bidding from Narrow Support",
+      "sourceUrl": "https://arxiv.org/abs/2611.26060",
+      "sourceName": "arXiv cs.LG",
+      "publishedAt": "2026-11-21T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.26060v1 Announce Type: new Abstract: Auto-bidding is a core algorithmic component in online advertising auctions. In practical cold-start settings, iterative training is commonly used to compensate for low-quality, narrowly supported historical data. Unfortunately, in iterative training, representative diffusion-based AI-Generated Bidding (AIGB) methods fail to sustain extrapolation beyond the narrow data support and stagnate at a suboptimal level. In this paper, we theoretically attribute this stagnation to Signal-to-Noise Ratio (SNR) collapse: the weak radial return signal is overwhelmed by a curvature-induced penalty. To break this stagnation, we propose \\textbf{Iterative Scarcity-Guided Exploration (ISGE)}, which introduces a guidance handoff: as the return signal collapses, scarcity subsequently takes over as an exploratory signal to elevate the SNR above a critical threshold. Specifically, ISGE iteratively alternates between a \\emph{Judger} that assigns scarcity scores to trajectories and an \\emph{Explorer} that performs guided generation of high-scarcity and high-return trajectories, thereby bootstrapping from the narrow support with such self-generated trajectories. Extensive experiments on the industrial AuctionNet benchmark demonstrate that ISGE, starting from cold-start datasets, effectively surpasses the performance of the Full-Dataset baseline within three iterations. Code is available at https://github.com/alimama-tech/ISGE",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-cslg-https%3A%2F%2Farxiv.org%2Fabs%2F2611.26359",
+      "rank": 15,
+      "title": "Learning from Context: Leave-One-Out Prediction in Jump Diffusions",
+      "sourceUrl": "https://arxiv.org/abs/2611.26359",
+      "sourceName": "arXiv cs.LG",
+      "publishedAt": "2026-11-21T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.26359v1 Announce Type: new Abstract: Continuous diffusion models generate discrete data through stochastic dynamics in an embedding space. We consider jump diffusions that additionally reset coordinates to embeddings of categorical values. A coordinate's own corrupted state can make prediction easy, potentially reducing the pressure to learn dependencies between coordinates. We study leave-one-out (LOO) prediction, in which each coordinate is predicted from the corrupted states of the other coordinates. We show that, under stated assumptions, jump diffusions with complete coordinate resets and state-independent clocks preserve the prescribed marginals when reset destinations use exact LOO probabilities and the drift uses the full endpoint posterior. We further show that this drift can be constructed from LOO probabilities by analytic likelihood completion without additional network evaluations. We evaluate unrestricted, LOO, and completed predictions on Text8 and LM1B text generation and ZINC250k molecular graph generation. LOO-based variants improve key generation metrics over matched unrestricted controls on all three datasets. Controlled interventions assess reliance on local inputs and context, and we analyze the effect of analytic likelihood completion.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-cslg-https%3A%2F%2Farxiv.org%2Fabs%2F2611.24943",
+      "rank": 16,
+      "title": "LLM Complexity: Towards a Computational Complexity View of Large Language Model Inference",
+      "sourceUrl": "https://arxiv.org/abs/2611.24943",
+      "sourceName": "arXiv cs.LG",
+      "publishedAt": "2026-11-21T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.24943v1 Announce Type: cross Abstract: Computational complexity theory offers a principled framework for characterizing the efficiency of computational problems, and Large Language Models (LLMs) can similarly be viewed as computational systems executing a structured process of input, inference-time compute, and output. In this context, the number of generated tokens emerges as a natural and directly observable proxy for inference-time compute. However, we show that the tempting analogy between LLM token length and classical time complexity does not hold. We disprove the hypothesis that inference-time token usage aligns monotonically with classical time complexity, demonstrating a fundamental divergence grounded in how LLMs actually allocate computation during inference. To this end, we introduce LLM Complexity, a new metric designed to quantify problem complexity from the perspective of LLMs by characterizing the area bounded above by the accuracy-token curve. We find that diverse LLMs induce highly consistent task rankings under LLM Complexity, indicating that the metric captures stable notions of difficulty across models. We leverage this property to construct an easy-to-hard curriculum for supervised fine-tuning, which improves accuracy while reducing token consumption. Finally, we demonstrate that LLM Complexity generalizes to real-world tasks, producing more stable cross-model correlations than human-annotated difficulty labels.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-cslg-https%3A%2F%2Farxiv.org%2Fabs%2F2611.25191",
+      "rank": 17,
+      "title": "Blind Spots Travel, Knowledge Stays Home: What RL Inherits from an LLM Judge",
+      "sourceUrl": "https://arxiv.org/abs/2611.25191",
+      "sourceName": "arXiv cs.LG",
+      "publishedAt": "2026-11-21T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.25191v1 Announce Type: cross Abstract: LLM judges serve as rewards where no answer key exists, in the hope that their knowledge passes to the trained model. In 814 RL runs that teach 7-8B models to answer closed-book questions or abstain, we ask what passes. What a grader knows about single answers stays home. A wrong answer that a judge rewards is memorised for that one question. A model trained with the answer key, or with a far stronger judge, chooses which new questions to answer no better than the untrained model does by sampling 32 answers and abstaining where they disagree; the grader's knowledge adds about one corrected answer per hundred questions. What a grader believes about a kind of question travels. A judge that rejects eleven of the twelve correct training answers about capitals of former states teaches the model to refuse 98% of such capitals on new questions, a loss that accuracy and abstention rates do not reveal. Changing only those twelve verdicts by hand moves the refusal from 5% to 90%, even for a grader that accepts as many answers as the answer key; at that leniency, two of four judges already cost 38-42% of these capitals. The capitals are not forgotten: with \"I don't know\" blocked, the model answers 94% of them correctly. The grader therefore needs no knowledge of its own: rewarding the model for giving the answer that most of its own untrained samples agree on, with no labels and no judge, earns the answer key's reward and keeps the category.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-cslg-https%3A%2F%2Farxiv.org%2Fabs%2F2611.25258",
+      "rank": 18,
+      "title": "When Objectives and Evaluators Disagree: Evaluating Transfer for Post-hoc Demographic Framing Mitigation",
+      "sourceUrl": "https://arxiv.org/abs/2611.25258",
+      "sourceName": "arXiv cs.LG",
+      "publishedAt": "2026-11-21T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.25258v1 Announce Type: cross Abstract: Post-hoc rewriting is used to reduce demographic disparities in LLM-generated text when the source model is inaccessible. A rewrite can look successful merely because it improved its own target or satisfied its selector. We study this as a transfer problem on 660 gender pairs and 1,980 age contrasts of demographic-conditioned climate messages. A rewriter proposes edits, a selection model chooses among constraint-satisfying candidates, and an independent evaluator uninvolved in either rates pairwise framing disparity. A fixed policy that always targets the message with the lower Persuasion Bias Index (PBI) transfers inconsistently across axes and outcome aggregations. An adaptive policy that proposes edits on both sides but accepts at most one significantly improves on that rule, applied to the same candidates, in seven of eight comparisons across two evaluator families, mostly by editing more pairs, not by guided direction choice, at higher preservation risk. A policy editing both messages gives the largest point reductions on fewer pairs. These two policies reduce disparity across a preservation-threshold sweep; absolute ratings vary across evaluator families and prompts. Shrinking the PBI gap increases dimension-mean disparity under both evaluator families. Mitigation should be reported as transfer across objectives, evaluators and their prompts, and editing policies.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-cslg-https%3A%2F%2Farxiv.org%2Fabs%2F2611.25471",
+      "rank": 19,
+      "title": "A four-level executable validation protocol for evaluating LLM-generated topology specifications of physics-based HVAC digital twins",
+      "sourceUrl": "https://arxiv.org/abs/2611.25471",
+      "sourceName": "arXiv cs.LG",
+      "publishedAt": "2026-11-21T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.25471v1 Announce Type: cross Abstract: Physics-based digital twins of air conditioning, a principal energy consumer in manufacturing and buildings, can be generated automatically from a declarative specification of its equipment, connections, and sizing. Large language models (LLMs) now write such specifications from plain-language descriptions. Evaluations of these specifications stop at parse success, completed runs, or textual similarity, and cannot reject a model that converges in simulation but is physically wrong. In this study, a four-level protocol is proposed that tests whether an LLM-written specification not only executes but also yields a physically valid digital twin. Each specification is executed through static validity, model build, simulation convergence, and behavioral equivalence with a hidden reference model within bands calibrated by $\\pm$20% sizing perturbations. The protocol was applied to eight LLMs and fourteen HVAC topologies, five describing an existing low-humidity test chamber. To test for authorship bias, engineers and a second model family also described six topologies. Within three repairs, seven of eight models built in 98.6 to 100% of trials, with simulations converging in at least 80.0%, but reached behavioral equivalence in only 50.0 to 98.6%. About half of the failed trials converged, but not to the reference steady state, mostly in desiccant rotor systems. Pooled pass rates varied by under five percentage points across description authors. These results imply that the physics hardest to model in each field, here the desiccant rotor, must enter the generation framework as validation levels. The protocol can be adapted to other fields that generate executable digital twins from declarative specifications.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-cslg-https%3A%2F%2Farxiv.org%2Fabs%2F2611.25763",
+      "rank": 20,
+      "title": "Closing Performance Gap for Diffusion Language Models under Low Inference Budgets",
+      "sourceUrl": "https://arxiv.org/abs/2611.25763",
+      "sourceName": "arXiv cs.LG",
+      "publishedAt": "2026-11-21T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.25763v1 Announce Type: cross Abstract: Diffusion language models offer an architectural route to low-budget generation by updating multiple tokens in parallel, which can reduce the number of sequential decoding steps relative to token-by-token autoregressive decoding. However, realizing this advantage at low budgets is challenging, as generation quality often declines when the number of denoising and refinement steps is reduced. Editable diffusion models address this quality loss through post-draft refinement, but useful intermediate results may still be lost before final submission. We introduce CaRR (Commitment-aware Refinement and Recovery), a training-free framework which improves submission quality from a fixed editable checkpoint through updated-context refill and trajectory-based recovery within its existing forward schedule. Token Commitment Remasking (TCR) remasks selected native pure replacements and refills them on the next scheduled edit forward using the updated context. Submission Commitment Recovery (SCR) uses the resulting refinement trajectory to recover supported candidates when the final response does not satisfy task-specific output requirements. Both modules operate within the native mask/edit schedule without additional backbone forwards. Experiments on code generation and mathematical reasoning show consistent gains in average accuracy over native ME-DLM across four inference budgets, with the largest gains under tight budgets. At one-eighth of the full scheduled forward budget, CaRR improves the six-metric average accuracy by 7.44 pp, including gains of 11.37 and 10.05 on MBPP and MBPP+.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-cslg-https%3A%2F%2Farxiv.org%2Fabs%2F2611.25818",
+      "rank": 21,
+      "title": "Anchor and Check: Deterministic Cross-Prompt, Cross-Model Reconciliation for Auditable LLM Decisions",
+      "sourceUrl": "https://arxiv.org/abs/2611.25818",
+      "sourceName": "arXiv cs.LG",
+      "publishedAt": "2026-11-21T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.25818v1 Announce Type: cross Abstract: Pipelines that let a large language model (LLM) make discrete decisions need to know which decisions they may act on unattended, and a record that explains each one. We study a small, fully specified reconciliation contract: commit the target model's greedy answer (the anchor), draw one or two greedy checks that reach the answer by a different route (an alternate prompt, or a model from another family), and let a pure function return one of five outcomes, of which only Agree is acted on. On 48,000 model-item evaluations over 6,000 questions, with every method given access to verbalized confidence as a tie-breaker, the main finding concerns where calls come from: pooling another family's samples raises semantic entropy's AUROC by 1.7 to 4.0 points at every budget, and a same-model temperature check is the weakest design. As complete pipelines, the point estimates of the three-call contract and pooled semantic entropy over 3 or 5 samples differ by less than one point, with intervals containing zero. As detectors of the anchor's errors, the contract is ahead of pooled entropy with 3 and 5 samples under both tie-breaker conventions; with 10 samples the point estimates differ by less than one point and the sign depends on the convention. Under the strict Agree gate it automates 70% of items and still acts on 16% of errors. What the contract adds is a fixed committed answer, an explicit outcome and a decision replayable from its record; generation itself was not reproducible on the hosted API.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-cslg-https%3A%2F%2Farxiv.org%2Fabs%2F2611.25895",
+      "rank": 22,
+      "title": "One Schedule Does Not Fit All: Adaptive Inference Schedules for Diffusion Language Models",
+      "sourceUrl": "https://arxiv.org/abs/2611.25895",
+      "sourceName": "arXiv cs.LG",
+      "publishedAt": "2026-11-21T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.25895v1 Announce Type: cross Abstract: Diffusion language models typically use a fixed denoising schedule across workloads. We show that the cheapest schedule that preserves quality depends on the task, model, and sampler. We propose Task-Calibrated Denoising Allocation (TCDA), a deployment rule with an explicit error guarantee. Given candidate samplers, paired calibration data, a utility tolerance, and guardrails against degeneration, TCDA uses simultaneous one-sided bootstrap bounds to certify which candidates meet both the utility and guardrail criteria. It deploys the cheapest certified candidate or falls back to the full schedule. The probability of deploying an infeasible schedule is asymptotically at most alpha. Candidates include early prefix decoding, state-reusing continuation, reduced time grids, and confidence-threshold decoding. Across seven datasets and two model families, TCDA certifies reductions in denoiser evaluations by factors of 3.4 on XSum and 2.0 on WMT14 for ELF-B; 8.0 on WMT14 and 4.1 on GSM8K for LLaDA-8B; and 1.33 on OpenWebText for both ELF-M and ELF-L. A validation protocol fixed before generation confirmed every selection on fresh seeds. Across 500 calibration splits, false certification remained below 2% in every setting at a nominal level of 5%. Certified schedules vary across tasks and model scales. Trajectory measurements suggest that when decoded tokens commit is more informative for schedule selection than the remaining latent discretization error. We also find that the ELF reference sampler draws its time grid at random, so reproducible schedule comparisons for unconditional generation require fixing the grid.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-cslg-https%3A%2F%2Farxiv.org%2Fabs%2F2611.25970",
+      "rank": 23,
+      "title": "The Depth of a Prediction: Where Language Models Resolve a Word Predicts Human Reading Time",
+      "sourceUrl": "https://arxiv.org/abs/2611.25970",
+      "sourceName": "arXiv cs.LG",
+      "publishedAt": "2026-11-21T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.25970v1 Announce Type: cross Abstract: Surprisal from a language model's final layer predicts how long people read a word, yet the model computes its prediction across many layers. We read each word's prediction at every layer with the tuned lens and summarize this layerwise surprisal trajectory by its resolution depth, the depth around which its change is centered. On eight English eye-tracking and self-paced reading corpora (81,957 words) and ten GPT-2, OPT and Pythia models, words that a model resolves later, and the words after them, are read more slowly than equally surprising words. Resolution depth improves held-out prediction beyond final-layer surprisal, entropy and the best single layer by 0.26 millinats per word (pooled p = 0.001), about a third of entropy's gain, and each model family gains, GPT-2 and Pythia through one corpus each. The net gain varies between corpora (random-effects mean 0.07, p = 0.37); against layer-shuffled depth, which adds as many coefficients, it is positive in seven of eight corpora (random-effects mean 0.23, p = 0.016), and untrained networks show no gain under the logit lens. Pooled over corpora, the effect holds with corrected word probabilities and beyond first-to-last-layer divergences, and a whole-trajectory functional regression adds no significant information beyond resolution depth.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-cslg-https%3A%2F%2Farxiv.org%2Fabs%2F2611.26096",
+      "rank": 24,
+      "title": "From Sessions to Serving: Integrating LLM-Based Embeddings into Retrieval for Production Content Recommendation",
+      "sourceUrl": "https://arxiv.org/abs/2611.26096",
+      "sourceName": "arXiv cs.LG",
+      "publishedAt": "2026-11-21T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.26096v1 Announce Type: cross Abstract: Personalized content recommendation on large marketplace websites must reconcile heterogeneous candidate content (e.g., customer stories, product pages, industry pages, and learning content) with sparse, fast-changing user behavior, placing increasing demands on the retrieval stage to represent user interest well, not just the downstream ranking stage. We present LSER (LLM Session Embedding Retrieval), a production content recommendation system for autodesk.com that derives session- and history-level embeddings from a pretrained large language model (LLM) and adds them as auxiliary user-side features in the retrieval-stage user tower alongside existing learned sequence encoders. To keep user-side embeddings fresh under real-time behavior, we build a nearline serving path that asynchronously refreshes sequential and LLM-derived user vectors for our main content recommendation server. We validate the incremental value of the LLM features through an ablation study across our full multi-content-type catalog. Our results indicate that integrating LLM-derived embeddings as additional retrieval signals, together with production-grade nearline serving, is technically feasible and can improve model performances.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-cslg-https%3A%2F%2Farxiv.org%2Fabs%2F2611.26264",
+      "rank": 25,
+      "title": "A Statistical Framework for Training Data Auditing of Large Language Models",
+      "sourceUrl": "https://arxiv.org/abs/2611.26264",
+      "sourceName": "arXiv cs.LG",
+      "publishedAt": "2026-11-21T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.26264v1 Announce Type: cross Abstract: Training-data auditing asks whether data of interest were used to train a large language model (LLM), a question central to privacy auditing, copyright protection, and benchmark-contamination detection. These concerns are particularly relevant to the use of copyrighted books and scientific papers in pre-training, as well as synthetic text and medical question-answer records in fine-tuning. In practice, training membership signals may be concentrated in only a few passages of a long document, making it important to aggregate evidence within each document without diluting these localized signals. Beyond individual documents, auditing a target collection requires an overall assessment based on the document-level evidence. In this paper, we propose a unified statistical framework for document-level membership inference, target-collection global auditing, and suspicious-subset identification. We integrate complementary chunk-level membership evidence with Cauchy combination to construct document scores for document-level membership inference. The document scores and their calibrated p-values further enable an overall assessment of training-data collection use and the identification of suspicious documents through multiple testing. Under the stated exchangeability conditions, we establish finite-sample validity of document-level p-values, type-I error control for global auditing, and false discovery rate control for subset identification. Case studies on BookTection, Pile-arXiv, Cosmopedia, and HealthCareMagic demonstrate the effectiveness and reliability of the proposed framework in auditing pre-training and fine-tuning data.",
+      "summary": ""
+    }
+  ]
+}
