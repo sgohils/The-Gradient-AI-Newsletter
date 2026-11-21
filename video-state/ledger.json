@@ -1516,7 +1516,7 @@
         "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1xvja5n/i_have_trained_a_model_to_predict_my_blood_sugar_p/",
         "sourceName": "Reddit r/MachineLearning",
         "publishedAt": "2026-11-13T20:48:25.000Z",
-        "sourceExcerpt": "I have trained a custom 31,253 parameter encoder-only transformer on a pregenerated synthetic CGM dataset and fitted it to my own personal data using LoRA. It is competitive among other published models. I used 115 days of CGM data, of which 80 was used for training the adapter and 35 for testing. The model began with a pretraining stage where it consumed ~19,200 CGM-years worth of synthetic data, consisting of 1 million simulated type 1 diabetics at 7 days each. The simulator is designed to aid in counterfactual reasoning, but I don't yet have a benchmark to test these capabilities downstream. Simply using these models on my phone gives me the impression that they do indeed react appropriately when forced to consider future insulin & carbs. In addition to time series input, two additional inputs are provided: insulin (U) and carbs (G, GI) as action curves where U = units of insulin, G = carbs in grams, GI = glycemic index. U is exact, while (G, GI) is my best estimate. The model is trained to output BG in Kovatchev risk-space using {DILATE,MSE} and pinball loss combined with learned Kendall-Gal weights. The figures above show models trained using DILATE. It can predict 2 hours into the future, infill missing traces, and do backcasts (predictions into the past). Source code: https://github.com/0xdeadf1sh/T1DMAI The model is also trained to predict time-of-day given past blood sugar, in contrast to other models that consume time-of-day as input feature. This capability emerges in >=48h context windows (i.e. 48 hours of past CGM trace). Natively the model has a variable context window size of 3.5 - 7.0 days. The model is still worse than me when it comes to predicting hypoglycemia in the next ~30 minutes. submitted by /u/0xdeadf1sh [link] [comments]",
+        "sourceExcerpt": "",
         "summary": ""
       },
       "selectedAt": "2026-11-14T17:42:18.637Z",
@@ -1525,94 +1525,10 @@
           "accountId": "6ac27146281ee799a37065e4",
           "status": "published",
           "idempotencyKey": "3dc0410e-ae6f-47bd-8704-0b7394c83bda",
-          "request": {
-            "content": "I have trained a model to predict my blood sugar [P]\n\nSource: Reddit r/MachineLearning\nhttps://www.reddit.com/r/MachineLearning/comments/1xvja5n/i_have_trained_a_model_to_predict_my_blood_sugar_p/\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-14\nAI-generated narration. #AI #AINews #Shorts",
-            "mediaItems": [
-              {
-                "type": "video",
-                "url": "https://media.zernio.com/temp/1794678177785_e36622b945875bf9_2026-11-14.mp4"
-              }
-            ],
-            "platforms": [
-              {
-                "platform": "youtube",
-                "accountId": "6ac27146281ee799a37065e4",
-                "platformSpecificData": {
-                  "title": "I have trained a model to predict my blood sugar",
-                  "visibility": "public",
-                  "madeForKids": false,
-                  "containsSyntheticMedia": true,
-                  "categoryId": "28"
-                }
-              }
-            ],
-            "publishNow": true
-          },
           "firstSubmittedAt": "2026-11-14T17:43:00.012Z",
           "postId": "6af89da56c40c564d0a3b8d9",
           "postUrl": "https://www.youtube.com/watch?v=XRDvhDCoE5E"
         }
-      },
-      "script": {
-        "version": 3,
-        "provider": "extractive",
-        "format": "source-fallback",
-        "angle": "workflow",
-        "workingTitle": "I have trained a model to predict my blood sugar",
-        "availability": "unknown",
-        "hookStyle": "question",
-        "sentences": [
-          {
-            "text": "Would you use I have trained a?",
-            "evidenceQuote": "I have trained a custom 31,253 parameter encoder-only transformer on a pregenerated synthetic CGM dataset and fitted it to my own personal data using LoRA.",
-            "role": "hook",
-            "visual": "example",
-            "displayText": "Would you use I have trained a?"
-          },
-          {
-            "text": "I have trained a custom 31,253 parameter encoder-only transformer on a pregenerated synthetic CGM dataset and fitted it to my own personal data using LoRA.",
-            "evidenceQuote": "I have trained a custom 31,253 parameter encoder-only transformer on a pregenerated synthetic CGM dataset and fitted it to my own personal data using LoRA.",
-            "role": "breakthrough",
-            "visual": "example",
-            "displayText": "I have trained a custom 31"
-          },
-          {
-            "text": "It is competitive among other published models.",
-            "evidenceQuote": "It is competitive among other published models.",
-            "role": "breakthrough",
-            "visual": "process",
-            "displayText": "It is competitive among other published models"
-          },
-          {
-            "text": "The figures above show models trained using DILATE.",
-            "evidenceQuote": "The figures above show models trained using DILATE.",
-            "role": "breakthrough",
-            "visual": "process",
-            "displayText": "Models trained using DILATE"
-          },
-          {
-            "text": "It can predict 2 hours into the future, infill missing traces, and do backcasts (predictions into the past).",
-            "evidenceQuote": "It can predict 2 hours into the future, infill missing traces, and do backcasts (predictions into the past).",
-            "role": "breakthrough",
-            "visual": "process",
-            "displayText": "Predict 2 hours into the future"
-          },
-          {
-            "text": "This source excerpt does not confirm public access.",
-            "evidenceQuote": "I have trained a custom 31,253 parameter encoder-only transformer on a pregenerated synthetic CGM dataset and fitted it to my own personal data using LoRA.",
-            "role": "impact",
-            "visual": "highlight",
-            "displayText": "does not confirm public access"
-          },
-          {
-            "text": "Would you try I have trained a, or wait for more proof?",
-            "evidenceQuote": "I have trained a custom 31,253 parameter encoder-only transformer on a pregenerated synthetic CGM dataset and fitted it to my own personal data using LoRA.",
-            "role": "engagement",
-            "visual": "highlight",
-            "displayText": "Would you try I have trained"
-          }
-        ],
-        "narration": "Would you use I have trained a? I have trained a custom 31,253 parameter encoder-only transformer on a pregenerated synthetic CGM dataset and fitted it to my own personal data using LoRA. It is competitive among other published models. The figures above show models trained using DILATE. It can predict 2 hours into the future, infill missing traces, and do backcasts (predictions into the past). This source excerpt does not confirm public access. Would you try I have trained a, or wait for more proof?"
       },
       "presentation": {
         "title": "I have trained a model to predict my blood sugar",
@@ -2318,6 +2234,97 @@
         "publicUrl": "https://media.zernio.com/temp/1795203626124_a3148bcbbb85e40d_2026-11-20.mp4",
         "videoSha256": "768604994637a194e97673977b87875ff913d5696c3c093c839ab2abfcaa8b97",
         "uploadedAt": "2026-11-20T19:40:27.188Z"
+      }
+    },
+    "2026-11-21": {
+      "story": {
+        "id": "arxiv-cslg-https%3A%2F%2Farxiv.org%2Fabs%2F2611.25252",
+        "rank": 3,
+        "title": "Moving Generality from Model to Modeler: LLM Agents for PHM on a Deployment-Style Benchmark",
+        "sourceUrl": "https://arxiv.org/abs/2611.25252",
+        "sourceName": "arXiv cs.LG",
+        "publishedAt": "2026-11-21T05:00:00.000Z",
+        "sourceExcerpt": "arXiv:2611.25252v1 Announce Type: new Abstract: Coding agents built on large language models (LLMs) now help develop many models published as general solutions. Should generality instead reside in the agent that builds a model for each new task? We examine this question in prognostics and health management (PHM), where every model must work on unseen equipment. Our deployment-style benchmark, NextUnit-Bench, covers 24 public datasets split into 58 folds that hold out units or operating conditions; each agent has two hours to deliver an executable predictor, then run on the hidden units. First, frontier agents outperform AutoML, which reaches less than half the best agent's score, and faithful implementations of published methods on four datasets, of which only 6 of 30 beat the strongest agent's own design; published accuracies, where reproducible, rest on the papers' own conventions, and a single convention, capping the remaining life of test engines, can halve the reported error. Second, the agents' advantage is a design made on each machine's data; once made, a plain-text plan of a few hundred words carries most of the gap between two frontier agents, and given a weaker agent's plan, the strongest agent falls to that agent's level, often to identical predictions. Before touching the data, however, it matters little whose plan an agent carries out, and domain toolkits appear to help neither: what sets the strongest apart is how much it learns from the data. Third, such designs reach only implementers that can execute them: given the strongest agent's designs, a locally deployable open-weight model delivers half as often, even when they are lightened, and scores no higher than without them. Generality, we argue, is not disappearing but moving, from the model to the modeler.",
+        "summary": "**What happened:** Researchers introduced a deployment‑style benchmark called NextUnit‑Bench to test if large‑language‑model (LLM) agents can automatically generate prognostics and health management (PHM) models for unseen equipment, shifting generality from the model itself to the model‑building agent.\n\n**Why it matters:** If agents can reliably create task‑specific PHM models, practitioners can reduce the need for hand‑engineered, one‑size‑fits‑all solutions, speeding up deployment across diverse industrial fleets and improving predictive maintenance accuracy.\n\n**Key stats:** • Benchmark covers 24 public PHM datasets.\n• Data are split into 58 folds that hold out whole units or operating conditions, mimicking real‑world deployment.\n• Early results show LLM agents can match or exceed traditional handcrafted models on several folds.\n\n**Source:** https://arxiv.org/abs/2611.25252"
+      },
+      "selectedAt": "2026-11-21T18:44:08.428Z",
+      "platforms": {
+        "youtube": {
+          "accountId": "6ac27146281ee799a37065e4",
+          "status": "prepared",
+          "idempotencyKey": "aafe2453-4333-4a98-8230-e6642fa912c9"
+        }
+      },
+      "script": {
+        "version": 3,
+        "provider": "extractive",
+        "format": "source-fallback",
+        "angle": "capability",
+        "workingTitle": "Moving Generality from Model to Modeler: LLM",
+        "availability": "unknown",
+        "hookStyle": "question",
+        "sentences": [
+          {
+            "text": "Would you use Moving Generality from Model?",
+            "evidenceQuote": "Generality, we argue, is not disappearing but moving, from the model to the modeler.",
+            "role": "hook",
+            "visual": "example",
+            "displayText": "Would you use Moving Generality from Model?"
+          },
+          {
+            "text": "arXiv:2611.25252v1 Announce Type: new Abstract: Coding agents built on large language models (LLMs) now help develop many models published as general solutions.",
+            "evidenceQuote": "arXiv:2611.25252v1 Announce Type: new Abstract: Coding agents built on large language models (LLMs) now help develop many models published as general solutions.",
+            "role": "breakthrough",
+            "visual": "example",
+            "displayText": "ArXiv:2611.25252v1 Announce Type: new Abstract: Coding agents built"
+          },
+          {
+            "text": "Should generality instead reside in the agent that builds a model for each new task?",
+            "evidenceQuote": "Should generality instead reside in the agent that builds a model for each new task?",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "Should generality instead reside in the agent that"
+          },
+          {
+            "text": "arXiv cs.LG says it examine this question in prognostics and health management (PHM), where every model must work on unseen equipment.",
+            "evidenceQuote": "We examine this question in prognostics and health management (PHM), where every model must work on unseen equipment.",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "ArXiv cs.LG says it examine this question"
+          },
+          {
+            "text": "This source excerpt does not confirm public access.",
+            "evidenceQuote": "arXiv:2611.25252v1 Announce Type: new Abstract: Coding agents built on large language models (LLMs) now help develop many models published as general solutions.",
+            "role": "impact",
+            "visual": "highlight",
+            "displayText": "does not confirm public access"
+          },
+          {
+            "text": "Would you try Moving Generality from Model, or wait for more proof?",
+            "evidenceQuote": "Generality, we argue, is not disappearing but moving, from the model to the modeler.",
+            "role": "engagement",
+            "visual": "highlight",
+            "displayText": "Would you try Moving Generality from Model"
+          }
+        ],
+        "narration": "Would you use Moving Generality from Model? arXiv:2611.25252v1 Announce Type: new Abstract: Coding agents built on large language models (LLMs) now help develop many models published as general solutions. Should generality instead reside in the agent that builds a model for each new task? arXiv cs.LG says it examine this question in prognostics and health management (PHM), where every model must work on unseen equipment. This source excerpt does not confirm public access. Would you try Moving Generality from Model, or wait for more proof?"
+      },
+      "presentation": {
+        "title": "Moving Generality from Model to Modeler: LLM",
+        "format": "source-fallback",
+        "angle": "capability",
+        "hookStyle": "question",
+        "availability": "unknown",
+        "duration": 38.324999999999996,
+        "wordCount": 85,
+        "scriptVersion": 3
+      },
+      "selectionReason": "A concrete capability or everyday consequence in the original evidence.",
+      "contentHash": "b3988070c63bfc2e1ecb6e483d982014dd83cef3e09e1da8d801dd1c2fbaa5fd",
+      "media": {
+        "publicUrl": "https://media.zernio.com/temp/1795286686409_eeb4216f3772a368_2026-11-21.mp4",
+        "videoSha256": "589ad1ec1db6918b4755804ae9e91dc78984e3ae192c6de4af63fba37e4ca1df",
+        "uploadedAt": "2026-11-21T18:44:47.442Z"
       }
     }
   }
