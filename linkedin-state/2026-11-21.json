@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "issueDate": "2026-11-21",
+  "issueUrl": "https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-21",
+  "content": "Today's AI briefing from The Gradient | 2026-11-21\n\n1. Hebbia sees improvements in financial research with GPT-6 Astra\nHebbia tested the prerelease version of GPT‑6 Astra on its financial research workflow, measuring how well the model sourced information, cited relevant material, and presented findings.\n\n2. Introducing Tool Retrieval in the Gemini API\nGoogle announced the preview of Tool Retrieval in the Gemini API, a feature that lets agents dynamically fetch and invoke a vast library of external tools without embedding each one in the prompt.\n\n3. Moving Generality from Model to Modeler: LLM Agents for PHM on a Deployment-Style Benchmark\nResearchers introduced a deployment‑style benchmark called NextUnit‑Bench to test if large‑language‑model (LLM) agents can automatically generate prognostics and health management (PHM) models for unseen equipment, shifting generality from the model itself to the model‑building agent.\n\nRead the full briefing and original sources:\nhttps://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-21\n\n#AI #ArtificialIntelligence #TheGradient",
+  "contentHash": "ba331d8f6a2a259883280dd2be8aa069efd3f41d0f9926d274712f881401514b",
+  "accountId": "6ac5a561b3c21905c0edcfba",
+  "organizationUrn": "urn:li:organization:136824048",
+  "idempotencyKey": "676a7ff2-e0f1-4678-9ce0-815128e7192d",
+  "status": "submitting",
+  "firstSubmittedAt": "2026-11-21T18:41:06.591Z"
+}
