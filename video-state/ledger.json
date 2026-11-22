@@ -2298,7 +2298,7 @@
       "platforms": {
         "youtube": {
           "accountId": "6ac27146281ee799a37065e4",
-          "status": "submitting",
+          "status": "published",
           "idempotencyKey": "99e4bfbe-6b16-4da8-8745-574ce839b8f1",
           "request": {
             "content": "Researcher plants 2m canaries into the AI supply chain. A privacy disaster surfaced.\n\nSource: Ars Technica AI\nhttps://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-22\nAI-generated narration. #AI #AINews #Shorts",
@@ -2323,7 +2323,9 @@
             ],
             "publishNow": true
           },
-          "firstSubmittedAt": "2026-11-22T19:04:37.137Z"
+          "firstSubmittedAt": "2026-11-22T19:04:37.137Z",
+          "postId": "6b033cc6d5f650008a0942e9",
+          "postUrl": "https://www.youtube.com/watch?v=SD7r_l_ir_w"
         }
       },
       "script": {
