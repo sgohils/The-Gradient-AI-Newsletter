@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "issueDate": "2026-11-22",
+  "issueUrl": "https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-22",
+  "content": "Today's AI briefing from The Gradient | 2026-11-22\n\n1. Hebbia sees improvements in financial research with GPT-6 Astra\nHebbia ran prerelease evaluations of GPT‑6 Astra on its financial research workflows.\n\n2. Introducing Tool Retrieval in the Gemini API\nGoogle unveiled Tool Retrieval in the Gemini API, a preview feature that lets agents automatically fetch the most relevant external tools from a catalog of hundreds, reducing the need to explicitly prompt for each tool.\n\n3. The Gemini app is now available on lower-memory Android devices.\nGoogle released an update to the Gemini app that removes the previous RAM requirement, allowing phones with as little as 2 GB of memory to run Gemini Live and generate custom images.\n\nRead the full briefing and original sources:\nhttps://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-22\n\n#AI #ArtificialIntelligence #TheGradient",
+  "contentHash": "13ef05a867493447c2948c2922d4e77db7e201adf5af142faad358f5ba793e94",
+  "accountId": "6ac5a561b3c21905c0edcfba",
+  "organizationUrn": "urn:li:organization:136824048",
+  "idempotencyKey": "45882370-e9dd-4e18-ab3e-ef2882e88982",
+  "status": "submitting",
+  "firstSubmittedAt": "2026-11-22T19:01:09.545Z"
+}
