@@ -1556,7 +1556,7 @@
         "sourceUrl": "https://www.reddit.com/r/artificial/comments/1xwwdhv/are_ai_leaderboards_even_worth_taking_seriously/",
         "sourceName": "Reddit r/artificial",
         "publishedAt": "2026-11-15T14:07:58.000Z",
-        "sourceExcerpt": "Every time a new AI leaderboard drops theres suddenly a different model being called the best in the world and then you check another benchmark and the rankings are completely different. Gemini has been doing well in general chat rankings while Claude has been strong in coding, so apparently the best AI depends on which website you happen to open that morning. Kalshi even has a market on which AI model finishes November at number one and it got me thinking about how much these rankings actually reflect what people use every day. I mean a model can score high on some benchmark and still give you a garbage answer to a basic question. At this point I’d rather hear from people who use these tools for actual work instead of another company announcing it beat everyone by three points on some test. Has anyone here switched their main AI because of these rankings or are we just watching companies fight over numbers that barely change the experience? submitted by /u/Snappy-Domino4017 [link] [comments]",
+        "sourceExcerpt": "",
         "summary": ""
       },
       "selectedAt": "2026-11-15T18:30:52.887Z",
@@ -1565,80 +1565,10 @@
           "accountId": "6ac27146281ee799a37065e4",
           "status": "published",
           "idempotencyKey": "67da790c-24a6-4964-aaa3-6eb502faf5b4",
-          "request": {
-            "content": "Are AI leaderboards even worth taking seriously anymore?\n\nSource: Reddit r/artificial\nhttps://www.reddit.com/r/artificial/comments/1xwwdhv/are_ai_leaderboards_even_worth_taking_seriously/\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-15\nAI-generated narration. #AI #AINews #Shorts",
-            "mediaItems": [
-              {
-                "type": "video",
-                "url": "https://media.zernio.com/temp/1794767480688_1c963c26d73e6240_2026-11-15.mp4"
-              }
-            ],
-            "platforms": [
-              {
-                "platform": "youtube",
-                "accountId": "6ac27146281ee799a37065e4",
-                "platformSpecificData": {
-                  "title": "Are AI leaderboards even worth taking seriously",
-                  "visibility": "public",
-                  "madeForKids": false,
-                  "containsSyntheticMedia": true,
-                  "categoryId": "28"
-                }
-              }
-            ],
-            "publishNow": true
-          },
           "firstSubmittedAt": "2026-11-15T18:31:23.926Z",
           "postId": "6af9fa7dabf463c3eb991074",
           "postUrl": "https://www.youtube.com/watch?v=9pPkiBT7FrI"
         }
-      },
-      "script": {
-        "version": 3,
-        "provider": "extractive",
-        "format": "source-fallback",
-        "angle": "capability",
-        "workingTitle": "Are AI leaderboards even worth taking seriously",
-        "availability": "unknown",
-        "hookStyle": "question",
-        "sentences": [
-          {
-            "text": "Would you use Are AI leaderboards even?",
-            "evidenceQuote": "Every time a new AI leaderboard drops theres suddenly a different model being called the best in the world and then you check another benchmark and the rankings are completely different. Gemini has been doing well in general chat rankings while Claude has been strong in coding, so apparently the best AI depends on which website you happen to open that morning. Kalshi even has a market on which AI model finishes November at number one and it got me thinking about how much these rankings actually reflect what people use every day. I mean a model can score high on some benchmark and still give you a garbage answer to a basic question. At this point I’d rather hear from people who use these tools for actual work instead of another company announcing it beat everyone by three points on some test. Has anyone here switched their main AI because of these rankings or are we just watching companies fight over numbers that barely change the experience? submitted by /u/Snappy-Domino4017 [link] [comments]",
-            "role": "hook",
-            "visual": "example",
-            "displayText": "Would you use Are AI leaderboards even?"
-          },
-          {
-            "text": "Kalshi even has a market on which AI model finishes November at number one and it got me thinking about how much these rankings actually reflect what people use every day.",
-            "evidenceQuote": "Kalshi even has a market on which AI model finishes November at number one and it got me thinking about how much these rankings actually reflect what people use every day.",
-            "role": "breakthrough",
-            "visual": "example",
-            "displayText": "Kalshi even has a market on which AI"
-          },
-          {
-            "text": "Reddit r/artificial says Has anyone here switched their main AI because of these rankings or are it just watching companies fight over numbers that barely change the experience?",
-            "evidenceQuote": "Has anyone here switched their main AI because of these rankings or are we just watching companies fight over numbers that barely change the experience?",
-            "role": "breakthrough",
-            "visual": "process",
-            "displayText": "Reddit r/artificial says Has anyone here switched"
-          },
-          {
-            "text": "This source excerpt does not confirm public access.",
-            "evidenceQuote": "Every time a new AI leaderboard drops theres suddenly a different model being called the best in the world and then you check another benchmark and the rankings are completely different.",
-            "role": "impact",
-            "visual": "highlight",
-            "displayText": "does not confirm public access"
-          },
-          {
-            "text": "Would you try Are AI leaderboards even, or wait for more proof?",
-            "evidenceQuote": "Every time a new AI leaderboard drops theres suddenly a different model being called the best in the world and then you check another benchmark and the rankings are completely different. Gemini has been doing well in general chat rankings while Claude has been strong in coding, so apparently the best AI depends on which website you happen to open that morning. Kalshi even has a market on which AI model finishes November at number one and it got me thinking about how much these rankings actually reflect what people use every day. I mean a model can score high on some benchmark and still give you a garbage answer to a basic question. At this point I’d rather hear from people who use these tools for actual work instead of another company announcing it beat everyone by three points on some test. Has anyone here switched their main AI because of these rankings or are we just watching companies fight over numbers that barely change the experience? submitted by /u/Snappy-Domino4017 [link] [comments]",
-            "role": "engagement",
-            "visual": "highlight",
-            "displayText": "Would you try Are AI leaderboards even"
-          }
-        ],
-        "narration": "Would you use Are AI leaderboards even? Kalshi even has a market on which AI model finishes November at number one and it got me thinking about how much these rankings actually reflect what people use every day. Reddit r/artificial says Has anyone here switched their main AI because of these rankings or are it just watching companies fight over numbers that barely change the experience? This source excerpt does not confirm public access. Would you try Are AI leaderboards even, or wait for more proof?"
       },
       "presentation": {
         "title": "Are AI leaderboards even worth taking seriously",
@@ -2351,6 +2281,90 @@
         "publicUrl": "https://media.zernio.com/temp/1795286686409_eeb4216f3772a368_2026-11-21.mp4",
         "videoSha256": "589ad1ec1db6918b4755804ae9e91dc78984e3ae192c6de4af63fba37e4ca1df",
         "uploadedAt": "2026-11-21T18:44:47.442Z"
+      }
+    },
+    "2026-11-22": {
+      "story": {
+        "id": "arstechnica-ai-https%3A%2F%2Farstechnica.com%2Fsecurity%2F2026%2F11%2Fa-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate%2F",
+        "rank": 6,
+        "title": "Researcher plants 2m canaries into the AI supply chain. A privacy disaster surfaced.",
+        "sourceUrl": "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/",
+        "sourceName": "Ars Technica AI",
+        "publishedAt": "2026-11-20T20:59:08.000Z",
+        "sourceExcerpt": "Researchers planted 2 million digital tripwires in requests sent through a sprawling network of AI services to find out what happened to sensitive information entrusted to them. What they discovered was an ecosystem that leaked highly sensitive data like a sieve. The exposure was found through an ingenious experiment designed to test if sensitive information can leak through the vast chain of widely used AI services and how that information is exploited when it does. Many of today’s AI apps use services such as OpenRouter or Vercel that act as brokers. These “AI routers,” sometimes also known as “AI gateways,” receive large numbers of prompts sent from AI app end users and route them to an available inference engine based on criteria such as the one charging the lowest price or being best suited for the given task. Instead of using Anthropic, OpenAI, or another big provider, the developer hires an AI router to find the most suitable model. Update, Nov 21: Posts on both Hacker News and X report that OpenRouter has sent customers an email notifying them that some of their prompts may have been read. OpenRouter cited the research and said that it received a report that the potential exposure involved prompts sent to MiniMax, a China-based model provider. OpenRouter said the researchers' planted URLs were accessed whether the prompts were sent to MiniMax directly or through three other resellers: AtlasCloud, Novita, and StreamLake. OpenRouter has removed a \"Zero Data Retention\" label from MiniMax-model endpoints. Hat tip: Sulat.com. Read full article Comments",
+        "summary": ""
+      },
+      "selectedAt": "2026-11-22T19:04:05.747Z",
+      "platforms": {
+        "youtube": {
+          "accountId": "6ac27146281ee799a37065e4",
+          "status": "prepared",
+          "idempotencyKey": "99e4bfbe-6b16-4da8-8745-574ce839b8f1"
+        }
+      },
+      "script": {
+        "version": 3,
+        "provider": "extractive",
+        "format": "source-fallback",
+        "angle": "capability",
+        "workingTitle": "Researcher plants 2m canaries into the AI supply",
+        "availability": "available",
+        "hookStyle": "question",
+        "sentences": [
+          {
+            "text": "Would you use Researcher plants 2m canaries?",
+            "evidenceQuote": "Researchers planted 2 million digital tripwires in requests sent through a sprawling network of AI services to find out what happened to sensitive information entrusted to them. What they discovered was an ecosystem that leaked highly sensitive data like a sieve. The exposure was found through an ingenious experiment designed to test if sensitive information can leak through the vast chain of widely used AI services and how that information is exploited when it does. Many of today’s AI apps use services such as OpenRouter or Vercel that act as brokers. These “AI routers,” sometimes also known as “AI gateways,” receive large numbers of prompts sent from AI app end users and route them to an available inference engine based on criteria such as the one charging the lowest price or being best suited for the given task. Instead of using Anthropic, OpenAI, or another big provider, the developer hires an AI router to find the most suitable model. Update, Nov 21: Posts on both Hacker News and X report that OpenRouter has sent customers an email notifying them that some of their prompts may have been read. OpenRouter cited the research and said that it received a report that the potential exposure involved prompts sent to MiniMax, a China-based model provider. OpenRouter said the researchers' planted URLs were accessed whether the prompts were sent to MiniMax directly or through three other resellers: AtlasCloud, Novita, and StreamLake. OpenRouter has removed a \"Zero Data Retention\" label from MiniMax-model endpoints. Hat tip: Sulat.com. Read full article Comments",
+            "role": "hook",
+            "visual": "example",
+            "displayText": "Would you use Researcher plants 2m canaries?"
+          },
+          {
+            "text": "OpenRouter said the researchers' planted URLs were accessed whether the prompts were sent to MiniMax directly or through three other resellers: AtlasCloud, Novita, and StreamLake.",
+            "evidenceQuote": "OpenRouter said the researchers' planted URLs were accessed whether the prompts were sent to MiniMax directly or through three other resellers: AtlasCloud, Novita, and StreamLake.",
+            "role": "breakthrough",
+            "visual": "example",
+            "displayText": "OpenRouter said the researchers' planted URLs were accessed"
+          },
+          {
+            "text": "Researchers planted 2 million digital tripwires in requests sent through a sprawling network of AI services to find out what happened to sensitive information entrusted to them.",
+            "evidenceQuote": "Researchers planted 2 million digital tripwires in requests sent through a sprawling network of AI services to find out what happened to sensitive information entrusted to them.",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "Researchers planted 2 million digital tripwires in requests"
+          },
+          {
+            "text": "What they discovered was an ecosystem that leaked highly sensitive data like a sieve.",
+            "evidenceQuote": "What they discovered was an ecosystem that leaked highly sensitive data like a sieve.",
+            "role": "impact",
+            "visual": "process",
+            "displayText": "What they discovered was an ecosystem that leaked"
+          },
+          {
+            "text": "Would you try Researcher plants 2m canaries, or wait for more proof?",
+            "evidenceQuote": "Researchers planted 2 million digital tripwires in requests sent through a sprawling network of AI services to find out what happened to sensitive information entrusted to them. What they discovered was an ecosystem that leaked highly sensitive data like a sieve. The exposure was found through an ingenious experiment designed to test if sensitive information can leak through the vast chain of widely used AI services and how that information is exploited when it does. Many of today’s AI apps use services such as OpenRouter or Vercel that act as brokers. These “AI routers,” sometimes also known as “AI gateways,” receive large numbers of prompts sent from AI app end users and route them to an available inference engine based on criteria such as the one charging the lowest price or being best suited for the given task. Instead of using Anthropic, OpenAI, or another big provider, the developer hires an AI router to find the most suitable model. Update, Nov 21: Posts on both Hacker News and X report that OpenRouter has sent customers an email notifying them that some of their prompts may have been read. OpenRouter cited the research and said that it received a report that the potential exposure involved prompts sent to MiniMax, a China-based model provider. OpenRouter said the researchers' planted URLs were accessed whether the prompts were sent to MiniMax directly or through three other resellers: AtlasCloud, Novita, and StreamLake. OpenRouter has removed a \"Zero Data Retention\" label from MiniMax-model endpoints. Hat tip: Sulat.com. Read full article Comments",
+            "role": "engagement",
+            "visual": "highlight",
+            "displayText": "Would you try Researcher plants 2m canaries"
+          }
+        ],
+        "narration": "Would you use Researcher plants 2m canaries? OpenRouter said the researchers' planted URLs were accessed whether the prompts were sent to MiniMax directly or through three other resellers: AtlasCloud, Novita, and StreamLake. Researchers planted 2 million digital tripwires in requests sent through a sprawling network of AI services to find out what happened to sensitive information entrusted to them. What they discovered was an ecosystem that leaked highly sensitive data like a sieve. Would you try Researcher plants 2m canaries, or wait for more proof?"
+      },
+      "presentation": {
+        "title": "Researcher plants 2m canaries into the AI supply",
+        "format": "source-fallback",
+        "angle": "capability",
+        "hookStyle": "question",
+        "availability": "available",
+        "duration": 38.25,
+        "wordCount": 85,
+        "scriptVersion": 3
+      },
+      "selectionReason": "A concrete capability or everyday consequence in the original evidence.",
+      "contentHash": "1a128ab99f64dba21d63f348eb5e0e567b29597be886968b2fc2924faffca4b7",
+      "media": {
+        "publicUrl": "https://media.zernio.com/temp/1795374274580_ecbb87ccda667691_2026-11-22.mp4",
+        "videoSha256": "4fc4819783a9e5f49e69ee1e42d95987666bf378e6bb888a3bc24ca63905edc5",
+        "uploadedAt": "2026-11-22T19:04:35.695Z"
       }
     }
   }
