@@ -2298,8 +2298,32 @@
       "platforms": {
         "youtube": {
           "accountId": "6ac27146281ee799a37065e4",
-          "status": "prepared",
-          "idempotencyKey": "99e4bfbe-6b16-4da8-8745-574ce839b8f1"
+          "status": "submitting",
+          "idempotencyKey": "99e4bfbe-6b16-4da8-8745-574ce839b8f1",
+          "request": {
+            "content": "Researcher plants 2m canaries into the AI supply chain. A privacy disaster surfaced.\n\nSource: Ars Technica AI\nhttps://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-22\nAI-generated narration. #AI #AINews #Shorts",
+            "mediaItems": [
+              {
+                "type": "video",
+                "url": "https://media.zernio.com/temp/1795374274580_ecbb87ccda667691_2026-11-22.mp4"
+              }
+            ],
+            "platforms": [
+              {
+                "platform": "youtube",
+                "accountId": "6ac27146281ee799a37065e4",
+                "platformSpecificData": {
+                  "title": "Researcher plants 2m canaries into the AI supply",
+                  "visibility": "public",
+                  "madeForKids": false,
+                  "containsSyntheticMedia": true,
+                  "categoryId": "28"
+                }
+              }
+            ],
+            "publishNow": true
+          },
+          "firstSubmittedAt": "2026-11-22T19:04:37.137Z"
         }
       },
       "script": {
