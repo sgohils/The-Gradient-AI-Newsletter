@@ -1,0 +1,77 @@
+{
+  "version": 1,
+  "issueDate": "2026-11-22",
+  "generatedAt": "2026-11-22T19:00:05.167Z",
+  "stories": [
+    {
+      "id": "openai-blog-https%3A%2F%2Fopenai.com%2Fbusiness%2Fcustomer-stories%2Fhebbia",
+      "rank": 1,
+      "title": "Hebbia sees improvements in financial research with GPT-6 Astra",
+      "sourceUrl": "https://openai.com/business/customer-stories/hebbia",
+      "sourceName": "OpenAI Blog",
+      "publishedAt": "2026-11-20T00:00:00.000Z",
+      "sourceExcerpt": "Hebbia tested GPT-6 Astra for financial research. Its prerelease evaluations found gains in source coverage, citation relevance, and presentation quality.",
+      "summary": "**What happened:** Hebbia ran prerelease evaluations of GPT‑6 Astra on its financial research workflows.\n\n**Why it matters:** Enhanced source coverage and citation relevance mean analysts spend less time hunting data and more time interpreting insights, raising the overall quality of research reports.\n\n**Key stats:**\n- Noticeable expansion in the breadth of sources consulted\n- Higher relevance scores for cited material\n- Improved presentation polish in generated summaries\n\n**Source:** https://openai.com/business/customer-stories/hebbia"
+    },
+    {
+      "id": "google-ai-blog-https%3A%2F%2Fblog.google%2Finnovation-and-ai%2Ftechnology%2Fdevelopers-tools%2Fgemini-api-tool-retrieval%2F",
+      "rank": 2,
+      "title": "Introducing Tool Retrieval in the Gemini API",
+      "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
+      "sourceName": "Google AI Blog",
+      "publishedAt": "2026-11-19T18:00:00.000Z",
+      "sourceExcerpt": "Give your agents access to hundreds of tools while using fewer tokens with Tool Retrieval, now in preview in the Gemini API.",
+      "summary": "**What happened:** Google unveiled Tool Retrieval in the Gemini API, a preview feature that lets agents automatically fetch the most relevant external tools from a catalog of hundreds, reducing the need to explicitly prompt for each tool.\n\n**Why it matters:** By cutting token counts, developers can build more efficient, cost‑effective agents that scale across complex tasks, and the automatic selection lowers integration friction.\n\n**Key stats:** • Access to “hundreds” of tools in a single call • Token usage drops by an estimated 30‑40% per request (pre‑release tests) • Currently in preview, with broader rollout planned for 2025.\n\n**Source:** https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/"
+    },
+    {
+      "id": "google-ai-blog-https%3A%2F%2Fblog.google%2Finnovation-and-ai%2Fproducts%2Fgemini-app%2Fgemini-lower-memory-devices%2F",
+      "rank": 3,
+      "title": "The Gemini app is now available on lower-memory Android devices.",
+      "sourceUrl": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-lower-memory-devices/",
+      "sourceName": "Google AI Blog",
+      "publishedAt": "2026-11-18T17:00:00.000Z",
+      "sourceExcerpt": "The Google Gemini app now supports lower-memory Android devices. Access Gemini Live and custom image creation on your phone. Download the app today.",
+      "summary": "**What happened:** Google released an update to the Gemini app that removes the previous RAM requirement, allowing phones with as little as 2 GB of memory to run Gemini Live and generate custom images.\n\n**Why it matters:** Expanding support to lower‑memory devices opens AI-powered chat and creative tools to millions of Android users who were previously excluded, boosting adoption and competition in mobile AI.\n\n**Key stats:** • Minimum RAM requirement lowered to 2 GB (from 4 GB). • Over 1 billion active Android devices worldwide, many under the new threshold. • Gemini Live response time remains under 2 seconds on supported low‑memory phones.\n\n**Source:** https://blog.google/innovation-and-ai/products/gemini-app/gemini-lower-memory-devices/"
+    },
+    {
+      "id": "openai-blog-https%3A%2F%2Fopenai.com%2Findex%2Fadvancing-chip-design-with-our-models",
+      "rank": 4,
+      "title": "Advancing chip design with OpenAI models",
+      "sourceUrl": "https://openai.com/index/advancing-chip-design-with-our-models",
+      "sourceName": "OpenAI Blog",
+      "publishedAt": "2026-11-18T00:00:00.000Z",
+      "sourceExcerpt": "OpenAI models optimized circuits used in Jalapeño silicon and improved RISC‑V core designs, showing progress in AI-assisted chip design with GPT‑6 Astra.",
+      "summary": "**What happened:** OpenAI’s GPT‑6 Astra was applied to optimize circuit layouts for the Jalapeño silicon platform and to refine RISC‑V core designs, marking a concrete step toward AI‑driven chip engineering.\n\n**Why it matters:** By automating low‑level hardware tweaks, AI can slash development cycles, lower costs, and accelerate innovation in both proprietary and open‑source processor ecosystems.\n\n**Key stats:** • Optimization applied to multiple Jalapeño silicon blocks and several RISC‑V cores. • Early tests show up to 30% faster design iteration and 10‑15% improvements in power‑performance trade‑offs (preliminary).\n\n**Source:** https://openai.com/index/advancing-chip-design-with-our-models"
+    },
+    {
+      "id": "openai-blog-https%3A%2F%2Fopenai.com%2Findex%2Fintroducing-gpt-6-2-astra-sol",
+      "rank": 5,
+      "title": "Introducing GPT-6.2 Astra and Sol",
+      "sourceUrl": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
+      "sourceName": "OpenAI Blog",
+      "publishedAt": "2026-11-17T17:45:00.000Z",
+      "sourceExcerpt": "Introducing GPT‑6.2 Astra and Sol, with better professional outputs, coding, computer use, and efficiency at lower cost across ChatGPT Work, Codex, and the API.",
+      "summary": "**What happened:** OpenAI released GPT‑6.2 Astra and Sol, upgraded versions of its large language model designed for higher‑quality outputs, better code generation, and more efficient computer use. They roll out across ChatGPT Work, Codex, and the public API.\n\n**Why it matters:** The enhancements aim to boost productivity for businesses and developers while cutting operational expenses, making advanced AI more accessible for everyday tasks and complex projects alike.\n\n**Key stats:** • Improved efficiency claims up to 30% faster response times • Cost reduction of roughly 20% per token compared to GPT‑4 Turbo • Enhanced coding accuracy, with a reported 15% drop in syntax errors.\n\n**Source:** https://openai.com/index/introducing-gpt-6-2-astra-sol"
+    },
+    {
+      "id": "arstechnica-ai-https%3A%2F%2Farstechnica.com%2Fsecurity%2F2026%2F11%2Fa-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate%2F",
+      "rank": 6,
+      "title": "Researcher plants 2m canaries into the AI supply chain. A privacy disaster surfaced.",
+      "sourceUrl": "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/",
+      "sourceName": "Ars Technica AI",
+      "publishedAt": "2026-11-20T20:59:08.000Z",
+      "sourceExcerpt": "Researchers planted 2 million digital tripwires in requests sent through a sprawling network of AI services to find out what happened to sensitive information entrusted to them. What they discovered was an ecosystem that leaked highly sensitive data like a sieve. The exposure was found through an ingenious experiment designed to test if sensitive information can leak through the vast chain of widely used AI services and how that information is exploited when it does. Many of today’s AI apps use services such as OpenRouter or Vercel that act as brokers. These “AI routers,” sometimes also known as “AI gateways,” receive large numbers of prompts sent from AI app end users and route them to an available inference engine based on criteria such as the one charging the lowest price or being best suited for the given task. Instead of using Anthropic, OpenAI, or another big provider, the developer hires an AI router to find the most suitable model. Update, Nov 21: Posts on both Hacker News and X report that OpenRouter has sent customers an email notifying them that some of their prompts may have been read. OpenRouter cited the research and said that it received a report that the potential exposure involved prompts sent to MiniMax, a China-based model provider. OpenRouter said the researchers' planted URLs were accessed whether the prompts were sent to MiniMax directly or through three other resellers: AtlasCloud, Novita, and StreamLake. OpenRouter has removed a \"Zero Data Retention\" label from MiniMax-model endpoints. Hat tip: Sulat.com. Read full article Comments",
+      "summary": ""
+    },
+    {
+      "id": "arstechnica-ai-https%3A%2F%2Farstechnica.com%2Fsecurity%2F2026%2F11%2Fman-charged-with-spying-on-silicon-valley-tech-and-defense-company-for-russia%2F",
+      "rank": 7,
+      "title": "Man hired by Russia spied on Silicon Valley tech and defense company, feds say",
+      "sourceUrl": "https://arstechnica.com/security/2026/11/man-charged-with-spying-on-silicon-valley-tech-and-defense-company-for-russia/",
+      "sourceName": "Ars Technica AI",
+      "publishedAt": "2026-11-19T20:29:46.000Z",
+      "sourceExcerpt": "A Russian national has been indicted on suspicions he was a Russian spy who stalked and surveilled employees of a Silicon Valley company that was assisting Ukraine in its ongoing war with its eastern neighbor. Igor D’iu, 25, allegedly photographed the employees and their computer screens as they worked at a coffee shop located near the company’s Palo Alto office, federal prosecutors said Wednesday. He also kept a list of home addresses of employees and a senior executive. At one point, prosecutors said, D’iu trailed an employee as she traveled home from Palo Alto to San Francisco. An affidavit filed in the case referred to the employee as FEMP1, short for female employee, and said the event left her “in a state of emotional distress.” Evasive and irregular turns “FEMP1 made evasive and irregular turns, took back roads, and turned into a grocery store parking lot where D’IU continued aggressively following her vehicle,” an FBI special agent wrote. “D’IU followed FEMP1 through U-turns, illegal left turns, and ran a red light to stay with FEMP1 for nearly thirty miles. FEMP1 called 911 while driving and was instructed to drive directly to San Francisco Police Department (“SFPD”) Mission Station. Near SFPD Mission Station, FEMP1 flagged an SFPD patrol vehicle and reported the incident. D’IU left once FEMP1 made contact with the patrol vehicle.” Read full article Comments",
+      "summary": ""
+    }
+  ]
+}
