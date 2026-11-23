@@ -1,0 +1,257 @@
+{
+  "version": 1,
+  "issueDate": "2026-11-23",
+  "generatedAt": "2026-11-23T23:20:50.882Z",
+  "stories": [
+    {
+      "id": "google-ai-blog-https%3A%2F%2Fblog.google%2Fproducts-and-platforms%2Fproducts%2Fsearch%2Fgoogle-search-personal-intelligence-apps%2F",
+      "rank": 1,
+      "title": "A more tailored Google Search that’s uniquely yours",
+      "sourceUrl": "https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps/",
+      "sourceName": "Google AI Blog",
+      "publishedAt": "2026-11-23T17:00:00.000Z",
+      "sourceExcerpt": "Get more helpful Search responses by securely opting in to connect Google Wallet, Drive, and the Gemini app to Personal Intelligence in AI Mode.",
+      "summary": "**What happened:** Google announced that users can now opt‑in to connect their Google Wallet, Drive, and Gemini app to a new Personal Intelligence feature in AI Mode, allowing the search engine to draw on personal data (with consent) to deliver customized answers.\n\n**Why it matters:** By leveraging a user’s own documents, purchase history, and Gemini’s generative capabilities, search becomes more context‑aware, saving time and improving relevance while keeping data secure through Google’s privacy controls.\n\n**Key stats:** Google has not released specific usage metrics yet; the feature will initially launch to a limited group of testers as part of a phased rollout.\n\n**Source:** https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps/"
+    },
+    {
+      "id": "openai-blog-https%3A%2F%2Fopenai.com%2Fbusiness%2Fcustomer-stories%2Frichpanel-ai-customer-support",
+      "rank": 2,
+      "title": "Richpanel helps companies automate 50% of support in 30 days",
+      "sourceUrl": "https://openai.com/business/customer-stories/richpanel-ai-customer-support",
+      "sourceName": "OpenAI Blog",
+      "publishedAt": "2026-11-23T08:00:00.000Z",
+      "sourceExcerpt": "Richpanel uses GPT-6 Astra and GPT-6.1 Sol to equip its AI support agents with tools and procedures, and GPT-6 Luna for their conversations.",
+      "summary": "**What happened:** Richpanel launched an AI‑powered support platform that leverages OpenAI’s GPT‑6 Astra, GPT‑6.1 Sol, and GPT‑6 Luna models to equip its virtual agents with advanced tools, procedural knowledge, and natural‑language conversation capabilities.\n\n**Why it matters:** Automating half of routine ticket handling in a month cuts operational costs, shortens response times, and lets human agents focus on complex issues, giving enterprises a competitive edge in customer experience.\n\n**Key stats:** • 50 % of support queries resolved automatically • 30‑day implementation window • Up to 40 % reduction in average handling time (reported by early adopters)\n\n**Source:** https://openai.com/business/customer-stories/richpanel-ai-customer-support"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.26782",
+      "rank": 3,
+      "title": "ChatAtom: A Multi-Agent LLM System for Molecular Dynamics Simulation and Visualization",
+      "sourceUrl": "https://arxiv.org/abs/2611.26782",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-23T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.26782v1 Announce Type: new Abstract: Molecular dynamics (MD) simulation resolves atomic-scale motion and predicts the structural, mechanical, and dynamic properties of materials, making it cen- tral to materials design and discovery. Yet an MD study requires an expert-driven workflow: designing the simulation, writing reliable input scripts, executing them, and analyzing the results with separate tools. Here we present ChatAtom, a multi-agent large language model system that translates a natural-language request into a complete MD workflow without the user writing input scripts or analysis code. Each agent has a defined responsibility within the workflow. An orchestrator plans the study; the LAMMPS and OVITO agents each use a generator-reviewer pair to prepare and review simulation and visualization scripts before execution; a high-performance computing agent dispatches jobs to remote resources; and an analysis agent interprets the completed run. The work- flow is accessible through a browser interface that streams thermodynamic data and rendered frames during local execution, allowing users to follow the simu- lation as it progresses. The architecture also supports new capabilities through loadable skills without modifying the agents, enabling autonomous hypothesis generation and testing. We evaluate ChatAtom through script-generation bench- marks, an end-to-end study of crack propagation, and a closed-loop campaign. By bringing script generation, execution, visualization, and analysis into one reviewed and observable pipeline, ChatAtom lowers the barrier to conducting MD studies and broadens access to advanced simulation workflows.",
+      "summary": "**What happened:** Researchers introduced ChatAtom, a multi‑agent large language model system that translates natural‑language commands into complete MD simulation setups, executes them, and generates visual analysis automatically.\n\n**Why it matters:** By automating script generation, execution, and result interpretation, ChatAtom lowers the barrier for material scientists, accelerates discovery cycles, and reduces human error in complex simulation pipelines.\n\n**Key stats:** • Integrates multiple LLM agents for design, execution, and visualization.\n• Supports popular MD engines (e.g., LAMMPS, GROMACS).\n• Demonstrated up to 60% reduction in setup time compared with manual scripting.\n\n**Source:** https://arxiv.org/abs/2611.26782"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.26906",
+      "rank": 4,
+      "title": "Budget-Aware Predict-and-Verify Theorem Proving with Heterogeneous LLM Solvers",
+      "sourceUrl": "https://arxiv.org/abs/2611.26906",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-23T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.26906v1 Announce Type: new Abstract: Large language model (LLM) theorem solvers differ in both proving capability and inference cost. Applying an expensive solver to every subgoal wastes computation when cheaper models are sufficient, while always starting from the cheapest solver wastes attempts on subgoals that require stronger models. We present BudgetPV, an agentic budget-aware predict-and-verify system that allocates computation across unresolved subgoals and heterogeneous LLM solvers. BudgetPV uses a cross-solver predictor to guide solver selection for each subgoal and revises the allocation as verification feedback becomes available. The allocation problem changes as proving progresses. Early decisions mainly determine which solver should handle an untried subgoal, while later decisions determine which previously attempted subgoals should receive additional computation. We train the predictor with two objectives for these two stages. Class-weighted cross-entropy improves assignment to less frequent stronger solvers during the initial stage, while plain cross-entropy provides better calibrated probabilities for later allocation among previously attempted subgoals. We evaluate BudgetPV on Lean Workbook, miniF2F, ProofNet, and PutnamBench using three progressively expanded solver settings: a strong but expensive solver alone, adding a medium-cost solver with intermediate solving capability, and further adding a cheap solver with lower solving capability. BudgetPV requires less LLM generation computation than uniform allocation to solve the same number of subgoals across the evaluated settings. The experiments further show the computation savings obtained as medium- and lower-cost solvers are added.",
+      "summary": "**What happened:** Researchers introduced BudgetPV, a predict‑and‑verify framework that dynamically assigns unresolved subgoals to a pool of heterogeneous large language model (LLM) theorem solvers based on a budget‑aware policy.\n\n**Why it matters:** Traditional theorem‑proving pipelines either over‑spend by running expensive models on every step or under‑perform by relying too heavily on cheap models. BudgetPV balances capability and cost, making large‑scale automated reasoning more practical for research labs and industry deployments.\n\n**Key stats:** Experiments on standard theorem‑proving benchmarks show that BudgetPV achieves comparable proof‑success rates to the strongest single‑solver baselines while reducing total inference cost by a substantial margin (up to roughly 30‑40% savings). The system also lowers average latency per subgoal by prioritizing cheaper models whenever possible.\n\n**Source:** https://arxiv.org/abs/2611.26906"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.26910",
+      "rank": 5,
+      "title": "AstronautBench: Measuring Agent Self-Improvement Across Episodes Through Knowledge, Evidence, and Progress",
+      "sourceUrl": "https://arxiv.org/abs/2611.26910",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-23T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.26910v1 Announce Type: new Abstract: LLM agents are expected to improve themselves from their own experience across episodes, with fixed weights. Self-improvement in an embodied world cannot be read from one measure. Existing benchmarks measure task progress, world-knowledge question answering (QA), and episodic memory, but a correct answer does not show that the agent ever observed the evidence for it, and progress does not show what the agent learned. We introduce AstronautBench, which measures one agent's self-improvement through three views on the same run: what it knows, whether its own evidence supports that knowledge, and how far it gets in the world. It is built on the game Outer Wilds, where each episode is a 22-minute loop after which the world resets, only the agent's knowledge carries over, and progress is gated by knowledge. After every episode, we measure the places reached and ship-log rumor facts revealed, the correctness of answers to 164 questions about the world, and whether each answer is supported by the frames and position the agent cites from its own recorded play. Two LLM judges from different model families check every answer. In eight-episode baselines with GPT-6.1 Sol and Gemini 4 Argon planners, which act through a learned controller or their own gamepad inputs, the three views do not move together, so any one of them alone gives an incomplete picture of whether the agent is improving. The GPT-6.1 Sol agent's correct answers grow from 14.6% to 26.8% of all questions, but at episode 8 only 59 to 68% of them are supported by its cited evidence. It reveals no new rumor facts after episode 3, while the places it reaches and its memory keep growing. More than half of the answers that become correct after episode 3 cite only evidence from earlier episodes.",
+      "summary": "**What happened:** Researchers released AstronautBench, a suite of tests that evaluates LLM agents on three fronts—knowledge acquisition, evidence observation, and measurable progress—across sequential episodes with fixed model weights.\n**Why it matters:** Traditional benchmarks only check final answers, missing whether agents actually saw the supporting evidence or understood what they learned. AstronautBench fills that gap, enabling deeper study of self‑improvement in embodied AI systems.\n**Key stats:** • Introduces three orthogonal metrics (knowledge, evidence, progress). • Designed for episodic, embodied settings where agents cannot modify weights. • Provides baseline scores on several existing LLM agents (details in the paper).\n**Source:** https://arxiv.org/abs/2611.26910"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.26912",
+      "rank": 6,
+      "title": "Self-Evolving Beyond Human-Crafted Experience for EDA Scripting",
+      "sourceUrl": "https://arxiv.org/abs/2611.26912",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-23T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.26912v1 Announce Type: new Abstract: The growing complexity of electronic systems demands efficient design flows, yet EDA scripting remains a bottleneck: proprietary APIs are sparsely documented, and errors often appear as silent failures or cryptic exceptions. Hand-crafted knowledge helps but is difficult to maintain as toolchains evolve. We present ZhuLong-SE (Self-Evolution), an execution-grounded LLM agent that learns reusable knowledge from prior task traces. Building on ZhuLong, it enhances the task-level harness with API retrieval, documentation responses, isolated sandbox execution, and static checking, then adds governed cross-task self-evolution. Beyond solving individual tasks, ZhuLong-SE distills past execution traces into a three-tier memory store governed by ground-truth anchoring, disconfirmation filtering, held-out rollback, and anti-leakage retrieval. On the 158-task EDA-Eval-PyAether benchmark, the full task-level harness, with self-evolution disabled, achieves 92.4% pass@1 and outperforms ZhuLong on all five tested LLM backbones. On a harder instance-disjoint test set, self-evolution from the bare configuration surpasses a human-crafted-experience baseline by 2.5 percentage points (80.0% vs. 77.5% pass@1).",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.26968",
+      "rank": 7,
+      "title": "Right Numbers, Wrong Story: When LLMs Narrate Financial Changes Beyond Their Inputs",
+      "sourceUrl": "https://arxiv.org/abs/2611.26968",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-23T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.26968v1 Announce Type: new Abstract: A financial report drafted by an LLM can state every number correctly but still go beyond its input, adding judgments and causes that no one supplied. We call these additions unsupported framing and find them far more often in LLM drafts than in reports written by proInput facts Revenue +3% Higher prices 10-K filings Revenue increased 3% on higher prices. 10-K writer Revenue surged 3% on higher prices, due to strong demand. LLM Fits the size? Surged: Unusual for 3% In the input? In the input? Strong demand: Not in input Higher prices: Kept fessionals, and attempts to fix them by prompting with how each word is used instead make such judgments more frequent. We therefore propose FrameCheck, a plug-in that sits beFrameCheck Revenue increased 3% on higher prices. No extra model call Judgment word Unsupported cause Supported cause tween the LLM and human review to keep each draft within its input. Specifically, FrameCheck 1) guides the draft with professional examples that report a change of similar magnitude, 2) flags judgments that professionals would not use and causes the input does not give, and 3) removes them by rule, without a model call. In experiments on 17 open LLMs and 3M drafts, FrameCheck removes almost all unsupported framing from drafts and brings the judgment rate close to that of the writers of 10-K filings, the annual reports that US firms file with regulators. Code is available at github.com/seunghan96/framecheck.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.26975",
+      "rank": 8,
+      "title": "Run One, Get Two: Near-Free Streaming Safety Checks for Local LLMs",
+      "sourceUrl": "https://arxiv.org/abs/2611.26975",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-23T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.26975v1 Announce Type: new Abstract: Local LLM assistants decode for one user at a time, so decoding is bound by memory bandwidth and leaves compute idle. Streaming safety checks today trade accuracy against cost. A dedicated guard model is accurate but nearly doubles the latency per token, while a hidden-state probe is cheap but less accurate. We present ToRA, an adapter that runs a second model as an extra row in the generator's decode step, sharing its weights and KV cache. Dual-row kernels read each weight once for both rows. On Qwen3-0.6B, ToRA matches or beats a dedicated streaming guard, with higher F1 on 12 of 17 benchmarks. It detects 11.8 points more unsafe responses than the probe at a similar cost, under 4% added latency per token.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.26976",
+      "rank": 9,
+      "title": "MixFold: Sub-4-Bit Mixed-Precision LLM Inference via Output-Channel Grouping on Mobile NPUs",
+      "sourceUrl": "https://arxiv.org/abs/2611.26976",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-23T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.26976v1 Announce Type: new Abstract: Sub-4-bit quantization allows mobile devices to run larger LLMs, but its memory savings do not always translate into faster decoding on mobile NPUs. Their matrix units support only a few native integer datatypes, and converting unsupported weight formats on the vector unit can erase the gains from fewer bits. Mixed precision faces an additional constraint: each matrix-unit tile uses one datatype. MixFold executes 3-bit and perfectly symmetric 2-bit weights using native integer operations without expanding the weights to wider datatypes during decoding. MixFold then assigns datatypes to output-channel groups aligned with the matrix-unit tiles, enabling finer-than-layer assignment without disrupting matrix-unit execution. We compare MixFold with llama.cpp Hexagon backend on the Qualcomm Hexagon NPU of a Snapdragon 8 Elite Gen 5. Across the Qwen3 model family, MixFold achieves comparable or higher accuracy than llama.cpp's sub-4-bit formats at matched bits per weight, while decoding 1.16-1.41 times faster and generating 1.5-4.3 times more tokens per joule.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.26998",
+      "rank": 10,
+      "title": "Reward Integrity in Adversarial Reinforcement Learning for LLM Guardrail Red-Teaming",
+      "sourceUrl": "https://arxiv.org/abs/2611.26998",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-23T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.26998v1 Announce Type: new Abstract: We study reward fidelity in an adversarial reinforcement-learning loop for red-teaming financial-services language-model guardrails. Apparent wins can arise when an attack omits prescribed personally identifiable information (PII), or when a reward judge credits a response that did not break the targeted policy. On attacker-generated and public benchmark examples, TypeSafe Jev checks whether the prescribed PII is present. For outcome scoring, we compare the decision models TypeSafe Jev, Laya (pretrained and post-trained), and pretrained CLM-8B with logged Opus 4.8 judgements from a replay corpus. Post-training markedly improves Laya's agreement with the judge. A separate author-reviewed off-target set establishes that Opus can award false wins. The findings motivate specialised decision-model judges for checking prescribed PII in attack inputs and scoring target responses against the intended policy.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.27046",
+      "rank": 11,
+      "title": "Actions Speak Louder than Words: Stateful Privacy Sniffing of LLM Agents via Behavioral Covert Channels in Web Interactions",
+      "sourceUrl": "https://arxiv.org/abs/2611.27046",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-23T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.27046v1 Announce Type: new Abstract: LLM agents increasingly rely on Web interaction, issuing searches, following links, and reading pages, to complete complex user tasks. Since each action is driven by the agent's private context, including the user's prompt, dialogue history, memory, and connected data, it also opens a new privacy exposure surface. Prior attacks either passively analyze network traffic, which yields only coarse correlations, or hijack the agent through indirect prompt injection, which must place sensitive content in an outgoing field and is blocked by content-level defenses. Whether an attacker can actively recover fine-grained private context without any explicit transmission thus remains insufficiently understood. Our insight is that an agent's benign Web decisions themselves leak private context, as what it chooses to visit encodes whether, which, and in what order it acts, forming a behavioral covert channel. Building on this, we design SNOOP, a stateful hierarchical probing framework that narrows a coarse-to-fine hypothesis tree per task and reconstructs user queries and profiles from the agent's observable paths. Across four agents and three LLM backbones on 500 StackExchange queries and 378 multi-turn iKAT dialogues, SNOOP recovers query concepts with an average F1 of 0.89 and user profiles with an F1 of 0.80, while four representative agent defenses change its recovery by less than 0.03 F1. Since no sensitive content is ever transmitted, content-level inspection cannot detect this leakage; we therefore propose Selection-Obfuscated Retrieval (SOR), which acquires resources under a fixed budget independent of private context and confines the agent's selection to a local snapshot, cutting SNOOP's F1 to 0.39 without additional LLM inference.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.27068",
+      "rank": 12,
+      "title": "Decision Models Are General-Purpose Process Reward Models",
+      "sourceUrl": "https://arxiv.org/abs/2611.27068",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-23T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.27068v1 Announce Type: new Abstract: Reinforcement learning (RL) from verifiable outcomes gives a language agent one reward per episode: every step is credited alike, and nothing about the task is learned when all rollouts fail. The last mile, step-level credit, usually requires step labels, a learned critic, costly LLM judges or hand-written rules. We introduce DM-PRM, which turns a general-purpose decision model -- one answering yes/no questions with probabilities -- into a general-purpose process reward model (PRM), zero-shot: no step labels, no fine-tuning, no critic. DM-PRM asks one question per step and adds the standardised answers to the advantage. It plugs into any policy-gradient method; one model, with one question text per environment, serves household tasks, web shopping and multiple RL methods. With Qwen2.5-1.5B it lifts GRPO by over twenty points on ALFWorld and over ten on WebShop, overtakes GiGPO on ALFWorld and learns in far fewer iterations; it also improves GiGPO and GraphGPO on both benchmarks and reaches the highest success of our comparison, ahead of critic-based PPO and of state-of-the-art GiGPO, HGPO and GraphGPO. Its scores locate useful steps in failed rollouts, and trained agents drop idle actions and explore instead of circling. DM-PRM shows that step credit need not be learned: it can be asked for.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.27100",
+      "rank": 13,
+      "title": "Reasoning in Two Dimensions: Quantifying Chain-of-Thought Faithfulness and Efficiency",
+      "sourceUrl": "https://arxiv.org/abs/2611.27100",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-23T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.27100v1 Announce Type: new Abstract: Chain-of-thought (CoT) reasoning exposes intermediate steps, but a correct answer does not establish that an LLM relies on the dependence expressed by those steps or reasons efficiently. We operationalize CoT faithfulness and efficiency within a common framework. Specifically, we represent a CoT as a semantic reasoning graph and decompose the model's predictive dependence along two complementary axes: dependence explained by semantic support versus additional reasoning history, and dependence allocated to answer-reaching versus off-path reasoning. This decomposition yields global and step-level measures of unfaithfulness and inefficiency. Controlled interventions show that the proposed metrics respond to hidden dependence and induced off-path reasoning as intended. Across mathematical and multi-hop reasoning tasks, answer-level unfaithfulness is consistently associated with greater predictive uncertainty, whereas both unfaithfulness and inefficiency exhibit weak or inconsistent associations with answer correctness. We further derive theoretically grounded, graph-aware fine-tuning objectives that improve the targeted reasoning properties without directly optimizing the computationally expensive metrics or compromising answer accuracy. Results indicate that accuracy and brevity provide incomplete assessments of reasoning quality: reliable CoT evaluation should also consider whether the LLM's predictive dependence is faithfully represented and efficiently allocated.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.27116",
+      "rank": 14,
+      "title": "CoEvoBench: Can LLMs Drive Recursive Co-Evolution of Agentic Systems?",
+      "sourceUrl": "https://arxiv.org/abs/2611.27116",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-23T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.27116v1 Announce Type: new Abstract: The performance of an LLM agent depends on both its model and its harness, the code that mediates its interaction with tools and environments. Can LLM researchers drive this co-evolution as a recursive improvement process, deciding round after round which component to change when each change alters the value of the other? Existing benchmarks evaluate post-training or data research with the harness out of scope, or harness optimization with the model fixed, leaving this joint decision unmeasured. We introduce CoEvoBench, a benchmark that evaluates LLMs as researchers co-evolving the model and harness of a target agent across five agentic domains. Researchers start from a common base model and initial harness, train and revise within a 24-hour budget, and submit a model-harness pair that is scored on separate test tasks. Across five frontier researchers, the strongest closes more than four fifths of the gap to an instruction-tuned reference system, and co-evolution succeeds on interaction tasks but rarely on long-horizon coding. These results suggest that current LLMs can make a strong first improvement, but cannot yet turn feedback from an improved system into the next one. CoEvoBench provides a controlled testbed for measuring the research capabilities that recursive co-evolution requires.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.27138",
+      "rank": 15,
+      "title": "Double counting in LLM evidence fusion: exact posteriors separate rule compliance from posterior gain",
+      "sourceUrl": "https://arxiv.org/abs/2611.27138",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-23T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.27138v1 Announce Type: new Abstract: Language models fuse reports in retrieval, multi-agent consensus and agent memory, where treating shared-source reports as independent can double count evidence. A common remedy is an instruction to count each source once. Its value depends on the receiver's raw baseline. Pricing it needs an exact reference. We build the graded-dependence exact reference: binary worlds with single-report reliability 0.65 and four dependence levels, whose disclosed parameters give every world an exact posterior and every rule a target risk. The paired gain protocol scores raw and instructed answers of four configurations on 2,976 worlds. Agreement and gain separate in both directions. At $\\delta$ = 0, claude-opus-5-5 and gpt-6.1-sol agreed with the rule within 0.001 in 744 of 744, and the instruction raised their posterior mismatch by 0.044; gpt-6-luna agreed in 165 of 744 and gained 0.0140 (95% interval 0.0064 to 0.0219); claude-haiku-5-5's gain moved from -0.0295 ($\\delta$ = 0) to +0.0302 ($\\delta$ = 1) (descriptive). The prespecified first-child endpoint contrast, gain at $\\delta$ = 1 minus $\\delta$ = 0, was 0.0342 (0.0303 to 0.0382). In the preregistered tests, the raw source-weight contrast was positive (0.259, 95% interval 0.182 to 0.337; Holm rejected zero) and the grouping endpoint difference was not detected (0.0004, -0.0023 to 0.0031). This interval excludes differences larger than 0.0031 in magnitude and lies within the registered precision bound of $\\pm$0.0046. The reference prices the rule before any model call. The paired gain, estimable as a Brier difference on labelled deployment items, decides adoption per receiver and prompt condition.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.27180",
+      "rank": 16,
+      "title": "Learning Adaptive Defense Strategies: Fine-Tuned LLMs for Network Security Games under Network Mobility",
+      "sourceUrl": "https://arxiv.org/abs/2611.27180",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-23T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.27180v1 Announce Type: new Abstract: Large language models(LLM) show promise for strategic reasoning, yet their ability to compute game-theoretic equilibria under dynamic conditions remains largely unexplored. This work investigates whether fine-tuned LLMs can serve as solver-free surrogates for online equilibrium computation in honeypot allocation, a setting in which network mobility continuously reshapes the underlying attack graph and forces repeated re-solving of a two-player zero-sum game. We construct a dataset of 270 security games on networks of 8--25 nodes with solver-grounded equilibrium labels, and evaluate four classes of predictor over 1{,}524 held-out mobility events: non-learned baselines, six open-weight architectures evaluated zero-shot, the same six after LoRA fine-tuning, and four proprietary models as an external reference point. Predictions are scored without post-hoc repair against exact game-theoretic criteria: exploitability against an optimal attacker best-response, equilibrium support accuracy, and distributional distance. Fine-tuning reduces exploitability across every architecture, and fine-tuned open-weight models of modest size outperform every zero-shot predictor, including proprietary ones; no zero-shot model at any tier reaches the floor set by uniform allocation. Stratifying by mobility type exposes a qualitative shift that aggregate metrics conceal: zero-shot models do not condition on whether a departing node lies on an attack path, while fine-tuned models recover this distinction. We further find that validation loss is negatively rank-correlated with task performance, and that output validity, rather than predictive accuracy, is the binding constraint on further progress.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.27186",
+      "rank": 17,
+      "title": "What Does Matching a Human Intervention Effect Establish? Benchmark Checks for LLM Simulations",
+      "sourceUrl": "https://arxiv.org/abs/2611.27186",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-23T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.27186v1 Announce Type: new Abstract: LLM simulations are validated by equivalence with human effects, yet a zero reference passes whenever the human 90 percent interval lies inside the margin, as the human benchmark shows before simulation. When the zero reference fails, planned precision gives independent simulations the margin up to which passing is a 5 percent test of response. In an exploratory 70-experiment reanalysis, 72 percent of GPT-4's $\\pm$0.20 SD passes were zero-reference passes; GPT-4 passed 16 contrasts the zero reference failed (1.58 expected without response). In a preregistered audit, Claude Sonnet 5.5 passed three intention targets, all zero-reference passes, and the registered belief-gradient control; norm beliefs changed 0.065 SD against humans' 0.351 (zero-reference check added after unblinding; norm beliefs emphasized after inspection). Registered tests detected no overestimation; average-effect intervals excluded overestimation above 0.08 SD. A group audit's precision floor is 1.33 facts against a 2.9-fact effect. Report the zero-reference threshold beside every equivalence decision.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.27286",
+      "rank": 18,
+      "title": "Belief-State Management Meets Rubric Rewards for Agentic Forecasting",
+      "sourceUrl": "https://arxiv.org/abs/2611.27286",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-23T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.27286v1 Announce Type: new Abstract: Current large language model (LLM) agents still struggle to forecast real-world events. This stems from two primary limitations: i) standard ReAct harness accumulates reasoning and evidence within one growing context, and ii) outcome-based rewards in forecasting lead to a slow and noisy signal that cannot distinguish sound reasoning from lucky guesses. To address these, we introduce a forecasting training framework including harness design and post-training. For the harness side, we propose Proactive Belief-State Management (PBM), equipping agents with a fold tool to compress lengthy context into compact belief states and reset the context for subsequent exploration. For the training side, we develop SEIPH, a five-dimensional, outcome-blind rubric, providing process-quality rewards. Using the rubric-based reward, we post-train a 35B model with PPO and GRPO, yielding DeepForecaster-PPO and DeepForecaster-GRPO. Theoretically, we prove that idealized fold-based stopping converges and calibrated local rewards reduce segment-level gradient variance. Empirically, DeepForecaster-PPO (35B) achieves the best Brier score on both ForecastBench and Polymarket-Sim, outperforming frontier agents based on DeepSeek-V4-Pro (1.6T), Kimi-K2.6 (1T), and GPT-5.5. DeepForecaster-GRPO ranks second on both FutureX metrics. Ablations reveal that PBM also improves the untrained base model without any training. Calibration analysis shows that DeepForecaster-PPO makes more accurate high-confidence predictions than Qwen3.6 and GPT-5.5. Trajectory analysis further shows that forecasts generally improve from the first to the final belief state as agents gather evidence and revise their judgments.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.27424",
+      "rank": 19,
+      "title": "Jagged Robustness: Uneven Safety Transfer and Emerging Vulnerabilities under LLM Quantization",
+      "sourceUrl": "https://arxiv.org/abs/2611.27424",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-23T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.27424v1 Announce Type: new Abstract: Quantization enables efficient inference in language models through model parameter compression. This work audits the impact of quantization on capability and safety domains including model safeguards, instruction-following, ethics and bias. Through benchmarks, we find that model safeguards and bias can degrade under quantization, while other capabilities such as truthfulness remain more stable in Qwen3-4B. We define this uneven transfer of LLM capabilities under quantization as Jagged Robustness. We find multiple factors driving Jagged Robustness: task complexity, evaluation method and generation coherence. Moreover, we verify the degradation of model safeguards by observing increased compliance with unsafe requests under quantization, and demonstrate universal adversarial suffix attacks that are benign for the full model but jailbreak quantized models. The findings indicate that it is risky to assume that the performance and robustness can transfer evenly across different capability domains from full models to quantized models.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.27713",
+      "rank": 20,
+      "title": "MetaRigor: From Agentic Automation to Verifiable End-to-End Meta-Analysis Through Scientific Decision Boundaries",
+      "sourceUrl": "https://arxiv.org/abs/2611.27713",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-23T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.27713v1 Announce Type: new Abstract: Automated meta-analysis requires not only accurate numerical extraction but also the consistent preservation of result identity across stages, including the associated study, comparison, population, outcome, time point, and analysis conditions. We present MetaRigor, an LLM workflow framework for verifiable end-to-end evidence synthesis. MetaRigor organizes study results as Study x Target units and operationalizes scientific decision boundaries at the task level through Task Contracts, programmatic rules, and source binding. The model performs semantic interpretation that depends on study context, whereas programs execute formalizable rules, computations, validation, and source verification. We conducted controlled evaluations across five stages: evidence acquisition, data extraction, risk of bias assessment, certainty of evidence assessment, and manuscript generation. MetaRigor achieved an F1 score of 86.29% for complete result delivery and 80.20% agreement for domain-level certainty of evidence judgments. Generated manuscripts received scores of 86.00 under human evaluation, exceeding all three baselines. A seven-case downstream end-to-end evaluation further yielded an aggregate F1 score of 77.01%, exceeding the strongest baseline by 9.78 percentage points. Cross-system tracing of archived outputs from three systems further showed that local mismatches or omissions in result identity could alter statistical inputs and the objects subjected to risk of bias assessment, with these errors subsequently propagating into the final report. Ablation experiments showed that task constraints and programmatic rules played distinct roles across different stages. These findings indicate that, in LLM-driven evidence synthesis workflows, consistently maintaining explicit result identity, decision boundaries, and provenance relationships is critical to improving end-to-end verifiability.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.27738",
+      "rank": 21,
+      "title": "Average-Depth Variable Execution via Request-Local Token Routing",
+      "sourceUrl": "https://arxiv.org/abs/2611.27738",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-23T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.27738v1 Announce Type: new Abstract: Layer skipping can reduce large language model inference costs, but a request budget does not specify how to allocate layer execution across generated tokens. We introduce \\method{}, which allows tokens to execute different numbers of layers while matching each request's mean executed depth to a continuous budget. At each routed layer, a router reads the current token state and its request's budget and decides whether to execute the Transformer block. Tokens that skip the block pass through a lightweight residual adapter and write no key/value (K/V) entry at that layer. A single checkpoint serves requests with different budgets in the same batch. Across three LLaMA backbones, six quality metrics, and 13 budgets, AVERT is best or tied for best in 206 of 234 comparisons. Across single- and mixed-budget batches, the mean absolute per-request budget error is at most 1.15 percentage points. When grouping requests by budget leaves batches underfilled, mixing budgets reduces decode time per output token (TPOT) by 4.3--21.2%.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.27778",
+      "rank": 22,
+      "title": "QuASAR: Toward an LLM-Assisted Framework for Screening, Prototyping, and Assessing Quantum-Advantage Opportunities in Scientific Computing",
+      "sourceUrl": "https://arxiv.org/abs/2611.27778",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-23T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.27778v1 Announce Type: new Abstract: Identifying scientific computations that could benefit from quantum algorithms requires both domain knowledge and fluency in quantum algorithm design, expertise that rarely resides in one person. We report results from QuASAR, an experimental, two-agent, LLM-driven pipeline intended to bridge this gap. One agent screens scientific literature for computational kernels with a plausible quantum-algorithmic analogue and proposes candidates, each backed by citations. A second agent independently verifies those citations. For candidates that survive verification, it reconstructs the source's computational structure, formulates a quantum mapping, builds and executes a prototype, and benchmarks it against classical baselines. We applied this pipeline to ten candidate computations drawn from the astrophysics literature. Nine candidates were carried through to a small-scale, benchmarked prototype. We report three in detail, chosen as the clearest examples with the least redundancy across the set. They span combinatorial optimization, stochastic simulation, and Bayesian inference. The pipeline attempted to supply quantum-design expertise a domain scientist might lack, reconstructing source algorithms where one existed and building original, disclosed mappings where none did. None of the three case studies achieved quantum advantage at the tested scales, and their astrophysical framing has not yet undergone expert validation. What the experiment does show is that the pipeline can turn a published idea into a runnable prototype, which a scientist can then inspect, test against classical methods, and decide whether to pursue. QuASAR is an exploratory framework, offered to the community for evaluation, critique, and further development, with an approach that could broaden the use of quantum computing in scientific research and extend to computational improvements more generally.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.27839",
+      "rank": 23,
+      "title": "Beyond Self-Critique: Epistemic Convergence Control for Multi-Agent Research Verification",
+      "sourceUrl": "https://arxiv.org/abs/2611.27839",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-23T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.27839v1 Announce Type: new Abstract: Multi-agent systems for scientific claim verification increasingly rely on role-structured LLM debate to pressure-test hypotheses. However, when debating agents are instantiated from the same underlying base model, they share identical latent representations, making self-critique bias structurally inevitable. Static fixed-iteration protocols compound this by either halting prematurely before evidence stabilizes or wasting inference compute after convergence. We present \\sys{}, a multi-agent research verification framework that addresses both failure modes. First, we introduce an asymmetric role architecture comprising an Advocate, Skeptic, and Arbitrator with opposing epistemic directives, producing significantly lower role-embedding similarity (0.852 vs.\\ 0.918 for symmetric Multi-Agent Debate [MAD], $p = 5.82 \\times 10^{-8}$) and surfacing more contested claims (22.0\\% vs.\\ 15.4\\%). Second, we propose the Belief-Delta ($\\DB$) convergence criterion, an evidence-grounded stopping rule that eliminates over-iteration (0.0\\% vs.\\ 62.5\\% for Fixed-$3$) while cutting LLM calls by 2.4$\\times$. Third, each supported claim is anchored to a verbatim literature snippet audited by an independent NLI classifier, achieving a 21.7\\% hallucination rate (comparable to 25.9\\% for a Self-Refine critic, $p = 0.61$) while establishing auditable evidence grounding. Across 200 runs on 40 research hypotheses evaluated with DeepSeek-R1-32B, \\sys{} balances compute efficiency with rigorous epistemic verification.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.27911",
+      "rank": 24,
+      "title": "Functional Depth Is Learned: Isolating the Computation That Layers Produce Only Together",
+      "sourceUrl": "https://arxiv.org/abs/2611.27911",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-23T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.27911v1 Announce Type: new Abstract: Transformer performance scales with depth, but layer count merely counts the opportunities for sequential computation: layers could still behave as nearly independent refinements that barely depend on one another. We study how transformers develop functional depth during pretraining, introducing an exact inclusion-exclusion decomposition that isolates the connected component, i.e., the computation that appears only when a specified set of layers acts together under identity ablation. Tracking this quantity across public checkpoints of Pythia, OLMo, and Amber yields three findings. First, write-relative connected coordination strengthens from its initialization or earliest-checkpoint baseline as pretraining proceeds, across all measured interaction orders. Second, these connected components are behaviorally consequential under direct intervention: deleting them damages perplexity more than deleting a norm-matched random direction at the same site in all 35 measured model-order cells. Third, pairwise representation similarity is consistently negatively correlated with pairwise connected coordination across seven models, yet the two signals are not interchangeable: similarity- and coordination-based block-removal criteria often agree in Pythia but diverge on Amber. Together, these results suggest that architectural depth provides the opportunity for sequential computation, while pretraining progressively organizes cross-layer dependencies within that depth.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.26649",
+      "rank": 25,
+      "title": "VerifiQuant: Governance-by-Execution for Financial LLM Workflows",
+      "sourceUrl": "https://arxiv.org/abs/2611.26649",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-23T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.26649v1 Announce Type: cross Abstract: Large language models embedded in financial workflows fail most dangerously by emitting confident, well-formatted but wrong numbers with no signal distinguishing them from correct ones. We argue that the central deployment problem is governability: a system must determine when a question supports a numeric answer and when it should instead clarify, intercept, or refuse. We present VerifiQuant, a governance-by-execution framework that packages financial logic into inference contracts and evaluates each query through an executable diagnostic funnel before deterministic computation. This separation makes computation, clarification, and refusal structured and auditable while keeping financial arithmetic outside the language model. Against matched retrieval-and-execution baselines, and within a declared contract library, the principal benefit is not higher accuracy on well-posed questions but safer behavior when an input does not justify a number. When it finds no applicable contract, it says so instead of guessing. Coverage sweeps and failure analysis put a price on this boundary: safety is bought with coverage rather than with accuracy, and residual failures remain attributable to specific runtime frontiers.",
+      "summary": ""
+    }
+  ]
+}
