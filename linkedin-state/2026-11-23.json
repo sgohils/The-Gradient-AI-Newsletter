@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "issueDate": "2026-11-23",
+  "issueUrl": "https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-23",
+  "content": "Today's AI briefing from The Gradient | 2026-11-23\n\n1. A more tailored Google Search that’s uniquely yours\nGoogle announced that users can now opt‑in to connect their Google Wallet, Drive, and Gemini app to a new Personal Intelligence feature in AI Mode, allowing the search engine to draw on personal data (with consent) to deliver customized answers.\n\n2. Richpanel helps companies automate 50% of support in 30 days\nRichpanel launched an AI‑powered support platform that leverages OpenAI’s GPT‑6 Astra, GPT‑6.1 Sol, and GPT‑6 Luna models to equip its virtual agents with advanced tools, procedural knowledge, and natural‑language conversation capabilities.\n\n3. ChatAtom: A Multi-Agent LLM System for Molecular Dynamics Simulation and Visualization\nResearchers introduced ChatAtom, a multi‑agent large language model system that translates natural‑language commands into complete MD simulation setups, executes them, and generates visual analysis automatically.\n\nRead the full briefing and original sources:\nhttps://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-23\n\n#AI #ArtificialIntelligence #TheGradient",
+  "contentHash": "6c2e8c42cbcef015bd1c7c60574caa9521efc1e9790a0f351d63df4796969254",
+  "accountId": "6ac5a561b3c21905c0edcfba",
+  "organizationUrn": "urn:li:organization:136824048",
+  "idempotencyKey": "ef74b1b4-ae43-492b-a35c-8e1b60300baa",
+  "status": "submitting",
+  "firstSubmittedAt": "2026-11-23T23:21:48.896Z"
+}
