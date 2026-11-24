@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "issueDate": "2026-11-24",
+  "issueUrl": "https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-24",
+  "content": "Today's AI briefing from The Gradient | 2026-11-24\n\n1. How Gemini is changing the game for Golden State's organization and fans.\nGoogle Gemini partners with Golden State to power fan experiences and business operations for the Warriors, Valkyries, and Chase Center. See the news.\n\n2. GPT-6 models demonstrate intrinsic protein-design capabilities\nGPT-6 models design protein structures and sequences using reasoning and code. Lab tests found evidence of binding across five targets.\n\n3. A more tailored Google Search that’s uniquely yours\nGoogle introduced Personal Intelligence in AI Mode, letting users opt‑in to securely connect Google Wallet, Drive, and the Gemini app with Search. The integration tailors answers to individual preferences while keeping data private.\n\nRead the full briefing and original sources:\nhttps://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-24\n\n#AI #ArtificialIntelligence #TheGradient",
+  "contentHash": "7c55cd5001f689efb6942a85dc52b7b360c2daa2139cfb04f4be09427bdb3b7d",
+  "accountId": "6ac5a561b3c21905c0edcfba",
+  "organizationUrn": "urn:li:organization:136824048",
+  "idempotencyKey": "b0fe8acb-93dc-4109-8f7d-ec10c07beeb1",
+  "status": "submitting",
+  "firstSubmittedAt": "2026-11-24T21:54:34.060Z"
+}
