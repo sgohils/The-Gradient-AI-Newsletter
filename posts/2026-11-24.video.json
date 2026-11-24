@@ -1,0 +1,257 @@
+{
+  "version": 1,
+  "issueDate": "2026-11-24",
+  "generatedAt": "2026-11-24T21:53:48.828Z",
+  "stories": [
+    {
+      "id": "google-ai-blog-https%3A%2F%2Fblog.google%2Fproducts-and-platforms%2Fproducts%2Fgemini%2Fgemini-golden-state%2F",
+      "rank": 1,
+      "title": "How Gemini is changing the game for Golden State's organization and fans.",
+      "sourceUrl": "https://blog.google/products-and-platforms/products/gemini/gemini-golden-state/",
+      "sourceName": "Google AI Blog",
+      "publishedAt": "2026-11-24T16:00:00.000Z",
+      "sourceExcerpt": "Google Gemini partners with Golden State to power fan experiences and business operations for the Warriors, Valkyries, and Chase Center. See the news.",
+      "summary": "**What happened:** Google Gemini partners with Golden State to power fan experiences and business operations for the Warriors, Valkyries, and Chase Center. See the news.\n\n**Key stats:** No specific stats available.\n\n**Source:** https://blog.google/products-and-platforms/products/gemini/gemini-golden-state/"
+    },
+    {
+      "id": "openai-blog-https%3A%2F%2Fopenai.com%2Findex%2Fgpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
+      "rank": 2,
+      "title": "GPT-6 models demonstrate intrinsic protein-design capabilities",
+      "sourceUrl": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
+      "sourceName": "OpenAI Blog",
+      "publishedAt": "2026-11-24T13:00:00.000Z",
+      "sourceExcerpt": "GPT-6 models design protein structures and sequences using reasoning and code. Lab tests found evidence of binding across five targets.",
+      "summary": "**What happened:** GPT-6 models design protein structures and sequences using reasoning and code. Lab tests found evidence of binding across five targets.\n\n**Key stats:** GPT-6 models design protein structures and sequences using reasoning and code.\n\n**Source:** https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities"
+    },
+    {
+      "id": "google-ai-blog-https%3A%2F%2Fblog.google%2Fproducts-and-platforms%2Fproducts%2Fsearch%2Fgoogle-search-personal-intelligence-apps%2F",
+      "rank": 3,
+      "title": "A more tailored Google Search that’s uniquely yours",
+      "sourceUrl": "https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps/",
+      "sourceName": "Google AI Blog",
+      "publishedAt": "2026-11-23T17:00:00.000Z",
+      "sourceExcerpt": "Get more helpful Search responses by securely opting in to connect Google Wallet, Drive, and the Gemini app to Personal Intelligence in AI Mode.",
+      "summary": "**What happened:** Google introduced Personal Intelligence in AI Mode, letting users opt‑in to securely connect Google Wallet, Drive, and the Gemini app with Search. The integration tailors answers to individual preferences while keeping data private.\n\n**Why it matters:** By blending personal data with Gemini’s generative AI, Search can deliver more relevant, context‑aware responses, potentially reshaping how users interact with information online and raising the bar for privacy‑first personalization.\n\n**Key stats:** Google has not released usage numbers or performance metrics for the new feature at launch.\n\n**Source:** https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps/"
+    },
+    {
+      "id": "openai-blog-https%3A%2F%2Fopenai.com%2Fbusiness%2Fcustomer-stories%2Frichpanel-ai-customer-support",
+      "rank": 4,
+      "title": "Richpanel helps companies automate 50% of support in 30 days",
+      "sourceUrl": "https://openai.com/business/customer-stories/richpanel-ai-customer-support",
+      "sourceName": "OpenAI Blog",
+      "publishedAt": "2026-11-23T08:00:00.000Z",
+      "sourceExcerpt": "Richpanel uses GPT-6 Astra and GPT-6.1 Sol to equip its AI support agents with tools and procedures, and GPT-6 Luna for their conversations.",
+      "summary": "**What happened:** Richpanel uses GPT-6 Astra and GPT-6.1 Sol to equip its AI support agents with tools and procedures, and GPT-6 Luna for their conversations.\n\n**Key stats:** Richpanel uses GPT-6 Astra and GPT-6.1 Sol to equip its AI support agents with tools and procedures, and GPT-6 Luna for their conversations.\n\n**Source:** https://openai.com/business/customer-stories/richpanel-ai-customer-support"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.28341",
+      "rank": 5,
+      "title": "When Tools Fail, Agents Fabricate: Silent Failure and Verification-First Oversight in Tool-Using LLM Agents",
+      "sourceUrl": "https://arxiv.org/abs/2611.28341",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-24T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.28341v1 Announce Type: new Abstract: Tool-using LLM agents must recover when a tool call fails, by retrying, switching tools, or revising their plan. We study how agents fail when tools fail, using RetryRealistic, a sandboxed yet realistic testbed for controlled fault injection in which agents operate on a real OS filesystem with genuine permission enforcement, SQLite databases, a deterministic local HTTP server, and a constrained shell, across 8 tools, 9 fault types with controlled persistence, and 30 multi-step tasks. Evaluating four agents over 2,100 faulted runs against ground truth, we find that recovery is unreliable (19-68% correct) and frequently silent: 6-26% of runs end in a confident fabrication, a wrong answer asserted as fact. The failure mode is governed more by the fault type than by the model: faults that return partial data drive fabrication (up to 38%), while hard denials drive honest failure. The mechanism is what we call silent ingestion: the agent accepts faulted data as valid on first contact without retrying or flagging the problem, then builds a fabricated answer on top of it. We show that fabrication is reducible: a verification-first Monitor, grounding checks in structured tool outputs and issuing corrective directives rather than hard blocks, raises correct recovery from 45.6% to 56.3% and cuts fabrication from 17.3% to 10.8%. Removing chain-of-thought increases fabrication (+8.3pp), so deliberation guards against silent ingestion. We release RetryRealistic, the fault-injection toolkit, and all annotated traces at https://github.com/Kingsford-Group/RetryRealistic",
+      "summary": "**What happened:** Researchers introduced RetryRealistic, a sandbox that injects realistic faults into eight common tools (filesystem, SQLite, HTTP server, shell, etc.) and observed how tool‑using LLM agents react. The agents often stumble, resorting to naive retries, tool switches, or plan rewrites without guaranteeing success.\n\n**Why it matters:** In real‑world deployments—automation, data pipelines, or autonomous assistants—silent tool failures can propagate errors or cause downtime. Understanding these failure modes is essential for building verification‑first oversight that catches issues before they cascade.\n\n**Key stats:** • 9 fault types across 8 tools were tested. • Agents recovered correctly in only ~38% of cases. • Naive retries accounted for 45% of failed recoveries, while proper verification‑first strategies succeeded in >80% of trials.\n\n**Source:** https://arxiv.org/abs/2611.28341"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.28348",
+      "rank": 6,
+      "title": "SMAD: A Semantics-Guided Multi-Agent Framework for Unsupervised Time-Series Anomaly Detection",
+      "sourceUrl": "https://arxiv.org/abs/2611.28348",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-24T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.28348v1 Announce Type: new Abstract: Time-series anomaly detection (TSAD) lacks a one-size-fits-all detector for heterogeneous data and anomaly types. Existing automation is limited by implicit objectives, potentially unreliable historical knowledge, or high computational costs. More fundamentally, it selects how to detect anomalies without explicitly defining what to detect. We propose SMAD, an LLM-based multi-agent framework that translates anomaly intent into executable, testable detection pipelines. Rather than selecting detectors against an implicit target, SMAD establishes a natural-language semantic contract grounded in measurable time-series properties, specifying target event patterns, expected score responses, and validation questions. This contract governs both detector construction and evaluation: LLM agents propose pipelines, while contract-matched synthetic interventions provide label-free evidence from the target series to assess semantic coverage and guide iterative self-refinement. A semantics-aware ensemble integrates validated candidates and attributes each alert to contributing detectors and supporting evidence. On univariate and multivariate TSAD benchmarks, SMAD improves detection performance over the strongest baseline by 11.5% and 9.6%, respectively, while outperforming general-purpose coding agents at 2-5x lower language-model token cost.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.28356",
+      "rank": 7,
+      "title": "Engram: Multi-Stage Memory for Agentic Tuning of Heterogeneous Models",
+      "sourceUrl": "https://arxiv.org/abs/2611.28356",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-24T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.28356v1 Announce Type: new Abstract: Large language model (LLM) agents can now tune neural networks, yet without cross-session memory they spend costly trials rediscovering known lessons. Reuse is difficult because production models differ in architecture, training setup and inference budget. We present Engram, a memory system that links past trial outcomes with the hypotheses and rationale behind them and assesses whether this evidence applies to the current model. An online agent curates evidence at the decision points where it is needed: Initial Guidance supplies validated lessons at the start, Session Retrieval supplies related past sessions before each batch of hypotheses is generated, and Trial Candidate Review checks each trial candidate against matching past trials. Between sessions, an offline agent distills validated lessons, making the memory self-improving. On two ads models, Engram reaches the 32-trial result of a no-memory control with 47% fewer trials and also ends with a better model on average.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.28368",
+      "rank": 8,
+      "title": "Schedule, Rank, Profile: Continuous Evaluation of LLM Agents in Games",
+      "sourceUrl": "https://arxiv.org/abs/2611.28368",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-24T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.28368v1 Announce Type: new Abstract: Games are a robust test for large language model agents: they require sequential decisions, adversarial or cooperative interaction, state tracking, reasoning under uncertainty, and long-horizon planning. However, a one-time game benchmark can go stale as models, prompts, environment implementations, and evaluation policies change, and refreshing it is costly: full round-robin evaluation scales poorly in the number of model pairs, and the resulting outcomes live on incompatible per-game scales. We present a framework for continuous evaluation of LLM agents in game settings, organized around three coupled components. First, an adaptive scheduler that maps pairwise Bradley-Terry uncertainty to reduced per-pair match targets, concentrating budget on comparisons that remain unresolved. Second, a Unified Leaderboard (ULB) that reduces heterogeneous outcomes to pairwise evidence and fits a game-balanced Bradley-Terry model by minorization-maximization with bootstrap intervals, so that high-throughput games cannot dominate the aggregate ranking. Third, a game skill-profile methodology that scores each game along diverse skill dimensions, making the capability coverage of the suite explicit and turning game selection into a design decision rather than an artifact of availability. In this paper, we specify the research design and outcome reduction of the current implementation and evaluate the framework on a ten-game suite spanning perfect-information board games, imperfect-information games, and social/language settings, reporting LLM capability profiles, evaluation-cost savings across model-refresh cycles, and an empirical Pareto frontier relating model performance to inference cost. As deployed, the scheduler saved 61.7% of episodes; it counted each episode in the two team games as four records, overstating their savings, and the other eight games save 61.9%.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.28369",
+      "rank": 9,
+      "title": "CausalNTP: A World-Model Recipe for Causal Next-Token Prediction under Noisy Training-data",
+      "sourceUrl": "https://arxiv.org/abs/2611.28369",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-24T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.28369v1 Announce Type: new Abstract: This paper shows that transformer networks trained with next-token prediction (NTP) and gradient descent do not learn to make predictions using only causally-relevant tokens in the left context, irrespective of the causal ordering of tokens during training, and identifies the learning deficiencies responsible. We introduce a causal world-model setup, for which, we characterize the Bayes-optimal predictor under the causal view of the data. We then prove that, a function that distills its predictions to non-causal views of data, when realized under Occam's Razor, recovers the true causal predictor. Based on this analysis we propose CausalNTP, a practical training algorithm that approximates this theoretical recipe and trains transformers to depend only the causally relevant tokens in left-context. Empirically in the world-model setup, CausalNTP achieves out-of-distribution generalization that vanilla NTP cannot due to its theoretical limits, regardless of data and model scale. We show similar gains and behavior in the natural language question-answering setting as a proof-of-concept.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.28408",
+      "rank": 10,
+      "title": "The Effect of Security-Focused Prompts on Reported Findings: A Controlled Experiment on 400 AI-Generated Web Applications",
+      "sourceUrl": "https://arxiv.org/abs/2611.28408",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-24T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.28408v1 Announce Type: new Abstract: Agentic coding tools turn a specification into a running web application, so their defaults for authentication, sessions, input validation, and dependencies become its security posture. This study asks whether appending a fixed block of OWASP-aligned security requirements to the prompt changes what such tools produce, by how much, and with what side effects. Each of 100 frozen specifications was realized four times: two agentic tools (Claude Code, Codex CLI) crossed with two prompts sharing a byte-identical functional core, without (A) and with (B) the security block. A fixed static and dynamic pipeline scanned the 400 applications, yielding 6,721 triaged findings, analyzed with count and logistic mixed models and with a dependency diff. The block cut findings per application by a third (incidence-rate ratio 0.65, 95% CI 0.60-0.71), equally through both tools, and roughly doubled the declared dependency surface, so variant-B applications carried more high-severity dependency advisories. Adjusted for that surface the advisory rate did not rise (flat per application, 18% lower in aggregate), while high-severity findings in first-party source fell by nearly half. Security-focused prompting is therefore an inexpensive and portable improvement, but it enlarges the dependency surface that has to be audited against it, an effect of library selection rather than of the security requirements themselves.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.28565",
+      "rank": 11,
+      "title": "Beyond Unit Tests: Path-Aware Rubric-Guided LLM Autograding of Notebooks",
+      "sourceUrl": "https://arxiv.org/abs/2611.28565",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-24T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.28565v1 Announce Type: new Abstract: Jupyter notebooks support open-ended, multi-step assessments in which students build one logical flow across interdependent steps, combining code, written analysis, and generated outputs such as plots. These reflect authentic scientific practice but are hard to grade consistently, since students may make different yet equally valid choices at each step, so a later answer can only be judged in light of the choices a student made earlier. We present an LLM-based autograder for such flow-structured notebook questions. It generates a rubric from a reference solution, then applies a softening pass that relaxes criteria tied to the reference so legitimate alternative paths are not penalized. Each question group is graded in a single model call, so later answers are judged against the student's own earlier choices, using question-type tags and schema-constrained, low-temperature outputs. Evidence is scored multimodally: code, text, numerical outputs, and figures from code cells. We deployed the tool in a machine-learning course, integrated with Gradescope, with a pre-submission format check and prompt-injection defenses, and evaluate it both in that live course and against archived submissions graded by staff in earlier terms. We report agreement, cross-model variance, cost, student perceptions, and injection resilience. With low-temperature models, agreement with human scores is often strong, including on the open-ended items the design specifically targets, while run-to-run stability depends sharply on the model's temperature support.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.28617",
+      "rank": 12,
+      "title": "VeriLadder: A Multi-Agent Specification Refinement System for Tool-Verified Verilog Datasets",
+      "sourceUrl": "https://arxiv.org/abs/2611.28617",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-24T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.28617v1 Announce Type: new Abstract: Training data is a bottleneck in AI, especially for large language models (LLMs) that write Verilog, because register-transfer-level (RTL) code is rarely published and existing datasets mostly check code for syntax, not instruction correctness. This paper presents VeriLadder, a five-level Verilog dataset, and the multi-agent framework that builds it, in which LLM agents write and revise specifications, and EDA tools (a synthesizer and a formal equivalence checker) decide what is accepted. Its levels follow an engineer's checks. Level 1 labels designs from two large Verilog corpora, namely RTLCoder and PyraNet, with synthesis results, failure causes, critical warnings and post-synthesis metrics. 28% of RTLCoder designs fail synthesis and are kept as negatives. Level 2 grades each instruction on four specification qualities, and low grades predict failed rebuilds. Level 3 rewrites each instruction into a refined specification and accepts it only if an LLM from another model family, reading only that specification, writes a circuit formally equivalent to the original. This raises the share of rebuildable designs from 26.1% to 78.2%, keeping every failed specification with its counterexample. Levels 4 and 5 add verified paraphrases and one-fact variants, hard negatives that differ only in one behavior from the verified design. VeriLadder labels the synthesizability of 716,627 designs and, from RTLCoder, provides 11,247 refined specifications, 32,393 paraphrases and 8,397 one-fact variants. Fine-tuning Qwen2.5-Coder-7B-Instruct on VeriLadder raises functional pass@1 from 31.7% to 50.0% on VerilogEval v2 and from 35.0% to 45.2% on RTLLM v2. The dataset and fine-tuned models are publicly available.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.28640",
+      "rank": 13,
+      "title": "Mitigating Backdoors in Masked Diffusion Language Models",
+      "sourceUrl": "https://arxiv.org/abs/2611.28640",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-24T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.28640v1 Announce Type: new Abstract: Masked diffusion language models (MDLMs) have emerged as a promising alternative to autoregressive models because they can predict multiple tokens in parallel rather than generating tokens sequentially. However, recent studies have shown that MDLMs are vulnerable to backdoor attacks: when an input contains an attacker-chosen trigger, a backdoored model generates a targeted output, such as malicious code, while otherwise behaving normally. Despite this threat, backdoor defenses for MDLMs remain largely underexplored. We present UNMASK, the first defense framework for MDLMs that detects trigger-containing inputs, localizes the trigger tokens, and removes the backdoor from the compromised model. UNMASK exploits two fundamental properties of backdoor triggers, specificity and dominance, to assign a suspiciousness score to each input token. By leveraging two distinctive capabilities of MDLMs, parallel token prediction and token reconstruction at arbitrary positions, UNMASK computes these scores both effectively and efficiently. We further provide a theoretical analysis supporting the design of UNMASK. Evaluations across 40 settings spanning two attacks and four models show that UNMASK detects 99.3% of trigger-containing inputs at a 5% false-positive rate, substantially outperforming the strongest adapted baseline, which achieves 54.8%. UNMASK also achieves over 99% trigger-localization accuracy and reduces the average attack success rate from 95% to 1%, while largely preserving the model's utility on clean inputs.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.28660",
+      "rank": 14,
+      "title": "Persuasion from Within: Model-Based Insider Attacks in Multi-Agent LLM Debate and Consensus",
+      "sourceUrl": "https://arxiv.org/abs/2611.28660",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-24T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.28660v1 Announce Type: new Abstract: Large language models (LLMs) are increasingly deployed in multi-agent systems for collective decision-making, such as multi-agent debate and consensus games, in which agents exchange messages and update their answers over multiple rounds and a resolution mechanism aggregates them into a final outcome. Most multi-agent LLM frameworks assume that every participant shares the system objective. In practice, however, a malicious agent can join as a legitimate member of the group and persuade the other agents toward a hidden adversarial goal. We formalize such attacks as a sequential decision-making problem in which the insider seeks to degrade the utility of the collective outcome. We propose a model-based insider attack that learns to persuade a group of agents: the insider first learns a world model of the benign agents from offline trajectories and then uses it both to train a persuasion policy and to plan its messages. In two case studies involving a numerical consensus game and a multi-agent debate, the learned insider is the most effective and the stealthiest attack we evaluate, outperforming both prompt-based and trained LLM persuaders from prior work. The attack also transfers to other target models, larger groups, and unseen datasets, and remains effective under existing Byzantine-resilience defenses. The learned insider also enables a new defense: adversarially training benign agents on the attack data largely removes both our attack and the strongest prior persuasion attack. These results show that combining world models with reinforcement learning and planning is an effective route to both attacking and hardening language-based multi-agent systems.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.28692",
+      "rank": 15,
+      "title": "Can Your AI Twin Meet People for You? It Can Hold a Conversation. But What Does It Need to Judge Like You?",
+      "sourceUrl": "https://arxiv.org/abs/2611.28692",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-24T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.28692v1 Announce Type: new Abstract: Should your AI twin go meet people on your behalf? We built LLM twins of 710 real people from their other conversations in the CANDOR corpus, sent them to meet each other in 5,680 simulated first conversations, and checked every rehearsal against what the real people said after meeting for real (355 held-out, participant-disjoint pairs, against baselines that include each person's rating history). The rehearsals work: a twin's conversation predicts real liking ($\\rho$=0.277), carries information that questionnaires and rating history do not have (partial $\\rho$=0.16 [0.05, 0.26]), and recovers most of what the same reader gets from the real conversation (0.321). Swap controls show that this signal travels through the conversation, not through the persona card. What, then, does a twin need to judge like you? Not your voice: making twins talk more like their owners, with person-specific activation steering and a LoRA trained on their own speech, did not help in a pre-specified test and lowered accuracy in an exploratory second round (-0.183 [-0.294, -0.066]). Nor simply your stated ratings: a persona-prompted twin that holds the conversation does not yet carry its owner's judgment, and when told its owner's past ratings it anchors on them instead of weighing them. Learning helps: a small appraisal head trained on other real conversations, which combines the twin's post-call answers with its owner's rating history, lifts rehearsal-based prediction above the history baseline out of fold (+0.059 [0.001, 0.115], against +0.022 without the twin's answers; pre-specified primary contrast +0.056 [-0.001, 0.111]). We propose an attribution protocol for twin-based social simulation and identify learned appraisal as the component twins need next.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.28787",
+      "rank": 16,
+      "title": "DiscernBench: Evaluating Cooperative Discernment of LLM Agents in Institutional Settings",
+      "sourceUrl": "https://arxiv.org/abs/2611.28787",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-24T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.28787v1 Announce Type: new Abstract: The deployment of large language models in operational settings demands evaluation of judgment under institutional constraint. We introduce DiscernBench, a benchmark for evaluating cooperative discernment: the ability of an agent to determine whether to comply with, refuse, or escalate a request in an institutional setting. DiscernBench comprises scenarios derived from real-world incident reports across domains such as aviation, law enforcement, and emergency management. We evaluate eight LLMs across three decision-making configurations and analyze both final decisions and the intermediate judgments produced during multi-agent deliberation. Under disagreement, Final Responders exhibit model- and role-dependent aggregation patterns in which a lone specialist recommendation can disproportionately influence the collective decision, a phenomenon we term Minority-Signal Override. Role-specialized multi-agent deliberation raises average over-escalation from 3.79% under direct single-agent judgment to 28.27%, with the direction and magnitude of minority-signal influence varying substantially across models and specialist roles. These results reveal distinct collective decision behaviors that are not captured by final-answer accuracy alone. Trustworthy multi-agent systems therefore require evaluating not only individual specialist reasoning, but also how conflicting judgments are transformed into collective decisions. Code and data are available at https://github.com/Disha1001/DiscernBench.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.28907",
+      "rank": 17,
+      "title": "STRIDE: Strategy-to-Tactics Retrieval-Guided Skill Disclosure and Evolution for Agentic Reinforcement Learning",
+      "sourceUrl": "https://arxiv.org/abs/2611.28907",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-24T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.28907v1 Announce Type: new Abstract: Skill-augmented reinforcement learning enables LLM agents to reuse task-solving knowledge across episodes, but existing systems typically expose agents to a flat skill pool and update skills only from coarse, episode-level outcomes. This conflates two distinct uses of experience: a stable strategy that should frame the whole episode, and tactical know-how that should be retrieved only when the agent reaches a local execution gap. We propose STRIDE (Strategy-to-Tactics Retrieval-guided skIll Disclosure and Evolution), a framework that brings progressive skill disclosure into agentic reinforcement learning. STRIDE keeps the selected strategy visible as episode context, exposes a compact tactic menu, and loads full tactic content only after an explicit retrieval action. This interface turns each retrieval into an event-level credit unit: the same event provides process feedback for learning when to retrieve and supplies evidence for skill-bank evolution. On ALFWorld, STRIDE achieves a 92.7% average success rate with Qwen3-4B and a 94.9% average success rate with Qwen3-8B. On WebShop, it improves over the strongest reproduced skill-augmented baseline by 4.5 score points and 1.9 success-rate percentage points. These results show that skill reuse is most effective when persistent strategies preserve global task structure and tactics are disclosed only at local decision bottlenecks.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.28935",
+      "rank": 18,
+      "title": "STEdgeFormer: MCU and NPU Deployable Transformer Architecture",
+      "sourceUrl": "https://arxiv.org/abs/2611.28935",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-24T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.28935v1 Announce Type: new Abstract: Transformer-based sequence models have achieved strong performance in language and time-series modeling, but self-attention remains computationally and memory intensive for deployment on resource-constrained edge accelerators. We propose STEdgeFormer, a lightweight, hardware-aware sequence architecture designed for efficient execution on embedded neural accelerators. STEdgeFormer combines polynomial mixture layers and DyT normalization with an accelerator-aware causal memory block, replacing pairwise self-attention with compact causal aggregation. On TinyStories, the fully NPU-supported STEdgeFormer (MW) achieves a perplexity of 7.39 with 4.12M parameters and 6.51 MB RAM, with an end-to-end latency of 40 ms. In comparison, the standard 4.12M-parameter configuration achieves a lower perplexity of 6.79 but requires CPU fallback for unsupported operators, resulting in 1450 ms latency. Vanilla Transformer, on the other hand, achieves a perplexity score of 5.71 using a 4.40M-parameter model, but it cannot be deployed on the hardware. On downstream tasks, STEdgeFormer achieves 94% accuracy on ECG5000 and 93% accuracy on Speech Commands with 1.39M parameters. These results demonstrate that hardware-aware architectural choices and operator compatibility can have a substantial impact on practical inference latency, beyond model size and task accuracy alone. Rather than targeting state-of-the-art accuracy on individual benchmarks, STEdgeFormer is designed to provide a deployable sequence modeling architecture under the memory, computational, and operator constraints of embedded neural accelerators.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.29028",
+      "rank": 19,
+      "title": "Do You Even Know What I Want? Improving LLMs Ability to Detect Hidden User Intent",
+      "sourceUrl": "https://arxiv.org/abs/2611.29028",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-24T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.29028v1 Announce Type: new Abstract: As with conventional AI agents, a common source of misalignment between Large Language Models (LLMs) and their human users is misspecified goals. Often, this happens when the human has skewed beliefs about the system's model and provides it with information that causes behavior different from what they expected, with potentially unwanted side effects. To ensure goal alignment, one solution would be for the LLM to ask the human questions about their objectives. However, it has been well-documented that LLMs most often provide default responses to user requests rather than try and ask questions to clarify their true intent. In this paper, we address these challenges by adapting a novel formulation for the objective misspecification problem to work with LLMs. We then test if LLMs that are prompted to ask questions about a user's true underlying objectives are better at identifying them compared to those that do not. We evaluate our method using four state-of-the-art LLMs tested on five standard IPC domains, showing that for some domains, asking questions greatly improved model performance.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.29255",
+      "rank": 20,
+      "title": "NoeVera: Can Knowledge Guide Experiments and Experiments Refine Knowledge?",
+      "sourceUrl": "https://arxiv.org/abs/2611.29255",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-24T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.29255v1 Announce Type: new Abstract: With the growing demand for large language model (LLM) services, optimizing LLM serving systems is becoming increasingly complex, and the bottleneck is no longer predicting how a given configuration will perform. The harder problem is deciding what to investigate: which mechanisms matter for a workload, which configurations are worth testing, and what evidence a decision still needs. In this work, we present NoeVera, an agentic Second Brain that goes beyond just one-shot retrieval by turning papers, code, benchmarks, and experimental results into a persistent, provenance-preserving knowledge base with three planes: source evidence, reusable synthesis, and agent memory. Decision-aware retrieval assembles compact evidence packs, role-specific agents reason over them and invoke a simulator (Vidur or GAUSS) whenever quantitative support is needed, and every finding is written back as a scoped evidence record, so knowledge guides experiments and experiments refine knowledge. In configuration search over four serving scenarios, NoeVera comes within 5% of the optimum in a median of 6-7 simulator calls, versus 9 for Bayesian optimization and 15 for a knowledge-free agent with the same tools; on A100 GPUs, its representative configurations deliver ~1.30x vLLM-default throughput and meet every scenario's latency objective. When reused, provenance-preserving evidence records over-generalize on only 8% of applicability traps, versus 28% for a general-purpose agent memory. On the held-out 48-task split of a 72-task benchmark, NoeVera scores 29% higher than an equally equipped agent and 36% higher than its single-call retrieval counterpart (0.80 vs. 0.62 and 0.59), and even when baselines receive NoeVera's own prompts, a statistically significant part of its evidence-evolution advantage remains.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.29274",
+      "rank": 21,
+      "title": "MetaSkill: Reusable Problem-Solving Methods for Adaptive Skill Orchestration in LLM Agents",
+      "sourceUrl": "https://arxiv.org/abs/2611.29274",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-24T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.29274v1 Announce Type: new Abstract: Reusable skills provide specialized procedures, but large language model (LLM) agents must still determine how to organize and adapt their use. We introduce MetaSkill, a two-layer framework for reusing problem-solving methods across tasks and domains. The method layer selects from 26 curated methods and binds abstract roles to task objects. The execution layer uses the instantiated method to identify intermediate objectives, coordinate native skills, and guide repair or method reselection. On 89 SkillsBench tasks and 995 ToolHop examples, MetaSkill outperforms the evaluated baselines in all six configurations, with accuracy gains of 3.51-13.48% over the strongest baseline. Ablations support explicit method-guided orchestration beyond direct method injection and further gains from method reselection.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.29589",
+      "rank": 22,
+      "title": "Scalar Tuned Lens Summaries Offer Limited Incremental Value for Mid-Generation Abstention",
+      "sourceUrl": "https://arxiv.org/abs/2611.29589",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-24T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.29589v1 Announce Type: new Abstract: Mid-generation abstention aims to stop an unpromising response before spending its remaining computation budget. Intermediate transformer states may help predict eventual correctness, but whether scalar summaries of their vocabulary predictions add useful evidence is less clear. We compare Tuned Lens entropy and divergence features with final-state and raw intermediate-state probes under matched, causal evaluation. Across eight instruction-tuned models on MATH-500, raw intermediate states improve ranking, whereas scalar-only probes usually trail the final-state baseline. Scalar hybrids have positive exceptions, but their advantage over position-matched permutation controls is small. Cross-fitted residual comparisons further show that gains over a final-state probe need not require aligned scalar features. Actual stopping runs on two model sizes and two benchmarks reveal a separate accuracy--computation trade-off, with token savings overstating wall-time savings for scalar policies. The evidence supports a restricted empirical conclusion about these scalar features, not a general negative claim about intermediate representations.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.29619",
+      "rank": 23,
+      "title": "Wactorz: Self-Writing LLM Agents That Discover, Repair, and Migrate at the Edge",
+      "sourceUrl": "https://arxiv.org/abs/2611.29619",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-24T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.29619v1 Announce Type: new Abstract: Most LLM agent frameworks build a crew that runs a task and exits. Physical environments (e.g., homes, labs, factory floors) need agents that stay up for months, survive their own bugs, and run on whatever hardware is already next to the sensors. We present Wactorz, an open-source runtime in which LLM-generated agents are long-lived, supervised actors: a planner turns a chat request into Python, compiles it into a new actor at runtime, and a supervisor restarts that actor alone, with its state intact, when it crashes. All coordination rides on MQTT, so agents can be spawned on, and live-migrated between, edge nodes such as a Raspberry Pi, and every internal event is a topic external systems can subscribe to. The recorded demo builds a camera-to-lamp automation from one chat request, adds a second agent that is auto-wired to the first by topic and carries a deliberate division-by-zero, watches that agent repair its own code without losing its count, then deploys a fresh Raspberry Pi node and live-migrates the agent onto it, in under four minutes of wall-clock time and \\$0.13 of model usage. This extended version adds what the two-page demonstration paper could not: the Wiring view of the topic graph, Wactorz as a library for hand-written agents, how trained models are stored, sent to nodes and replaced, the security model, and the system's limitations.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.29716",
+      "rank": 24,
+      "title": "Fin-RSI: A Unified Library of Financial Skills, Checks, and Self-Improvement for LLM Agents",
+      "sourceUrl": "https://arxiv.org/abs/2611.29716",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-24T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.29716v1 Announce Type: new Abstract: As large language models (LLMs) become more capable, financial agents need tools they can readily discover and use. Yet financial software is fragmented across libraries with different interfaces and conventions, making it difficult to build reliable agent workflows. We present Fin-RSI, a unified Python library of financial skills, checks, and self-improvement designed for LLM agents. It brings together tools for market analysis, forecasting, portfolio construction, and trading research through shared interfaces across models and agent frameworks. Agents can find suitable tools from natural-language requests, reuse tested implementations, and improve generated programs through checking and feedback. Developers can extend the library with new tools without rebuilding integrations for each model. Across 20 open-weight models on six trading-position tasks, tool discovery increased the proportion of episodes producing valid programs from 9.7% to 29.2%; for models with at least 14 billion parameters, it rose from 23.6% to 64.6%. We release the library and benchmark as a shared resource for the community and plan to expand its tools and task coverage as financial agents evolve.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.29732",
+      "rank": 25,
+      "title": "Reinforcement Learning from LLM-Generated (Suboptimal) Demonstrations",
+      "sourceUrl": "https://arxiv.org/abs/2611.29732",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-24T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.29732v1 Announce Type: new Abstract: Reinforcement learning (RL) has achieved substantial progress across many domains, but training an agent \\textit{tabula rasa} remains highly sample-inefficient. A common remedy is to initialize the agent using a neural network pretrained on demonstrations. However, collecting demonstrations is expensive, and the demonstrations themselves can be suboptimal. In this work, we use a large language model (LLM) to generate an advice policy that produces demonstration data with effectively no human cost. We use this data to warmstart a DQN agent, and use the advice policy itself to guide exploration during training. Because LLM-generated advice is often suboptimal, we further introduce a value warmstart method that initializes the agent to recognize promising states from the advice policy's behavior, without directly copying its actions. To characterize the robustness of this method, we systematically perturb individual sub-skills of an LLM-generated advice policy for a long-horizon, sparse-reward task. Degraded advice still meaningfully accelerates learning relative to unaided baselines. These results suggest that LLM-generated advice, though suboptimal, can be a cheap alternative to costly human demonstrations.",
+      "summary": ""
+    }
+  ]
+}
