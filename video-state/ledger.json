@@ -2340,7 +2340,7 @@
       "platforms": {
         "youtube": {
           "accountId": "6ac27146281ee799a37065e4",
-          "status": "submitting",
+          "status": "published",
           "idempotencyKey": "ec0b7a2d-0c32-4bcb-89f5-3ec9d5ba6dc4",
           "request": {
             "content": "When Tools Fail, Agents Fabricate: Silent Failure and Verification-First Oversight in Tool-Using LLM Agents\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2611.28341\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-24\nAI-generated narration. #AI #AINews #Shorts",
@@ -2365,7 +2365,9 @@
             ],
             "publishNow": true
           },
-          "firstSubmittedAt": "2026-11-24T21:58:31.746Z"
+          "firstSubmittedAt": "2026-11-24T21:58:31.746Z",
+          "postId": "6b06088904665020fb33fcea",
+          "postUrl": "https://www.youtube.com/watch?v=RYZs6LuqOfM"
         }
       },
       "script": {
