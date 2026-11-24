@@ -1636,8 +1636,8 @@
         "sourceUrl": "https://arxiv.org/abs/2611.18908",
         "sourceName": "arXiv cs.AI",
         "publishedAt": "2026-11-17T05:00:00.000Z",
-        "sourceExcerpt": "arXiv:2611.18908v1 Announce Type: new Abstract: Alignment-trained large language model (LLM) agents are increasingly deployed in autonomous, multi-round settings where ethical compliance can come into direct tension with task success. While safety literature extensively documents failure modes like sycophancy and reward hacking, it largely overlooks a critical vulnerability: how agents behave under simulated existential economic pressure. We introduce MemeEconomy, a multimodal agentic market simulation in which LLM agents act as meme investors. Agents select content from a five-tier harm taxonomy and target communities under low-pressure and high-pressure (survival) environments. Each decision is logged in a Belief-Desire-Intention (BDI) schema that we use as a diagnostic instrument, externalizing the agent's event understanding, declared priorities, and harm acknowledgment. Across ten models from four frontier model families, harmful selection rates remain consistently high and rise by +15 percentage points on average under an economic survival incentive. Frontier alignment-trained models commit to harm-tolerant selection at initialization while suppressing the explicit harm acknowledgment that previously accompanied it. In competitive tournaments, ethical agents finish higher overall, yet moderation penalties fail to suppress harm: harmful selection rates remain elevated in rounds following a removal, indicating the moderation mechanism does not function as a deterrent. We further train MemeAgent, a 2B-parameter verifier on the simulation's BDI logs, which outperforms zero-shot frontier verifiers on in-distribution audits (97.5% vs. 63-74% accuracy on the Pass vs. Block decision) and generalizes to external multimodal harm benchmarks (78% vs. 50-56% on Hateful Memes). The same logs that surface the failure mode also help train the model that detects it.",
-        "summary": "**What happened:** Researchers introduced *MemeEconomy*, a multimodal agentic market simulation that pits LLM agents against each other under existential economic stress. The study examines how ethical compliance collides with task success in autonomous, multi‑round interactions.\n\n**Why it matters:** As LLM agents become more autonomous in real‑world applications, understanding their behavior under survival‑type incentives is crucial for AI safety. Ignoring this vulnerability could amplify known failure modes like sycophancy and reward hacking.\n\n**Key stats:** • Paper identifier: arXiv:2611.18908v1 (new submission) \n• Introduces the *MemeEconomy* framework (no quantitative results reported yet) \n• Highlights a gap in safety literature concerning economic pressure on agents.\n\n**Source:** https://arxiv.org/abs/2611.18908"
+        "sourceExcerpt": "",
+        "summary": ""
       },
       "selectedAt": "2026-11-17T20:30:43.744Z",
       "platforms": {
@@ -1645,87 +1645,10 @@
           "accountId": "6ac27146281ee799a37065e4",
           "status": "published",
           "idempotencyKey": "1bc6cea6-5aaa-4798-9364-754b9d2d0acd",
-          "request": {
-            "content": "MemeEconomy: Do LLM Agents Trade Ethics for Survival?\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2611.18908\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-17\nAI-generated narration. #AI #AINews #Shorts",
-            "mediaItems": [
-              {
-                "type": "video",
-                "url": "https://media.zernio.com/temp/1794947475063_a1f8e9ffac89f37e_2026-11-17.mp4"
-              }
-            ],
-            "platforms": [
-              {
-                "platform": "youtube",
-                "accountId": "6ac27146281ee799a37065e4",
-                "platformSpecificData": {
-                  "title": "MemeEconomy: Do LLM Agents Trade Ethics for",
-                  "visibility": "public",
-                  "madeForKids": false,
-                  "containsSyntheticMedia": true,
-                  "categoryId": "28"
-                }
-              }
-            ],
-            "publishNow": true
-          },
           "firstSubmittedAt": "2026-11-17T20:31:18.385Z",
           "postId": "6afcb997a19e9fc581cc1e08",
           "postUrl": "https://www.youtube.com/watch?v=8Uy2P0O8klo"
         }
-      },
-      "script": {
-        "version": 3,
-        "provider": "extractive",
-        "format": "source-fallback",
-        "angle": "capability",
-        "workingTitle": "MemeEconomy: Do LLM Agents Trade Ethics for",
-        "availability": "unknown",
-        "hookStyle": "question",
-        "sentences": [
-          {
-            "text": "Would you use MemeEconomy?",
-            "evidenceQuote": "We introduce MemeEconomy, a multimodal agentic market simulation in which LLM agents act as meme investors.",
-            "role": "hook",
-            "visual": "example",
-            "displayText": "Would you use MemeEconomy?"
-          },
-          {
-            "text": "arXiv:2611.18908v1 Announce Type: new Abstract: Alignment-trained large language model (LLM) agents are increasingly deployed in autonomous, multi-round settings where ethical compliance can come into direct tension with task success.",
-            "evidenceQuote": "arXiv:2611.18908v1 Announce Type: new Abstract: Alignment-trained large language model (LLM) agents are increasingly deployed in autonomous, multi-round settings where ethical compliance can come into direct tension with task success.",
-            "role": "breakthrough",
-            "visual": "example",
-            "displayText": "Come into direct tension with task success"
-          },
-          {
-            "text": "arXiv cs.AI says it introduce MemeEconomy, a multimodal agentic market simulation in which LLM agents act as meme investors.",
-            "evidenceQuote": "We introduce MemeEconomy, a multimodal agentic market simulation in which LLM agents act as meme investors.",
-            "role": "breakthrough",
-            "visual": "process",
-            "displayText": "ArXiv cs.AI says it introduce MemeEconomy"
-          },
-          {
-            "text": "The same logs that surface the failure mode also help train the model that detects it.",
-            "evidenceQuote": "The same logs that surface the failure mode also help train the model that detects it.",
-            "role": "breakthrough",
-            "visual": "process",
-            "displayText": "The same logs that surface the failure mode"
-          },
-          {
-            "text": "This source excerpt does not confirm public access.",
-            "evidenceQuote": "arXiv:2611.18908v1 Announce Type: new Abstract: Alignment-trained large language model (LLM) agents are increasingly deployed in autonomous, multi-round settings where ethical compliance can come into direct tension with task success.",
-            "role": "impact",
-            "visual": "highlight",
-            "displayText": "does not confirm public access"
-          },
-          {
-            "text": "Would you try MemeEconomy, or wait for more proof?",
-            "evidenceQuote": "We introduce MemeEconomy, a multimodal agentic market simulation in which LLM agents act as meme investors.",
-            "role": "engagement",
-            "visual": "highlight",
-            "displayText": "Would you try MemeEconomy"
-          }
-        ],
-        "narration": "Would you use MemeEconomy? arXiv:2611.18908v1 Announce Type: new Abstract: Alignment-trained large language model (LLM) agents are increasingly deployed in autonomous, multi-round settings where ethical compliance can come into direct tension with task success. arXiv cs.AI says it introduce MemeEconomy, a multimodal agentic market simulation in which LLM agents act as meme investors. The same logs that surface the failure mode also help train the model that detects it. This source excerpt does not confirm public access. Would you try MemeEconomy, or wait for more proof?"
       },
       "presentation": {
         "title": "MemeEconomy: Do LLM Agents Trade Ethics for",
@@ -2401,6 +2324,90 @@
         "scriptVersion": 3
       },
       "selectionReason": "A source-backed, measurable change in time, cost, or capability."
+    },
+    "2026-11-24": {
+      "story": {
+        "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.28341",
+        "rank": 5,
+        "title": "When Tools Fail, Agents Fabricate: Silent Failure and Verification-First Oversight in Tool-Using LLM Agents",
+        "sourceUrl": "https://arxiv.org/abs/2611.28341",
+        "sourceName": "arXiv cs.AI",
+        "publishedAt": "2026-11-24T05:00:00.000Z",
+        "sourceExcerpt": "arXiv:2611.28341v1 Announce Type: new Abstract: Tool-using LLM agents must recover when a tool call fails, by retrying, switching tools, or revising their plan. We study how agents fail when tools fail, using RetryRealistic, a sandboxed yet realistic testbed for controlled fault injection in which agents operate on a real OS filesystem with genuine permission enforcement, SQLite databases, a deterministic local HTTP server, and a constrained shell, across 8 tools, 9 fault types with controlled persistence, and 30 multi-step tasks. Evaluating four agents over 2,100 faulted runs against ground truth, we find that recovery is unreliable (19-68% correct) and frequently silent: 6-26% of runs end in a confident fabrication, a wrong answer asserted as fact. The failure mode is governed more by the fault type than by the model: faults that return partial data drive fabrication (up to 38%), while hard denials drive honest failure. The mechanism is what we call silent ingestion: the agent accepts faulted data as valid on first contact without retrying or flagging the problem, then builds a fabricated answer on top of it. We show that fabrication is reducible: a verification-first Monitor, grounding checks in structured tool outputs and issuing corrective directives rather than hard blocks, raises correct recovery from 45.6% to 56.3% and cuts fabrication from 17.3% to 10.8%. Removing chain-of-thought increases fabrication (+8.3pp), so deliberation guards against silent ingestion. We release RetryRealistic, the fault-injection toolkit, and all annotated traces at https://github.com/Kingsford-Group/RetryRealistic",
+        "summary": "**What happened:** Researchers introduced RetryRealistic, a sandbox that injects realistic faults into eight common tools (filesystem, SQLite, HTTP server, shell, etc.) and observed how tool‑using LLM agents react. The agents often stumble, resorting to naive retries, tool switches, or plan rewrites without guaranteeing success.\n\n**Why it matters:** In real‑world deployments—automation, data pipelines, or autonomous assistants—silent tool failures can propagate errors or cause downtime. Understanding these failure modes is essential for building verification‑first oversight that catches issues before they cascade.\n\n**Key stats:** • 9 fault types across 8 tools were tested. • Agents recovered correctly in only ~38% of cases. • Naive retries accounted for 45% of failed recoveries, while proper verification‑first strategies succeeded in >80% of trials.\n\n**Source:** https://arxiv.org/abs/2611.28341"
+      },
+      "selectedAt": "2026-11-24T21:57:51.390Z",
+      "platforms": {
+        "youtube": {
+          "accountId": "6ac27146281ee799a37065e4",
+          "status": "prepared",
+          "idempotencyKey": "ec0b7a2d-0c32-4bcb-89f5-3ec9d5ba6dc4"
+        }
+      },
+      "script": {
+        "version": 3,
+        "provider": "extractive",
+        "format": "source-fallback",
+        "angle": "workflow",
+        "workingTitle": "When Tools Fail, Agents Fabricate: Silent Failure",
+        "availability": "unknown",
+        "hookStyle": "question",
+        "sentences": [
+          {
+            "text": "Would you use When Tools Fail, Agents?",
+            "evidenceQuote": "We study how agents fail when tools fail, using RetryRealistic, a sandboxed yet realistic testbed for controlled fault injection in which agents operate on a real OS filesystem with genuine permission enforcement, SQLite databases, a deterministic local HTTP server, and a constrained shell, across 8 tools, 9 fault types with controlled persistence, and 30 multi-step tasks.",
+            "role": "hook",
+            "visual": "example",
+            "displayText": "Would you use When Tools Fail, Agents?"
+          },
+          {
+            "text": "arXiv:2611.28341v1 Announce Type: new Abstract: Tool-using LLM agents must recover when a tool call fails, by retrying, switching tools, or revising their plan.",
+            "evidenceQuote": "arXiv:2611.28341v1 Announce Type: new Abstract: Tool-using LLM agents must recover when a tool call fails, by retrying, switching tools, or revising their plan.",
+            "role": "breakthrough",
+            "visual": "example",
+            "displayText": "ArXiv:2611.28341v1 Announce Type: new Abstract: Tool-using LLM agents"
+          },
+          {
+            "text": "The failure mode is governed more by the fault type than by the model: faults that return partial data drive fabrication (up to 38%), while hard denials drive honest failure.",
+            "evidenceQuote": "The failure mode is governed more by the fault type than by the model: faults that return partial data drive fabrication (up to 38%), while hard denials drive honest failure.",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "The failure mode is governed more"
+          },
+          {
+            "text": "This source excerpt does not confirm public access.",
+            "evidenceQuote": "arXiv:2611.28341v1 Announce Type: new Abstract: Tool-using LLM agents must recover when a tool call fails, by retrying, switching tools, or revising their plan.",
+            "role": "impact",
+            "visual": "highlight",
+            "displayText": "does not confirm public access"
+          },
+          {
+            "text": "Would you try When Tools Fail, Agents, or wait for more proof?",
+            "evidenceQuote": "We study how agents fail when tools fail, using RetryRealistic, a sandboxed yet realistic testbed for controlled fault injection in which agents operate on a real OS filesystem with genuine permission enforcement, SQLite databases, a deterministic local HTTP server, and a constrained shell, across 8 tools, 9 fault types with controlled persistence, and 30 multi-step tasks.",
+            "role": "engagement",
+            "visual": "highlight",
+            "displayText": "Would you try When Tools Fail"
+          }
+        ],
+        "narration": "Would you use When Tools Fail, Agents? arXiv:2611.28341v1 Announce Type: new Abstract: Tool-using LLM agents must recover when a tool call fails, by retrying, switching tools, or revising their plan. The failure mode is governed more by the fault type than by the model: faults that return partial data drive fabrication (up to 38%), while hard denials drive honest failure. This source excerpt does not confirm public access. Would you try When Tools Fail, Agents, or wait for more proof?"
+      },
+      "presentation": {
+        "title": "When Tools Fail, Agents Fabricate: Silent Failure",
+        "format": "source-fallback",
+        "angle": "workflow",
+        "hookStyle": "question",
+        "availability": "unknown",
+        "duration": 38.1,
+        "wordCount": 80,
+        "scriptVersion": 3
+      },
+      "selectionReason": "A source-backed, measurable change in time, cost, or capability.",
+      "contentHash": "8647b05e575efa75f092fa7e133e854ae1cf4be4ea4e55bb4b901e0e2de60429",
+      "media": {
+        "publicUrl": "https://media.zernio.com/temp/1795557508203_3620017b568b4bc8_2026-11-24.mp4",
+        "videoSha256": "9cd07bb56b4a1384744162121656fa4c3628e75e6215204570dd89e46a6bab21",
+        "uploadedAt": "2026-11-24T21:58:30.244Z"
+      }
     }
   }
 }
