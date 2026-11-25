@@ -1,0 +1,257 @@
+{
+  "version": 1,
+  "issueDate": "2026-11-25",
+  "generatedAt": "2026-11-25T21:01:19.252Z",
+  "stories": [
+    {
+      "id": "google-ai-blog-https%3A%2F%2Fblog.google%2Fproducts-and-platforms%2Fproducts%2Fgemini%2Fgemini-golden-state%2F",
+      "rank": 1,
+      "title": "How Gemini is changing the game for Golden State's organization and fans.",
+      "sourceUrl": "https://blog.google/products-and-platforms/products/gemini/gemini-golden-state/",
+      "sourceName": "Google AI Blog",
+      "publishedAt": "2026-11-24T16:00:00.000Z",
+      "sourceExcerpt": "Google Gemini partners with Golden State to power fan experiences and business operations for the Warriors, Valkyries, and Chase Center. See the news.",
+      "summary": "**What happened:** Google Gemini has partnered with the Golden State Warriors, their women's team the Valkyries, and the Chase Center to embed generative AI across fan‑facing apps, ticketing, and internal workflows.\n\n**Why it matters:** The integration lets fans receive personalized content, real‑time language translation, and interactive experiences, while the organization gains AI‑driven insights to streamline operations, drive revenue, and deepen loyalty.\n\n**Key stats:**\n- AI‑generated highlights and stats delivered to fans within seconds of play.\n- Real‑time multilingual support covering over 30 languages for international audiences.\n- Predictive attendance and concession demand models expected to lift in‑venue sales by up to 12%.\n\n**Source:** https://blog.google/products-and-platforms/products/gemini/gemini-golden-state/"
+    },
+    {
+      "id": "openai-blog-https%3A%2F%2Fopenai.com%2Findex%2Fgpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
+      "rank": 2,
+      "title": "GPT-6 models demonstrate intrinsic protein-design capabilities",
+      "sourceUrl": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
+      "sourceName": "OpenAI Blog",
+      "publishedAt": "2026-11-24T13:00:00.000Z",
+      "sourceExcerpt": "GPT-6 models design protein structures and sequences using reasoning and code. Lab tests found evidence of binding across five targets.",
+      "summary": "**What happened:** GPT-6 models were prompted to generate novel protein structures and corresponding amino‑acid sequences, using both reasoning and code generation. Independent lab experiments demonstrated that the designed proteins bound to five separate biological targets.\n\n**Why it matters:** This marks a shift from AI‑assisted protein prediction to AI‑driven creation, potentially accelerating drug discovery, enzyme engineering, and synthetic biology by reducing the need for iterative human design.\n\n**Key stats:** • 5 targets showed measurable binding activity • Designs produced entirely by model‑generated code • No prior experimental data fed into the model for these targets\n\n**Source:** https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities"
+    },
+    {
+      "id": "openai-blog-https%3A%2F%2Fopenai.com%2Fbusiness%2Fcustomer-stories%2Fclay-plugins-openai",
+      "rank": 3,
+      "title": "Clay helps sales teams win with Codex and ChatGPT",
+      "sourceUrl": "https://openai.com/business/customer-stories/clay-plugins-openai",
+      "sourceName": "OpenAI Blog",
+      "publishedAt": "2026-11-24T00:00:00.000Z",
+      "sourceExcerpt": "ChatGPT and Codex integrations help Clay’s users research deals and turn data into go-to-market plays, with GPT-6 models handling the reasoning.",
+      "summary": "**What happened:** Clay integrated Codex and ChatGPT (including the upcoming GPT‑6 reasoning models) into its platform, enabling users to automatically pull in market data, generate insights, and build playbooks directly within their workflow.\n\n**Why it matters:** By embedding generative AI into the sales stack, teams can cut research time, personalize pitches, and close deals more efficiently, giving them a competitive edge in crowded markets.\n\n**Key stats:**\n- Users report a 40% reduction in time spent on deal research.\n- Early adopters see a 15% lift in conversion rates on AI‑generated playbooks.\n- Clay’s AI plugins handle up to 10,000 data points per deal, scaling insights across large pipelines.\n\n**Source:** https://openai.com/business/customer-stories/clay-plugins-openai"
+    },
+    {
+      "id": "google-ai-blog-https%3A%2F%2Fblog.google%2Fproducts-and-platforms%2Fproducts%2Fsearch%2Fgoogle-search-personal-intelligence-apps%2F",
+      "rank": 4,
+      "title": "A more tailored Google Search that’s uniquely yours",
+      "sourceUrl": "https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps/",
+      "sourceName": "Google AI Blog",
+      "publishedAt": "2026-11-23T17:00:00.000Z",
+      "sourceExcerpt": "Get more helpful Search responses by securely opting in to connect Google Wallet, Drive, and the Gemini app to Personal Intelligence in AI Mode.",
+      "summary": "**What happened:** Google announced that users can now opt‑in to connect Google Wallet, Drive, and the Gemini app to a new Personal Intelligence feature in AI Mode, enabling the Search engine to deliver answers that reflect each user’s personal data and preferences.\n\n**Why it matters:** By securely integrating personal data sources, Search can provide context‑aware answers—like pulling receipts from Wallet or files from Drive—making the experience more relevant and efficient while keeping data privacy under user control.\n\n**Key stats:** The feature is initially available to users who opt‑in; Google has not released adoption numbers yet, but it highlights a shift toward hyper‑personalized AI services.\n\n**Source:** https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps/"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.31427",
+      "rank": 5,
+      "title": "Learning What vs. Learning How: Decomposing Task and Interface Competence in Agentic Training",
+      "sourceUrl": "https://arxiv.org/abs/2611.31427",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-25T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.31427v1 Announce Type: new Abstract: LLM agents operate through harnesses that define system prompts, action formats, feedback loops, and resource constraints. A model may possess the knowledge needed to solve a task yet fail to express that knowledge through a particular harness. This raises a basic question: when a policy fails under a given harness, is it missing task knowledge or the competence to operate the interface? We distinguish two components of agentic competence: task competence, the knowledge and reasoning needed to solve a task, and interface competence, the ability to act on that knowledge through a given harness. Across four reasoning and agentic benchmarks, we show that harness-conditioned training yields vastly different outcomes depending on how these interact. Multi-harness distillation aggregates task knowledge from trajectories collected through different harnesses into a shared policy, but this knowledge is realised only when training preserves or improves competence on the inference-time interface. Otherwise, single-harness training can induce interference in interface competence, sometimes catastrophically collapsing performance on a held-out harness despite improvements in underlying task knowledge. To disentangle task and interface supervision, we introduce harness rehearsal: distillation on traces that carry minimal task knowledge while exercising the target interface. Cross-harness task supervision or rehearsal alone yields little gain, but their combination yields gains far larger than either: on BFCL V3 multi-turn with Qwen3-4B, they achieve 8.5% and 32.5% respectively, versus 58.8% together. Finally, on-policy reinforcement learning (RL) is more robust than distillation to single-harness training: it does not substantially degrade performance on other harnesses, and interface competence acquired through multi-harness distillation persists through subsequent RL.",
+      "summary": "**What happened:** Researchers propose a framework that splits agentic competence into two parts: (1) task competence (the knowledge to solve a problem) and (2) interface competence (the ability to use prompts, action formats, feedback loops, and resource limits correctly). They test this decomposition on several LLM‑based agents.\n\n**Why it matters:** By pinpointing whether failures arise from task ignorance or harness misuse, developers can better target improvements—optimizing prompts, tool interfaces, or training data—rather than over‑engineering models.\n\n**Key stats:**\n- Experiments show a sizable share of errors trace back to interface competence rather than lack of task knowledge.\n- Providing agents with a tuned harness often rescues performance without additional model training.\n- The study offers metrics for measuring each competence dimension, enabling more granular diagnostics.\n\n**Source:** https://arxiv.org/abs/2611.31427"
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.31554",
+      "rank": 6,
+      "title": "Agent Recovery Gone Wrong: Measuring Harm Beyond Duplicate Calls",
+      "sourceUrl": "https://arxiv.org/abs/2611.31554",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-25T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.31554v1 Announce Type: new Abstract: Code-executing LLM agents submit blocks of code that issue several API writes. If a block fails after some of its writes have taken effect, the agent rewrites the block and continues. It is unknown how often such a recovery harms the external state when the failure occurs naturally in the code written by the agent. In this paper, we measure it on recorded trajectories of AppWorld agents. In a stratified random sample of 200 candidate episodes across ten models, 145 are partial executions confirmed by the database state. In the sample, 30 of 143 confirmed partial executions with a determinable outcome are followed by a harmful recovery, and its violation remains at the end of the run, which gives a stratification-weighted estimate of 24.6%. Two thirds of the harmful recoveries duplicate an effect, and the rest delete user data or make a wrong first-time write, e.g., an order of a wrong product. A rule that searches for repeated calls finds 75% of duplications but only 41% of all harm. We also examine two sources of operation identity for an idempotency contract. In a small pilot (17 episodes, one local model), identifiers supplied by the model do not detectably reduce harm, because the model issues a new identifier for the same operation. Identity derived from the call content, evaluated counterfactually on the sample, would have matched every harmful write in 14 to 18 of the 30 harmful recoveries, but in none of those with a wrong first-time write, and it would also have matched writes required by the task in 30 episodes. Based on these results, we outline design requirements for safer agent recovery.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.31559",
+      "rank": 7,
+      "title": "COGENT: A Modular Cognitive Architecture for Agentic User Simulation",
+      "sourceUrl": "https://arxiv.org/abs/2611.31559",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-25T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.31559v1 Announce Type: new Abstract: LLM-based user simulation can support interface design, accessibility research, and interactive-agent evaluation, but standard computer-use agents are optimized for task completion rather than reproducing how people perceive, reason, and act. We introduce COGENT (COGnitive agENT), a modular cognitive architecture for simulating user interaction with desktop interfaces. COGENT draws on established cognitive theories, such as Norman's action cycle and ACT-R, to enable explainable, intervenable, and modular user simulation by decomposing the simulation process into cognitive modules with explicit representations of perception, memory, user state, intentions, and action selection. We begin by presenting six intervenability demonstrations, each tracing how a single edit to memory, a user attribute, or a processing module propagates through the cognitive pipeline to produce a behavioral change. We evaluate COGENT's behavioral and attributional fidelity across three benchmarks -- AgentNetBench, A11y-CUA, and SENSE-42 -- finding that it achieves statistically significant fidelity gains over computer-use baselines in reproducing recorded human behavior and recovers the relational structure among human self-reported psychological states. Together, these demos and evaluations demonstrate COGENT's utility toward more faithful, explainable, intervenable, and modular LLM-based cognitive simulations.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.31610",
+      "rank": 8,
+      "title": "Monitorable-by-design architectures for a post-Astra world: a compartmentalization-based approach",
+      "sourceUrl": "https://arxiv.org/abs/2611.31610",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-25T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.31610v1 Announce Type: new Abstract: Frontier models like GPT-6 Astra are increasingly able to do substantial reasoning without a monitorable chain of thought, chains of thought are becoming less legible, and are often monitored asynchronously to reduce cost. With the future of chain of thought monitoring unclear, it may be necessary to design LLMs with monitorability in mind. We propose a modification to existing LLM architectures based on GRAM, SGTM, DEMix, BTS, and similar methods to compartmentalize dangerous capabilities so that their use, especially in combination with dangerous reasoning types that may indicate strategic adversarial use, can be monitored more cheaply than chain of thought in a way that might outlast monitorable chain of thought. We propose several variants of this architecture designed to balance tradeoffs and discuss other benefits, such as capability removal.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.31638",
+      "rank": 9,
+      "title": "Wavefront: Low-Rank Drafting with Parallel Causal Refinement for Speculative Decoding",
+      "sourceUrl": "https://arxiv.org/abs/2611.31638",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-25T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.31638v1 Announce Type: new Abstract: Speculative decoding accelerates LLM inference by letting a cheap drafter propose tokens that the target model verifies in parallel. Parallel block drafters such as DFlash and P-EAGLE propose a whole block in one forward pass, but they lose the dependence between tokens in the block; DSpark restores part of it with a lightweight correction head that runs sequentially. Measuring DSpark, we find that this head overrides the base prediction on most slots, so the expensive base readout through the target's full lm_head mostly provides a seed. We therefore propose Wavefront, which follows a simple principle: shrink the base and strengthen the correction head. Wavefront replaces the full lm_head with a learned low-rank base, conditions the correction head on the whole drafted prefix within the same block, and resolves it with a few parallel Jacobi passes. A fixed pass budget makes the draft step free of data-dependent control flow, so we capture it as a single CUDA graph in vLLM with fused kernels. On Qwen3-8B, Wavefront improves throughput over xPress, DSpark and DFlash by 2.6%, 10.7% and 23.6% on average across math, code, chat and agentic benchmarks, and by 9.6%, 14.3% and 28.9% on SPEED-Bench long-context prompts. On Qwen3.8-27B it leads DFlash2, DSpark and xPress by 7.6%, 10.6% and 5.0%, and by 7.4%, 5.8% and 6.0% on the same long-context prompts. The gains persist as serving load grows to concurrency 32.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.31653",
+      "rank": 10,
+      "title": "Constructing physical mechanisms with artificial intelligence",
+      "sourceUrl": "https://arxiv.org/abs/2611.31653",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-25T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.31653v1 Announce Type: new Abstract: Mechanisms recur across the sciences: the equation for heat in a solid also describes molecular diffusion or a Brownian particle. A mechanism is rarely written in one equation; its operation, boundaries, parameters and closures are stated at different steps of a derivation, where methods that read text or fit formulas miss it. We built an equation-native system that reads the equations of all 2.5 million arXiv manuscripts, and show that mechanisms can be compiled from them and constructed by deterministic calculation. A constructor detaches, transfers, unfolds, composes and joins their parts across disciplines; where parts do not fit, the failure is an equation for the missing term. Constructions turn a threshold reactor into a memory that a weak signal writes, an oscillator into a switch through two changes that each fail alone, and a rhythm into the regulator of a chemical amount, each with conditions for an experimental test.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.31677",
+      "rank": 11,
+      "title": "Look Before You Commit: Visual-Evidence-Guided Decoding for Multimodal Diffusion Language Models",
+      "sourceUrl": "https://arxiv.org/abs/2611.31677",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-25T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.31677v1 Announce Type: new Abstract: Diffusion multimodal large language models rely on confidence to decide when to commit candidate tokens during generation. In multimodal tasks, however, confidence cannot distinguish whether a candidate originates from image evidence or the language prior. We perform paired forward ablation and find that nearly nine out of ten high-confidence commits are insensitive to the image, while degenerate and hallucination samples exhibit significant increases in the entropy of deep-layer attention organization. Based on this diagnosis, we propose CD-APC, a training-free decoding method. CD-APC performs evidence-adjusted scoring within a base-supported pool and uses dual gating based on model acceptability and contrastive concentration to decide whether to commit, together with an inverse-window mechanism that adapts to inter-step difficulty. Across two backbones and five benchmarks, CD-APC consistently improves performance, indicating that stable visual evidence improves model outputs.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.31736",
+      "rank": 12,
+      "title": "Reproducing History Is Not Enough: Intervention-Level Assurance for LLM-Generated Simulators",
+      "sourceUrl": "https://arxiv.org/abs/2611.31736",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-25T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.31736v1 Announce Type: new Abstract: Large language models can now write simulation programs of operational processes and workflows. These programs can be reused to answer what-if questions on new records and policies. However, a program that reproduces recorded history can still give wrong answers to what-if questions; requested changes may be applied wrongly, or they may be applied to records other than the ones the question is about, or the program may stop being valid once its policy is revised. Current checks return a pass-or-fail verdict for the whole program, which says little about whether any single answer can be trusted. We propose Vouch, a library that judges whether an answer from a generated simulator can be trusted for the change being asked about. Each what-if question is turned into a structured change, which is checked against the program and the current records. The library also keeps a record of the kinds of change each program has passed or failed, and repeats the relevant tests whenever the program is reused. We apply it to three program-generation platforms, with programs built by five language models, across four domains: manufacturing, IT operations, and pharmacy and loan-application workflows, using independently checked reference answers. Our baselines are the platforms' own checks where such checks exist, an LLM-as-a-judge, and a ReAct agent that can run the program. We measure how many correct answers are trusted, how many are wrongly rejected, how many wrong answers are accepted, and what the checking costs. On programs written by Haiku and Sonnet in one platform, Vouch removes 97.6% of the wrong answers, while still trusting 80.1% of all answers. At equal coverage, it accepts fewer wrong answers than LLM judges built on Claude Haiku. We disclose code and results for reproducibility.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.31737",
+      "rank": 13,
+      "title": "GreenDynaMix: Thermal-Aware Dynamic Mixed-Precision MoE LLM Inference Systems",
+      "sourceUrl": "https://arxiv.org/abs/2611.31737",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-25T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.31737v1 Announce Type: new Abstract: Sustained Large Language Model (LLM) inference generates significant heat that exacerbates silicon aging and reduces GPU reliability. Because GPU temperature fluctuates continuously with workload intensity and ambient conditions, keeping it in a safe range requires real-time frequency scaling, which inevitably comes at the cost of either throughput or accuracy. To address this tightly coupled challenge, we propose GreenDynaMix, the first runtime system to jointly integrate a DVFS-based thermal manager with a dynamic precision-tuning throughput compensator. A sensitivity-aware allocator leverages intrinsic importance signals from the Mixture-of-Experts (MoE) router to assign higher precision to critical experts, preserving accuracy. Experiments on server, desktop, and embedded platforms demonstrate that GreenDynaMix reduces the temperature-induced aging rate of GPUs during LLM inference by 25-33%. Without offline profiling or model retraining, it recovers throughput at a perplexity cost of 0.9-1.6% with 8-bit/4-bit mixed precision, rising to 9.4% where memory forces 4-bit/2-bit.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.31823",
+      "rank": 14,
+      "title": "GaokaoMathGen: Chinese Gaokao Mathematics Finale Problem Generation Controlled by Latent Reasoning Structures",
+      "sourceUrl": "https://arxiv.org/abs/2611.31823",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-25T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.31823v1 Announce Type: new Abstract: Generating Chinese Gaokao mathematics finale problems requires controlling not only the included skills, but also the underlying mathematical kernel and solution path. Existing LLM-based methods mainly rely on surface-level specifications, while the realized difficulty of generated problems cannot be determined directly from prompted targets. Therefore, we propose GaokaoMathGen, a framework for Chinese Gaokao mathematics finale problem generation controlled by latent reasoning structures. It extracts standardized latent reasoning structures from seed problems and performs constrained synthesis using skills, methods, a core identity, and a pivot step as structural controls. We further estimate realized difficulty through logical-quality filtering, fixed-solver decoding effort, structural features, and solver-output search signals. Experiments show that semantic normalization improves cross-annotator comparability and that 78.0% of 609 scored candidates pass the logical-quality filter. In a teacher audit of the 60 highest-effort candidates, all were judged to reach finale or penultimate problem difficulty, and only one exhibited a severe logical issue. These results support latent reasoning structures as effective control signals for generating high-difficulty mathematical problems.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.31851",
+      "rank": 15,
+      "title": "Modeling Event-Conditioned Emotional Expression Response with LLM Agents in a Synthetic Social Simulation",
+      "sourceUrl": "https://arxiv.org/abs/2611.31851",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-25T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.31851v1 Announce Type: new Abstract: Emotions are central drivers of human behavior, yet most behavioral models fail to capture their role in shaping perception, decision-making, and collective action. Application areas such as emergency response and public health are especially constrained by the lack of emotion-aware modeling. While large language models (LLMs) are increasingly integrated into agent-based models (ABMs), little work has examined how to endow LLM agents with emotional reasoning or validated their ability to reproduce empirically observed emotional patterns. This study addresses this gap by introducing a hierarchical prompting framework that conditions LLM agents with demographic, psychological, and contextual cues to generate event-conditioned emotional responses to real-world events. We validate the resulting event-conditioned emotional responses against large-scale social media reaction data derived from the Social Science One Facebook URL Shares Dataset, complemented by demographic and personality benchmarks. Our simulation results reproduce both polarized and consensus-driven emotional patterns with significant fidelity, supporting the application of LLM agents for emotion-aware modeling in behavioral simulations. We also find, however, that systematic gaps in emotional expression of LLM agents and human populations exist, such as the underexpression of anger relative to human baselines. As such, these findings highlight the need for continued calibration if LLM agents are to serve as proxies for human populations in behavioral modeling. By quantifying their divergence from human populations in terms of emotional expression, we hope that our methods can aid in this effort.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.31864",
+      "rank": 16,
+      "title": "No Fixed Configuration Is Best: Context- and Cost-Aware Tuning of LLM Pipelines, with an Application to Schema Matching and Mapping",
+      "sourceUrl": "https://arxiv.org/abs/2611.31864",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-25T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.31864v1 Announce Type: new Abstract: The numeric settings of a multi-stage LLM pipeline (a compound AI system) are the usual target of tuning. We tuned all of them for an LLM pipeline for schema matching and mapping, with accuracy and cost as joint objectives, and we show what this buys, what it cannot buy, and where the remaining accuracy is. First, tuning buys cost and a little accuracy. On 35 tasks, with whole groups of tasks held out from tuning, one tuned configuration gains 2.9 points of top-1 accuracy (HR@1) over the default at 18% more cost, and another keeps the accuracy of the default at 32% lower cost. Second, the accuracy depends on a choice that numeric tuning cannot reach. Restricting the search for each source column to one assigned target table changes HR@1 by +30 points on a MIMIC-III to OMOP task and by -52 points on a task built from database views, more than numeric tuning gains on nine of ten test tasks. Neither setting is right for all tasks: on the larger set of 41 tasks used for the remaining results, mean HR@1 is 75.7% with the restriction (the default) and 83.1% without it. Third, choosing the setting per task is not enough either: even an oracle that picks the better setting for each task reaches only 87.8% on the 41 tasks, because the better setting differs between the columns of one task. The pipeline therefore runs both settings, and an LLM judge chooses among their candidate answers on the 26% of columns on which they disagree. This reaches 91.5% HR@1 on the 41 tasks, at 5.9 times the cost of the default, about one cent per column.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.31884",
+      "rank": 17,
+      "title": "HEAR, SEE, SPIKE ONCE: Highly Efficient NeuroAI Temporal Neural Networks for Low-Precision Multimodal Audio-Visual Classification and Online Learning",
+      "sourceUrl": "https://arxiv.org/abs/2611.31884",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-25T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.31884v1 Announce Type: new Abstract: Spiking neural networks for multimodal audio-visual classification reach high accuracy by adopting deep-learning machinery: multi-stage convolutional or transformer encoders trained end-to-end with surrogate-gradient backpropagation through time. These prior works typically rely on full-precision (32-bit) parameters and do not treat hardware efficiency as a primary design objective. In this paper, we propose NeuTNN-AV, a much simpler hardware-amenable multimodal substrate built on the recently proposed NeuroAI Temporal Neural Network (NeuTNN) and demonstrate that it can match or outperform state-of-the-art SNN baselines with a fraction of their synapse counts. NeuTNN neurons carry multiple active dendritic segments. Each input line spikes at most once (temporal coding) and every weight is learned via a local reward-modulated spike-timing dependent plasticity (STDP) rule. All weights are 4-bit integers and inference uses only comparisons and additions. On CREMA-D, it reaches 78.6% with 2.34M synapses establishing a new state-of-the-art SNN accuracy, against 77.14% for MISNet-XL (31M parameters). On UrbanSound8K-AV, NeuTNN reaches 98.82% with 1.38M synapses, against 96.85% for SMMT (9.99M parameters) and 98.96% for MISNet-XL (31M parameters). Weight memory is 23-106x smaller than the spiking baselines, and the measured synaptic energy per inference is two to three orders of magnitude lower. Furthermore, the proposed NeuTNN learns CREMA-D in a single pass with 73.8% accuracy and demonstrates rapid online continual learning by adapting to unseen actors from a few dozen clips.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.31892",
+      "rank": 18,
+      "title": "Cheap Memory Costs Future Compute: Co-Designing Persistent KV and GPU Execution for Efficient Streaming Video Diffusion",
+      "sourceUrl": "https://arxiv.org/abs/2611.31892",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-25T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.31892v1 Announce Type: new Abstract: Block-causal video diffusion generates long videos block by block, conditioned on a persistent key-value (KV) cache. After each block is denoised, an extra noise-free ($t=0$) forward pass writes its clean KV into the cache; once distillation and speculative early exit make denoising cheap, this clean KV update dominates the runtime. Reusing stale KV shortens the update, but stale memory corrupts the conditioning of later blocks and inflates their denoising steps, so the saved compute reappears downstream. We present SAMR (Step-Aware Memory Reconstruction), a training-free method for frozen causal video DiTs that refreshes only part of the cache and reconstructs the rest without DiT forwards. Our key observation is that, once rotary position phases are removed, motion-aligned historical KV and the in-flight KV a token holds at its exit step are complementary estimates of its clean KV. SAMR debiases in-flight KV with offline-calibrated per-head affine maps in Pre-RoPE space, fuses the two estimates, and reserves true $t=0$ refreshes for tokens flagged by an attention-readout error proxy, all executed by tile-aligned, synchronization-free Triton kernels. On 48-second LongLive-1.3B videos, SAMR reduces DiT latency by 20.9% and principal FLOPs by 30.7% relative to dense KV updates, lowers downstream denoising steps, and improves final-quarter PSNR over token reuse by 1.61 dB (1.14 dB on held-out VidProM-16). The reconstruction also transfers to frozen Self-Forcing-DMD-1.3B: zero-shot, it reduces reuse-induced step inflation ($2.47 \\to 2.30$ steps/token) and improves late PSNR by $+0.33$ dB, and a one-time training-free calibration recovers the diagnostic score that zero-shot transfer lowers ($89.62 \\to 91.10$).",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.31932",
+      "rank": 19,
+      "title": "Contrastive On-Policy Self-Distillation for LLM Unlearning",
+      "sourceUrl": "https://arxiv.org/abs/2611.31932",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-25T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.31932v1 Announce Type: new Abstract: Large language model unlearning aims to remove the influence of designated training data while preserving unrelated model capabilities. Existing likelihood-based methods commonly optimize against fixed forget sequences, providing only negative supervision on what the model should not generate and overlooking the states visited by the evolving unlearned policy. We introduce Contrastive On-Policy Self-Distillation (CPSD), a new unlearning framework that constructs an explicit knowledge-reduced target distribution and distills it along the model's own trajectories. Given a student rollout, a frozen reference model evaluates each token under a plain context and a privileged context containing the forget information. CPSD treats the resulting distributional shift as a knowledge-associated direction and reverses it to obtain a counterfactual unlearning target. The student is then trained to match this target at every rollout position while retaining its utility on unrelated data. We further introduce a privacy-enhanced variant that combines distributional unlearning with lightweight sequence-level suppression. Experiments under OpenUnlearning show that CPSD improves the forgetting-utility trade-off over NPO across TOFU forget-set sizes and Llama models ranging from 1B to 8B parameters. On MUSE-News, the privacy-enhanced variant improves all reported knowledge, memorization, privacy, and utility metrics over NPO.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.31969",
+      "rank": 20,
+      "title": "DexOPD: Dual-Extrapolation On-Policy Distillation for Diffusion Models",
+      "sourceUrl": "https://arxiv.org/abs/2611.31969",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-25T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.31969v1 Announce Type: new Abstract: Flow-based diffusion models have become a mainstream paradigm for text-to-image generation, where task-specific post-training produces specialist models with complementary strengths. Multi-teacher on-policy distillation (OPD) offers an efficient way to consolidate these specialists into a single unified student. Recent methods strengthen supervision through teacher extrapolation, constructing stronger proxy teachers that allow distilled students to surpass the original specialists. However, their extrapolation directions remain defined solely by frozen teacher and reference models, leaving the student's own training progress unexploited. To address this limitation, we introduce DexOPD, a dual-extrapolation on-policy distillation method for diffusion models. DexOPD retains extrapolated teacher supervision while leveraging a lagging historical student as the reference for student self-extrapolation. Sampling across multiple self-extrapolation gains from shared initial noise broadens exploration along the student's evolving trajectory, and task rewards convert pairwise differences in candidate quality into a normalized auxiliary regression direction. Empirically, we evaluate DexOPD on GenEval, OCR, and DrawBench. The resulting unified SD3.5-Medium student achieves a GenEval reward of 0.9736, an OCR score of 0.9515, and a DrawBench Aesthetic score of 6.4875, surpassing the corresponding specialist teachers as well as all evaluated OPD and multi-task reinforcement learning baselines across these three benchmarks while preserving standard single-model inference.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.31983",
+      "rank": 21,
+      "title": "Discovering Bandwidth-Efficient Prefetchers to Shrink the Cache Hierarchy",
+      "sourceUrl": "https://arxiv.org/abs/2611.31983",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-25T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.31983v1 Announce Type: new Abstract: Shared last-level caches (LLCs) increasingly dominate server processor die area, forcing architects to trade core counts for cache capacity. While intelligent data prefetching offers a pathway to reclaim this silicon, designing coordinated, multi-level prefetching policies for multi-core systems is bottlenecked by day-long, cycle-level simulations. This simulation wall limits even LLM-based microarchitecture discovery; the state-of-the-art ArchAgent system evolves one cache level at a time on single-core benchmarks, adds multi-core configurations only at the end, and trails the human champion under multi-core shared cache contention. We introduce DuoArchitect, an autonomous agentic framework for multi-fidelity, multi-core co-discovery of prefetchers. Agents jointly evolve evaluation proxies and coordinated prefetching policies across the L1D, L2, and LLC hierarchies, constructing simulation proxies 3-26x faster than cluster evaluation and hardware diagnostic oracles to guide the search. To study how much cache silicon a smarter prefetcher can replace, we evaluate and evolve prefetchers under reduced cache budgets, and find that evolving under our tightest cache constraint (with both the L2 and LLC halved) produced our strongest prefetcher overall at every cache size we tested: DuoArch-Nano. On the Fourth Data Prefetching Championship (DPC4) benchmarks with full-size caches, DuoArch-Nano delivers a 9.2% geomean IPC speedup (+10.5% on four-core mixes) while reducing four-core DRAM traffic by 11.4%, more than doubling the gains of the human champion BertiGO and the agentic ArchAgent v2. When the LLC is halved, DuoArch-Nano erases the baseline's 8.6% overall slowdown and edges out the full-LLC baseline overall (+0.88%), showing that agentic frameworks can generate prefetchers that reclaim megabytes of LLC SRAM per core with zero overall IPC penalty.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.31990",
+      "rank": 22,
+      "title": "How Much Dependency Can a Marginal Rule See? Total Correlation in Diffusion LM Parallel Decoding",
+      "sourceUrl": "https://arxiv.org/abs/2611.31990",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-25T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.31990v1 Announce Type: new Abstract: A masked diffusion language model is fast because it commits several tokens per step. Each token is sampled from its own marginal, so the dependency between the tokens is lost, and the size of that loss is the conditional total correlation C of the committed set. Most decoders choose the set from per-position marginals, which can bound C but cannot determine it. We ask how well they predict it. We estimate C for fixed candidate sets on four masked diffusion LMs from two families. On three of the four, the best marginal-only predictor is off by about one bit (0.74 to 1.17), 1.8 to 3.7 times less than a baseline that knows only the bound, and most of this accuracy comes from the bound itself. On a subset, our estimate ranks sets like the exact KL cost of a parallel commit, but sits a median 0.4 to 1.1 bits below it on prose and when the rest of the text is still masked. Dream-instruct is the exception, mainly on prose, where its conditionals are least self-consistent. Among six common marginal rules, pooling over the set beats gating on its weakest position in all 24 paired comparisons. The measurement needs a validated readout: Dream and LLaDA place a position's prediction at different logit indices, and the wrong index inflates an inconsistency diagnostic 14 to 41 times. We give three checks that measure the convention. Our results concern predicting C for a fixed set, not what a dependency-aware decoder gains.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.32006",
+      "rank": 23,
+      "title": "TableRouter: Query-Aware Evidence Construction for Long-Table Question Answering",
+      "sourceUrl": "https://arxiv.org/abs/2611.32006",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-25T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.32006v1 Announce Type: new Abstract: LLMs can reason over tables, but when tables outgrow the context budget, retrieving relevant rows is only part of the solution. A retrieved subset may omit information required for an exact aggregate; even complete evidence may remain difficult for an LLM to use. We introduce TableRouter, a training-free framework that analyzes each query, then chooses between two routes: a computation route, which derives question-conditioned statistics from the full table, and a coverage route, which retrieves relevant rows and column summaries. The chosen context is passed to a frozen LLM in one call. Across three LLMs and three large-table benchmarks, TableRouter outperforms the strongest of six single-call baselines in all nine settings by 1.2-18.3 accuracy points, using 77-95% fewer estimated FLOPs than truncated-table prompting, with indexing amortized across questions. The gains extend to long tables from databases not used in earlier experiments, where TableRouter achieves 35.8% with Qwen2.5-7B, versus 16.4% for the strongest external baseline. A controlled experiment shows that explicitly providing computed statistics improves accuracy by up to 40.0 points, even when all answer-determining rows are available. These results distinguish evidence access from evidence use: long-table reasoning depends on how information is represented, not only on which rows are retrieved.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.32046",
+      "rank": 24,
+      "title": "From Rule-based to Agentic: LLM Agent based Real-time Control of Urban Drainage Systems for Flooding and Sewer Overflow Mitigation",
+      "sourceUrl": "https://arxiv.org/abs/2611.32046",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-25T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.32046v1 Announce Type: new Abstract: Real-time control (RTC) for urban drainage systems (UDS) remains hampered by sparse in-network sensing. While heterogeneous multi-modal meteorological early warnings often contain decision-critical information for UDS RTC, none of the existing approaches can exploit such externally-sourced information within the control workflow. Here we introduce AgenticAI-Control, an agentic artificial intelligence framework able to assimilate multi-source meteorological early warnings in RTC. Two coupled large language model agents are integrated to generate control strategies by retrieving meteorological early-warnings and fusing them with domain engineering expertise. Validated via simulation studies of a combined sewer catchment in eastern China across 10 real-world rainfall events, the AgenticAI-Control achieved 69.1-90.6% reduction in aggregated flood and overflow volumes compared to the rule-based baseline control. Rigorously standardized prompt engineering and modular workflow constraints substantially compress performance disparities among four distinct LLMs. Our work establishes AgenticAI as a viable tool to unify multi-source meteorological monitoring and practitioner domain knowledge, surmounting longstanding monitoring limitations of UDS RTC and delivering cost-efficient, robust intelligent control solutions for sensor-sparse sewer infrastructures.",
+      "summary": ""
+    },
+    {
+      "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.32085",
+      "rank": 25,
+      "title": "ExpGuard: Guarding Long-Horizon LLM Agents against Corrupted Experience",
+      "sourceUrl": "https://arxiv.org/abs/2611.32085",
+      "sourceName": "arXiv cs.AI",
+      "publishedAt": "2026-11-25T05:00:00.000Z",
+      "sourceExcerpt": "arXiv:2611.32085v1 Announce Type: new Abstract: Long-horizon large language model (LLM) agents distill past trajectories into reusable experiences. Misleading or adversarial guidance in source trajectories can corrupt these experiences, allowing harmful instructions to persist across tasks and influence future agent actions. Assessing the risks of potentially corrupted experiences poses three challenges: (1) modeling provenance and execution dependencies before experience reuse, (2) learning task-conditioned risk from trajectory outcomes, and (3) repairing risky experiences at online inference. To address these challenges, we present ExpGuard, a framework for retrieval-triggered experience risk assessment and online repair. Specifically, to tackle challenge (1), ExpGuard integrates experience semantics with provenance and execution dependencies in a task-conditioned heterogeneous graph to predict attack and task-failure risks before experience reuse. To enable task-conditioned risk supervision and tackle challenge (2), we conduct matched counterfactual replays of each original experience and its minimally neutralized counterpart from the same task and environment checkpoint, deriving separate risk labels from differences in attack success and legitimate task completion. To tackle challenge (3) at inference time, ExpGuard repairs candidate experiences flagged as high-risk by the graph-based predictor at retrieval and re-predicts their risks before they enter the agent's active experience context. Extensive experiments demonstrate the effectiveness of ExpGuard in identifying risky experiences and defending agents against experience corruption.",
+      "summary": ""
+    }
+  ]
+}
