@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "issueDate": "2026-11-25",
+  "issueUrl": "https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-25",
+  "content": "Today's AI briefing from The Gradient | 2026-11-25\n\n1. How Gemini is changing the game for Golden State's organization and fans.\nGoogle Gemini has partnered with the Golden State Warriors, their women's team the Valkyries, and the Chase Center to embed generative AI across fan‑facing apps, ticketing, and internal workflows.\n\n2. GPT-6 models demonstrate intrinsic protein-design capabilities\nGPT-6 models were prompted to generate novel protein structures and corresponding amino‑acid sequences, using both reasoning and code generation. Independent lab experiments demonstrated that the designed proteins bound to five separate biological targets.\n\n3. Clay helps sales teams win with Codex and ChatGPT\nClay integrated Codex and ChatGPT (including the upcoming GPT‑6 reasoning models) into its platform, enabling users to automatically pull in market data, generate insights, and build playbooks directly within their workflow.\n\nRead the full briefing and original sources:\nhttps://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-25\n\n#AI #ArtificialIntelligence #TheGradient",
+  "contentHash": "5da68766924ba0d127b3965c11ad2f55c7e40773554741e64b74b4c877b98a62",
+  "accountId": "6ac5a561b3c21905c0edcfba",
+  "organizationUrn": "urn:li:organization:136824048",
+  "idempotencyKey": "21abb7be-26da-4c41-8e07-0c757399dce2",
+  "status": "submitting",
+  "firstSubmittedAt": "2026-11-25T21:02:28.102Z"
+}
