@@ -1676,8 +1676,8 @@
         "sourceUrl": "https://arxiv.org/abs/2611.21925",
         "sourceName": "arXiv cs.AI",
         "publishedAt": "2026-11-18T05:00:00.000Z",
-        "sourceExcerpt": "arXiv:2611.21925v1 Announce Type: new Abstract: Speculative-diffusion decoding uses a small parallel drafter model to generate b draft tokens in one forward pass, which then undergo parallel verification via a larger target model. Faster inference can be achieved when multiple draft tokens pass verification simultaneously. Recent parallel draft architectures (DFlash, DSpark) improve draft quality by conditioning on rich features computed by the target, through a mechanism known as feature encoding. However, standard feature encoding mechanisms have three limitations: (1) they are lossy, applying encoding projections that are destructive to the underlying target feature-space via a discovered effect known as residual mixing, (2) they are memory-less, with no record of previously processed proposals, and (3) they utilize features sampled uniformly from across the target layers, omitting important hidden states. To address these issues, we propose Mixture-of-Features Attention (MoFA), a lightweight feature-encoding approach equipped with a working memory that encodes previously rejected proposals. Leveraging MoFA, rejection memory, and a set of further enhancements, including 2-tap causal convolutions, prefix-only cross-attention, and non-uniform target layer selection, the final architecture, DNeo, achieves 1.3x faster generation speed than SoTA (DFlash-2) without impacting drafter footprint or generation quality. DNeo marks a new state of the art in high quality, fast LLM inference.",
-        "summary": "**What happened:** Researchers introduced DNeo, a parallel‑draft architecture that refines the target‑feature encoding pipeline, allowing the small drafter to make more informed token predictions before the larger verifier checks them.\n\n**Why it matters:** Better feature encoding means more draft tokens survive verification, shrinking the number of expensive forward passes the target model must run and accelerating real‑time LLM inference.\n\n**Key stats:** DNeo reports a ~15% rise in draft acceptance rate and up to a 20% reduction in overall latency compared with prior systems like DFlash and DSpark, while preserving generation quality.\n\n**Source:** https://arxiv.org/abs/2611.21925"
+        "sourceExcerpt": "",
+        "summary": ""
       },
       "selectedAt": "2026-11-18T20:31:12.073Z",
       "platforms": {
@@ -1685,87 +1685,10 @@
           "accountId": "6ac27146281ee799a37065e4",
           "status": "published",
           "idempotencyKey": "01086da8-f2a9-4926-b007-50f89b3a22fc",
-          "request": {
-            "content": "DNeo: Your Parallel Draft Model Needs Better Target Feature Encoding\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2611.21925\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-18\nAI-generated narration. #AI #AINews #Shorts",
-            "mediaItems": [
-              {
-                "type": "video",
-                "url": "https://media.zernio.com/temp/1795033906770_790ac806763b513a_2026-11-18.mp4"
-              }
-            ],
-            "platforms": [
-              {
-                "platform": "youtube",
-                "accountId": "6ac27146281ee799a37065e4",
-                "platformSpecificData": {
-                  "title": "DNeo: Your Parallel Draft Model Needs Better",
-                  "visibility": "public",
-                  "madeForKids": false,
-                  "containsSyntheticMedia": true,
-                  "categoryId": "28"
-                }
-              }
-            ],
-            "publishNow": true
-          },
           "firstSubmittedAt": "2026-11-18T20:31:49.975Z",
           "postId": "6afe0b379cd05a9c559b57c5",
           "postUrl": "https://www.youtube.com/watch?v=54TMf51hbkI"
         }
-      },
-      "script": {
-        "version": 3,
-        "provider": "extractive",
-        "format": "source-fallback",
-        "angle": "capability",
-        "workingTitle": "DNeo: Your Parallel Draft Model Needs Better",
-        "availability": "unknown",
-        "hookStyle": "question",
-        "sentences": [
-          {
-            "text": "Would you use DNeo?",
-            "evidenceQuote": "Leveraging MoFA, rejection memory, and a set of further enhancements, including 2-tap causal convolutions, prefix-only cross-attention, and non-uniform target layer selection, the final architecture, DNeo, achieves 1.3x faster generation speed than SoTA (DFlash-2) without impacting drafter footprint or generation quality.",
-            "role": "hook",
-            "visual": "example",
-            "displayText": "Would you use DNeo?"
-          },
-          {
-            "text": "Faster inference can be achieved when multiple draft tokens pass verification simultaneously.",
-            "evidenceQuote": "Faster inference can be achieved when multiple draft tokens pass verification simultaneously.",
-            "role": "breakthrough",
-            "visual": "example",
-            "displayText": "Be achieved when multiple draft tokens pass verification"
-          },
-          {
-            "text": "Recent parallel draft architectures (DFlash, DSpark) improve draft quality by conditioning on rich features computed by the target, through a mechanism known as feature encoding.",
-            "evidenceQuote": "Recent parallel draft architectures (DFlash, DSpark) improve draft quality by conditioning on rich features computed by the target, through a mechanism known as feature encoding.",
-            "role": "breakthrough",
-            "visual": "process",
-            "displayText": "Recent parallel draft architectures (DFlash"
-          },
-          {
-            "text": "arXiv cs.AI says To address these issues, it propose Mixture-of-Features Attention (MoFA), a lightweight feature-encoding approach equipped with a working memory that encodes previously rejected proposals.",
-            "evidenceQuote": "To address these issues, we propose Mixture-of-Features Attention (MoFA), a lightweight feature-encoding approach equipped with a working memory that encodes previously rejected proposals.",
-            "role": "breakthrough",
-            "visual": "process",
-            "displayText": "ArXiv cs.AI says To address these issues"
-          },
-          {
-            "text": "This source excerpt does not confirm public access.",
-            "evidenceQuote": "arXiv:2611.21925v1 Announce Type: new Abstract: Speculative-diffusion decoding uses a small parallel drafter model to generate b draft tokens in one forward pass, which then undergo parallel verification via a larger target model.",
-            "role": "impact",
-            "visual": "highlight",
-            "displayText": "does not confirm public access"
-          },
-          {
-            "text": "Would you try DNeo, or wait for more proof?",
-            "evidenceQuote": "Leveraging MoFA, rejection memory, and a set of further enhancements, including 2-tap causal convolutions, prefix-only cross-attention, and non-uniform target layer selection, the final architecture, DNeo, achieves 1.3x faster generation speed than SoTA (DFlash-2) without impacting drafter footprint or generation quality.",
-            "role": "engagement",
-            "visual": "highlight",
-            "displayText": "Would you try DNeo"
-          }
-        ],
-        "narration": "Would you use DNeo? Faster inference can be achieved when multiple draft tokens pass verification simultaneously. Recent parallel draft architectures (DFlash, DSpark) improve draft quality by conditioning on rich features computed by the target, through a mechanism known as feature encoding. arXiv cs.AI says To address these issues, it propose Mixture-of-Features Attention (MoFA), a lightweight feature-encoding approach equipped with a working memory that encodes previously rejected proposals. This source excerpt does not confirm public access. Would you try DNeo, or wait for more proof?"
       },
       "presentation": {
         "title": "DNeo: Your Parallel Draft Model Needs Better",
@@ -2433,6 +2356,97 @@
         "publicUrl": "https://media.zernio.com/temp/1795557508203_3620017b568b4bc8_2026-11-24.mp4",
         "videoSha256": "9cd07bb56b4a1384744162121656fa4c3628e75e6215204570dd89e46a6bab21",
         "uploadedAt": "2026-11-24T21:58:30.244Z"
+      }
+    },
+    "2026-11-25": {
+      "story": {
+        "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.31554",
+        "rank": 6,
+        "title": "Agent Recovery Gone Wrong: Measuring Harm Beyond Duplicate Calls",
+        "sourceUrl": "https://arxiv.org/abs/2611.31554",
+        "sourceName": "arXiv cs.AI",
+        "publishedAt": "2026-11-25T05:00:00.000Z",
+        "sourceExcerpt": "arXiv:2611.31554v1 Announce Type: new Abstract: Code-executing LLM agents submit blocks of code that issue several API writes. If a block fails after some of its writes have taken effect, the agent rewrites the block and continues. It is unknown how often such a recovery harms the external state when the failure occurs naturally in the code written by the agent. In this paper, we measure it on recorded trajectories of AppWorld agents. In a stratified random sample of 200 candidate episodes across ten models, 145 are partial executions confirmed by the database state. In the sample, 30 of 143 confirmed partial executions with a determinable outcome are followed by a harmful recovery, and its violation remains at the end of the run, which gives a stratification-weighted estimate of 24.6%. Two thirds of the harmful recoveries duplicate an effect, and the rest delete user data or make a wrong first-time write, e.g., an order of a wrong product. A rule that searches for repeated calls finds 75% of duplications but only 41% of all harm. We also examine two sources of operation identity for an idempotency contract. In a small pilot (17 episodes, one local model), identifiers supplied by the model do not detectably reduce harm, because the model issues a new identifier for the same operation. Identity derived from the call content, evaluated counterfactually on the sample, would have matched every harmful write in 14 to 18 of the 30 harmful recoveries, but in none of those with a wrong first-time write, and it would also have matched writes required by the task in 30 episodes. Based on these results, we outline design requirements for safer agent recovery.",
+        "summary": ""
+      },
+      "selectedAt": "2026-11-25T21:05:29.877Z",
+      "platforms": {
+        "youtube": {
+          "accountId": "6ac27146281ee799a37065e4",
+          "status": "prepared",
+          "idempotencyKey": "35d7b76f-ca11-4346-84f7-043d30db1287"
+        }
+      },
+      "script": {
+        "version": 3,
+        "provider": "extractive",
+        "format": "source-fallback",
+        "angle": "workflow",
+        "workingTitle": "Agent Recovery Gone Wrong: Measuring Harm Beyond",
+        "availability": "research",
+        "hookStyle": "question",
+        "sentences": [
+          {
+            "text": "Would you use Agent Recovery Gone Wrong?",
+            "evidenceQuote": "arXiv:2611.31554v1 Announce Type: new Abstract: Code-executing LLM agents submit blocks of code that issue several API writes. If a block fails after some of its writes have taken effect, the agent rewrites the block and continues. It is unknown how often such a recovery harms the external state when the failure occurs naturally in the code written by the agent. In this paper, we measure it on recorded trajectories of AppWorld agents. In a stratified random sample of 200 candidate episodes across ten models, 145 are partial executions confirmed by the database state. In the sample, 30 of 143 confirmed partial executions with a determinable outcome are followed by a harmful recovery, and its violation remains at the end of the run, which gives a stratification-weighted estimate of 24.6%. Two thirds of the harmful recoveries duplicate an effect, and the rest delete user data or make a wrong first-time write, e.g., an order of a wrong product. A rule that searches for repeated calls finds 75% of duplications but only 41% of all harm. We also examine two sources of operation identity for an idempotency contract. In a small pilot (17 episodes, one local model), identifiers supplied by the model do not detectably reduce harm, because the model issues a new identifier for the same operation. Identity derived from the call content, evaluated counterfactually on the sample, would have matched every harmful write in 14 to 18 of the 30 harmful recoveries, but in none of those with a wrong first-time write, and it would also have matched writes required by the task in 30 episodes. Based on these results, we outline design requirements for safer agent recovery.",
+            "role": "hook",
+            "visual": "example",
+            "displayText": "Would you use Agent Recovery Gone Wrong?"
+          },
+          {
+            "text": "arXiv:2611.31554v1 Announce Type: new Abstract: Code-executing LLM agents submit blocks of code that issue several API writes.",
+            "evidenceQuote": "arXiv:2611.31554v1 Announce Type: new Abstract: Code-executing LLM agents submit blocks of code that issue several API writes.",
+            "role": "breakthrough",
+            "visual": "example",
+            "displayText": "ArXiv:2611.31554v1 Announce Type: new Abstract: Code-executing LLM agents"
+          },
+          {
+            "text": "It is unknown how often such a recovery harms the external state when the failure occurs naturally in the code written by the agent.",
+            "evidenceQuote": "It is unknown how often such a recovery harms the external state when the failure occurs naturally in the code written by the agent.",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "It is unknown how often such a recovery"
+          },
+          {
+            "text": "A rule that searches for repeated calls finds 75% of duplications but only 41% of all harm.",
+            "evidenceQuote": "A rule that searches for repeated calls finds 75% of duplications but only 41% of all harm.",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "A rule that searches for repeated calls finds"
+          },
+          {
+            "text": "This source excerpt does not confirm public access.",
+            "evidenceQuote": "arXiv:2611.31554v1 Announce Type: new Abstract: Code-executing LLM agents submit blocks of code that issue several API writes.",
+            "role": "impact",
+            "visual": "highlight",
+            "displayText": "does not confirm public access"
+          },
+          {
+            "text": "Would you try Agent Recovery Gone Wrong, or wait for more proof?",
+            "evidenceQuote": "arXiv:2611.31554v1 Announce Type: new Abstract: Code-executing LLM agents submit blocks of code that issue several API writes. If a block fails after some of its writes have taken effect, the agent rewrites the block and continues. It is unknown how often such a recovery harms the external state when the failure occurs naturally in the code written by the agent. In this paper, we measure it on recorded trajectories of AppWorld agents. In a stratified random sample of 200 candidate episodes across ten models, 145 are partial executions confirmed by the database state. In the sample, 30 of 143 confirmed partial executions with a determinable outcome are followed by a harmful recovery, and its violation remains at the end of the run, which gives a stratification-weighted estimate of 24.6%. Two thirds of the harmful recoveries duplicate an effect, and the rest delete user data or make a wrong first-time write, e.g., an order of a wrong product. A rule that searches for repeated calls finds 75% of duplications but only 41% of all harm. We also examine two sources of operation identity for an idempotency contract. In a small pilot (17 episodes, one local model), identifiers supplied by the model do not detectably reduce harm, because the model issues a new identifier for the same operation. Identity derived from the call content, evaluated counterfactually on the sample, would have matched every harmful write in 14 to 18 of the 30 harmful recoveries, but in none of those with a wrong first-time write, and it would also have matched writes required by the task in 30 episodes. Based on these results, we outline design requirements for safer agent recovery.",
+            "role": "engagement",
+            "visual": "highlight",
+            "displayText": "Would you try Agent Recovery Gone Wrong"
+          }
+        ],
+        "narration": "Would you use Agent Recovery Gone Wrong? arXiv:2611.31554v1 Announce Type: new Abstract: Code-executing LLM agents submit blocks of code that issue several API writes. It is unknown how often such a recovery harms the external state when the failure occurs naturally in the code written by the agent. A rule that searches for repeated calls finds 75% of duplications but only 41% of all harm. This source excerpt does not confirm public access. Would you try Agent Recovery Gone Wrong, or wait for more proof?"
+      },
+      "presentation": {
+        "title": "Agent Recovery Gone Wrong: Measuring Harm Beyond",
+        "format": "source-fallback",
+        "angle": "workflow",
+        "hookStyle": "question",
+        "availability": "research",
+        "duration": 38.6,
+        "wordCount": 85,
+        "scriptVersion": 3
+      },
+      "selectionReason": "A source-backed, measurable change in time, cost, or capability.",
+      "contentHash": "aa5464161d3ea8ced9f03b92b7d89897f51c16fd78cef765599ca7159a40f0e2",
+      "media": {
+        "publicUrl": "https://media.zernio.com/temp/1795640757168_398ac46c07d4a236_2026-11-25.mp4",
+        "videoSha256": "fc57c858c20fdcfa6ea03470fba011ddca822eda7235fa5a0501816e1698c036",
+        "uploadedAt": "2026-11-25T21:05:58.497Z"
       }
     }
   }
