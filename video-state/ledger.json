@@ -2373,8 +2373,32 @@
       "platforms": {
         "youtube": {
           "accountId": "6ac27146281ee799a37065e4",
-          "status": "prepared",
-          "idempotencyKey": "35d7b76f-ca11-4346-84f7-043d30db1287"
+          "status": "submitting",
+          "idempotencyKey": "35d7b76f-ca11-4346-84f7-043d30db1287",
+          "request": {
+            "content": "Agent Recovery Gone Wrong: Measuring Harm Beyond Duplicate Calls\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2611.31554\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-25\nAI-generated narration. #AI #AINews #Shorts",
+            "mediaItems": [
+              {
+                "type": "video",
+                "url": "https://media.zernio.com/temp/1795640757168_398ac46c07d4a236_2026-11-25.mp4"
+              }
+            ],
+            "platforms": [
+              {
+                "platform": "youtube",
+                "accountId": "6ac27146281ee799a37065e4",
+                "platformSpecificData": {
+                  "title": "Agent Recovery Gone Wrong: Measuring Harm Beyond",
+                  "visibility": "public",
+                  "madeForKids": false,
+                  "containsSyntheticMedia": true,
+                  "categoryId": "28"
+                }
+              }
+            ],
+            "publishNow": true
+          },
+          "firstSubmittedAt": "2026-11-25T21:06:00.451Z"
         }
       },
       "script": {
