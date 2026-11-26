@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "issueDate": "2026-11-26",
+  "issueUrl": "https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-26",
+  "content": "Today's AI briefing from The Gradient | 2026-11-26\n\n1. How Gemini is changing the game for Golden State's organization and fans.\nGoogle Gemini has teamed up with the Golden State Warriors organization to embed generative AI across fan‑facing experiences and internal business operations for the Warriors, the WNBA’s Valkyries, and the Chase Center venue.\n\n2. GPT-6 models demonstrate intrinsic protein-design capabilities\nGPT-6 models were tasked with designing protein structures and sequences, using both reasoning and generated code. Laboratory validation demonstrated binding activity for designs aimed at five distinct protein targets.\n\n3. Constraint-Aware Test-Time Scoring for LLM and VLM Candidate Selection\nA team proposes a constraint‑aware scoring framework for large language and vision‑language models. When multiple candidate answers are generated, each answer must first pass a small set of hard, domain‑specific checks before being ranked by confidence or a judge model.\n\nRead the full briefing and original sources:\nhttps://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-26\n\n#AI #ArtificialIntelligence #TheGradient",
+  "contentHash": "e3f215bee5d533b775a6030ee134a79d749a8d4c537baffed1917c38dd4b5040",
+  "accountId": "6ac5a561b3c21905c0edcfba",
+  "organizationUrn": "urn:li:organization:136824048",
+  "idempotencyKey": "e2109501-b5e0-479e-bdbe-c74572afedf4",
+  "status": "submitting",
+  "firstSubmittedAt": "2026-11-26T20:54:51.691Z"
+}
