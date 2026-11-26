@@ -2413,8 +2413,32 @@
       "platforms": {
         "youtube": {
           "accountId": "6ac27146281ee799a37065e4",
-          "status": "prepared",
-          "idempotencyKey": "d5bc8968-8bec-4141-b45a-8c2c16fea2d6"
+          "status": "submitting",
+          "idempotencyKey": "d5bc8968-8bec-4141-b45a-8c2c16fea2d6",
+          "request": {
+            "content": "Constraint-Aware Test-Time Scoring for LLM and VLM Candidate Selection\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2611.33161\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-26\nAI-generated narration. #AI #AINews #Shorts",
+            "mediaItems": [
+              {
+                "type": "video",
+                "url": "https://media.zernio.com/temp/1795726721063_a356851e9bea8964_2026-11-26.mp4"
+              }
+            ],
+            "platforms": [
+              {
+                "platform": "youtube",
+                "accountId": "6ac27146281ee799a37065e4",
+                "platformSpecificData": {
+                  "title": "Constraint-Aware Test-Time Scoring for LLM and",
+                  "visibility": "public",
+                  "madeForKids": false,
+                  "containsSyntheticMedia": true,
+                  "categoryId": "28"
+                }
+              }
+            ],
+            "publishNow": true
+          },
+          "firstSubmittedAt": "2026-11-26T20:58:43.653Z"
         }
       },
       "script": {
