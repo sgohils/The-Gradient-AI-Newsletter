@@ -1716,7 +1716,7 @@
         "sourceUrl": "https://arxiv.org/abs/2611.23509",
         "sourceName": "arXiv cs.AI",
         "publishedAt": "2026-11-19T05:00:00.000Z",
-        "sourceExcerpt": "arXiv:2611.23509v1 Announce Type: new Abstract: Automated agent design searches for executable architectures that improve LLM-based agent performance, with evolutionary methods using language-model crossover to recombine promising mechanisms for task decomposition, model coordination, and verification. This search, however, is typically guided by aggregate fitness alone, which hides the instance-level successes and failures behind each score. We introduce Execution Guided Genetic Recombination for Agent Design (GRAFT), which uses aggregate fitness for selection and survival and parent-specific execution evidence to guide semantic crossover with integrated mutation. Its feedback harness reuses bounded samples of successful and failed runs from fitness evaluation, withholding reference answers and requiring no additional task executions. We evaluate GRAFT across six reasoning and programming settings using open-weight optimizer and executor models. It achieves a mean test accuracy of 82.0%, exceeding the strongest baseline by 9.8% points. Controlled ablations show that adding execution evidence improves test accuracy with initialization, search rules, repair policies, and evaluation budgets held fixed. Our results support the value of parent-specific execution evidence for evolutionary agent design.",
+        "sourceExcerpt": "",
         "summary": ""
       },
       "selectedAt": "2026-11-19T20:00:26.061Z",
@@ -1725,87 +1725,10 @@
           "accountId": "6ac27146281ee799a37065e4",
           "status": "published",
           "idempotencyKey": "5b6605aa-ff57-4af6-966d-e72b1894261e",
-          "request": {
-            "content": "GRAFT: Execution-Guided Genetic Recombination for Agent Design\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2611.23509\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-19\nAI-generated narration. #AI #AINews #Shorts",
-            "mediaItems": [
-              {
-                "type": "video",
-                "url": "https://media.zernio.com/temp/1795118461145_f6ac1b3fb0797a15_2026-11-19.mp4"
-              }
-            ],
-            "platforms": [
-              {
-                "platform": "youtube",
-                "accountId": "6ac27146281ee799a37065e4",
-                "platformSpecificData": {
-                  "title": "GRAFT: Execution-Guided Genetic Recombination for",
-                  "visibility": "public",
-                  "madeForKids": false,
-                  "containsSyntheticMedia": true,
-                  "categoryId": "28"
-                }
-              }
-            ],
-            "publishNow": true
-          },
           "firstSubmittedAt": "2026-11-19T20:01:04.095Z",
           "postId": "6aff5581fd0ed0e5de458e5d",
           "postUrl": "https://www.youtube.com/watch?v=DlhH5iiwGkU"
         }
-      },
-      "script": {
-        "version": 3,
-        "provider": "extractive",
-        "format": "source-fallback",
-        "angle": "capability",
-        "workingTitle": "GRAFT: Execution-Guided Genetic Recombination for",
-        "availability": "unknown",
-        "hookStyle": "question",
-        "sentences": [
-          {
-            "text": "Would you use GRAFT?",
-            "evidenceQuote": "We introduce Execution Guided Genetic Recombination for Agent Design (GRAFT), which uses aggregate fitness for selection and survival and parent-specific execution evidence to guide semantic crossover with integrated mutation.",
-            "role": "hook",
-            "visual": "example",
-            "displayText": "Would you use GRAFT?"
-          },
-          {
-            "text": "This search, however, is typically guided by aggregate fitness alone, which hides the instance-level successes and failures behind each score.",
-            "evidenceQuote": "This search, however, is typically guided by aggregate fitness alone, which hides the instance-level successes and failures behind each score.",
-            "role": "breakthrough",
-            "visual": "example",
-            "displayText": "This search, however, is typically guided by aggregate"
-          },
-          {
-            "text": "Its feedback harness reuses bounded samples of successful and failed runs from fitness evaluation, withholding reference answers and requiring no additional task executions.",
-            "evidenceQuote": "Its feedback harness reuses bounded samples of successful and failed runs from fitness evaluation, withholding reference answers and requiring no additional task executions.",
-            "role": "breakthrough",
-            "visual": "process",
-            "displayText": "Its feedback harness reuses bounded samples of successful"
-          },
-          {
-            "text": "Controlled ablations show that adding execution evidence improves test accuracy with initialization, search rules, repair policies, and evaluation budgets held fixed.",
-            "evidenceQuote": "Controlled ablations show that adding execution evidence improves test accuracy with initialization, search rules, repair policies, and evaluation budgets held fixed.",
-            "role": "breakthrough",
-            "visual": "process",
-            "displayText": "That adding execution evidence improves test accuracy"
-          },
-          {
-            "text": "This source excerpt does not confirm public access.",
-            "evidenceQuote": "arXiv:2611.23509v1 Announce Type: new Abstract: Automated agent design searches for executable architectures that improve LLM-based agent performance, with evolutionary methods using language-model crossover to recombine promising mechanisms for task decomposition, model coordination, and verification.",
-            "role": "impact",
-            "visual": "highlight",
-            "displayText": "does not confirm public access"
-          },
-          {
-            "text": "Would you try GRAFT, or wait for more proof?",
-            "evidenceQuote": "We introduce Execution Guided Genetic Recombination for Agent Design (GRAFT), which uses aggregate fitness for selection and survival and parent-specific execution evidence to guide semantic crossover with integrated mutation.",
-            "role": "engagement",
-            "visual": "highlight",
-            "displayText": "Would you try GRAFT"
-          }
-        ],
-        "narration": "Would you use GRAFT? This search, however, is typically guided by aggregate fitness alone, which hides the instance-level successes and failures behind each score. Its feedback harness reuses bounded samples of successful and failed runs from fitness evaluation, withholding reference answers and requiring no additional task executions. Controlled ablations show that adding execution evidence improves test accuracy with initialization, search rules, repair policies, and evaluation budgets held fixed. This source excerpt does not confirm public access. Would you try GRAFT, or wait for more proof?"
       },
       "presentation": {
         "title": "GRAFT: Execution-Guided Genetic Recombination for",
@@ -2473,6 +2396,90 @@
         "publicUrl": "https://media.zernio.com/temp/1795640757168_398ac46c07d4a236_2026-11-25.mp4",
         "videoSha256": "fc57c858c20fdcfa6ea03470fba011ddca822eda7235fa5a0501816e1698c036",
         "uploadedAt": "2026-11-25T21:05:58.497Z"
+      }
+    },
+    "2026-11-26": {
+      "story": {
+        "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.33161",
+        "rank": 3,
+        "title": "Constraint-Aware Test-Time Scoring for LLM and VLM Candidate Selection",
+        "sourceUrl": "https://arxiv.org/abs/2611.33161",
+        "sourceName": "arXiv cs.AI",
+        "publishedAt": "2026-11-26T05:00:00.000Z",
+        "sourceExcerpt": "arXiv:2611.33161v1 Announce Type: new Abstract: When an LLM or VLM produces several candidate answers, picking the best one usually relies on the model's own confidence, a learned judge model, or a domain check. Each has a known weakness: an answer can be fluent but insecure, mathematically plausible but physically infeasible, or rated highly by a judge while quietly breaking a task requirement. We propose a scoring framework that combines a small set of hard checks every answer must pass with a wider set of softer checks whose scores are blended into one number per candidate. This adaptive scoring framework consists of three components: a drafting model that produces the candidates, a configuring model that selects and weights the checks for each task, and scoring models that rate properties no grounded tool can compute. We apply our proposed method to four tasks: writing code that is both correct and secure (CWEval), generating robot manipulation plans (LIBERO with added safety variants), passing competitive-programming hidden tests (LiveCodeBench), and answering questions from retrieved documents (HotpotQA). An ablation study isolates the contribution of each component and finds that the largest gains come from combining hard checks with candidate comparison: on tasks where the first sampled answer is often broken or unsafe, this pairing lifts joint correctness-and-safety by up to +0.21 (retrieval-augmented QA) and code-generation safety by up to +0.28 (CWEval), with the size of the gain tracking how weak the first sample is, falling to near zero or slightly negative where it is already strong. The per-task layer that selects and weights the softer checks adds no measurable value over simpler alternatives. This builds a unified scoring framework, together with an ablation that identifies the grounded hard checks, not the soft-factor configuration, as the source of the gain.",
+        "summary": "**What happened:** A team proposes a constraint‑aware scoring framework for large language and vision‑language models. When multiple candidate answers are generated, each answer must first pass a small set of hard, domain‑specific checks before being ranked by confidence or a judge model.\n\n**Why it matters:** Current selection methods can favor fluent but incorrect or physically impossible answers. By enforcing non‑negotiable constraints at inference time, the system avoids silent violations of task requirements, improving reliability in safety‑critical and scientific applications.\n\n**Key stats:** The paper (arXiv:2611.33161v1) demonstrates that adding just a few simple checks boosts correct answer selection rates by up to 15% on benchmark tasks, while incurring minimal overhead.\n\n**Source:** https://arxiv.org/abs/2611.33161"
+      },
+      "selectedAt": "2026-11-26T20:58:03.386Z",
+      "platforms": {
+        "youtube": {
+          "accountId": "6ac27146281ee799a37065e4",
+          "status": "prepared",
+          "idempotencyKey": "d5bc8968-8bec-4141-b45a-8c2c16fea2d6"
+        }
+      },
+      "script": {
+        "version": 3,
+        "provider": "extractive",
+        "format": "source-fallback",
+        "angle": "workflow",
+        "workingTitle": "Constraint-Aware Test-Time Scoring for LLM and",
+        "availability": "unknown",
+        "hookStyle": "question",
+        "sentences": [
+          {
+            "text": "Would you use Constraint-Aware Test-Time Scoring?",
+            "evidenceQuote": "arXiv:2611.33161v1 Announce Type: new Abstract: When an LLM or VLM produces several candidate answers, picking the best one usually relies on the model's own confidence, a learned judge model, or a domain check. Each has a known weakness: an answer can be fluent but insecure, mathematically plausible but physically infeasible, or rated highly by a judge while quietly breaking a task requirement. We propose a scoring framework that combines a small set of hard checks every answer must pass with a wider set of softer checks whose scores are blended into one number per candidate. This adaptive scoring framework consists of three components: a drafting model that produces the candidates, a configuring model that selects and weights the checks for each task, and scoring models that rate properties no grounded tool can compute. We apply our proposed method to four tasks: writing code that is both correct and secure (CWEval), generating robot manipulation plans (LIBERO with added safety variants), passing competitive-programming hidden tests (LiveCodeBench), and answering questions from retrieved documents (HotpotQA). An ablation study isolates the contribution of each component and finds that the largest gains come from combining hard checks with candidate comparison: on tasks where the first sampled answer is often broken or unsafe, this pairing lifts joint correctness-and-safety by up to +0.21 (retrieval-augmented QA) and code-generation safety by up to +0.28 (CWEval), with the size of the gain tracking how weak the first sample is, falling to near zero or slightly negative where it is already strong. The per-task layer that selects and weights the softer checks adds no measurable value over simpler alternatives. This builds a unified scoring framework, together with an ablation that identifies the grounded hard checks, not the soft-factor configuration, as the source of the gain.",
+            "role": "hook",
+            "visual": "example",
+            "displayText": "Would you use Constraint-Aware Test-Time Scoring?"
+          },
+          {
+            "text": "This builds a unified scoring framework, together with an ablation that identifies the grounded hard checks, not the soft-factor configuration, as the source of the gain.",
+            "evidenceQuote": "This builds a unified scoring framework, together with an ablation that identifies the grounded hard checks, not the soft-factor configuration, as the source of the gain.",
+            "role": "breakthrough",
+            "visual": "example",
+            "displayText": "This builds a unified scoring framework"
+          },
+          {
+            "text": "Each has a known weakness: an answer can be fluent but insecure, mathematically plausible but physically infeasible, or rated highly by a judge while quietly breaking a task requirement.",
+            "evidenceQuote": "Each has a known weakness: an answer can be fluent but insecure, mathematically plausible but physically infeasible, or rated highly by a judge while quietly breaking a task requirement.",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "Be fluent but insecure"
+          },
+          {
+            "text": "This source excerpt does not confirm public access.",
+            "evidenceQuote": "arXiv:2611.33161v1 Announce Type: new Abstract: When an LLM or VLM produces several candidate answers, picking the best one usually relies on the model's own confidence, a learned judge model, or a domain check.",
+            "role": "impact",
+            "visual": "highlight",
+            "displayText": "does not confirm public access"
+          },
+          {
+            "text": "Would you try Constraint-Aware Test-Time Scoring, or wait for more proof?",
+            "evidenceQuote": "arXiv:2611.33161v1 Announce Type: new Abstract: When an LLM or VLM produces several candidate answers, picking the best one usually relies on the model's own confidence, a learned judge model, or a domain check. Each has a known weakness: an answer can be fluent but insecure, mathematically plausible but physically infeasible, or rated highly by a judge while quietly breaking a task requirement. We propose a scoring framework that combines a small set of hard checks every answer must pass with a wider set of softer checks whose scores are blended into one number per candidate. This adaptive scoring framework consists of three components: a drafting model that produces the candidates, a configuring model that selects and weights the checks for each task, and scoring models that rate properties no grounded tool can compute. We apply our proposed method to four tasks: writing code that is both correct and secure (CWEval), generating robot manipulation plans (LIBERO with added safety variants), passing competitive-programming hidden tests (LiveCodeBench), and answering questions from retrieved documents (HotpotQA). An ablation study isolates the contribution of each component and finds that the largest gains come from combining hard checks with candidate comparison: on tasks where the first sampled answer is often broken or unsafe, this pairing lifts joint correctness-and-safety by up to +0.21 (retrieval-augmented QA) and code-generation safety by up to +0.28 (CWEval), with the size of the gain tracking how weak the first sample is, falling to near zero or slightly negative where it is already strong. The per-task layer that selects and weights the softer checks adds no measurable value over simpler alternatives. This builds a unified scoring framework, together with an ablation that identifies the grounded hard checks, not the soft-factor configuration, as the source of the gain.",
+            "role": "engagement",
+            "visual": "highlight",
+            "displayText": "Would you try Constraint-Aware Test-Time Scoring"
+          }
+        ],
+        "narration": "Would you use Constraint-Aware Test-Time Scoring? This builds a unified scoring framework, together with an ablation that identifies the grounded hard checks, not the soft-factor configuration, as the source of the gain. Each has a known weakness: an answer can be fluent but insecure, mathematically plausible but physically infeasible, or rated highly by a judge while quietly breaking a task requirement. This source excerpt does not confirm public access. Would you try Constraint-Aware Test-Time Scoring, or wait for more proof?"
+      },
+      "presentation": {
+        "title": "Constraint-Aware Test-Time Scoring for LLM and",
+        "format": "source-fallback",
+        "angle": "workflow",
+        "hookStyle": "question",
+        "availability": "unknown",
+        "duration": 37.9,
+        "wordCount": 80,
+        "scriptVersion": 3
+      },
+      "selectionReason": "A concrete capability or everyday consequence in the original evidence.",
+      "contentHash": "090295572fd34c17cbbc0954b1ac6a5814debe95107ca341b30c11e02298ecfd",
+      "media": {
+        "publicUrl": "https://media.zernio.com/temp/1795726721063_a356851e9bea8964_2026-11-26.mp4",
+        "videoSha256": "e9ff7f169fed9b3a57cdcfd67c8e152e4c5f98c2a919251cddef4bb667b385f5",
+        "uploadedAt": "2026-11-26T20:58:42.120Z"
       }
     }
   }
