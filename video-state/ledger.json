@@ -2413,7 +2413,7 @@
       "platforms": {
         "youtube": {
           "accountId": "6ac27146281ee799a37065e4",
-          "status": "submitting",
+          "status": "published",
           "idempotencyKey": "d5bc8968-8bec-4141-b45a-8c2c16fea2d6",
           "request": {
             "content": "Constraint-Aware Test-Time Scoring for LLM and VLM Candidate Selection\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2611.33161\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-26\nAI-generated narration. #AI #AINews #Shorts",
@@ -2438,7 +2438,9 @@
             ],
             "publishNow": true
           },
-          "firstSubmittedAt": "2026-11-26T20:58:43.653Z"
+          "firstSubmittedAt": "2026-11-26T20:58:43.653Z",
+          "postId": "6b089d856fd6146de71e31f3",
+          "postUrl": "https://www.youtube.com/watch?v=qqahta81Jlc"
         }
       },
       "script": {
