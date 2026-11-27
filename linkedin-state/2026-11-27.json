@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "issueDate": "2026-11-27",
+  "issueUrl": "https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-27",
+  "content": "Today's AI briefing from The Gradient | 2026-11-27\n\n1. Constraint-Aware Test-Time Scoring for LLM and VLM Candidate Selection\nA team proposes a constraint‑aware scoring framework for large language (LLM) and vision‑language models (VLM) that evaluates multiple candidate answers at inference time. The method layers a small set of immutable checks (e.g., physical feasibility, domain‑specific rules) on top of traditional confidence or…\n\n2. Dynamic Reasoning in Next-Gen Detection and Response: An Empirical Study of LLM Triage, Reinforcement Tuning, and Adversarial Evasion\nResearchers ran 56 reproducible experiments across a multi‑layer enterprise‑cloud simulator and four public datasets (SOREL‑20M, BODMAS, LANL, DARPA) to compare static classifiers, graph‑based signal fusion, and LLM triage agents when analysts have strict attention budgets (Recall at B alerts/day).\n\n3. FIG-MAC: A Fine-grained Inspiration Graph Empowered Multi-Agent Collaboration for Automated Scientific Hypothesis Generation\nResearchers released FIG-MAC, a system that builds an inspiration graph linking concepts at a granular level and deploys multiple LLM agents to explore, combine, and refine these links into concrete, verifiable hypotheses.\n\nRead the full briefing and original sources:\nhttps://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-27\n\n#AI #ArtificialIntelligence #TheGradient",
+  "contentHash": "41a6730fa133711bb3dba1aa73eacd8bc777b29efb8f23be1434942b777ec4f5",
+  "accountId": "6ac5a561b3c21905c0edcfba",
+  "organizationUrn": "urn:li:organization:136824048",
+  "idempotencyKey": "44ff96ac-2c86-42db-909b-9b8eb82dfb20",
+  "status": "submitting",
+  "firstSubmittedAt": "2026-11-27T20:40:13.799Z"
+}
