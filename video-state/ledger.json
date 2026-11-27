@@ -2446,8 +2446,32 @@
       "platforms": {
         "youtube": {
           "accountId": "6ac27146281ee799a37065e4",
-          "status": "prepared",
-          "idempotencyKey": "ecdfc4b7-f406-4451-aa34-6bab2bdb9f5c"
+          "status": "submitting",
+          "idempotencyKey": "ecdfc4b7-f406-4451-aa34-6bab2bdb9f5c",
+          "request": {
+            "content": "How Much Effort Does an AI Code Reviewer Need? Evidence from Claude 5.5 Models on Plausible-but-Wrong Patches\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2611.33639\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-27\nAI-generated narration. #AI #AINews #Shorts",
+            "mediaItems": [
+              {
+                "type": "video",
+                "url": "https://media.zernio.com/temp/1795812229815_c01fbf26203d6c9f_2026-11-27.mp4"
+              }
+            ],
+            "platforms": [
+              {
+                "platform": "youtube",
+                "accountId": "6ac27146281ee799a37065e4",
+                "platformSpecificData": {
+                  "title": "How Much Effort Does an AI Code Reviewer Need?",
+                  "visibility": "public",
+                  "madeForKids": false,
+                  "containsSyntheticMedia": true,
+                  "categoryId": "28"
+                }
+              }
+            ],
+            "publishNow": true
+          },
+          "firstSubmittedAt": "2026-11-27T20:43:52.376Z"
         }
       },
       "script": {
