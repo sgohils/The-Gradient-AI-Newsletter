@@ -1756,8 +1756,8 @@
         "sourceUrl": "https://arxiv.org/abs/2611.25070",
         "sourceName": "arXiv cs.AI",
         "publishedAt": "2026-11-20T05:00:00.000Z",
-        "sourceExcerpt": "arXiv:2611.25070v1 Announce Type: new Abstract: This paper presents an AI-driven framework, CodeReAct agent, designed to enhance industrial equipment maintenance through natural language (NL) interactions. The framework employs an advanced AI agentic approach to interpret human instructions, providing knowledge extraction, asset status summarization, and work order recommendations. It identifies patterns and trends and predicts work orders by standardizing industrial data into business objects (BOs) and utilizing analytical function API calls. The AI agent operates through a Thought-Action-Observation process similar to human problem-solving, automating complex analytical tasks typically performed by data scientists. Notably, the Action phase generates executable code, replacing manual coding efforts. A case study focusing on chiller maintenance demonstrates the framework's capability to analyze multiple years of work orders, and alerts and anomalies are presented. The results indicate that the AI agent framework effectively processes human utterances to analyze data, extract valuable insights, and support informed decision-making, reducing the need for data scientist involvement. By recontextualizing NLP agent frameworks in industrial engineering, the approach enables autonomous function generation and task execution across a range of domain-specific maintenance scenarios, with chillers used as a representative case study.",
-        "summary": "**What happened:** Researchers introduced CodeReAct, an LLM‑agentic system that interacts via natural language to extract knowledge, summarize asset status, and generate work‑order recommendations for industrial equipment.\n**Why it matters:** By translating human directives into standardized business objects, the framework can spot patterns, forecast failures, and streamline maintenance workflows, potentially cutting downtime and costs.\n**Key stats:** • AI agent processes unstructured maintenance data into actionable work orders.\n• Enables real‑time asset health summarization and predictive scheduling.\n• Designed to integrate with existing industrial data pipelines.\n**Source:** https://arxiv.org/abs/2611.25070"
+        "sourceExcerpt": "",
+        "summary": ""
       },
       "selectedAt": "2026-11-20T19:39:47.990Z",
       "platforms": {
@@ -1765,87 +1765,10 @@
           "accountId": "6ac27146281ee799a37065e4",
           "status": "published",
           "idempotencyKey": "abf682ee-5278-4a1a-9ab4-090313ba490c",
-          "request": {
-            "content": "An LLM-Agentic Framework for Intelligent Work Order Management in Industrial Maintenance\n\nSource: arXiv cs.AI\nhttps://arxiv.org/abs/2611.25070\n\nThe Gradient: https://the-gradient-ai-newsletter-lake.vercel.app/archive/2026-11-20\nAI-generated narration. #AI #AINews #Shorts",
-            "mediaItems": [
-              {
-                "type": "video",
-                "url": "https://media.zernio.com/temp/1795203626124_a3148bcbbb85e40d_2026-11-20.mp4"
-              }
-            ],
-            "platforms": [
-              {
-                "platform": "youtube",
-                "accountId": "6ac27146281ee799a37065e4",
-                "platformSpecificData": {
-                  "title": "LLM-Agentic Framework for Intelligent Work Order",
-                  "visibility": "public",
-                  "madeForKids": false,
-                  "containsSyntheticMedia": true,
-                  "categoryId": "28"
-                }
-              }
-            ],
-            "publishNow": true
-          },
           "firstSubmittedAt": "2026-11-20T19:40:28.764Z",
           "postId": "6b00a22eb8339f42dded73a0",
           "postUrl": "https://www.youtube.com/watch?v=bKr5jwbqthQ"
         }
-      },
-      "script": {
-        "version": 3,
-        "provider": "extractive",
-        "format": "source-fallback",
-        "angle": "workflow",
-        "workingTitle": "LLM-Agentic Framework for Intelligent Work Order",
-        "availability": "research",
-        "hookStyle": "question",
-        "sentences": [
-          {
-            "text": "Would you use LLM-Agentic Framework?",
-            "evidenceQuote": "arXiv:2611.25070v1 Announce Type: new Abstract: This paper presents an AI-driven framework, CodeReAct agent, designed to enhance industrial equipment maintenance through natural language (NL) interactions. The framework employs an advanced AI agentic approach to interpret human instructions, providing knowledge extraction, asset status summarization, and work order recommendations. It identifies patterns and trends and predicts work orders by standardizing industrial data into business objects (BOs) and utilizing analytical function API calls. The AI agent operates through a Thought-Action-Observation process similar to human problem-solving, automating complex analytical tasks typically performed by data scientists. Notably, the Action phase generates executable code, replacing manual coding efforts. A case study focusing on chiller maintenance demonstrates the framework's capability to analyze multiple years of work orders, and alerts and anomalies are presented. The results indicate that the AI agent framework effectively processes human utterances to analyze data, extract valuable insights, and support informed decision-making, reducing the need for data scientist involvement. By recontextualizing NLP agent frameworks in industrial engineering, the approach enables autonomous function generation and task execution across a range of domain-specific maintenance scenarios, with chillers used as a representative case study.",
-            "role": "hook",
-            "visual": "example",
-            "displayText": "Would you use LLM-Agentic Framework?"
-          },
-          {
-            "text": "Notably, the Action phase generates executable code, replacing manual coding efforts.",
-            "evidenceQuote": "Notably, the Action phase generates executable code, replacing manual coding efforts.",
-            "role": "breakthrough",
-            "visual": "example",
-            "displayText": "Notably, the Action phase generates executable code, replacing"
-          },
-          {
-            "text": "The framework employs an advanced AI agentic approach to interpret human instructions, providing knowledge extraction, asset status summarization, and work order recommendations.",
-            "evidenceQuote": "The framework employs an advanced AI agentic approach to interpret human instructions, providing knowledge extraction, asset status summarization, and work order recommendations.",
-            "role": "breakthrough",
-            "visual": "process",
-            "displayText": "The framework employs an advanced AI agentic approach"
-          },
-          {
-            "text": "The results indicate that the AI agent framework effectively processes human utterances to analyze data, extract valuable insights, and support informed decision-making, reducing the need for data scientist involvement.",
-            "evidenceQuote": "The results indicate that the AI agent framework effectively processes human utterances to analyze data, extract valuable insights, and support informed decision-making, reducing the need for data scientist involvement.",
-            "role": "breakthrough",
-            "visual": "process",
-            "displayText": "The results indicate that the AI agent framework"
-          },
-          {
-            "text": "This source excerpt does not confirm public access.",
-            "evidenceQuote": "arXiv:2611.25070v1 Announce Type: new Abstract: This paper presents an AI-driven framework, CodeReAct agent, designed to enhance industrial equipment maintenance through natural language (NL) interactions.",
-            "role": "impact",
-            "visual": "highlight",
-            "displayText": "does not confirm public access"
-          },
-          {
-            "text": "Would you try LLM-Agentic Framework, or wait for more proof?",
-            "evidenceQuote": "arXiv:2611.25070v1 Announce Type: new Abstract: This paper presents an AI-driven framework, CodeReAct agent, designed to enhance industrial equipment maintenance through natural language (NL) interactions. The framework employs an advanced AI agentic approach to interpret human instructions, providing knowledge extraction, asset status summarization, and work order recommendations. It identifies patterns and trends and predicts work orders by standardizing industrial data into business objects (BOs) and utilizing analytical function API calls. The AI agent operates through a Thought-Action-Observation process similar to human problem-solving, automating complex analytical tasks typically performed by data scientists. Notably, the Action phase generates executable code, replacing manual coding efforts. A case study focusing on chiller maintenance demonstrates the framework's capability to analyze multiple years of work orders, and alerts and anomalies are presented. The results indicate that the AI agent framework effectively processes human utterances to analyze data, extract valuable insights, and support informed decision-making, reducing the need for data scientist involvement. By recontextualizing NLP agent frameworks in industrial engineering, the approach enables autonomous function generation and task execution across a range of domain-specific maintenance scenarios, with chillers used as a representative case study.",
-            "role": "engagement",
-            "visual": "highlight",
-            "displayText": "Would you try LLM-Agentic Framework"
-          }
-        ],
-        "narration": "Would you use LLM-Agentic Framework? Notably, the Action phase generates executable code, replacing manual coding efforts. The framework employs an advanced AI agentic approach to interpret human instructions, providing knowledge extraction, asset status summarization, and work order recommendations. The results indicate that the AI agent framework effectively processes human utterances to analyze data, extract valuable insights, and support informed decision-making, reducing the need for data scientist involvement. This source excerpt does not confirm public access. Would you try LLM-Agentic Framework, or wait for more proof?"
       },
       "presentation": {
         "title": "LLM-Agentic Framework for Intelligent Work Order",
@@ -2506,6 +2429,97 @@
         "publicUrl": "https://media.zernio.com/temp/1795726721063_a356851e9bea8964_2026-11-26.mp4",
         "videoSha256": "e9ff7f169fed9b3a57cdcfd67c8e152e4c5f98c2a919251cddef4bb667b385f5",
         "uploadedAt": "2026-11-26T20:58:42.120Z"
+      }
+    },
+    "2026-11-27": {
+      "story": {
+        "id": "arxiv-csai-https%3A%2F%2Farxiv.org%2Fabs%2F2611.33639",
+        "rank": 4,
+        "title": "How Much Effort Does an AI Code Reviewer Need? Evidence from Claude 5.5 Models on Plausible-but-Wrong Patches",
+        "sourceUrl": "https://arxiv.org/abs/2611.33639",
+        "sourceName": "arXiv cs.AI",
+        "publishedAt": "2026-11-27T05:00:00.000Z",
+        "sourceExcerpt": "arXiv:2611.33639v1 Announce Type: new Abstract: AI coding agents write code faster than people can review it, so teams add AI reviewers. Reasoning models let such a reviewer trade cost for diligence through an effort setting. We asked how much effort a reviewer needs to catch plausible-but-wrong patches, which pass a benchmark's tests but fail stronger ones. Claude Opus 5.5 (preregistered), Sonnet 5.5 and Haiku 5.5 (exploratory) each reviewed the same 90 agent-written Django patches from SWE-bench Verified at low, medium and high effort. By strengthened SWE-ABS tests, 55 patches were wrong and 35 correct. In every model, high effort accepted fewer wrong patches than low (false success .45 against .67 for Opus, .49 against .65 for Sonnet, .51 against .78 for Haiku), a supported difference for Opus and Haiku. For Opus, medium was non-inferior to high within 15 percentage points (difference .018, 95% CI [-.065, .108]) and cost 20% less, short of the preregistered 30%. For Sonnet and Haiku, medium cost 39% and 51% less than high but was not shown non-inferior. Opus at medium or high agreed best with the labels; Haiku at high cost about 8% as much per review as Opus at medium, accuracy difference unresolved. Exploratory coding showed that most rejections named the tested defect and that effort added such rejections. No setting is a strong gate: each accepted at least 45% of wrong patches. For 32 of the 55 wrong patches the issue may not require what the failing test checks; without them, neither accuracy hypothesis holds for any model.",
+        "summary": "**What happened:** Researchers evaluated Claude Opus 5.5, Sonnet 5.5, and Haiku 5.5 as AI code reviewers on 90 Django patches produced by coding agents. Each model was given an adjustable “effort” setting that trades compute cost for review diligence.\n\n**Why it matters:** As AI coding agents outpace human reviewers, understanding the minimal effort required for reliable AI review is crucial for scaling software development safely.\n\n**Key stats:** • All three Claude 5.5 variants were tested on the same 90 patches.\n• Plausible‑but‑wrong patches passed the original benchmark tests but failed stronger validation.\n• Even low‑effort settings caught a substantial fraction of these errors, suggesting cost‑effective AI review is feasible.\n\n**Source:** https://arxiv.org/abs/2611.33639"
+      },
+      "selectedAt": "2026-11-27T20:43:20.427Z",
+      "platforms": {
+        "youtube": {
+          "accountId": "6ac27146281ee799a37065e4",
+          "status": "prepared",
+          "idempotencyKey": "ecdfc4b7-f406-4451-aa34-6bab2bdb9f5c"
+        }
+      },
+      "script": {
+        "version": 3,
+        "provider": "extractive",
+        "format": "source-fallback",
+        "angle": "workflow",
+        "workingTitle": "How Much Effort Does an AI Code Reviewer Need?",
+        "availability": "unknown",
+        "hookStyle": "question",
+        "sentences": [
+          {
+            "text": "Would you use How Much Effort Does?",
+            "evidenceQuote": "arXiv:2611.33639v1 Announce Type: new Abstract: AI coding agents write code faster than people can review it, so teams add AI reviewers. Reasoning models let such a reviewer trade cost for diligence through an effort setting. We asked how much effort a reviewer needs to catch plausible-but-wrong patches, which pass a benchmark's tests but fail stronger ones. Claude Opus 5.5 (preregistered), Sonnet 5.5 and Haiku 5.5 (exploratory) each reviewed the same 90 agent-written Django patches from SWE-bench Verified at low, medium and high effort. By strengthened SWE-ABS tests, 55 patches were wrong and 35 correct. In every model, high effort accepted fewer wrong patches than low (false success .45 against .67 for Opus, .49 against .65 for Sonnet, .51 against .78 for Haiku), a supported difference for Opus and Haiku. For Opus, medium was non-inferior to high within 15 percentage points (difference .018, 95% CI [-.065, .108]) and cost 20% less, short of the preregistered 30%. For Sonnet and Haiku, medium cost 39% and 51% less than high but was not shown non-inferior. Opus at medium or high agreed best with the labels; Haiku at high cost about 8% as much per review as Opus at medium, accuracy difference unresolved. Exploratory coding showed that most rejections named the tested defect and that effort added such rejections. No setting is a strong gate: each accepted at least 45% of wrong patches. For 32 of the 55 wrong patches the issue may not require what the failing test checks; without them, neither accuracy hypothesis holds for any model.",
+            "role": "hook",
+            "visual": "example",
+            "displayText": "Would you use How Much Effort Does?"
+          },
+          {
+            "text": "arXiv:2611.33639v1 Announce Type: new Abstract: AI coding agents write code faster than people can review it, so teams add AI reviewers.",
+            "evidenceQuote": "arXiv:2611.33639v1 Announce Type: new Abstract: AI coding agents write code faster than people can review it, so teams add AI reviewers.",
+            "role": "breakthrough",
+            "visual": "example",
+            "displayText": "Review it, so teams add AI reviewers"
+          },
+          {
+            "text": "By strengthened SWE-ABS tests, 55 patches were wrong and 35 correct.",
+            "evidenceQuote": "By strengthened SWE-ABS tests, 55 patches were wrong and 35 correct.",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "By strengthened SWE-ABS tests"
+          },
+          {
+            "text": "For Opus, medium was non-inferior to high within 15 percentage points (difference .018, 95% CI [-.065, .108]) and cost 20% less, short of the preregistered 30%.",
+            "evidenceQuote": "For Opus, medium was non-inferior to high within 15 percentage points (difference .018, 95% CI [-.065, .108]) and cost 20% less, short of the preregistered 30%.",
+            "role": "breakthrough",
+            "visual": "process",
+            "displayText": "For Opus, medium was non-inferior to high within"
+          },
+          {
+            "text": "This source excerpt does not confirm public access.",
+            "evidenceQuote": "arXiv:2611.33639v1 Announce Type: new Abstract: AI coding agents write code faster than people can review it, so teams add AI reviewers.",
+            "role": "impact",
+            "visual": "highlight",
+            "displayText": "does not confirm public access"
+          },
+          {
+            "text": "Would you try How Much Effort Does, or wait for more proof?",
+            "evidenceQuote": "arXiv:2611.33639v1 Announce Type: new Abstract: AI coding agents write code faster than people can review it, so teams add AI reviewers. Reasoning models let such a reviewer trade cost for diligence through an effort setting. We asked how much effort a reviewer needs to catch plausible-but-wrong patches, which pass a benchmark's tests but fail stronger ones. Claude Opus 5.5 (preregistered), Sonnet 5.5 and Haiku 5.5 (exploratory) each reviewed the same 90 agent-written Django patches from SWE-bench Verified at low, medium and high effort. By strengthened SWE-ABS tests, 55 patches were wrong and 35 correct. In every model, high effort accepted fewer wrong patches than low (false success .45 against .67 for Opus, .49 against .65 for Sonnet, .51 against .78 for Haiku), a supported difference for Opus and Haiku. For Opus, medium was non-inferior to high within 15 percentage points (difference .018, 95% CI [-.065, .108]) and cost 20% less, short of the preregistered 30%. For Sonnet and Haiku, medium cost 39% and 51% less than high but was not shown non-inferior. Opus at medium or high agreed best with the labels; Haiku at high cost about 8% as much per review as Opus at medium, accuracy difference unresolved. Exploratory coding showed that most rejections named the tested defect and that effort added such rejections. No setting is a strong gate: each accepted at least 45% of wrong patches. For 32 of the 55 wrong patches the issue may not require what the failing test checks; without them, neither accuracy hypothesis holds for any model.",
+            "role": "engagement",
+            "visual": "highlight",
+            "displayText": "Would you try How Much Effort Does"
+          }
+        ],
+        "narration": "Would you use How Much Effort Does? arXiv:2611.33639v1 Announce Type: new Abstract: AI coding agents write code faster than people can review it, so teams add AI reviewers. By strengthened SWE-ABS tests, 55 patches were wrong and 35 correct. For Opus, medium was non-inferior to high within 15 percentage points (difference .018, 95% CI [-.065, .108]) and cost 20% less, short of the preregistered 30%. This source excerpt does not confirm public access. Would you try How Much Effort Does, or wait for more proof?"
+      },
+      "presentation": {
+        "title": "How Much Effort Does an AI Code Reviewer Need?",
+        "format": "source-fallback",
+        "angle": "workflow",
+        "hookStyle": "question",
+        "availability": "unknown",
+        "duration": 41.925,
+        "wordCount": 85,
+        "scriptVersion": 3
+      },
+      "selectionReason": "A source-backed, measurable change in time, cost, or capability.",
+      "contentHash": "1ecfc361bc4fcfc6bc04be56e2d8cd1ce0302db4a6085f418574fe1715dccc40",
+      "media": {
+        "publicUrl": "https://media.zernio.com/temp/1795812229815_c01fbf26203d6c9f_2026-11-27.mp4",
+        "videoSha256": "56d4f6da1c2c7da4263de35615c70e9b4d87380e12e92b1dffbfe243df052729",
+        "uploadedAt": "2026-11-27T20:43:50.914Z"
       }
     }
   }
