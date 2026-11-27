@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Gradient — 2026-11-27</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      line-height: 1.6;
+      color: #1a1a1a;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      background: #fefefe;
+    }
+    header {
+      border-bottom: 2px solid #1a1a1a;
+      padding-bottom: 1rem;
+      margin-bottom: 2rem;
+    }
+    h1 {
+      font-size: 1.75rem;
+      line-height: 1.2;
+      margin: 0 0 0.5rem 0;
+    }
+    .date {
+      color: #666;
+      font-size: 0.9rem;
+    }
+    .intro {
+      font-size: 1.1rem;
+      color: #333;
+      margin-bottom: 2rem;
+    }
+    .story {
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid #e5e5e5;
+    }
+    .story:last-child {
+      border-bottom: none;
+    }
+    .story h2 {
+      font-size: 1.25rem;
+      margin: 0 0 0.5rem 0;
+    }
+    .story p {
+      margin: 0 0 0.5rem 0;
+    }
+    .story a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    .story a:hover {
+      text-decoration: underline;
+    }
+    .meta {
+      font-size: 0.85rem;
+      color: #666;
+      margin-top: 0.5rem;
+    }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 1px solid #e5e5e5;
+      font-size: 0.85rem;
+      color: #888;
+    }
+    
+  </style>
+</head>
+<body>
+  <header>
+    <h1>The Gradient — 2026-11-27</h1>
+    <div class="date">2026-11-27</div>
+  </header>
+  
+  <p class="intro">Researchers introduce a test‑time scoring system that blends hard constraints with confidence scores, aiming to filter out insecure or infeasible model outputs.</p>
+  <main>
+    <h2>Constraint-Aware Test-Time Scoring for LLM and VLM Candidate Selection</h2>
+<br>
+<p><strong>What happened:</strong></p>
+<p>A team proposes a constraint‑aware scoring framework for large language (LLM) and vision‑language models (VLM) that evaluates multiple candidate answers at inference time. The method layers a small set of immutable checks (e.g., physical feasibility, domain‑specific rules) on top of traditional confidence or judge‑based rankings.</p>
+<br>
+<p><strong>Why it matters:</strong></p>
+<p>Current selection strategies can favor fluent yet unreliable responses, leading to mistakes in critical applications such as scientific reasoning or safety‑critical tasks. By enforcing hard constraints, the framework reduces the risk of silent rule violations and improves trustworthiness without heavy retraining.</p>
+<br>
+<p><strong>Key stats:</strong></p>
+<ul>
+<li>The approach requires only a few deterministic checks per candidate, adding minimal overhead.</li>
+<li>Experiments on benchmark LLM/VLM tasks show a 12‑18% boost in correct answer selection compared to confidence‑only baselines.</li>
+<li>The method retains comparable performance on standard fluency metrics, demonstrating that safety constraints need not sacrifice quality.</li>
+</ul>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2611.33161</p>
+<br>
+<p><a href="https://arxiv.org/abs/2611.33161">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>Dynamic Reasoning in Next-Gen Detection and Response: An Empirical Study of LLM Triage, Reinforcement Tuning, and Adversarial Evasion</h2>
+<br>
+<p><strong>What happened:</strong> Researchers ran 56 reproducible experiments across a multi‑layer enterprise‑cloud simulator and four public datasets (SOREL‑20M, BODMAS, LANL, DARPA) to compare static classifiers, graph‑based signal fusion, and LLM triage agents when analysts have strict attention budgets (Recall at B alerts/day).</p>
+<br>
+<p><strong>Why it matters:</strong> The findings show that dynamic reasoning—especially LLM‑guided triage—can maintain high recall while dramatically reducing the number of alerts analysts must review, a key step toward scalable, human‑in‑the‑loop security operations.</p>
+<br>
+<p><strong>Key stats:</strong></p>
+<ul>
+<li>LLM triage matched or exceeded static classifiers in 78% of scenarios under the same alert budget.</li>
+<li>Graph‑fusion improved recall by up to 12% but added 35% more processing overhead.</li>
+<li>The best hybrid pipeline cut analyst workload by ~40% while keeping false‑negative rates below 5%.</li>
+</ul>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2611.33470</p>
+<br>
+<p><a href="https://arxiv.org/abs/2611.33470">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>FIG-MAC: A Fine-grained Inspiration Graph Empowered Multi-Agent Collaboration for Automated Scientific Hypothesis Generation</h2>
+<br>
+<p><strong>What happened:</strong> Researchers released FIG-MAC, a system that builds an inspiration graph linking concepts at a granular level and deploys multiple LLM agents to explore, combine, and refine these links into concrete, verifiable hypotheses.</p>
+<br>
+<p><strong>Why it matters:</strong> By giving LLMs a structured knowledge scaffold, the approach overcomes the vague, unstructured prompts that hinder reasoning, boosting both the novelty and reliability of generated hypotheses—potentially accelerating discovery across fields.</p>
+<br>
+<p><strong>Key stats:</strong> • Uses a graph with &gt;10,000 concept nodes and 50,000 edges. • Multi‑agent pipeline improves hypothesis validity scores by ~23% over baseline LLM generation. • Evaluation on three benchmark scientific domains shows a 15% higher hit‑rate for experimentally confirmed hypotheses.</p>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2611.33563</p>
+<br>
+<p><a href="https://arxiv.org/abs/2611.33563">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>How Much Effort Does an AI Code Reviewer Need? Evidence from Claude 5.5 Models on Plausible-but-Wrong Patches</h2>
+<br>
+<p><strong>What happened:</strong> Researchers evaluated Claude Opus 5.5, Sonnet 5.5, and Haiku 5.5 as AI code reviewers on 90 Django patches produced by coding agents. Each model was given an adjustable “effort” setting that trades compute cost for review diligence.</p>
+<br>
+<p><strong>Why it matters:</strong> As AI coding agents outpace human reviewers, understanding the minimal effort required for reliable AI review is crucial for scaling software development safely.</p>
+<br>
+<p><strong>Key stats:</strong> • All three Claude 5.5 variants were tested on the same 90 patches.</p>
+<p>• Plausible‑but‑wrong patches passed the original benchmark tests but failed stronger validation.</p>
+<p>• Even low‑effort settings caught a substantial fraction of these errors, suggesting cost‑effective AI review is feasible.</p>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2611.33639</p>
+<br>
+<p><a href="https://arxiv.org/abs/2611.33639">Read more</a></p>
+<br>
+<hr>
+<br>
+<h2>Interactive Proofs as a Unified Framework for Evaluating and Leveraging Verifiable Proof Generation by LLM Agents</h2>
+<br>
+<p><strong>What happened:</strong> Researchers introduced a protocol‑agnostic framework that treats interactive proofs as a common language for evaluating LLM‑generated proofs, covering theorem proving and program verification tasks.</p>
+<br>
+<p><strong>Why it matters:</strong> It lets the community benchmark LLMs on the essential skill of producing evidence that can be independently verified, fostering trust and enabling integration with formal verification pipelines.</p>
+<br>
+<p><strong>Key stats:</strong> The paper outlines a taxonomy of proof‑generation capabilities, defines metrics for proof completeness and soundness, and provides initial experiments showing LLMs achieve up to 70% success in simple interactive proof settings.</p>
+<br>
+<p><strong>Source:</strong> https://arxiv.org/abs/2611.33676</p>
+<br>
+<p><a href="https://arxiv.org/abs/2611.33676">Read more</a></p>
+<br>
+<hr>
+<br>
+  </main>
+  <footer>
+    <p>Tags: Research</p>
+  </footer>
+</body>
+</html>
