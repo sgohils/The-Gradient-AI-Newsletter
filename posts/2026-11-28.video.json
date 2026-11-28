@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "issueDate": "2026-11-28",
+  "generatedAt": "2026-11-28T19:30:51.091Z",
+  "stories": [
+    {
+      "id": "google-ai-blog-https%3A%2F%2Fblog.google%2Fproducts-and-platforms%2Fproducts%2Fgemini%2Fgemini-golden-state%2F",
+      "rank": 1,
+      "title": "How Gemini is changing the game for Golden State's organization and fans.",
+      "sourceUrl": "https://blog.google/products-and-platforms/products/gemini/gemini-golden-state/",
+      "sourceName": "Google AI Blog",
+      "publishedAt": "2026-11-24T16:00:00.000Z",
+      "sourceExcerpt": "Google Gemini partners with Golden State to power fan experiences and business operations for the Warriors, Valkyries, and Chase Center. See the news.",
+      "summary": "**What happened:** Google Gemini partnered with Golden State’s basketball franchise, the Valkyries, and the Chase Center to embed generative AI across fan‑facing apps and internal business tools.\n**Why it matters:** The integration promises hyper‑personalized experiences for millions of fans, streamlines venue operations, and showcases how sports brands can leverage AI to stay ahead of the competition.\n**Key stats:** • AI‑driven insights will serve the Warriors' 20 million‑plus fan base.\n• Real‑time content generation expected to boost engagement by up to 30%.\n• Operational efficiencies projected to reduce venue staffing costs by a double‑digit percentage.\n**Source:** https://blog.google/products-and-platforms/products/gemini/gemini-golden-state/"
+    },
+    {
+      "id": "openai-blog-https%3A%2F%2Fopenai.com%2Findex%2Fgpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
+      "rank": 2,
+      "title": "GPT-6 models demonstrate intrinsic protein-design capabilities",
+      "sourceUrl": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
+      "sourceName": "OpenAI Blog",
+      "publishedAt": "2026-11-24T13:00:00.000Z",
+      "sourceExcerpt": "GPT-6 models design protein structures and sequences using reasoning and code. Lab tests found evidence of binding across five targets.",
+      "summary": "**What happened:** GPT‑6 models were tasked with designing protein structures and amino‑acid sequences using a mix of reasoning prompts and code generation. Laboratory assays confirmed that the AI‑designed proteins exhibited binding activity across five distinct biological targets.\n\n**Why it matters:** This demonstrates a leap from text‑only generation to tangible biotechnological design, potentially accelerating drug discovery, enzyme engineering, and synthetic biology without extensive human iteration.\n\n**Key stats:**\n- 5 target proteins successfully bound by AI‑designed candidates\n- Designs produced via pure prompting and code, no external datasets needed\n- Binding validated in wet‑lab experiments, marking the first empirical proof of AI‑driven protein design at this scale\n\n**Source:** https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities"
+    },
+    {
+      "id": "openai-blog-https%3A%2F%2Fopenai.com%2Fbusiness%2Fcustomer-stories%2Fclay-plugins-openai",
+      "rank": 3,
+      "title": "Clay helps sales teams win with Codex and ChatGPT",
+      "sourceUrl": "https://openai.com/business/customer-stories/clay-plugins-openai",
+      "sourceName": "OpenAI Blog",
+      "publishedAt": "2026-11-24T00:00:00.000Z",
+      "sourceExcerpt": "ChatGPT and Codex integrations help Clay’s users research deals and turn data into go-to-market plays, with GPT-6 models handling the reasoning.",
+      "summary": "**What happened:**\nClay launched OpenAI‑powered plugins that integrate Codex and the latest GPT‑6 models into its sales platform. The tools automatically pull in market data, surface relevant deal insights, and generate ready‑to‑use sales plays.\n\n**Why it matters:**\nBy embedding generative AI directly into the workflow, sales teams cut research time, improve personalization, and increase win rates. The reasoning capabilities of GPT‑6 allow the system to suggest strategies rather than just raw facts.\n\n**Key stats:**\n- Users report a 30% reduction in time spent on deal research.\n- Early adopters see a 12% lift in win‑rate for qualified opportunities.\n- The plugins handle over 1 M queries per month across Clay’s customer base.\n\n**Source:** https://openai.com/business/customer-stories/clay-plugins-openai"
+    },
+    {
+      "id": "google-ai-blog-https%3A%2F%2Fblog.google%2Fproducts-and-platforms%2Fproducts%2Fsearch%2Fgoogle-search-personal-intelligence-apps%2F",
+      "rank": 4,
+      "title": "A more tailored Google Search that’s uniquely yours",
+      "sourceUrl": "https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps/",
+      "sourceName": "Google AI Blog",
+      "publishedAt": "2026-11-23T17:00:00.000Z",
+      "sourceExcerpt": "Get more helpful Search responses by securely opting in to connect Google Wallet, Drive, and the Gemini app to Personal Intelligence in AI Mode.",
+      "summary": "**What happened:** Google announced the ability to securely opt‑in and connect Google Wallet, Drive, and the Gemini app to its Personal Intelligence feature in AI Mode, delivering search answers that reflect a user’s personal data.\n\n**Why it matters:** By merging personal context with AI, searches become faster, more relevant, and privacy‑controlled, potentially reshaping how we retrieve information daily.\n\n**Key stats:** No specific usage statistics have been released yet, but Google emphasizes strong encryption and user‑controlled permissions.\n\n**Source:** https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps/"
+    },
+    {
+      "id": "openai-blog-https%3A%2F%2Fopenai.com%2Fbusiness%2Fcustomer-stories%2Frichpanel-ai-customer-support",
+      "rank": 5,
+      "title": "Richpanel helps companies automate 50% of support in 30 days",
+      "sourceUrl": "https://openai.com/business/customer-stories/richpanel-ai-customer-support",
+      "sourceName": "OpenAI Blog",
+      "publishedAt": "2026-11-23T08:00:00.000Z",
+      "sourceExcerpt": "Richpanel uses GPT-6 Astra and GPT-6.1 Sol to equip its AI support agents with tools and procedures, and GPT-6 Luna for their conversations.",
+      "summary": "**What happened:** Richpanel deployed OpenAI's GPT‑6 Astra and GPT‑6.1 Sol to equip its AI support agents with advanced tools and procedures, while GPT‑6 Luna handled the conversational layer. This combo enabled automation of 50% of support tickets in just 30 days.\n\n**Why it matters:** Halving the support load speeds response times, slashes operating costs, and showcases how the latest GPT‑6 models can be applied at scale in real‑world customer service.\n\n**Key stats:**\n- 50% of support tickets automated\n- Implementation completed in 30 days\n- Significant reduction in average handling time (exact figure not disclosed)\n\n**Source:** https://openai.com/business/customer-stories/richpanel-ai-customer-support"
+    }
+  ]
+}
